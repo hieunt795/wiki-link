@@ -190,7 +190,7 @@ def _collect_raw_chunks() -> list[dict]:
             text = md_file.read_text(encoding="utf-8", errors="ignore")
             fm, body = _split_frontmatter(text)
             domain = _guess_domain(md_file, fm)
-            chunks = chunk_markdown(text, target_tokens=900, source_file=str(md_file))
+            chunks = chunk_markdown(text, target_tokens=4096, source_file=str(md_file))
             for i, chunk in enumerate(chunks):
                 chunk_id = f"raw__{md_file.stem}__{i:04d}"
                 docs.append({

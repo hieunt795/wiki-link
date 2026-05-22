@@ -65,7 +65,7 @@ def _encode(texts: list[str], return_dense: bool, return_sparse: bool, return_co
         return_dense=return_dense,
         return_sparse=return_sparse,
         return_colbert_vecs=return_colbert,
-        batch_size=4,   # low peak memory — BGE-M3 fp16 ≈ 800MB/batch on CPU
+        batch_size=16,   # low peak memory — BGE-M3 fp16 ≈ 800MB/batch on CPU
     )
 
 
