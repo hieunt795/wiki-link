@@ -1,0 +1,521 @@
+meta:
+  total_sources: 59
+  total_ingested: 22
+  coverage_pct: 37.3
+  last_updated: '2026-05-21'
+sources:
+  02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md:
+    status: partial
+    priority: high
+    domain: monetary_policy
+    author: Bindseil
+    description: 'Core text on CB operational frameworks: corridor/floor, reserve
+      supply, QE mechanics'
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/frameworks/Monetary_Policy_Instruments_Operational_Framework.md
+    - 03_wiki/mechanisms/Interest_Rate_Corridor_Floor_System_Standing_Facilities.md
+    - 03_wiki/mechanisms/Central_Bank_Intermediation_Balance_Sheet_Autonomous_Factors.md
+    - 03_wiki/mechanisms/Collateral_Framework_Haircuts_Central_Bank_Credit.md
+  02_sources/books/central_bank_balance_sheet/Central_Bank_Balance_Sheet.md:
+    status: partial
+    priority: high
+    domain: monetary_policy
+    author: Unknown
+    description: CB balance sheet mechanics and operations
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/frameworks/Central_Bank_Balance_Sheet_Structure_Liabilities_Assets.md
+  ? 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central
+    Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-1.md
+  : status: partial
+    priority: high
+    domain: monetary_policy
+    author: Warjiyo, Juhro
+    description: Central bank policy theory and practice — ITF, policy mix, EME perspective
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/frameworks/Inflation_Targeting_Framework_Central_Bank.md
+  ? 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central
+    Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-3.md
+  : status: partial
+    priority: high
+    domain: monetary_policy
+    author: Warjiyo, Juhro
+    description: 'Ch.3 (money role), Ch.4 (exchange rates, Mundell-Fleming, FX intervention), Ch.5 (MPTM all channels)'
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/frameworks/Monetary_Policy_Transmission_Mechanisms_Framework.md
+  02_sources/books/singh_collateral_plumbing/Singh_Collateral_Financial_Plumbing.md:
+    status: partial
+    priority: high
+    domain: financial_markets
+    author: Singh
+    description: Collateral reuse, repo mechanics, shadow banking plumbing (IMF 2016)
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/mechanisms/Collateral_Velocity_Rehypothecation.md
+    - 03_wiki/mechanisms/Monetary_Policy_Transmission_Collateral_Channel.md
+  02_sources/books/tuckman_serrat_fixed_income/Tuckman_Serrat_Fixed_Income_2022.md:
+    status: partial
+    priority: high
+    domain: financial_markets
+    author: Tuckman, Serrat
+    description: 'Fixed income analytics: duration, convexity, yield curve, term structure, IRS (4th ed 2022)'
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/mechanisms/DV01_Duration_Convexity_Fixed_Income.md
+    - 03_wiki/mechanisms/Interest_Rate_Swaps_OIS_Fixed_Floating.md
+  02_sources/books/homer_leibowitz_yield_book/Homer_Leibowitz_Inside_The_Yield_Book.md:
+    status: pending
+    priority: high
+    domain: financial_markets
+    author: Homer, Leibowitz
+    description: Classic yield book — yield math, duration, bond analytics
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/conks/Conks - Fed's Policies and Facilities.md:
+    status: partial
+    priority: high
+    domain: monetary_policy
+    author: Conks
+    description: 'Fed facilities: ONRRP, IOER, SRF, discount window, Treasury operations'
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/mechanisms/Quantitative_Tightening_Qt_Balance_Sheet_Runoff.md
+  02_sources/books/conks/Conk - Repo.md:
+    status: partial
+    priority: high
+    domain: financial_markets
+    author: Conks
+    description: Repo market mechanics, GCF, tri-party, bilateral repo
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/mechanisms/Repo_Market_Mechanics_Triparty_Bilateral.md
+  02_sources/books/conks/Conks - Global Dollar and Eurodollar Systems.md:
+    status: partial
+    priority: high
+    domain: financial_markets
+    author: Conks
+    description: Global dollar system, eurodollar, offshore USD funding
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/frameworks/Global_Dollar_System_Eurodollar_Architecture.md
+  02_sources/books/conks/Conks - Liquidity and Market Dynamics.md:
+    status: partial
+    priority: high
+    domain: financial_markets
+    author: Conks
+    description: Liquidity dynamics, market functioning, funding stress
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/mechanisms/Slr_Lcr_Balance_Sheet_Constraints_Treasury_Market_Dealer.md
+  02_sources/books/conks/Conks - Shadow Banking and Cash Markets.md:
+    status: partial
+    priority: high
+    domain: financial_markets
+    author: Conks
+    description: Shadow banking structure, money market funds, ABCP
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/mechanisms/Treasury_General_Account_Tga_Reserve_Swap.md
+    - 03_wiki/mechanisms/Fed_Overnight_Reverse_Repo_On_Rrp.md
+    - 03_wiki/concepts/Shadow_Banking_Market_Based_Finance.md
+    - 03_wiki/mechanisms/Debt_Ceiling_Extraordinary_Measures_Treasury.md
+  02_sources/books/conks/Conks - Plumping note (Money market.md:
+    status: pending
+    priority: high
+    domain: financial_markets
+    author: Conks
+    description: Money market plumbing notes
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/howard_corb_swaps/Howard_Corb_Interest_Rate_Swaps.md:
+    status: pending
+    priority: high
+    domain: financial_markets
+    author: Howard, Corb
+    description: Interest rate swaps and related derivatives mechanics
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md:
+    status: pending
+    priority: high
+    domain: financial_markets
+    author: Elkenbracht-Huizing
+    description: Asset-liability management for banks
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md:
+    status: partial
+    priority: high
+    domain: basel_risk
+    author: Internal (Gemini deep-research)
+    description: Basel framework interaction with banking and private credit (Vietnamese) — covers RWA/output floor/LCR/NSFR mechanics, regional implementation, bank response (SRT, OTD), private credit emergence, network liquidity risk
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/frameworks/Basel_III_Endgame_Capital_Liquidity_Credit_Migration.md
+    - 03_wiki/mechanisms/Private_Credit_SRT_NAV_Loans_Bank_Partnerships.md
+  02_sources/deep-research/Deep Dive_ Private Credit.md:
+    status: pending
+    priority: high
+    domain: basel_risk
+    author: Internal
+    description: Private credit deep dive — Basel treatment, risks, market structure
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/deep-research/Private Credit, Basel, and Regional Dynamics.md:
+    status: pending
+    priority: high
+    domain: basel_risk
+    author: Internal
+    description: Private credit + Basel + regional market dynamics
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/academic/Guo_Chinas_Monetary_Policy_Framework_2025.md:
+    status: pending
+    priority: normal
+    domain: monetary_policy
+    author: Guo
+    description: China monetary policy framework 2025
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/cargill_central_bank_policy/Cargill_Financial_System_Policy.md:
+    status: pending
+    priority: normal
+    domain: monetary_policy
+    author: Cargill
+    description: Financial system and central bank policy
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/choudhry_banking_fixed_income/Choudhry_Principles_of_Banking.md:
+    status: pending
+    priority: normal
+    domain: financial_markets
+    author: Choudhry
+    description: Principles of banking — ALM, liquidity, capital
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/choudhry_banking_fixed_income/Choudhry_Fixed_Income_Markets.md:
+    status: pending
+    priority: normal
+    domain: financial_markets
+    author: Choudhry
+    description: Fixed income markets handbook
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/choudhry_banking_fixed_income/Choudhry_Analysing_Yield_Curve.md:
+    status: pending
+    priority: normal
+    domain: financial_markets
+    author: Choudhry
+    description: Yield curve analysis
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/huggins_schaller_relative_value/Huggins_Schaller_Fixed_Income_RV.md:
+    status: partial
+    priority: high
+    domain: financial_markets
+    author: Huggins, Schaller
+    description: 'Fixed income RV: mean reversion, PCA, asset swaps, swap spreads, regulatory constraints (2nd ed)'
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/mechanisms/Swap_Spreads_Balance_Sheet_Plumbing_Frictions.md
+  02_sources/books/imf_macro_accounting/IMF_Macroeconomic_Statistics_Guide.md:
+    status: pending
+    priority: normal
+    domain: macro_outlook
+    author: IMF
+    description: IMF macroeconomic accounting and statistics framework
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/imf_wb_govt_bond_markets/IMF_WB_Government_Bond_Markets.md:
+    status: pending
+    priority: normal
+    domain: fiscal_policy
+    author: IMF, World Bank
+    description: Government bond market development
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md:
+    status: pending
+    priority: normal
+    domain: macro_outlook
+    author: Lipschitz, Schadler
+    description: Applied macroeconomics
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/tata_bank_alm/Tata_Bank_ALM.md:
+    status: pending
+    priority: normal
+    domain: financial_markets
+    author: Tata
+    description: Bank ALM framework
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/duffie_bpea_payments_2026/Duffie_BPEA_Payments_Liquidity_2026.md:
+    status: partial
+    priority: high
+    domain: monetary_policy
+    author: Duffie
+    description: 'Brookings BPEA Spring 2026 — payment system floor on Fed balance sheet, reserve demand mechanics, LSM, IORB tiering'
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/mechanisms/Reserve_Floor_Payment_System_Demand.md
+  02_sources/Clipping/What about Japan_ (Part I).md:
+    status: pending
+    priority: high
+    domain: monetary_policy
+    author: Clip
+    description: BOJ YCC analysis Part I
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/Clipping/What about Japan_ (Part II).md:
+    status: pending
+    priority: high
+    domain: monetary_policy
+    author: Clip
+    description: BOJ YCC analysis Part II
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/Clipping/Breaking Out of the Central Bank Balance Sheet Trilemma.md:
+    status: pending
+    priority: high
+    domain: monetary_policy
+    author: Clip
+    description: CB balance sheet trilemma framework
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md:
+    status: completed
+    priority: high
+    domain: monetary_policy
+    author: Clip
+    description: ECB and Fed operational framework comparison
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/frameworks/ECB_New_Operational_Framework_2024.md
+    - 03_wiki/frameworks/Fed_Ample_Reserves_Range_Floor_Framework.md
+    - 03_wiki/mechanisms/Standing_Repo_Facility_SRF_Fed_Backstop.md
+    - 03_wiki/mechanisms/Monetary_Policy_Transmission_Short_Long_Rate_Frictions.md
+  02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md:
+    status: pending
+    priority: high
+    domain: monetary_policy
+    author: Clip
+    description: Ample reserves buffer sizing analysis
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/Clipping/Warsh and the Fed's Balance Sheet.md:
+    status: completed
+    priority: normal
+    domain: monetary_policy
+    author: Clip
+    description: Fed balance sheet policy — Warsh perspective
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/concepts/Warsh_Balance_Sheet_Stimulus_Swap.md
+  02_sources/Clipping/A new Fed-Treasury Accord_.md:
+    status: completed
+    priority: normal
+    domain: fiscal_policy
+    author: Clip
+    description: Fed-Treasury accord history and potential new framework
+    ingest_date: '2026-05-20'
+    wiki_nodes:
+    - 03_wiki/frameworks/Fed_Treasury_Accord_2026_Proposal.md
+  02_sources/Clipping/The Checking Account of the U.S. Federal Government....md:
+    status: completed
+    priority: normal
+    domain: fiscal_policy
+    author: Clip
+    description: TGA mechanics and fiscal-monetary interaction
+    ingest_date: '2026-05-21'
+    wiki_nodes:
+    - 03_wiki/mechanisms/Treasury_General_Account_Tga_Reserve_Swap.md
+    - 03_wiki/frameworks/Fed_Fiscal_Agent_Treasury_Relationship.md
+  02_sources/Clipping/I need a dollar (through your swap line).md:
+    status: pending
+    priority: normal
+    domain: financial_markets
+    author: Clip
+    description: FX swap lines mechanics
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/Clipping/False Trilemmas.md:
+    status: pending
+    priority: normal
+    domain: macro_outlook
+    author: Clip
+    description: Mundell trilemma analysis
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/Clipping/Fed, ECB, and BoJ_ A Matter of Credibility.md:
+    status: pending
+    priority: normal
+    domain: monetary_policy
+    author: Clip
+    description: 'CB credibility comparison: Fed vs ECB vs BOJ'
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/Clipping/April BOJ_ onhold as expected, hawkish statement but cautious Ueda; maintain July hike call.md:
+    status: pending
+    priority: normal
+    domain: monetary_policy
+    author: Clip
+    description: BOJ April 2026 meeting analysis
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/Clipping/Who Buys When the ECB Doesn't_.md:
+    status: pending
+    priority: normal
+    domain: monetary_policy
+    author: Clip
+    description: ECB QT and JGB/sovereign bond market absorption
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/Clipping/What's Driving the Gilt-Treasury Spread_.md:
+    status: pending
+    priority: normal
+    domain: financial_markets
+    author: Clip
+    description: Gilt-Treasury spread drivers
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/Clipping/Are high UK yields good or bad_.md:
+    status: pending
+    priority: normal
+    domain: macro_outlook
+    author: Clip
+    description: UK yield level analysis
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/Clipping/De-Stigmatizing the Discount Window, Part I_ Tomatoes.md:
+    status: pending
+    priority: normal
+    domain: monetary_policy
+    author: Clip
+    description: Fed discount window stigma and reform
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/Clipping/PBOC heavy dollar buying in April after significant dollar selling in March.md:
+    status: pending
+    priority: low
+    domain: monetary_policy
+    author: Clip
+    description: PBOC FX intervention activity
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/Clipping/China's Monetary Policy Framework and Financial Market Transmission _ Bulletin.md:
+    status: pending
+    priority: normal
+    domain: monetary_policy
+    author: Clip
+    description: China monetary policy transmission
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/Clipping/RMB (part 1)_ Fundamentals point to appreciation in 2026 but milder than last year.md:
+    status: pending
+    priority: low
+    domain: macro_outlook
+    author: Clip
+    description: RMB outlook Part 1
+    ingest_date: null
+    wiki_nodes: []
+  ? 02_sources/Clipping/RMB (part 2)_ PBOC unlikely to allow RMB to appreciate sharply
+    under continued conservative FX management approach.md
+  : status: pending
+    priority: low
+    domain: macro_outlook
+    author: Clip
+    description: RMB outlook Part 2
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md:
+    status: pending
+    priority: normal
+    domain: monetary_policy
+    author: Clip
+    description: April 2026 CB commentary — Fed, BOJ, BOE
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/Inbox/Why Is Currency a Liability of the Fed_.md:
+    status: pending
+    priority: normal
+    domain: monetary_policy
+    author: Clip
+    description: Currency as Fed liability — accounting and institutional explanation
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/aci_dealing_certificate/ACI_Dealing_Certificate_Mastering.md:
+    status: pending
+    priority: low
+    domain: financial_markets
+    author: ACI
+    description: ACI dealing certificate — FX and money markets
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/bondistan_tourist_guide/Bondistan_Tourist_Guide.md:
+    status: pending
+    priority: normal
+    domain: financial_markets
+    author: Bondistan
+    description: Fixed income market guide
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/boyle_derivatives/Boyle_Derivatives_Handbook.md:
+    status: pending
+    priority: low
+    domain: financial_markets
+    author: Boyle
+    description: Derivatives handbook
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/neftci_principles/Neftci_Principles_Financial_Engineering.md:
+    status: pending
+    priority: low
+    domain: financial_markets
+    author: Neftci
+    description: Principles of financial engineering
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/schofield_fixed_income/Schofield_Fixed_Income.md:
+    status: pending
+    priority: low
+    domain: financial_markets
+    author: Schofield
+    description: Fixed income handbook
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/watts_wray_mmt_macro/Watts_Wray_Macroeconomics.md:
+    status: pending
+    priority: normal
+    domain: macro_outlook
+    author: Watts, Wray
+    description: MMT macroeconomics — alternative monetary theory framework
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/weithers_fx_guide/Weithers_FX_Guide.md:
+    status: pending
+    priority: low
+    domain: financial_markets
+    author: Weithers
+    description: FX guide — spot, forward, options
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/wilmott_quant_finance/Wilmott_Quantitative_Finance.md:
+    status: pending
+    priority: low
+    domain: financial_markets
+    author: Wilmott
+    description: Quantitative finance — derivatives pricing
+    ingest_date: null
+    wiki_nodes: []
+  02_sources/books/wystup_fx_options/Wystup_FX_Options.md:
+    status: pending
+    priority: low
+    domain: financial_markets
+    author: Wystup
+    description: FX options and structured products
+    ingest_date: null
+    wiki_nodes: []

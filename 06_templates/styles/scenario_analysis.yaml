@@ -1,0 +1,38 @@
+template_id: style_scenario_analysis_v1
+name: Scenario Analysis
+version: 1
+audience: internal_analyst
+formality: analytical
+length_range: "2000-4000 words"
+
+structural_conventions:
+  header:
+    required: true
+    fields:
+      - "SCENARIO ANALYSIS: {topic_title}"
+      - "DATE: {YYYY-MM-DD}"
+      - "BASE DATE: {data_as_of_date}"
+  scenario_table:
+    required: true
+    placement: after_executive_summary
+    columns: ["Scenario", "Probability", "Growth", "Inflation", "Rates", "Key Trigger"]
+  per_scenario_subsections:
+    - "Trigger conditions"
+    - "Macro path (growth, inflation, rates — 12M)"
+    - "Asset market implications"
+    - "Policy response"
+    - "Monitoring indicators"
+  comparison_table: required
+
+tone_rules:
+  - "Probabilities are explicit and sum to approximately 100%."
+  - "Each scenario has a distinct, memorable label (not just Base/Bull/Bear)."
+  - "Tail risks described without catastrophizing — specific mechanism."
+  - "Monitoring indicators are observable, not theoretical."
+  - "Asset implications are directional and quantified where possible."
+
+forbidden_patterns:
+  - Scenarios with overlapping trigger conditions
+  - Probabilities without a sum-to-100% check
+  - Vague tail risk descriptions ("black swan event")
+  - More than 5 monitoring indicators per scenario

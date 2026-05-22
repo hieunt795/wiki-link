@@ -1,0 +1,31 @@
+template_id: style_audit_memo_v1
+name: Audit Memo
+version: 1
+audience: internal_analyst
+formality: internal_review
+length_range: "500-1000 words"
+
+structural_conventions:
+  header:
+    required: true
+    fields:
+      - "AUDIT MEMO: {draft_title}"
+      - "DATE: {YYYY-MM-DD}"
+      - "DRAFT VERSION: {version}"
+      - "AUDIT STATUS: [PASS / FAIL / CONDITIONAL]"
+  checklist_summary:
+    required: true
+    format: "Table of checks: ID | Category | Status | Notes"
+  failure_section:
+    required: true
+    label: "## Required Actions"
+    condition: "Only if any checks FAIL"
+  approval_section:
+    required: true
+    label: "## Approval Decision"
+
+tone_rules:
+  - "State the audit result (PASS/FAIL/CONDITIONAL) in the first line."
+  - "List failures specifically — 'Claim on p.3 about X has no source' not 'some claims need sources'."
+  - "Required actions are numbered and specific."
+  - "Approval decision is unambiguous."

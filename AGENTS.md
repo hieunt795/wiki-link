@@ -1,0 +1,240 @@
+# Wiki-Agentic — Codex Agent Instructions
+
+> Your sole task is **INGEST**: read source files, extract knowledge, write wiki nodes.
+> Do NOT run sync, do NOT start the daemon — those run locally by the human operator.
+
+---
+
+## Your Role
+
+You are an ingest agent for a bilingual (Vietnamese/English) macroeconomic research wiki.
+
+**You do exactly three things:**
+1. Read a source file in `02_sources/`
+2. Create 1–5 wiki node `.md` files in `03_wiki/`
+3. Update three metadata files: `03_wiki/index.md`, `03_wiki/log.md`, `02_sources/_source_registry.yaml`
+
+Nothing else. No research. No reports. No sync. No daemon.
+
+---
+
+## Directory Map
+
+```
+02_sources/          ← IMMUTABLE — read only, NEVER write here
+  _source_registry.yaml  ← EXCEPTION: you update this file only
+03_wiki/
+  concepts/          ← write wiki nodes here
+  mechanisms/
+  frameworks/
+  entities/
+  relationships/
+  contradictions/
+  policies/
+  indicators/
+  synthesis/
+  index.md           ← update after creating nodes
+  log.md             ← append one line per node created
+01_schema/           ← read for reference, never write
+```
+
+---
+
+## Ingest Workflow
+
+### Step 1 — Read the source
+
+Read the full source file. Identify **1–5 key concepts** worth extracting as wiki nodes.
+
+Selection criteria — extract if the concept is:
+- Structural or mechanistic (how a system works, not current events)
+- Reusable across multiple research topics
+- Backed by the source with enough detail to write a meaningful body
+
+Skip if:
+- Current price/rate/market data (time-sensitive)
+- One-paragraph mentions with no detail
+- Already exists as a wiki node (check `03_wiki/index.md` first)
+
+### Step 2 — Create each wiki node
+
+File path: `03_wiki/{type}/{Title_In_CamelCase}.md`
+
+**Full frontmatter schema:**
+```yaml
+---
+node_id: {slug}_{type_abbrev}_001          # e.g. qe_mechanism_001
+type: {type}                                # see taxonomy below
+title: {Full Title}
+aliases:
+  - {common abbreviation}
+  - {Vietnamese term}                       # always include at least one VI alias
+
+domain:
+  primary: {primary_domain}                 # see domains below
+  secondary: [{domain2}, {domain3}]
+tags: [{tag1}, {tag2}, {tag3}]
+
+confidence: {1-5}                           # see scale below — start at 1 or 2
+stability: {stable|evolving|contested|stale}
+
+thesis: >
+  {Core claim in 1–3 sentences. What this node asserts.}
+
+source_refs:
+  - path: {relative path from repo root, starting with 02_sources/}
+    pages: "{chapter, section, or page range}"
+    weight: {primary|supporting|contradicting}
+
+related:
+  - node: "[[{Other_Node_CamelCase}]]"
+    relation: {relation_type}
+
+date_created: {YYYY-MM-DD}
+date_updated: {YYYY-MM-DD}
+---
+```
+
+**After the frontmatter — write the body:**
+- Use `##` headers for major sections
+- Include tables, formulas, bullet lists where appropriate
+- Every specific number (%, bps, $, date) → add source label: `[RAW-BOOK p.X]` or `[LLM-E]`
+- Every sentence you synthesize (not directly in source) → add `[LLM]`
+- Aim for 300–800 words of body content
+
+### Step 3 — Update metadata
+
+**`03_wiki/index.md`:**
+- Increment `Total nodes:` counter
+- Increment the count for the relevant type section (e.g., `## Mechanisms (16)`)
+- Add a bullet entry under the correct section:
+  ```
+  - **[[Node Title]]**  ★★★☆☆
+    {One-line description — the thesis compressed to 15 words}
+  ```
+  Stars = confidence (1★ to 5★)
+
+**`03_wiki/log.md`:**
+Append one line per node at the bottom of the existing entries:
+```
+- **{YYYY-MM-DD}**: INGEST: Created {type} node `{Title}` from {source_filename}
+```
+
+**`02_sources/_source_registry.yaml`:**
+Update the entry for the source file:
+```yaml
+{source_path}:
+  status: partial           # change from pending → partial
+  priority: {high|normal}
+  domain: {domain}
+  author: {author}
+  description: {brief description}
+  ingest_date: '{YYYY-MM-DD}'
+  wiki_nodes:
+    - {relative path to wiki node}
+```
+Also increment `meta.total_ingested` and recalculate `meta.coverage_pct`.
+
+---
+
+## Node Type Taxonomy
+
+| Type | Use for |
+|------|---------|
+| `concept` | Abstract ideas, theoretical constructs |
+| `mechanism` | Transmission channels, operational processes, how-things-work |
+| `framework` | Analytical models, multi-component systems |
+| `entity` | Central banks, institutions, specific instruments |
+| `policy` | Specific policy programs with jurisdiction + period |
+| `indicator` | Economic indicators (CPI, SOFR, etc.) |
+| `relationship` | Causal links between two nodes |
+| `contradiction` | Conflicting claims across sources |
+| `synthesis` | Cross-domain conclusions |
+
+**Most common for this wiki:** `mechanism` and `framework`
+
+---
+
+## Domain Taxonomy
+
+| Domain | Covers |
+|--------|--------|
+| `monetary_policy` | Central bank operations, rate policy, QE/QT, transmission |
+| `financial_markets` | Repo, fixed income, derivatives, swap spreads, dealer markets |
+| `fiscal_policy` | Government debt, TGA, debt ceiling, deficit dynamics |
+| `macro_outlook` | Growth, inflation, business cycles, scenario analysis |
+| `basel_risk` | Capital regulation, RWA, LCR, NSFR, private credit |
+| `shadow_banking` | NBFI, money market, repo, securitization |
+
+---
+
+## Confidence Scale
+
+| Score | Stars | Meaning | Rule |
+|-------|-------|---------|------|
+| 5 | ★★★★★ | Multiple authoritative textbooks agree | — |
+| 4 | ★★★★☆ | Single primary textbook OR multiple IMF/BIS/Fed papers | — |
+| 3 | ★★★☆☆ | Reliable secondary source, credible but not textbook | — |
+| 2 | ★★☆☆☆ | LLM synthesis + at least one partial source support | Mark body with `[LLM]` |
+| 1 | ★☆☆☆☆ | LLM stub, no source verification | Mark ALL content `[LLM]` |
+
+**Default for deep-research files:** confidence 2  
+**Default for academic textbooks:** confidence 3–4  
+**Never claim confidence 5 unless you see multiple textbooks explicitly agree**
+
+---
+
+## Naming Conventions
+
+```
+Wiki node file:  03_wiki/{type}/{Title_In_CamelCase}.md
+node_id:         {lowercase_underscore_slug}_{type_abbrev}_001
+
+Examples:
+  03_wiki/mechanisms/Interest_Rate_Corridor_Floor_System.md
+  03_wiki/frameworks/Basel_III_Capital_Framework.md
+  03_wiki/concepts/Shadow_Banking_Market_Based_Finance.md
+```
+
+Title words to capitalize: all significant words  
+Connectors (`and`, `of`, `the`, `in`) → lowercase in slug, capitalize in filename
+
+---
+
+## Hard Rules — Never Break
+
+1. **NEVER write to any file in `02_sources/`** except `_source_registry.yaml`
+2. **Every wiki node MUST have a `source_ref`** pointing to a real file in `02_sources/`
+3. **Mark every synthesized sentence with `[LLM]`** — users must distinguish sourced vs generated
+4. **Do NOT run `librarian.py sync`** — sync requires BGE-M3 (4GB model), runs locally only
+5. **Do NOT create nodes for time-sensitive data** — current rates, prices, CB decisions belong in `04_research/`, not `03_wiki/`
+6. **Do NOT invent source page numbers** — if you don't know the exact page, write `"full document"` or `"§{section name}"`
+7. **When sources contradict each other**, create a `contradiction` node — do not silently pick one side
+8. **Vietnamese aliases are mandatory** — every node needs at least one Vietnamese alias in `aliases:`
+
+---
+
+## Source Label Reference
+
+Use these inline labels throughout the wiki node body:
+
+```
+[RAW-BOOK p.X]      Direct content from a book source, page X
+[RAW-BOOK §X.X]     Direct content, section reference
+[RAW-CLIP]          From a clipping/article source
+[LLM]               Synthesized by you — not directly in source
+[LLM-E]             Estimated range, not a precise sourced figure
+```
+
+---
+
+## Example: Calling Pattern
+
+When triggered with a source file path, your output should be:
+
+1. A set of new `.md` files written to `03_wiki/{type}/`
+2. Edits to `03_wiki/index.md`
+3. An appended line in `03_wiki/log.md`
+4. An update to `02_sources/_source_registry.yaml`
+
+**Do not output anything else.** Do not explain your reasoning in chat. Write the files.

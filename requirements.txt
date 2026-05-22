@@ -1,0 +1,30 @@
+# Wiki-Agentic Dependencies
+# Python >= 3.11 required
+
+# BGE-M3 retrieval stack
+FlagEmbedding>=1.2.11        # BGE-M3 + bge-reranker-v2-m3
+sentence-transformers>=2.7   # Fallback / utilities
+
+# Vector index
+faiss-cpu>=1.7.4             # Dense vector index (use faiss-gpu if GPU available)
+numpy>=1.26
+
+# Storage and serialization
+PyYAML>=6.0
+sqlite3                      # Built into Python stdlib
+
+# ML backend
+torch>=2.1                   # BGE-M3 backend (CPU or CUDA)
+
+# Optional (improves performance)
+# faiss-gpu                  # GPU-accelerated FAISS
+# onnxruntime                # ONNX inference for faster embedding
+
+# Anthropic API (for colab_ingest.py)
+anthropic>=0.40              # Claude API client with prompt caching support
+
+# Utilities
+pathlib                      # stdlib
+dataclasses                  # stdlib (Python 3.7+)
+threading                    # stdlib
+json                         # stdlib

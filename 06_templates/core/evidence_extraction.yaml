@@ -1,0 +1,107 @@
+template_id: evidence_extraction_v1
+name: Evidence Extraction Framework
+version: 1
+applies_to: all_domains
+description: "Rules for how to extract, label, and weigh evidence from sources during research."
+
+version_history:
+  - version: 1
+    date: "2026-05-20"
+    changes: "Initial version"
+
+# ── EXTRACTION RULES ──────────────────────────────────────────────────────────
+
+quote_vs_paraphrase:
+  - "Use direct quotes (with quotation marks) ONLY for definitions, regulatory text, and CB statements"
+  - "Paraphrase for arguments, explanations, and analytical claims"
+  - "Mark [LLM] on every sentence synthesized by the agent without a specific source passage"
+  - "Use [citation needed] as placeholder — never leave unsourced claims without a marker"
+
+source_labeling:
+  formats:
+    - label: "[RAW-Author p.X]"
+      use: "Direct page reference in a raw source book"
+      example: "[RAW-Bindseil p.112]"
+    - label: "[RAW-CLIP Title]"
+      use: "From a Clipping in 02_sources/Clipping/"
+      example: "[RAW-CLIP What about Japan Part I]"
+    - label: "[WEB-YYYY-MM-DD]"
+      use: "Web-fetched data, include date"
+      example: "[WEB-2026-05-20]"
+    - label: "[LLM-E range]"
+      use: "LLM-estimated range, not from any source"
+      example: "[LLM-E ~50-70bps]"
+    - label: "[LLM]"
+      use: "Marks entire sentence as LLM-synthesized without source backing"
+    - label: "[citation needed]"
+      use: "Placeholder — a claim that needs a source but source not yet found"
+
+# ── SOURCE WEIGHTING ──────────────────────────────────────────────────────────
+
+source_hierarchy:
+  tier_1:
+    label: "Authoritative (confidence 5)"
+    examples: ["Academic textbooks with multiple editions", "BCBS regulatory text", "IMF/BIS primary publications"]
+    use: "Foundation of durable wiki knowledge"
+  tier_2:
+    label: "Reliable (confidence 4)"
+    examples: ["Single primary textbook", "IMF working paper", "BIS Quarterly Review", "Fed staff note"]
+    use: "Core evidence for claims"
+  tier_3:
+    label: "Corroborated (confidence 3)"
+    examples: ["Research memos", "institutional analysis", "credible practitioner notes"]
+    use: "Supporting evidence"
+  tier_4:
+    label: "Provisional (confidence 2)"
+    examples: ["News analysis", "clippings", "blog posts from credible practitioners"]
+    use: "Context and recency, not foundation"
+
+weighting_rules:
+  - "confidence>=4 wiki nodes outweigh clippings for structural/theoretical claims"
+  - "Peer-reviewed papers outweigh institutional reports for theoretical claims"
+  - "Primary sources (CB staff papers, official reports) outweigh secondary analysis for policy facts"
+  - "More recent sources outweigh older sources for: policy stances, regulatory calibration, market data"
+  - "Older sources outweigh newer for: established theory, historical precedents"
+
+# ── CONTRADICTION HANDLING ────────────────────────────────────────────────────
+
+contradiction_rules:
+  - "When two sources disagree, do not silently prefer one"
+  - "Record both claims with their sources in the finding file"
+  - "If confidence difference ≥ 2 levels: prefer higher-confidence source but document the disagreement"
+  - "If confidence difference < 2: create a contradiction node in 03_wiki/contradictions/"
+  - "Note the resolution status: open | context_dependent | resolved"
+  - "In analysis drafts: state the contradiction explicitly and explain which view is used and why"
+
+# ── FRESHNESS RULES ───────────────────────────────────────────────────────────
+
+freshness_rules:
+  structural_claims:
+    staleness: "5+ years"
+    examples: ["IS-LM mechanics", "Basel CET1 definition", "duration formula"]
+    action: "No freshness check needed unless academic consensus has shifted"
+  policy_stance:
+    staleness: "3 months"
+    examples: ["CB rate decisions", "forward guidance language", "balance sheet trajectory"]
+    action: "Verify with WebFetch before using in analysis"
+  regulatory_calibration:
+    staleness: "1 year"
+    examples: ["Basel buffer levels", "LCR calibration", "G-SIB surcharge tiers"]
+    action: "Check BCBS/FSB website for updates"
+  market_data:
+    staleness: "real-time"
+    examples: ["Yield levels", "FX rates", "spread levels", "repo rates"]
+    action: "Always fetch fresh — never store in wiki"
+  entity_facts:
+    staleness: "1 year"
+    examples: ["Who leads which CB", "current mandate", "current policy rate"]
+    action: "Verify annually or after news event"
+
+# ── T_MODE_DEEP SPECIFIC ──────────────────────────────────────────────────────
+
+t_mode_deep_rules:
+  - "Every number in PLUMBING T-Account must have a source label"
+  - "Transmission chain A→B→C must identify the institutional mechanism at each step"
+  - "Stakeholder impact magnitude must be directional: [+/-/neutral] not vague"
+  - "Treasury Layer insight must be practitioner-actionable: what does the desk DO?"
+  - "TIMING Layer velocity must be quantified: days / weeks / quarters — not 'quickly'"

@@ -1,0 +1,68 @@
+domain: monetary_policy
+name: Monetary Policy Domain Primer
+description: "Key concepts, preferred sources, and domain vocabulary for monetary policy analysis."
+
+core_concepts:
+  framework:
+    - "Inflation targeting (IT) — CB commits to a quantitative inflation target"
+    - "Corridor system — CB sets rate band with lending and deposit facilities"
+    - "Floor system (ample reserves) — rate set by IOER/deposit facility, large balance sheet"
+  instruments:
+    - "Policy rate (Fed Funds, ECB DFR, BOJ policy rate)"
+    - "Quantitative Easing (QE) — asset purchases expand balance sheet"
+    - "Quantitative Tightening (QT) — balance sheet normalization"
+    - "Forward guidance — CB communication about future rate path"
+    - "Yield Curve Control (YCC) — target long-term rate directly"
+  transmission:
+    - "Interest rate channel: policy rate → lending rates → investment/consumption"
+    - "Portfolio balance effect: QE forces rebalancing into riskier assets"
+    - "Exchange rate channel: rate differentials → FX → exports"
+    - "Bank lending channel: reserves → bank credit → real economy"
+    - "Expectations channel: credibility → inflation expectations → wage/price setting"
+
+key_vocabulary:
+  en:
+    - "federal funds rate"
+    - "interest rate corridor"
+    - "floor system"
+    - "ample reserves"
+    - "interest on reserves (IOER/IORB)"
+    - "overnight reverse repo (ONRRP)"
+    - "standing repo facility (SRF)"
+    - "discount window"
+    - "reserve requirements"
+    - "open market operations (OMO)"
+    - "term premium"
+    - "neutral rate (r-star)"
+    - "real rate"
+    - "break-even inflation"
+    - "dot plot (FOMC)"
+    - "Summary of Economic Projections (SEP)"
+  vi:
+    - "lãi suất chính sách"
+    - "hành lang lãi suất"
+    - "hệ thống sàn"
+    - "dự trữ thừa"
+    - "nới lỏng định lượng"
+    - "thắt chặt định lượng"
+    - "lãi suất trung lập"
+
+priority_sources_for_ingest:
+  - path: "02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md"
+    why: "Best single source on CB operational frameworks — corridor, floor, QE mechanics"
+  - path: "02_sources/books/conks/Conks - Fed's Policies and Facilities.md"
+    why: "Detailed Fed-specific plumbing: ONRRP, SRF, discount window, TGA"
+  - path: "02_sources/books/central_bank_balance_sheet/Central_Bank_Balance_Sheet.md"
+    why: "CB balance sheet accounting and policy implications"
+  - path: "02_sources/Clipping/Breaking Out of the Central Bank Balance Sheet Trilemma.md"
+    why: "Framework for understanding CB balance sheet trade-offs"
+  - path: "02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md"
+    why: "Comparative framework: ECB floor vs Fed floor systems"
+
+common_gaps:
+  - topic: "BOJ YCC exit mechanics vs ECB/Fed QT comparison"
+    suggested_sources: ["BIS WP on QE exit strategies", "Fed FEDS notes on balance sheet normalization"]
+  - topic: "Emerging market CB frameworks (SBV, PBOC)"
+    suggested_sources: ["IMF Article IV reports", "BIS country-specific papers"]
+  - topic: "CBDC and digital money implications for monetary transmission"
+    suggested_sources: ["BIS CBDC working papers", "Fed/ECB research notes"]

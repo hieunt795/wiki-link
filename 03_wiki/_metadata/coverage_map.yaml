@@ -1,0 +1,17 @@
+# Coverage Map — Source → Wiki Node Mapping
+# Updated by: librarian.py sync
+# Format: source path → list of wiki nodes derived from it
+
+# Example (populated after first ingest):
+# 02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md:
+#   nodes:
+#     - 03_wiki/concepts/Quantitative_Easing.md
+#     - 03_wiki/mechanisms/Interest_Rate_Transmission_Channel.md
+#   ingest_date: 2026-05-21
+#   coverage_pct: 35
+
+sources: {}
+total_sources: 293
+total_ingested: 0
+coverage_pct: 0.0
+last_updated: "2026-05-20"

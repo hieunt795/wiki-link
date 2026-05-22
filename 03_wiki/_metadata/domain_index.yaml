@@ -1,0 +1,22 @@
+# Domain Index — Domain-tagged Node List
+# Updated by: librarian.py sync
+
+domains:
+  monetary_policy:
+    nodes: []
+    count: 0
+  fiscal_policy:
+    nodes: []
+    count: 0
+  basel_risk:
+    nodes: []
+    count: 0
+  financial_markets:
+    nodes: []
+    count: 0
+  macro_outlook:
+    nodes: []
+    count: 0
+
+total_nodes: 0
+last_updated: "2026-05-20"

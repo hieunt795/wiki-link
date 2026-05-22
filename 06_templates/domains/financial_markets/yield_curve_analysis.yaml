@@ -1,0 +1,59 @@
+template_id: fm_yield_curve_v1
+domain: financial_markets
+name: Yield Curve Analysis
+version: 1
+description: "Analyze yield curve shape, term premium, carry, and forward rate implications."
+analysis_mode_recommended: T_MODE_DEEP
+
+objective: >
+  Decompose the current yield curve into its components (expectations + term premium),
+  identify what the shape signals about macro regime expectations, and derive
+  Treasury desk implications for duration positioning and relative value.
+
+key_questions:
+  - "What is the current curve shape: normal, flat, inverted, humped?"
+  - "What does the 2s10s spread imply about growth/recession expectations?"
+  - "How much of the 10Y yield is expectations component vs term premium?"
+  - "What is the carry and rolldown on the current curve?"
+  - "How does the curve compare to historical analogs in similar macro regimes?"
+  - "Where is the relative value: which maturity is cheapest vs rich on the curve?"
+  - "What is the swap spread at 5Y, 10Y, 30Y — and what does it signal?"
+
+required_evidence:
+  - "Par yield curve (current): 2Y, 5Y, 10Y, 30Y"
+  - "OIS curve (market rate expectations): 1Y1Y, 2Y1Y, 5Y5Y"
+  - "Term premium estimates (ACM model or equivalent)"
+  - "Carry and rolldown calculation for key points"
+  - "Swap spread: ASW at key tenors"
+  - "TIPS breakeven inflation by tenor"
+
+preferred_wiki_nodes:
+  - "concepts/Yield_Curve"
+  - "concepts/Term_Premium"
+  - "mechanisms/Yield_Curve_Transmission"
+  - "concepts/Duration_And_Convexity"
+  - "indicators/JGB_10Y_Yield"
+
+preferred_sources:
+  - "02_sources/books/tuckman_serrat_fixed_income/"
+  - "02_sources/books/homer_leibowitz_yield_book/"
+  - "02_sources/books/huggins_schaller_relative_value/"
+
+audit_criteria:
+  - "Current yield data is timestamped: [WEB-YYYY-MM-DD]"
+  - "Term premium vs expectations decomposition is sourced (not just asserted)"
+  - "Carry/rolldown computed for at least 2 tenors"
+  - "Swap spread analysis includes explanation of direction (positive/negative)"
+  - "Relative value conclusion is specific: 'the 5Y is X bps cheap to its fair value' not 'the curve looks flat'"
+
+output_structure:
+  - "Curve shape summary + current levels"
+  - "Macro signal: what is the curve pricing?"
+  - "Term premium decomposition"
+  - "Carry and rolldown by tenor"
+  - "Relative value: rich/cheap map across the curve"
+  - "Swap spread analysis"
+  - "Treasury desk implications"
+
+style: T_MODE_DEEP
+expected_length: "1500-2500 words"

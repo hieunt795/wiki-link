@@ -1,0 +1,33 @@
+template_id: style_policy_note_v1
+name: Policy Note
+version: 1
+audience: policy_maker
+formality: formal_policy
+length_range: "800-1500 words"
+
+structural_conventions:
+  header:
+    required: true
+    fields:
+      - "POLICY NOTE: {topic_title}"
+      - "DATE: {YYYY-MM-DD}"
+      - "PREPARED BY: [Analyst]"
+      - "FOR: [Policy audience]"
+  recommendation_section:
+    required: true
+    placement: after_executive_summary
+    label: "## Policy Recommendation"
+    format: "Clear, actionable recommendation in 2-3 sentences."
+  evidence_section:
+    required: true
+    label: "## Evidence Base"
+  risks_section:
+    required: true
+    label: "## Key Risks to the Recommendation"
+
+tone_rules:
+  - "Policy recommendation is unambiguous — one clear action, not 'consider options'."
+  - "Evidence supports the recommendation directly — no irrelevant data."
+  - "Risks to the recommendation are honest and specific."
+  - "Avoid academic hedging in the recommendation section."
+  - "Quantify the expected impact of the recommendation where possible."

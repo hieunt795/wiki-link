@@ -1,0 +1,96 @@
+# RESEARCH.yaml — Research Session Template
+# Copy this file to 04_research/{topic_slug}/ and fill in the fields.
+# This file is the central state document for a research session.
+
+# ── SESSION IDENTITY ──────────────────────────────────────────────────────────
+topic_slug: REPLACE_WITH_TOPIC_SLUG        # e.g., japan_ycc_2024, basel_iv_impact
+title: "REPLACE WITH FULL TOPIC TITLE"
+created: YYYY-MM-DD
+last_updated: YYYY-MM-DD
+status: active                             # active | paused | complete | archived
+owner: user
+
+# ── TEMPLATE SELECTION ────────────────────────────────────────────────────────
+domain_template: null                      # e.g., 06_templates/domains/monetary_policy/policy_stance_analysis.yaml
+style_template: null                       # e.g., 06_templates/styles/research_memo.yaml
+analysis_mode: standard                    # standard | T_MODE_DEEP
+
+# ── RESEARCH QUESTIONS ────────────────────────────────────────────────────────
+primary_question: >
+  REPLACE WITH PRIMARY RESEARCH QUESTION
+
+sub_questions:
+  - "Sub-question 1"
+  - "Sub-question 2"
+  - "Sub-question 3"
+
+# ── COVERAGE PROBE RESULTS ────────────────────────────────────────────────────
+# Populated by: librarian.py synth "{primary_question}"
+coverage_probe:
+  last_run: null
+  queries: []
+  # Example entry:
+  # - query: "yield curve control Japan BOJ"
+  #   state: INGESTED                      # INGESTED | PENDING | TRUE_GAP
+  #   wiki_sem_score: 0.78
+  #   raw_sem_score: 0.55
+  #   wiki_hits: 3
+  #   raw_hits: 8
+  #   wiki_nodes:
+  #     - "[[BOJ_YCC_Framework]]"
+  #   action: search_pipeline(wiki_only=True)
+
+# ── SOURCE INVENTORY ──────────────────────────────────────────────────────────
+sources_used:
+  wiki: []
+  raw: []
+  fresh_data: []
+  # fresh_data example:
+  # - url: "https://..."
+  #   fetched: YYYY-MM-DD
+  #   content_saved: "04_research/{topic}/data/filename.md"
+
+# ── FINDINGS REGISTRY ─────────────────────────────────────────────────────────
+findings: []
+# Example entry:
+# - file: "findings/concept_name.md"
+#   status: draft                          # draft | stable | promoted
+#   promoted_to: null                      # wiki node path if promoted
+#   confidence: 1
+#   review_needed: true
+#   template_insights: []                  # TEMPLATE_INSIGHT flags
+
+# ── GAP LOG ───────────────────────────────────────────────────────────────────
+gaps: []
+# Example entry:
+# - query: "YCC comparison ECB Fed QE exit"
+#   type: TRUE_GAP
+#   logged: YYYY-MM-DD
+#   action_required: fetch_source
+#   source_candidates:
+#     - "BIS Working Paper on QE exit strategies"
+#   status: open                           # open | resolved
+
+# ── CONTRADICTIONS DETECTED ───────────────────────────────────────────────────
+contradictions: []
+# Example entry:
+# - id: "contra_topic_001"
+#   claim_a: "..."
+#   source_a: "02_sources/..."
+#   claim_b: "..."
+#   source_b: "..."
+#   contradiction_node_created: false
+#   status: open
+
+# ── PROMOTION CHECKLIST ───────────────────────────────────────────────────────
+promotion_candidates: []
+# Example entry:
+# - finding: "findings/concept.md"
+#   ready: false
+#   target_type: mechanism
+#   target_slug: concept_mechanism
+#   blocking_issues:
+#     - "confidence too low (1) — needs source verification"
+
+# ── AUDIT LOG REFERENCE ───────────────────────────────────────────────────────
+audit_log: "04_research/{topic_slug}/audit_log.json"

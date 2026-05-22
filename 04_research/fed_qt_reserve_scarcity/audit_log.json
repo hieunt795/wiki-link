@@ -1,0 +1,37 @@
+{
+  "topic": "fed_qt_reserve_scarcity",
+  "draft_version": 1,
+  "audit_date": "2026-05-20",
+  "checks": {
+    "source_integrity": {
+      "all_claims_have_source_ref": {"status": "PASS", "note": "All structural claims tagged [RAW-BOOK node] or [LLM-E]"},
+      "no_claim_contradicts_high_confidence_wiki": {"status": "PASS", "note": "No contradictions detected"},
+      "fresh_data_has_timestamp": {"status": "N/A", "note": "No fresh data fetched — time-sensitive data flagged as limitation"}
+    },
+    "logic_integrity": {
+      "causal_chains_consistent": {"status": "PASS", "note": "A→B→C chains explicit throughout"},
+      "conclusions_follow_evidence": {"status": "PASS", "note": "Conclusions 1-5 directly traced to findings"},
+      "counterarguments_acknowledged": {"status": "PASS", "note": "Quarter-end vs structural spikes distinguished; distribution vs level distinction made"}
+    },
+    "coverage_integrity": {
+      "all_sub_questions_addressed": {"status": "PARTIAL", "note": "sq1 partial — no current reserve level data. sq4 (SRF mechanics) TRUE_GAP. sq1-3 and sq5 covered."},
+      "true_gaps_in_limitations": {"status": "PASS", "note": "Two TRUE_GAPs explicitly flagged in Limitations section"}
+    },
+    "contradiction_check": {
+      "open_contradictions_acknowledged": {"status": "PASS", "note": "No open contradiction nodes in topic"}
+    },
+    "style": {
+      "length_appropriate": {"status": "PASS", "note": "~1200 words — within research_memo range"},
+      "no_time_sensitive_facts_in_conclusions": {"status": "PASS", "note": "All conclusions framed structurally; specific levels deferred to fresh data"}
+    }
+  },
+  "checks_passed": 9,
+  "checks_failed": 0,
+  "checks_partial": 1,
+  "partial_items": [
+    "sq1 (current reserve level) — requires fresh H.4.1 data to complete"
+  ],
+  "reviewer": "agent_self_audit",
+  "final_approved": true,
+  "notes": "User approved 2026-05-20. Partial on sq1 (current reserve level) acknowledged — structural analysis sufficient for this report. TRUE_GAP on SRF mechanics noted in limitations."
+}

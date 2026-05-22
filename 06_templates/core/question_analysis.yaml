@@ -1,0 +1,71 @@
+template_id: question_analysis_v1
+name: Question Analysis Framework
+version: 1
+applies_to: all_domains
+description: "Decompose any research question into resolvable sub-questions, define scope, and identify gaps BEFORE searching."
+
+version_history:
+  - version: 1
+    date: "2026-05-20"
+    changes: "Initial version"
+
+# ── STRUCTURE ─────────────────────────────────────────────────────────────────
+
+structure:
+  - section: question_decomposition
+    instruction: >
+      Break the primary question into 3-7 resolvable sub-questions.
+      Each sub-question must be independently answerable.
+      Order from most foundational (needed to answer others) to most derivative.
+    output_format: numbered_list
+    example: |
+      1. What is the mechanical structure of YCC (how does the ±band work)?
+      2. How does BOJ's JGB holdings (~50% of market) affect exit feasibility?
+      3. What does the yield curve imply about exit expectations?
+
+  - section: scope_definition
+    instruction: >
+      Define what is IN scope and what is explicitly OUT of scope.
+      This prevents scope creep and tells the reader what the analysis cannot answer.
+    output_format: two_column_table
+    example: |
+      IN scope: BOJ YCC mechanics, balance sheet dynamics, JGB market
+      OUT scope: Currency/JPY impact, equity market effects, PBOC comparison
+
+  - section: knowledge_dependency_map
+    instruction: >
+      For each sub-question, identify which wiki nodes it depends on
+      and which raw sources are most likely relevant.
+      Run coverage probe (librarian.py synth) for each.
+    output_format: yaml_block
+
+  - section: gap_identification
+    instruction: >
+      Before searching, identify which sub-questions are likely TRUE_GAP.
+      Do not waste search effort on known gaps.
+      Suggest source types that would fill each gap.
+    output_format: annotated_list
+
+  - section: research_priority_order
+    instruction: >
+      Final ordered list of sub-questions for the research session.
+      Foundation questions first. TRUE_GAP questions last (acknowledged but not researched further).
+    output_format: numbered_list
+
+# ── KEY QUESTIONS (always ask before starting research) ───────────────────────
+
+key_questions:
+  - "Can this question be answered from the current wiki state, or does it require new ingest?"
+  - "Are there known contradictions in the corpus that bear on this question?"
+  - "What is the minimum set of wiki nodes + sources needed for a credible answer?"
+  - "Is this question time-sensitive (needs fresh data) or structural (durable wiki knowledge suffices)?"
+  - "Is T_MODE_DEEP appropriate here (≥ 3 sub-questions touching Plumbing or Treasury layers)?"
+
+# ── AUDIT CRITERIA ────────────────────────────────────────────────────────────
+
+audit_criteria:
+  - "Sub-questions collectively cover the full scope of the primary question"
+  - "Each sub-question has at least one identified source or wiki node"
+  - "TRUE_GAP sub-questions are explicitly flagged, not silently ignored"
+  - "Priority order is logical (foundational before derivative)"
+  - "Scope boundaries are clear — reader knows what this analysis cannot answer"

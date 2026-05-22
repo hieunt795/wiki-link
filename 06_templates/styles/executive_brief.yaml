@@ -1,0 +1,31 @@
+template_id: style_executive_brief_v1
+name: Executive Brief
+version: 1
+audience: senior_management
+formality: executive
+length_range: "400-800 words"
+
+structural_conventions:
+  header:
+    required: true
+    fields:
+      - "BRIEF: {topic_title}"
+      - "DATE: {YYYY-MM-DD}"
+      - "PREPARED FOR: [Audience]"
+  lead_paragraph: "3 sentences max. Lead with the conclusion."
+  body_structure: "3-4 bullets per topic. Quantify everything."
+  appendix: optional
+
+tone_rules:
+  - "No background or context the reader already knows."
+  - "Every paragraph earns its place. Cut ruthlessly."
+  - "Quantify: not 'significantly higher' but '+47bps'."
+  - "Implications before mechanics — what it means, then why."
+  - "One recommendation per brief, clearly labeled."
+  - "No hedging language unless explicitly flagging a risk."
+
+forbidden_patterns:
+  - Long setup paragraphs explaining background
+  - Methodology explanation
+  - Hedging without quantification ("may", "could" without probability)
+  - More than one recommendation

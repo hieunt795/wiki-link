@@ -1,0 +1,36 @@
+# Reports Index — Published Report Registry
+# Updated by: librarian.py after report approval
+# Format: report metadata + file path
+
+meta:
+  total_reports: 1
+  last_updated: "2026-05-20"
+
+reports:
+  - slug: fed_qt_reserve_scarcity_memo
+    title: "Fed QT and Reserve Scarcity: Plumbing, Signals, and Policy Implications"
+    date: 2026-05-20
+    file: "05_reports/2026-05/fed_qt_reserve_scarcity_memo.md"
+    topic_slug: fed_qt_reserve_scarcity
+    style: research_memo
+    domain: monetary_policy
+    audit_approved: true
+    confidence_floor: 3
+    wiki_nodes_used:
+      - "[[Reserve_Floor_Payment_System_Demand]]"
+      - "[[Quantitative_Tightening_QT_Balance_Sheet_Runoff]]"
+      - "[[Fed_Overnight_Reverse_Repo_ON_RRP]]"
+      - "[[SLR_LCR_Balance_Sheet_Constraints_Treasury_Market_Dealer]]"
+      - "[[Repo_Market_Mechanics_Triparty_Bilateral]]"
+# Example entry:
+# - slug: japan_ycc_exit_risk_memo
+#   title: "Japan YCC Exit Risk — Research Memo"
+#   date: 2026-05-20
+#   file: "05_reports/2026-05/japan_ycc_exit_risk_memo.md"
+#   topic_slug: japan_ycc_2024
+#   style: research_memo
+#   domain: monetary_policy
+#   audit_approved: true
+#   wiki_nodes_used:
+#     - "[[BOJ_YCC_Framework]]"
+#     - "[[Yield_Curve_Control_Mechanism]]"

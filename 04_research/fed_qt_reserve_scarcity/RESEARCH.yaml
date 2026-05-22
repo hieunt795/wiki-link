@@ -1,0 +1,84 @@
+topic_slug: fed_qt_reserve_scarcity
+title: "Fed QT and Reserve Scarcity — Plumbing, Repo Stress, and Policy Implications"
+status: active
+created: 2026-05-20
+
+primary_question: >
+  How does the Fed's Quantitative Tightening affect reserve adequacy, repo market
+  dynamics, and the operational floor of monetary policy — and what are the signals
+  of approaching reserve scarcity?
+
+sub_questions:
+  - sq1: "What is the current level of reserves and how close are we to the 'ample' threshold?"
+  - sq2: "How does QT interact with ON RRP drain and TGA dynamics to affect reserve supply?"
+  - sq3: "What repo market signals indicate reserve stress (SOFR-IORB spread, SOFR spikes)?"
+  - sq4: "What policy tools does the Fed have to manage reserve scarcity (TOMOs, SRF, IORB tiering)?"
+  - sq5: "How do dealer balance sheet constraints (SLR) interact with reserve scarcity?"
+
+coverage_probe:
+  queries:
+    - query: "quantitative tightening reserve scarcity"
+      state: PENDING            # wiki has QT node; raw sources have Duffie BPEA 2026
+      wiki_hits: 2              # QT_Balance_Sheet_Runoff, Reserve_Floor_Payment_System_Demand
+      wiki_nodes:
+        - "[[Quantitative_Tightening_QT_Balance_Sheet_Runoff]]"
+        - "[[Reserve_Floor_Payment_System_Demand]]"
+
+    - query: "ON RRP drain reserve supply Fed"
+      state: INGESTED
+      wiki_hits: 3
+      wiki_nodes:
+        - "[[Fed_Overnight_Reverse_Repo_ON_RRP]]"
+        - "[[Treasury_General_Account_TGA_Reserve_Swap]]"
+        - "[[Reserve_Floor_Payment_System_Demand]]"
+
+    - query: "SOFR spike repo stress September 2019"
+      state: INGESTED
+      wiki_hits: 1
+      wiki_nodes:
+        - "[[Reserve_Floor_Payment_System_Demand]]"
+
+    - query: "SRF standing repo facility Fed policy tools"
+      state: TRUE_GAP
+      gap_note: >
+        No wiki node or raw source covers SRF mechanics in detail.
+        Duffie BPEA 2026 mentions SRF as policy option but not full mechanics.
+      suggested_sources:
+        - "Fed FEDS Notes on Standing Repo Facility (2021)"
+        - "NY Fed: Operating Policy — SRF term sheet"
+        - "Afonso et al. — Reserves Were Not So Ample After All (FRBNY 2022)"
+
+    - query: "reserve ample scarce threshold Fed balance sheet"
+      state: PENDING
+      wiki_hits: 1
+      wiki_nodes:
+        - "[[Reserve_Floor_Payment_System_Demand]]"
+
+sources_used:
+  wiki:
+    - "[[Quantitative_Tightening_QT_Balance_Sheet_Runoff]]"
+    - "[[Reserve_Floor_Payment_System_Demand]]"
+    - "[[Fed_Overnight_Reverse_Repo_ON_RRP]]"
+    - "[[Treasury_General_Account_TGA_Reserve_Swap]]"
+    - "[[Repo_Market_Mechanics_Triparty_Bilateral]]"
+    - "[[SLR_LCR_Balance_Sheet_Constraints_Treasury_Market_Dealer]]"
+    - "[[Swap_Spreads_Balance_Sheet_Plumbing_Frictions]]"
+  raw:
+    - "02_sources/books/duffie_bpea/Duffie_BPEA_Payments_Liquidity_2026.md"
+    - "02_sources/books/conks/Conks - Shadow Banking and Cash Markets.md"
+    - "02_sources/books/conks/Conks - Fed's Policies and Facilities.md"
+    - "02_sources/books/conks/Conks - Liquidity and Market Dynamics.md"
+  fresh_data: []
+
+findings: []
+
+gaps:
+  - query: "SRF standing repo facility mechanics"
+    type: TRUE_GAP
+    action_required: "Acquire Fed FEDS Notes or NY Fed operating policy docs on SRF"
+    status: open
+
+contradictions: []
+
+template: "06_templates/domains/monetary_policy/balance_sheet_operations.yaml"
+output_style: "research_memo"

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Wiki Knowledge Graph</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', sans-serif; background: #0f1117; color: #e0e0e0; height: 100vh; overflow: hidden; }
+
+  #app { display: flex; height: 100vh; }
+
+  #sidebar {
+    width: 320px; min-width: 280px; background: #1a1d27;
+    border-right: 1px solid #2d3148; display: flex; flex-direction: column;
+    z-index: 10; overflow: hidden;
+  }
+
+  #sidebar-header { padding: 16px; border-bottom: 1px solid #2d3148; }
+  #sidebar-header h1 { font-size: 15px; font-weight: 600; color: #a78bfa; margin-bottom: 8px; }
+  #search { width: 100%; background: #0f1117; border: 1px solid #2d3148; border-radius: 6px;
+    padding: 7px 10px; color: #e0e0e0; font-size: 13px; outline: none; }
+  #search:focus { border-color: #a78bfa; }
+
+  #filters { padding: 10px 16px; border-bottom: 1px solid #2d3148; display: flex; flex-wrap: wrap; gap: 6px; }
+  .filter-btn {
+    font-size: 11px; padding: 3px 8px; border-radius: 12px; border: 1px solid transparent;
+    cursor: pointer; transition: all .15s;
+  }
+  .filter-btn.active { opacity: 1; }
+  .filter-btn:not(.active) { opacity: 0.4; }
+
+  #node-list { flex: 1; overflow-y: auto; padding: 8px; }
+  .node-item { padding: 8px 10px; border-radius: 6px; cursor: pointer; margin-bottom: 3px;
+    border: 1px solid transparent; transition: all .12s; }
+  .node-item:hover { background: #2d3148; border-color: #3d4168; }
+  .node-item.selected { background: #2d1f4e; border-color: #a78bfa; }
+  .node-title { font-size: 12px; font-weight: 500; line-height: 1.4; }
+  .node-meta { font-size: 10px; color: #888; margin-top: 2px; }
+  .conf-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 3px; }
+
+  #canvas-area { flex: 1; position: relative; overflow: hidden; }
+  #graph-svg { width: 100%; height: 100%; }
+
+  #detail-panel {
+    position: absolute; right: 16px; top: 16px; width: 300px;
+    background: #1a1d27; border: 1px solid #2d3148; border-radius: 10px;
+    padding: 16px; display: none; z-index: 20; max-height: calc(100vh - 80px); overflow-y: auto;
+  }
+  #detail-panel h2 { font-size: 13px; font-weight: 600; color: #a78bfa; margin-bottom: 6px; line-height: 1.4; }
+  #detail-panel .badge { display: inline-block; font-size: 10px; padding: 2px 7px; border-radius: 10px;
+    margin-right: 4px; margin-bottom: 6px; }
+  #detail-thesis { font-size: 12px; line-height: 1.6; color: #c0c0c0; margin-bottom: 10px; }
+  #detail-relations { font-size: 11px; }
+  #detail-relations h3 { font-size: 11px; color: #888; margin-bottom: 5px; text-transform: uppercase; letter-spacing: .05em; }
+  .rel-link { display: block; color: #60a5fa; margin-bottom: 3px; cursor: pointer; }
+  .rel-link:hover { color: #93c5fd; }
+  #close-detail { position: absolute; top: 10px; right: 12px; background: none; border: none;
+    color: #888; font-size: 18px; cursor: pointer; line-height: 1; }
+  #close-detail:hover { color: #e0e0e0; }
+
+  #stats { position: absolute; left: 10px; bottom: 10px; font-size: 11px; color: #555; }
+
+  #controls { position: absolute; bottom: 16px; right: 16px; display: flex; gap: 6px; }
+  .ctrl-btn { background: #1a1d27; border: 1px solid #2d3148; color: #888; padding: 6px 10px;
+    border-radius: 6px; font-size: 12px; cursor: pointer; }
+  .ctrl-btn:hover { color: #e0e0e0; border-color: #5b6396; }
+
+  .link { stroke-opacity: 0.5; }
+  .node circle { cursor: pointer; stroke-width: 2; transition: stroke .15s; }
+  .node circle:hover { stroke-width: 3; }
+  .node text { pointer-events: none; font-size: 10px; fill: #ccc; }
+
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #2d3148; border-radius: 3px; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="sidebar">
+    <div id="sidebar-header">
+      <h1>Wiki Knowledge Graph</h1>
+      <input id="search" type="text" placeholder="Search nodes...">
+    </div>
+    <div id="filters"></div>
+    <div id="node-list"></div>
+  </div>
+  <div id="canvas-area">
+    <svg id="graph-svg"></svg>
+    <div id="detail-panel">
+      <button id="close-detail">×</button>
+      <h2 id="detail-title"></h2>
+      <div id="detail-badges"></div>
+      <p id="detail-thesis"></p>
+      <div id="detail-relations"></div>
+    </div>
+    <div id="stats"></div>
+    <div id="controls">
+      <button class="ctrl-btn" id="btn-reset">Reset view</button>
+      <button class="ctrl-btn" id="btn-labels">Labels: ON</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const DOMAIN_COLORS = {
+  monetary_policy:   '#a78bfa',
+  financial_markets: '#34d399',
+  fiscal_policy:     '#fbbf24',
+  basel_risk:        '#f87171',
+  macro_outlook:     '#60a5fa',
+};
+const TYPE_SHAPES = {
+  concept:       'circle',
+  mechanism:     'diamond',
+  framework:     'square',
+  entity:        'triangle',
+  relationship:  'circle',
+  contradiction: 'cross',
+  synthesis:     'star',
+  policy:        'pentagon',
+  indicator:     'circle',
+};
+const RELATION_COLORS = {
+  mechanism_of: '#a78bfa', produces: '#34d399', constrains: '#f87171',
+  depends_on: '#fbbf24', interacts_with: '#60a5fa', often_combined_with: '#94a3b8',
+  substitutes_for: '#fb923c', amplifies: '#e879f9', attenuates: '#22d3ee',
+  related: '#4b5563', contradicts: '#ef4444',
+};
+
+let showLabels = true;
+let selectedNode = null;
+let graphData = null;
+let simulation = null;
+let svgSelection = null, gMain = null;
+let linkSel = null, nodeSel = null;
+let activeFilters = new Set(['all']);
+
+// ── Load data ──────────────────────────────────────────────────────────────────
+fetch('graphify-out/wiki_graph_data.json')
+  .then(r => r.json())
+  .then(data => { graphData = data; init(data); })
+  .catch(() => {
+    document.getElementById('stats').textContent = 'Error loading graph data. Run the extraction script first.';
+  });
+
+function init(data) {
+  const { nodes, edges } = data;
+
+  // Build adjacency for detail panel
+  const adjOut = {}, adjIn = {};
+  edges.forEach(e => {
+    (adjOut[e.source] = adjOut[e.source] || []).push(e);
+    (adjIn[e.target] = adjIn[e.target] || []).push(e);
+  });
+
+  // Resolve edge targets to node ids (edges may use title strings)
+  const idByTitle = {};
+  nodes.forEach(n => { idByTitle[n.title.toLowerCase()] = n.id; });
+  edges.forEach(e => {
+    if (!idByTitle[e.target] && !nodes.find(n => n.id === e.target)) {
+      // try partial match
+      const key = Object.keys(idByTitle).find(k => k.includes(e.target.toLowerCase()));
+      if (key) e.target = idByTitle[key];
+    }
+  });
+  const validIds = new Set(nodes.map(n => n.id));
+  const links = edges.filter(e => validIds.has(e.source) && validIds.has(e.target));
+
+  // ── Sidebar filters ──────────────────────────────────────────────────────────
+  const domains = [...new Set(nodes.map(n => n.domain))].filter(Boolean);
+  const filterDiv = document.getElementById('filters');
+  const allBtn = document.createElement('button');
+  allBtn.className = 'filter-btn active';
+  allBtn.textContent = 'All';
+  allBtn.dataset.domain = 'all';
+  allBtn.style.background = '#2d3148'; allBtn.style.color = '#e0e0e0';
+  allBtn.style.borderColor = '#5b6396';
+  filterDiv.appendChild(allBtn);
+  domains.forEach(d => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn active';
+    btn.textContent = d.replace('_', ' ');
+    btn.dataset.domain = d;
+    btn.style.background = hexToRgba(DOMAIN_COLORS[d] || '#888', 0.15);
+    btn.style.color = DOMAIN_COLORS[d] || '#888';
+    btn.style.borderColor = DOMAIN_COLORS[d] || '#888';
+    filterDiv.appendChild(btn);
+  });
+
+  filterDiv.addEventListener('click', e => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+    const d = btn.dataset.domain;
+    if (d === 'all') {
+      activeFilters = new Set(['all', ...domains]);
+      filterDiv.querySelectorAll('.filter-btn').forEach(b => b.classList.add('active'));
+    } else {
+      activeFilters.delete('all');
+      filterDiv.querySelector('[data-domain=all]').classList.remove('active');
+      if (activeFilters.has(d)) { activeFilters.delete(d); btn.classList.remove('active'); }
+      else { activeFilters.add(d); btn.classList.add('active'); }
+      if (activeFilters.size === domains.length) {
+        activeFilters.add('all');
+        filterDiv.querySelector('[data-domain=all]').classList.add('active');
+      }
+    }
+    updateVisibility();
+  });
+  activeFilters = new Set(['all', ...domains]);
+
+  // ── Node list ────────────────────────────────────────────────────────────────
+  const nodeList = document.getElementById('node-list');
+  function buildNodeList(filter = '') {
+    nodeList.innerHTML = '';
+    const q = filter.toLowerCase();
+    nodes.filter(n => !q || n.title.toLowerCase().includes(q) || n.thesis.toLowerCase().includes(q))
+      .forEach(n => {
+        const div = document.createElement('div');
+        div.className = 'node-item';
+        div.dataset.id = n.id;
+        const color = DOMAIN_COLORS[n.domain] || '#888';
+        const stars = '★'.repeat(n.confidence) + '☆'.repeat(5 - n.confidence);
+        div.innerHTML = `
+          <div class="node-title">
+            <span class="conf-dot" style="background:${color}"></span>${n.title}
+          </div>
+          <div class="node-meta">${n.type} · ${n.domain.replace('_',' ')} · <span style="color:${color}">${stars}</span></div>`;
+        div.addEventListener('click', () => focusNode(n.id));
+        nodeList.appendChild(div);
+      });
+  }
+  buildNodeList();
+  document.getElementById('search').addEventListener('input', e => buildNodeList(e.target.value));
+
+  // ── D3 Graph ─────────────────────────────────────────────────────────────────
+  const svg = d3.select('#graph-svg');
+  const W = svg.node().clientWidth;
+  const H = svg.node().clientHeight;
+
+  svg.call(d3.zoom().scaleExtent([0.1, 4]).on('zoom', e => gMain.attr('transform', e.transform)));
+  gMain = svg.append('g');
+
+  // Arrow markers
+  const defs = svg.append('defs');
+  Object.entries(RELATION_COLORS).forEach(([rel, col]) => {
+    defs.append('marker').attr('id', `arrow-${rel}`).attr('viewBox','0 -5 10 10')
+      .attr('refX', 22).attr('refY', 0).attr('markerWidth', 6).attr('markerHeight', 6)
+      .attr('orient', 'auto')
+      .append('path').attr('d', 'M0,-5L10,0L0,5').attr('fill', col).attr('opacity', 0.7);
+  });
+
+  simulation = d3.forceSimulation(nodes)
+    .force('link', d3.forceLink(links).id(d => d.id).distance(120).strength(0.4))
+    .force('charge', d3.forceManyBody().strength(-350))
+    .force('center', d3.forceCenter(W / 2, H / 2))
+    .force('collision', d3.forceCollide(32));
+
+  linkSel = gMain.append('g').selectAll('line').data(links).join('line')
+    .attr('class', 'link')
+    .attr('stroke', d => RELATION_COLORS[d.relation] || '#4b5563')
+    .attr('stroke-width', d => d.relation === 'contradicts' ? 2 : 1.5)
+    .attr('stroke-dasharray', d => d.relation === 'contradicts' ? '5,3' : null)
+    .attr('marker-end', d => `url(#arrow-${d.relation})`);
+
+  nodeSel = gMain.append('g').selectAll('g').data(nodes).join('g')
+    .attr('class', 'node')
+    .call(d3.drag()
+      .on('start', (event, d) => { if (!event.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+      .on('drag', (event, d) => { d.fx = event.x; d.fy = event.y; })
+      .on('end', (event, d) => { if (!event.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }))
+    .on('click', (event, d) => { event.stopPropagation(); focusNode(d.id); });
+
+  nodeSel.append('circle')
+    .attr('r', d => 8 + d.confidence * 2.5)
+    .attr('fill', d => hexToRgba(DOMAIN_COLORS[d.domain] || '#888', 0.25))
+    .attr('stroke', d => DOMAIN_COLORS[d.domain] || '#888');
+
+  // Type indicator ring
+  nodeSel.append('circle')
+    .attr('r', 4)
+    .attr('fill', d => DOMAIN_COLORS[d.domain] || '#888')
+    .attr('opacity', 0.8);
+
+  const labelG = nodeSel.append('g').attr('class', 'label-g');
+  labelG.append('text')
+    .attr('x', d => 10 + d.confidence * 2.5)
+    .attr('dy', '0.35em')
+    .text(d => truncate(d.title, 28))
+    .attr('fill', '#bbb')
+    .attr('font-size', '10px');
+
+  simulation.on('tick', () => {
+    linkSel.attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+           .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+    nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
+  });
+
+  svg.on('click', () => { deselectNode(); document.getElementById('detail-panel').style.display = 'none'; });
+
+  // ── Detail panel ─────────────────────────────────────────────────────────────
+  document.getElementById('close-detail').addEventListener('click', () => {
+    document.getElementById('detail-panel').style.display = 'none';
+    deselectNode();
+  });
+
+  function focusNode(id) {
+    selectedNode = id;
+    const n = nodes.find(x => x.id === id);
+    if (!n) return;
+
+    // Sidebar highlight
+    document.querySelectorAll('.node-item').forEach(el => {
+      el.classList.toggle('selected', el.dataset.id === id);
+    });
+    document.querySelector(`.node-item[data-id="${id}"]`)?.scrollIntoView({ block: 'nearest' });
+
+    // Graph highlight
+    nodeSel.select('circle:first-child')
+      .attr('stroke-width', d => d.id === id ? 3.5 : 2)
+      .attr('stroke', d => d.id === id ? '#fff' : (DOMAIN_COLORS[d.domain] || '#888'));
+
+    linkSel.attr('opacity', l => l.source.id === id || l.target.id === id ? 1 : 0.15);
+    nodeSel.attr('opacity', d => {
+      if (d.id === id) return 1;
+      const connected = links.some(l => (l.source.id === id && l.target.id === d.id) || (l.target.id === id && l.source.id === d.id));
+      return connected ? 0.9 : 0.3;
+    });
+
+    // Detail panel
+    const color = DOMAIN_COLORS[n.domain] || '#888';
+    document.getElementById('detail-title').textContent = n.title;
+    document.getElementById('detail-badges').innerHTML = `
+      <span class="badge" style="background:${hexToRgba(color,.2)};color:${color};border:1px solid ${color}">${n.type}</span>
+      <span class="badge" style="background:#1f2937;color:#9ca3af;border:1px solid #374151">${n.domain.replace(/_/g,' ')}</span>
+      <span class="badge" style="background:#1f2937;color:#fbbf24;border:1px solid #374151">conf ${n.confidence}/5</span>
+      <span class="badge" style="background:#1f2937;color:#6b7280;border:1px solid #374151">${n.stability}</span>`;
+    document.getElementById('detail-thesis').textContent = n.thesis + (n.thesis.length >= 300 ? '…' : '');
+
+    const outLinks = links.filter(l => l.source.id === id);
+    const inLinks  = links.filter(l => l.target.id === id);
+    let relHtml = '';
+    if (outLinks.length) {
+      relHtml += '<h3>Links to</h3>';
+      outLinks.forEach(l => {
+        const tn = nodes.find(x => x.id === l.target.id);
+        if (tn) relHtml += `<span class="rel-link" onclick="focusNodeGlobal('${tn.id}')">→ ${tn.title} <em style="color:#555">(${l.relation})</em></span>`;
+      });
+    }
+    if (inLinks.length) {
+      relHtml += '<h3 style="margin-top:8px">Linked from</h3>';
+      inLinks.forEach(l => {
+        const sn = nodes.find(x => x.id === l.source.id);
+        if (sn) relHtml += `<span class="rel-link" onclick="focusNodeGlobal('${sn.id}')">← ${sn.title} <em style="color:#555">(${l.relation})</em></span>`;
+      });
+    }
+    if (!outLinks.length && !inLinks.length) relHtml = '<p style="color:#555;font-size:11px">No connections yet.</p>';
+    document.getElementById('detail-relations').innerHTML = relHtml;
+    document.getElementById('detail-panel').style.display = 'block';
+  }
+
+  window.focusNodeGlobal = focusNode;
+
+  function deselectNode() {
+    selectedNode = null;
+    nodeSel.select('circle:first-child')
+      .attr('stroke-width', 2)
+      .attr('stroke', d => DOMAIN_COLORS[d.domain] || '#888');
+    linkSel.attr('opacity', 0.5);
+    nodeSel.attr('opacity', 1);
+    document.querySelectorAll('.node-item').forEach(el => el.classList.remove('selected'));
+  }
+
+  function updateVisibility() {
+    nodeSel.attr('display', d => activeFilters.has(d.domain) ? null : 'none');
+    linkSel.attr('display', l => {
+      const srcOk = activeFilters.has(l.source.domain);
+      const tgtOk = activeFilters.has(l.target.domain);
+      return srcOk && tgtOk ? null : 'none';
+    });
+  }
+
+  // ── Controls ─────────────────────────────────────────────────────────────────
+  document.getElementById('btn-reset').addEventListener('click', () => {
+    svg.transition().duration(400).call(
+      d3.zoom().transform, d3.zoomIdentity.translate(W/2, H/2).scale(0.9).translate(-W/2, -H/2)
+    );
+  });
+
+  document.getElementById('btn-labels').addEventListener('click', function() {
+    showLabels = !showLabels;
+    this.textContent = `Labels: ${showLabels ? 'ON' : 'OFF'}`;
+    gMain.selectAll('.label-g').attr('display', showLabels ? null : 'none');
+  });
+
+  // ── Stats ─────────────────────────────────────────────────────────────────────
+  document.getElementById('stats').textContent =
+    `${nodes.length} nodes · ${links.length} edges · ${domains.length} domains`;
+}
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function hexToRgba(hex, alpha) {
+  const r = parseInt(hex.slice(1,3),16), g = parseInt(hex.slice(3,5),16), b = parseInt(hex.slice(5,7),16);
+  return `rgba(${r},${g},${b},${alpha})`;
+}
+function truncate(str, n) { return str.length > n ? str.slice(0,n) + '…' : str; }
+</script>
+</body>
+</html>

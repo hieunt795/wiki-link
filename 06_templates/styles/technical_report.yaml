@@ -1,0 +1,25 @@
+template_id: style_technical_report_v1
+name: Technical Report
+version: 1
+audience: technical_analyst
+formality: technical_analytical
+length_range: "3000-6000 words"
+
+structural_conventions:
+  header:
+    required: true
+    fields:
+      - "TECHNICAL REPORT: {topic_title}"
+      - "DATE: {YYYY-MM-DD}"
+      - "VERSION: {version}"
+  abstract: required
+  methodology_section: required
+  appendices: required
+  full_bibliography: required
+
+tone_rules:
+  - "Methodology must be fully described — reproducibility standard."
+  - "All models, equations, and calibrations must be cited."
+  - "Assumptions stated explicitly and their sensitivity tested."
+  - "Limitations section is not defensive — it is scientifically required."
+  - "Data sources listed with access dates."

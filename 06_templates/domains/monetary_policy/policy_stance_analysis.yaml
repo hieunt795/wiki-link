@@ -1,0 +1,68 @@
+template_id: mp_policy_stance_v1
+domain: monetary_policy
+name: Central Bank Policy Stance Analysis
+version: 1
+description: "Assess a CB's current rate cycle position, effective constraint, and forward guidance implications."
+
+version_history:
+  - version: 1
+    date: "2026-05-20"
+    changes: "Initial version"
+
+objective: >
+  Assess the current monetary policy stance of a central bank: where it sits in the cycle,
+  what the effective constraint is (inflation vs growth vs financial stability),
+  and what the forward guidance implies for the next 2-4 meetings.
+
+key_questions:
+  - "What is the current policy rate and its distance from neutral (r*)?"
+  - "What is the CB's stated inflation target and current inflation (headline + core)?"
+  - "Is the CB in a hiking, holding, or cutting phase?"
+  - "What are the stated preconditions for a policy change?"
+  - "What does the OIS/rates market imply about market expectations?"
+  - "Are there balance sheet operations (QE/QT) running alongside rate policy?"
+  - "What is the CB's credibility score (forecast accuracy, communication consistency)?"
+  - "Is there a fiscal-monetary tension (high issuance, TGA dynamics, debt sustainability)?"
+
+required_evidence:
+  - "Current policy rate + terminal rate (CB projection vs market OIS)"
+  - "Inflation data: headline + core, at least 6 months of data"
+  - "CB's own forecasts (MPR, SEP, or equivalent)"
+  - "Market pricing: OIS curve or equivalent rates market"
+  - "Recent CB communication: minutes, speeches, press conference Q&A"
+  - "Balance sheet: size, composition, trajectory (QE/QT pace)"
+
+preferred_wiki_nodes:
+  - "concepts/Inflation_Targeting"
+  - "mechanisms/Interest_Rate_Transmission_Channel"
+  - "frameworks/Corridor_Floor_System"
+  - "concepts/Forward_Guidance"
+  - "concepts/Quantitative_Easing"
+  - "concepts/Quantitative_Tightening"
+
+preferred_sources:
+  - "02_sources/books/bindseil_monetary_policy/"
+  - "02_sources/books/central_policy_Perry/"
+  - "02_sources/Clipping/ [recent CB commentary]"
+  - "02_sources/books/central_bank_balance_sheet/"
+
+audit_criteria:
+  - "Rate analysis includes both nominal and real rate (deflated by current inflation)"
+  - "Inflation assessment uses at least 2 measures (e.g., headline CPI + core PCE)"
+  - "Forward guidance is quoted directly, not paraphrased without attribution"
+  - "Market expectations (OIS pricing) are compared to CB guidance — divergence noted"
+  - "If balance sheet operations are active, they are described alongside rate stance"
+  - "Fiscal-monetary interaction noted if TGA/issuance is a relevant factor"
+
+output_structure:
+  - "Policy stance summary (1 paragraph, lead with the conclusion)"
+  - "Rate cycle positioning (hiking / holding / cutting + distance from neutral)"
+  - "Inflation dynamics (headline, core, trend, CB target vs actual)"
+  - "Balance sheet posture (QE/QT active? Size/pace?)"
+  - "Forward guidance decoding (what did the CB actually say?)"
+  - "Market vs CB divergence (where does market price differ from CB guidance?)"
+  - "Key risk to baseline (what could change the call?)"
+
+style: research_memo
+tone: "Analytical, precise, no hedging on well-supported claims. Active voice throughout."
+expected_length: "1200-2000 words"

@@ -1,0 +1,69 @@
+template_id: report_outline_v1
+name: Universal Report Outline
+version: 1
+applies_to: all_domains
+description: "Default section structure for all reports. Style templates may override or restrict sections."
+
+version_history:
+  - version: 1
+    date: "2026-05-20"
+    changes: "Initial version"
+
+sections:
+  - id: executive_summary
+    required: true
+    max_words: 250
+    instruction: >
+      Key findings + actionable conclusions only. No methodology. No background.
+      Lead with the answer to the primary question. State confidence level explicitly.
+      Format: 3-5 sentences or 3-5 bullets.
+
+  - id: context_and_scope
+    required: true
+    instruction: >
+      Why this question matters now. What is in scope and what is explicitly out of scope.
+      Reference the primary question from RESEARCH.yaml.
+      Max 200 words.
+
+  - id: analytical_framework
+    required: false
+    instruction: >
+      Which analytical lens is being applied (IS-LM, flow-of-funds, T-account tracing, etc.)
+      Reference the domain template used. Note if T_MODE_DEEP was applied.
+      Omit for simple factual reports.
+
+  - id: findings
+    required: true
+    instruction: >
+      One subsection per sub-question from RESEARCH.yaml.
+      Each subsection must: (1) state the finding, (2) cite sources, (3) note confidence.
+      Use source labels: [RAW-Author p.X] or [WEB-YYYY-MM-DD].
+
+  - id: contradictions_and_debates
+    required: conditional    # required if any open contradictions exist in RESEARCH.yaml
+    instruction: >
+      Document what the sources disagree on. Do not paper over it.
+      Reference contradiction nodes in 03_wiki/contradictions/.
+      State resolution status: open | context_dependent | resolved.
+
+  - id: limitations_and_gaps
+    required: true
+    instruction: >
+      What the analysis could NOT answer. TRUE_GAP items from RESEARCH.yaml go here.
+      State what sources would fill each gap.
+      This section is honest, not defensive — gaps are expected and useful.
+
+  - id: conclusions
+    required: true
+    instruction: >
+      Answer the primary question directly. One paragraph.
+      State confidence: HIGH (conf>=4 sources) / MEDIUM (conf=3) / LOW (conf<=2).
+      State the critical caveat — the condition under which the conclusion is wrong.
+
+  - id: appendix_sources
+    required: true
+    instruction: >
+      Full list organized in three groups:
+      1. Wiki nodes used (03_wiki/... paths)
+      2. Raw sources used (02_sources/... paths + pages)
+      3. Fresh data fetched (URL + date)

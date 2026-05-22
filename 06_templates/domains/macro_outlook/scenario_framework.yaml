@@ -1,0 +1,62 @@
+template_id: macro_scenario_v1
+domain: macro_outlook
+name: Macro Scenario Framework
+version: 1
+description: "Build structured Base/Bull/Bear/Tail scenarios with explicit triggers, probabilities, and monitoring indicators."
+
+objective: >
+  Construct a 4-scenario framework (Base, Bull, Bear, Tail) with explicit trigger conditions,
+  probability weights, macro path, and monitoring indicators. Probabilities must sum to ~100%.
+
+key_questions:
+  - "What is the base case macro path (growth, inflation, rates) over 12 months?"
+  - "What are the 2-3 conditions that would shift to the bull scenario?"
+  - "What are the 2-3 conditions that would shift to the bear scenario?"
+  - "What is the plausible tail risk (low probability, high impact)?"
+  - "What market/economic indicators give early warning of scenario shift?"
+  - "Which assets benefit/suffer in each scenario?"
+
+required_evidence:
+  - "Current macro data: GDP growth, CPI, unemployment, credit conditions"
+  - "CB forward guidance: rate path, balance sheet trajectory"
+  - "Fiscal stance: deficit, issuance calendar, sustainability metrics"
+  - "Leading indicators: PMI, yield curve, credit spreads"
+
+scenario_structure:
+  required_scenarios:
+    - id: base
+      label: "Base Case"
+      probability_range: "50-65%"
+      description: "Most likely outcome given current trajectory"
+    - id: bull
+      label: "Bull Case"
+      probability_range: "15-25%"
+      description: "Favorable deviation from base (soft landing, disinflation, policy easing)"
+    - id: bear
+      label: "Bear Case"
+      probability_range: "15-25%"
+      description: "Adverse deviation from base (stagflation, credit crunch, policy mistake)"
+    - id: tail
+      label: "Tail Risk"
+      probability_range: "<10%"
+      description: "Low probability, high impact — system-level stress"
+
+per_scenario_sections:
+  - "Trigger conditions / assumptions (what must be true for this scenario to activate)"
+  - "Macro path: growth, inflation, rates (12-month trajectory)"
+  - "Asset market implications (rates, credit spreads, FX, equity)"
+  - "Policy response expected (CB reaction function)"
+  - "Key monitoring indicators (2-3 metrics to watch)"
+
+scenario_comparison_table: required
+
+audit_criteria:
+  - "Probabilities sum to approximately 100%"
+  - "Each scenario has distinct, non-overlapping trigger conditions"
+  - "All probabilities are explicit — no 'likely' or 'possible' without a number"
+  - "Tail risk described without catastrophizing — specific mechanism, not general fear"
+  - "Monitoring indicators are observable in real-time (not just theoretical)"
+  - "At least one asset implication per scenario"
+
+style: scenario_analysis
+expected_length: "2000-4000 words"

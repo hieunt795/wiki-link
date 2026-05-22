@@ -1,0 +1,49 @@
+template_id: style_research_memo_v1
+name: Research Memo
+version: 1
+audience: internal_analyst
+formality: professional_analytical
+length_range: "1200-3000 words"
+
+structural_conventions:
+  header:
+    required: true
+    fields:
+      - "TO: [Recipient or 'Internal']"
+      - "FROM: [Analyst]"
+      - "DATE: {YYYY-MM-DD}"
+      - "RE: {topic_title}"
+      - "CLASSIFICATION: Internal"
+  executive_summary:
+    required: true
+    max_words: 200
+    placement: before_body
+  section_headers:
+    required: true
+    style: "## Section Name"
+  footnotes_or_endnotes: footnotes
+  source_list:
+    required: true
+    label: "## Sources"
+    placement: end
+
+tone_rules:
+  - "State conclusions directly. No hedging on well-supported claims."
+  - "Use present tense for structural facts, past tense for historical events."
+  - "Active voice preferred throughout."
+  - "Technical terms used without apology; define only on first use."
+  - "Numbers: 2 decimal places for rates (4.25%), 0 for basis points (125bps not 125.00bps)."
+  - "Central banks: 'the Fed', 'the BOJ', 'the ECB' — no 'the' for PBOC, RBA, RBNZ."
+  - "Do not bury the conclusion in the final paragraph — lead with it."
+
+forbidden_patterns:
+  - "It is worth noting that..."
+  - "Interestingly, ..."
+  - "As we can see from..."
+  - "It goes without saying..."
+  - "It should be noted..."
+  - "Obviously..."
+  - Passive voice for conclusions (e.g., "it was concluded that" → "we conclude")
+  - Conclusions buried in the last paragraph
+
+citation_style: "inline_brackets [Author YYYY, p.X] or [WEB-YYYY-MM-DD]"

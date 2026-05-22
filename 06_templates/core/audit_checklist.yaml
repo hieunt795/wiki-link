@@ -1,0 +1,135 @@
+template_id: audit_checklist_v1
+name: Analysis Audit Checklist
+version: 1
+applies_to: all_domains
+description: "10-point quality gate run before any draft becomes a final report. Agent runs this automatically; user reviews only failed items."
+
+version_history:
+  - version: 1
+    date: "2026-05-20"
+    changes: "Initial version"
+
+# ── CHECKLIST ─────────────────────────────────────────────────────────────────
+# pass: null = not yet evaluated
+# pass: true = check passed
+# pass: false = check failed — must be resolved or acknowledged before approval
+
+checks:
+
+  # Category A: Source Integrity
+  - id: A1
+    category: source_integrity
+    check: "Every factual claim has a source_ref, [WEB-date], [RAW-source], or [citation needed] marker"
+    severity: blocking                     # blocking | warning
+    pass: null
+    notes: ""
+
+  - id: A2
+    category: source_integrity
+    check: "No claim contradicts a confidence>=4 wiki node without explicit explanation or contradiction node"
+    severity: blocking
+    pass: null
+    notes: ""
+
+  - id: A3
+    category: source_integrity
+    check: "Fresh data (web-fetched) is timestamped and the timestamp is visible in the draft"
+    severity: blocking
+    pass: null
+    notes: ""
+
+  # Category B: Logic Integrity
+  - id: B1
+    category: logic_integrity
+    check: "Causal chains are directionally consistent — no circular reasoning"
+    severity: blocking
+    pass: null
+    notes: ""
+
+  - id: B2
+    category: logic_integrity
+    check: "Conclusions follow from the evidence presented — no unsupported leaps"
+    severity: blocking
+    pass: null
+    notes: ""
+
+  - id: B3
+    category: logic_integrity
+    check: "Counter-arguments or alternative interpretations are acknowledged"
+    severity: warning
+    pass: null
+    notes: ""
+
+  # Category C: Coverage Integrity
+  - id: C1
+    category: coverage_integrity
+    check: "All sub_questions in RESEARCH.yaml are addressed OR explicitly noted as out-of-scope"
+    severity: blocking
+    pass: null
+    notes: ""
+
+  - id: C2
+    category: coverage_integrity
+    check: "TRUE_GAP items from RESEARCH.yaml appear in the draft's limitations section"
+    severity: blocking
+    pass: null
+    notes: ""
+
+  # Category D: Contradiction Integrity
+  - id: D1
+    category: contradiction_integrity
+    check: "All open contradictions in RESEARCH.yaml contradictions[] are acknowledged in the draft"
+    severity: warning
+    pass: null
+    notes: ""
+
+  - id: D2
+    category: contradiction_integrity
+    check: "Contradiction nodes exist in 03_wiki/contradictions/ for all conflicts detected during research"
+    severity: warning
+    pass: null
+    notes: ""
+
+  # Category E: Style Compliance
+  - id: E1
+    category: style_compliance
+    check: "Draft follows the selected style template structure (required sections are present)"
+    severity: warning
+    pass: null
+    notes: ""
+
+  # T_MODE_DEEP extra checks (only active when analysis_mode == T_MODE_DEEP)
+  - id: T1
+    category: t_mode_deep
+    check: "[T_MODE_DEEP only] All specific numbers have source labels: [WEB-date], [RAW-source], or [LLM-E]"
+    severity: blocking
+    active_when: "analysis_mode == T_MODE_DEEP"
+    pass: null
+    notes: ""
+
+  - id: T2
+    category: t_mode_deep
+    check: "[T_MODE_DEEP only] No gaming/combat metaphors (Rule 11: describe mechanism, not label it)"
+    severity: warning
+    active_when: "analysis_mode == T_MODE_DEEP"
+    pass: null
+    notes: ""
+
+  - id: T3
+    category: t_mode_deep
+    check: "[T_MODE_DEEP only] Causal claims follow A→B→C structure with explicit conditions"
+    severity: blocking
+    active_when: "analysis_mode == T_MODE_DEEP"
+    pass: null
+    notes: ""
+
+# ── RESOLUTION PROTOCOL ───────────────────────────────────────────────────────
+
+resolution_protocol:
+  blocking_fail: >
+    Agent must resolve before presenting to user OR explicitly ask user whether to proceed
+    with the unresolved issue documented in the draft's limitations section.
+  warning_fail: >
+    Agent notes the warning in the audit summary. User decides whether to address or accept.
+  all_pass: >
+    Draft is approved for final report writing. Set audit_log entry with reviewer: user_approved.

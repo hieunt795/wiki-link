@@ -1,0 +1,61 @@
+template_id: mp_balance_sheet_v1
+domain: monetary_policy
+name: Central Bank Balance Sheet Operations
+version: 1
+description: "Analyze CB balance sheet dynamics: QE/QT mechanics, reserve supply, corridor vs floor system, and transmission."
+analysis_mode_recommended: T_MODE_DEEP
+
+objective: >
+  Understand the operational mechanics of a CB's balance sheet policy, the reserve supply
+  regime (scarce/ample/excess), the rate-setting framework (corridor vs floor), and
+  the plumbing implications for money markets and bank funding.
+
+key_questions:
+  - "What is the current reserve regime: scarce, ample, or excess reserves?"
+  - "Does the CB operate a corridor or floor system? What determines the rate?"
+  - "If QE is active: what assets are being purchased, at what pace, and through what mechanism?"
+  - "If QT is active: passive runoff or active sales? What is the pace?"
+  - "How do reserve levels affect overnight rates (SOFR, EFFR, repo)?"
+  - "What is the relationship between reserve supply and bank funding costs?"
+  - "What is the 'ample reserves buffer' — how much buffer does the CB maintain?"
+
+required_evidence:
+  - "CB balance sheet: total assets, reserves, securities held"
+  - "Overnight rate: SOFR/EFFR spread to IOER/IORB"
+  - "Repo market: GCF repo, tri-party, O/N repo rates"
+  - "ONRRP usage (Fed) or deposit facility usage (ECB)"
+  - "Reserve aggregate data (H.4.1 for Fed, ECB weekly)"
+
+preferred_wiki_nodes:
+  - "frameworks/Corridor_Floor_System"
+  - "mechanisms/Reserve_Supply_Mechanism"
+  - "concepts/Quantitative_Easing"
+  - "concepts/Quantitative_Tightening"
+  - "indicators/SOFR_Rate"
+  - "entities/Federal_Reserve"
+
+preferred_sources:
+  - "02_sources/books/bindseil_monetary_policy/"
+  - "02_sources/books/conks/Conks - Fed's Policies and Facilities.md"
+  - "02_sources/books/conks/Conk - Repo.md"
+  - "02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md"
+  - "02_sources/Clipping/Breaking Out of the Central Bank Balance Sheet Trilemma.md"
+  - "02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md"
+
+audit_criteria:
+  - "T-account tracing shows balance sheet impact on both CB and commercial banks"
+  - "Reserve regime classification (scarce/ample/excess) is justified with data"
+  - "Transmission to overnight rates is explained mechanically (not just asserted)"
+  - "If QT active: pace, composition, and end-state assumptions are stated"
+  - "Collateral implications noted if repo market is stressed"
+
+output_structure:
+  - "Reserve regime classification + evidence"
+  - "Rate-setting mechanism: corridor vs floor — how IOER/ONRRP set the floor"
+  - "Balance sheet composition and trajectory"
+  - "Transmission to money markets (SOFR, GCF, tri-party)"
+  - "Bank funding implications (ALM, LCR, wholesale funding)"
+  - "Endgame / normalization path (if applicable)"
+
+style: T_MODE_DEEP
+expected_length: "1500-3000 words"

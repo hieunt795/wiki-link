@@ -1,0 +1,56 @@
+template_id: basel_capital_v1
+domain: basel_risk
+name: Capital Adequacy Analysis
+version: 1
+description: "Analyze bank capital structure, regulatory minimums, buffer adequacy, and stress implications."
+
+objective: >
+  Assess whether a bank or banking system has adequate capital under Basel III/IV,
+  identify which buffers are active or at risk, and evaluate the implications for
+  credit supply and financial stability.
+
+key_questions:
+  - "What is the CET1 ratio vs minimum (4.5%) + conservation buffer (2.5%) + institution-specific buffers?"
+  - "What is the total capital ratio (Tier 1 + Tier 2) vs minimum requirements?"
+  - "What is the leverage ratio (Tier 1 / total exposure)?"
+  - "How are RWA calculated — standardized approach (SA) or internal ratings-based (IRB)?"
+  - "Are countercyclical buffers (CCyB) active? What is the current rate?"
+  - "What is the G-SIB surcharge (if applicable)?"
+  - "What is the TLAC/MREL position (for resolution purposes)?"
+  - "What is the impact on credit supply if buffers are depleted?"
+
+required_evidence:
+  - "Regulatory capital ratios: CET1, Tier 1, Total Capital, Leverage"
+  - "RWA breakdown by risk type (credit, market, operational)"
+  - "Buffer status: conservation, countercyclical, systemic risk, G-SIB"
+  - "TLAC/MREL position for G-SIBs"
+  - "Stress test results (EBA, Fed DFAST) if available"
+
+preferred_wiki_nodes:
+  - "concepts/Common_Equity_Tier_1"
+  - "concepts/Risk_Weighted_Assets"
+  - "frameworks/Basel_III_Capital_Framework"
+  - "concepts/Countercyclical_Buffer"
+  - "mechanisms/Capital_Transmission_To_Credit_Supply"
+
+preferred_sources:
+  - "02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md"
+  - "02_sources/deep-research/Private Credit, Basel, and Regional Dynamics.md"
+
+audit_criteria:
+  - "All ratios stated with reference to specific regulatory minimum"
+  - "Buffer arithmetic shown: minimum + conservation + CCyB + G-SIB surcharge = combined requirement"
+  - "RWA methodology (SA vs IRB) disclosed — IRB results need caveat"
+  - "Pro-cyclicality risk noted if credit cycle is late-stage"
+  - "TLAC/MREL position noted for G-SIBs"
+
+output_structure:
+  - "Capital position snapshot: CET1, Tier 1, Total Capital, Leverage"
+  - "Buffer stack analysis (minimum → combined requirement)"
+  - "RWA methodology and sensitivity"
+  - "Stress scenario: how much buffer depletion before restriction?"
+  - "Credit supply implications"
+  - "Resolution readiness (TLAC/MREL)"
+
+style: research_memo
+expected_length: "1000-2000 words"
