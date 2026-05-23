@@ -20,7 +20,14 @@ The retrieval system is fully local: BGE-M3 + FAISS + SQLite. No external API fo
 |-----------|------|------------|
 | `01_schema/` | Schema definitions | Reference only — read but do not modify |
 | `02_sources/` | Raw source documents | **IMMUTABLE — NEVER modify any file here** |
+| `02_sources/books/` | Academic and practitioner textbooks | Immutable |
+| `02_sources/academic/` | Academic papers and working papers | Immutable |
+| `02_sources/Clipping/` | Web articles and commentary clips | Immutable |
+| `02_sources/deep-research/` | Long-form research documents | Immutable |
+| `02_sources/regulator/` | Binding regulatory documents (Basel, SBV, Fed, ECB, FSB …) | Immutable |
+| `02_sources/Inbox/` | New files pending ingest | Immutable once placed |
 | `03_wiki/` | Durable compiled knowledge | You create and maintain nodes here |
+| `03_wiki/regulations/` | Wiki nodes for binding regulatory rules | Writable |
 | `04_research/` | Topic research workspaces | You create and update these |
 | `05_reports/` | Published final reports | Write-once after audit approval |
 | `06_templates/` | Analysis frameworks | Read-only unless user explicitly asks to update |
@@ -279,6 +286,20 @@ Examples:
   03_wiki/contradictions/Contra_QE_Money_Multiplier_001.md
   03_wiki/policies/Fed_QE_Programs_2008_2014.md
   03_wiki/frameworks/Flow_Of_Funds_Framework.md
+  03_wiki/regulations/Basel_III_Capital_Requirements.md
+  03_wiki/regulations/SBV_Circular_22_Credit_Limits.md
+```
+
+**Regulation node naming convention:**
+```
+{Issuing_Body}_{Short_Description}.md
+Examples:
+  Basel_III_Capital_Adequacy_Cet1_Tier1_Total.md
+  Basel_Iv_Output_Floor_72pct_2028.md
+  Bcbs_Irrbb_Standards_2016.md
+  Sbv_Circular_22_2019_Credit_Concentration_Limit.md
+  Fed_Regulation_W_Affiliate_Transactions.md
+  Ecb_Srep_Capital_Requirements_P2r.md
 ```
 
 ### Research files

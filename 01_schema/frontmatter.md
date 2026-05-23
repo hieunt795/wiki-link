@@ -125,6 +125,20 @@ data_source: "..."
 interpretation: "..."
 ```
 
+### `regulation` nodes add:
+```yaml
+issuing_body: BCBS | SBV | Fed | ECB | FSB | IOSCO | MAS | BOJ | BIS | other
+jurisdiction: global | US | EU | VN | JP | SG | UK | ...
+regulation_type: capital | liquidity | leverage | conduct | reporting | macroprudential | fx_policy | payment_system | resolution | other
+document_id: "Official document name/number"
+effective_date: YYYY-MM-DD
+current_status: proposed | consultative | final | phased_in | superseded
+binding_on: banks | g-sibs | broker_dealers | all_financial_entities | central_banks | ...
+key_requirements:
+  - "..."
+phase_in_schedule: "Optional"
+```
+
 ---
 
 ## Validation Rules (enforced by linter.py)

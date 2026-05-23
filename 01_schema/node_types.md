@@ -126,6 +126,27 @@ data_range: "YYYY-present"
 ```
 **Example:** SOFR, CPI, Reserve Bank Credit, JGB 10Y Yield, LCR Ratio
 
+### `regulation`
+**Purpose:** A binding regulatory requirement, standard, or rule issued by an official regulatory or supervisory body. Distinct from `policy` (which covers CB decisions and regimes) and `framework` (analytical models) — regulations are legally or institutionally binding on specific entities.
+**Subdirectory:** `03_wiki/regulations/`
+**Source directory:** `02_sources/regulator/{issuing_body}/`
+**Required fields:** all concept fields + `issuing_body`, `jurisdiction`, `regulation_type`, `current_status`
+**Extra fields:**
+```yaml
+issuing_body: BCBS | SBV | Fed | ECB | FSB | IOSCO | MAS | BOJ | BIS | other
+jurisdiction: global | US | EU | VN | JP | SG | UK | ...
+regulation_type: capital | liquidity | leverage | conduct | reporting | macroprudential | fx_policy | payment_system | resolution | other
+document_id: "Official document name or number (e.g. BCBS d424, Circular 22/2023/TT-NHNN)"
+effective_date: YYYY-MM-DD        # Date rule takes effect (or first phase)
+current_status: proposed | consultative | final | phased_in | superseded
+binding_on: banks | g-sibs | broker_dealers | all_financial_entities | central_banks | ...
+key_requirements:
+  - "Requirement 1: ..."
+  - "Requirement 2: ..."
+phase_in_schedule: "Optional: describe phase-in timeline if applicable"
+```
+**Example:** Basel III Capital Requirements, SBV Circular 22 on Credit Limits, Fed Regulation W (affiliate transactions), BCBS IRRBB Standards, Basel IV Output Floor
+
 ---
 
 ## Promotion Rules
@@ -160,6 +181,8 @@ Examples:
   03_wiki/frameworks/Flow_Of_Funds_Framework.md
   03_wiki/indicators/SOFR_Rate.md
   03_wiki/synthesis/Fiscal_Monetary_Interaction_QE.md
+  03_wiki/regulations/Basel_III_Capital_Requirements.md
+  03_wiki/regulations/SBV_Circular_22_Credit_Limits.md
 ```
 
 Node IDs (the `node_id` field) use lowercase with underscores:
@@ -167,4 +190,6 @@ Node IDs (the `node_id` field) use lowercase with underscores:
 node_id: quantitative_easing_001
 node_id: interest_rate_transmission_channel_001
 node_id: contra_qe_money_multiplier_001
+node_id: basel_iii_capital_requirements_001
+node_id: sbv_circular_22_credit_limits_001
 ```
