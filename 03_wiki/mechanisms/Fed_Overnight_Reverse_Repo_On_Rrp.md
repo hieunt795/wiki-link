@@ -27,10 +27,21 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Shadow Banking and Cash Markets.md
   pages: Money Market Blindspot I & II, Shadow Bank Shutdown
   weight: primary
-related: []
+related:
+- node: '[[Debt Ceiling Extraordinary Measures Treasury]]'
+  relation: shared_tag:money-market
+- node: '[[Fedwire Payment System Reserve Demand And LSM Policy]]'
+  relation: shared_tag:reserves
+- node: '[[QT Reserve Drain Effectiveness And Deposit Funding Condition]]'
+  relation: shared_tag:reserves
+- node: '[[TGA Reserve Swap Mechanics And Debt Ceiling Dynamics]]'
+  relation: shared_tag:reserves
+- node: '[[Central Bank Balance Sheet Structure Liabilities Assets]]'
+  relation: shared_tag:reserves
 date_created: '2026-05-20'
 date_updated: '2026-05-20'
 ---
+
 
 The Fed ON RRP is a key instrument for floor-system rate control and reserve management.
 
@@ -43,4 +54,5 @@ The Fed ON RRP is a key instrument for floor-system rate control and reserve man
 **RRP drain → reserve release:** As RRP is depleted (post-2022 QT), reserves that were locked up flow back into the banking system. This extended the runway for QT without triggering a reserve shortage.
 
 **Monitoring:** Watch daily RRPONTSYD (FRED) alongside bank reserve balances. A rapidly declining RRP below 00B signals reserves approaching scarce territory.
+
 

@@ -3,44 +3,57 @@ node_id: dv01_duration_001
 type: mechanism
 title: DV01, Duration, and Convexity — Fixed Income Risk Measures
 aliases:
-  - DV01
-  - dollar value of a basis point
-  - duration
-  - modified duration
-  - Macaulay duration
-  - convexity
-  - độ nhạy lãi suất
-  - thời lượng trái phiếu
-
+- DV01
+- dollar value of a basis point
+- duration
+- modified duration
+- Macaulay duration
+- convexity
+- độ nhạy lãi suất
+- thời lượng trái phiếu
 domain:
   primary: financial_markets
-  secondary: [monetary_policy]
-tags: [fixed-income, duration, DV01, convexity, interest-rate-risk, bond-math]
-
+  secondary:
+  - monetary_policy
+tags:
+- fixed-income
+- duration
+- DV01
+- convexity
+- interest-rate-risk
+- bond-math
 confidence: 5
 stability: stable
+thesis: 'DV01 (dollar value of a basis point) measures the price change of a fixed
+  income instrument for a 1bp parallel shift in yields. Duration (modified) is the
+  percentage price sensitivity; convexity captures the curvature — the fact that price-yield
+  relationship is non-linear. Together they form the fundamental risk language for
+  all fixed income positions: hedging, relative value, and P&L attribution.
 
-thesis: >
-  DV01 (dollar value of a basis point) measures the price change of a fixed income instrument
-  for a 1bp parallel shift in yields. Duration (modified) is the percentage price sensitivity;
-  convexity captures the curvature — the fact that price-yield relationship is non-linear.
-  Together they form the fundamental risk language for all fixed income positions: hedging,
-  relative value, and P&L attribution.
-
+  '
 source_refs:
-  - path: 02_sources/books/tuckman_serrat_fixed_income/Tuckman_Serrat_Fixed_Income_2022.md
-    pages: "Ch.4, Ch.5"
-    weight: primary
-
+- path: 02_sources/books/tuckman_serrat_fixed_income/Tuckman_Serrat_Fixed_Income_2022.md
+  pages: Ch.4, Ch.5
+  weight: primary
 related:
-  - node: "[[Repo_Market_Mechanics_Triparty_Bilateral]]"
-    relation: applied_in
-  - node: "[[Interest_Rate_Corridor_Floor_System_Standing_Facilities]]"
-    relation: measured_by
-
+- node: '[[Repo_Market_Mechanics_Triparty_Bilateral]]'
+  relation: applied_in
+- node: '[[Interest_Rate_Corridor_Floor_System_Standing_Facilities]]'
+  relation: measured_by
+- node: '[[Duration Targeting Bond Portfolio Framework]]'
+  relation: shared_tag:duration
+- node: '[[Bond Accrual Price Effect Interaction]]'
+  relation: shared_tag:duration
+- node: '[[Duration Targeting Convergence And Yield Trap]]'
+  relation: shared_tag:duration
+- node: '[[Financial Repression Distributional Welfare Effects]]'
+  relation: shared_tag:duration
+- node: '[[QE Duration Extraction from Private Sector]]'
+  relation: shared_tag:duration
 date_created: 2026-05-20
 date_updated: 2026-05-20
 ---
+
 
 ## Core Definitions
 
@@ -112,3 +125,4 @@ P&L ≈ Carry (daily accrual)
 2. **Curve hedge**: match key-rate DV01s to isolate specific curve segment
 3. **Futures hedge**: Tuckman notes that futures have a "tail effect" — carry on the variation margin position modifies the effective DV01 of a futures hedge vs. an equivalent cash position
 4. **Swap overlay**: interest rate swaps can be sized by DV01 to hedge bond portfolio rate risk without selling bonds (avoids transaction costs, preserves credit exposure)
+

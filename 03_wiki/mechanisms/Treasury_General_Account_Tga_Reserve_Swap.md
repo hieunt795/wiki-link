@@ -3,48 +3,57 @@ node_id: treasury_general_account_tga_reserve_swap_mec_001
 type: mechanism
 title: Treasury General Account TGA Reserve Swap
 aliases:
-  - TGA
-  - Treasury General Account
-  - government bank account
-  - tài khoản TGA
-  - tài khoản chính phủ
+- TGA
+- Treasury General Account
+- government bank account
+- tài khoản TGA
+- tài khoản chính phủ
 domain:
   primary: monetary_policy
-  secondary: [financial_markets]
+  secondary:
+  - financial_markets
 tags:
-  - tga
-  - reserves
-  - fed-balance-sheet
-  - liquidity
-  - liability-swap
-  - autonomous-factors
-
+- tga
+- reserves
+- fed-balance-sheet
+- liquidity
+- liability-swap
+- autonomous-factors
 confidence: 4
 stability: stable
+thesis: 'The Treasury General Account (TGA) is the US government''s checking account
+  held at the Federal Reserve.  Changes in the TGA result in an opposite 1:1 change
+  in bank reserves (dTGA = -dReserves) unless the Fed  adjusts its assets to maintain
+  ample reserves. The TGA acts as an "autonomous factor" that directly  competes with
+  reserves for space on the Fed''s liability side.
 
-thesis: >
-  The Treasury General Account (TGA) is the US government's checking account held at the Federal Reserve. 
-  Changes in the TGA result in an opposite 1:1 change in bank reserves (dTGA = -dReserves) unless the Fed 
-  adjusts its assets to maintain ample reserves. The TGA acts as an "autonomous factor" that directly 
-  competes with reserves for space on the Fed's liability side.
-
+  '
 source_refs:
-  - path: 02_sources/books/conks/Conks - Shadow Banking and Cash Markets.md
-    pages: Money Market Blindspot I & II
-    weight: primary
-  - path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
-    pages: full document
-    weight: primary
-
+- path: 02_sources/books/conks/Conks - Shadow Banking and Cash Markets.md
+  pages: Money Market Blindspot I & II
+  weight: primary
+- path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
+  pages: full document
+  weight: primary
 related:
-  - node: "[[Fed_Ample_Reserves_Range_Floor_Framework]]"
-    relation: context
-  - node: "[[Fed_Fiscal_Agent_Treasury_Relationship]]"
-    relation: framework
-
+- node: '[[Fed_Ample_Reserves_Range_Floor_Framework]]'
+  relation: context
+- node: '[[Fed_Fiscal_Agent_Treasury_Relationship]]'
+  relation: framework
+- node: '[[TGA Reserve Swap Mechanics And Debt Ceiling Dynamics]]'
+  relation: shared_tag:tga
+- node: '[[Ample Reserves Buffer Sizing TGA Volatility]]'
+  relation: shared_tag:tga
+- node: '[[Debt Ceiling Extraordinary Measures Treasury]]'
+  relation: shared_tag:tga
+- node: '[[Fedwire Payment System Reserve Demand And LSM Policy]]'
+  relation: shared_tag:reserves
+- node: '[[QT Reserve Drain Effectiveness And Deposit Funding Condition]]'
+  relation: shared_tag:reserves
 date_created: 2026-05-20
 date_updated: 2026-05-21
 ---
+
 
 ## Core Mechanism
 
@@ -71,4 +80,5 @@ While short-term TGA fluctuations shift the *composition* of liabilities (dTGA =
 - **Pre-2008:** The Treasury kept most of its cash in private commercial banks (Treasury Tax and Loan accounts). [RAW-CLIP]
 - **Post-2015:** The Treasury announced a policy to maintain a minimum TGA balance sufficient to cover one week of outflows (approx. $150bn), which has since scaled upward significantly. [RAW-CLIP] [LLM-E]
 - **Variable Arrangement:** The hosting of the TGA at the Fed is an operational choice that has changed in the past and could be modified to reduce the Fed's balance sheet footprint (e.g., the Vissing-Jorgensen proposal). [RAW-CLIP]
+
 

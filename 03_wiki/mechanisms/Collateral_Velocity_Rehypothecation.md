@@ -3,43 +3,58 @@ node_id: collateral_velocity_001
 type: mechanism
 title: Collateral Velocity and Rehypothecation
 aliases:
-  - collateral reuse
-  - rehypothecation
-  - pledged collateral velocity
-  - tái sử dụng tài sản thế chấp
-  - tốc độ lưu thông tài sản thế chấp
-
+- collateral reuse
+- rehypothecation
+- pledged collateral velocity
+- tái sử dụng tài sản thế chấp
+- tốc độ lưu thông tài sản thế chấp
 domain:
   primary: financial_markets
-  secondary: [monetary_policy, shadow_banking]
-tags: [collateral, rehypothecation, repo, shadow-banking, financial-plumbing, leverage]
-
+  secondary:
+  - monetary_policy
+  - shadow_banking
+tags:
+- collateral
+- rehypothecation
+- repo
+- shadow-banking
+- financial-plumbing
+- leverage
 confidence: 3
 stability: stable
+thesis: 'Collateral velocity measures how many times a given piece of collateral is
+  reused (pledged and re-pledged) within the financial system. Pre-Lehman, the pledged-collateral
+  market reached ~$10 trillion — comparable to M2 — and collapsed to ~$5 trillion
+  in 2008-9 as reuse chains broke. High velocity amplifies credit creation; restricted
+  velocity (via QE or regulation) impairs financial intermediation analogously to
+  a drying-up of interbank markets.
 
-thesis: >
-  Collateral velocity measures how many times a given piece of collateral is reused (pledged and
-  re-pledged) within the financial system. Pre-Lehman, the pledged-collateral market reached
-  ~$10 trillion — comparable to M2 — and collapsed to ~$5 trillion in 2008-9 as reuse chains
-  broke. High velocity amplifies credit creation; restricted velocity (via QE or regulation)
-  impairs financial intermediation analogously to a drying-up of interbank markets.
-
+  '
 source_refs:
-  - path: 02_sources/books/singh_collateral_plumbing/Singh_Collateral_Financial_Plumbing.md
-    pages: "Ch.1-2, pp.1-30"
-    weight: primary
-
+- path: 02_sources/books/singh_collateral_plumbing/Singh_Collateral_Financial_Plumbing.md
+  pages: Ch.1-2, pp.1-30
+  weight: primary
 related:
-  - node: "[[Repo_Market_Mechanics_Triparty_Bilateral]]"
-    relation: mechanism_of
-  - node: "[[Shadow_Banking_Market_Based_Finance]]"
-    relation: component_of
-  - node: "[[Collateral_Framework_Haircuts_Central_Bank_Credit]]"
-    relation: contrasts_with
-
+- node: '[[Repo_Market_Mechanics_Triparty_Bilateral]]'
+  relation: mechanism_of
+- node: '[[Shadow_Banking_Market_Based_Finance]]'
+  relation: component_of
+- node: '[[Collateral_Framework_Haircuts_Central_Bank_Credit]]'
+  relation: contrasts_with
+- node: '[[Collateral Velocity And Pledged Collateral Market Mechanics]]'
+  relation: shared_tag:collateral
+- node: '[[Collateral Framework Haircuts Central Bank Credit]]'
+  relation: shared_tag:collateral
+- node: '[[Monetary Policy Transmission via Collateral and Repo Markets]]'
+  relation: shared_tag:collateral
+- node: '[[Repo Market Mechanics Triparty Bilateral]]'
+  relation: shared_tag:collateral
+- node: '[[Triparty Repo Market Structure And Daily Cycle]]'
+  relation: shared_tag:repo
 date_created: 2026-05-20
 date_updated: 2026-05-20
 ---
+
 
 ## Core Mechanism
 
@@ -76,3 +91,4 @@ Central bank QE removes high-quality collateral (USTs, Bunds) from circulation a
 1. **Velocity as monetary indicator**: collateral reuse rate functions alongside M2/M3 as a measure of financial liquidity; policymakers who ignore it miss a key channel
 2. **QE exit complexity**: unwinding QE re-releases collateral into markets → velocity rises → secured funding conditions ease beyond what reserve draining alone suggests
 3. **SLR/LCR drag**: Basel III constraints that limit dealer balance sheet simultaneously cap collateral intermediation capacity — see [[Slr_Lcr_Balance_Sheet_Constraints_Treasury_Market_Dealer]]
+

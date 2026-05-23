@@ -3,35 +3,49 @@ node_id: ecb_new_operational_framework_frm_001
 type: framework
 title: ECB New Operational Framework 2024
 aliases:
-  - New ECB Framework
-  - Khuôn khổ vận hành chính sách tiền tệ mới của ECB (2024)
-  - ECB Range Floor System
-
+- New ECB Framework
+- Khuôn khổ vận hành chính sách tiền tệ mới của ECB (2024)
+- ECB Range Floor System
 domain:
   primary: monetary_policy
-  secondary: [financial_markets]
-tags: [ecb, operational_framework, floor_system, dfr, mro]
-
+  secondary:
+  - financial_markets
+tags:
+- ecb
+- operational_framework
+- floor_system
+- dfr
+- mro
 confidence: 3
 stability: evolving
+thesis: 'The ECB''s 2024 framework is a hybrid "range floor" system that steers the
+  overnight market rate (€STR) near the Deposit Facility Rate (DFR) using structural
+  reserves and a narrowed 15bps spread to the Main Refinancing Operations (MRO) rate.
 
-thesis: >
-  The ECB's 2024 framework is a hybrid "range floor" system that steers the overnight market rate (€STR) near the Deposit Facility Rate (DFR) using structural reserves and a narrowed 15bps spread to the Main Refinancing Operations (MRO) rate.
-
+  '
 source_refs:
-  - path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
-    pages: "Section 3.1"
-    weight: primary
-
+- path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
+  pages: Section 3.1
+  weight: primary
 related:
-  - node: "[[Monetary_Policy_Instruments_Operational_Framework]]"
-    relation: evolution_of
-  - node: "[[Interest_Rate_Corridor_Floor_System_Standing_Facilities]]"
-    relation: implementation_of
-
+- node: '[[Monetary_Policy_Instruments_Operational_Framework]]'
+  relation: evolution_of
+- node: '[[Interest_Rate_Corridor_Floor_System_Standing_Facilities]]'
+  relation: implementation_of
+- node: '[[Central Bank Monetary Policy Operational Framework Typology]]'
+  relation: shared_tag:ecb
+- node: '[[Fed Ample Reserves Range Floor Framework]]'
+  relation: shared_tag:operational_framework
+- node: '[[Fed Policy Rate Shift EFFR to Secured Rate TGCR]]'
+  relation: shared_tag:floor_system
+- node: '[[FHLB EFFR IORB Arbitrage Floor Mechanism]]'
+  relation: shared_tag:floor_system
+- node: '[[Interest Rate Corridor Floor System Standing Facilities]]'
+  relation: shared_tag:dfr
 date_created: 2026-05-20
 date_updated: 2026-05-20
 ---
+
 
 ## Overview
 In March 2024, the ECB Governing Council announced a new operational framework for implementing monetary policy, which began implementation in September 2024. This framework represents a transition from the "floor system" characterized by massive excess reserves (from QE) toward a hybrid system designed to remain effective even as the balance sheet shrinks [RAW-CLIP].
@@ -63,3 +77,4 @@ The system is described as a "soft floor" or "range floor" because the overnight
 | **Liquidity Supply** | Controlled Auction (Scarce) | Full Allotment (Ample/Demand-driven) |
 | **Spread** | Wide (e.g., 100-200 bps) | Narrow (15 bps) |
 | **Balance Sheet** | Small/Lean | Larger (Structural reserves) |
+

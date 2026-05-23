@@ -3,35 +3,50 @@ node_id: fed_ample_reserves_range_floor_frm_001
 type: framework
 title: Fed Ample Reserves Range Floor Framework
 aliases:
-  - Fed Range Floor System
-  - Khuôn khổ sàn dự trữ dư dật (Range Floor) của Fed
-  - Fed Dual Floor System
-
+- Fed Range Floor System
+- Khuôn khổ sàn dự trữ dư dật (Range Floor) của Fed
+- Fed Dual Floor System
 domain:
   primary: monetary_policy
-  secondary: [financial_markets]
-tags: [fed, operational_framework, floor_system, iorb, on_rrp, ffr]
-
+  secondary:
+  - financial_markets
+tags:
+- fed
+- operational_framework
+- floor_system
+- iorb
+- on_rrp
+- ffr
 confidence: 3
 stability: stable
+thesis: 'The Fed maintains a "range floor" for the Federal Funds Rate (FFR) using
+  two administered rates — IORB for banks and ON RRP for non-banks — to manage market
+  segmentation and ensure rate control within an ample reserves regime.
 
-thesis: >
-  The Fed maintains a "range floor" for the Federal Funds Rate (FFR) using two administered rates — IORB for banks and ON RRP for non-banks — to manage market segmentation and ensure rate control within an ample reserves regime.
-
+  '
 source_refs:
-  - path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
-    pages: "Section 3.2"
-    weight: primary
-
+- path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
+  pages: Section 3.2
+  weight: primary
 related:
-  - node: "[[Reserve_Floor_Payment_System_Demand]]"
-    relation: driven_by
-  - node: "[[Fed_Overnight_Reverse_Repo_ON_RRP]]"
-    relation: component_of
-
+- node: '[[Reserve_Floor_Payment_System_Demand]]'
+  relation: driven_by
+- node: '[[Fed_Overnight_Reverse_Repo_ON_RRP]]'
+  relation: component_of
+- node: '[[Central Bank Monetary Policy Operational Framework Typology]]'
+  relation: shared_tag:fed
+- node: '[[Currency as a Central Bank Liability]]'
+  relation: shared_tag:fed
+- node: '[[Fedwire Payment System Reserve Demand And LSM Policy]]'
+  relation: shared_tag:fed
+- node: '[[Fed Ample Reserves Rate Control Framework]]'
+  relation: shared_tag:fed
+- node: '[[QT Reserve Drain Effectiveness And Deposit Funding Condition]]'
+  relation: shared_tag:fed
 date_created: 2026-05-20
 date_updated: 2026-05-20
 ---
+
 
 ## Overview
 The Federal Reserve operates an "ample reserves" regime, which is a version of a floor system. Unlike a pure floor system with a single rate, the Fed uses a "range floor" to account for the fact that not all participants in the money market have access to the same facilities [RAW-CLIP].
@@ -60,3 +75,4 @@ The **Federal Funds Rate (FFR)** typically hovers between the ON RRP rate and th
 
 ## Operational Goals
 The Fed's objective is to ensure that "active management of the supply of reserves is not required" to control the FFR, relying instead on its administered rates (IORB and ON RRP) to steer market rates [RAW-CLIP].
+

@@ -28,10 +28,21 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Shadow Banking and Cash Markets.md
   pages: The Shadow Bank Shutdown
   weight: primary
-related: []
+related:
+- node: '[[Collateral Velocity and Rehypothecation]]'
+  relation: shared_tag:shadow-banking
+- node: '[[Monetary Policy Transmission via Collateral and Repo Markets]]'
+  relation: shared_tag:shadow-banking
+- node: '[[Private Credit — SRT, NAV Loans, and Bank-PC Interconnection]]'
+  relation: shared_tag:shadow-banking
+- node: '[[Repo Market Mechanics Triparty Bilateral]]'
+  relation: shared_tag:shadow-banking
+- node: '[[Basel Driven Credit Migration To Private Markets]]'
+  relation: shared_tag:nbfi
 date_created: '2026-05-20'
 date_updated: '2026-05-20'
 ---
+
 
 Shadow banking encompasses credit intermediation outside traditional deposit-taking banks.
 
@@ -49,4 +60,5 @@ Basel II/III contained extreme leverage but did not eliminate the system.
 **Chinese parallel:** China developed its own shadow system via wealth management products (WMPs), trust loans, entrusted loans — reached 90% of GDP by 2016. Regulatory crackdown reduced it to ~39% by Q2 2023.
 
 **Systemic role:** Shadow banks are now essential to dollar funding markets — repos alone clear T+ daily. Stress in shadow banking (ABCP freeze 2007, repo seizure 2008, Sept 2019 repo spike) transmits rapidly to the real economy.
+
 

@@ -3,60 +3,76 @@ node_id: basel_regional_implementation_dynamics_001
 type: framework
 title: Basel Regional Implementation Dynamics
 aliases:
-  - Basel regional dynamics
-  - US vs EU Basel implementation
-  - phân hóa vùng Basel
-  - APAC Basel implementation
-  - Basel gold-plating US
+- Basel regional dynamics
+- US vs EU Basel implementation
+- phân hóa vùng Basel
+- APAC Basel implementation
+- Basel gold-plating US
 domain:
   primary: basel_risk
   secondary:
-    - macro_outlook
+  - macro_outlook
 tags:
-  - basel-iii
-  - US-banking
-  - EU-banking
-  - APAC
-  - Vietnam
-  - private-credit
-  - regional-comparison
-  - BDC
-  - ELTIF
+- basel-iii
+- US-banking
+- EU-banking
+- APAC
+- Vietnam
+- private-credit
+- regional-comparison
+- BDC
+- ELTIF
 confidence: 1
 stability: evolving
-thesis: >
-  [LLM] The same Basel III framework produces dramatically different private credit
-  market outcomes across regions because initial banking structures differ: the US
-  (market-centric, gold-plating) created the world's deepest PC market post-2008;
+thesis: '[LLM] The same Basel III framework produces dramatically different private
+  credit market outcomes across regions because initial banking structures differ:
+  the US (market-centric, gold-plating) created the world''s deepest PC market post-2008;
   the EU (bank-centric) faces a larger Output Floor shock (MRC +21.3%) now generating
   the largest structural white space; APAC/Vietnam applies Basel more flexibly but
   faces a delayed catalyst as capital requirements tighten toward 2027–2030.
+
+  '
 components:
-  - "US: Gold-plating + BDC vehicle + deep capital markets → $1.34T PC AUM, largest globally"
-  - "EU: Bank-centric system + Output Floor shock (41.4% of total Basel III MRC impact) → white space opening rapidly, ELTIF 2.0 as access vehicle"
-  - "APAC: State-influenced banking, flexible implementation → PC at $59B, growing 46% to $92B by 2027"
-  - "Vietnam: Credit quota removal 2026 + TT14/2025 CAR path 8.625%→10.5% by 2030 → special situations PC emerging"
+- 'US: Gold-plating + BDC vehicle + deep capital markets → $1.34T PC AUM, largest
+  globally'
+- 'EU: Bank-centric system + Output Floor shock (41.4% of total Basel III MRC impact)
+  → white space opening rapidly, ELTIF 2.0 as access vehicle'
+- 'APAC: State-influenced banking, flexible implementation → PC at $59B, growing 46%
+  to $92B by 2027'
+- 'Vietnam: Credit quota removal 2026 + TT14/2025 CAR path 8.625%→10.5% by 2030 →
+  special situations PC emerging'
 application_domain: basel_risk
 source_refs:
-  - path: 02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md
-    pages: "Section III — Phân Hóa Hệ Thống Quy Định Theo Khu Vực"
-    weight: primary
-  - path: 02_sources/deep-research/Private Credit, Basel, and Regional Dynamics.md
-    pages: "Section 2 — Regional Dynamics: US vs Europe"
-    weight: supporting
-  - path: 02_sources/deep-research/Deep Dive_ Private Credit.md
-    pages: "Section: From Niche to Global Capital Pool"
-    weight: supporting
+- path: 02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md
+  pages: Section III — Phân Hóa Hệ Thống Quy Định Theo Khu Vực
+  weight: primary
+- path: 02_sources/deep-research/Private Credit, Basel, and Regional Dynamics.md
+  pages: 'Section 2 — Regional Dynamics: US vs Europe'
+  weight: supporting
+- path: 02_sources/deep-research/Deep Dive_ Private Credit.md
+  pages: 'Section: From Niche to Global Capital Pool'
+  weight: supporting
 related:
-  - node: "[[Basel_III_Endgame_Capital_Liquidity_Credit_Migration]]"
-    relation: regional_lens_on
-  - node: "[[Basel_Output_Floor_Specialized_Lending_Impact]]"
-    relation: regional_impact_differential
-  - node: "[[Private_Credit_SRT_NAV_Loans_Bank_Partnerships]]"
-    relation: regional_market_structure_of
-date_created: "2026-05-21"
-date_updated: "2026-05-21"
+- node: '[[Basel_III_Endgame_Capital_Liquidity_Credit_Migration]]'
+  relation: regional_lens_on
+- node: '[[Basel_Output_Floor_Specialized_Lending_Impact]]'
+  relation: regional_impact_differential
+- node: '[[Private_Credit_SRT_NAV_Loans_Bank_Partnerships]]'
+  relation: regional_market_structure_of
+- node: '[[Basel Output Floor Specialized Lending Impact]]'
+  relation: shared_tag:basel-iii
+- node: '[[LCR NSFR Long-Term Lending Penalty]]'
+  relation: shared_tag:basel-iii
+- node: '[[SLR LCR Balance Sheet Constraints Treasury Market Dealer]]'
+  relation: shared_tag:basel-iii
+- node: '[[Basel III Endgame — Capital, Liquidity, and Credit Migration]]'
+  relation: shared_tag:private-credit
+- node: '[[Private Credit Stress Monitoring Framework]]'
+  relation: shared_tag:private-credit
+date_created: '2026-05-21'
+date_updated: '2026-05-21'
 ---
+
 
 ## Overview
 
@@ -108,3 +124,4 @@ Key dynamic: Vietnam is 5–8 years behind the US in Basel-driven PC development
 ## Related Concepts
 
 The regional differences documented here are the macro context for [[Basel_III_Endgame_Capital_Liquidity_Credit_Migration]]. The Output Floor mechanism driving EU structural change is detailed in [[Basel_Output_Floor_Specialized_Lending_Impact]].
+

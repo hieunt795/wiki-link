@@ -28,10 +28,13 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Global Dollar and Eurodollar Systems.md
   pages: The US Dollar Endgame, Demystifying the Eurodollar System
   weight: primary
-related: []
+related:
+- node: '[[Eurodollar System Mechanics And Post-Reform Decline]]'
+  relation: shared_tag:eurodollar
 date_created: '2026-05-20'
 date_updated: '2026-05-20'
 ---
+
 
 The global dollar system encompasses all offshore USD funding markets interconnected through institutional dependencies.
 
@@ -53,4 +56,5 @@ Each node failure cascades system-wide — exit is near-impossible without sever
 **Fed role in offshore dollar:** Fed swap lines with major CBs (ECB, BOJ, BOE, SNB, BOC) act as offshore lender of last resort. Without swap lines, dollar shortage in March 2020 would have been catastrophic.
 
 **Treasury market as anchor:** Since most global loans are secured against Treasury paper, Treasury market illiquidity (MOVE index surging) destabilizes the entire global dollar architecture.
+
 

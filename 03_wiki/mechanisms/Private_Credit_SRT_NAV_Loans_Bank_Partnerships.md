@@ -3,56 +3,73 @@ node_id: private_credit_srt_001
 type: mechanism
 title: Private Credit — SRT, NAV Loans, and Bank-PC Interconnection
 aliases:
-  - SRT
-  - significant risk transfer
-  - NAV loan
-  - subscription line
-  - sub-line
-  - originate-to-distribute
-  - private credit bank partnerships
-  - chuyển giao rủi ro trọng yếu
-  - tín dụng tư nhân
-  - khoản vay NAV
-
+- SRT
+- significant risk transfer
+- NAV loan
+- subscription line
+- sub-line
+- originate-to-distribute
+- private credit bank partnerships
+- chuyển giao rủi ro trọng yếu
+- tín dụng tư nhân
+- khoản vay NAV
 domain:
   primary: financial_markets
-  secondary: [monetary_policy]
-tags: [private-credit, SRT, NAV-loans, subscription-lines, bank-NBFI, shadow-banking, network-liquidity-risk, originate-to-distribute, CLO]
-
+  secondary:
+  - monetary_policy
+tags:
+- private-credit
+- SRT
+- NAV-loans
+- subscription-lines
+- bank-NBFI
+- shadow-banking
+- network-liquidity-risk
+- originate-to-distribute
+- CLO
 confidence: 2
 stability: evolving
-
-thesis: >
-  Banks respond to Basel III capital and liquidity constraints through three structural
-  mechanisms: (1) SRT — transferring first-loss credit risk from the balance sheet to
-  PC fund investors for regulatory capital relief; (2) originate-to-distribute —
-  converting from spread income to fee income while retaining origination relationships;
+thesis: 'Banks respond to Basel III capital and liquidity constraints through three
+  structural mechanisms: (1) SRT — transferring first-loss credit risk from the balance
+  sheet to PC fund investors for regulatory capital relief; (2) originate-to-distribute
+  — converting from spread income to fee income while retaining origination relationships;
   (3) providing leverage to PC funds via subscription lines and NAV loans. These mechanisms
-  do not eliminate bank credit exposure — they reconfigure it from direct lending to
-  indirect exposure to PC fund leverage. The systemic implication is correlated drawdown
-  risk: in stress, PC funds simultaneously tap bank credit lines, creating a network
-  liquidity event invisible to standard bank stress tests.
+  do not eliminate bank credit exposure — they reconfigure it from direct lending
+  to indirect exposure to PC fund leverage. The systemic implication is correlated
+  drawdown risk: in stress, PC funds simultaneously tap bank credit lines, creating
+  a network liquidity event invisible to standard bank stress tests.
 
+  '
 source_refs:
-  - path: 02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md
-    pages: "§IV (Banking System Response), §V (Credit Migration), §VI (Private Credit), §VII (System Outcome)"
-    weight: primary
-
+- path: 02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md
+  pages: §IV (Banking System Response), §V (Credit Migration), §VI (Private Credit),
+    §VII (System Outcome)
+  weight: primary
 related:
-  - node: "[[Basel_III_Endgame_Capital_Liquidity_Credit_Migration]]"
-    relation: driven_by
-  - node: "[[SLR_LCR_Balance_Sheet_Constraints_Treasury_Market_Dealer]]"
-    relation: same_regulatory_drivers
-  - node: "[[Shadow_Banking_Market_Based_Finance]]"
-    relation: mechanism_within
-  - node: "[[Collateral_Velocity_Rehypothecation]]"
-    relation: related_collateral_reuse
-  - node: "[[Repo_Market_Mechanics_Triparty_Bilateral]]"
-    relation: bank_nbfi_funding_channel
-
+- node: '[[Basel_III_Endgame_Capital_Liquidity_Credit_Migration]]'
+  relation: driven_by
+- node: '[[SLR_LCR_Balance_Sheet_Constraints_Treasury_Market_Dealer]]'
+  relation: same_regulatory_drivers
+- node: '[[Shadow_Banking_Market_Based_Finance]]'
+  relation: mechanism_within
+- node: '[[Collateral_Velocity_Rehypothecation]]'
+  relation: related_collateral_reuse
+- node: '[[Repo_Market_Mechanics_Triparty_Bilateral]]'
+  relation: bank_nbfi_funding_channel
+- node: '[[Basel III Endgame — Capital, Liquidity, and Credit Migration]]'
+  relation: shared_tag:private-credit
+- node: '[[Basel Regional Implementation Dynamics]]'
+  relation: shared_tag:private-credit
+- node: '[[Private Credit Stress Monitoring Framework]]'
+  relation: shared_tag:private-credit
+- node: '[[Bank NBFI Leverage Loop]]'
+  relation: shared_tag:private-credit
+- node: '[[PIK Payment In Kind Credit Stress Masking]]'
+  relation: shared_tag:private-credit
 date_created: 2026-05-20
 date_updated: 2026-05-20
 ---
+
 
 ## Why Banks Reconfigure Rather Than Exit
 
@@ -283,3 +300,4 @@ PC Fund (interest + principal received)
 ## Confidence Note
 
 This node is confidence=2. Source is a Gemini deep-research document. Factual claims about SRT mechanics, NAV loan structures, and Fed stress test findings are cited against BIS/Fed/S&P sources within the deep research. Quantitative claims about market sizes, partnership amounts, and stress test outputs are marked [LLM]. Upgrade to confidence=3 after cross-referencing against primary Fed FEDS Note (2025-05-23) and BIS qt2409b on SRT.
+

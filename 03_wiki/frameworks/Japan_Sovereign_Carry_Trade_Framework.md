@@ -3,35 +3,54 @@ node_id: japan_sovereign_carry_trade_frm_001
 type: framework
 title: Japan Sovereign Carry Trade Framework
 aliases:
-  - Japan Public Sector SWF
-  - Mô hình "Carry Trade" của khu vực công Nhật Bản
-  - Borrow-Short Invest-Long Sovereign Model
-
+- Japan Public Sector SWF
+- Mô hình "Carry Trade" của khu vực công Nhật Bản
+- Borrow-Short Invest-Long Sovereign Model
 domain:
   primary: monetary_policy
-  secondary: [financial_markets, fiscal_policy]
-tags: [japan, boj, carry_trade, duration_mismatch, swf]
-
+  secondary:
+  - financial_markets
+  - fiscal_policy
+tags:
+- japan
+- boj
+- carry_trade
+- duration_mismatch
+- swf
 confidence: 3
 stability: stable
+thesis: 'The Japanese public sector (government + BoJ + pension funds) operates as
+  a giant, leveraged sovereign wealth fund that borrows at floating short-term rates
+  (bank reserves) to fund long-duration risky assets (equities and foreign securities),
+  creating a massive sensitivity to rising interest rates.
 
-thesis: >
-  The Japanese public sector (government + BoJ + pension funds) operates as a giant, leveraged sovereign wealth fund that borrows at floating short-term rates (bank reserves) to fund long-duration risky assets (equities and foreign securities), creating a massive sensitivity to rising interest rates.
-
+  '
 source_refs:
-  - path: 02_sources/Clipping/What about Japan_ (Part I).md
-    pages: "Full document"
-    weight: primary
-
+- path: 02_sources/Clipping/What about Japan_ (Part I).md
+  pages: Full document
+  weight: primary
+- path: 02_sources/Clipping/What about Japan_ (Part II).md
+  pages: Full document
+  weight: secondary
 related:
-  - node: "[[Central_Bank_Balance_Sheet_Structure_Liabilities_Assets]]"
-    relation: specialized_case
-  - node: "[[JGB_Yield_Spillover_Transmission]]"
-    relation: risk_trigger
-
+- node: '[[Central_Bank_Balance_Sheet_Structure_Liabilities_Assets]]'
+  relation: specialized_case
+- node: '[[JGB_Yield_Spillover_Transmission]]'
+  relation: risk_trigger
+- node: '[[Financial Repression Distributional Welfare Effects]]'
+  relation: shared_tag:japan
+- node: '[[Financial Repression via Reserve Creation]]'
+  relation: shared_tag:japan
+- node: '[[Japan FILP to QE Structural Succession]]'
+  relation: shared_tag:japan
+- node: '[[QE Duration Extraction from Private Sector]]'
+  relation: shared_tag:japan
+- node: '[[Yen Intervention Liquidity Drain Mechanism]]'
+  relation: shared_tag:japan
 date_created: 2026-05-20
 date_updated: 2026-05-20
 ---
+
 
 ## Overview
 As of 2023-2026, the consolidated Japanese public sector balance sheet has been identified not merely as a debt-laden entity, but as a massive **Sovereign Carry Trade**. By consolidating the BoJ, public pension funds (GPIF), and financial institutions, a single budget constraint emerges that exploits interest rate differentials [RAW-CLIP].
@@ -58,3 +77,4 @@ As the BoJ normalizes (policy rate at 0.75% in April 2026) and JGB yields rise (
 
 ## Global Impact: The "Japan Dump"
 To cover rising funding costs or stabilize the Yen, the Japanese public sector is structurally incentivized to liquidate its unhedged foreign securities (primarily US Treasuries). This creates a persistent "wall of selling" in global markets as the carry trade unwinds [LLM].
+

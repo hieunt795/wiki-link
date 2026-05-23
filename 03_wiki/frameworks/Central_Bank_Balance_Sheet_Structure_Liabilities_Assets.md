@@ -29,10 +29,21 @@ source_refs:
 - path: 02_sources/books/central_bank_balance_sheet/Central_Bank_Balance_Sheet.md
   pages: Rule CCBS Handbook No.32, BOE
   weight: primary
-related: []
+related:
+- node: '[[Inflation Targeting Framework (ITF) and Post-GFC Policy Mix]]'
+  relation: shared_tag:central-bank
+- node: '[[Monetary Policy Instruments Operational Framework]]'
+  relation: shared_tag:central-bank
+- node: '[[Central Bank Intermediation Balance Sheet Autonomous Factors]]'
+  relation: shared_tag:central-bank
+- node: '[[Collateral Framework Haircuts Central Bank Credit]]'
+  relation: shared_tag:central-bank
+- node: '[[Fedwire Payment System Reserve Demand And LSM Policy]]'
+  relation: shared_tag:reserves
 date_created: '2026-05-20'
 date_updated: '2026-05-20'
 ---
+
 
 The central bank balance sheet is the operational foundation for monetary policy.
 
@@ -60,4 +71,5 @@ The central bank balance sheet is the operational foundation for monetary policy
 **BALANCE SHEET EXPANSION TYPES:**
 - Asset-driven: CB decides to purchase assets (QE); drives reserves up mechanically
 - Liability-driven: government spending drives up TGA -> reserves increase passively; CB must absorb
+
 

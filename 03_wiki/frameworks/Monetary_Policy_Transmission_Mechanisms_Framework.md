@@ -3,55 +3,64 @@ node_id: mptm_framework_001
 type: framework
 title: Monetary Policy Transmission Mechanism — All Channels
 aliases:
-  - MPTM
-  - monetary policy transmission mechanism
-  - transmission channels
-  - interest rate channel
-  - credit channel
-  - balance sheet channel
-  - risk-taking channel
-  - cơ chế truyền dẫn chính sách tiền tệ
-  - kênh truyền dẫn lãi suất
-  - kênh tín dụng
-
+- MPTM
+- monetary policy transmission mechanism
+- transmission channels
+- interest rate channel
+- credit channel
+- balance sheet channel
+- risk-taking channel
+- cơ chế truyền dẫn chính sách tiền tệ
+- kênh truyền dẫn lãi suất
+- kênh tín dụng
 domain:
   primary: monetary_policy
-  secondary: [macro_outlook, financial_markets]
-tags: [monetary-transmission, MPTM, interest-rate-channel, credit-channel, balance-sheet-channel, financial-accelerator, risk-taking-channel]
-
+  secondary:
+  - macro_outlook
+  - financial_markets
+tags:
+- monetary-transmission
+- MPTM
+- interest-rate-channel
+- credit-channel
+- balance-sheet-channel
+- financial-accelerator
+- risk-taking-channel
 confidence: 3
 stability: stable
-
-thesis: >
-  The monetary policy transmission mechanism (MPTM) maps the process by which central bank
-  interest rate decisions propagate through 7 channels — interest rate, asset price, exchange rate,
-  expectations, bank lending, bank capital, and balance sheet — to ultimately affect inflation and
-  output. The "money view" channels (interest rate, asset price, exchange rate) assume efficient
-  financial markets; the "credit view" channels (lending, capital, balance sheet) emphasize
-  financial frictions, asymmetric information, and the financial accelerator. The risk-taking channel
-  adds a post-GFC dimension: low rates reduce risk perception, inducing excessive risk-taking.
+thesis: 'The monetary policy transmission mechanism (MPTM) maps the process by which
+  central bank interest rate decisions propagate through 7 channels — interest rate,
+  asset price, exchange rate, expectations, bank lending, bank capital, and balance
+  sheet — to ultimately affect inflation and output. The "money view" channels (interest
+  rate, asset price, exchange rate) assume efficient financial markets; the "credit
+  view" channels (lending, capital, balance sheet) emphasize financial frictions,
+  asymmetric information, and the financial accelerator. The risk-taking channel adds
+  a post-GFC dimension: low rates reduce risk perception, inducing excessive risk-taking.
   Total lag from policy to full effect: typically 6-8 quarters.
 
+  '
 source_refs:
-  - path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-3.md
-    pages: "Ch.5 §5.1–5.4, pp.860-1109"
-    weight: primary
-
+- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro -
+    Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-3.md
+  pages: Ch.5 §5.1–5.4, pp.860-1109
+  weight: primary
 related:
-  - node: "[[Monetary_Policy_Instruments_Operational_Framework]]"
-    relation: starts_from
-  - node: "[[Inflation_Targeting_Framework_Central_Bank]]"
-    relation: context_for
-  - node: "[[Interest_Rate_Corridor_Floor_System_Standing_Facilities]]"
-    relation: initiates_via
-  - node: "[[Monetary_Policy_Transmission_Collateral_Channel]]"
-    relation: specialized_channel_within
-  - node: "[[Collateral_Framework_Haircuts_Central_Bank_Credit]]"
-    relation: affects_balance_sheet_channel
-
+- node: '[[Monetary_Policy_Instruments_Operational_Framework]]'
+  relation: starts_from
+- node: '[[Inflation_Targeting_Framework_Central_Bank]]'
+  relation: context_for
+- node: '[[Interest_Rate_Corridor_Floor_System_Standing_Facilities]]'
+  relation: initiates_via
+- node: '[[Monetary_Policy_Transmission_Collateral_Channel]]'
+  relation: specialized_channel_within
+- node: '[[Collateral_Framework_Haircuts_Central_Bank_Credit]]'
+  relation: affects_balance_sheet_channel
+- node: '[[Monetary Policy Transmission via Collateral and Repo Markets]]'
+  relation: shared_tag:monetary-transmission
 date_created: 2026-05-20
 date_updated: 2026-05-20
 ---
+
 
 ## MPTM Overview Map
 
@@ -252,3 +261,4 @@ Policy implication: Low rates not only stimulate real economy — they also redu
 5. **EME considerations**: Exchange rate channel important; capital flow volatility adds external transmission; macroprudential tools supplement interest rate when financial cycle diverges from business cycle
 
 [See [[Inflation_Targeting_Framework_Central_Bank]] for post-GFC policy mix addressing the risk-taking channel via macroprudential policy]
+

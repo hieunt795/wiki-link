@@ -3,38 +3,56 @@ node_id: cb_balance_sheet_trilemma_frm_001
 type: framework
 title: Central Bank Balance Sheet Trilemma
 aliases:
-  - CB B/S Trilemma
-  - Bộ ba bất khả thi về Bảng cân đối kế toán Ngân hàng Trung ương
-  - Small Balance Sheet Trade-off
-
+- CB B/S Trilemma
+- Bộ ba bất khả thi về Bảng cân đối kế toán Ngân hàng Trung ương
+- Small Balance Sheet Trade-off
 domain:
   primary: monetary_policy
-  secondary: [financial_markets]
-tags: [fed, balance_sheet, volatility, intervention, trilemma]
-
+  secondary:
+  - financial_markets
+tags:
+- fed
+- balance_sheet
+- volatility
+- intervention
+- trilemma
 confidence: 4
 stability: stable
+thesis: 'A central bank cannot simultaneously achieve three objectives: (1) a small
+  balance sheet, (2) low short-term rate volatility, and (3) limited intervention
+  in money markets. Only two can be achieved at once in a given regulatory and operational
+  environment.
 
-thesis: >
-  A central bank cannot simultaneously achieve three objectives: (1) a small balance sheet, (2) low short-term rate volatility, and (3) limited intervention in money markets. Only two can be achieved at once in a given regulatory and operational environment.
-
+  '
 source_refs:
-  - path: 02_sources/Clipping/Breaking Out of the Central Bank Balance Sheet Trilemma.md
-    pages: "Full document"
-    weight: primary
-
+- path: 02_sources/Clipping/Breaking Out of the Central Bank Balance Sheet Trilemma.md
+  pages: Full document
+  weight: primary
 related:
-  - node: "[[Monetary_Policy_Instruments_Operational_Framework]]"
-    relation: foundational_constraint
-  - node: "[[Warsh_Balance_Sheet_Stimulus_Swap]]"
-    relation: attempts_to_break
-
+- node: '[[Monetary_Policy_Instruments_Operational_Framework]]'
+  relation: foundational_constraint
+- node: '[[Warsh_Balance_Sheet_Stimulus_Swap]]'
+  relation: attempts_to_break
+- node: '[[Central Bank Monetary Policy Operational Framework Typology]]'
+  relation: shared_tag:fed
+- node: '[[Currency as a Central Bank Liability]]'
+  relation: shared_tag:fed
+- node: '[[Fedwire Payment System Reserve Demand And LSM Policy]]'
+  relation: shared_tag:fed
+- node: '[[Fed Ample Reserves Rate Control Framework]]'
+  relation: shared_tag:fed
+- node: '[[QT Reserve Drain Effectiveness And Deposit Funding Condition]]'
+  relation: shared_tag:fed
 date_created: 2026-05-20
 date_updated: 2026-05-20
 ---
 
+
 ## Overview
 Proposed by Fed researchers (Duygan-Bump & Kahn) and debated by Roc Armenter in 2026, the **Balance Sheet Trilemma** explains the structural constraints facing modern central banks in a post-QE world [RAW-CLIP].
+
+## Local vs. Global View
+**Local view:** Given current rules, regulations, and systems, the trilemma is binding — the Fed balance sheet cannot shrink further without accepting more rate volatility or more frequent intervention [RAW-CLIP]. **Global view:** The trilemma is a frontier, not a cage — changing the underlying parameters (TGA management, regulatory regime, implementation framework) shifts the frontier outward, potentially allowing all three objectives to improve simultaneously [RAW-CLIP]. Armenter argues policy debate should focus on the global view.
 
 ## The Three Vertices
 1.  **Small Balance Sheet:** Returning to a "lean" pre-2008 size.
@@ -53,3 +71,4 @@ Proposed by Fed researchers (Duygan-Bump & Kahn) and debated by Roc Armenter in 
 
 ## Case Study: Japan 2026
 Japan is currently failing the trilemma: it has a large balance sheet and is attempting to limit rate volatility, but it is forced into **heavy-handed intervention** (FX intervention and YCC) because its "global variables" (debt-to-GDP, demographics) are unhedged and extremely sensitive to rate moves [LLM].
+

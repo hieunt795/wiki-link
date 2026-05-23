@@ -29,10 +29,21 @@ source_refs:
 - path: 02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md
   pages: Ch1-3, Bindseil 2014
   weight: primary
-related: []
+related:
+- node: '[[Central Bank Balance Sheet Structure Liabilities Assets]]'
+  relation: shared_tag:central-bank
+- node: '[[Inflation Targeting Framework (ITF) and Post-GFC Policy Mix]]'
+  relation: shared_tag:central-bank
+- node: '[[Central Bank Intermediation Balance Sheet Autonomous Factors]]'
+  relation: shared_tag:central-bank
+- node: '[[Collateral Framework Haircuts Central Bank Credit]]'
+  relation: shared_tag:central-bank
+- node: '[[Interest Rate Corridor Floor System Standing Facilities]]'
+  relation: shared_tag:omo
 date_created: '2026-05-20'
 date_updated: '2026-05-20'
 ---
+
 
 Bindseil defines three core instruments of monetary policy implementation:
 
@@ -55,4 +66,5 @@ Monetary macroeconomics identifies the optimal short-term rate level (transmissi
 Implementation ensures that level prevails via market operations. The two functions are segregated within CBs (economics dept vs. market operations dept). This dichotomy breaks down in crises when the overnight rate loses adequacy as the sole operational target.
 
 **Operational target:** The short-term interest rate that (i) can be controlled by the CB, (ii) influences the ultimate target, (iii) defines monetary stance, (iv) guides implementation officers.
+
 

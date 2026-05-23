@@ -3,51 +3,69 @@ node_id: basel_iii_endgame_001
 type: framework
 title: Basel III Endgame — Capital, Liquidity, and Credit Migration
 aliases:
-  - Basel III Endgame
-  - Basel III.1
-  - output floor
-  - RWA mechanics
-  - sàn đầu ra Basel
-  - Basel vốn và thanh khoản
-  - credit migration to private credit
-  - originate-to-distribute
-
+- Basel III Endgame
+- Basel III.1
+- output floor
+- RWA mechanics
+- sàn đầu ra Basel
+- Basel vốn và thanh khoản
+- credit migration to private credit
+- originate-to-distribute
 domain:
   primary: financial_markets
-  secondary: [monetary_policy, macro_outlook]
-tags: [Basel, capital-regulation, RWA, output-floor, LCR, NSFR, leverage-ratio, private-credit, credit-migration, originate-to-distribute]
-
+  secondary:
+  - monetary_policy
+  - macro_outlook
+tags:
+- Basel
+- capital-regulation
+- RWA
+- output-floor
+- LCR
+- NSFR
+- leverage-ratio
+- private-credit
+- credit-migration
+- originate-to-distribute
 confidence: 2
 stability: evolving
-
-thesis: >
-  Basel III and its Endgame extensions create a structured causal chain:
-  RWA requirements + output floor + leverage ratio + LCR/NSFR raise the cost of holding
+thesis: 'Basel III and its Endgame extensions create a structured causal chain: RWA
+  requirements + output floor + leverage ratio + LCR/NSFR raise the cost of holding
   specialized and long-duration corporate credit → banks are driven from originate-to-hold
-  to originate-to-distribute → private credit funds fill the financing gap, reaching $2.1T
-  globally. Critically, risk is not eliminated but redistributed: bank solvency risk
-  converts to network liquidity risk in the bank-NBFI interconnected system.
+  to originate-to-distribute → private credit funds fill the financing gap, reaching
+  $2.1T globally. Critically, risk is not eliminated but redistributed: bank solvency
+  risk converts to network liquidity risk in the bank-NBFI interconnected system.
 
+  '
 source_refs:
-  - path: 02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md
-    pages: "§I-VIII (Core Framework through Ultimate Insight)"
-    weight: primary
-
+- path: 02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md
+  pages: §I-VIII (Core Framework through Ultimate Insight)
+  weight: primary
 related:
-  - node: "[[SLR_LCR_Balance_Sheet_Constraints_Treasury_Market_Dealer]]"
-    relation: shares_regulatory_drivers
-  - node: "[[Shadow_Banking_Market_Based_Finance]]"
-    relation: private_credit_is_instance_of
-  - node: "[[Private_Credit_SRT_NAV_Loans_Bank_Partnerships]]"
-    relation: mechanism_within
-  - node: "[[Collateral_Velocity_Rehypothecation]]"
-    relation: related_shadow_banking
-  - node: "[[Repo_Market_Mechanics_Triparty_Bilateral]]"
-    relation: bank_nbfi_interconnect
-
+- node: '[[SLR_LCR_Balance_Sheet_Constraints_Treasury_Market_Dealer]]'
+  relation: shares_regulatory_drivers
+- node: '[[Shadow_Banking_Market_Based_Finance]]'
+  relation: private_credit_is_instance_of
+- node: '[[Private_Credit_SRT_NAV_Loans_Bank_Partnerships]]'
+  relation: mechanism_within
+- node: '[[Collateral_Velocity_Rehypothecation]]'
+  relation: related_shadow_banking
+- node: '[[Repo_Market_Mechanics_Triparty_Bilateral]]'
+  relation: bank_nbfi_interconnect
+- node: '[[Basel Driven Credit Migration To Private Markets]]'
+  relation: shared_tag:Basel
+- node: '[[Basel III Capital And Liquidity Constraint Mechanics]]'
+  relation: shared_tag:Basel
+- node: '[[US Shadow Banking Post-GFC Market Based Finance Structure]]'
+  relation: shared_tag:Basel
+- node: '[[IRRBB EVE NII Dual Metric Framework]]'
+  relation: shared_tag:Basel
+- node: '[[Basel Output Floor Specialized Lending Impact]]'
+  relation: shared_tag:RWA
 date_created: 2026-05-20
 date_updated: 2026-05-20
 ---
+
 
 ## Core Causal Chain [LLM]
 
@@ -281,3 +299,4 @@ Basel III does not eliminate systemic risk — it redistributes risk into the sh
 ## Confidence Note
 
 This node is confidence=2 (LLM synthesis). Source is a Gemini deep-research document that accurately cites BIS framework documents (d424 output floor, d457 leverage ratio, bcbs238 LCR, d295 NSFR), IMF GFSR April 2024, and Fed FEDS Note May 2025. Mechanical facts (output floor schedule, RSF factors, leverage ratio minimums) are authoritative. Interpretive claims (risk transformation thesis, regional impact quantification) are marked [LLM]. Upgrade to confidence=3 after cross-referencing with BCBS source documents directly.
+

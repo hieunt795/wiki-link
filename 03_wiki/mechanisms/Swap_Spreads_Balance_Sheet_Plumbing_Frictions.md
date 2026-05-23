@@ -3,56 +3,73 @@ node_id: swap_spreads_001
 type: mechanism
 title: Swap Spreads — Drivers, Balance Sheet Frictions, and Plumbing Indicators
 aliases:
-  - swap spread
-  - SOFR-ASW
-  - asset swap spread
-  - interpolated swap spread
-  - Treasury swap spread
-  - chênh lệch lãi suất hoán đổi
-  - swap spread âm
-
+- swap spread
+- SOFR-ASW
+- asset swap spread
+- interpolated swap spread
+- Treasury swap spread
+- chênh lệch lãi suất hoán đổi
+- swap spread âm
 domain:
   primary: financial_markets
-  secondary: [monetary_policy, shadow_banking]
-tags: [swap-spreads, asset-swap, SLR, LCR, balance-sheet-constraints, shadow-cost, plumbing, SOFR]
-
+  secondary:
+  - monetary_policy
+  - shadow_banking
+tags:
+- swap-spreads
+- asset-swap
+- SLR
+- LCR
+- balance-sheet-constraints
+- shadow-cost
+- plumbing
+- SOFR
 confidence: 3
 stability: stable
+thesis: 'Swap spreads — the difference between bond yield and the swap rate of equivalent
+  maturity — decompose into: SOFR-ASW = repo-SOFR basis swap + adjusted CDS (credit
+  risk). Negative swap spreads (Treasury yield > SOFR swap rate) signal dealer balance
+  sheet constraints: when banks face binding SLR/LCR constraints, their ability to
+  intermediate arbitrage between bonds and swaps is impaired, causing the spread to
+  persist at values inconsistent with no-arbitrage. Shadow costs of regulatory constraints
+  — not visible in funding rates — are a primary structural driver of Treasury swap
+  spreads in the post-Basel III era. Swap spreads are therefore a measure of plumbing
+  friction and dealer balance sheet stress.
 
-thesis: >
-  Swap spreads — the difference between bond yield and the swap rate of equivalent maturity —
-  decompose into: SOFR-ASW = repo-SOFR basis swap + adjusted CDS (credit risk). Negative swap
-  spreads (Treasury yield > SOFR swap rate) signal dealer balance sheet constraints: when banks
-  face binding SLR/LCR constraints, their ability to intermediate arbitrage between bonds and swaps
-  is impaired, causing the spread to persist at values inconsistent with no-arbitrage. Shadow costs
-  of regulatory constraints — not visible in funding rates — are a primary structural driver of
-  Treasury swap spreads in the post-Basel III era. Swap spreads are therefore a measure of
-  plumbing friction and dealer balance sheet stress.
-
+  '
 source_refs:
-  - path: 02_sources/books/huggins_schaller_relative_value/Huggins_Schaller_Fixed_Income_RV.md
-    pages: "Ch.10 overview, Ch.17 (SOFR-ASW), Ch.18 (regulatory constraints, shadow costs)"
-    weight: primary
-  - path: 02_sources/books/conks/Conks - Liquidity and Market Dynamics.md
-    pages: "Swap spreads as plumbing indicator"
-    weight: supporting
-  - path: 02_sources/books/tuckman_serrat_fixed_income/Tuckman_Serrat_Fixed_Income_2022.md
-    pages: "Ch.13 §13.6 (basis swaps), Ch.14 (asset swap spreads)"
-    weight: supporting
-
+- path: 02_sources/books/huggins_schaller_relative_value/Huggins_Schaller_Fixed_Income_RV.md
+  pages: Ch.10 overview, Ch.17 (SOFR-ASW), Ch.18 (regulatory constraints, shadow costs)
+  weight: primary
+- path: 02_sources/books/conks/Conks - Liquidity and Market Dynamics.md
+  pages: Swap spreads as plumbing indicator
+  weight: supporting
+- path: 02_sources/books/tuckman_serrat_fixed_income/Tuckman_Serrat_Fixed_Income_2022.md
+  pages: Ch.13 §13.6 (basis swaps), Ch.14 (asset swap spreads)
+  weight: supporting
 related:
-  - node: "[[SLR_LCR_Balance_Sheet_Constraints_Treasury_Market_Dealer]]"
-    relation: primary_driver
-  - node: "[[Repo_Market_Mechanics_Triparty_Bilateral]]"
-    relation: transmission_path
-  - node: "[[Interest_Rate_Swaps_OIS_Fixed_Floating]]"
-    relation: component_of
-  - node: "[[Collateral_Framework_Haircuts_Central_Bank_Credit]]"
-    relation: related_mechanism
-
+- node: '[[SLR_LCR_Balance_Sheet_Constraints_Treasury_Market_Dealer]]'
+  relation: primary_driver
+- node: '[[Repo_Market_Mechanics_Triparty_Bilateral]]'
+  relation: transmission_path
+- node: '[[Interest_Rate_Swaps_OIS_Fixed_Floating]]'
+  relation: component_of
+- node: '[[Collateral_Framework_Haircuts_Central_Bank_Credit]]'
+  relation: related_mechanism
+- node: '[[Basel III Capital And Liquidity Constraint Mechanics]]'
+  relation: shared_tag:SLR
+- node: '[[SLR LCR Balance Sheet Constraints Treasury Market Dealer]]'
+  relation: shared_tag:SLR
+- node: '[[Basel III Endgame — Capital, Liquidity, and Credit Migration]]'
+  relation: shared_tag:LCR
+- node: '[[LCR NSFR Long-Term Lending Penalty]]'
+  relation: shared_tag:LCR
+- node: '[[Collateral Velocity And Pledged Collateral Market Mechanics]]'
+  relation: shared_tag:plumbing
 date_created: 2026-05-20
 date_updated: 2026-05-20
 ---
+
 
 ## Core Decomposition: SOFR-ASW Formula
 
@@ -176,3 +193,4 @@ With structural adjustments:
 **Interpolated swap spread** (yield minus par swap rate of same maturity) is a **flawed** RV indicator because it does not control for coupon effect: higher-coupon bonds have lower yields than low-coupon bonds on an upward-sloping curve, even when priced fairly on the same curve. Par asset swap spread corrects for this. [RAW-BOOK Huggins-Schaller §17]
 
 Universal yardstick via CCBS: Any bond globally can be converted to USD SOFR spread via asset swap + cross-currency basis swap. USD SOFR = universal denominator for global bond comparison.
+

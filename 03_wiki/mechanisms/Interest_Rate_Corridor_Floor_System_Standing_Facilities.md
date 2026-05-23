@@ -32,10 +32,21 @@ source_refs:
 - path: 02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md
   pages: Ch4-6, Bindseil 2014
   weight: primary
-related: []
+related:
+- node: '[[Central Bank Monetary Policy Operational Framework Typology]]'
+  relation: shared_tag:corridor
+- node: '[[Monetary Policy Instruments Operational Framework]]'
+  relation: shared_tag:corridor
+- node: '[[Fed Ample Reserves Rate Control Framework]]'
+  relation: shared_tag:iorb
+- node: '[[Fed Ample Reserves Range Floor Framework]]'
+  relation: shared_tag:iorb
+- node: '[[FHLB EFFR IORB Arbitrage Floor Mechanism]]'
+  relation: shared_tag:iorb
 date_created: '2026-05-20'
 date_updated: '2026-05-20'
 ---
+
 
 The interest rate corridor is defined by two standing facilities that bracket overnight interbank rates.
 
@@ -60,4 +71,5 @@ Optimal width balances volatility absorption vs. interbank market function (typi
 **Martingale property:** In a reserve-averaging system, overnight rates follow a martingale within the maintenance period. Banks have incentive to front-load if they expect rate rises, creating end-of-period spikes unless the CB intervenes.
 
 **Floor system evolution:** When reserves are ample (post-QE), the overnight rate gravitates to the deposit facility rate. The corridor becomes a floor. CB controls rate via deposit rate, not OMO quantity. This is the dominant implementation framework post-2008 for Fed (IORB), ECB (DFR), BOE (Bank Rate on reserves).
+
 

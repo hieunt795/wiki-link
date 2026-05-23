@@ -3,51 +3,69 @@ node_id: irs_ois_fixed_floating_001
 type: mechanism
 title: Interest Rate Swaps — OIS, Fixed-for-Floating, Clearing, and Basis
 aliases:
-  - IRS
-  - interest rate swap
-  - OIS
-  - overnight index swap
-  - fixed-for-floating swap
-  - basis swap
-  - SOFR swap
-  - hoán đổi lãi suất
-  - hợp đồng hoán đổi lãi suất
-
+- IRS
+- interest rate swap
+- OIS
+- overnight index swap
+- fixed-for-floating swap
+- basis swap
+- SOFR swap
+- hoán đổi lãi suất
+- hợp đồng hoán đổi lãi suất
 domain:
   primary: financial_markets
-  secondary: [monetary_policy, shadow_banking]
-tags: [interest-rate-swaps, OIS, SOFR, derivatives, clearing, CCP, DV01, basis-swap, counterparty-risk]
-
+  secondary:
+  - monetary_policy
+  - shadow_banking
+tags:
+- interest-rate-swaps
+- OIS
+- SOFR
+- derivatives
+- clearing
+- CCP
+- DV01
+- basis-swap
+- counterparty-risk
 confidence: 4
 stability: stable
+thesis: 'Interest rate swaps exchange fixed for floating interest payments on a notional
+  amount. OIS (overnight index swaps, e.g., SOFR swaps) are near-riskless; fixed-for-floating
+  swaps (e.g., Euribor) carry a basis vs. the risk-free rate. Market notionals ($210T)
+  vastly overstate risk — ENNs (entity-netted notionals) of $16T are comparable to
+  other fixed income markets. Swaps DV01 is entirely on the fixed leg; clearing via
+  CCPs concentrates but does not eliminate counterparty risk; the default waterfall
+  (IM → default fund → CCP skin → member assessments → VM haircutting) is the last
+  line of defense.
 
-thesis: >
-  Interest rate swaps exchange fixed for floating interest payments on a notional amount.
-  OIS (overnight index swaps, e.g., SOFR swaps) are near-riskless; fixed-for-floating swaps
-  (e.g., Euribor) carry a basis vs. the risk-free rate. Market notionals ($210T) vastly overstate
-  risk — ENNs (entity-netted notionals) of $16T are comparable to other fixed income markets.
-  Swaps DV01 is entirely on the fixed leg; clearing via CCPs concentrates but does not eliminate
-  counterparty risk; the default waterfall (IM → default fund → CCP skin → member assessments →
-  VM haircutting) is the last line of defense.
-
+  '
 source_refs:
-  - path: 02_sources/books/tuckman_serrat_fixed_income/Tuckman_Serrat_Fixed_Income_2022.md
-    pages: "Ch.13 (pp.4993-5283), Ch.14 (asset swap spreads)"
-    weight: primary
-
+- path: 02_sources/books/tuckman_serrat_fixed_income/Tuckman_Serrat_Fixed_Income_2022.md
+  pages: Ch.13 (pp.4993-5283), Ch.14 (asset swap spreads)
+  weight: primary
 related:
-  - node: "[[DV01_Duration_Convexity_Fixed_Income]]"
-    relation: uses
-  - node: "[[Repo_Market_Mechanics_Triparty_Bilateral]]"
-    relation: funded_via
-  - node: "[[Collateral_Framework_Haircuts_Central_Bank_Credit]]"
-    relation: margin_analogy
-  - node: "[[SLR_LCR_Balance_Sheet_Constraints_Treasury_Market_Dealer]]"
-    relation: constrained_by
-
+- node: '[[DV01_Duration_Convexity_Fixed_Income]]'
+  relation: uses
+- node: '[[Repo_Market_Mechanics_Triparty_Bilateral]]'
+  relation: funded_via
+- node: '[[Collateral_Framework_Haircuts_Central_Bank_Credit]]'
+  relation: margin_analogy
+- node: '[[SLR_LCR_Balance_Sheet_Constraints_Treasury_Market_Dealer]]'
+  relation: constrained_by
+- node: '[[Eurodollar System Mechanics And Post-Reform Decline]]'
+  relation: shared_tag:SOFR
+- node: '[[Fed Policy Rate Shift EFFR to Secured Rate TGCR]]'
+  relation: shared_tag:SOFR
+- node: '[[FHLB EFFR IORB Arbitrage Floor Mechanism]]'
+  relation: shared_tag:SOFR
+- node: '[[Repo Market Mechanics Triparty Bilateral]]'
+  relation: shared_tag:SOFR
+- node: '[[Standing Repo Facility SRF Fed Backstop]]'
+  relation: shared_tag:SOFR
 date_created: 2026-05-20
 date_updated: 2026-05-20
 ---
+
 
 ## Taxonomy of Interest Rate Swaps
 
@@ -223,3 +241,4 @@ Asset swap converts fixed-rate bond into floating-rate exposure:
 Relationship: s_par × 100 = s_mkt × P → choice between par and market value asset swap = collateral preference, not economics.
 
 **Financing risk:** Long-dated bond + short-term repo → risk that repo rate rises faster than spread earned, or lender refuses to roll.
+

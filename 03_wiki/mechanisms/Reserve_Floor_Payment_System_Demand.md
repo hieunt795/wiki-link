@@ -3,51 +3,70 @@ node_id: reserve_floor_payment_001
 type: mechanism
 title: Reserve Floor — Payment System Demand and the Minimum Ample Level
 aliases:
-  - reserve floor
-  - payment system reserve demand
-  - Fedwire RTGS reserve demand
-  - minimum ample reserves
-  - sàn dự trữ ngân hàng
-  - yêu cầu dự trữ hệ thống thanh toán
-
+- reserve floor
+- payment system reserve demand
+- Fedwire RTGS reserve demand
+- minimum ample reserves
+- sàn dự trữ ngân hàng
+- yêu cầu dự trữ hệ thống thanh toán
 domain:
   primary: monetary_policy
-  secondary: [financial_markets, shadow_banking]
-tags: [reserves, Fedwire, RTGS, payment-system, reserve-floor, IORB, SRF, QT, bank-liquidity]
-
+  secondary:
+  - financial_markets
+  - shadow_banking
+tags:
+- reserves
+- Fedwire
+- RTGS
+- payment-system
+- reserve-floor
+- IORB
+- SRF
+- QT
+- bank-liquidity
 confidence: 3
 stability: stable
+thesis: 'The minimum level of reserve balances ("reserve floor") that the Fed must
+  supply is driven primarily by the demand of the payment system, not by monetary
+  policy alone. RTGS (real-time gross settlement) requires banks to pre-fund large
+  opening-of-day reserve balances; post-GFC liquidity regulations stigmatize intraday
+  overdrafts; and IORB remuneration removes incentives to lend excess reserves. These
+  three structural changes raised the minimum from ~$10B pre-GFC to ~$3T, creating
+  a ratchet effect. When reserves fall below the ample floor, payment delays beget
+  repo rate spikes (September 2019 being the canonical example). Policy options to
+  lower the floor include liquidity savings mechanisms (LSMs), tiered IORB, revised
+  LCR/daylight overdraft rules, and TOMOs.
 
-thesis: >
-  The minimum level of reserve balances ("reserve floor") that the Fed must supply is driven primarily
-  by the demand of the payment system, not by monetary policy alone. RTGS (real-time gross settlement)
-  requires banks to pre-fund large opening-of-day reserve balances; post-GFC liquidity regulations
-  stigmatize intraday overdrafts; and IORB remuneration removes incentives to lend excess reserves.
-  These three structural changes raised the minimum from ~$10B pre-GFC to ~$3T, creating a ratchet
-  effect. When reserves fall below the ample floor, payment delays beget repo rate spikes
-  (September 2019 being the canonical example). Policy options to lower the floor include
-  liquidity savings mechanisms (LSMs), tiered IORB, revised LCR/daylight overdraft rules, and TOMOs.
-
+  '
 source_refs:
-  - path: 02_sources/books/duffie_bpea_payments_2026/Duffie_BPEA_Payments_Liquidity_2026.md
-    pages: "Sections I, II, III — Abstract, p.1-40"
-    weight: primary
-
+- path: 02_sources/books/duffie_bpea_payments_2026/Duffie_BPEA_Payments_Liquidity_2026.md
+  pages: Sections I, II, III — Abstract, p.1-40
+  weight: primary
 related:
-  - node: "[[Interest_Rate_Corridor_Floor_System_Standing_Facilities]]"
-    relation: mechanism_of
-  - node: "[[Treasury_General_Account_TGA_Reserve_Swap]]"
-    relation: interacts_with
-  - node: "[[Quantitative_Tightening_QT_Balance_Sheet_Runoff]]"
-    relation: triggered_by
-  - node: "[[Fed_Overnight_Reverse_Repo_ON_RRP]]"
-    relation: related_facility
-  - node: "[[SLR_LCR_Balance_Sheet_Constraints_Treasury_Market_Dealer]]"
-    relation: regulatory_driver
-
+- node: '[[Interest_Rate_Corridor_Floor_System_Standing_Facilities]]'
+  relation: mechanism_of
+- node: '[[Treasury_General_Account_TGA_Reserve_Swap]]'
+  relation: interacts_with
+- node: '[[Quantitative_Tightening_QT_Balance_Sheet_Runoff]]'
+  relation: triggered_by
+- node: '[[Fed_Overnight_Reverse_Repo_ON_RRP]]'
+  relation: related_facility
+- node: '[[SLR_LCR_Balance_Sheet_Constraints_Treasury_Market_Dealer]]'
+  relation: regulatory_driver
+- node: '[[Fedwire Payment System Reserve Demand And LSM Policy]]'
+  relation: shared_tag:reserves
+- node: '[[QT Reserve Drain Effectiveness And Deposit Funding Condition]]'
+  relation: shared_tag:reserves
+- node: '[[TGA Reserve Swap Mechanics And Debt Ceiling Dynamics]]'
+  relation: shared_tag:reserves
+- node: '[[Central Bank Balance Sheet Structure Liabilities Assets]]'
+  relation: shared_tag:reserves
+- node: '[[Ample Reserves Buffer Sizing TGA Volatility]]'
+  relation: shared_tag:reserves
 date_created: 2026-05-20
 date_updated: 2026-05-20
 ---
+
 
 ## Why the Reserve Floor Exists: The RTGS Mechanism
 
@@ -182,3 +201,4 @@ The reserve floor is higher than the Fed's pre-GFC experience would suggest. Ind
 The Fed's two-step response: (1) slow/stop QT when SOFR-IORB spread rises; (2) begin Reserve Management Purchases (RMPs) of T-bills to restore ample level. [RAW-BOOK Duffie Abstract, §I.A]
 
 **Balance sheet cost-benefit:** Larger balance sheet → smooth rates, no payment risk; Smaller balance sheet → lower political/fiscal cost, requires active liquidity management + LSM infrastructure + stigma removal. [LLM] The optimal point depends on whether enabling infrastructure (LSMs, destigmatized SRF) is in place.
+

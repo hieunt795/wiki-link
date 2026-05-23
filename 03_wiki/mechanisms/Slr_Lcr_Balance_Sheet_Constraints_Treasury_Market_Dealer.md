@@ -32,10 +32,21 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Liquidity and Market Dynamics.md
   pages: Great Sovereign Debt Intervention, Repo Market Blindspot
   weight: primary
-related: []
+related:
+- node: '[[Basel III Capital And Liquidity Constraint Mechanics]]'
+  relation: shared_tag:slr
+- node: '[[Swap Spreads — Drivers, Balance Sheet Frictions, and Plumbing Indicators]]'
+  relation: shared_tag:slr
+- node: '[[Basel III Endgame — Capital, Liquidity, and Credit Migration]]'
+  relation: shared_tag:lcr
+- node: '[[LCR NSFR Long-Term Lending Penalty]]'
+  relation: shared_tag:lcr
+- node: '[[Basel Regional Implementation Dynamics]]'
+  relation: shared_tag:basel-iii
 date_created: '2026-05-20'
 date_updated: '2026-05-20'
 ---
+
 
 Basel III post-GFC regulations constrain bank balance sheets in ways that affect Treasury market function.
 
@@ -57,4 +68,5 @@ Treasury supply surge + dealer balance sheet constraints -> dealers cannot absor
 4. FICC cleared repo expansion: netting reduces balance sheet consumption
 
 **SLR exemption precedent:** April 2020 Covid SLR relief enabled dealers to absorb trillions in new issuance. Expiration March 2021 directly contributed to March-April 2021 Treasury market stress.
+
 

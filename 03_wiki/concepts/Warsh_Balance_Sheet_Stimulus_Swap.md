@@ -3,35 +3,52 @@ node_id: warsh_balance_sheet_stimulus_swap_con_001
 type: concept
 title: Warsh Balance Sheet Stimulus Swap
 aliases:
-  - Warsh Regime Shift
-  - Hoán đổi kích thích Bảng cân đối kế toán (Warsh)
-  - Balance Sheet for Rate Cuts Trade-off
-
+- Warsh Regime Shift
+- Hoán đổi kích thích Bảng cân đối kế toán (Warsh)
+- Balance Sheet for Rate Cuts Trade-off
 domain:
   primary: monetary_policy
-  secondary: [financial_markets, macro_outlook]
-tags: [fed, warsh, balance_sheet, qt, fed_funds, stimulus]
-
+  secondary:
+  - financial_markets
+  - macro_outlook
+tags:
+- fed
+- warsh
+- balance_sheet
+- qt
+- fed_funds
+- stimulus
 confidence: 2
 stability: contested
+thesis: 'The "Warsh Hypothesis" posits that the Fed''s balance sheet and policy rate
+  are substitutable forms of stimulus; significantly shrinking the balance sheet "redeploys"
+  capacity, theoretically allowing for lower nominal interest rates without increasing
+  aggregate monetary ease.
 
-thesis: >
-  The "Warsh Hypothesis" posits that the Fed's balance sheet and policy rate are substitutable forms of stimulus; significantly shrinking the balance sheet "redeploys" capacity, theoretically allowing for lower nominal interest rates without increasing aggregate monetary ease.
-
+  '
 source_refs:
-  - path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
-    pages: "Full document"
-    weight: primary
-
+- path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
+  pages: Full document
+  weight: primary
 related:
-  - node: "[[Quantitative_Tightening_QT_Balance_Sheet_Runoff]]"
-    relation: ideological_driver
-  - node: "[[Reserve_Floor_Payment_System_Demand]]"
-    relation: contested_by
-
+- node: '[[Quantitative_Tightening_QT_Balance_Sheet_Runoff]]'
+  relation: ideological_driver
+- node: '[[Reserve_Floor_Payment_System_Demand]]'
+  relation: contested_by
+- node: '[[Central Bank Monetary Policy Operational Framework Typology]]'
+  relation: shared_tag:fed
+- node: '[[Currency as a Central Bank Liability]]'
+  relation: shared_tag:fed
+- node: '[[Fedwire Payment System Reserve Demand And LSM Policy]]'
+  relation: shared_tag:fed
+- node: '[[Fed Ample Reserves Rate Control Framework]]'
+  relation: shared_tag:fed
+- node: '[[QT Reserve Drain Effectiveness And Deposit Funding Condition]]'
+  relation: shared_tag:fed
 date_created: 2026-05-20
 date_updated: 2026-05-20
 ---
+
 
 ## Overview
 As Kevin Warsh approaches the Fed Chairmanship in 2026, a new policy doctrine has emerged: the **Balance Sheet Stimulus Swap**. This concept moves beyond the technocratic "ample reserves" framework toward an ideological view that a large central bank footprint is inherently distortionary and that its reduction is a prerequisite for "Main Street" rate cuts [RAW-CLIP].
@@ -60,3 +77,4 @@ Critics (e.g., Andreopoulos) argue that this logic is fundamentally flawed:
 ## Systemic Risks
 - **Price Distortions:** The transition aims to remove distortions, but the process of aggressive QT while cutting rates could create new, unpredictable distortions in the yield curve (segmentation between long and short rates) [RAW-CLIP].
 - **Financial Stability:** Forcing the balance sheet below the structural demand floor risks 2019-style "repocalypses" if the regulatory roll-back does not perfectly match the liquidity drain [LLM].
+

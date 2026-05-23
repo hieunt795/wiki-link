@@ -3,38 +3,53 @@ node_id: yen_intervention_liquidity_drain_mec_001
 type: mechanism
 title: Yen Intervention Liquidity Drain Mechanism
 aliases:
-  - MoF Yen Support Operations
-  - Cơ chế rút thanh khoản qua can thiệp tỷ giá Yên (MoF)
-  - Japan FX Reserves Liquidation
-
+- MoF Yen Support Operations
+- Cơ chế rút thanh khoản qua can thiệp tỷ giá Yên (MoF)
+- Japan FX Reserves Liquidation
 domain:
   primary: monetary_policy
-  secondary: [financial_markets]
-tags: [japan, mof, yen, intervention, liquidity, treasuries]
-
+  secondary:
+  - financial_markets
+tags:
+- japan
+- mof
+- yen
+- intervention
+- liquidity
+- treasuries
 confidence: 3
 stability: evolving
+thesis: 'Yen intervention by the Ministry of Finance (MoF) acts as a global liquidity
+  drain; by selling US Treasuries to buy Yen, Japan effectively reduces the supply
+  of global dollar collateral while increasing selling pressure on US rates.
 
-thesis: >
-  Yen intervention by the Ministry of Finance (MoF) acts as a global liquidity drain; by selling US Treasuries to buy Yen, Japan effectively reduces the supply of global dollar collateral while increasing selling pressure on US rates.
-
+  '
 source_refs:
-  - path: 02_sources/Clipping/Fed, ECB, and BoJ_ A Matter of Credibility.md
-    pages: "Full document"
-    weight: primary
-  - path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
-    pages: "Section on BoJ"
-    weight: supporting
-
+- path: 02_sources/Clipping/Fed, ECB, and BoJ_ A Matter of Credibility.md
+  pages: Full document
+  weight: primary
+- path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
+  pages: Section on BoJ
+  weight: supporting
 related:
-  - node: "[[Japan_Sovereign_Carry_Trade_Framework]]"
-    relation: funding_source
-  - node: "[[Global_Dollar_System_Eurodollar_Architecture]]"
-    relation: impacts
-
+- node: '[[Japan_Sovereign_Carry_Trade_Framework]]'
+  relation: funding_source
+- node: '[[Global_Dollar_System_Eurodollar_Architecture]]'
+  relation: impacts
+- node: '[[Japan Sovereign Carry Trade Framework]]'
+  relation: shared_tag:japan
+- node: '[[Financial Repression Distributional Welfare Effects]]'
+  relation: shared_tag:japan
+- node: '[[Financial Repression via Reserve Creation]]'
+  relation: shared_tag:japan
+- node: '[[Japan FILP to QE Structural Succession]]'
+  relation: shared_tag:japan
+- node: '[[QE Duration Extraction from Private Sector]]'
+  relation: shared_tag:japan
 date_created: 2026-05-20
 date_updated: 2026-05-20
 ---
+
 
 ## Overview
 In early 2026, the Japanese Ministry of Finance (MoF) engaged in large-scale FX intervention to support a weakening Yen, which breached the 160 level in April. These operations involve the liquidation of Japan's $1 trillion foreign exchange reserves, primarily US Treasuries [RAW-CLIP].
@@ -61,3 +76,4 @@ The USD/JPY breach of 160 triggered escalating verbal warnings from Finance Mini
 
 ## Implications for the Fed
 The MoF's actions create a "Quantitative Tightening" effect on the US Treasury market that is outside the Fed's direct control. This complicates the Fed's 2026 "Warsh Swap" (cutting rates while shrinking the balance sheet) by adding external selling pressure that keeps long-term US yields high [LLM].
+

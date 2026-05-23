@@ -29,10 +29,21 @@ source_refs:
 - path: 02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md
   pages: Ch2, Bindseil 2014
   weight: primary
-related: []
+related:
+- node: '[[Central Bank Balance Sheet Structure Liabilities Assets]]'
+  relation: shared_tag:central-bank
+- node: '[[Inflation Targeting Framework (ITF) and Post-GFC Policy Mix]]'
+  relation: shared_tag:central-bank
+- node: '[[Monetary Policy Instruments Operational Framework]]'
+  relation: shared_tag:central-bank
+- node: '[[Collateral Framework Haircuts Central Bank Credit]]'
+  relation: shared_tag:central-bank
+- node: '[[Fedwire Payment System Reserve Demand And LSM Policy]]'
+  relation: shared_tag:reserves
 date_created: '2026-05-20'
 date_updated: '2026-05-20'
 ---
+
 
 Central bank intermediation describes the CB balance sheet expanding to substitute for failed interbank markets.
 
@@ -52,4 +63,5 @@ CBs must forecast autonomous factors to calibrate OMO volume for reserve neutral
 When banks exhaust eligible collateral, CB cannot lend further without expanding collateral eligibility. Widening collateral framework (accepting lower-quality assets) extends absolute intermediation capacity. ECB used this extensively during European sovereign crisis.
 
 **Leanness indicator:** Defined as the ratio of net central bank credit to total liquidity needs. A lean balance sheet (low intermediation) preserves market function; a bloated one (high absolute intermediation) entails moral hazard and central bank risk.
+
 

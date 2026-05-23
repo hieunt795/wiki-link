@@ -3,35 +3,53 @@ node_id: fed_treasury_accord_2026_frm_001
 type: framework
 title: New Fed-Treasury Accord (2026 Proposal)
 aliases:
-  - Warsh-Bessent Accord
-  - Thỏa ước Fed-Bộ Tài chính mới (2026)
-  - Debt Maturity Sovereignty Framework
-
+- Warsh-Bessent Accord
+- Thỏa ước Fed-Bộ Tài chính mới (2026)
+- Debt Maturity Sovereignty Framework
 domain:
   primary: monetary_policy
-  secondary: [fiscal_policy, financial_markets]
-tags: [fed, treasury, warsh, bessent, independence, debt_maturity, accord]
-
+  secondary:
+  - fiscal_policy
+  - financial_markets
+tags:
+- fed
+- treasury
+- warsh
+- bessent
+- independence
+- debt_maturity
+- accord
 confidence: 2
 stability: evolving
+thesis: 'The 2026 Accord proposal redefines the boundary between fiscal and monetary
+  policy by returning control of debt maturity structure to the Treasury and narrowing
+  the Fed''s mandate to price stability, thereby reducing the Fed''s market footprint
+  and its role in deficit monetization.
 
-thesis: >
-  The 2026 Accord proposal redefines the boundary between fiscal and monetary policy by returning control of debt maturity structure to the Treasury and narrowing the Fed's mandate to price stability, thereby reducing the Fed's market footprint and its role in deficit monetization.
-
+  '
 source_refs:
-  - path: 02_sources/Clipping/A new Fed-Treasury Accord_.md
-    pages: "Full document"
-    weight: primary
-
+- path: 02_sources/Clipping/A new Fed-Treasury Accord_.md
+  pages: Full document
+  weight: primary
 related:
-  - node: "[[Monetary_Policy_Instruments_Operational_Framework]]"
-    relation: redefines
-  - node: "[[Warsh_Balance_Sheet_Stimulus_Swap]]"
-    relation: complementary_framework
-
+- node: '[[Monetary_Policy_Instruments_Operational_Framework]]'
+  relation: redefines
+- node: '[[Warsh_Balance_Sheet_Stimulus_Swap]]'
+  relation: complementary_framework
+- node: '[[Central Bank Monetary Policy Operational Framework Typology]]'
+  relation: shared_tag:fed
+- node: '[[Currency as a Central Bank Liability]]'
+  relation: shared_tag:fed
+- node: '[[Fedwire Payment System Reserve Demand And LSM Policy]]'
+  relation: shared_tag:fed
+- node: '[[Fed Ample Reserves Rate Control Framework]]'
+  relation: shared_tag:fed
+- node: '[[QT Reserve Drain Effectiveness And Deposit Funding Condition]]'
+  relation: shared_tag:fed
 date_created: 2026-05-20
 date_updated: 2026-05-20
 ---
+
 
 ## Overview
 Referencing the original 1951 Accord that established Fed independence, the **2026 Proposal** (associated with Kevin Warsh and Treasury Secretary Bessent) seeks to decouple the Fed from fiscal operations. Contrary to fears of "fiscal dominance," the proposal aims to strengthen Fed independence by making it "do less" in political areas [RAW-CLIP].
@@ -60,3 +78,4 @@ The Accord seeks to prevent the automatic monetization of deficits during crises
 ## Systemic Risks
 - **Transition Volatility:** Shifting the maturity management from Fed to Treasury could cause significant repricing in the long end of the yield curve.
 - **Fiscal Dominance by Proxy:** While intended to increase independence, the "Accord" relies on the Treasury being "responsible" with its new debt-maturity powers, which may not hold during fiscal stress [LLM].
+

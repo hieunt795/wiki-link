@@ -31,10 +31,21 @@ source_refs:
 - path: 02_sources/books/conks/Conk - Repo.md
   pages: Demystifying the Repo Market, Repo Market Blindspot
   weight: primary
-related: []
+related:
+- node: '[[Collateral Velocity And Pledged Collateral Market Mechanics]]'
+  relation: shared_tag:repo
+- node: '[[Triparty Repo Market Structure And Daily Cycle]]'
+  relation: shared_tag:repo
+- node: '[[Collateral Velocity and Rehypothecation]]'
+  relation: shared_tag:repo
+- node: '[[Monetary Policy Transmission via Collateral and Repo Markets]]'
+  relation: shared_tag:repo
+- node: '[[Standing Repo Facility SRF Fed Backstop]]'
+  relation: shared_tag:repo
 date_created: '2026-05-20'
 date_updated: '2026-05-20'
 ---
+
 
 Repo (repurchase agreement) is a secured short-term funding transaction: one party sells securities and agrees to repurchase them at a fixed future date and price. The price difference = repo rate x days/360.
 
@@ -65,4 +76,5 @@ Repo (repurchase agreement) is a secured short-term funding transaction: one par
 **Repocalypse (Sept 2019):** Overnight repo rates spiked to 10% (vs 2.25% Fed Funds). Causes: corporate tax payments + large Treasury settlement + bank reserve distribution concentration in few G-SIBs who did not redistribute to smaller dealers. Fed resumed repo operations to restore order.
 
 **Function:** Makes Treasuries virtually equivalent to cash for all systemically important participants. Repo is the grease that allows the secured standard to function.
+
 

@@ -1,1 +1,3044 @@
-{"nodes": [{"id": "shadow_banking_market_based_finance_001", "title": "Shadow Banking Market Based Finance", "type": "concept", "domain": "financial_markets", "confidence": 3, "tags": ["shadow-banking", "nbfi", "securitization", "mmf", "systemic-risk"], "thesis": "Shadow banking (market-based finance) refers to credit intermediation outside the traditional deposit-taking banking system, primarily through repos, money market funds, ABS, and CLOs. It emerged from regulatory arbitrage under Basel I and grew to supersede traditional banking in credit supply; post", "stability": "evolving", "date_updated": "2026-05-20"}, {"id": "warsh_balance_sheet_stimulus_swap_con_001", "title": "Warsh Balance Sheet Stimulus Swap", "type": "concept", "domain": "monetary_policy", "confidence": 2, "tags": ["fed", "warsh", "balance_sheet", "qt", "fed_funds", "stimulus"], "thesis": "The \"Warsh Hypothesis\" posits that the Fed's balance sheet and policy rate are substitutable forms of stimulus; significantly shrinking the balance sheet \"redeploys\" capacity, theoretically allowing for lower nominal interest rates without increasing aggregate monetary ease.\n", "stability": "contested", "date_updated": "2026-05-20"}, {"id": "basel_iii_endgame_001", "title": "Basel III Endgame — Capital, Liquidity, and Credit Migration", "type": "framework", "domain": "financial_markets", "confidence": 2, "tags": ["Basel", "capital-regulation", "RWA", "output-floor", "LCR", "NSFR", "leverage-ratio", "private-credit", "credit-migration", "originate-to-distribute"], "thesis": "Basel III and its Endgame extensions create a structured causal chain: RWA requirements + output floor + leverage ratio + LCR/NSFR raise the cost of holding specialized and long-duration corporate credit → banks are driven from originate-to-hold to originate-to-distribute → private credit funds fill", "stability": "evolving", "date_updated": "2026-05-20"}, {"id": "cb_balance_sheet_trilemma_frm_001", "title": "Central Bank Balance Sheet Trilemma", "type": "framework", "domain": "monetary_policy", "confidence": 4, "tags": ["fed", "balance_sheet", "volatility", "intervention", "trilemma"], "thesis": "A central bank cannot simultaneously achieve three objectives: (1) a small balance sheet, (2) low short-term rate volatility, and (3) limited intervention in money markets. Only two can be achieved at once in a given regulatory and operational environment.\n", "stability": "stable", "date_updated": "2026-05-20"}, {"id": "central_bank_balance_sheet_structure_liabilities_assets_001", "title": "Central Bank Balance Sheet Structure Liabilities Assets", "type": "framework", "domain": "monetary_policy", "confidence": 3, "tags": ["central-bank", "balance-sheet", "reserves", "monetary-base", "qe", "seigniorage"], "thesis": "The central bank balance sheet has banknotes and bank reserves as primary liabilities (together forming the monetary base) and domestic securities, credit operations, and foreign assets on the asset side. Reserves are created mechanically when the CB buys assets or lends to banks — they cannot be le", "stability": "evolving", "date_updated": "2026-05-20"}, {"id": "ecb_new_operational_framework_frm_001", "title": "ECB New Operational Framework 2024", "type": "framework", "domain": "monetary_policy", "confidence": 3, "tags": ["ecb", "operational_framework", "floor_system", "dfr", "mro"], "thesis": "The ECB's 2024 framework is a hybrid \"range floor\" system that steers the overnight market rate (€STR) near the Deposit Facility Rate (DFR) using structural reserves and a narrowed 15bps spread to the Main Refinancing Operations (MRO) rate.\n", "stability": "evolving", "date_updated": "2026-05-20"}, {"id": "fed_ample_reserves_range_floor_frm_001", "title": "Fed Ample Reserves Range Floor Framework", "type": "framework", "domain": "monetary_policy", "confidence": 3, "tags": ["fed", "operational_framework", "floor_system", "iorb", "on_rrp", "ffr"], "thesis": "The Fed maintains a \"range floor\" for the Federal Funds Rate (FFR) using two administered rates — IORB for banks and ON RRP for non-banks — to manage market segmentation and ensure rate control within an ample reserves regime.\n", "stability": "stable", "date_updated": "2026-05-20"}, {"id": "fed_fiscal_agent_treasury_relationship_frm_001", "title": "Fed Fiscal Agent Treasury Relationship", "type": "framework", "domain": "monetary_policy", "confidence": 4, "tags": ["fed", "treasury", "fiscal-agent", "governance", "operational-framework"], "thesis": "The Federal Reserve Banks act as the fiscal agent for the U.S. Treasury, managing the Treasury General Account (TGA),  processing daily financial transactions, and facilitating the auction and redemption of government securities.  This operational role is distinct from monetary policy, with the Fed ", "stability": "stable", "date_updated": "2026-05-21"}, {"id": "fed_treasury_accord_2026_frm_001", "title": "New Fed-Treasury Accord (2026 Proposal)", "type": "framework", "domain": "monetary_policy", "confidence": 2, "tags": ["fed", "treasury", "warsh", "bessent", "independence", "debt_maturity", "accord"], "thesis": "The 2026 Accord proposal redefines the boundary between fiscal and monetary policy by returning control of debt maturity structure to the Treasury and narrowing the Fed's mandate to price stability, thereby reducing the Fed's market footprint and its role in deficit monetization.\n", "stability": "evolving", "date_updated": "2026-05-20"}, {"id": "global_dollar_system_eurodollar_architecture_001", "title": "Global Dollar System Eurodollar Architecture", "type": "framework", "domain": "financial_markets", "confidence": 3, "tags": ["dollar", "eurodollar", "fx-swap", "cross-currency-basis", "global-liquidity"], "thesis": "The global dollar system is a network of 26+ interconnected offshore dollar funding markets — including FX swaps, Eurodollars, cross-currency basis swaps, and international repos — in which countries are not merely users but essential structural components. The system cannot function if key particip", "stability": "evolving", "date_updated": "2026-05-20"}, {"id": "inflation_targeting_001", "title": "Inflation Targeting Framework (ITF) and Post-GFC Policy Mix", "type": "framework", "domain": "monetary_policy", "confidence": 3, "tags": ["inflation-targeting", "central-bank", "ITF", "monetary-framework", "macroprudential", "policy-mix", "EME"], "thesis": "The Inflation Targeting Framework (ITF), pioneered by New Zealand (1988), achieved price stability through four pillars: a published inflation target, interest-rate consistency (Taylor rule), CB independence, and transparency. While successful pre-GFC, the framework proved insufficient alone — the p", "stability": "stable", "date_updated": "2026-05-20"}, {"id": "japan_sovereign_carry_trade_frm_001", "title": "Japan Sovereign Carry Trade Framework", "type": "framework", "domain": "monetary_policy", "confidence": 3, "tags": ["japan", "boj", "carry_trade", "duration_mismatch", "swf"], "thesis": "The Japanese public sector (government + BoJ + pension funds) operates as a giant, leveraged sovereign wealth fund that borrows at floating short-term rates (bank reserves) to fund long-duration risky assets (equities and foreign securities), creating a massive sensitivity to rising interest rates.\n", "stability": "stable", "date_updated": "2026-05-20"}, {"id": "monetary_policy_instruments_operational_framework_001", "title": "Monetary Policy Instruments Operational Framework", "type": "framework", "domain": "monetary_policy", "confidence": 4, "tags": ["central-bank", "omo", "standing-facilities", "reserve-requirements", "operational-target", "corridor"], "thesis": "Central bank monetary policy implementation rests on three instruments: open market operations (CB-initiated), standing facilities (bank-initiated, creating the interest rate corridor), and reserve requirements. The separation principle holds that implementation (achieving the target rate) is instit", "stability": "evolving", "date_updated": "2026-05-20"}, {"id": "mptm_framework_001", "title": "Monetary Policy Transmission Mechanism — All Channels", "type": "framework", "domain": "monetary_policy", "confidence": 3, "tags": ["monetary-transmission", "MPTM", "interest-rate-channel", "credit-channel", "balance-sheet-channel", "financial-accelerator", "risk-taking-channel"], "thesis": "The monetary policy transmission mechanism (MPTM) maps the process by which central bank interest rate decisions propagate through 7 channels — interest rate, asset price, exchange rate, expectations, bank lending, bank capital, and balance sheet — to ultimately affect inflation and output. The \"mon", "stability": "stable", "date_updated": "2026-05-20"}, {"id": "central_bank_intermediation_balance_sheet_autonomous_factors_001", "title": "Central Bank Intermediation Balance Sheet Autonomous Factors", "type": "mechanism", "domain": "monetary_policy", "confidence": 4, "tags": ["central-bank", "reserves", "interbank", "autonomous-factors", "balance-sheet", "intermediation"], "thesis": "Central bank intermediation describes the CB acting as interbank market substitute when direct bank-to-bank lending breaks down. Relative intermediation (no balance sheet expansion) can occur with partial interbank stress; absolute intermediation (balance sheet expansion) occurs in full market break", "stability": "evolving", "date_updated": "2026-05-20"}, {"id": "collateral_framework_haircuts_central_bank_credit_001", "title": "Collateral Framework Haircuts Central Bank Credit", "type": "mechanism", "domain": "monetary_policy", "confidence": 4, "tags": ["collateral", "haircuts", "central-bank", "credit-operations", "ela", "safe-assets"], "thesis": "Central bank collateral frameworks define eligible assets, haircuts, and concentration limits for CB credit operations. Haircuts serve as the primary risk buffer and function as a secondary monetary policy instrument: tighter haircuts raise effective funding costs across the economy. Collateral scar", "stability": "evolving", "date_updated": "2026-05-20"}, {"id": "collateral_velocity_001", "title": "Collateral Velocity and Rehypothecation", "type": "mechanism", "domain": "financial_markets", "confidence": 3, "tags": ["collateral", "rehypothecation", "repo", "shadow-banking", "financial-plumbing", "leverage"], "thesis": "Collateral velocity measures how many times a given piece of collateral is reused (pledged and re-pledged) within the financial system. Pre-Lehman, the pledged-collateral market reached ~$10 trillion — comparable to M2 — and collapsed to ~$5 trillion in 2008-9 as reuse chains broke. High velocity am", "stability": "stable", "date_updated": "2026-05-20"}, {"id": "debt_ceiling_extraordinary_measures_treasury_001", "title": "Debt Ceiling Extraordinary Measures Treasury", "type": "mechanism", "domain": "monetary_policy", "confidence": 3, "tags": ["debt-ceiling", "tga", "treasury", "fiscal-monetary-interaction", "money-market"], "thesis": "When the US debt ceiling binds, the Treasury deploys extraordinary measures to delay default while drawing down the TGA. The resulting TGA drawdown floods banking system reserves, creating a temporary liquidity surge that overstates system health before reversing sharply when the ceiling is lifted a", "stability": "evolving", "date_updated": "2026-05-20"}, {"id": "dv01_duration_001", "title": "DV01, Duration, and Convexity — Fixed Income Risk Measures", "type": "mechanism", "domain": "financial_markets", "confidence": 5, "tags": ["fixed-income", "duration", "DV01", "convexity", "interest-rate-risk", "bond-math"], "thesis": "DV01 (dollar value of a basis point) measures the price change of a fixed income instrument for a 1bp parallel shift in yields. Duration (modified) is the percentage price sensitivity; convexity captures the curvature — the fact that price-yield relationship is non-linear. Together they form the fun", "stability": "stable", "date_updated": "2026-05-20"}, {"id": "fed_overnight_reverse_repo_on_rrp_001", "title": "Fed Overnight Reverse Repo ON RRP", "type": "mechanism", "domain": "monetary_policy", "confidence": 3, "tags": ["rrp", "money-market", "fed-facilities", "reserves", "mmt"], "thesis": "The Fed Overnight Reverse Repo facility (ON RRP) is the Fed liquidity shock absorber: it accepts cash from money market funds and GSEs overnight in exchange for Treasury collateral, paying the ON RRP rate. When bank deposits and bill supply are abundant, RRP drains to zero; when reserves are scarce ", "stability": "evolving", "date_updated": "2026-05-20"}, {"id": "interest_rate_corridor_floor_system_standing_facilities_001", "title": "Interest Rate Corridor Floor System Standing Facilities", "type": "mechanism", "domain": "monetary_policy", "confidence": 4, "tags": ["corridor", "floor-system", "standing-facilities", "omo", "overnight-rate", "iorb", "dfr"], "thesis": "The interest rate corridor brackets overnight interbank rates between a CB lending facility (ceiling) and deposit facility (floor). In normal times, OMOs keep rates near the midpoint; in excess-reserve environments (post-QE), the system degenerates into a floor system where the overnight rate equals", "stability": "evolving", "date_updated": "2026-05-20"}, {"id": "irs_ois_fixed_floating_001", "title": "Interest Rate Swaps — OIS, Fixed-for-Floating, Clearing, and Basis", "type": "mechanism", "domain": "financial_markets", "confidence": 4, "tags": ["interest-rate-swaps", "OIS", "SOFR", "derivatives", "clearing", "CCP", "DV01", "basis-swap", "counterparty-risk"], "thesis": "Interest rate swaps exchange fixed for floating interest payments on a notional amount. OIS (overnight index swaps, e.g., SOFR swaps) are near-riskless; fixed-for-floating swaps (e.g., Euribor) carry a basis vs. the risk-free rate. Market notionals ($210T) vastly overstate risk — ENNs (entity-netted", "stability": "stable", "date_updated": "2026-05-20"}, {"id": "mp_collateral_channel_001", "title": "Monetary Policy Transmission via Collateral and Repo Markets", "type": "mechanism", "domain": "monetary_policy", "confidence": 3, "tags": ["monetary-transmission", "collateral", "repo", "QE", "shadow-banking", "plumbing"], "thesis": "Repo rates — which reflect collateral availability and quality — guide the policy rate more directly than unsecured interbank rates. QE, by removing high-quality collateral from circulation and replacing it with reserves, suppresses collateral velocity and may impair monetary transmission: large CB ", "stability": "stable", "date_updated": "2026-05-20"}, {"id": "mon_pol_trans_short_long_frictions_mec_001", "title": "Monetary Policy Transmission Short Long Rate Frictions", "type": "mechanism", "domain": "monetary_policy", "confidence": 3, "tags": ["transmission", "interest_rate_channel", "yield_curve", "term_premium"], "thesis": "Transmission from short-term policy rates to medium- and long-term yields is non-linear and subject to structural frictions, including asymmetric effectiveness across business cycles and shifts in market expectations that can decouple policy actions from long-term rate movements.\n", "stability": "stable", "date_updated": "2026-05-20"}, {"id": "private_credit_srt_001", "title": "Private Credit — SRT, NAV Loans, and Bank-PC Interconnection", "type": "mechanism", "domain": "financial_markets", "confidence": 2, "tags": ["private-credit", "SRT", "NAV-loans", "subscription-lines", "bank-NBFI", "shadow-banking", "network-liquidity-risk", "originate-to-distribute", "CLO"], "thesis": "Banks respond to Basel III capital and liquidity constraints through three structural mechanisms: (1) SRT — transferring first-loss credit risk from the balance sheet to PC fund investors for regulatory capital relief; (2) originate-to-distribute — converting from spread income to fee income while r", "stability": "evolving", "date_updated": "2026-05-20"}, {"id": "quantitative_tightening_qt_balance_sheet_runoff_001", "title": "Quantitative Tightening QT Balance Sheet Runoff", "type": "mechanism", "domain": "monetary_policy", "confidence": 3, "tags": ["qt", "fed-balance-sheet", "reserves", "monetary-policy", "tightening"], "thesis": "Quantitative Tightening (QT) reduces the Fed balance sheet by allowing maturing securities to roll off without reinvestment, up to a monthly redemption cap. QT destroys reserves and bank deposits when investors fund bond purchases with bank deposits — but its tightening effect is limited: Atlanta Fe", "stability": "evolving", "date_updated": "2026-05-20"}, {"id": "repo_market_mechanics_triparty_bilateral_001", "title": "Repo Market Mechanics Triparty Bilateral", "type": "mechanism", "domain": "financial_markets", "confidence": 3, "tags": ["repo", "sofr", "triparty", "nccbr", "collateral", "shadow-banking", "dealer"], "thesis": "The repo market is the secured funding backbone of the US financial system, executing 3-4 trillion dollars daily across three segments: triparty (custodian-intermediated), GCF (centrally cleared interdealer), and NCCBR (bilateral, hedge-fund-dominated). Repo makes Treasuries functionally equivalent ", "stability": "evolving", "date_updated": "2026-05-20"}, {"id": "reserve_floor_payment_001", "title": "Reserve Floor — Payment System Demand and the Minimum Ample Level", "type": "mechanism", "domain": "monetary_policy", "confidence": 3, "tags": ["reserves", "Fedwire", "RTGS", "payment-system", "reserve-floor", "IORB", "SRF", "QT", "bank-liquidity"], "thesis": "The minimum level of reserve balances (\"reserve floor\") that the Fed must supply is driven primarily by the demand of the payment system, not by monetary policy alone. RTGS (real-time gross settlement) requires banks to pre-fund large opening-of-day reserve balances; post-GFC liquidity regulations s", "stability": "stable", "date_updated": "2026-05-20"}, {"id": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001", "title": "SLR LCR Balance Sheet Constraints Treasury Market Dealer", "type": "mechanism", "domain": "financial_markets", "confidence": 3, "tags": ["slr", "lcr", "basel-iii", "dealer", "treasury-market", "hqla", "balance-sheet-constraints"], "thesis": "Post-GFC Basel III regulations — especially the Supplementary Leverage Ratio (SLR) and Liquidity Coverage Ratio (LCR) — constrain primary dealer balance sheets, reducing their capacity to absorb Treasury supply during periods of elevated issuance or volatility. The resulting illiquidity spiral (vola", "stability": "evolving", "date_updated": "2026-05-20"}, {"id": "standing_repo_facility_srf_mec_001", "title": "Standing Repo Facility SRF Fed Backstop", "type": "mechanism", "domain": "monetary_policy", "confidence": 3, "tags": ["fed", "repo", "sofr", "srf", "liquidity", "backstop"], "thesis": "The Standing Repo Facility (SRF) acts as a ceiling for the SOFR and a liquidity safety valve for the US Treasury market, designed to cap secured rates and mitigate dealer balance sheet stress by providing a destigmatized backstop.\n", "stability": "stable", "date_updated": "2026-05-20"}, {"id": "swap_spreads_001", "title": "Swap Spreads — Drivers, Balance Sheet Frictions, and Plumbing Indicators", "type": "mechanism", "domain": "financial_markets", "confidence": 3, "tags": ["swap-spreads", "asset-swap", "SLR", "LCR", "balance-sheet-constraints", "shadow-cost", "plumbing", "SOFR"], "thesis": "Swap spreads — the difference between bond yield and the swap rate of equivalent maturity — decompose into: SOFR-ASW = repo-SOFR basis swap + adjusted CDS (credit risk). Negative swap spreads (Treasury yield > SOFR swap rate) signal dealer balance sheet constraints: when banks face binding SLR/LCR c", "stability": "stable", "date_updated": "2026-05-20"}, {"id": "treasury_general_account_tga_reserve_swap_mec_001", "title": "Treasury General Account TGA Reserve Swap", "type": "mechanism", "domain": "monetary_policy", "confidence": 4, "tags": ["tga", "reserves", "fed-balance-sheet", "liquidity", "liability-swap", "autonomous-factors"], "thesis": "The Treasury General Account (TGA) is the US government's checking account held at the Federal Reserve.  Changes in the TGA result in an opposite 1:1 change in bank reserves (dTGA = -dReserves) unless the Fed  adjusts its assets to maintain ample reserves. The TGA acts as an \"autonomous factor\" that", "stability": "stable", "date_updated": "2026-05-21"}, {"id": "yen_intervention_liquidity_drain_mec_001", "title": "Yen Intervention Liquidity Drain Mechanism", "type": "mechanism", "domain": "monetary_policy", "confidence": 3, "tags": ["japan", "mof", "yen", "intervention", "liquidity", "treasuries"], "thesis": "Yen intervention by the Ministry of Finance (MoF) acts as a global liquidity drain; by selling US Treasuries to buy Yen, Japan effectively reduces the supply of global dollar collateral while increasing selling pressure on US rates.\n", "stability": "evolving", "date_updated": "2026-05-20"}], "edges": [{"source": "warsh_balance_sheet_stimulus_swap_con_001", "target": "quantitative_tightening_qt_balance_sheet_runoff_001", "relation": "ideological_driver"}, {"source": "warsh_balance_sheet_stimulus_swap_con_001", "target": "reserve_floor_payment_001", "relation": "contested_by"}, {"source": "basel_iii_endgame_001", "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001", "relation": "shares_regulatory_drivers"}, {"source": "basel_iii_endgame_001", "target": "shadow_banking_market_based_finance_001", "relation": "private_credit_is_instance_of"}, {"source": "basel_iii_endgame_001", "target": "private_credit_srt_001", "relation": "mechanism_within"}, {"source": "basel_iii_endgame_001", "target": "collateral_velocity_001", "relation": "related_shadow_banking"}, {"source": "basel_iii_endgame_001", "target": "repo_market_mechanics_triparty_bilateral_001", "relation": "bank_nbfi_interconnect"}, {"source": "cb_balance_sheet_trilemma_frm_001", "target": "monetary_policy_instruments_operational_framework_001", "relation": "foundational_constraint"}, {"source": "cb_balance_sheet_trilemma_frm_001", "target": "warsh_balance_sheet_stimulus_swap_con_001", "relation": "attempts_to_break"}, {"source": "ecb_new_operational_framework_frm_001", "target": "monetary_policy_instruments_operational_framework_001", "relation": "evolution_of"}, {"source": "ecb_new_operational_framework_frm_001", "target": "interest_rate_corridor_floor_system_standing_facilities_001", "relation": "implementation_of"}, {"source": "fed_ample_reserves_range_floor_frm_001", "target": "reserve_floor_payment_001", "relation": "driven_by"}, {"source": "fed_ample_reserves_range_floor_frm_001", "target": "fed_overnight_reverse_repo_on_rrp_001", "relation": "component_of"}, {"source": "fed_fiscal_agent_treasury_relationship_frm_001", "target": "treasury_general_account_tga_reserve_swap_mec_001", "relation": "mechanism"}, {"source": "fed_fiscal_agent_treasury_relationship_frm_001", "target": "fed_treasury_accord_2026_frm_001", "relation": "context"}, {"source": "fed_treasury_accord_2026_frm_001", "target": "monetary_policy_instruments_operational_framework_001", "relation": "redefines"}, {"source": "fed_treasury_accord_2026_frm_001", "target": "warsh_balance_sheet_stimulus_swap_con_001", "relation": "complementary_framework"}, {"source": "inflation_targeting_001", "target": "monetary_policy_instruments_operational_framework_001", "relation": "complements"}, {"source": "inflation_targeting_001", "target": "interest_rate_corridor_floor_system_standing_facilities_001", "relation": "implemented_via"}, {"source": "inflation_targeting_001", "target": "central_bank_balance_sheet_structure_liabilities_assets_001", "relation": "uses"}, {"source": "japan_sovereign_carry_trade_frm_001", "target": "central_bank_balance_sheet_structure_liabilities_assets_001", "relation": "specialized_case"}, {"source": "mptm_framework_001", "target": "monetary_policy_instruments_operational_framework_001", "relation": "starts_from"}, {"source": "mptm_framework_001", "target": "inflation_targeting_001", "relation": "context_for"}, {"source": "mptm_framework_001", "target": "interest_rate_corridor_floor_system_standing_facilities_001", "relation": "initiates_via"}, {"source": "mptm_framework_001", "target": "mp_collateral_channel_001", "relation": "specialized_channel_within"}, {"source": "mptm_framework_001", "target": "collateral_framework_haircuts_central_bank_credit_001", "relation": "affects_balance_sheet_channel"}, {"source": "collateral_velocity_001", "target": "repo_market_mechanics_triparty_bilateral_001", "relation": "mechanism_of"}, {"source": "collateral_velocity_001", "target": "shadow_banking_market_based_finance_001", "relation": "component_of"}, {"source": "collateral_velocity_001", "target": "collateral_framework_haircuts_central_bank_credit_001", "relation": "contrasts_with"}, {"source": "dv01_duration_001", "target": "repo_market_mechanics_triparty_bilateral_001", "relation": "applied_in"}, {"source": "dv01_duration_001", "target": "interest_rate_corridor_floor_system_standing_facilities_001", "relation": "measured_by"}, {"source": "irs_ois_fixed_floating_001", "target": "dv01_duration_001", "relation": "uses"}, {"source": "irs_ois_fixed_floating_001", "target": "repo_market_mechanics_triparty_bilateral_001", "relation": "funded_via"}, {"source": "irs_ois_fixed_floating_001", "target": "collateral_framework_haircuts_central_bank_credit_001", "relation": "margin_analogy"}, {"source": "irs_ois_fixed_floating_001", "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001", "relation": "constrained_by"}, {"source": "mp_collateral_channel_001", "target": "collateral_velocity_001", "relation": "depends_on"}, {"source": "mp_collateral_channel_001", "target": "repo_market_mechanics_triparty_bilateral_001", "relation": "channel_through"}, {"source": "mp_collateral_channel_001", "target": "quantitative_tightening_qt_balance_sheet_runoff_001", "relation": "reverse_of"}, {"source": "mp_collateral_channel_001", "target": "fed_overnight_reverse_repo_on_rrp_001", "relation": "instrument_in"}, {"source": "mon_pol_trans_short_long_frictions_mec_001", "target": "mptm_framework_001", "relation": "detail_of"}, {"source": "mon_pol_trans_short_long_frictions_mec_001", "target": "dv01_duration_001", "relation": "analytics_for"}, {"source": "private_credit_srt_001", "target": "basel_iii_endgame_001", "relation": "driven_by"}, {"source": "private_credit_srt_001", "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001", "relation": "same_regulatory_drivers"}, {"source": "private_credit_srt_001", "target": "shadow_banking_market_based_finance_001", "relation": "mechanism_within"}, {"source": "private_credit_srt_001", "target": "collateral_velocity_001", "relation": "related_collateral_reuse"}, {"source": "private_credit_srt_001", "target": "repo_market_mechanics_triparty_bilateral_001", "relation": "bank_nbfi_funding_channel"}, {"source": "reserve_floor_payment_001", "target": "interest_rate_corridor_floor_system_standing_facilities_001", "relation": "mechanism_of"}, {"source": "reserve_floor_payment_001", "target": "treasury_general_account_tga_reserve_swap_mec_001", "relation": "interacts_with"}, {"source": "reserve_floor_payment_001", "target": "quantitative_tightening_qt_balance_sheet_runoff_001", "relation": "triggered_by"}, {"source": "reserve_floor_payment_001", "target": "fed_overnight_reverse_repo_on_rrp_001", "relation": "related_facility"}, {"source": "reserve_floor_payment_001", "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001", "relation": "regulatory_driver"}, {"source": "standing_repo_facility_srf_mec_001", "target": "repo_market_mechanics_triparty_bilateral_001", "relation": "backstop_for"}, {"source": "standing_repo_facility_srf_mec_001", "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001", "relation": "mitigates"}, {"source": "swap_spreads_001", "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001", "relation": "primary_driver"}, {"source": "swap_spreads_001", "target": "repo_market_mechanics_triparty_bilateral_001", "relation": "transmission_path"}, {"source": "swap_spreads_001", "target": "irs_ois_fixed_floating_001", "relation": "component_of"}, {"source": "swap_spreads_001", "target": "collateral_framework_haircuts_central_bank_credit_001", "relation": "related_mechanism"}, {"source": "treasury_general_account_tga_reserve_swap_mec_001", "target": "fed_ample_reserves_range_floor_frm_001", "relation": "context"}, {"source": "treasury_general_account_tga_reserve_swap_mec_001", "target": "fed_fiscal_agent_treasury_relationship_frm_001", "relation": "framework"}, {"source": "yen_intervention_liquidity_drain_mec_001", "target": "japan_sovereign_carry_trade_frm_001", "relation": "funding_source"}, {"source": "yen_intervention_liquidity_drain_mec_001", "target": "global_dollar_system_eurodollar_architecture_001", "relation": "impacts"}]}
+{
+  "nodes": [
+    {
+      "id": "currency_fed_liability_con_001",
+      "title": "Currency as a Central Bank Liability",
+      "type": "concept",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "fed",
+        "balance_sheet",
+        "accounting",
+        "taxation",
+        "monetary_theory"
+      ],
+      "thesis": "Currency is classified as a central bank liability because it represents a claim on the sovereign that can be used to extinguish tax liabilities; it is the physical manifestation of the central bank's \"banking\" function where issued notes are IOUs providing public settlement services. [LLM]",
+      "stability": "stable",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "shadow_banking_market_based_finance_001",
+      "title": "Shadow Banking Market Based Finance",
+      "type": "concept",
+      "domain": "financial_markets",
+      "confidence": 3,
+      "tags": [
+        "shadow-banking",
+        "nbfi",
+        "securitization",
+        "mmf",
+        "systemic-risk"
+      ],
+      "thesis": "Shadow banking (market-based finance) refers to credit intermediation outside the traditional deposit-taking banking system, primarily through repos, money market funds, ABS, and CLOs. It emerged from regulatory arbitrage under Basel I and grew to supersede traditional banking in credit supply; post-2008 it contracted to structurally essential components while remaining a systemic amplifier during stress.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "warsh_balance_sheet_stimulus_swap_con_001",
+      "title": "Warsh Balance Sheet Stimulus Swap",
+      "type": "concept",
+      "domain": "monetary_policy",
+      "confidence": 2,
+      "tags": [
+        "fed",
+        "warsh",
+        "balance_sheet",
+        "qt",
+        "fed_funds",
+        "stimulus"
+      ],
+      "thesis": "The \"Warsh Hypothesis\" posits that the Fed's balance sheet and policy rate are substitutable forms of stimulus; significantly shrinking the balance sheet \"redeploys\" capacity, theoretically allowing for lower nominal interest rates without increasing aggregate monetary ease.",
+      "stability": "contested",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "title": "Basel III Capital And Liquidity Constraint Mechanics",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "basel",
+        "rwa",
+        "output_floor",
+        "lcr",
+        "nsfr",
+        "capital_ratio",
+        "slr",
+        "private_credit"
+      ],
+      "thesis": "Basel III imposes four interlocking constraints on bank balance sheets — RWA-based capital ratio, Output Floor (72.5% of standardized RWA), Leverage Ratio (3-5% unweighted), LCR (30-day HQLA buffer), and NSFR (structural funding ratio) — that jointly make holding long-duration, unrated, or specialized corporate credit economically punitive, driving credit migration to private markets.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "basel_iii_endgame_001",
+      "title": "Basel III Endgame — Capital, Liquidity, and Credit Migration",
+      "type": "framework",
+      "domain": "financial_markets",
+      "confidence": 2,
+      "tags": [
+        "Basel",
+        "capital-regulation",
+        "RWA",
+        "output-floor",
+        "LCR",
+        "NSFR",
+        "leverage-ratio",
+        "private-credit",
+        "credit-migration",
+        "originate-to-distribute"
+      ],
+      "thesis": "Basel III and its Endgame extensions create a structured causal chain: RWA requirements + output floor + leverage ratio + LCR/NSFR raise the cost of holding specialized and long-duration corporate credit → banks are driven from originate-to-hold to originate-to-distribute → private credit funds fill the financing gap, reaching $2.1T globally. Critically, risk is not eliminated but redistributed: bank solvency risk converts to network liquidity risk in the bank-NBFI interconnected system.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "basel_regional_implementation_dynamics_001",
+      "title": "Basel Regional Implementation Dynamics",
+      "type": "framework",
+      "domain": "basel_risk",
+      "confidence": 1,
+      "tags": [
+        "basel-iii",
+        "US-banking",
+        "EU-banking",
+        "APAC",
+        "Vietnam",
+        "private-credit",
+        "regional-comparison",
+        "BDC",
+        "ELTIF"
+      ],
+      "thesis": "[LLM] The same Basel III framework produces dramatically different private credit market outcomes across regions because initial banking structures differ: the US (market-centric, gold-plating) created the world's deepest PC market post-2008; the EU (bank-centric) faces a larger Output Floor shock (MRC +21.3%) now generating the largest structural white space; APAC/Vietnam applies Basel more flexibly but faces a delayed catalyst as capital requirements tighten toward 2027–2030.",
+      "stability": "evolving",
+      "date_updated": "2026-05-21"
+    },
+    {
+      "id": "central_bank_balance_sheet_structure_liabilities_assets_001",
+      "title": "Central Bank Balance Sheet Structure Liabilities Assets",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "central-bank",
+        "balance-sheet",
+        "reserves",
+        "monetary-base",
+        "qe",
+        "seigniorage"
+      ],
+      "thesis": "The central bank balance sheet has banknotes and bank reserves as primary liabilities (together forming the monetary base) and domestic securities, credit operations, and foreign assets on the asset side. Reserves are created mechanically when the CB buys assets or lends to banks — they cannot be lent to the real economy directly, only transmitted through the banking system via credit creation.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "cb_balance_sheet_trilemma_frm_001",
+      "title": "Central Bank Balance Sheet Trilemma",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "fed",
+        "balance_sheet",
+        "volatility",
+        "intervention",
+        "trilemma"
+      ],
+      "thesis": "A central bank cannot simultaneously achieve three objectives: (1) a small balance sheet, (2) low short-term rate volatility, and (3) limited intervention in money markets. Only two can be achieved at once in a given regulatory and operational environment.",
+      "stability": "stable",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "central_bank_monetary_policy_operational_framework_typology_001",
+      "title": "Central Bank Monetary Policy Operational Framework Typology",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "monetary_policy",
+        "corridor",
+        "floor_system",
+        "standing_facility",
+        "full_allotment",
+        "fed",
+        "ecb",
+        "bindseil"
+      ],
+      "thesis": "Central bank monetary policy operations can be classified into three archetypes by how they control the short-term interest rate: (1) one-directional standing facility with daily OMOs, (2) symmetric corridor with CB-determined OMO volume, and (3) full-allotment lending within a standing-facility corridor; the choice determines whether reserves are scarce, ample, or excess, and how the interbank market functions.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "duration_targeting_bond_portfolio_framework_001",
+      "title": "Duration Targeting Bond Portfolio Framework",
+      "type": "framework",
+      "domain": "financial_markets",
+      "confidence": 3,
+      "tags": [
+        "duration",
+        "bond_portfolio",
+        "immunization",
+        "fixed_income",
+        "rebalancing"
+      ],
+      "thesis": "Institutional bond portfolios implicitly or explicitly maintain a stable duration target via periodic rebalancing, creating a predictable convergence toward initial yield at the 'effective maturity' horizon (≈ 2× duration target), regardless of the yield path taken.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "ecb_new_operational_framework_frm_001",
+      "title": "ECB New Operational Framework 2024",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "ecb",
+        "operational_framework",
+        "floor_system",
+        "dfr",
+        "mro"
+      ],
+      "thesis": "The ECB's 2024 framework is a hybrid \"range floor\" system that steers the overnight market rate (€STR) near the Deposit Facility Rate (DFR) using structural reserves and a narrowed 15bps spread to the Main Refinancing Operations (MRO) rate.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "fed_ample_reserves_range_floor_frm_001",
+      "title": "Fed Ample Reserves Range Floor Framework",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "fed",
+        "operational_framework",
+        "floor_system",
+        "iorb",
+        "on_rrp",
+        "ffr"
+      ],
+      "thesis": "The Fed maintains a \"range floor\" for the Federal Funds Rate (FFR) using two administered rates — IORB for banks and ON RRP for non-banks — to manage market segmentation and ensure rate control within an ample reserves regime.",
+      "stability": "stable",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "fed_fiscal_agent_treasury_relationship_frm_001",
+      "title": "Fed Fiscal Agent Treasury Relationship",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "fed",
+        "treasury",
+        "fiscal-agent",
+        "governance",
+        "operational-framework"
+      ],
+      "thesis": "The Federal Reserve Banks act as the fiscal agent for the U.S. Treasury, managing the Treasury General Account (TGA),  processing daily financial transactions, and facilitating the auction and redemption of government securities.  This operational role is distinct from monetary policy, with the Fed following mandates and regulations  issued by the Treasury Department.",
+      "stability": "stable",
+      "date_updated": "2026-05-21"
+    },
+    {
+      "id": "global_dollar_system_eurodollar_architecture_001",
+      "title": "Global Dollar System Eurodollar Architecture",
+      "type": "framework",
+      "domain": "financial_markets",
+      "confidence": 3,
+      "tags": [
+        "dollar",
+        "eurodollar",
+        "fx-swap",
+        "cross-currency-basis",
+        "global-liquidity"
+      ],
+      "thesis": "The global dollar system is a network of 26+ interconnected offshore dollar funding markets — including FX swaps, Eurodollars, cross-currency basis swaps, and international repos — in which countries are not merely users but essential structural components. The system cannot function if key participants (e.g. French banks in European repo, Australian banks in FX swaps) withdraw, making it self-reinforcing despite its structural fragilities.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "imf_balance_of_payments_framework_and_external_account_analysis_001",
+      "title": "IMF Balance of Payments Framework and External Account Analysis",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "imf",
+        "balance_of_payments",
+        "current_account",
+        "capital_account",
+        "external_debt",
+        "reserve_adequacy",
+        "exceptional_financing",
+        "fdi",
+        "bop",
+        "bpm5",
+        "financial_programming"
+      ],
+      "thesis": "The BoP records all resident/non-resident transactions using double-entry accounting; key analytical tools are the current/capital/financial account identity, debt sustainability indicators (PV/exports threshold 220%), and reserve adequacy rules (3-month import cover; Greenspan-Guidotti monetary base rule).",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "imf_flow_of_funds_4_sector_consistency_framework_001",
+      "title": "IMF Flow Of Funds 4-Sector Consistency Framework",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "imf",
+        "flow_of_funds",
+        "sectoral_balance",
+        "financial_programming",
+        "sna",
+        "gfs",
+        "bop",
+        "monetary_survey",
+        "twin_deficits"
+      ],
+      "thesis": "The IMF Flow of Funds framework integrates SNA, GFS, BoPM, and monetary survey into a quadruple-entry matrix where sectoral saving-investment gaps (Sp-Ip) + (Sg-Ig) = CAB, and every sector's real deficit is fully financed by financial transactions — forming the accounting backbone of IMF financial programming.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "imf_gfs_fiscal_accounting_framework_deficit_measurement_and_sustainability_001",
+      "title": "IMF GFS Fiscal Accounting Framework Deficit Measurement And Sustainability",
+      "type": "framework",
+      "domain": "fiscal_policy",
+      "confidence": 4,
+      "tags": [
+        "imf",
+        "gfs",
+        "fiscal_policy",
+        "fiscal_deficit",
+        "primary_deficit",
+        "seigniorage",
+        "inflation_tax",
+        "debt_sustainability",
+        "quasi_fiscal"
+      ],
+      "thesis": "The IMF Government Finance Statistics framework measures the fiscal deficit through revenue-expenditure-net lending accounts, decomposes it into conventional/primary/operational measures, traces financing into bank/non-bank/external categories, and assesses sustainability via the debt dynamics equation — the standard IMF financial programming fiscal module.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "imf_monetary_analysis_quantity_theory_velocity_and_exchange_rate_regimes_001",
+      "title": "IMF Monetary Analysis Quantity Theory Velocity And Exchange Rate Regimes",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "imf",
+        "quantity_theory",
+        "velocity",
+        "demand_for_money",
+        "money_multiplier",
+        "dollarization",
+        "currency_substitution",
+        "exchange_rate_regime",
+        "sterilization",
+        "fixed_rate",
+        "floating_rate",
+        "monetary_autonomy",
+        "financial_programming"
+      ],
+      "thesis": "IMF monetary analysis builds from the quantity equation (MV=PY) through demand for money (income elastic, opportunity-cost elastic) to the money multiplier mm=(c+1)/(c+r), showing that under fixed exchange rates money supply is endogenous and monetary autonomy requires a floating regime, with sterilization as a costly short-term offset.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "imf_monetary_survey_and_reserve_money_identity_framework_001",
+      "title": "IMF Monetary Survey And Reserve Money Identity Framework",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "imf",
+        "monetary_survey",
+        "reserve_money",
+        "nfa",
+        "nda",
+        "m2",
+        "financial_programming",
+        "monetary_authorities",
+        "dmb"
+      ],
+      "thesis": "The IMF Monetary Survey consolidates Monetary Authorities and Deposit Money Banks into a single balance sheet where M2 = NFA + NDA (net foreign assets plus net domestic credit), and reserve money growth is driven by changes in NFA, net claims on government, claims on banks, and other net items — the core identity underlying IMF financial programming.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "imf_sna_real_sector_accounting_gdp_identities_and_sectoral_accounts_001",
+      "title": "IMF SNA Real Sector Accounting GDP Identities And Sectoral Accounts",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "imf",
+        "sna",
+        "gdp",
+        "national_accounts",
+        "circular_flow",
+        "saving_investment",
+        "fiscal_external_identity",
+        "real_sector"
+      ],
+      "thesis": "The 1993 SNA framework measures GDP via three equivalent approaches (production/income/expenditure), organizes each sector's transactions through a sequence of accounts from production to capital formation, and generates the fundamental identity that the current account equals the private saving-investment gap plus the fiscal balance — the backbone of IMF Article IV analysis.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "irrbb_eve_nii_dual_metric_framework_001",
+      "title": "IRRBB EVE NII Dual Metric Framework",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "basel",
+        "irrbb",
+        "eve",
+        "nii",
+        "banking_regulation",
+        "alm",
+        "interest_rate_risk"
+      ],
+      "thesis": "Basel IRRBB regulation (BCBS 368, 2016) mandates two complementary metrics — Economic Value of Equity (EVE) and Net Interest Income (NII) sensitivity — to measure structural interest rate risk in the banking book, capturing both long-run economic impact and short-run earnings impact from rate shocks.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "inflation_targeting_001",
+      "title": "Inflation Targeting Framework (ITF) and Post-GFC Policy Mix",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "inflation-targeting",
+        "central-bank",
+        "ITF",
+        "monetary-framework",
+        "macroprudential",
+        "policy-mix",
+        "EME"
+      ],
+      "thesis": "The Inflation Targeting Framework (ITF), pioneered by New Zealand (1988), achieved price stability through four pillars: a published inflation target, interest-rate consistency (Taylor rule), CB independence, and transparency. While successful pre-GFC, the framework proved insufficient alone — the post-GFC paradigm adds macroprudential policy, FX market intervention, and capital flow management to achieve the dual mandate of price stability AND financial system stability.",
+      "stability": "stable",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "japan_sovereign_carry_trade_frm_001",
+      "title": "Japan Sovereign Carry Trade Framework",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "japan",
+        "boj",
+        "carry_trade",
+        "duration_mismatch",
+        "swf"
+      ],
+      "thesis": "The Japanese public sector (government + BoJ + pension funds) operates as a giant, leveraged sovereign wealth fund that borrows at floating short-term rates (bank reserves) to fund long-duration risky assets (equities and foreign securities), creating a massive sensitivity to rising interest rates.",
+      "stability": "stable",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "monetary_policy_instruments_operational_framework_001",
+      "title": "Monetary Policy Instruments Operational Framework",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "central-bank",
+        "omo",
+        "standing-facilities",
+        "reserve-requirements",
+        "operational-target",
+        "corridor"
+      ],
+      "thesis": "Central bank monetary policy implementation rests on three instruments: open market operations (CB-initiated), standing facilities (bank-initiated, creating the interest rate corridor), and reserve requirements. The separation principle holds that implementation (achieving the target rate) is institutionally distinct from monetary macroeconomics (identifying the target rate), with the dichotomy breaking down only in financial crises.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "mptm_framework_001",
+      "title": "Monetary Policy Transmission Mechanism — All Channels",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "monetary-transmission",
+        "MPTM",
+        "interest-rate-channel",
+        "credit-channel",
+        "balance-sheet-channel",
+        "financial-accelerator",
+        "risk-taking-channel"
+      ],
+      "thesis": "The monetary policy transmission mechanism (MPTM) maps the process by which central bank interest rate decisions propagate through 7 channels — interest rate, asset price, exchange rate, expectations, bank lending, bank capital, and balance sheet — to ultimately affect inflation and output. The \"money view\" channels (interest rate, asset price, exchange rate) assume efficient financial markets; the \"credit view\" channels (lending, capital, balance sheet) emphasize financial frictions, asymmetric information, and the financial accelerator. The risk-taking channel adds a post-GFC dimension: low rates reduce risk perception, inducing excessive risk-taking. Total lag from policy to full effect: typically 6-8 quarters.",
+      "stability": "stable",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "fed_treasury_accord_2026_frm_001",
+      "title": "New Fed-Treasury Accord (2026 Proposal)",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 2,
+      "tags": [
+        "fed",
+        "treasury",
+        "warsh",
+        "bessent",
+        "independence",
+        "debt_maturity",
+        "accord"
+      ],
+      "thesis": "The 2026 Accord proposal redefines the boundary between fiscal and monetary policy by returning control of debt maturity structure to the Treasury and narrowing the Fed's mandate to price stability, thereby reducing the Fed's market footprint and its role in deficit monetization.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "pboc_monetary_policy_framework_and_interest_rate_transmission_001",
+      "title": "PBOC Monetary Policy Framework And Interest Rate Transmission",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "pboc",
+        "china",
+        "monetary_policy_framework",
+        "lpr",
+        "mlf",
+        "7day_repo",
+        "dr007",
+        "slf",
+        "rrr",
+        "window_guidance"
+      ],
+      "thesis": "The PBOC operates a hybrid quantity-price framework where M2+TSF serve as intermediate targets, DR007 is the operational target, and the 7-day OMO reverse repo is the primary policy rate since July 2024 — supported by an asymmetric SLF/excess-reserve corridor, multiple structural facilities, and discretionary window guidance.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "private_credit_stress_monitoring_001",
+      "title": "Private Credit Stress Monitoring Framework",
+      "type": "framework",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "private-credit",
+        "stress-monitoring",
+        "BDC",
+        "secondary-market",
+        "systemic-risk",
+        "early-warning",
+        "liquidity"
+      ],
+      "thesis": "[LLM] Since private credit fund NAVs are model-based and not continuously observable, stress monitoring must rely on four observable proxy layers: (1) BDC discount to NAV as the public-market window into opaque portfolios, (2) credit secondary market clearing prices vs. reported NAV, (3) repurchase cap breaches in semi-liquid funds, and (4) bank credit line utilization to PC vehicles. These four signals form a real-time transmission chain that can detect the inversion of the [[Private_Credit_Reflexive_Loop]] without depending on manager marks.",
+      "stability": "evolving",
+      "date_updated": "2026-05-21"
+    },
+    {
+      "id": "supply_shock_scenario_taxonomy_frm_001",
+      "title": "Supply Shock Policy Response Scenario Taxonomy",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "monetary_policy",
+        "supply_shock",
+        "forward_guidance",
+        "inflation_persistence",
+        "scenario_analysis"
+      ],
+      "thesis": "A decision-making framework that partitions potential outcomes of a supply shock into discrete scenarios based on shock persistence and the emergence of second-round effects, allowing central banks to communicate state-contingent policy paths rather than a single forecast. [LLM]",
+      "stability": "stable",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "ample_reserves_buffer_sizing_tga_volatility_001",
+      "title": "Ample Reserves Buffer Sizing TGA Volatility",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 1,
+      "tags": [
+        "fed",
+        "reserves",
+        "tga",
+        "balance_sheet",
+        "ample_reserves",
+        "rate_control",
+        "buffer_sizing"
+      ],
+      "thesis": "The minimum ample reserves buffer required for rate control can be estimated as B = sigma*sqrt(Delta)*z*(epsilon*Delta/2), where sigma is the standard deviation of TGA changes over the intervention interval Delta; calibrated to 2021-2025 parameters (sigma~00bn/2-week), this yields a buffer of 00-400bn — halving to 00-150bn if TGA volatility returned to pre-pandemic levels, implying that TGA management reform is the most tractable lever for Fed balance sheet reduction.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "asset_swap_mechanics_and_spread_001",
+      "title": "Asset Swap Mechanics And Spread",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 4,
+      "tags": [
+        "swaps",
+        "asset_swap",
+        "credit_spread",
+        "fixed_income",
+        "relative_value",
+        "libor"
+      ],
+      "thesis": "An asset swap packages a fixed-rate bond purchase with a pay-fixed receive-floating interest rate swap, transforming the bond into a synthetic floater; the resulting asset swap spread (LIBOR + spread) isolates the bond's credit spread from interest rate risk, making it a credit-pure relative value metric.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "bank_nbfi_leverage_loop_001",
+      "title": "Bank NBFI Leverage Loop",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "private-credit",
+        "NBFI",
+        "subscription-lines",
+        "NAV-loans",
+        "leverage",
+        "hidden-leverage",
+        "bank-interconnectedness",
+        "systemic-risk"
+      ],
+      "thesis": "Subscription credit facilities (secured by LP capital call rights) and NAV loans (secured by portfolio cash flows via SPV) allow private credit funds to borrow from regulated banks, creating a hidden leverage layer that (1) artificially inflates reported IRR by delaying LP capital calls, and (2) links PC fund solvency to bank willingness to roll short-term financing. [LLM] In stress, simultaneous drawdown of these facilities creates a correlated liquidity demand on banks — the inverse of the intended \"risk transfer\" rationale of Basel regulation.",
+      "stability": "evolving",
+      "date_updated": "2026-05-21"
+    },
+    {
+      "id": "basel_driven_credit_migration_to_private_markets_001",
+      "title": "Basel Driven Credit Migration To Private Markets",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "private_credit",
+        "basel",
+        "srt",
+        "nav_loan",
+        "shadow_banking",
+        "nbfi",
+        "credit_migration"
+      ],
+      "thesis": "Basel III's capital, leverage, and liquidity rules make holding long-duration unrated corporate credit economically irrational for regulated banks, creating a structural 'financing gap' that private credit funds fill; however, banks re-enter the risk via subscription lines and NAV loans to those same funds, converting bank solvency risk into network liquidity risk.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "basel_output_floor_specialized_lending_001",
+      "title": "Basel Output Floor Specialized Lending Impact",
+      "type": "mechanism",
+      "domain": "basel_risk",
+      "confidence": 1,
+      "tags": [
+        "basel-iii",
+        "output-floor",
+        "RWA",
+        "IRB",
+        "specialized-lending",
+        "capital-charge",
+        "private-credit-driver"
+      ],
+      "thesis": "The Output Floor (72.5% of SA-RWA, fully phased-in Jan 2027) prevents banks from using internal IRB models to reduce RWA below 72.5% of the Standardised Approach calculation, eliminating the capital optimization advantage that made specialized lending (project finance, CRE, unrated mid-market loans) viable on bank balance sheets — regardless of actual historical default rates. [LLM] This is the single largest driver of bank retreat from specialized corporate credit, creating the structural gap that private credit fills.",
+      "stability": "evolving",
+      "date_updated": "2026-05-21"
+    },
+    {
+      "id": "bond_accrual_price_effect_interaction_001",
+      "title": "Bond Accrual Price Effect Interaction",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 3,
+      "tags": [
+        "fixed_income",
+        "duration",
+        "coupon_reinvestment",
+        "bond_return_decomposition"
+      ],
+      "thesis": "Over a multi-period horizon, a bond portfolio's coupon accruals (reinvestment income) accumulate roughly as the square of the horizon while price effects are linear — meaning accruals dominate price effects at long horizons, and this asymmetry is the engine behind DT convergence.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "central_bank_intermediation_balance_sheet_autonomous_factors_001",
+      "title": "Central Bank Intermediation Balance Sheet Autonomous Factors",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "central-bank",
+        "reserves",
+        "interbank",
+        "autonomous-factors",
+        "balance-sheet",
+        "intermediation"
+      ],
+      "thesis": "Central bank intermediation describes the CB acting as interbank market substitute when direct bank-to-bank lending breaks down. Relative intermediation (no balance sheet expansion) can occur with partial interbank stress; absolute intermediation (balance sheet expansion) occurs in full market breakdown. Autonomous factors — banknotes, government deposits, foreign assets — continuously perturb system reserves and must be offset by OMOs.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "collateral_framework_haircuts_central_bank_credit_001",
+      "title": "Collateral Framework Haircuts Central Bank Credit",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "collateral",
+        "haircuts",
+        "central-bank",
+        "credit-operations",
+        "ela",
+        "safe-assets"
+      ],
+      "thesis": "Central bank collateral frameworks define eligible assets, haircuts, and concentration limits for CB credit operations. Haircuts serve as the primary risk buffer and function as a secondary monetary policy instrument: tighter haircuts raise effective funding costs across the economy. Collateral scarcity — when eligible assets are insufficient to meet reserve needs — can cause overnight rates to spike above target independently of CB intent.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "collateral_velocity_and_pledged_collateral_market_mechanics_001",
+      "title": "Collateral Velocity And Pledged Collateral Market Mechanics",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 4,
+      "tags": [
+        "collateral",
+        "rehypothecation",
+        "repo",
+        "velocity",
+        "qe",
+        "shadow_banking",
+        "plumbing"
+      ],
+      "thesis": "Pledged collateral functions as a parallel money supply in financial markets — it can be reused (rehypothecated) multiple times, creating a 'velocity of collateral' analogous to money velocity; QE reduces this velocity by hoovering up high-quality collateral from the market, with the bilateral pledged-collateral market (not triparty) being the core of global financial plumbing.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "collateral_velocity_001",
+      "title": "Collateral Velocity and Rehypothecation",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 3,
+      "tags": [
+        "collateral",
+        "rehypothecation",
+        "repo",
+        "shadow-banking",
+        "financial-plumbing",
+        "leverage"
+      ],
+      "thesis": "Collateral velocity measures how many times a given piece of collateral is reused (pledged and re-pledged) within the financial system. Pre-Lehman, the pledged-collateral market reached ~$10 trillion — comparable to M2 — and collapsed to ~$5 trillion in 2008-9 as reuse chains broke. High velocity amplifies credit creation; restricted velocity (via QE or regulation) impairs financial intermediation analogously to a drying-up of interbank markets.",
+      "stability": "stable",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "dv01_duration_001",
+      "title": "DV01, Duration, and Convexity — Fixed Income Risk Measures",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 5,
+      "tags": [
+        "fixed-income",
+        "duration",
+        "DV01",
+        "convexity",
+        "interest-rate-risk",
+        "bond-math"
+      ],
+      "thesis": "DV01 (dollar value of a basis point) measures the price change of a fixed income instrument for a 1bp parallel shift in yields. Duration (modified) is the percentage price sensitivity; convexity captures the curvature — the fact that price-yield relationship is non-linear. Together they form the fundamental risk language for all fixed income positions: hedging, relative value, and P&L attribution.",
+      "stability": "stable",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "debt_ceiling_extraordinary_measures_treasury_001",
+      "title": "Debt Ceiling Extraordinary Measures Treasury",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "debt-ceiling",
+        "tga",
+        "treasury",
+        "fiscal-monetary-interaction",
+        "money-market"
+      ],
+      "thesis": "When the US debt ceiling binds, the Treasury deploys extraordinary measures to delay default while drawing down the TGA. The resulting TGA drawdown floods banking system reserves, creating a temporary liquidity surge that overstates system health before reversing sharply when the ceiling is lifted and Treasury refills the TGA.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "duration_targeting_convergence_and_yield_trap_001",
+      "title": "Duration Targeting Convergence And Yield Trap",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 3,
+      "tags": [
+        "duration",
+        "fixed_income",
+        "immunization",
+        "yield_convergence",
+        "bond_return"
+      ],
+      "thesis": "At the 'effective maturity' horizon (≈ 2× duration target), cumulative accrual gains and cumulative price effects exactly offset each other regardless of yield direction, creating a convergence to initial yield — and trapping the investor in the yield environment at portfolio inception.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "eurodollar_system_mechanics_and_post_reform_decline_001",
+      "title": "Eurodollar System Mechanics And Post-Reform Decline",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "eurodollar",
+        "dollar_funding",
+        "sofr",
+        "libor",
+        "mmf",
+        "basel_lcr",
+        "global_dollar"
+      ],
+      "thesis": "The Eurodollar system — offshore dollar banking settled onshore via Fed reserves — peaked as the dominant global dollar funding mechanism but was structurally gutted by Basel III LCR (2013) and 2014 SEC MMF reform, with unsecured interbank lending collapsing and SOFR/secured funding replacing LIBOR/unsecured as the global dollar standard.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "fhlb_effr_iorb_arbitrage_floor_mechanism_001",
+      "title": "FHLB EFFR IORB Arbitrage Floor Mechanism",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 1,
+      "tags": [
+        "fed",
+        "effr",
+        "iorb",
+        "fhlb",
+        "floor_system",
+        "reserve_scarcity",
+        "sofr",
+        "money_market"
+      ],
+      "thesis": "The Federal Funds rate (EFFR) is maintained near the IORB floor primarily through FHLB arbitrage: FHLBs, ineligible for IORB, lend reserves to banks at EFFR (slightly below IORB), which deposit at the Fed for a spread; this creates a soft floor on EFFR and means SOFR rising above IORB is the key leading indicator that reserve scarcity is transitioning from ample to binding.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "fed_ample_reserves_rate_control_framework_001",
+      "title": "Fed Ample Reserves Rate Control Framework",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "fed",
+        "iorb",
+        "on_rrp",
+        "srf",
+        "ample_reserves",
+        "rate_control",
+        "qt"
+      ],
+      "thesis": "Post-GFC, the Fed shifted from scarce-reserve corridor to ample-reserve floor system: IORB sets the ceiling, ON RRP sets the floor, and SRF acts as a backstop ceiling, making fed funds rate control near-automatic without daily open market operations.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "fed_overnight_reverse_repo_on_rrp_001",
+      "title": "Fed Overnight Reverse Repo ON RRP",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "rrp",
+        "money-market",
+        "fed-facilities",
+        "reserves",
+        "mmt"
+      ],
+      "thesis": "The Fed Overnight Reverse Repo facility (ON RRP) is the Fed liquidity shock absorber: it accepts cash from money market funds and GSEs overnight in exchange for Treasury collateral, paying the ON RRP rate. When bank deposits and bill supply are abundant, RRP drains to zero; when reserves are scarce and bill supply falls, RRP surges as MMFs have nowhere else to park cash.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "fed_policy_rate_shift_effr_to_secured_rate_tgcr_001",
+      "title": "Fed Policy Rate Shift EFFR to Secured Rate TGCR",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 1,
+      "tags": [
+        "fed",
+        "effr",
+        "tgcr",
+        "sofr",
+        "policy_rate",
+        "money_market",
+        "floor_system",
+        "operating_framework"
+      ],
+      "thesis": "A structural debate is emerging over whether the Federal Reserve should shift its policy rate target from EFFR (unsecured Fed Funds, dominated by FHLB arbitrage) to TGCR (Tri-Party GC Rate, secured overnight lending between dealers and money funds), reflecting the post-LIBOR reality where secured markets dominate and EFFR is increasingly a technical artifact of FHLB-bank arbitrage rather than genuine interbank demand.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "title": "Fedwire Payment System Reserve Demand And LSM Policy",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "fedwire",
+        "rtgs",
+        "reserves",
+        "payment_system",
+        "lsm",
+        "daylight_overdraft",
+        "fed",
+        "balance_sheet"
+      ],
+      "thesis": "The Fed's Fedwire RTGS payment system generates structural demand for reserve balances because banks must pre-load reserves for outgoing payments before receiving inflows; post-GFC intraday liquidity regulations caused daylight overdrafts to collapse from $120B/day to under $5B/day, dramatically raising the minimum reserve floor; adding a Liquidity Savings Mechanism (LSM) to Fedwire could substantially reduce reserve demand without sacrificing payment speed.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "financial_repression_distributional_welfare_effects_001",
+      "title": "Financial Repression Distributional Welfare Effects",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 1,
+      "tags": [
+        "financial_repression",
+        "duration",
+        "wealth_distribution",
+        "japan",
+        "household",
+        "welfare",
+        "intergenerational"
+      ],
+      "thesis": "Financial repression via QE and low-rate policy generates systematically regressive distributional effects: deposit-heavy non-participants (67% of Japanese households, skewed toward young and low-income) bear welfare losses of 6-9% of wealth per 100bps rate decline because their asset duration cannot match their consumption duration, while equity-holding participants (older, wealthier) gain 17-25%, producing intergenerational wealth transfers from depositors to the sovereign and asset owners.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "financial_repression_via_reserve_creation_001",
+      "title": "Financial Repression via Reserve Creation",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 1,
+      "tags": [
+        "financial_repression",
+        "japan",
+        "boj",
+        "ioer",
+        "qe",
+        "wealth_transfer",
+        "fiscal_monetary"
+      ],
+      "thesis": "Modern financial repression operates through reserve creation and yield curve control rather than explicit capital controls: by maintaining bank reserves at below-market rates, the sovereign captures an implicit spread — estimated at 197bps in Japan, equivalent to nearly 2% of GDP per year — as a tax on deposit holders, channelling private savings into public sector funding without formal restrictions.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "interest_rate_corridor_floor_system_standing_facilities_001",
+      "title": "Interest Rate Corridor Floor System Standing Facilities",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "corridor",
+        "floor-system",
+        "standing-facilities",
+        "omo",
+        "overnight-rate",
+        "iorb",
+        "dfr"
+      ],
+      "thesis": "The interest rate corridor brackets overnight interbank rates between a CB lending facility (ceiling) and deposit facility (floor). In normal times, OMOs keep rates near the midpoint; in excess-reserve environments (post-QE), the system degenerates into a floor system where the overnight rate equals the deposit facility rate and is controlled via that rate, not reserve quantity.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "irs_ois_fixed_floating_001",
+      "title": "Interest Rate Swaps — OIS, Fixed-for-Floating, Clearing, and Basis",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 4,
+      "tags": [
+        "interest-rate-swaps",
+        "OIS",
+        "SOFR",
+        "derivatives",
+        "clearing",
+        "CCP",
+        "DV01",
+        "basis-swap",
+        "counterparty-risk"
+      ],
+      "thesis": "Interest rate swaps exchange fixed for floating interest payments on a notional amount. OIS (overnight index swaps, e.g., SOFR swaps) are near-riskless; fixed-for-floating swaps (e.g., Euribor) carry a basis vs. the risk-free rate. Market notionals ($210T) vastly overstate risk — ENNs (entity-netted notionals) of $16T are comparable to other fixed income markets. Swaps DV01 is entirely on the fixed leg; clearing via CCPs concentrates but does not eliminate counterparty risk; the default waterfall (IM → default fund → CCP skin → member assessments → VM haircutting) is the last line of defense.",
+      "stability": "stable",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "japan_filp_to_qe_structural_succession_001",
+      "title": "Japan FILP to QE Structural Succession",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 1,
+      "tags": [
+        "japan",
+        "filp",
+        "qe",
+        "financial_repression",
+        "postal_savings",
+        "fiscal_monetary"
+      ],
+      "thesis": "Japan QE reserve creation (2010-) structurally succeeded the Fiscal Investment and Loan Programme (FILP) as the sovereign mechanism for below-market funding: both channel domestic private savings into public sector use at sub-market rates, differing only in instrument. The 2001 postal reform that dismantled FILP funding base made QE the market-friendly successor.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "lcr_nsfr_long_term_lending_penalty_001",
+      "title": "LCR NSFR Long-Term Lending Penalty",
+      "type": "mechanism",
+      "domain": "basel_risk",
+      "confidence": 1,
+      "tags": [
+        "LCR",
+        "NSFR",
+        "liquidity-regulation",
+        "basel-iii",
+        "long-term-lending",
+        "HQLA",
+        "funding-cost",
+        "private-credit-driver"
+      ],
+      "thesis": "LCR forces banks to hold HQLA equal to 30-day stressed net outflows (including assumed drawdowns on corporate credit lines), while NSFR requires stable funding ≥85% of notional for loans with residual maturity ≥1 year. [LLM] Together these two rules create a structural funding cost penalty that makes long-duration corporate and specialized lending uneconomical relative to short-term or HQLA assets — amplifying the capital-cost pressure from RWA and Output Floor to produce the bank retreat from corporate credit.",
+      "stability": "stable",
+      "date_updated": "2026-05-21"
+    },
+    {
+      "id": "mon_pol_trans_short_long_frictions_mec_001",
+      "title": "Monetary Policy Transmission Short Long Rate Frictions",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "transmission",
+        "interest_rate_channel",
+        "yield_curve",
+        "term_premium"
+      ],
+      "thesis": "Transmission from short-term policy rates to medium- and long-term yields is non-linear and subject to structural frictions, including asymmetric effectiveness across business cycles and shifts in market expectations that can decouple policy actions from long-term rate movements.",
+      "stability": "stable",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "mp_collateral_channel_001",
+      "title": "Monetary Policy Transmission via Collateral and Repo Markets",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "monetary-transmission",
+        "collateral",
+        "repo",
+        "QE",
+        "shadow-banking",
+        "plumbing"
+      ],
+      "thesis": "Repo rates — which reflect collateral availability and quality — guide the policy rate more directly than unsecured interbank rates. QE, by removing high-quality collateral from circulation and replacing it with reserves, suppresses collateral velocity and may impair monetary transmission: large CB footprint in collateral markets weakens the market signals that normally guide policy.",
+      "stability": "stable",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
+      "title": "Non Maturity Deposit Fair Margin And Replicating Portfolio",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "alm",
+        "non_maturity_deposits",
+        "fair_margin",
+        "replicating_portfolio",
+        "banking_book",
+        "hedge"
+      ],
+      "thesis": "Non-maturing deposits (NMDs) — accounts where clients can withdraw or deposit at any time and the bank can change the rate — are modeled via a 'fair margin' concept: the margin is the NPV-zero increase in the client coupon, and a dynamic investment strategy hedges this margin against interest rate movements, replacing the static replicating portfolio approach.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "nonlinear_inflation_amplifiers_mec_001",
+      "title": "Non-Linear Inflation Amplifier Mechanics",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "inflation",
+        "supply_chain",
+        "input_output",
+        "inflation_expectations",
+        "non_linear_dynamics"
+      ],
+      "thesis": "Inflation propagation in response to supply shocks occurs through two distinct amplifiers: the structural amplifier (automatic input-output cascades through production networks) and the behavioral amplifier (changes in wage- and price-setting behavior driven by expectations). [LLM]",
+      "stability": "stable",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "pboc_rmb_fix_counter_cyclical_factor_and_fx_management_001",
+      "title": "PBOC RMB Fix Counter Cyclical Factor And FX Management",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "pboc",
+        "china",
+        "rmb",
+        "cny",
+        "ccf",
+        "daily_fix",
+        "fx_intervention",
+        "cfets",
+        "bbop",
+        "crawling_peg"
+      ],
+      "thesis": "The PBOC manages CNY via a daily central parity fix with ±2% band, augmented by a discretionary Counter-Cyclical Factor (CCF) embedded in the fix formula; since late 2023, conservative CCF settings have made the fix behave like a crawling peg, creating a positive CFETS-USDCNY correlation that signals PBOC is suppressing automatic stabilizer effects.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "pik_payment_in_kind_credit_masking_001",
+      "title": "PIK Payment In Kind Credit Stress Masking",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "private-credit",
+        "PIK",
+        "credit-stress",
+        "loss-recognition",
+        "covenant",
+        "valuation",
+        "BDC"
+      ],
+      "thesis": "PIK (Payment-in-Kind) allows borrowers to defer cash interest by accruing additional principal, keeping reported default rates optically low while true leverage rises. [LLM] Rising PIK share in BDCs is a leading indicator of unrealized credit stress; in a stress scenario, deferred losses and compounding principal concentrate into a simultaneous default spike rather than the gradual deterioration that cash-pay covenant structures would produce.",
+      "stability": "stable",
+      "date_updated": "2026-05-21"
+    },
+    {
+      "id": "private_credit_insurer_structural_channel_001",
+      "title": "Private Credit Insurer Structural Channel",
+      "type": "mechanism",
+      "domain": "basel_risk",
+      "confidence": 1,
+      "tags": [
+        "private_credit",
+        "insurance",
+        "life_insurer",
+        "private_equity",
+        "alm",
+        "permanent_capital",
+        "systemic"
+      ],
+      "thesis": "Life insurers have become structural anchor investors in private credit, growing US private placement holdings from $386bn (2014) to $849bn (2024, 14% of general account assets), driven by asset-liability matching logic and post-crisis yield compression; private equity entry into insurance as a source of permanent capital created a vertically integrated origination-to-funding loop that industrialized this channel at scale.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "private_credit_reflexive_loop_001",
+      "title": "Private Credit Reflexive Loop",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "private-credit",
+        "reflexivity",
+        "search-for-yield",
+        "covenant-erosion",
+        "semi-liquid-funds",
+        "systemic-risk",
+        "feedback-loop"
+      ],
+      "thesis": "[LLM] Low policy rates induce institutional search for yield → capital floods into private credit → manager pressure to deploy creates covenant deterioration and leverage creep → PIK masks emerging stress → delayed loss recognition. When the regime flips (sustained high rates or redemption surge), the loop reverses: semi-liquid fund redemption caps are hit → bank revolving lines drawn defensively → NAV margin calls → valuation reset forces loss recognition simultaneously, producing a cliff rather than a gradual correction.",
+      "stability": "evolving",
+      "date_updated": "2026-05-21"
+    },
+    {
+      "id": "private_credit_secondary_market_price_discovery_001",
+      "title": "Private Credit Secondary Market Price Discovery",
+      "type": "mechanism",
+      "domain": "basel_risk",
+      "confidence": 1,
+      "tags": [
+        "private_credit",
+        "secondary_market",
+        "price_discovery",
+        "nav",
+        "valuation",
+        "liquidity"
+      ],
+      "thesis": "Private credit secondary markets are transforming from LP convenience into a price discovery mechanism that challenges reported NAVs: growing from bn (2023) to 8bn+ (2025), secondaries price at observable discounts (avg 90-92% of NAV) that serve as external benchmarks, progressively undermining the pure mark-to-model valuation regime and creating feedback loops between secondary pricing, redemption behavior, and fundraising.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "private_credit_subscription_nav_lending_hidden_leverage_001",
+      "title": "Private Credit Subscription NAV Lending Hidden Leverage",
+      "type": "mechanism",
+      "domain": "basel_risk",
+      "confidence": 1,
+      "tags": [
+        "private_credit",
+        "leverage",
+        "nav_lending",
+        "subscription_facility",
+        "gsib",
+        "liquidity_risk",
+        "systemic"
+      ],
+      "thesis": "Subscription credit facilities (secured by LP commitments) and NAV loans (secured by fund investment values) constitute a hidden leverage layer in private credit not visible in standard portfolio metrics; OFR estimates $410-540bn in bank credit extended to private credit vehicles, concentrated 60% among 5 GSIBs, creating a plausible correlated liquidity transmission route where PC fund stress and bank credit tightening reinforce each other.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "private_credit_srt_001",
+      "title": "Private Credit — SRT, NAV Loans, and Bank-PC Interconnection",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 2,
+      "tags": [
+        "private-credit",
+        "SRT",
+        "NAV-loans",
+        "subscription-lines",
+        "bank-NBFI",
+        "shadow-banking",
+        "network-liquidity-risk",
+        "originate-to-distribute",
+        "CLO"
+      ],
+      "thesis": "Banks respond to Basel III capital and liquidity constraints through three structural mechanisms: (1) SRT — transferring first-loss credit risk from the balance sheet to PC fund investors for regulatory capital relief; (2) originate-to-distribute — converting from spread income to fee income while retaining origination relationships; (3) providing leverage to PC funds via subscription lines and NAV loans. These mechanisms do not eliminate bank credit exposure — they reconfigure it from direct lending to indirect exposure to PC fund leverage. The systemic implication is correlated drawdown risk: in stress, PC funds simultaneously tap bank credit lines, creating a network liquidity event invisible to standard bank stress tests.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "qe_duration_extraction_from_private_sector_001",
+      "title": "QE Duration Extraction from Private Sector",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 1,
+      "tags": [
+        "qe",
+        "duration",
+        "financial_repression",
+        "japan",
+        "boj",
+        "household_balance_sheet"
+      ],
+      "thesis": "Quantitative easing systematically strips duration from the private financial system: by purchasing long-duration government bonds and issuing near-zero-duration bank reserves, central banks transfer duration risk onto the sovereign balance sheet while leaving private investors — especially deposit-heavy households — with portfolios that cannot hedge rising-rate risk. In Japan, a decade of BOJ QE left 67% of households with near-zero-duration savings despite having decades of consumption needs to fund.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "title": "QT Reserve Drain Effectiveness And Deposit Funding Condition",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "qt",
+        "quantitative_tightening",
+        "reserves",
+        "mmf",
+        "on_rrp",
+        "deposits",
+        "fed"
+      ],
+      "thesis": "Quantitative Tightening (QT) only reduces bank reserves and tightens credit conditions when it is funded by bank deposit outflows; when funded by MMF withdrawals from ON RRP, only the Fed's ON RRP liability shrinks while reserves are unchanged — making that QT phase financially neutral for banks.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "quantitative_tightening_qt_balance_sheet_runoff_001",
+      "title": "Quantitative Tightening QT Balance Sheet Runoff",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "qt",
+        "fed-balance-sheet",
+        "reserves",
+        "monetary-policy",
+        "tightening"
+      ],
+      "thesis": "Quantitative Tightening (QT) reduces the Fed balance sheet by allowing maturing securities to roll off without reinvestment, up to a monthly redemption cap. QT destroys reserves and bank deposits when investors fund bond purchases with bank deposits — but its tightening effect is limited: Atlanta Fed research estimates .2T of QT equivalent to only 0.29-0.74% in rate hikes over three years.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "repo_market_mechanics_triparty_bilateral_001",
+      "title": "Repo Market Mechanics Triparty Bilateral",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 3,
+      "tags": [
+        "repo",
+        "sofr",
+        "triparty",
+        "nccbr",
+        "collateral",
+        "shadow-banking",
+        "dealer"
+      ],
+      "thesis": "The repo market is the secured funding backbone of the US financial system, executing 3-4 trillion dollars daily across three segments: triparty (custodian-intermediated), GCF (centrally cleared interdealer), and NCCBR (bilateral, hedge-fund-dominated). Repo makes Treasuries functionally equivalent to cash and prices its rates into SOFR, the global USD benchmark.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "reserve_floor_payment_001",
+      "title": "Reserve Floor — Payment System Demand and the Minimum Ample Level",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "reserves",
+        "Fedwire",
+        "RTGS",
+        "payment-system",
+        "reserve-floor",
+        "IORB",
+        "SRF",
+        "QT",
+        "bank-liquidity"
+      ],
+      "thesis": "The minimum level of reserve balances (\"reserve floor\") that the Fed must supply is driven primarily by the demand of the payment system, not by monetary policy alone. RTGS (real-time gross settlement) requires banks to pre-fund large opening-of-day reserve balances; post-GFC liquidity regulations stigmatize intraday overdrafts; and IORB remuneration removes incentives to lend excess reserves. These three structural changes raised the minimum from ~$10B pre-GFC to ~$3T, creating a ratchet effect. When reserves fall below the ample floor, payment delays beget repo rate spikes (September 2019 being the canonical example). Policy options to lower the floor include liquidity savings mechanisms (LSMs), tiered IORB, revised LCR/daylight overdraft rules, and TOMOs.",
+      "stability": "stable",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
+      "title": "SLR LCR Balance Sheet Constraints Treasury Market Dealer",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 3,
+      "tags": [
+        "slr",
+        "lcr",
+        "basel-iii",
+        "dealer",
+        "treasury-market",
+        "hqla",
+        "balance-sheet-constraints"
+      ],
+      "thesis": "Post-GFC Basel III regulations — especially the Supplementary Leverage Ratio (SLR) and Liquidity Coverage Ratio (LCR) — constrain primary dealer balance sheets, reducing their capacity to absorb Treasury supply during periods of elevated issuance or volatility. The resulting illiquidity spiral (volatility -> wider spreads -> forced selling -> more volatility) creates systemic risk in the world's largest bond market.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "standing_repo_facility_srf_mec_001",
+      "title": "Standing Repo Facility SRF Fed Backstop",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "fed",
+        "repo",
+        "sofr",
+        "srf",
+        "liquidity",
+        "backstop"
+      ],
+      "thesis": "The Standing Repo Facility (SRF) acts as a ceiling for the SOFR and a liquidity safety valve for the US Treasury market, designed to cap secured rates and mitigate dealer balance sheet stress by providing a destigmatized backstop.",
+      "stability": "stable",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "swap_carry_and_roll_down_analysis_001",
+      "title": "Swap Carry And Roll Down Analysis",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 4,
+      "tags": [
+        "swaps",
+        "carry",
+        "roll_down",
+        "fixed_income",
+        "relative_value",
+        "rates_trading"
+      ],
+      "thesis": "For any interest rate swap held over a horizon period, the total P&L from inaction decomposes into (1) carry — net interest earned while holding the trade — and (2) roll-down — the mark-to-market gain from the swap aging on an unchanged curve; together these define the break-even rate move required to lose money on the position.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "swap_spreads_001",
+      "title": "Swap Spreads — Drivers, Balance Sheet Frictions, and Plumbing Indicators",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 3,
+      "tags": [
+        "swap-spreads",
+        "asset-swap",
+        "SLR",
+        "LCR",
+        "balance-sheet-constraints",
+        "shadow-cost",
+        "plumbing",
+        "SOFR"
+      ],
+      "thesis": "Swap spreads — the difference between bond yield and the swap rate of equivalent maturity — decompose into: SOFR-ASW = repo-SOFR basis swap + adjusted CDS (credit risk). Negative swap spreads (Treasury yield > SOFR swap rate) signal dealer balance sheet constraints: when banks face binding SLR/LCR constraints, their ability to intermediate arbitrage between bonds and swaps is impaired, causing the spread to persist at values inconsistent with no-arbitrage. Shadow costs of regulatory constraints — not visible in funding rates — are a primary structural driver of Treasury swap spreads in the post-Basel III era. Swap spreads are therefore a measure of plumbing friction and dealer balance sheet stress.",
+      "stability": "stable",
+      "date_updated": "2026-05-20"
+    },
+    {
+      "id": "tga_reserve_swap_mechanics_and_debt_ceiling_dynamics_001",
+      "title": "TGA Reserve Swap Mechanics And Debt Ceiling Dynamics",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "tga",
+        "reserves",
+        "debt_ceiling",
+        "treasury",
+        "liquidity",
+        "fed",
+        "plumbing"
+      ],
+      "thesis": "The Treasury General Account (TGA) and bank reserves are two liabilities on the Fed's balance sheet that move inversely: every TGA drawdown injects reserves into the banking system (liquidity positive), while every TGA refill (via Treasury issuance) drains reserves (liquidity negative); debt ceiling episodes force extraordinary TGA dynamics that temporarily distort the Fed's reserve scarcity signals.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "treasury_general_account_tga_reserve_swap_mec_001",
+      "title": "Treasury General Account TGA Reserve Swap",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "tga",
+        "reserves",
+        "fed-balance-sheet",
+        "liquidity",
+        "liability-swap",
+        "autonomous-factors"
+      ],
+      "thesis": "The Treasury General Account (TGA) is the US government's checking account held at the Federal Reserve.  Changes in the TGA result in an opposite 1:1 change in bank reserves (dTGA = -dReserves) unless the Fed  adjusts its assets to maintain ample reserves. The TGA acts as an \"autonomous factor\" that directly  competes with reserves for space on the Fed's liability side.",
+      "stability": "stable",
+      "date_updated": "2026-05-21"
+    },
+    {
+      "id": "triparty_repo_market_structure_and_daily_cycle_001",
+      "title": "Triparty Repo Market Structure And Daily Cycle",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "repo",
+        "triparty",
+        "bnym",
+        "nccbr",
+        "on_rrp",
+        "srf",
+        "mmf",
+        "plumbing"
+      ],
+      "thesis": "The US triparty repo market is a $4-5 trillion overnight funding market where BNYM acts as sole custodian/settlement agent; its daily operational cycle creates structural rate floors (ON RRP at 1pm) and ceilings (SRF at 1:30-1:45pm), while the opaque non-centrally-cleared bilateral repo (NCCBR) segment provides ~$2 trillion in hedge fund leverage outside regulatory visibility.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "us_shadow_banking_post_gfc_market_based_finance_structure_001",
+      "title": "US Shadow Banking Post-GFC Market Based Finance Structure",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "shadow_banking",
+        "ptf",
+        "securitization",
+        "abs",
+        "clo",
+        "gfc",
+        "treasury_market",
+        "basel"
+      ],
+      "thesis": "Post-2008 US shadow banking transformed from a complex CDO/synthetic ABS machine into a repo-centric, collateral-based market-based finance system, where securitization (ABS, CLOs) survived but the toxic CDO-cubed structures collapsed; simultaneously, Principal Trading Firms (PTFs) replaced G-SIBs as the primary Treasury market makers due to Basel/SLR regulatory constraints on bank balance sheets.",
+      "stability": "evolving",
+      "date_updated": "2026-05-22"
+    },
+    {
+      "id": "yen_intervention_liquidity_drain_mec_001",
+      "title": "Yen Intervention Liquidity Drain Mechanism",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "japan",
+        "mof",
+        "yen",
+        "intervention",
+        "liquidity",
+        "treasuries"
+      ],
+      "thesis": "Yen intervention by the Ministry of Finance (MoF) acts as a global liquidity drain; by selling US Treasuries to buy Yen, Japan effectively reduces the supply of global dollar collateral while increasing selling pressure on US rates.",
+      "stability": "evolving",
+      "date_updated": "2026-05-20"
+    }
+  ],
+  "edges": [
+    {
+      "source": "currency_fed_liability_con_001",
+      "target": "central_bank_balance_sheet_structure_liabilities_assets_001",
+      "relation": "component_of"
+    },
+    {
+      "source": "currency_fed_liability_con_001",
+      "target": "fed_fiscal_agent_treasury_relationship_frm_001",
+      "relation": "supported_by"
+    },
+    {
+      "source": "currency_fed_liability_con_001",
+      "target": "central_bank_monetary_policy_operational_framework_typology_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "currency_fed_liability_con_001",
+      "target": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "currency_fed_liability_con_001",
+      "target": "fed_ample_reserves_rate_control_framework_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "currency_fed_liability_con_001",
+      "target": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "currency_fed_liability_con_001",
+      "target": "tga_reserve_swap_mechanics_and_debt_ceiling_dynamics_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "shadow_banking_market_based_finance_001",
+      "target": "collateral_velocity_001",
+      "relation": "shared_tag:shadow-banking"
+    },
+    {
+      "source": "shadow_banking_market_based_finance_001",
+      "target": "mp_collateral_channel_001",
+      "relation": "shared_tag:shadow-banking"
+    },
+    {
+      "source": "shadow_banking_market_based_finance_001",
+      "target": "private_credit_srt_001",
+      "relation": "shared_tag:shadow-banking"
+    },
+    {
+      "source": "shadow_banking_market_based_finance_001",
+      "target": "repo_market_mechanics_triparty_bilateral_001",
+      "relation": "shared_tag:shadow-banking"
+    },
+    {
+      "source": "shadow_banking_market_based_finance_001",
+      "target": "basel_driven_credit_migration_to_private_markets_001",
+      "relation": "shared_tag:nbfi"
+    },
+    {
+      "source": "warsh_balance_sheet_stimulus_swap_con_001",
+      "target": "quantitative_tightening_qt_balance_sheet_runoff_001",
+      "relation": "ideological_driver"
+    },
+    {
+      "source": "warsh_balance_sheet_stimulus_swap_con_001",
+      "target": "reserve_floor_payment_001",
+      "relation": "contested_by"
+    },
+    {
+      "source": "warsh_balance_sheet_stimulus_swap_con_001",
+      "target": "central_bank_monetary_policy_operational_framework_typology_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "warsh_balance_sheet_stimulus_swap_con_001",
+      "target": "currency_fed_liability_con_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "warsh_balance_sheet_stimulus_swap_con_001",
+      "target": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "warsh_balance_sheet_stimulus_swap_con_001",
+      "target": "fed_ample_reserves_rate_control_framework_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "warsh_balance_sheet_stimulus_swap_con_001",
+      "target": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "target": "basel_driven_credit_migration_to_private_markets_001",
+      "relation": "shared_tag:basel"
+    },
+    {
+      "source": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "target": "us_shadow_banking_post_gfc_market_based_finance_structure_001",
+      "relation": "shared_tag:basel"
+    },
+    {
+      "source": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "target": "basel_iii_endgame_001",
+      "relation": "shared_tag:basel"
+    },
+    {
+      "source": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "target": "irrbb_eve_nii_dual_metric_framework_001",
+      "relation": "shared_tag:basel"
+    },
+    {
+      "source": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "target": "basel_output_floor_specialized_lending_001",
+      "relation": "shared_tag:rwa"
+    },
+    {
+      "source": "basel_iii_endgame_001",
+      "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
+      "relation": "shares_regulatory_drivers"
+    },
+    {
+      "source": "basel_iii_endgame_001",
+      "target": "shadow_banking_market_based_finance_001",
+      "relation": "private_credit_is_instance_of"
+    },
+    {
+      "source": "basel_iii_endgame_001",
+      "target": "private_credit_srt_001",
+      "relation": "mechanism_within"
+    },
+    {
+      "source": "basel_iii_endgame_001",
+      "target": "collateral_velocity_001",
+      "relation": "related_shadow_banking"
+    },
+    {
+      "source": "basel_iii_endgame_001",
+      "target": "repo_market_mechanics_triparty_bilateral_001",
+      "relation": "bank_nbfi_interconnect"
+    },
+    {
+      "source": "basel_iii_endgame_001",
+      "target": "basel_driven_credit_migration_to_private_markets_001",
+      "relation": "shared_tag:Basel"
+    },
+    {
+      "source": "basel_iii_endgame_001",
+      "target": "us_shadow_banking_post_gfc_market_based_finance_structure_001",
+      "relation": "shared_tag:Basel"
+    },
+    {
+      "source": "basel_iii_endgame_001",
+      "target": "irrbb_eve_nii_dual_metric_framework_001",
+      "relation": "shared_tag:Basel"
+    },
+    {
+      "source": "basel_iii_endgame_001",
+      "target": "basel_output_floor_specialized_lending_001",
+      "relation": "shared_tag:RWA"
+    },
+    {
+      "source": "basel_regional_implementation_dynamics_001",
+      "target": "basel_iii_endgame_001",
+      "relation": "regional_lens_on"
+    },
+    {
+      "source": "basel_regional_implementation_dynamics_001",
+      "target": "basel_output_floor_specialized_lending_001",
+      "relation": "regional_impact_differential"
+    },
+    {
+      "source": "basel_regional_implementation_dynamics_001",
+      "target": "private_credit_srt_001",
+      "relation": "regional_market_structure_of"
+    },
+    {
+      "source": "basel_regional_implementation_dynamics_001",
+      "target": "lcr_nsfr_long_term_lending_penalty_001",
+      "relation": "shared_tag:basel-iii"
+    },
+    {
+      "source": "basel_regional_implementation_dynamics_001",
+      "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
+      "relation": "shared_tag:basel-iii"
+    },
+    {
+      "source": "basel_regional_implementation_dynamics_001",
+      "target": "private_credit_stress_monitoring_001",
+      "relation": "shared_tag:private-credit"
+    },
+    {
+      "source": "central_bank_balance_sheet_structure_liabilities_assets_001",
+      "target": "inflation_targeting_001",
+      "relation": "shared_tag:central-bank"
+    },
+    {
+      "source": "central_bank_balance_sheet_structure_liabilities_assets_001",
+      "target": "monetary_policy_instruments_operational_framework_001",
+      "relation": "shared_tag:central-bank"
+    },
+    {
+      "source": "central_bank_balance_sheet_structure_liabilities_assets_001",
+      "target": "central_bank_intermediation_balance_sheet_autonomous_factors_001",
+      "relation": "shared_tag:central-bank"
+    },
+    {
+      "source": "central_bank_balance_sheet_structure_liabilities_assets_001",
+      "target": "collateral_framework_haircuts_central_bank_credit_001",
+      "relation": "shared_tag:central-bank"
+    },
+    {
+      "source": "central_bank_balance_sheet_structure_liabilities_assets_001",
+      "target": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "relation": "shared_tag:reserves"
+    },
+    {
+      "source": "cb_balance_sheet_trilemma_frm_001",
+      "target": "monetary_policy_instruments_operational_framework_001",
+      "relation": "foundational_constraint"
+    },
+    {
+      "source": "cb_balance_sheet_trilemma_frm_001",
+      "target": "warsh_balance_sheet_stimulus_swap_con_001",
+      "relation": "attempts_to_break"
+    },
+    {
+      "source": "cb_balance_sheet_trilemma_frm_001",
+      "target": "central_bank_monetary_policy_operational_framework_typology_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "cb_balance_sheet_trilemma_frm_001",
+      "target": "currency_fed_liability_con_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "cb_balance_sheet_trilemma_frm_001",
+      "target": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "cb_balance_sheet_trilemma_frm_001",
+      "target": "fed_ample_reserves_rate_control_framework_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "cb_balance_sheet_trilemma_frm_001",
+      "target": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "central_bank_monetary_policy_operational_framework_typology_001",
+      "target": "monetary_policy_instruments_operational_framework_001",
+      "relation": "shared_tag:corridor"
+    },
+    {
+      "source": "central_bank_monetary_policy_operational_framework_typology_001",
+      "target": "interest_rate_corridor_floor_system_standing_facilities_001",
+      "relation": "shared_tag:corridor"
+    },
+    {
+      "source": "central_bank_monetary_policy_operational_framework_typology_001",
+      "target": "ecb_new_operational_framework_frm_001",
+      "relation": "shared_tag:floor_system"
+    },
+    {
+      "source": "central_bank_monetary_policy_operational_framework_typology_001",
+      "target": "fed_ample_reserves_range_floor_frm_001",
+      "relation": "shared_tag:floor_system"
+    },
+    {
+      "source": "central_bank_monetary_policy_operational_framework_typology_001",
+      "target": "fed_policy_rate_shift_effr_to_secured_rate_tgcr_001",
+      "relation": "shared_tag:floor_system"
+    },
+    {
+      "source": "duration_targeting_bond_portfolio_framework_001",
+      "target": "bond_accrual_price_effect_interaction_001",
+      "relation": "shared_tag:duration"
+    },
+    {
+      "source": "duration_targeting_bond_portfolio_framework_001",
+      "target": "duration_targeting_convergence_and_yield_trap_001",
+      "relation": "shared_tag:duration"
+    },
+    {
+      "source": "duration_targeting_bond_portfolio_framework_001",
+      "target": "dv01_duration_001",
+      "relation": "shared_tag:duration"
+    },
+    {
+      "source": "duration_targeting_bond_portfolio_framework_001",
+      "target": "financial_repression_distributional_welfare_effects_001",
+      "relation": "shared_tag:duration"
+    },
+    {
+      "source": "duration_targeting_bond_portfolio_framework_001",
+      "target": "qe_duration_extraction_from_private_sector_001",
+      "relation": "shared_tag:duration"
+    },
+    {
+      "source": "ecb_new_operational_framework_frm_001",
+      "target": "monetary_policy_instruments_operational_framework_001",
+      "relation": "evolution_of"
+    },
+    {
+      "source": "ecb_new_operational_framework_frm_001",
+      "target": "interest_rate_corridor_floor_system_standing_facilities_001",
+      "relation": "implementation_of"
+    },
+    {
+      "source": "ecb_new_operational_framework_frm_001",
+      "target": "fed_ample_reserves_range_floor_frm_001",
+      "relation": "shared_tag:operational_framework"
+    },
+    {
+      "source": "ecb_new_operational_framework_frm_001",
+      "target": "fed_policy_rate_shift_effr_to_secured_rate_tgcr_001",
+      "relation": "shared_tag:floor_system"
+    },
+    {
+      "source": "ecb_new_operational_framework_frm_001",
+      "target": "fhlb_effr_iorb_arbitrage_floor_mechanism_001",
+      "relation": "shared_tag:floor_system"
+    },
+    {
+      "source": "fed_ample_reserves_range_floor_frm_001",
+      "target": "reserve_floor_payment_001",
+      "relation": "driven_by"
+    },
+    {
+      "source": "fed_ample_reserves_range_floor_frm_001",
+      "target": "fed_overnight_reverse_repo_on_rrp_001",
+      "relation": "component_of"
+    },
+    {
+      "source": "fed_ample_reserves_range_floor_frm_001",
+      "target": "currency_fed_liability_con_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_ample_reserves_range_floor_frm_001",
+      "target": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_ample_reserves_range_floor_frm_001",
+      "target": "fed_ample_reserves_rate_control_framework_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_ample_reserves_range_floor_frm_001",
+      "target": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_fiscal_agent_treasury_relationship_frm_001",
+      "target": "treasury_general_account_tga_reserve_swap_mec_001",
+      "relation": "mechanism"
+    },
+    {
+      "source": "fed_fiscal_agent_treasury_relationship_frm_001",
+      "target": "fed_treasury_accord_2026_frm_001",
+      "relation": "context"
+    },
+    {
+      "source": "fed_fiscal_agent_treasury_relationship_frm_001",
+      "target": "central_bank_monetary_policy_operational_framework_typology_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_fiscal_agent_treasury_relationship_frm_001",
+      "target": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_fiscal_agent_treasury_relationship_frm_001",
+      "target": "fed_ample_reserves_rate_control_framework_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_fiscal_agent_treasury_relationship_frm_001",
+      "target": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "global_dollar_system_eurodollar_architecture_001",
+      "target": "eurodollar_system_mechanics_and_post_reform_decline_001",
+      "relation": "shared_tag:eurodollar"
+    },
+    {
+      "source": "imf_balance_of_payments_framework_and_external_account_analysis_001",
+      "target": "imf_flow_of_funds_4_sector_consistency_framework_001",
+      "relation": "shared_tag:imf"
+    },
+    {
+      "source": "imf_balance_of_payments_framework_and_external_account_analysis_001",
+      "target": "imf_gfs_fiscal_accounting_framework_deficit_measurement_and_sustainability_001",
+      "relation": "shared_tag:imf"
+    },
+    {
+      "source": "imf_balance_of_payments_framework_and_external_account_analysis_001",
+      "target": "imf_monetary_analysis_quantity_theory_velocity_and_exchange_rate_regimes_001",
+      "relation": "shared_tag:imf"
+    },
+    {
+      "source": "imf_balance_of_payments_framework_and_external_account_analysis_001",
+      "target": "imf_monetary_survey_and_reserve_money_identity_framework_001",
+      "relation": "shared_tag:imf"
+    },
+    {
+      "source": "imf_balance_of_payments_framework_and_external_account_analysis_001",
+      "target": "imf_sna_real_sector_accounting_gdp_identities_and_sectoral_accounts_001",
+      "relation": "shared_tag:imf"
+    },
+    {
+      "source": "imf_flow_of_funds_4_sector_consistency_framework_001",
+      "target": "imf_gfs_fiscal_accounting_framework_deficit_measurement_and_sustainability_001",
+      "relation": "shared_tag:imf"
+    },
+    {
+      "source": "imf_flow_of_funds_4_sector_consistency_framework_001",
+      "target": "imf_monetary_analysis_quantity_theory_velocity_and_exchange_rate_regimes_001",
+      "relation": "shared_tag:imf"
+    },
+    {
+      "source": "imf_flow_of_funds_4_sector_consistency_framework_001",
+      "target": "imf_monetary_survey_and_reserve_money_identity_framework_001",
+      "relation": "shared_tag:imf"
+    },
+    {
+      "source": "imf_flow_of_funds_4_sector_consistency_framework_001",
+      "target": "imf_sna_real_sector_accounting_gdp_identities_and_sectoral_accounts_001",
+      "relation": "shared_tag:imf"
+    },
+    {
+      "source": "imf_gfs_fiscal_accounting_framework_deficit_measurement_and_sustainability_001",
+      "target": "imf_monetary_analysis_quantity_theory_velocity_and_exchange_rate_regimes_001",
+      "relation": "shared_tag:imf"
+    },
+    {
+      "source": "imf_gfs_fiscal_accounting_framework_deficit_measurement_and_sustainability_001",
+      "target": "imf_monetary_survey_and_reserve_money_identity_framework_001",
+      "relation": "shared_tag:imf"
+    },
+    {
+      "source": "imf_gfs_fiscal_accounting_framework_deficit_measurement_and_sustainability_001",
+      "target": "imf_sna_real_sector_accounting_gdp_identities_and_sectoral_accounts_001",
+      "relation": "shared_tag:imf"
+    },
+    {
+      "source": "imf_monetary_analysis_quantity_theory_velocity_and_exchange_rate_regimes_001",
+      "target": "imf_monetary_survey_and_reserve_money_identity_framework_001",
+      "relation": "shared_tag:imf"
+    },
+    {
+      "source": "imf_monetary_analysis_quantity_theory_velocity_and_exchange_rate_regimes_001",
+      "target": "imf_sna_real_sector_accounting_gdp_identities_and_sectoral_accounts_001",
+      "relation": "shared_tag:imf"
+    },
+    {
+      "source": "imf_monetary_survey_and_reserve_money_identity_framework_001",
+      "target": "imf_sna_real_sector_accounting_gdp_identities_and_sectoral_accounts_001",
+      "relation": "shared_tag:imf"
+    },
+    {
+      "source": "irrbb_eve_nii_dual_metric_framework_001",
+      "target": "basel_driven_credit_migration_to_private_markets_001",
+      "relation": "shared_tag:basel"
+    },
+    {
+      "source": "irrbb_eve_nii_dual_metric_framework_001",
+      "target": "us_shadow_banking_post_gfc_market_based_finance_structure_001",
+      "relation": "shared_tag:basel"
+    },
+    {
+      "source": "irrbb_eve_nii_dual_metric_framework_001",
+      "target": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
+      "relation": "shared_tag:alm"
+    },
+    {
+      "source": "inflation_targeting_001",
+      "target": "monetary_policy_instruments_operational_framework_001",
+      "relation": "complements"
+    },
+    {
+      "source": "inflation_targeting_001",
+      "target": "interest_rate_corridor_floor_system_standing_facilities_001",
+      "relation": "implemented_via"
+    },
+    {
+      "source": "inflation_targeting_001",
+      "target": "central_bank_intermediation_balance_sheet_autonomous_factors_001",
+      "relation": "shared_tag:central-bank"
+    },
+    {
+      "source": "inflation_targeting_001",
+      "target": "collateral_framework_haircuts_central_bank_credit_001",
+      "relation": "shared_tag:central-bank"
+    },
+    {
+      "source": "japan_sovereign_carry_trade_frm_001",
+      "target": "central_bank_balance_sheet_structure_liabilities_assets_001",
+      "relation": "specialized_case"
+    },
+    {
+      "source": "japan_sovereign_carry_trade_frm_001",
+      "target": "financial_repression_distributional_welfare_effects_001",
+      "relation": "shared_tag:japan"
+    },
+    {
+      "source": "japan_sovereign_carry_trade_frm_001",
+      "target": "financial_repression_via_reserve_creation_001",
+      "relation": "shared_tag:japan"
+    },
+    {
+      "source": "japan_sovereign_carry_trade_frm_001",
+      "target": "japan_filp_to_qe_structural_succession_001",
+      "relation": "shared_tag:japan"
+    },
+    {
+      "source": "japan_sovereign_carry_trade_frm_001",
+      "target": "qe_duration_extraction_from_private_sector_001",
+      "relation": "shared_tag:japan"
+    },
+    {
+      "source": "japan_sovereign_carry_trade_frm_001",
+      "target": "yen_intervention_liquidity_drain_mec_001",
+      "relation": "shared_tag:japan"
+    },
+    {
+      "source": "monetary_policy_instruments_operational_framework_001",
+      "target": "central_bank_intermediation_balance_sheet_autonomous_factors_001",
+      "relation": "shared_tag:central-bank"
+    },
+    {
+      "source": "monetary_policy_instruments_operational_framework_001",
+      "target": "collateral_framework_haircuts_central_bank_credit_001",
+      "relation": "shared_tag:central-bank"
+    },
+    {
+      "source": "monetary_policy_instruments_operational_framework_001",
+      "target": "interest_rate_corridor_floor_system_standing_facilities_001",
+      "relation": "shared_tag:omo"
+    },
+    {
+      "source": "mptm_framework_001",
+      "target": "monetary_policy_instruments_operational_framework_001",
+      "relation": "starts_from"
+    },
+    {
+      "source": "mptm_framework_001",
+      "target": "inflation_targeting_001",
+      "relation": "context_for"
+    },
+    {
+      "source": "mptm_framework_001",
+      "target": "interest_rate_corridor_floor_system_standing_facilities_001",
+      "relation": "initiates_via"
+    },
+    {
+      "source": "mptm_framework_001",
+      "target": "mp_collateral_channel_001",
+      "relation": "specialized_channel_within"
+    },
+    {
+      "source": "mptm_framework_001",
+      "target": "collateral_framework_haircuts_central_bank_credit_001",
+      "relation": "affects_balance_sheet_channel"
+    },
+    {
+      "source": "fed_treasury_accord_2026_frm_001",
+      "target": "monetary_policy_instruments_operational_framework_001",
+      "relation": "redefines"
+    },
+    {
+      "source": "fed_treasury_accord_2026_frm_001",
+      "target": "warsh_balance_sheet_stimulus_swap_con_001",
+      "relation": "complementary_framework"
+    },
+    {
+      "source": "fed_treasury_accord_2026_frm_001",
+      "target": "central_bank_monetary_policy_operational_framework_typology_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_treasury_accord_2026_frm_001",
+      "target": "currency_fed_liability_con_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_treasury_accord_2026_frm_001",
+      "target": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_treasury_accord_2026_frm_001",
+      "target": "fed_ample_reserves_rate_control_framework_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_treasury_accord_2026_frm_001",
+      "target": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "pboc_monetary_policy_framework_and_interest_rate_transmission_001",
+      "target": "pboc_rmb_fix_counter_cyclical_factor_and_fx_management_001",
+      "relation": "shared_tag:pboc"
+    },
+    {
+      "source": "private_credit_stress_monitoring_001",
+      "target": "private_credit_reflexive_loop_001",
+      "relation": "monitoring_framework_for"
+    },
+    {
+      "source": "private_credit_stress_monitoring_001",
+      "target": "bank_nbfi_leverage_loop_001",
+      "relation": "monitors_activation_of"
+    },
+    {
+      "source": "private_credit_stress_monitoring_001",
+      "target": "pik_payment_in_kind_credit_masking_001",
+      "relation": "includes_signal_for"
+    },
+    {
+      "source": "private_credit_stress_monitoring_001",
+      "target": "private_credit_srt_001",
+      "relation": "context_for"
+    },
+    {
+      "source": "private_credit_stress_monitoring_001",
+      "target": "basel_iii_endgame_001",
+      "relation": "shared_tag:private-credit"
+    },
+    {
+      "source": "supply_shock_scenario_taxonomy_frm_001",
+      "target": "monetary_policy_instruments_operational_framework_001",
+      "relation": "applied_in"
+    },
+    {
+      "source": "supply_shock_scenario_taxonomy_frm_001",
+      "target": "nonlinear_inflation_amplifiers_mec_001",
+      "relation": "uses_parameters_from"
+    },
+    {
+      "source": "ample_reserves_buffer_sizing_tga_volatility_001",
+      "target": "central_bank_monetary_policy_operational_framework_typology_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "ample_reserves_buffer_sizing_tga_volatility_001",
+      "target": "currency_fed_liability_con_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "ample_reserves_buffer_sizing_tga_volatility_001",
+      "target": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "ample_reserves_buffer_sizing_tga_volatility_001",
+      "target": "fed_ample_reserves_rate_control_framework_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "ample_reserves_buffer_sizing_tga_volatility_001",
+      "target": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "asset_swap_mechanics_and_spread_001",
+      "target": "swap_carry_and_roll_down_analysis_001",
+      "relation": "shared_tag:swaps"
+    },
+    {
+      "source": "asset_swap_mechanics_and_spread_001",
+      "target": "duration_targeting_bond_portfolio_framework_001",
+      "relation": "shared_tag:fixed_income"
+    },
+    {
+      "source": "asset_swap_mechanics_and_spread_001",
+      "target": "bond_accrual_price_effect_interaction_001",
+      "relation": "shared_tag:fixed_income"
+    },
+    {
+      "source": "asset_swap_mechanics_and_spread_001",
+      "target": "duration_targeting_convergence_and_yield_trap_001",
+      "relation": "shared_tag:fixed_income"
+    },
+    {
+      "source": "asset_swap_mechanics_and_spread_001",
+      "target": "eurodollar_system_mechanics_and_post_reform_decline_001",
+      "relation": "shared_tag:libor"
+    },
+    {
+      "source": "bank_nbfi_leverage_loop_001",
+      "target": "private_credit_srt_001",
+      "relation": "detailed_mechanism_of"
+    },
+    {
+      "source": "bank_nbfi_leverage_loop_001",
+      "target": "private_credit_reflexive_loop_001",
+      "relation": "amplifier_within"
+    },
+    {
+      "source": "bank_nbfi_leverage_loop_001",
+      "target": "shadow_banking_market_based_finance_001",
+      "relation": "instance_of_bank_nonbank_link"
+    },
+    {
+      "source": "bank_nbfi_leverage_loop_001",
+      "target": "reserve_floor_payment_001",
+      "relation": "stress_transmission_channel"
+    },
+    {
+      "source": "bank_nbfi_leverage_loop_001",
+      "target": "basel_iii_endgame_001",
+      "relation": "shared_tag:private-credit"
+    },
+    {
+      "source": "bank_nbfi_leverage_loop_001",
+      "target": "basel_regional_implementation_dynamics_001",
+      "relation": "shared_tag:private-credit"
+    },
+    {
+      "source": "bank_nbfi_leverage_loop_001",
+      "target": "pik_payment_in_kind_credit_masking_001",
+      "relation": "shared_tag:private-credit"
+    },
+    {
+      "source": "basel_driven_credit_migration_to_private_markets_001",
+      "target": "private_credit_insurer_structural_channel_001",
+      "relation": "shared_tag:private_credit"
+    },
+    {
+      "source": "basel_driven_credit_migration_to_private_markets_001",
+      "target": "private_credit_secondary_market_price_discovery_001",
+      "relation": "shared_tag:private_credit"
+    },
+    {
+      "source": "basel_driven_credit_migration_to_private_markets_001",
+      "target": "private_credit_subscription_nav_lending_hidden_leverage_001",
+      "relation": "shared_tag:private_credit"
+    },
+    {
+      "source": "basel_driven_credit_migration_to_private_markets_001",
+      "target": "us_shadow_banking_post_gfc_market_based_finance_structure_001",
+      "relation": "shared_tag:basel"
+    },
+    {
+      "source": "basel_output_floor_specialized_lending_001",
+      "target": "private_credit_srt_001",
+      "relation": "structural_driver_of"
+    },
+    {
+      "source": "basel_output_floor_specialized_lending_001",
+      "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
+      "relation": "interacts_with"
+    },
+    {
+      "source": "basel_output_floor_specialized_lending_001",
+      "target": "lcr_nsfr_long_term_lending_penalty_001",
+      "relation": "shared_tag:basel-iii"
+    },
+    {
+      "source": "bond_accrual_price_effect_interaction_001",
+      "target": "duration_targeting_convergence_and_yield_trap_001",
+      "relation": "shared_tag:fixed_income"
+    },
+    {
+      "source": "bond_accrual_price_effect_interaction_001",
+      "target": "swap_carry_and_roll_down_analysis_001",
+      "relation": "shared_tag:fixed_income"
+    },
+    {
+      "source": "bond_accrual_price_effect_interaction_001",
+      "target": "dv01_duration_001",
+      "relation": "shared_tag:duration"
+    },
+    {
+      "source": "central_bank_intermediation_balance_sheet_autonomous_factors_001",
+      "target": "collateral_framework_haircuts_central_bank_credit_001",
+      "relation": "shared_tag:central-bank"
+    },
+    {
+      "source": "central_bank_intermediation_balance_sheet_autonomous_factors_001",
+      "target": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "relation": "shared_tag:reserves"
+    },
+    {
+      "source": "collateral_framework_haircuts_central_bank_credit_001",
+      "target": "collateral_velocity_and_pledged_collateral_market_mechanics_001",
+      "relation": "shared_tag:collateral"
+    },
+    {
+      "source": "collateral_framework_haircuts_central_bank_credit_001",
+      "target": "collateral_velocity_001",
+      "relation": "shared_tag:collateral"
+    },
+    {
+      "source": "collateral_framework_haircuts_central_bank_credit_001",
+      "target": "mp_collateral_channel_001",
+      "relation": "shared_tag:collateral"
+    },
+    {
+      "source": "collateral_framework_haircuts_central_bank_credit_001",
+      "target": "repo_market_mechanics_triparty_bilateral_001",
+      "relation": "shared_tag:collateral"
+    },
+    {
+      "source": "collateral_velocity_and_pledged_collateral_market_mechanics_001",
+      "target": "collateral_velocity_001",
+      "relation": "shared_tag:collateral"
+    },
+    {
+      "source": "collateral_velocity_and_pledged_collateral_market_mechanics_001",
+      "target": "mp_collateral_channel_001",
+      "relation": "shared_tag:collateral"
+    },
+    {
+      "source": "collateral_velocity_and_pledged_collateral_market_mechanics_001",
+      "target": "repo_market_mechanics_triparty_bilateral_001",
+      "relation": "shared_tag:collateral"
+    },
+    {
+      "source": "collateral_velocity_and_pledged_collateral_market_mechanics_001",
+      "target": "triparty_repo_market_structure_and_daily_cycle_001",
+      "relation": "shared_tag:repo"
+    },
+    {
+      "source": "collateral_velocity_001",
+      "target": "repo_market_mechanics_triparty_bilateral_001",
+      "relation": "mechanism_of"
+    },
+    {
+      "source": "collateral_velocity_001",
+      "target": "mp_collateral_channel_001",
+      "relation": "shared_tag:collateral"
+    },
+    {
+      "source": "collateral_velocity_001",
+      "target": "triparty_repo_market_structure_and_daily_cycle_001",
+      "relation": "shared_tag:repo"
+    },
+    {
+      "source": "collateral_velocity_001",
+      "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
+      "relation": "related"
+    },
+    {
+      "source": "dv01_duration_001",
+      "target": "repo_market_mechanics_triparty_bilateral_001",
+      "relation": "applied_in"
+    },
+    {
+      "source": "dv01_duration_001",
+      "target": "interest_rate_corridor_floor_system_standing_facilities_001",
+      "relation": "measured_by"
+    },
+    {
+      "source": "dv01_duration_001",
+      "target": "duration_targeting_convergence_and_yield_trap_001",
+      "relation": "shared_tag:duration"
+    },
+    {
+      "source": "dv01_duration_001",
+      "target": "financial_repression_distributional_welfare_effects_001",
+      "relation": "shared_tag:duration"
+    },
+    {
+      "source": "dv01_duration_001",
+      "target": "qe_duration_extraction_from_private_sector_001",
+      "relation": "shared_tag:duration"
+    },
+    {
+      "source": "debt_ceiling_extraordinary_measures_treasury_001",
+      "target": "tga_reserve_swap_mechanics_and_debt_ceiling_dynamics_001",
+      "relation": "shared_tag:tga"
+    },
+    {
+      "source": "debt_ceiling_extraordinary_measures_treasury_001",
+      "target": "ample_reserves_buffer_sizing_tga_volatility_001",
+      "relation": "shared_tag:tga"
+    },
+    {
+      "source": "debt_ceiling_extraordinary_measures_treasury_001",
+      "target": "treasury_general_account_tga_reserve_swap_mec_001",
+      "relation": "shared_tag:tga"
+    },
+    {
+      "source": "debt_ceiling_extraordinary_measures_treasury_001",
+      "target": "fed_fiscal_agent_treasury_relationship_frm_001",
+      "relation": "shared_tag:treasury"
+    },
+    {
+      "source": "debt_ceiling_extraordinary_measures_treasury_001",
+      "target": "fed_treasury_accord_2026_frm_001",
+      "relation": "shared_tag:treasury"
+    },
+    {
+      "source": "duration_targeting_convergence_and_yield_trap_001",
+      "target": "financial_repression_distributional_welfare_effects_001",
+      "relation": "shared_tag:duration"
+    },
+    {
+      "source": "duration_targeting_convergence_and_yield_trap_001",
+      "target": "qe_duration_extraction_from_private_sector_001",
+      "relation": "shared_tag:duration"
+    },
+    {
+      "source": "eurodollar_system_mechanics_and_post_reform_decline_001",
+      "target": "fed_policy_rate_shift_effr_to_secured_rate_tgcr_001",
+      "relation": "shared_tag:sofr"
+    },
+    {
+      "source": "eurodollar_system_mechanics_and_post_reform_decline_001",
+      "target": "fhlb_effr_iorb_arbitrage_floor_mechanism_001",
+      "relation": "shared_tag:sofr"
+    },
+    {
+      "source": "eurodollar_system_mechanics_and_post_reform_decline_001",
+      "target": "irs_ois_fixed_floating_001",
+      "relation": "shared_tag:sofr"
+    },
+    {
+      "source": "eurodollar_system_mechanics_and_post_reform_decline_001",
+      "target": "repo_market_mechanics_triparty_bilateral_001",
+      "relation": "shared_tag:sofr"
+    },
+    {
+      "source": "fhlb_effr_iorb_arbitrage_floor_mechanism_001",
+      "target": "central_bank_monetary_policy_operational_framework_typology_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fhlb_effr_iorb_arbitrage_floor_mechanism_001",
+      "target": "currency_fed_liability_con_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fhlb_effr_iorb_arbitrage_floor_mechanism_001",
+      "target": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fhlb_effr_iorb_arbitrage_floor_mechanism_001",
+      "target": "fed_ample_reserves_rate_control_framework_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fhlb_effr_iorb_arbitrage_floor_mechanism_001",
+      "target": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_ample_reserves_rate_control_framework_001",
+      "target": "central_bank_monetary_policy_operational_framework_typology_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_ample_reserves_rate_control_framework_001",
+      "target": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_ample_reserves_rate_control_framework_001",
+      "target": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_ample_reserves_rate_control_framework_001",
+      "target": "tga_reserve_swap_mechanics_and_debt_ceiling_dynamics_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_overnight_reverse_repo_on_rrp_001",
+      "target": "debt_ceiling_extraordinary_measures_treasury_001",
+      "relation": "shared_tag:money-market"
+    },
+    {
+      "source": "fed_overnight_reverse_repo_on_rrp_001",
+      "target": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "relation": "shared_tag:reserves"
+    },
+    {
+      "source": "fed_overnight_reverse_repo_on_rrp_001",
+      "target": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "relation": "shared_tag:reserves"
+    },
+    {
+      "source": "fed_overnight_reverse_repo_on_rrp_001",
+      "target": "tga_reserve_swap_mechanics_and_debt_ceiling_dynamics_001",
+      "relation": "shared_tag:reserves"
+    },
+    {
+      "source": "fed_overnight_reverse_repo_on_rrp_001",
+      "target": "central_bank_balance_sheet_structure_liabilities_assets_001",
+      "relation": "shared_tag:reserves"
+    },
+    {
+      "source": "fed_policy_rate_shift_effr_to_secured_rate_tgcr_001",
+      "target": "currency_fed_liability_con_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_policy_rate_shift_effr_to_secured_rate_tgcr_001",
+      "target": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_policy_rate_shift_effr_to_secured_rate_tgcr_001",
+      "target": "fed_ample_reserves_rate_control_framework_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fed_policy_rate_shift_effr_to_secured_rate_tgcr_001",
+      "target": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "target": "reserve_floor_payment_001",
+      "relation": "shared_tag:fedwire"
+    },
+    {
+      "source": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "target": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "relation": "shared_tag:reserves"
+    },
+    {
+      "source": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "target": "tga_reserve_swap_mechanics_and_debt_ceiling_dynamics_001",
+      "relation": "shared_tag:reserves"
+    },
+    {
+      "source": "financial_repression_distributional_welfare_effects_001",
+      "target": "financial_repression_via_reserve_creation_001",
+      "relation": "shared_tag:financial_repression"
+    },
+    {
+      "source": "financial_repression_distributional_welfare_effects_001",
+      "target": "japan_filp_to_qe_structural_succession_001",
+      "relation": "shared_tag:financial_repression"
+    },
+    {
+      "source": "financial_repression_distributional_welfare_effects_001",
+      "target": "qe_duration_extraction_from_private_sector_001",
+      "relation": "shared_tag:financial_repression"
+    },
+    {
+      "source": "financial_repression_distributional_welfare_effects_001",
+      "target": "bond_accrual_price_effect_interaction_001",
+      "relation": "shared_tag:duration"
+    },
+    {
+      "source": "financial_repression_via_reserve_creation_001",
+      "target": "japan_filp_to_qe_structural_succession_001",
+      "relation": "shared_tag:financial_repression"
+    },
+    {
+      "source": "financial_repression_via_reserve_creation_001",
+      "target": "qe_duration_extraction_from_private_sector_001",
+      "relation": "shared_tag:financial_repression"
+    },
+    {
+      "source": "financial_repression_via_reserve_creation_001",
+      "target": "yen_intervention_liquidity_drain_mec_001",
+      "relation": "shared_tag:japan"
+    },
+    {
+      "source": "interest_rate_corridor_floor_system_standing_facilities_001",
+      "target": "fed_ample_reserves_rate_control_framework_001",
+      "relation": "shared_tag:iorb"
+    },
+    {
+      "source": "interest_rate_corridor_floor_system_standing_facilities_001",
+      "target": "fed_ample_reserves_range_floor_frm_001",
+      "relation": "shared_tag:iorb"
+    },
+    {
+      "source": "interest_rate_corridor_floor_system_standing_facilities_001",
+      "target": "fhlb_effr_iorb_arbitrage_floor_mechanism_001",
+      "relation": "shared_tag:iorb"
+    },
+    {
+      "source": "irs_ois_fixed_floating_001",
+      "target": "dv01_duration_001",
+      "relation": "uses"
+    },
+    {
+      "source": "irs_ois_fixed_floating_001",
+      "target": "repo_market_mechanics_triparty_bilateral_001",
+      "relation": "funded_via"
+    },
+    {
+      "source": "irs_ois_fixed_floating_001",
+      "target": "collateral_framework_haircuts_central_bank_credit_001",
+      "relation": "margin_analogy"
+    },
+    {
+      "source": "irs_ois_fixed_floating_001",
+      "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
+      "relation": "constrained_by"
+    },
+    {
+      "source": "irs_ois_fixed_floating_001",
+      "target": "fed_policy_rate_shift_effr_to_secured_rate_tgcr_001",
+      "relation": "shared_tag:SOFR"
+    },
+    {
+      "source": "irs_ois_fixed_floating_001",
+      "target": "fhlb_effr_iorb_arbitrage_floor_mechanism_001",
+      "relation": "shared_tag:SOFR"
+    },
+    {
+      "source": "irs_ois_fixed_floating_001",
+      "target": "standing_repo_facility_srf_mec_001",
+      "relation": "shared_tag:SOFR"
+    },
+    {
+      "source": "japan_filp_to_qe_structural_succession_001",
+      "target": "qe_duration_extraction_from_private_sector_001",
+      "relation": "shared_tag:japan"
+    },
+    {
+      "source": "japan_filp_to_qe_structural_succession_001",
+      "target": "yen_intervention_liquidity_drain_mec_001",
+      "relation": "shared_tag:japan"
+    },
+    {
+      "source": "lcr_nsfr_long_term_lending_penalty_001",
+      "target": "basel_iii_endgame_001",
+      "relation": "component_mechanism_of"
+    },
+    {
+      "source": "lcr_nsfr_long_term_lending_penalty_001",
+      "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
+      "relation": "related_constraint"
+    },
+    {
+      "source": "lcr_nsfr_long_term_lending_penalty_001",
+      "target": "private_credit_srt_001",
+      "relation": "structural_driver_of"
+    },
+    {
+      "source": "lcr_nsfr_long_term_lending_penalty_001",
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "shared_tag:LCR"
+    },
+    {
+      "source": "lcr_nsfr_long_term_lending_penalty_001",
+      "target": "swap_spreads_001",
+      "relation": "shared_tag:LCR"
+    },
+    {
+      "source": "mon_pol_trans_short_long_frictions_mec_001",
+      "target": "mptm_framework_001",
+      "relation": "detail_of"
+    },
+    {
+      "source": "mon_pol_trans_short_long_frictions_mec_001",
+      "target": "dv01_duration_001",
+      "relation": "analytics_for"
+    },
+    {
+      "source": "mp_collateral_channel_001",
+      "target": "repo_market_mechanics_triparty_bilateral_001",
+      "relation": "channel_through"
+    },
+    {
+      "source": "mp_collateral_channel_001",
+      "target": "quantitative_tightening_qt_balance_sheet_runoff_001",
+      "relation": "reverse_of"
+    },
+    {
+      "source": "mp_collateral_channel_001",
+      "target": "fed_overnight_reverse_repo_on_rrp_001",
+      "relation": "instrument_in"
+    },
+    {
+      "source": "mp_collateral_channel_001",
+      "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
+      "relation": "related"
+    },
+    {
+      "source": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
+      "target": "private_credit_insurer_structural_channel_001",
+      "relation": "shared_tag:alm"
+    },
+    {
+      "source": "nonlinear_inflation_amplifiers_mec_001",
+      "target": "mptm_framework_001",
+      "relation": "extension_of"
+    },
+    {
+      "source": "nonlinear_inflation_amplifiers_mec_001",
+      "target": "inflation_targeting_001",
+      "relation": "constraint_on"
+    },
+    {
+      "source": "pik_payment_in_kind_credit_masking_001",
+      "target": "private_credit_reflexive_loop_001",
+      "relation": "masking_mechanism_within"
+    },
+    {
+      "source": "pik_payment_in_kind_credit_masking_001",
+      "target": "private_credit_srt_001",
+      "relation": "occurs_within_context_of"
+    },
+    {
+      "source": "pik_payment_in_kind_credit_masking_001",
+      "target": "basel_iii_endgame_001",
+      "relation": "shared_tag:private-credit"
+    },
+    {
+      "source": "pik_payment_in_kind_credit_masking_001",
+      "target": "basel_regional_implementation_dynamics_001",
+      "relation": "shared_tag:private-credit"
+    },
+    {
+      "source": "private_credit_insurer_structural_channel_001",
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "shared_tag:private_credit"
+    },
+    {
+      "source": "private_credit_insurer_structural_channel_001",
+      "target": "private_credit_secondary_market_price_discovery_001",
+      "relation": "shared_tag:private_credit"
+    },
+    {
+      "source": "private_credit_insurer_structural_channel_001",
+      "target": "private_credit_subscription_nav_lending_hidden_leverage_001",
+      "relation": "shared_tag:private_credit"
+    },
+    {
+      "source": "private_credit_insurer_structural_channel_001",
+      "target": "irrbb_eve_nii_dual_metric_framework_001",
+      "relation": "shared_tag:alm"
+    },
+    {
+      "source": "private_credit_reflexive_loop_001",
+      "target": "private_credit_srt_001",
+      "relation": "mechanism_context"
+    },
+    {
+      "source": "private_credit_reflexive_loop_001",
+      "target": "shadow_banking_market_based_finance_001",
+      "relation": "instance_within"
+    },
+    {
+      "source": "private_credit_reflexive_loop_001",
+      "target": "basel_iii_endgame_001",
+      "relation": "structural_precondition"
+    },
+    {
+      "source": "private_credit_reflexive_loop_001",
+      "target": "basel_regional_implementation_dynamics_001",
+      "relation": "shared_tag:private-credit"
+    },
+    {
+      "source": "private_credit_secondary_market_price_discovery_001",
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "shared_tag:private_credit"
+    },
+    {
+      "source": "private_credit_secondary_market_price_discovery_001",
+      "target": "private_credit_subscription_nav_lending_hidden_leverage_001",
+      "relation": "shared_tag:private_credit"
+    },
+    {
+      "source": "private_credit_secondary_market_price_discovery_001",
+      "target": "pik_payment_in_kind_credit_masking_001",
+      "relation": "shared_tag:valuation"
+    },
+    {
+      "source": "private_credit_subscription_nav_lending_hidden_leverage_001",
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "shared_tag:private_credit"
+    },
+    {
+      "source": "private_credit_subscription_nav_lending_hidden_leverage_001",
+      "target": "bank_nbfi_leverage_loop_001",
+      "relation": "shared_tag:leverage"
+    },
+    {
+      "source": "private_credit_srt_001",
+      "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
+      "relation": "same_regulatory_drivers"
+    },
+    {
+      "source": "private_credit_srt_001",
+      "target": "collateral_velocity_001",
+      "relation": "related_collateral_reuse"
+    },
+    {
+      "source": "private_credit_srt_001",
+      "target": "repo_market_mechanics_triparty_bilateral_001",
+      "relation": "bank_nbfi_funding_channel"
+    },
+    {
+      "source": "qe_duration_extraction_from_private_sector_001",
+      "target": "collateral_velocity_and_pledged_collateral_market_mechanics_001",
+      "relation": "shared_tag:qe"
+    },
+    {
+      "source": "qe_duration_extraction_from_private_sector_001",
+      "target": "central_bank_balance_sheet_structure_liabilities_assets_001",
+      "relation": "shared_tag:qe"
+    },
+    {
+      "source": "qe_duration_extraction_from_private_sector_001",
+      "target": "mp_collateral_channel_001",
+      "relation": "shared_tag:qe"
+    },
+    {
+      "source": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "target": "quantitative_tightening_qt_balance_sheet_runoff_001",
+      "relation": "shared_tag:qt"
+    },
+    {
+      "source": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "target": "reserve_floor_payment_001",
+      "relation": "shared_tag:qt"
+    },
+    {
+      "source": "quantitative_tightening_qt_balance_sheet_runoff_001",
+      "target": "fed_ample_reserves_rate_control_framework_001",
+      "relation": "shared_tag:qt"
+    },
+    {
+      "source": "quantitative_tightening_qt_balance_sheet_runoff_001",
+      "target": "reserve_floor_payment_001",
+      "relation": "shared_tag:qt"
+    },
+    {
+      "source": "quantitative_tightening_qt_balance_sheet_runoff_001",
+      "target": "treasury_general_account_tga_reserve_swap_mec_001",
+      "relation": "shared_tag:fed-balance-sheet"
+    },
+    {
+      "source": "repo_market_mechanics_triparty_bilateral_001",
+      "target": "triparty_repo_market_structure_and_daily_cycle_001",
+      "relation": "shared_tag:repo"
+    },
+    {
+      "source": "repo_market_mechanics_triparty_bilateral_001",
+      "target": "standing_repo_facility_srf_mec_001",
+      "relation": "shared_tag:repo"
+    },
+    {
+      "source": "reserve_floor_payment_001",
+      "target": "interest_rate_corridor_floor_system_standing_facilities_001",
+      "relation": "mechanism_of"
+    },
+    {
+      "source": "reserve_floor_payment_001",
+      "target": "treasury_general_account_tga_reserve_swap_mec_001",
+      "relation": "interacts_with"
+    },
+    {
+      "source": "reserve_floor_payment_001",
+      "target": "fed_overnight_reverse_repo_on_rrp_001",
+      "relation": "related_facility"
+    },
+    {
+      "source": "reserve_floor_payment_001",
+      "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
+      "relation": "regulatory_driver"
+    },
+    {
+      "source": "reserve_floor_payment_001",
+      "target": "tga_reserve_swap_mechanics_and_debt_ceiling_dynamics_001",
+      "relation": "shared_tag:reserves"
+    },
+    {
+      "source": "reserve_floor_payment_001",
+      "target": "central_bank_balance_sheet_structure_liabilities_assets_001",
+      "relation": "shared_tag:reserves"
+    },
+    {
+      "source": "reserve_floor_payment_001",
+      "target": "ample_reserves_buffer_sizing_tga_volatility_001",
+      "relation": "shared_tag:reserves"
+    },
+    {
+      "source": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "shared_tag:slr"
+    },
+    {
+      "source": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
+      "target": "swap_spreads_001",
+      "relation": "shared_tag:slr"
+    },
+    {
+      "source": "standing_repo_facility_srf_mec_001",
+      "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
+      "relation": "mitigates"
+    },
+    {
+      "source": "standing_repo_facility_srf_mec_001",
+      "target": "central_bank_monetary_policy_operational_framework_typology_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "standing_repo_facility_srf_mec_001",
+      "target": "currency_fed_liability_con_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "standing_repo_facility_srf_mec_001",
+      "target": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "standing_repo_facility_srf_mec_001",
+      "target": "fed_ample_reserves_rate_control_framework_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "standing_repo_facility_srf_mec_001",
+      "target": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "relation": "shared_tag:fed"
+    },
+    {
+      "source": "swap_carry_and_roll_down_analysis_001",
+      "target": "duration_targeting_bond_portfolio_framework_001",
+      "relation": "shared_tag:fixed_income"
+    },
+    {
+      "source": "swap_carry_and_roll_down_analysis_001",
+      "target": "duration_targeting_convergence_and_yield_trap_001",
+      "relation": "shared_tag:fixed_income"
+    },
+    {
+      "source": "swap_spreads_001",
+      "target": "repo_market_mechanics_triparty_bilateral_001",
+      "relation": "transmission_path"
+    },
+    {
+      "source": "swap_spreads_001",
+      "target": "irs_ois_fixed_floating_001",
+      "relation": "component_of"
+    },
+    {
+      "source": "swap_spreads_001",
+      "target": "collateral_framework_haircuts_central_bank_credit_001",
+      "relation": "related_mechanism"
+    },
+    {
+      "source": "swap_spreads_001",
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "shared_tag:SLR"
+    },
+    {
+      "source": "swap_spreads_001",
+      "target": "basel_iii_endgame_001",
+      "relation": "shared_tag:LCR"
+    },
+    {
+      "source": "swap_spreads_001",
+      "target": "collateral_velocity_and_pledged_collateral_market_mechanics_001",
+      "relation": "shared_tag:plumbing"
+    },
+    {
+      "source": "tga_reserve_swap_mechanics_and_debt_ceiling_dynamics_001",
+      "target": "ample_reserves_buffer_sizing_tga_volatility_001",
+      "relation": "shared_tag:tga"
+    },
+    {
+      "source": "tga_reserve_swap_mechanics_and_debt_ceiling_dynamics_001",
+      "target": "treasury_general_account_tga_reserve_swap_mec_001",
+      "relation": "shared_tag:tga"
+    },
+    {
+      "source": "tga_reserve_swap_mechanics_and_debt_ceiling_dynamics_001",
+      "target": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "relation": "shared_tag:reserves"
+    },
+    {
+      "source": "treasury_general_account_tga_reserve_swap_mec_001",
+      "target": "fed_ample_reserves_range_floor_frm_001",
+      "relation": "context"
+    },
+    {
+      "source": "treasury_general_account_tga_reserve_swap_mec_001",
+      "target": "ample_reserves_buffer_sizing_tga_volatility_001",
+      "relation": "shared_tag:tga"
+    },
+    {
+      "source": "treasury_general_account_tga_reserve_swap_mec_001",
+      "target": "fedwire_payment_system_reserve_demand_and_lsm_policy_001",
+      "relation": "shared_tag:reserves"
+    },
+    {
+      "source": "treasury_general_account_tga_reserve_swap_mec_001",
+      "target": "qt_reserve_drain_effectiveness_and_deposit_funding_condition_001",
+      "relation": "shared_tag:reserves"
+    },
+    {
+      "source": "triparty_repo_market_structure_and_daily_cycle_001",
+      "target": "mp_collateral_channel_001",
+      "relation": "shared_tag:repo"
+    },
+    {
+      "source": "triparty_repo_market_structure_and_daily_cycle_001",
+      "target": "standing_repo_facility_srf_mec_001",
+      "relation": "shared_tag:repo"
+    },
+    {
+      "source": "us_shadow_banking_post_gfc_market_based_finance_structure_001",
+      "target": "collateral_velocity_and_pledged_collateral_market_mechanics_001",
+      "relation": "shared_tag:shadow_banking"
+    },
+    {
+      "source": "us_shadow_banking_post_gfc_market_based_finance_structure_001",
+      "target": "shadow_banking_market_based_finance_001",
+      "relation": "shared_tag:securitization"
+    },
+    {
+      "source": "us_shadow_banking_post_gfc_market_based_finance_structure_001",
+      "target": "private_credit_srt_001",
+      "relation": "shared_tag:clo"
+    },
+    {
+      "source": "yen_intervention_liquidity_drain_mec_001",
+      "target": "global_dollar_system_eurodollar_architecture_001",
+      "relation": "impacts"
+    },
+    {
+      "source": "yen_intervention_liquidity_drain_mec_001",
+      "target": "financial_repression_distributional_welfare_effects_001",
+      "relation": "shared_tag:japan"
+    },
+    {
+      "source": "yen_intervention_liquidity_drain_mec_001",
+      "target": "qe_duration_extraction_from_private_sector_001",
+      "relation": "shared_tag:japan"
+    }
+  ]
+}

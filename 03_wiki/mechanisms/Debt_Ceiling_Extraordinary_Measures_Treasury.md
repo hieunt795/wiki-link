@@ -26,10 +26,21 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Shadow Banking and Cash Markets.md
   pages: Money Market Blindspot I and II
   weight: primary
-related: []
+related:
+- node: '[[TGA Reserve Swap Mechanics And Debt Ceiling Dynamics]]'
+  relation: shared_tag:tga
+- node: '[[Ample Reserves Buffer Sizing TGA Volatility]]'
+  relation: shared_tag:tga
+- node: '[[Treasury General Account TGA Reserve Swap]]'
+  relation: shared_tag:tga
+- node: '[[Fed Fiscal Agent Treasury Relationship]]'
+  relation: shared_tag:treasury
+- node: '[[New Fed-Treasury Accord (2026 Proposal)]]'
+  relation: shared_tag:treasury
 date_created: '2026-05-20'
 date_updated: '2026-05-20'
 ---
+
 
 The debt ceiling forces a predictable two-phase liquidity cycle:
 
@@ -52,4 +63,5 @@ During TGA drawdown, reserves released by TGA offset reserves destroyed by QT, c
 - G Fund (TSP): largest source, ~200B+ headroom
 - ESF (Exchange Stabilization Fund)
 - CSRD (Civil Service Retirement): deferrable non-marketable issuance
+
 

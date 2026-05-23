@@ -31,10 +31,21 @@ source_refs:
 - path: 02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md
   pages: Ch9, Bindseil 2014
   weight: primary
-related: []
+related:
+- node: '[[Collateral Velocity And Pledged Collateral Market Mechanics]]'
+  relation: shared_tag:collateral
+- node: '[[Collateral Velocity and Rehypothecation]]'
+  relation: shared_tag:collateral
+- node: '[[Monetary Policy Transmission via Collateral and Repo Markets]]'
+  relation: shared_tag:collateral
+- node: '[[Repo Market Mechanics Triparty Bilateral]]'
+  relation: shared_tag:collateral
+- node: '[[Central Bank Balance Sheet Structure Liabilities Assets]]'
+  relation: shared_tag:central-bank
 date_created: '2026-05-20'
 date_updated: '2026-05-20'
 ---
+
 
 Collateral frameworks determine which assets banks can pledge to access CB credit.
 
@@ -54,4 +65,5 @@ When eligible assets are scarce (e.g. post-LTRO stigma, or safe asset shortage),
 
 **Segregation of collateral sets:**
 CB may accept different collateral pools for different operations (standard vs. emergency). ELA (Emergency Liquidity Assistance) accepts non-standard collateral at national CB risk. Creates two-tier collateral framework during crises.
+
 

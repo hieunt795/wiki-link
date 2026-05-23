@@ -3,55 +3,71 @@ node_id: pik_payment_in_kind_credit_masking_001
 type: mechanism
 title: PIK Payment In Kind Credit Stress Masking
 aliases:
-  - PIK
-  - Payment-in-Kind
-  - trả lãi bằng hiện vật
-  - PIK toggle
-  - PIK loan
-  - deferred interest accrual
+- PIK
+- Payment-in-Kind
+- trả lãi bằng hiện vật
+- PIK toggle
+- PIK loan
+- deferred interest accrual
 domain:
   primary: financial_markets
 tags:
-  - private-credit
-  - PIK
-  - credit-stress
-  - loss-recognition
-  - covenant
-  - valuation
-  - BDC
+- private-credit
+- PIK
+- credit-stress
+- loss-recognition
+- covenant
+- valuation
+- BDC
 confidence: 1
 stability: stable
-thesis: >
-  PIK (Payment-in-Kind) allows borrowers to defer cash interest by accruing additional
-  principal, keeping reported default rates optically low while true leverage rises.
-  [LLM] Rising PIK share in BDCs is a leading indicator of unrealized credit stress;
-  in a stress scenario, deferred losses and compounding principal concentrate into a
-  simultaneous default spike rather than the gradual deterioration that cash-pay
+thesis: 'PIK (Payment-in-Kind) allows borrowers to defer cash interest by accruing
+  additional principal, keeping reported default rates optically low while true leverage
+  rises. [LLM] Rising PIK share in BDCs is a leading indicator of unrealized credit
+  stress; in a stress scenario, deferred losses and compounding principal concentrate
+  into a simultaneous default spike rather than the gradual deterioration that cash-pay
   covenant structures would produce.
+
+  '
 steps:
-  - "Step 1: Borrower faces cash flow pressure → cannot service full cash interest"
-  - "Step 2: PIK election activated → interest accrues as additional principal (no cash outflow)"
-  - "Step 3: Loan remains 'current' in lender's books → non-accrual status not triggered"
-  - "Step 4: Reported default rate stays low → fund NAV maintained → LP confidence preserved"
-  - "Step 5 (silent deterioration): Leverage rises every period PIK accrues; true DSCR deteriorates"
-  - "Step 6 (cliff event): When PIK cannot continue (maturity, refi pressure, NAV covenant) → deferred principal + interest becomes immediately due"
-  - "Step 7: Multiple borrowers hit cliff simultaneously (correlated stress) → default spike"
+- 'Step 1: Borrower faces cash flow pressure → cannot service full cash interest'
+- 'Step 2: PIK election activated → interest accrues as additional principal (no cash
+  outflow)'
+- 'Step 3: Loan remains ''current'' in lender''s books → non-accrual status not triggered'
+- 'Step 4: Reported default rate stays low → fund NAV maintained → LP confidence preserved'
+- 'Step 5 (silent deterioration): Leverage rises every period PIK accrues; true DSCR
+  deteriorates'
+- 'Step 6 (cliff event): When PIK cannot continue (maturity, refi pressure, NAV covenant)
+  → deferred principal + interest becomes immediately due'
+- 'Step 7: Multiple borrowers hit cliff simultaneously (correlated stress) → default
+  spike'
 transmission_lags: long
 empirical_evidence: mixed
 source_refs:
-  - path: 02_sources/deep-research/Deep Dive_ Private Credit.md
-    pages: "Section: The Plumbing that Creates the Risk — PIK subsection"
-    weight: primary
+- path: 02_sources/deep-research/Deep Dive_ Private Credit.md
+  pages: 'Section: The Plumbing that Creates the Risk — PIK subsection'
+  weight: primary
 related:
-  - node: "[[Private_Credit_Reflexive_Loop]]"
-    relation: masking_mechanism_within
-  - node: "[[Private_Credit_Stress_Monitoring_Framework]]"
-    relation: monitored_by
-  - node: "[[Private_Credit_SRT_NAV_Loans_Bank_Partnerships]]"
-    relation: occurs_within_context_of
-date_created: "2026-05-21"
-date_updated: "2026-05-21"
+- node: '[[Private_Credit_Reflexive_Loop]]'
+  relation: masking_mechanism_within
+- node: '[[Private_Credit_Stress_Monitoring_Framework]]'
+  relation: monitored_by
+- node: '[[Private_Credit_SRT_NAV_Loans_Bank_Partnerships]]'
+  relation: occurs_within_context_of
+- node: '[[Basel III Endgame — Capital, Liquidity, and Credit Migration]]'
+  relation: shared_tag:private-credit
+- node: '[[Basel Regional Implementation Dynamics]]'
+  relation: shared_tag:private-credit
+- node: '[[Private Credit Stress Monitoring Framework]]'
+  relation: shared_tag:private-credit
+- node: '[[Bank NBFI Leverage Loop]]'
+  relation: shared_tag:private-credit
+- node: '[[Private Credit Reflexive Loop]]'
+  relation: shared_tag:private-credit
+date_created: '2026-05-21'
+date_updated: '2026-05-21'
 ---
+
 
 ## Overview
 
@@ -75,3 +91,4 @@ PIK is structurally different from cash-pay default — it does not trigger cove
 ## Related Concepts
 
 PIK is one component of the broader [[Private_Credit_Reflexive_Loop]]. It interacts with [[Bank_NBFI_Leverage_Loop]] because NAV loans secured against PC portfolios may be collateralized with PIK-inflated principal values — creating a second layer of valuation uncertainty.
+
