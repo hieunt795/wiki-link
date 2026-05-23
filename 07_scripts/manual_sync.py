@@ -26,7 +26,8 @@ SOURCES_DIR  = ROOT / "02_sources"
 CACHE_DIR    = ROOT / ".cache"
 CACHE_DIR.mkdir(exist_ok=True)
 
-BATCH_SIZE   = 4   # nhỏ để tránh OOM; tăng lên 8-16 nếu RAM đủ
+BATCH_SIZE   = 32  # T4: 32 | A100: 64
+CHUNK_SIZE   = 4096
 
 
 # ── Load model ────────────────────────────────────────────────────────────────
@@ -116,7 +117,7 @@ def collect_raw_chunks() -> list[dict]:
             text = md_file.read_text(encoding="utf-8", errors="ignore")
             fm, body = _split_frontmatter(text)
             domain = _guess_domain(md_file, fm)
-            chunks = chunk_markdown(text, target_tokens=900, source_file=str(md_file))
+            chunks = chunk_markdown(text, target_tokens=CHUNK_SIZE, source_file=str(md_file))
             for i, chunk in enumerate(chunks):
                 docs.append({
                     "node_id":    f"raw__{md_file.stem}__{i:04d}",
