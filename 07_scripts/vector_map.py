@@ -15,13 +15,46 @@ ROOT = Path(__file__).parent.parent
 OUTPUT_PATH = ROOT / "vector_map.html"
 DATA_PATH = ROOT / "graphify-out" / "vector_data.json"
 
+def _run_tsne(vecs_pca, total):
+    """Run t-SNE 3D with best available backend: cuML > openTSNE > sklearn."""
+    perp = min(30, total - 1)
+
+    # 1. cuML (RAPIDS GPU) — fastest, Colab T4 / A100
+    try:
+        from cuml.manifold import TSNE as cuTSNE
+        print("[vector-map] Backend: cuML (GPU)")
+        tsne = cuTSNE(n_components=3, perplexity=perp, random_state=42,
+                      n_iter=1000, learning_rate=200.0)
+        import cupy as cp
+        result = tsne.fit_transform(cp.array(vecs_pca, dtype="float32"))
+        import numpy as np
+        return np.array(result)
+    except ImportError:
+        pass
+
+    # 2. openTSNE (FFT-BH accelerated CPU) — ~10-20x faster than sklearn
+    try:
+        from openTSNE import TSNE as openTSNE
+        print("[vector-map] Backend: openTSNE (FFT-BH CPU)")
+        tsne = openTSNE(n_components=3, perplexity=perp, random_state=42,
+                        n_jobs=-1, verbose=True)
+        return tsne.fit(vecs_pca)
+    except ImportError:
+        pass
+
+    # 3. sklearn fallback (slow on large datasets)
+    from sklearn.manifold import TSNE
+    print("[vector-map] Backend: sklearn t-SNE (CPU, slow — consider: pip install opentsne)")
+    tsne = TSNE(n_components=3, random_state=42, perplexity=perp,
+                n_iter=1000, verbose=1)
+    return tsne.fit_transform(vecs_pca)
+
+
 def main():
     print("[vector-map] Generating semantic map...")
     
     try:
         from sklearn.decomposition import PCA
-        # t-SNE is better but PCA is faster and deterministic
-        from sklearn.manifold import TSNE 
     except ImportError:
         print("[vector-map] Error: 'scikit-learn' is required. Install with: pip install scikit-learn")
         return
@@ -32,25 +65,23 @@ def main():
         if not status.get("built"):
             print("[vector-map] Error: Dense index not built. Run 'librarian.py sync' first.")
             return
-        
+
         total = status["total_vectors"]
         meta = idx._meta
-        
+
         print(f"[vector-map] Loading {total} vectors...")
         vectors = []
         for i in range(total):
             vectors.append(idx.reconstruct(i))
-        
+
         vecs_array = np.vstack(vectors)
-        
-        print("[vector-map] Reducing dimensions (TSNE)...")
-        # PCA first to reduce to 50d (common practice for t-SNE)
+
+        print("[vector-map] Reducing dimensions (PCA 1024d -> 50d)...")
         pca = PCA(n_components=min(50, total))
         vecs_pca = pca.fit_transform(vecs_array)
-        
-        # t-SNE for 3D projection
-        tsne = TSNE(n_components=3, random_state=42, perplexity=min(30, total-1))
-        vecs_3d = tsne.fit_transform(vecs_pca)
+
+        print("[vector-map] Running t-SNE 3D...")
+        vecs_3d = _run_tsne(vecs_pca, total)
 
         # Load structural edges from graph data
         graph_path = ROOT / "graphify-out" / "wiki_graph_data.json"

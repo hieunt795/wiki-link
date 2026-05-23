@@ -69,4 +69,66 @@ Treasury supply surge + dealer balance sheet constraints -> dealers cannot absor
 
 **SLR exemption precedent:** April 2020 Covid SLR relief enabled dealers to absorb trillions in new issuance. Expiration March 2021 directly contributed to March-April 2021 Treasury market stress.
 
+---
+
+## eSLR Reform: The "Faulty Relief Valve" (Q1 2026)
+
+### What Changed
+
+The **eSLR (enhanced SLR)** is an extra buffer on top of the standard 3% SLR requirement, applied only to G-SIBs (globally systemically important banks).
+
+| Version | eSLR Buffer |
+|---------|------------|
+| Pre-reform | Fixed buffer (typically 2-3%) |
+| Post-reform (Q1 2026 adoption) | Half of the bank's G-SIB surcharge |
+
+**Effect:** Higher-bucket G-SIBs (larger G-SIB surcharges) get proportionally less eSLR buffer reduction. Lower-bucket G-SIBs get more. Overall, G-SIBs' total leverage capital requirements decline. [RAW-CLIP Conks Faulty Relief Valve]
+
+### The Capital Max Mechanic (Why SLR Easing ≠ More UST Buying)
+
+**Critical insight:** Banks hold capital equal to the **maximum** of risk-weighted requirements (RWA) and leverage-based requirements (SLR), NOT the sum of both.
+
+```
+Example:
+  RWA requirement: $100
+  SLR requirement: $60 (pre-reform)
+  → Bank must hold: max($100, $60) = $100
+
+After eSLR ease:
+  RWA requirement: $100
+  SLR requirement: $50 (post-reform)
+  → Bank must hold: max($100, $50) = $100  ← UNCHANGED
+```
+
+**Consequence:** If RWA is the binding constraint (true for most Big Six dealers in normal conditions), a lower SLR requirement makes no difference to actual capital held. Banks cannot expand UST absorption simply because leverage capital is relieved — they're still bound by risk-based capital. [RAW-CLIP Conks Faulty Relief Valve]
+
+### When SLR Does Matter (Crisis-Only Relevance)
+
+The SLR becomes binding only when leverage capital > RWA capital — which typically occurs during stress events when:
+- Dealers expand balance sheet to absorb distressed UST supply
+- Rapid balance sheet growth pushes SLR capital requirement above RWA
+
+**The eSLR reform's actual purpose:** Reduce the probability that leverage capital becomes the binding constraint in crisis — not to routinely free up capacity.
+
+### Why Banks Won't Use the "Excess Capacity"
+
+Even post-reform, banks have theoretical "excess leverage capacity" (difference between max(RWA, SLR) and SLR alone). But excess leverage capacity doesn't translate to UST buying because:
+
+1. **Reserve hoarding competes with UST hoarding**: Banks fund UST purchases with reserves (both are 0% risk-weighted). Regulatory liquidity requirements push banks to hold more reserves anyway.
+2. **Duration risk**: USTs carry interest rate risk; dealer treasurers manage duration carefully regardless of leverage relief.
+3. **Profitability optimization**: ROE incentives push toward higher-yielding risk-weighted assets, not more 0% RW USTs.
+
+**Conks conclusion:** "A large bid from the largest banking giants is thus not assured." Non-SLR catalysts (growing deposit base, lighter Basel III endgame, Treasury buybacks) will drive more UST demand than eSLR reform. [RAW-CLIP Conks Faulty Relief Valve]
+
+### Swap Spreads as the True Plumbing Gauge
+
+Conks uses the **swap spread curve** (not the SLR reform announcement) as the primary signal for plumbing friction improvement:
+
+```
+Swap spread (swap rate − UST yield):
+  More negative = more plumbing frictions (Basel constraints, deficit pressure, Fed QT)
+  Less negative = easing frictions (RWA relief, buybacks, QT end, TGCR targeting)
+```
+
+By late 2025 / early 2026: swap spreads widened (rallied) sharply — driven by optimism around eSLR + non-eSLR catalysts. Conks warns: widening should slow until regulators implement stronger relief (e.g., excluding USTs from risk-based capital ratios entirely). [RAW-CLIP Conks Faulty Relief Valve]
 

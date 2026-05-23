@@ -245,19 +245,21 @@ class FTSIndex:
 
         # Escape FTS5 special chars
         safe_query = _escape_fts(query)
-        source_clause = ""
+        meta_source_clause = ""
         if wiki_only:
-            source_clause = " AND source='wiki'"
+            meta_source_clause = " AND m.source='wiki'"
         elif raw_only:
-            source_clause = " AND source='raw'"
+            meta_source_clause = " AND m.source='raw'"
 
         try:
+            # FTS5 content columns return NULL when queried directly — join with fts_meta via rowid
             rows = conn.execute(f"""
-                SELECT node_id, stem, label, source, source_file, confidence, tags, thesis, domain,
-                       rank
-                FROM fts_docs
-                WHERE fts_docs MATCH ? {source_clause}
-                ORDER BY rank
+                SELECT m.node_id, m.stem, m.label, m.source, m.source_file, m.confidence,
+                       m.tags, m.thesis, m.domain, f.rank
+                FROM fts_docs f
+                JOIN fts_meta m ON f.rowid = m.rowid
+                WHERE fts_docs MATCH ?{meta_source_clause}
+                ORDER BY f.rank
                 LIMIT ?
             """, (safe_query, top_k)).fetchall()
         except sqlite3.OperationalError:

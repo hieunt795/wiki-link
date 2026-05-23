@@ -103,8 +103,9 @@ def phase1_seed(
 
     # Speculative skip: if sparse returns exact label match with score > 0.8
     # skip dense (saves ~20ms). Less aggressive than v1 FTS5 skip.
-    if sparse_res and sparse_res[0]["score"] > 0.8:
-        label = sparse_res[0]["label"].lower()
+    _sparse_list = sparse_res.get("sparse_results", sparse_res) if isinstance(sparse_res, dict) else sparse_res
+    if _sparse_list and _sparse_list[0]["score"] > 0.8:
+        label = _sparse_list[0]["label"].lower()
         if any(tok in label for tok in query.lower().split()):
             dense_res = []  # speculative skip
 

@@ -93,3 +93,44 @@ Chronological record of all ingest, update, promotion, and audit operations.
 - **2026-05-22**: INGEST: Created mechanism node Non-Linear Inflation Amplifier Mechanics from Central Bank Commentary (April 2026).md
 - **2026-05-22**: INGEST: Created framework node Supply Shock Policy Response Scenario Taxonomy from Central Bank Commentary (April 2026).md
 - **2026-05-22**: MAINTENANCE: Rebuilt index.md and wiki_graph_data.json (79 nodes, 91 edges)
+
+- **2026-05-23**: INGEST: Created mechanism node `NBFI Sovereign Bond Absorption Post-ECB-QT` from Who Buys When the ECB Doesn't_.md
+- **2026-05-23**: INGEST: Created mechanism node `ECB QT Sovereign Yield Volatility Amplification` from Who Buys When the ECB Doesn't_.md
+- **2026-05-23**: INGEST: Created mechanism node `Scissors Effect ECB QT and Sovereign Supply` from Who Buys When the ECB Doesn't_.md
+- **2026-05-23**: INGEST: Created concept node `Sovereign Basis Trade Repo Leverage` from Who Buys When the ECB Doesn't_.md
+- **2026-05-23**: INGEST: Created concept node `NBFI Sovereign Market Supervisory Gap` from Who Buys When the ECB Doesn't_.md
+- **2026-05-23**: INGEST: Created framework node `PBC Dual-Track Monetary Policy Framework` from China's Monetary Policy Framework and Financial Market Transmission _ Bulletin.md
+- **2026-05-23**: INGEST: Created mechanism node `PBC Reserve Requirement Ratio Liquidity Management` from China's Monetary Policy Framework and Financial Market Transmission _ Bulletin.md
+- **2026-05-23**: INGEST: Created mechanism node `PBC Medium-Term Lending Facility Rate Transmission` from China's Monetary Policy Framework and Financial Market Transmission _ Bulletin.md
+- **2026-05-23**: INGEST: Created mechanism node `PBC Structural Monetary Policy Targeted Relending` from China's Monetary Policy Framework and Financial Market Transmission _ Bulletin.md
+- **2026-05-23**: INGEST: Created mechanism node `PBC Interest Rate Transmission DR007 to LPR` from China's Monetary Policy Framework and Financial Market Transmission _ Bulletin.md
+- **2026-05-23**: INGEST: Created mechanism node `Fed USD Swap Line Architecture and Crisis Function` from I need a dollar (through your swap line).md
+- **2026-05-23**: INGEST: Created mechanism node `FX Swap Basis CIP Deviation Dollar Scarcity` from I need a dollar (through your swap line).md
+- **2026-05-23**: INGEST: Created concept node `USD Swap Lines Geopolitical Dollar Integration Tool` from I need a dollar (through your swap line).md
+- **2026-05-23**: INGEST: Created concept node `Policy Trilemma Efficiency Frontier Equivalence` from False Trilemmas.md
+- **2026-05-23**: INGEST: Created mechanism node `Discount Window Stigma Self-Reinforcing Equilibrium` from De-Stigmatizing the Discount Window, Part I_ Tomatoes.md
+- **2026-05-23**: INGEST: Created mechanism node `Gilt-Treasury Spread Monetary Policy Expectations Driver` from What's Driving the Gilt-Treasury Spread_.md
+- **2026-05-23**: INGEST: Created mechanism node `UK Inflation Persistence Structural Drivers` from What's Driving the Gilt-Treasury Spread_.md
+- **2026-05-23**: INGEST: Created mechanism node `ECB New Operational Framework Range Floor 2024` from ECB AND FED POLICY OPERATIONAL FRAMEWORKS â A PRIMER.md
+- **2026-05-23**: INGEST: Created mechanism node `Floor System Rate Convergence Mechanism` from ECB AND FED POLICY OPERATIONAL FRAMEWORKS â A PRIMER.md
+- **2026-05-23**: INGEST: Created mechanism node `Fed Range Floor ON RRP Non-Bank Access Constraint` from ECB AND FED POLICY OPERATIONAL FRAMEWORKS â A PRIMER.md
+- **2026-05-23**: INGEST: Created mechanism node `Fed Ample Reserves Buffer Sizing Formula` from Napkin Math for an Ample Reserves Buffer.md
+- **2026-05-23**: INGEST: Created mechanism node `TGA Reserve Inverse Relationship Fed Balance Sheet Growth` from The Checking Account of the U.S. Federal Government....md
+- **2026-05-23**: INGEST: Created concept node `Fed Balance Sheet Size and Policy Rate Independence` from Warsh and the Fed's Balance Sheet.md
+- **2026-05-23**: INGEST: Created mechanism node `Fed QE Debt Maturity Transformation Fiscal Impact` from A new Fed-Treasury Accord_.md
+- **2026-05-23**: INGEST: Created framework node `Fed Balance Sheet Trilemma Small-Stable-Minimal` from Breaking Out of the Central Bank Balance Sheet Trilemma.md
+- **2026-05-23**: INGEST: Created mechanism node `TGA Reform as Fed Balance Sheet Reduction Tool` from Breaking Out of the Central Bank Balance Sheet Trilemma.md
+- **2026-05-23**: INGEST: Created mechanism node `Eurobond Blue-Red Bond Adverse Selection Moral Hazard` from Why Eurobonds won't work.md
+- **2026-05-23**: INGEST: Created concept node `Sovereign Debt Market Discipline Price Discovery Role` from Why Eurobonds won't work.md
+- **2026-05-23**: INGEST: Created concept node `Central Bank Credibility Supply Shock Policy Space` from Fed, ECB, and BoJ_ A Matter of Credibility.md
+- **2026-05-23**: INGEST: Created mechanism node `Japan Consolidated Public Sector Sovereign Wealth Fund Mechanism` from What about Japan_ (Part I).md
+- **2026-05-23**: INGEST: Created mechanism node `BoJ QE Duration Extraction Household Wealth Transfer` from What about Japan_ (Part II).md
+- **2026-05-23**: INGEST: Created mechanism node `Basel III Capital Requirements Private Credit Migration` from Private Credit, Basel, and Regional Dynamics.md
+- **2026-05-23**: INGEST: Created concept node `US vs Europe Private Credit Market Structure Divergence` from Private Credit, Basel, and Regional Dynamics.md
+- **2026-05-23**: INGEST: Created mechanism node `Bank Private Credit Partnership Model Post-Basel` from Private Credit, Basel, and Regional Dynamics.md
+- **2026-05-23**: INGEST: Created mechanism node `Private Credit Dual Driver Low Rates and Bank Regulation` from Deep Dive_ Private Credit.md
+- **2026-05-23**: INGEST: Created concept node `Private Equity Private Credit Integration Nexus` from Deep Dive_ Private Credit.md
+- **2026-05-23**: INGEST: Created mechanism node `Private Credit PIK and Hidden Leverage Mechanisms` from Deep Dive_ Private Credit.md
+- **2026-05-23**: INGEST: Created mechanism node `Bank Credit Line Private Credit Funds Systemic Channel` from Deep Dive_ Private Credit.md
+- **2026-05-23**: INGEST: Created concept node `Insurance Pension Private Credit Structural Investor Role` from Deep Dive_ Private Credit.md
+- **2026-05-23**: INGEST: Created mechanism node `Private Credit Systemic Stress Transmission Mechanism` from Deep Dive_ Private Credit.md

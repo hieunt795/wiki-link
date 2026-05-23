@@ -70,9 +70,16 @@ class CrossEncoderReranker:
 
         # Build pairs for cross-encoder
         pairs = []
+        q = str(query) if query else ""
         for c in to_rerank:
-            doc_text = (c.body[:512] if c.body else "") or (c.thesis[:512] if c.thesis else c.label)
-            pairs.append([query, doc_text])
+            doc_text = str(
+                (c.body[:512] if c.body else "")
+                or (c.thesis[:512] if c.thesis else "")
+                or c.label
+                or c.stem
+                or ""
+            )
+            pairs.append([q, doc_text])
 
         # Check cache
         scores = self._cache.batch_get(query, [c.node_id for c in to_rerank])
@@ -80,12 +87,20 @@ class CrossEncoderReranker:
 
         if uncached_idx:
             uncached_pairs = [pairs[i] for i in uncached_idx]
-            raw_scores = self._reranker.compute_score(uncached_pairs, normalize=True)
-            if isinstance(raw_scores, float):
-                raw_scores = [raw_scores]
-            for i, score in zip(uncached_idx, raw_scores):
-                scores[i] = float(score)
-                self._cache.put(query, to_rerank[i].node_id, float(score))
+            try:
+                raw_scores = self._reranker.compute_score(uncached_pairs, normalize=True)
+                if isinstance(raw_scores, float):
+                    raw_scores = [raw_scores]
+                for i, score in zip(uncached_idx, raw_scores):
+                    scores[i] = float(score)
+                    self._cache.put(query, to_rerank[i].node_id, float(score))
+            except (AttributeError, Exception) as e:
+                print(f"[reranker] compute_score failed ({e}), using confidence fallback.", flush=True)
+                self._reranker = None  # unload broken model
+                for c in candidates:
+                    c.score = c.score * _confidence_mult(c) * _llm_penalty(c)
+                candidates.sort(key=lambda x: -x.score)
+                return candidates[:top_k]
 
         # Apply multipliers
         for c, score in zip(to_rerank, scores):

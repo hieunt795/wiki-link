@@ -245,7 +245,13 @@ def _rebuild_graph():
 
 def cmd_ingest(args):
     from ingest import ingest_source
-    ingest_source(args.source_path, dry_run=args.dry_run)
+    ingest_source(
+        args.source_path,
+        dry_run=args.dry_run,
+        deep=args.deep,
+        start_batch=args.start_batch,
+        max_batches=args.max_batches,
+    )
 
 
 def cmd_sweep(args):
@@ -500,6 +506,9 @@ def build_parser() -> argparse.ArgumentParser:
     i = sub.add_parser("ingest")
     i.add_argument("source_path")
     i.add_argument("--dry-run", action="store_true")
+    i.add_argument("--deep", action="store_true", help="Process all chunks in batches (deep mode)")
+    i.add_argument("--start-batch", type=int, default=0, metavar="N", help="Skip to batch N (0-based)")
+    i.add_argument("--max-batches", type=int, default=0, metavar="N", help="Stop after N batches (0=no limit)")
 
     # sweep
     sw = sub.add_parser("sweep")

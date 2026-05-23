@@ -1,8 +1,8 @@
 meta:
   total_sources: 61
-  total_ingested: 22
-  coverage_pct: 36.1
-  last_updated: '2026-05-22'
+  total_ingested: 36
+  coverage_pct: 59.0
+  last_updated: '2026-05-23'
 sources:
   02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md:
     status: partial
@@ -201,26 +201,35 @@ sources:
       Basel_Driven_Credit_Migration_To_Private_Markets nodes (RWA/Output Floor/LCR/NSFR,
       SRT, NAV loans, network liquidity risk)'
   02_sources/deep-research/Deep Dive_ Private Credit.md:
-    status: completed
+    status: partial
     priority: high
     domain: basel_risk
     author: Internal
     description: Private credit deep dive — Basel treatment, risks, market structure
-    ingest_date: '2026-05-22'
+    ingest_date: '2026-05-23'
     wiki_nodes:
     - 03_wiki/mechanisms/Private_Credit_Secondary_Market_Price_Discovery.md
     - 03_wiki/mechanisms/Private_Credit_Subscription_Nav_Lending_Hidden_Leverage.md
     - 03_wiki/mechanisms/Private_Credit_Insurer_Structural_Channel.md
+    - 03_wiki/mechanisms/Private_Credit_Dual_Driver_Low_Rates_And_Bank_Regulation.md
+    - 03_wiki/concepts/Private_Equity_Private_Credit_Integration_Nexus.md
+    - 03_wiki/mechanisms/Private_Credit_Pik_And_Hidden_Leverage_Mechanisms.md
+    - 03_wiki/mechanisms/Bank_Credit_Line_Private_Credit_Funds_Systemic_Channel.md
+    - 03_wiki/concepts/Insurance_Pension_Private_Credit_Structural_Investor_Role.md
+    - 03_wiki/mechanisms/Private_Credit_Systemic_Stress_Transmission_Mechanism.md
   02_sources/deep-research/Private Credit, Basel, and Regional Dynamics.md:
-    status: completed
+    status: partial
     priority: high
     domain: basel_risk
     author: Internal
     description: Private credit + Basel + regional market dynamics
-    ingest_date: '2026-05-22'
+    ingest_date: '2026-05-23'
     wiki_nodes:
     - 03_wiki/frameworks/Basel_Regional_Implementation_Dynamics.md
     - 03_wiki/frameworks/Basel_III_Endgame_Capital_Liquidity_Credit_Migration.md
+    - 03_wiki/mechanisms/Basel_Iii_Capital_Requirements_Private_Credit_Migration.md
+    - 03_wiki/concepts/Us_Vs_Europe_Private_Credit_Market_Structure_Divergence.md
+    - 03_wiki/mechanisms/Bank_Private_Credit_Partnership_Model_Post_Basel.md
   02_sources/academic/Guo_Chinas_Monetary_Policy_Framework_2025.md:
     status: partial
     priority: normal
@@ -321,35 +330,39 @@ sources:
     notes: '2026-05-22: Created Fedwire_Payment_System_Reserve_Demand_And_Lsm_Policy
       node (RTGS demand, daylight overdraft collapse, LSM options, quarter-end compression)'
   02_sources/Clipping/What about Japan_ (Part I).md:
-    status: completed
+    status: partial
     priority: high
     domain: monetary_policy
     author: Clip
     description: BOJ YCC analysis Part I
-    ingest_date: '2026-05-22'
+    ingest_date: '2026-05-23'
     wiki_nodes:
     - 03_wiki/frameworks/Japan_Sovereign_Carry_Trade_Framework.md
     - 03_wiki/mechanisms/Japan_Filp_To_Qe_Structural_Succession.md
+    - 03_wiki/mechanisms/Japan_Consolidated_Public_Sector_Sovereign_Wealth_Fund_Mechanism.md
   02_sources/Clipping/What about Japan_ (Part II).md:
-    status: completed
+    status: partial
     priority: high
     domain: monetary_policy
     author: Clip
     description: BOJ YCC analysis Part II
-    ingest_date: '2026-05-22'
+    ingest_date: '2026-05-23'
     wiki_nodes:
     - 03_wiki/mechanisms/Qe_Duration_Extraction_From_Private_Sector.md
     - 03_wiki/mechanisms/Financial_Repression_Via_Reserve_Creation.md
     - 03_wiki/mechanisms/Financial_Repression_Distributional_Welfare_Effects.md
+    - 03_wiki/mechanisms/Boj_Qe_Duration_Extraction_Household_Wealth_Transfer.md
   02_sources/Clipping/Breaking Out of the Central Bank Balance Sheet Trilemma.md:
-    status: completed
+    status: partial
     priority: high
     domain: monetary_policy
     author: Clip
     description: CB balance sheet trilemma framework
-    ingest_date: '2026-05-22'
+    ingest_date: '2026-05-23'
     wiki_nodes:
     - 03_wiki/frameworks/CB_Balance_Sheet_Trilemma.md
+    - 03_wiki/frameworks/Fed_Balance_Sheet_Trilemma_Small_Stable_Minimal.md
+    - 03_wiki/mechanisms/Tga_Reform_As_Fed_Balance_Sheet_Reduction_Tool.md
   02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md:
     status: completed
     priority: high
@@ -363,66 +376,75 @@ sources:
     - 03_wiki/mechanisms/Standing_Repo_Facility_SRF_Fed_Backstop.md
     - 03_wiki/mechanisms/Monetary_Policy_Transmission_Short_Long_Rate_Frictions.md
   02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md:
-    status: completed
+    status: partial
     priority: high
     domain: monetary_policy
     author: Clip
     description: Ample reserves buffer sizing analysis
-    ingest_date: '2026-05-22'
+    ingest_date: '2026-05-23'
     wiki_nodes:
     - 03_wiki/mechanisms/Ample_Reserves_Buffer_Sizing_Tga_Volatility.md
+    - 03_wiki/mechanisms/Fed_Ample_Reserves_Buffer_Sizing_Formula.md
   02_sources/Clipping/Warsh and the Fed's Balance Sheet.md:
-    status: completed
+    status: partial
     priority: normal
     domain: monetary_policy
     author: Clip
     description: Fed balance sheet policy — Warsh perspective
-    ingest_date: '2026-05-20'
+    ingest_date: '2026-05-23'
     wiki_nodes:
     - 03_wiki/concepts/Warsh_Balance_Sheet_Stimulus_Swap.md
+    - 03_wiki/concepts/Fed_Balance_Sheet_Size_And_Policy_Rate_Independence.md
   02_sources/Clipping/A new Fed-Treasury Accord_.md:
-    status: completed
+    status: partial
     priority: normal
     domain: fiscal_policy
     author: Clip
     description: Fed-Treasury accord history and potential new framework
-    ingest_date: '2026-05-20'
+    ingest_date: '2026-05-23'
     wiki_nodes:
     - 03_wiki/frameworks/Fed_Treasury_Accord_2026_Proposal.md
+    - 03_wiki/mechanisms/Fed_Qe_Debt_Maturity_Transformation_Fiscal_Impact.md
   02_sources/Clipping/The Checking Account of the U.S. Federal Government....md:
-    status: completed
+    status: partial
     priority: normal
     domain: fiscal_policy
     author: Clip
     description: TGA mechanics and fiscal-monetary interaction
-    ingest_date: '2026-05-21'
+    ingest_date: '2026-05-23'
     wiki_nodes:
     - 03_wiki/mechanisms/Treasury_General_Account_Tga_Reserve_Swap.md
     - 03_wiki/frameworks/Fed_Fiscal_Agent_Treasury_Relationship.md
+    - 03_wiki/mechanisms/Tga_Reserve_Inverse_Relationship_Fed_Balance_Sheet_Growth.md
   02_sources/Clipping/I need a dollar (through your swap line).md:
-    status: pending
+    status: partial
     priority: normal
     domain: financial_markets
     author: Clip
     description: FX swap lines mechanics
-    ingest_date: null
-    wiki_nodes: []
+    ingest_date: '2026-05-23'
+    wiki_nodes:
+    - 03_wiki/mechanisms/Fed_Usd_Swap_Line_Architecture_And_Crisis_Function.md
+    - 03_wiki/mechanisms/Fx_Swap_Basis_Cip_Deviation_Dollar_Scarcity.md
+    - 03_wiki/concepts/Usd_Swap_Lines_Geopolitical_Dollar_Integration_Tool.md
   02_sources/Clipping/False Trilemmas.md:
-    status: pending
+    status: partial
     priority: normal
     domain: macro_outlook
     author: Clip
     description: Mundell trilemma analysis
-    ingest_date: null
-    wiki_nodes: []
+    ingest_date: '2026-05-23'
+    wiki_nodes:
+    - 03_wiki/concepts/Policy_Trilemma_Efficiency_Frontier_Equivalence.md
   02_sources/Clipping/Fed, ECB, and BoJ_ A Matter of Credibility.md:
-    status: pending
+    status: partial
     priority: normal
     domain: monetary_policy
     author: Clip
     description: 'CB credibility comparison: Fed vs ECB vs BOJ'
-    ingest_date: null
-    wiki_nodes: []
+    ingest_date: '2026-05-23'
+    wiki_nodes:
+    - 03_wiki/concepts/Central_Bank_Credibility_Supply_Shock_Policy_Space.md
   02_sources/Clipping/April BOJ_ onhold as expected, hawkish statement but cautious Ueda; maintain July hike call.md:
     status: pending
     priority: normal
@@ -432,21 +454,28 @@ sources:
     ingest_date: null
     wiki_nodes: []
   02_sources/Clipping/Who Buys When the ECB Doesn't_.md:
-    status: pending
+    status: partial
     priority: normal
     domain: monetary_policy
     author: Clip
     description: ECB QT and JGB/sovereign bond market absorption
-    ingest_date: null
-    wiki_nodes: []
+    ingest_date: '2026-05-23'
+    wiki_nodes:
+    - 03_wiki/mechanisms/Nbfi_Sovereign_Bond_Absorption_Post_Ecb_Qt.md
+    - 03_wiki/mechanisms/Ecb_Qt_Sovereign_Yield_Volatility_Amplification.md
+    - 03_wiki/mechanisms/Scissors_Effect_Ecb_Qt_And_Sovereign_Supply.md
+    - 03_wiki/concepts/Sovereign_Basis_Trade_Repo_Leverage.md
+    - 03_wiki/concepts/Nbfi_Sovereign_Market_Supervisory_Gap.md
   02_sources/Clipping/What's Driving the Gilt-Treasury Spread_.md:
-    status: pending
+    status: partial
     priority: normal
     domain: financial_markets
     author: Clip
     description: Gilt-Treasury spread drivers
-    ingest_date: null
-    wiki_nodes: []
+    ingest_date: '2026-05-23'
+    wiki_nodes:
+    - 03_wiki/mechanisms/Gilt_Treasury_Spread_Monetary_Policy_Expectations_Driver.md
+    - 03_wiki/mechanisms/Uk_Inflation_Persistence_Structural_Drivers.md
   02_sources/Clipping/Are high UK yields good or bad_.md:
     status: pending
     priority: normal
@@ -456,13 +485,14 @@ sources:
     ingest_date: null
     wiki_nodes: []
   02_sources/Clipping/De-Stigmatizing the Discount Window, Part I_ Tomatoes.md:
-    status: pending
+    status: partial
     priority: normal
     domain: monetary_policy
     author: Clip
     description: Fed discount window stigma and reform
-    ingest_date: null
-    wiki_nodes: []
+    ingest_date: '2026-05-23'
+    wiki_nodes:
+    - 03_wiki/mechanisms/Discount_Window_Stigma_Self_Reinforcing_Equilibrium.md
   02_sources/Clipping/PBOC heavy dollar buying in April after significant dollar selling in March.md:
     status: pending
     priority: low
@@ -475,13 +505,18 @@ sources:
       events (March/April 2026 reserve flows) — not promoted to wiki facts per Rule
       7'
   02_sources/Clipping/China's Monetary Policy Framework and Financial Market Transmission _ Bulletin.md:
-    status: pending
+    status: partial
     priority: normal
     domain: monetary_policy
     author: Clip
     description: China monetary policy transmission
-    ingest_date: null
-    wiki_nodes: []
+    ingest_date: '2026-05-23'
+    wiki_nodes:
+    - 03_wiki/frameworks/Pbc_Dual_Track_Monetary_Policy_Framework.md
+    - 03_wiki/mechanisms/Pbc_Reserve_Requirement_Ratio_Liquidity_Management.md
+    - 03_wiki/mechanisms/Pbc_Medium_Term_Lending_Facility_Rate_Transmission.md
+    - 03_wiki/mechanisms/Pbc_Structural_Monetary_Policy_Targeted_Relending.md
+    - 03_wiki/mechanisms/Pbc_Interest_Rate_Transmission_Dr007_To_Lpr.md
     notes: '2026-05-22: Secondary source for PBOC_Monetary_Policy_Framework_And_Interest_Rate_Transmission;
       RBA Bulletin comprehensive coverage of PBOC tools and FX management'
   02_sources/Clipping/RMB (part 1)_ Fundamentals point to appreciation in 2026 but milder than last year.md:
