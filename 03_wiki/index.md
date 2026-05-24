@@ -1,6 +1,6 @@
 # Wiki Index
 
-**Total nodes:** 196  |  **Last updated:** 2026-05-24
+**Total nodes:** 198  |  **Last updated:** 2026-05-24
 
 ---
 
@@ -71,7 +71,7 @@
 - **[[US Shadow Banking Post-GFC Market Based Finance Structure]]**  ★★★☆☆
   Post-GFC shadow banking became a repo-centric collateral market rather than a CDO machine.
 
-## Mechanisms (106)
+## Mechanisms (107)
 
 - **[[Ample Reserves Buffer Sizing TGA Volatility]]**  ★☆☆☆☆
   The minimum ample reserves buffer required for rate control can be estimated as B = sigma*sqrt(Delta)*z*(epsilon*Delta/2), where sigma is the standard...
@@ -95,6 +95,8 @@
   When a CB commits to an exchange rate target, NFA becomes endogenous (determined by BOP flows); the CB retains only NDA as policy instrument. Sterilization offsets NFA changes via NDA but faces two binding limits: reserve depletion (depreciation defense) and quasi-fiscal carrying cost (appreciation defense).
 - **[[CB Quasi Fiscal Sterilization Seigniorage Fiscal Monetary Nexus]]**  ★★★★☆
   FX targeting creates a quasi-fiscal channel that runs in both directions: normal seigniorage transfers CB profits to government; sterilization of inflows inverts this (CB earns low-yield FX, pays high-yield domestic = loss); NCG expansion accommodates fiscal deficits as de facto monetization; fiscal dominance is the endpoint when government financing requirements prevent independent monetary policy.
+- **[[Imf Exchange Rate Assessment And Crawling Peg Design]]**  ★★★★☆
+  Four-indicator exchange rate assessment framework (Box 4.8: RER, FX reserves, CA balance, parallel market premium); crawling peg design — active crawl (depreciate less than inflation differential → disinflation at competitiveness cost) vs passive crawl (match differential → preserve RER); band widening as transition to managed float. Poland 1990–1995 case study.
 - **[[BoJ QE Duration Extraction Household Wealth Transfer]]**  ★☆☆☆☆
   BoJ QE systematically extracted duration from the private sector by swapping long-duration JGBs for near-zero-duration reserves, leaving Japanese hous...
 - **[[Bond Accrual Price Effect Interaction]]**  ★★★☆☆
@@ -286,7 +288,7 @@
   QE suppresses collateral velocity by absorbing high-quality collateral onto central-bank balance sheets.
 - **[[Treasury T-bill Supply RRP Drain And MMF Cash Routing]]**  ★★★☆☆
   Treasury bill supply routes money-market cash between ON RRP, bills, and bank reserves.
-## Frameworks (42)
+## Frameworks (43)
 
 - **[[Basel III Endgame — Capital, Liquidity, and Credit Migration]]**  ★★☆☆☆
   Basel III and its Endgame extensions create a structured causal chain: RWA requirements + output floor + leverage ratio + LCR/NSFR raise the cost of h...
@@ -334,6 +336,8 @@
   IMF monetary analysis builds from the quantity equation (MV=PY) through demand for money (income elastic, opportunity-cost elastic) to the money multi...
 - **[[IMF Monetary Survey And Reserve Money Identity Framework]]**  ★★★★☆
   The IMF Monetary Survey consolidates Monetary Authorities and Deposit Money Banks into a single balance sheet where M2 = NFA + NDA (net foreign assets...
+- **[[Imf Financial Programming NDA Ceiling And BOP Monetary Approach]]**  ★★★★☆
+  The IMF financial programming framework: excess NDA over money demand = one-for-one NFA loss (BOP deficit). NDA ceiling is the primary conditionality tool in adjustment programs. Controllability hierarchy: Cb (most controlled) > OINm > NCG (passively fiscal) > NFA (exogenous BOP). Three monetary survey links: external (BOP↔NFA), government (deficit↔NCG), real sector (credit↔CPS).
 - **[[IMF SNA Real Sector Accounting GDP Identities And Sectoral Accounts]]**  ★★★★☆
   The 1993 SNA framework measures GDP via three equivalent approaches (production/income/expenditure), organizes each sector's transactions through a se...
 - **[[IRRBB EVE NII Dual Metric Framework]]**  ★★★★☆

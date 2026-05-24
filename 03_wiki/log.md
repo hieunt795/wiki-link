@@ -51,6 +51,10 @@ Chronological record of all ingest, update, promotion, and audit operations.
   - Thesis: NFA endogeneity under FX target → CB retains only NDA; sterilization faces reserve depletion (Case A) and quasi-fiscal carrying cost (Case B)
   - Content: T-account mechanics (2 directions), 4-factor sterilization decision matrix, regime comparison (5 regimes), Greenspan-Guidotti rule, Mundell-Fleming ineffectiveness, dual-instrument EME resolution, HEALTHY/STRESS/CRISIS diagnostic pattern
 
+- **WIKI NODES CREATED** (FX rate target deep dive — IMF Macro Accounting source):
+  - `03_wiki/mechanisms/Imf_Exchange_Rate_Assessment_And_Crawling_Peg_Design.md` — Confidence 4: Box 4.8 (4-indicator ER assessment), active vs passive crawl design, rate-of-crawl determination, band widening as managed float transition, Poland 1990–1995 case study
+  - `03_wiki/frameworks/Imf_Financial_Programming_NDA_Ceiling_And_BOP_Monetary_Approach.md` — Confidence 4: Monetary approach to BOP (excess NDA → NFA loss, one-for-one), NDA ceiling conditionality logic, controllability hierarchy (Cb > NCG > NFA), three monetary survey sector links, indirect monetization mechanism despite legal prohibition
+
 - **WIKI NODE CREATED**: `03_wiki/mechanisms/CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus.md`
   - Confidence: 4 | Stability: stable | T_MODE_DEEP
   - Source basis: Lipschitz & Schadler (Box 4.1, Box 4.6, p.2720-2763, p.2948-2969), IMF Macro Accounting (Box 3.7, GFS CB profit treatment, sterilization exercise), Perry Warjiyo Ch.11 (fiscal-monetary coordination, CB independence under crisis)
