@@ -26,7 +26,16 @@ SOURCES_DIR  = ROOT / "02_sources"
 CACHE_DIR    = ROOT / ".cache"
 CACHE_DIR.mkdir(exist_ok=True)
 
-BATCH_SIZE   = 32  # T4: 32 | A100: 64
+
+# ── GPU optimization flags (T4) ──────────────────────────
+import torch as _torch
+if _torch.cuda.is_available():
+    _torch.backends.cuda.matmul.allow_tf32 = True
+    _torch.backends.cudnn.benchmark = True
+    print(f'[sync] GPU: {_torch.cuda.get_device_name(0)} | '
+          f'VRAM: {_torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB')
+
+BATCH_SIZE   = 64  # T4: 64 | A100: 128
 CHUNK_SIZE   = 4096
 
 
