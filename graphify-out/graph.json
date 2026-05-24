@@ -26,6 +26,11 @@
       "type": "entity"
     },
     {
+      "id": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
+      "label": "CB FX Rate Target Balance Sheet Constraint And Sterilization",
+      "type": "mechanism"
+    },
+    {
       "id": "collateral_velocity_reuse_rate_plumbing_001",
       "label": "Collateral Velocity Reuse Rate And Financial Plumbing",
       "type": "mechanism"
@@ -301,6 +306,11 @@
       "type": "mechanism"
     },
     {
+      "id": "cb_quasi_fiscal_sterilization_seigniorage_001",
+      "label": "CB Quasi-Fiscal Mechanism — Sterilization Costs, Seigniorage, and the Fiscal-Monetary Nexus",
+      "type": "mechanism"
+    },
+    {
       "id": "collateral_velocity_001",
       "label": "Collateral Velocity and Rehypothecation",
       "type": "mechanism"
@@ -388,6 +398,11 @@
     {
       "id": "repo_clearing_segments_ficc_001",
       "label": "Repo Market Clearing Segments FICC Triparty GCF DVP NCCBR",
+      "type": "mechanism"
+    },
+    {
+      "id": "imf_exchange_rate_assessment_crawling_peg_design_001",
+      "label": "IMF Exchange Rate Assessment And Crawling Peg Design",
       "type": "mechanism"
     },
     {
@@ -721,6 +736,11 @@
       "type": "framework"
     },
     {
+      "id": "imf_financial_programming_nda_ceiling_bop_monetary_approach_001",
+      "label": "IMF Financial Programming — NDA Ceiling And Monetary Approach To BOP",
+      "type": "framework"
+    },
+    {
       "id": "stagflation_regime_diagnostic_frm_001",
       "label": "Stagflation Regime Diagnostic Framework",
       "type": "framework"
@@ -763,6 +783,16 @@
     {
       "id": "warsh_maturity_sovereignty_frm_001",
       "label": "Warsh Maturity Sovereignty Framework",
+      "type": "framework"
+    },
+    {
+      "id": "imf_tax_revenue_analysis_elasticity_buoyancy_effort_tanzi_001",
+      "label": "IMF Tax Revenue Analysis — Elasticity, Buoyancy, Tax Effort, and Tanzi Diagnostic",
+      "type": "framework"
+    },
+    {
+      "id": "imf_inflation_analysis_cpi_gdp_deflator_four_types_core_001",
+      "label": "IMF Inflation Analysis — CPI vs GDP Deflator, Four Inflation Types, Core vs Underlying",
       "type": "framework"
     },
     {

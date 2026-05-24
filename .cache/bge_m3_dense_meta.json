@@ -84,6 +84,29 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
+    "stem": "CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization",
+    "label": "CB FX Rate Target Balance Sheet Constraint And Sterilization",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization.md",
+    "confidence": 4,
+    "thesis": "When a central bank targets an exchange rate (fixed peg, crawling peg, or managed band), NFA becomes an endogenous variable determined by BOP flows and intervention — not a free policy instrument. The CB retains control only over NDA. Sterilization (offsetting NFA changes via NDA) can preserve the monetary base target in the short run, but faces two binding limits: (1) reserve depletion when defending against depreciation, and (2) quasi-fiscal carrying costs when sterilizing appreciation-driven inflows. Sustained sterilization against a persistent shock is unsustainable and, if delayed, results in a larger eventual adjustment.\n",
+    "tags": [
+      "fx_intervention",
+      "sterilization",
+      "nfa",
+      "nda",
+      "reserve_money",
+      "impossible_trinity",
+      "managed_float",
+      "balance_sheet",
+      "em_policy",
+      "capital_flows",
+      "reserve_adequacy"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "collateral_velocity_reuse_rate_plumbing_001",
     "stem": "Collateral_Velocity_Reuse_Rate_Financial_Plumbing",
     "label": "Collateral Velocity Reuse Rate And Financial Plumbing",
@@ -1133,6 +1156,29 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "cb_quasi_fiscal_sterilization_seigniorage_001",
+    "stem": "CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus",
+    "label": "CB Quasi-Fiscal Mechanism — Sterilization Costs, Seigniorage, and the Fiscal-Monetary Nexus",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus.md",
+    "confidence": 4,
+    "thesis": "The FX rate target creates a quasi-fiscal channel that runs in both directions: (1) the normal seigniorage channel transfers CB profits to government as nontax revenue when CB issues non-interest-bearing liabilities and earns on backing assets; (2) sterilization of inflows inverts this channel — CB earns low-yield FX assets while paying high-yield domestic assets, converting seigniorage transfers into calls on the government budget; (3) NCG expansion to accommodate fiscal deficits looks neutral in the monetary survey but functions as de facto deficit monetization, masking fiscal imbalances until NFA depletion forces adjustment; (4) fiscal dominance — where government pressure prevents policy correction — is the endpoint of sustained NCG accommodation combined with FX target defense. The IMF GFS framework classifies CB sterilization losses, subsidized lending, and FX guarantees as quasi-fiscal operations that must be added to the conventional fiscal deficit to measure the true policy stance.\n",
+    "tags": [
+      "quasi_fiscal",
+      "seigniorage",
+      "sterilization",
+      "fiscal_dominance",
+      "cb_independence",
+      "ncg",
+      "monetization",
+      "cb_capital",
+      "fiscal_monetary_nexus",
+      "em_policy",
+      "fx_intervention"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "collateral_velocity_001",
     "stem": "Collateral_Velocity_Rehypothecation",
     "label": "Collateral Velocity and Rehypothecation",
@@ -1475,6 +1521,29 @@
       "sofr"
     ],
     "domain": "financial_markets"
+  },
+  {
+    "node_id": "imf_exchange_rate_assessment_crawling_peg_design_001",
+    "stem": "Imf_Exchange_Rate_Assessment_And_Crawling_Peg_Design",
+    "label": "IMF Exchange Rate Assessment And Crawling Peg Design",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Imf_Exchange_Rate_Assessment_And_Crawling_Peg_Design.md",
+    "confidence": 4,
+    "thesis": "The IMF assesses exchange rate appropriateness using four complementary indicators (real exchange rate, FX reserve trend, current account balance, parallel market premium), none of which is individually decisive. When a fixed peg becomes untenable because of persistent inflation differential, the crawling peg regime provides a middle path: a preannounced depreciation path preserves nominal discipline (anchor function) while preventing competitiveness erosion. The critical design choice is passive crawl (match inflation differential → preserve real exchange rate) vs. active crawl (depreciate less than inflation → accept some competitiveness loss to decelerate inflation). An active crawl sacrifices exports for disinflation; extending the band width accommodates capital inflows without requiring full sterilization.\n",
+    "tags": [
+      "fx_regime",
+      "crawling_peg",
+      "exchange_rate_assessment",
+      "real_exchange_rate",
+      "competitiveness",
+      "nominal_anchor",
+      "peg_design",
+      "inflation_differential",
+      "band_management",
+      "em_policy",
+      "reserve_adequacy"
+    ],
+    "domain": "monetary_policy"
   },
   {
     "node_id": "pbc_interest_rate_transmission_dr007_to_lpr_001",
@@ -2738,6 +2807,29 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "imf_financial_programming_nda_ceiling_bop_monetary_approach_001",
+    "stem": "Imf_Financial_Programming_NDA_Ceiling_And_BOP_Monetary_Approach",
+    "label": "IMF Financial Programming — NDA Ceiling And Monetary Approach To BOP",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Imf_Financial_Programming_NDA_Ceiling_And_BOP_Monetary_Approach.md",
+    "confidence": 4,
+    "thesis": "The IMF financial programming framework rests on the monetary survey identity: any excess of domestic credit (NDA) expansion over the increase in money demand is mechanically reflected in a one-for-one decline in net foreign assets (NFA) — a BOP deficit. This is the theoretical justification for setting NDA ceilings as the primary conditionality tool in Fund-supported adjustment programs. The framework also distinguishes the controllability hierarchy among reserve money components: claims on DMBs (Cb) are most directly under CB control; NFA is largely exogenous (BOP outcome); NCG is often passively determined by the government's fiscal position (especially without CB independence). This hierarchy determines where conditionality is most binding.\n",
+    "tags": [
+      "imf_program",
+      "financial_programming",
+      "nda",
+      "nfa",
+      "monetary_approach_bop",
+      "domestic_credit_ceiling",
+      "policy_conditionality",
+      "adjustment_program",
+      "bop_surplus_deficit",
+      "reserve_money_control",
+      "controllability"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "stagflation_regime_diagnostic_frm_001",
     "stem": "Stagflation_Regime_Diagnostic_Framework",
     "label": "Stagflation Regime Diagnostic Framework",
@@ -2909,6 +3001,51 @@
       "debt_management"
     ],
     "domain": "fiscal_policy"
+  },
+  {
+    "node_id": "imf_tax_revenue_analysis_elasticity_buoyancy_effort_tanzi_001",
+    "stem": "Imf_Tax_Revenue_Analysis_Elasticity_Buoyancy_Effort_Tanzi",
+    "label": "IMF Tax Revenue Analysis — Elasticity, Buoyancy, Tax Effort, and Tanzi Diagnostic",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Imf_Tax_Revenue_Analysis_Elasticity_Buoyancy_Effort_Tanzi.md",
+    "confidence": 4,
+    "thesis": "The IMF fiscal revenue framework distinguishes two core measurement concepts — elasticity (revenue response under an unchanged tax system, measuring built-in flexibility) vs. buoyancy (total revenue response including discretionary changes, measuring overall performance) — and combines them with taxable capacity analysis to compute tax effort: how intensively a country uses its tax base relative to structural capacity. The Tanzi 8-criterion diagnostic test provides an operational checklist for assessing revenue productivity. The inflation–collection lag relationship (Tanzi effect) degrades real revenue under high inflation, creating a vicious cycle of deficit → monetization → inflation → eroded real revenue → larger deficit.\n",
+    "tags": [
+      "tax_revenue",
+      "tax_elasticity",
+      "tax_buoyancy",
+      "taxable_capacity",
+      "tax_effort",
+      "tanzi_diagnostic",
+      "revenue_productivity",
+      "fiscal_analysis",
+      "imf_program",
+      "collection_lag"
+    ],
+    "domain": "fiscal_policy"
+  },
+  {
+    "node_id": "imf_inflation_analysis_cpi_gdp_deflator_four_types_core_001",
+    "stem": "Imf_Inflation_Analysis_Cpi_Gdp_Deflator_Four_Types_Core",
+    "label": "IMF Inflation Analysis — CPI vs GDP Deflator, Four Inflation Types, Core vs Underlying",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Imf_Inflation_Analysis_Cpi_Gdp_Deflator_Four_Types_Core.md",
+    "confidence": 4,
+    "thesis": "The IMF inflation analysis framework distinguishes four causal types (policy-induced, cost-push, demand-pull, inertial) and two measurement dimensions (one-time price-level shift vs. sustained inflation rate; measured vs. core/underlying inflation). The CPI and GDP deflator measure different things: coverage (consumer vs. all production), treatment of imports (included in CPI, excluded from deflator), and aggregation method (Laspeyres fixed-basket vs. Paasche current-basket). Core/underlying inflation — abstracting from discrete one-off shocks — is the policy-relevant variable, especially in transition and EM economies with frequent administered-price adjustments.\n",
+    "tags": [
+      "inflation",
+      "cpi",
+      "gdp_deflator",
+      "core_inflation",
+      "nairu",
+      "cost_push",
+      "demand_pull",
+      "inertial_inflation",
+      "price_measurement",
+      "monetary_policy_framework",
+      "em_policy"
+    ],
+    "domain": "monetary_policy"
   },
   {
     "node_id": "mptm_framework_001",
