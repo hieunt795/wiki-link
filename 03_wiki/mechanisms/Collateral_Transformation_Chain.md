@@ -62,9 +62,17 @@ transmission_lags: immediate
 empirical_evidence: mixed
 
 date_created: 2026-05-23
-date_updated: 2026-05-23
-last_reviewed: 2026-05-23
+date_updated: 2026-05-24
+last_reviewed: 2026-05-24
 ---
+
+## Scope Boundary
+
+[LLM] This node is canonical for collateral transformation as a transaction-chain service that upgrades lower-quality collateral into HQLA or CCP-eligible collateral.
+
+[LLM] General collateral-velocity measurement belongs to [[Collateral_Velocity_Reuse_Rate_Financial_Plumbing]].
+
+[LLM] QE/QT effects on collateral velocity belong to [[QE_Collateral_Velocity_Monetary_Policy_Transmission]].
 
 ## Overview
 

@@ -86,3 +86,5 @@ Under Reg YY (Enhanced Prudential Standards for GSIBs):
 - Resolution Liquidity Adequacy and Positioning (RLAP) adds failure-resolution intraday liquidity requirement
 - Supervisors prefer reserves over T-bills for meeting LCR HQLA, even though they are formally equivalent — reserves can't fail to convert to cash; T-bills require a sale that may signal stress
 - Jamie Dimon (JPM earnings 2019): opening balance goes from $120B to $60B intraday — CLAR requires it must never hit zero under stress; this is the "red line" [RAW-CLIP]
+
+The combination of GSIB self-sufficiency mandates and IORB remuneration has created a structurally higher minimum balance sheet size than the pre-GFC payment system required. [LLM]

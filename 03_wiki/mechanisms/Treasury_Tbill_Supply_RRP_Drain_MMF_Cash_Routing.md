@@ -22,7 +22,7 @@ tags:
 - debt_limit
 confidence: 1
 stability: evolving
-thesis: T-bill supply and Fed ON RRP balances are substitutes for MMF cash: high T-bill issuance routes MMF funds out of the RRP into bills (draining RRP, boosting reserves), while T-bill supply contractions — particularly during debt ceiling episodes — drive MMF cash back into the RRP, inflating it and preventing reserve growth even as the TGA is drawn down.
+thesis: "T-bill supply and Fed ON RRP balances are substitutes for MMF cash: high T-bill issuance routes MMF funds out of the RRP into bills (draining RRP, boosting reserves), while T-bill supply contractions — particularly during debt ceiling episodes — drive MMF cash back into the RRP, inflating it and preventing reserve growth even as the TGA is drawn down."
 source_refs:
 - path: 02_sources/books/conks/Conks - Shadow Banking and Cash Markets.md
   pages: batch 4 (chars ~25041-34659)
@@ -70,3 +70,5 @@ This creates a monetary plumbing "wedge" where TGA spending fails to deliver res
 ## Implications for Fed Rate Control
 
 Fed's goal of an "empty RRP" (to ensure reserves are plentiful and IORB/EFFR spread is tight) is structurally dependent on Treasury maintaining high T-bill supply. Both Fed and Treasury share aligned incentives around keeping the T-bill printer active. [RAW-CLIP]
+
+This alignment makes RRP management a joint fiscal-monetary coordination problem, not a purely Fed balance sheet issue. [LLM]

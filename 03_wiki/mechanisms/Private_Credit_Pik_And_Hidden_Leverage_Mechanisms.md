@@ -32,10 +32,35 @@ source_refs:
 - path: 02_sources/deep-research/Deep Dive_ Private Credit.md
   pages: ''
   weight: primary
-related: []
+related:
+- node: '[[PIK_Payment_In_Kind_Credit_Masking]]'
+  relation: canonical_detail_for_pik_channel
+- node: '[[Private_Credit_Subscription_Nav_Lending_Hidden_Leverage]]'
+  relation: canonical_detail_for_fund_finance_channel
+- node: '[[Bank_NBFI_Leverage_Loop]]'
+  relation: systemic_feedback_channel
 date_created: '2026-05-23'
-date_updated: '2026-05-23'
+date_updated: '2026-05-24'
 ---
 
-[LLM] Auto-generated stub from Deep Dive_ Private Credit.md. Review and expand.
+## Scope Boundary
+
+[LLM] This node is an umbrella/router for the two private-credit hidden-leverage channels in the source: borrower-level PIK accrual and fund-level subscription/NAV borrowing.
+
+[LLM] For borrower cash-flow masking, use [[PIK_Payment_In_Kind_Credit_Masking]] as the canonical detailed mechanism.
+
+[LLM] For fund-level leverage from subscription lines and NAV loans, use [[Private_Credit_Subscription_Nav_Lending_Hidden_Leverage]] as the canonical instrument taxonomy.
+
+[LLM] For the systemic bank feedback loop created by those facilities, use [[Bank_NBFI_Leverage_Loop]] rather than this umbrella node.
+
+## Overlap Control
+
+| Sub-mechanism | Canonical node | This node's role |
+|---|---|---|
+| PIK interest accrual | [[PIK_Payment_In_Kind_Credit_Masking]] | Route only |
+| Subscription facilities | [[Private_Credit_Subscription_Nav_Lending_Hidden_Leverage]] | Route only |
+| NAV lending | [[Private_Credit_Subscription_Nav_Lending_Hidden_Leverage]] | Route only |
+| Bank/NBFI liquidity feedback | [[Bank_NBFI_Leverage_Loop]] | Context only |
+
+[LLM] Do not expand this file with detailed mechanics unless the canonical nodes are later merged or archived.
 

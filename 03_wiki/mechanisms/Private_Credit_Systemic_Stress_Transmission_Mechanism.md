@@ -30,10 +30,26 @@ source_refs:
 - path: 02_sources/deep-research/Deep Dive_ Private Credit.md
   pages: ''
   weight: primary
-related: []
+related:
+- node: '[[Bank_NBFI_Leverage_Loop]]'
+  relation: bank_liquidity_transmission_channel
+- node: '[[Private_Credit_Subscription_Nav_Lending_Hidden_Leverage]]'
+  relation: fund_finance_channel
+- node: '[[Private_Credit_Secondary_Market_Price_Discovery]]'
+  relation: valuation_channel
+- node: '[[PIK_Payment_In_Kind_Credit_Masking]]'
+  relation: borrower_credit_masking_channel
 date_created: '2026-05-23'
-date_updated: '2026-05-23'
+date_updated: '2026-05-24'
 ---
 
-[LLM] Auto-generated stub from Deep Dive_ Private Credit.md. Review and expand.
+## Scope Boundary
+
+[LLM] This node is retained as a top-level routing stub for private-credit stress transmission channels.
+
+[LLM] Bank liquidity drawdowns and balance-sheet feedback belong to [[Bank_NBFI_Leverage_Loop]].
+
+[LLM] Subscription facilities and NAV loans belong to [[Private_Credit_Subscription_Nav_Lending_Hidden_Leverage]].
+
+[LLM] Borrower-level loss masking belongs to [[PIK_Payment_In_Kind_Credit_Masking]], while valuation/secondary-price discovery belongs to [[Private_Credit_Secondary_Market_Price_Discovery]].
 

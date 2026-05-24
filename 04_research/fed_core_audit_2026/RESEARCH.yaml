@@ -1,0 +1,30 @@
+topic_slug: fed_core_audit_2026
+title: "Comprehensive Audit and Expansion of Core Federal Reserve Nodes"
+created: '2026-05-24'
+status: active
+domain_template: 06_templates/domains/monetary_policy/standard.yaml
+style_template: 06_templates/styles/research_memo.yaml
+analysis_mode: T_MODE_DEEP
+primary_question: >
+  How do the Fed's modern operational tools (Ample Reserves, ON RRP, SRF, Swap Lines) 
+  interact to maintain rate control and financial stability, and how is the 
+  balance sheet size determined by structural demand factors (TGA, Fedwire, MMFs)?
+sub_questions:
+  - "Mechanics of rate control in an Ample Reserves framework (IORB/ON RRP corridor)"
+  - "The impact of balance sheet size on policy rate independence"
+  - "Structural demand for reserves: Fedwire payment system and liquidity regulations"
+  - "The role of the Standing Repo Facility (SRF) as a backstop and rate ceiling"
+  - "TGA-Reserve swap mechanics and debt ceiling volatility management"
+  - "Fed-Treasury relationship as Fiscal Agent and the Principal-Agent dynamic"
+  - "Global dollar liquidity hierarchy: Swap lines vs FIMA Repo facility"
+  - "Post-QT Reserve Management Operations (RMOs) and bill purchase triggers"
+  - 'The "Global Jaws" architecture: Integrating domestic and international floor/ceiling tools'
+  - "Substitution effects between Fed balance sheet and policy rates (Warsh hypothesis)"
+
+coverage_probe: []
+sources_used:
+  wiki: []
+  raw: []
+findings: []
+gaps: []
+status_summary: "Workspace initialized. Ready for batch agentic research."

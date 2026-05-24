@@ -67,9 +67,17 @@ related:
 - node: '[[PIK Payment In Kind Credit Stress Masking]]'
   relation: shared_tag:private-credit
 date_created: 2026-05-20
-date_updated: 2026-05-20
+date_updated: 2026-05-24
 ---
 
+
+## Scope Boundary
+
+[LLM] This node is canonical for the integrated bank/private-credit partnership structure: SRT, originate-to-distribute, bank leverage to PC funds, and network liquidity risk.
+
+[LLM] [[Bank_Private_Credit_Partnership_Model_Post_Basel]] and [[Bank_Credit_Line_Private_Credit_Funds_Systemic_Channel]] are routing stubs and should not duplicate this full structure.
+
+[LLM] For the narrower bank/NBFI liquidity feedback loop, use [[Bank_NBFI_Leverage_Loop]].
 
 ## Why Banks Reconfigure Rather Than Exit
 

@@ -29,10 +29,22 @@ source_refs:
 - path: 02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md
   pages: ''
   weight: primary
-related: []
+related:
+- node: '[[Ample_Reserves_Buffer_Sizing_Tga_Volatility]]'
+  relation: canonical_formula_node
+- node: '[[Tga_Volatility_And_Reserve_Buffer_Demand]]'
+  relation: qualitative_channel
 date_created: '2026-05-23'
-date_updated: '2026-05-23'
+date_updated: '2026-05-24'
 ---
 
-[LLM] Auto-generated stub from Napkin Math for an Ample Reserves Buffer.md. Review and expand.
+## Scope Boundary
+
+[LLM] This file is retained as a duplicate routing stub for the same buffer-sizing source.
+
+[LLM] The canonical formula node is [[Ample_Reserves_Buffer_Sizing_Tga_Volatility]].
+
+[LLM] The qualitative TGA-volatility transmission channel is [[Tga_Volatility_And_Reserve_Buffer_Demand]].
+
+[LLM] Do not expand this file unless the canonical formula node is archived or this file receives a clearly distinct source scope.
 

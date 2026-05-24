@@ -1,58 +1,70 @@
 ---
-node_id: fed_overnight_reverse_repo_on_rrp_001
+node_id: fed_overnight_reverse_repo_on_rrp_mec_001
 type: mechanism
 title: Fed Overnight Reverse Repo ON RRP
 aliases:
-- ON RRP
-- ONRRP
-- reverse repo facility
-- Fed RRP
-- co so repo dao nguoc qua dem
+  - ON RRP
+  - reverse repo facility
+  - Fed RRP
+  - co so repo dao nguoc qua dem
 domain:
   primary: monetary_policy
 tags:
-- rrp
-- money-market
-- fed-facilities
-- reserves
-- mmt
-confidence: 3
-stability: evolving
-thesis: 'The Fed Overnight Reverse Repo facility (ON RRP) is the Fed liquidity shock
-  absorber: it accepts cash from money market funds and GSEs overnight in exchange
-  for Treasury collateral, paying the ON RRP rate. When bank deposits and bill supply
-  are abundant, RRP drains to zero; when reserves are scarce and bill supply falls,
-  RRP surges as MMFs have nowhere else to park cash.'
+  - rrp
+  - money_market
+  - fed_facilities
+  - reserves
+  - liquidity_sponge
+
+confidence: 4
+stability: stable
+
+thesis: >
+  The ON RRP facility serves as the Federal Reserve's primary rate-floor mechanism and "liquidity shock absorber." It accepts cash from non-bank entities (MMFs, GSEs, Primary Dealers) overnight in exchange for Treasury collateral, effectively "neutralizing" excess reserves and preventing money market rates from falling below the FOMC's target range.
+
 source_refs:
-- path: 02_sources/books/conks/Conks - Shadow Banking and Cash Markets.md
-  pages: Money Market Blindspot I & II, Shadow Bank Shutdown
-  weight: primary
+  - path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
+    pages: "The Federal Reserve Endgame Is Not a Collapse, It's Global Domination; The Fed's Plumbing Dilemma; The Fed's Reckoning"
+    weight: primary
+
 related:
-- node: '[[Debt Ceiling Extraordinary Measures Treasury]]'
-  relation: shared_tag:money-market
-- node: '[[Fedwire Payment System Reserve Demand And LSM Policy]]'
-  relation: shared_tag:reserves
-- node: '[[QT Reserve Drain Effectiveness And Deposit Funding Condition]]'
-  relation: shared_tag:reserves
-- node: '[[TGA Reserve Swap Mechanics And Debt Ceiling Dynamics]]'
-  relation: shared_tag:reserves
-- node: '[[Central Bank Balance Sheet Structure Liabilities Assets]]'
-  relation: shared_tag:reserves
-date_created: '2026-05-20'
-date_updated: '2026-05-20'
+  - node: "[[Fed_Ample_Reserves_Rate_Control_Framework]]"
+    relation: component_of_floor_system
+  - node: "[[QT_Reserve_Drain_Effectiveness_And_Deposit_Funding_Condition]]"
+    relation: QT_buffer
+  - node: "[[TGA_Reserve_Swap_Mechanics_And_Debt_Ceiling_Dynamics]]"
+    relation: offsetting_liability_flow
+
+date_created: 2024-05-20
+date_updated: 2024-05-20
 ---
 
+## Overview
+The Overnight Reverse Repo (ON RRP) facility was permanently established in 2013 to support rate control in an ample reserves regime. While the Fed pays **IORB** to banks to set a ceiling, it uses the **ON RRP** to offer a risk-free investment to non-bank financial institutions that lack Fed master accounts, thereby setting a hard floor for secured overnight rates [RAW-BOOK].
 
-The Fed ON RRP is a key instrument for floor-system rate control and reserve management.
+## The Mechanism: Neutralization
+The ON RRP acts as a "liquidity sponge" through a process called **reserve neutralization**:
+- **Flow:** When a Money Market Fund (MMF) moves cash from a bank deposit into the ON RRP, the bank's reserves at the Fed are debited, and the Fed's ON RRP liability is credited.
+- **Impact:** These reserves are "neutralized"—they still exist as a Fed liability but cannot be used for interbank lending or credit creation as long as they are parked in the facility [RAW-BOOK].
+- **Unwinding:** When the ON RRP balance declines (e.g., due to MMFs buying T-bills), neutralized reserves flow back into the banking system, becoming "pure reserves" once again [RAW-BOOK].
 
-**Who uses it:** Money market funds, GSEs, primary dealers. Not commercial banks (they use IOER/IORB instead).
+## Counterparties and Access
+Eligibility is restricted to ensure the facility only absorbs systemic excess cash:
+- **Money Market Funds (MMFs):** The dominant users (~90%+ of volume).
+- **GSEs:** Fannie Mae, Freddie Mac, and Federal Home Loan Banks (FHLBs).
+- **Primary Dealers:** Large broker-dealers authorized to trade directly with the Fed.
 
-**Rate control:** ON RRP rate sets the floor under money market rates. No rational MMF will lend below the ON RRP rate when the Fed offers a riskless overnight alternative.
+Commercial banks are generally excluded, as they are expected to use the higher-yielding IORB [RAW-BOOK] [LLM].
 
-**Shock absorber role:** When TGA drawdowns flood the banking system with reserves, banks cannot profitably hold all excess deposits — they push depositors to MMFs. MMFs, facing lower T-bill yields, park cash in ON RRP. RRP balance surges, temporarily absorbing the liquidity flood.
+## The "Leaky Floor" and Technical Adjustments
+Despite being designed as a hard floor, the ON RRP can be "leaky":
+1. **Collateral Shortages:** If demand for U.S. Treasury collateral exceeds supply, private repo rates (e.g., TGCR, BGCR) may trade below the ON RRP rate [RAW-BOOK].
+2. **Access Limits:** Entities without ON RRP access may be forced to lend at even lower rates to dealers who have access, creating a sub-floor market.
+3. **Technical Adjustments:** The Fed frequently adjusts the ON RRP rate (e.g., 5bps above the bottom of the target range) to ensure it effectively "pulls" market rates into the desired band [RAW-BOOK].
 
-**RRP drain → reserve release:** As RRP is depleted (post-2022 QT), reserves that were locked up flow back into the banking system. This extended the runway for QT without triggering a reserve shortage.
+## Role in Quantitative Tightening (QT)
+The ON RRP balance is a critical signal for QT duration:
+- **Liquidity Buffer:** As long as the ON RRP balance is high, QT removes "neutralized" reserves rather than "pure" bank reserves, acting as a buffer that prevents interbank stress [RAW-BOOK].
+- **Zero-Bound Trigger:** Once the ON RRP balance hits zero, QT begins to drain pure bank reserves directly. This marks the transition toward the **LCLoR** (Lowest Comfortable Level of Reserves) and heightens the risk of repo market spikes [RAW-BOOK] [LLM].
 
-**Monitoring:** Watch daily RRPONTSYD (FRED) alongside bank reserve balances. A rapidly declining RRP below 00B signals reserves approaching scarce territory.
-
-
+[LLM] synthesis: The ON RRP effectively converted the Fed's balance sheet into a two-tiered liability structure (Pure vs. Neutralized), allowing for unprecedented control over liquidity flows during both expansionary and contractionary cycles.

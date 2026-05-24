@@ -68,3 +68,5 @@ When MMFs invest in RRP:
 - Net effect: bank deposits and reserves temporarily removed from financial system
 
 RRP drainage = reserve re-injection. This creates the inverse of the Treasury's TGA spending effect. [RAW-CLIP]
+
+Both Treasury QE mechanisms illustrate that reserve conditions are as much a function of fiscal operations as of Fed balance sheet policy. [LLM]

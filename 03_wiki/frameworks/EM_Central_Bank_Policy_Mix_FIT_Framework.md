@@ -26,10 +26,10 @@ stability: stable
 thesis: "Perry & Juhro's post-GFC paradigm for emerging market central banking: the 'policy mix' combines (1) flexible inflation targeting (FIT) with an explicit exchange rate stabilization role; (2) macroprudential policy to manage financial procyclicality and systemic risk; (3) capital flow management (CFM) to navigate the impossible trinity; and (4) payment system policy — these four pillars form a coordinated dual mandate (price stability + financial system stability) replacing the pre-GFC single-instrument ITF focused solely on price stability."
 source_refs:
 - path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
-  pages: lines 1-200 (Chapter 13: CFM), lines 400-600 (Chapter 14: Macroprudential), lines 800-1100 (Chapter 15: Policy Mix)
+  pages: "lines 1-200 (Chapter 13: CFM), lines 400-600 (Chapter 14: Macroprudential), lines 800-1100 (Chapter 15: Policy Mix)"
   weight: primary
 - path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-4.md
-  pages: lines 1-100 (Chapter 6-7: ITF strategic framework)
+  pages: "lines 1-100 (Chapter 6-7: ITF strategic framework)"
   weight: secondary
 related:
 - node: '[[Central Bank Credibility Supply Shock Policy Space]]'
@@ -100,3 +100,5 @@ BI implemented the policy mix concept in 2010, becoming one of the first central
 - Payment system oversight
 
 The BI Rate was renamed BI 7-Day Repo Rate in 2016 to better align with its actual monetary stance (from 12-month rate to 7-day rate). [RAW-CLIP]
+
+The BI experience validated the policy mix framework as operationally feasible for EMEs navigating the impossible trinity. [LLM]

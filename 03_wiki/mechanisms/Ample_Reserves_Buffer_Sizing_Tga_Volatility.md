@@ -41,10 +41,20 @@ related:
   relation: shared_tag:fed
 - node: '[[QT Reserve Drain Effectiveness And Deposit Funding Condition]]'
   relation: shared_tag:fed
+- node: '[[Fed_Ample_Reserves_Buffer_Sizing_Formula]]'
+  relation: duplicate_stub_route
 date_created: '2026-05-22'
-date_updated: '2026-05-22'
+date_updated: '2026-05-24'
 ---
 
+
+## Scope Boundary
+
+[LLM] This node is canonical for the quantitative ample-reserves buffer-sizing formula linked to TGA volatility.
+
+[LLM] [[Fed_Ample_Reserves_Buffer_Sizing_Formula]] is a duplicate stub and should route here unless it is later expanded with distinct source evidence.
+
+[LLM] The qualitative TGA volatility mechanism belongs to [[Tga_Volatility_And_Reserve_Buffer_Demand]].
 
 ## Formula
 [LLM] Minimum buffer B (in billions) for ample reserves:

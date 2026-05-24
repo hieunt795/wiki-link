@@ -42,12 +42,24 @@ related:
   relation: shared_tag:repo
 - node: '[[Standing Repo Facility SRF Fed Backstop]]'
   relation: shared_tag:repo
+- node: '[[Repo_Market_Structure_GC_SC_Cleared_Segments_And_Sec_Mandate]]'
+  relation: canonical_repo_segment_taxonomy
+- node: '[[Repo_Market_Clearing_Segments_FICC_Triparty_GCF_DVP_NCCBR]]'
+  relation: compact_clearing_reference
 date_created: '2026-05-20'
-date_updated: '2026-05-20'
+date_updated: '2026-05-24'
 ---
 
 
 Repo (repurchase agreement) is a secured short-term funding transaction: one party sells securities and agrees to repurchase them at a fixed future date and price. The price difference = repo rate x days/360.
+
+## Scope Boundary
+
+[LLM] This node is a broad repo primer and should remain focused on what repo is, why it funds dealers, and how triparty/bilateral structures fit the secured funding system.
+
+[LLM] For the canonical GC/SC, cleared/uncleared segment taxonomy and SEC clearing mandate, use [[Repo_Market_Structure_GC_SC_Cleared_Segments_And_Sec_Mandate]].
+
+[LLM] For a compact rate/clearing table, use [[Repo_Market_Clearing_Segments_FICC_Triparty_GCF_DVP_NCCBR]].
 
 **Three repo market segments:**
 

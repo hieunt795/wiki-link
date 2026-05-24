@@ -1,5 +1,5 @@
 ---
-node_id: cb_reserve_requirements_taxonomy_surplus_001
+node_id: cb_reserve_requirements_taxonomy_surplus_shortage_liquidity_001
 type: framework
 title: CB Reserve Requirements Taxonomy And Surplus Shortage Liquidity Framework
 aliases:
@@ -27,12 +27,14 @@ source_refs:
   pages: lines 306-499 (required reserves, voluntary/excess reserves, asset vs liability driven sections)
   weight: primary
 related:
-- node: '[[CB Reserve System Level Constraint Money Multiplier Myth]]'
+- node: '[[CB_Reserve_System_Level_Constraint_Money_Multiplier_Myth]]'
   relation: companion
-- node: '[[Fed Ample Reserves Rate Control Framework]]'
+- node: '[[Fed_Ample_Reserves_Rate_Control_Framework]]'
   relation: related_mechanism
+- node: '[[CB_Reserve_Requirements_Taxonomy_Surplus_Shortage_Liquidity]]'
+  relation: self
 date_created: '2026-05-23'
-date_updated: '2026-05-23'
+date_updated: '2026-05-24'
 ---
 
 ## Five Purposes of Reserve Requirements (Bindseil 2004a)
@@ -82,3 +84,5 @@ In economies facing inflationary pressure from capital inflows: raising rates at
 - CB may be in a weaker position to dictate collateral terms
 - Operations shift from income-generating (lending) to income-costing (absorption)
 - Many central banks in South East Asia have faced negative capital from sterilisation losses + revaluation losses on foreign reserves [RAW-CLIP]
+
+Surplus liquidity structures thus weaken CB independence by creating balance-sheet losses that depend on fiscal transfers to resolve. [LLM]

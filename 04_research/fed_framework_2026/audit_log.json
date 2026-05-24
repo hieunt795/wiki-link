@@ -1,0 +1,34 @@
+{
+  "topic_slug": "fed_framework_2026",
+  "audit_iterations": [
+    {
+      "iteration": 1,
+      "date": "2026-05-24",
+      "draft": "04_research/fed_framework_2026/drafts/2026-05-24_draft_v1.md",
+      "checklist_version": "audit_checklist_v1",
+      "checks": {
+        "A1": { "pass": true, "notes": "Fixed: added [LLM-E] tags inline on cut conditions, scenarios 2.4, risk probabilities" },
+        "A2": { "pass": true, "notes": "No confidence>=4 wiki nodes contradicted" },
+        "A3": { "pass": true, "notes": "[WEB-2026-05-24] tags on all fresh data; sources listed at bottom" },
+        "B1": { "pass": true, "notes": "Causal chains in LENS 3.1, 2.3, 4.1, 4.2 directionally consistent" },
+        "B2": { "pass": true, "notes": "Summary table and conclusions follow from lens analysis" },
+        "B3": { "pass": true, "notes": "Fixed: added section 3.2.1 with 3 structural counter-arguments: (A) FHLB arbitrage artificially suppresses SOFR-IORB, (B) FBO quarter-end compression creates episodic tail stress, (C) SOFR median misses dealer distribution tail. Sources: Fhlb_Effr_Iorb_Arbitrage_Floor_Mechanism, Reserve_Floor_Payment_System_Demand, Duffie §I.B." },
+        "C1": { "pass": true, "notes": "Fixed: added 3.4 section for sq6 (TGA/Treasury issuance/bill-coupon mix)" },
+        "C2": { "pass": true, "notes": "LENS 5.1 TRUE_GAPs table covers all 3 open gaps + 1 PENDING" },
+        "D1": { "pass": true, "notes": "No open contradictions in RESEARCH.yaml" },
+        "D2": { "pass": true, "notes": "No contradiction nodes required" },
+        "E1": { "pass": true, "notes": "Fixed: reduced from 8 to 3 '---' separators (lines 6, 282, 297)" },
+        "T1": { "pass": true, "notes": "Fixed: [LLM-E] tags added inline on all scenario text, risk assessments, probability labels" },
+        "T2": { "pass": true, "notes": "No gaming/combat metaphors found" },
+        "T3": { "pass": "warning", "notes": "WARNING: Most causal claims use IF→THEN structure. Rate scenarios in 1.4 cut conditions now use IF→THEN. Minor: B3 counter-argument not formalized as IF→THEN. User decision." }
+      },
+      "blocking_fails_resolved": 3,
+      "warnings_remaining": 1,
+      "reviewer": "agent_self_audit"
+    }
+  ],
+  "final_approved": true,
+  "approved_at": "2026-05-24",
+  "approved_by": "user",
+  "note": "B3 resolved. T3 warning acknowledged and accepted by user. Approved for final report."
+}

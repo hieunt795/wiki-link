@@ -3,10 +3,30 @@
 # Format: report metadata + file path
 
 meta:
-  total_reports: 1
-  last_updated: "2026-05-20"
+  total_reports: 3
+  last_updated: "2026-05-24"
 
 reports:
+  - slug: fed_operating_framework_2026
+    title: "Fed Operating Framework 2026 — Rate Path, QT Halt, Balance Sheet, and Reserve Adequacy"
+    date: 2026-05-24
+    file: "05_reports/2026-05/fed_operating_framework_2026.md"
+    topic_slug: fed_framework_2026
+    style: research_memo
+    domain: monetary_policy
+    audit_approved: true
+    confidence_floor: 2
+    analysis_mode: T_MODE_DEEP
+    wiki_nodes_used:
+      - "[[Fed_Ample_Reserves_Range_Floor_Framework]]"
+      - "[[Quantitative_Tightening_Qt_Balance_Sheet_Runoff]]"
+      - "[[Fed_QT_2022_Balance_Sheet_Runoff_Policy]]"
+      - "[[Fed_Overnight_Reverse_Repo_On_Rrp]]"
+      - "[[Reserve_Floor_Payment_System_Demand]]"
+      - "[[Fhlb_Effr_Iorb_Arbitrage_Floor_Mechanism]]"
+      - "[[Fed_Treasury_Accord_2026_Proposal]]"
+      - "[[Swap_Spreads_Balance_Sheet_Plumbing_Frictions]]"
+
   - slug: fed_qt_reserve_scarcity_memo
     title: "Fed QT and Reserve Scarcity: Plumbing, Signals, and Policy Implications"
     date: 2026-05-20
@@ -22,6 +42,25 @@ reports:
       - "[[Fed_Overnight_Reverse_Repo_ON_RRP]]"
       - "[[SLR_LCR_Balance_Sheet_Constraints_Treasury_Market_Dealer]]"
       - "[[Repo_Market_Mechanics_Triparty_Bilateral]]"
+  - slug: us_treasury_curve_2026
+    title: "US Treasury Yield Curve 2026 — Bear Steepener, Term Premium Regime, and RV Implications"
+    date: 2026-05-24
+    file: "05_reports/2026-05/us_treasury_curve_2026.md"
+    topic_slug: us_treasury_curve_2026
+    style: research_memo
+    domain: financial_markets
+    audit_approved: true
+    confidence_floor: 2
+    analysis_mode: T_MODE_DEEP
+    wiki_nodes_used:
+      - "[[Treasury_Market_Dealer_Intermediation_Capacity]]"
+      - "[[Monetary_Policy_Transmission_Short_Long_Rate_Frictions]]"
+      - "[[Swap_Spreads_Balance_Sheet_Plumbing_Frictions]]"
+      - "[[Fixed_Income_Relative_Value_Framework]]"
+      - "[[Slr_Lcr_Balance_Sheet_Constraints_Treasury_Market_Dealer]]"
+      - "[[Treasury_QE_Duration_Swap_RRP_Drain_Mechanisms]]"
+      - "[[Treasury_Tbill_Supply_RRP_Drain_MMF_Cash_Routing]]"
+
 # Example entry:
 # - slug: japan_ycc_exit_risk_memo
 #   title: "Japan YCC Exit Risk — Research Memo"

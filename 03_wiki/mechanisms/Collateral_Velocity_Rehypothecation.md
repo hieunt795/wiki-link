@@ -52,9 +52,19 @@ related:
 - node: '[[Triparty Repo Market Structure And Daily Cycle]]'
   relation: shared_tag:repo
 date_created: 2026-05-20
-date_updated: 2026-05-20
+date_updated: 2026-05-24
 ---
 
+
+## Scope Boundary
+
+[LLM] This node is an older overview of collateral velocity and rehypothecation.
+
+[LLM] The canonical detailed treatment of the pledged-collateral reuse-rate methodology is [[Collateral_Velocity_Reuse_Rate_Financial_Plumbing]].
+
+[LLM] The QE-specific monetary-policy transmission channel belongs to [[QE_Collateral_Velocity_Monetary_Policy_Transmission]].
+
+[LLM] The transaction-chain service that converts lower-quality collateral into HQLA belongs to [[Collateral_Transformation_Chain]].
 
 ## Core Mechanism
 

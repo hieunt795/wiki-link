@@ -31,10 +31,24 @@ source_refs:
 - path: 02_sources/deep-research/Deep Dive_ Private Credit.md
   pages: ''
   weight: primary
-related: []
+related:
+- node: '[[Bank_NBFI_Leverage_Loop]]'
+  relation: canonical_bank_liquidity_feedback_loop
+- node: '[[Private_Credit_SRT_NAV_Loans_Bank_Partnerships]]'
+  relation: broader_bank_pc_interconnection
+- node: '[[Private_Credit_Subscription_Nav_Lending_Hidden_Leverage]]'
+  relation: fund_finance_instrument_basis
 date_created: '2026-05-23'
-date_updated: '2026-05-23'
+date_updated: '2026-05-24'
 ---
 
-[LLM] Auto-generated stub from Deep Dive_ Private Credit.md. Review and expand.
+## Scope Boundary
+
+[LLM] This node is retained as a narrow routing stub for bank credit-line exposure to private-credit funds.
+
+[LLM] The canonical systemic feedback-loop mechanism is [[Bank_NBFI_Leverage_Loop]].
+
+[LLM] The broader bank-private-credit interconnection model, including SRT and originate-to-distribute, belongs to [[Private_Credit_SRT_NAV_Loans_Bank_Partnerships]].
+
+[LLM] Do not expand this file with full NAV/subscription-line mechanics; use [[Private_Credit_Subscription_Nav_Lending_Hidden_Leverage]] for that scope.
 

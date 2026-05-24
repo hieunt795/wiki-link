@@ -28,10 +28,28 @@ source_refs:
 - path: 02_sources/Clipping/I need a dollar (through your swap line).md
   pages: ''
   weight: primary
-related: []
+related:
+- node: '[[Fed_Dollar_Swap_Lines_Crisis_Hierarchy_And_Swapper_Of_Last_Resort]]'
+  relation: canonical_detailed_swap_line_mechanism
+- node: '[[Fed_Global_Jaws_FRP_FIMA_Public_Dollar_Architecture]]'
+  relation: broader_global_dollar_architecture
 date_created: '2026-05-23'
-date_updated: '2026-05-23'
+date_updated: '2026-05-24'
 ---
 
-[LLM] Auto-generated stub from I need a dollar (through your swap line).md. Review and expand.
+## Scope Boundary
+
+[LLM] This node is retained as a short routing node for the source clipping on USD swap lines.
+
+[LLM] The canonical detailed mechanism is [[Fed_Dollar_Swap_Lines_Crisis_Hierarchy_And_Swapper_Of_Last_Resort]], which covers central-bank swap mechanics, crisis hierarchy, and the "swapper of last resort" role.
+
+[LLM] The broader four-layer dollar-rate architecture, including FRP, FIMA, ON RRP, and swap lines, belongs to [[Fed_Global_Jaws_FRP_FIMA_Public_Dollar_Architecture]].
+
+## Overlap Control
+
+| Question | Use |
+|---|---|
+| How does a Fed dollar swap line work? | [[Fed_Dollar_Swap_Lines_Crisis_Hierarchy_And_Swapper_Of_Last_Resort]] |
+| How do swap lines sit inside the global dollar facility stack? | [[Fed_Global_Jaws_FRP_FIMA_Public_Dollar_Architecture]] |
+| Which source clipping introduced the swap-line topic? | This node |
 

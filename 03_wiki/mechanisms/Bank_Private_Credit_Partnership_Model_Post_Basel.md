@@ -28,10 +28,22 @@ source_refs:
 - path: 02_sources/deep-research/Private Credit, Basel, and Regional Dynamics.md
   pages: ''
   weight: primary
-related: []
+related:
+- node: '[[Private_Credit_SRT_NAV_Loans_Bank_Partnerships]]'
+  relation: canonical_bank_pc_partnership_model
+- node: '[[Basel_Iii_Capital_Requirements_Private_Credit_Migration]]'
+  relation: regulatory_driver
+- node: '[[Bank_NBFI_Leverage_Loop]]'
+  relation: leverage_feedback_channel
 date_created: '2026-05-23'
-date_updated: '2026-05-23'
+date_updated: '2026-05-24'
 ---
 
-[LLM] Auto-generated stub from Private Credit, Basel, and Regional Dynamics.md. Review and expand.
+## Scope Boundary
+
+[LLM] This node is retained as a routing stub for the post-Basel bank/private-credit partnership model.
+
+[LLM] The canonical detailed treatment is [[Private_Credit_SRT_NAV_Loans_Bank_Partnerships]], which covers SRT, originate-to-distribute, NAV loans, subscription lines, and bank-PC interconnection.
+
+[LLM] Use [[Basel_Iii_Capital_Requirements_Private_Credit_Migration]] only for the regulatory migration driver, and [[Bank_NBFI_Leverage_Loop]] for the systemic liquidity feedback channel.
 

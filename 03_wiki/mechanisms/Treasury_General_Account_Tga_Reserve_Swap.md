@@ -51,9 +51,19 @@ related:
 - node: '[[QT Reserve Drain Effectiveness And Deposit Funding Condition]]'
   relation: shared_tag:reserves
 date_created: 2026-05-20
-date_updated: 2026-05-21
+date_updated: 2026-05-24
 ---
 
+
+## Scope Boundary
+
+[LLM] This node is canonical for the core TGA-reserve accounting identity and the 1:1 Fed liability swap.
+
+[LLM] For volatility-driven reserve-buffer demand, use [[Tga_Volatility_And_Reserve_Buffer_Demand]].
+
+[LLM] For the quantitative buffer-sizing formula, use [[Ample_Reserves_Buffer_Sizing_Tga_Volatility]].
+
+[LLM] For TGA reform as a balance-sheet-reduction policy lever, use [[Tga_Reform_As_Fed_Balance_Sheet_Reduction_Tool]].
 
 ## Core Mechanism
 

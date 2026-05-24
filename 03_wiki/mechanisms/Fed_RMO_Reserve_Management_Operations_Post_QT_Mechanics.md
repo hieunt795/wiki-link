@@ -28,21 +28,18 @@ tags:
 - ample-reserves
 - pomo
 - sofr-ff
-confidence: 3
-stability: evolving
-thesis: 'Reserve Management Operations (RMOs) are the Fed''s post-QT balance sheet
-  tool: outright bill purchases that inject reserves to maintain ample liquidity —
-  NOT QE. Unlike QE (swapping reserves for long-duration Treasuries to absorb risk
-  and stimulate), RMOs simply offset the structural reserve drains that continue even
-  after QT ends: currency in circulation growth, bank asset expansion, and TGA re-accumulation.
-  The Fed ended QT2 on December 1, 2025; RMOs were expected to start Q1 2026 (~$20-30B/month),
-  totaling ~$240B in reserve injections needed by end-2027.
+confidence: 4
+stability: stable
+thesis: 'Reserve Management Operations (RMOs), formally implemented as "Reserve Management Purchases" (RMPs) in late 2025, are the Fed''s tool for maintaining an ample supply of reserves post-QT through outright purchases of short-term Treasury securities (bills). Triggered by money market stress (SOFR-IORB spreads > 30bps), RMOs are operationally distinct from Quantitative Easing (QE); while QE aims to extract duration risk for stimulus, RMOs purely offset structural reserve drains (currency growth, TGA accumulation) to ensure effective control of the policy rate. On December 10, 2025, the Fed initiated RMPs at a rate of ~$40 billion per month following a sharp spike in repo rates.
 
-  '
+'
 source_refs:
-- path: 02_sources/books/conks/Conks - Plumping note (Money market.md
-  pages: Plumbing Notes - It's Not QE; Plumbing Notes - The Post-QT Era; Plumbing Notes - A Faulty Relief Valve
+- path: 02_sources/books/duffie_bpea_payments_2026/Duffie_BPEA_Payments_Liquidity_2026.md
+  pages: "2, 10, 27"
   weight: primary
+- path: 02_sources/books/conks/Conks - Plumping note (Money market.md
+  pages: Plumbing Notes - It's Not QE; Plumbing Notes - The Post-QT Era
+  weight: supporting
 related:
 - node: '[[Quantitative_Tightening_Qt_Balance_Sheet_Runoff]]'
   relation: RMO_replaces_QT_as_balance_sheet_tool
@@ -103,48 +100,25 @@ After any debt ceiling resolution or government spending slowdown, Treasury rebu
 
 ---
 
-## Structural Reserve Drain Arithmetic
+## The 2025 Reserve Scarcity Trigger
 
-Conks' estimate as of QT end (Dec 1, 2025):
-- Reserves: ~$100B above LCLoR (still "above scarcity" but narrowing)
-- Expected RMO size: **$20-30B/month**
-- Total RMOs needed by end-2027: **~$240B**
+The transition from Quantitative Tightening (QT) to Reserve Management Operations was triggered by acute money market stress in late 2025:
 
-Driven by:
-- Secular currency demand growth (steady drain ~$10B/month structural)
-- $50-100B TGA increase toward $900B target
-- Bank balance sheet expansion as "balance sheet winter" ends post-QT
+1. **QT Halt (Oct 29, 2025):** The FOMC announced an immediate stop to balance sheet reduction after repo rates (SOFR) began consistently trading significantly above the Interest on Reserve Balances (IORB). [RAW-BOOK Duffie 2026, p.2]
+2. **Spread Spike (Oct 31, 2025):** SOFR reached **32 basis points above IORB**, signaling that reserves had reached the "Lowest Comfortable Level" (LCLoR) and were no longer ample enough to facilitate seamless settlement without rate volatility. [RAW-BOOK Duffie 2026, p.2]
+3. **RMP Initiation (Dec 10, 2025):** Fed Chair Jay Powell announced the resumption of "reserve management purchases" (RMPs) to maintain an ample supply of reserves. [RAW-BOOK Duffie 2026, p.2]
 
 ---
 
-## CMOs vs RMOs
+## RMP Operational Arithmetic (2025-2026)
 
-The Fed distinguishes between two types of post-QT reserve operations:
+The Duffie (2026) analysis details the scale of the Fed's response:
+- **Purchase Rate:** ~$40 billion per month in Treasury bills.
+- **Timeline:** Continued from December 2025 until at least May 2026.
+- **Cumulative Injection:** Aimed at restoring a buffer of ~$200-250B above the observed LCLoR to dampen rate spikes.
 
-| Type | Name | Function |
-|------|------|---------|
-| **RMOs** | Reserve Management Operations | Routine bill purchases; maintain ample reserves long-term |
-| **CMOs** | Ceiling Management Operations | Extra add-on; hold SOFR/EFFR well within target range (not just in range) |
-
-CMOs are more aggressive — used when money market rates approach the upper boundary. RMOs are the steady-state tool. [RAW-CLIP Conks A Faulty Relief Valve]
-
----
-
-## Timing and SOFR-FF Signal
-
-The market prices expected RMO start via relative SOFR-FF spreads:
-
-```
-Jan'26 SOFR-FF vs Mar'26 SOFR-FF:
-  Jan spread tightening → market betting on earlier RMOs
-  Jan spread widening   → market pricing delayed injections
-
-Dec'25/Jan'26 SOFR-FF spread:
-  Negative = market expects MORE easing in Jan than Dec (earlier injections)
-  Positive = market expects Dec tighter than Jan (delayed)
-```
-
-Key dynamic: "Fed will keep its ample reserve regime ticking over (almost) on autopilot" — not a dramatic policy shift, but routine operational maintenance. [RAW-CLIP Conks Post-QT Era]
+**A -> B -> C Causal Chain:**
+QT drains reserves → Bank settlement liquidity tightens → Banks/Dealers demand more reserves for payment timing → SOFR spikes above IORB → Fed buys bills (RMPs) → Reserves injected → Rate volatility subsides.
 
 ---
 

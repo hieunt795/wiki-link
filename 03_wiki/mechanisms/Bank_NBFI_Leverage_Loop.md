@@ -78,13 +78,21 @@ related:
 - node: '[[Private Credit Reflexive Loop]]'
   relation: shared_tag:private-credit
 date_created: '2026-05-21'
-date_updated: '2026-05-21'
+date_updated: '2026-05-24'
 ---
 
 
 ## Overview
 
 The Bank-NBFI leverage loop is the plumbing link that makes private credit simultaneously a "risk transfer" success story (from bank's perspective) and a hidden systemic fragility. [LLM] Banks transferred credit risk off their balance sheets via SRT and originate-to-distribute, then re-entered the PC ecosystem as senior secured lenders to the very funds that absorbed that credit risk.
+
+## Scope Boundary
+
+[LLM] This node is canonical for the bank/private-credit feedback loop: fund-level borrowing from regulated banks, simultaneous facility drawdowns, and bank balance-sheet tightening.
+
+[LLM] For the mechanics of subscription facilities and NAV lending as instruments, use [[Private_Credit_Subscription_Nav_Lending_Hidden_Leverage]].
+
+[LLM] For borrower-level PIK credit masking, use [[PIK_Payment_In_Kind_Credit_Masking]].
 
 **Scale (2024 data):**
 - US GSIB committed credit lines to PC vehicles: ~$95B (up 145% in 5 years)

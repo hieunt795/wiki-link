@@ -42,9 +42,16 @@ related:
 - node: '[[Bank NBFI Leverage Loop]]'
   relation: shared_tag:leverage
 date_created: '2026-05-22'
-date_updated: '2026-05-22'
+date_updated: '2026-05-24'
 ---
 
+## Scope Boundary
+
+[LLM] This node is the canonical instrument taxonomy for subscription facilities and NAV lending inside private credit funds.
+
+[LLM] It should not be used as the canonical explanation of borrower-level PIK stress masking; that belongs to [[PIK_Payment_In_Kind_Credit_Masking]].
+
+[LLM] It should also not carry the full systemic bank feedback-loop argument; that belongs to [[Bank_NBFI_Leverage_Loop]].
 
 ## Subscription Facilities
 [LLM] Fund-level indebtedness secured by unfunded LP commitments. Key feature: improves IRR optics by delaying LP capital calls, front-running deployment with borrowed money. SEC marketing-rule guidance warns that presenting performance inconsistently (with vs. without subscription facility) misleads investors on true return attribution.

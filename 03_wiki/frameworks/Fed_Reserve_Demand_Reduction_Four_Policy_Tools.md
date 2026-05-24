@@ -110,3 +110,5 @@ Abundant reserves cause banks to:
 3. Rely more on opening balances than payment inflows
 
 Each of these is hard to reverse → even if per-dollar costs are small, absolute reserve demand escalates. Supply-driven approach risks permanent reserve demand ratcheting upward. [RAW-CLIP]
+
+The four enabling tools together allow a demand-driven ample reserves framework that avoids the ratchet trap while preserving rate control. [LLM]

@@ -38,8 +38,16 @@ related:
 - node: '[[Nbfi Sovereign Market Supervisory Gap]]'
   relation: related_concept
 date_created: '2026-05-23'
-date_updated: '2026-05-23'
+date_updated: '2026-05-24'
 ---
+
+## Scope Boundary
+
+[LLM] This node is canonical for Singh-style collateral velocity, pledged-collateral measurement, and dealer-bank chain length.
+
+[LLM] [[Collateral_Velocity_Rehypothecation]] is an older overview and should not be expanded with the full measurement framework.
+
+[LLM] QE's effect on collateral velocity belongs to [[QE_Collateral_Velocity_Monetary_Policy_Transmission]], while collateral upgrade/rental chains belong to [[Collateral_Transformation_Chain]].
 
 ## What Is Pledged Collateral?
 

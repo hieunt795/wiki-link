@@ -1,8 +1,8 @@
 meta:
-  total_sources: 61
-  total_ingested: 36
-  coverage_pct: 59.0
-  last_updated: '2026-05-23'
+  total_sources: 63
+  total_ingested: 51
+  coverage_pct: 81.0
+  last_updated: '2026-05-24'
 sources:
   02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md:
     status: partial
@@ -41,6 +41,17 @@ sources:
     wiki_nodes:
     - 03_wiki/frameworks/Inflation_Targeting_Framework_Central_Bank.md
   ? 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central
+    Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-2.md
+  : status: partial
+    priority: high
+    domain: monetary_policy
+    author: Warjiyo, Juhro
+    description: Central bank evolution, government control, 1970s oil shocks, and inflation-targeting transition
+    ingest_date: '2026-05-24'
+    wiki_nodes:
+    - 03_wiki/frameworks/US_1970s_Stagflation_And_Policy_Regime_Shift.md
+    - 03_wiki/frameworks/Volcker_Fed_Reaction_Function_Break.md
+  ? 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central
     Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-3.md
   : status: partial
     priority: high
@@ -51,6 +62,17 @@ sources:
     ingest_date: '2026-05-20'
     wiki_nodes:
     - 03_wiki/frameworks/Monetary_Policy_Transmission_Mechanisms_Framework.md
+  ? 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central
+    Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-4.md
+  : status: partial
+    priority: high
+    domain: monetary_policy
+    author: Warjiyo, Juhro
+    description: Monetary policy reaction functions, Volcker-Greenspan era, and disinflation policy
+    ingest_date: '2026-05-24'
+    wiki_nodes:
+    - 03_wiki/frameworks/Volcker_Fed_Reaction_Function_Break.md
+    - 03_wiki/mechanisms/Volcker_Disinflation_Sacrifice_Ratio_Channel.md
   02_sources/books/singh_collateral_plumbing/Singh_Collateral_Financial_Plumbing.md:
     status: partial
     priority: high
@@ -129,9 +151,8 @@ sources:
     wiki_nodes:
     - 03_wiki/mechanisms/Slr_Lcr_Balance_Sheet_Constraints_Treasury_Market_Dealer.md
     - 03_wiki/concepts/Tga_Reserve_Swap_Mechanics_And_Debt_Ceiling_Dynamics.md
-    notes: '2026-05-22: Created TGA_Reserve_Swap_Mechanics_And_Debt_Ceiling_Dynamics
-      node (TGA drawdown/refill mechanics, debt ceiling extraordinary measures, MMF
-      amplification)'
+    - 03_wiki/concepts/Fedwire_Payment_System_Reserve_Demand_And_Lsm_Policy.md
+    notes: '2026-05-24: Updated TGA and Fedwire nodes with liquidity dynamics context.'
   02_sources/books/conks/Conks - Shadow Banking and Cash Markets.md:
     status: partial
     priority: high
@@ -301,13 +322,15 @@ sources:
     ingest_date: null
     wiki_nodes: []
   02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md:
-    status: pending
+    status: partial
     priority: normal
     domain: macro_outlook
     author: Lipschitz, Schadler
     description: Applied macroeconomics
-    ingest_date: null
-    wiki_nodes: []
+    ingest_date: '2026-05-24'
+    wiki_nodes:
+    - 03_wiki/synthesis/US_Macro_Constraint_Stack_Fed_Treasury_Curve_Inflation_External_Sector.md
+    notes: '2026-05-24: Added US macro synthesis node spanning Fed/Treasury plumbing, yield curve, inflation, imports, and rates.'
   02_sources/books/tata_bank_alm/Tata_Bank_ALM.md:
     status: pending
     priority: normal
@@ -391,31 +414,43 @@ sources:
     domain: monetary_policy
     author: Clip
     description: Fed balance sheet policy — Warsh perspective
-    ingest_date: '2026-05-23'
+    ingest_date: '2026-05-24'
     wiki_nodes:
     - 03_wiki/concepts/Warsh_Balance_Sheet_Stimulus_Swap.md
     - 03_wiki/concepts/Fed_Balance_Sheet_Size_And_Policy_Rate_Independence.md
+    - 03_wiki/contradictions/Warsh_Balance_Sheet_Stimulus_Swap_Vs_Structural_Demand_Neutrality.md
+    - 03_wiki/frameworks/Warsh_Fed_Balance_Sheet_Operating_Doctrine.md
+    - 03_wiki/frameworks/Fed_Balance_Sheet_Recomposition_And_Net_Expansion.md
+    - 03_wiki/mechanisms/Warsh_Reserve_Floor_And_Structural_Demand_Constraint.md
+    notes: '2026-05-24: Added contradiction, operating-doctrine, reserve-floor, and recomposition nodes separating Warsh stimulus claim from structural-demand critique.'
   02_sources/Clipping/A new Fed-Treasury Accord_.md:
     status: partial
     priority: normal
     domain: fiscal_policy
     author: Clip
     description: Fed-Treasury accord history and potential new framework
-    ingest_date: '2026-05-23'
+    ingest_date: '2026-05-24'
     wiki_nodes:
     - 03_wiki/frameworks/Fed_Treasury_Accord_2026_Proposal.md
     - 03_wiki/mechanisms/Fed_Qe_Debt_Maturity_Transformation_Fiscal_Impact.md
+    - 03_wiki/frameworks/Warsh_Maturity_Sovereignty_Framework.md
+    - 03_wiki/frameworks/Warsh_Credit_Allocation_Exit_Framework.md
+    - 03_wiki/frameworks/Fed_Balance_Sheet_Recomposition_And_Net_Expansion.md
+    notes: '2026-05-24: Added balance-sheet recomposition node separating size, duration, and sector-allocation effects.'
   02_sources/Clipping/The Checking Account of the U.S. Federal Government....md:
     status: partial
     priority: normal
     domain: fiscal_policy
     author: Clip
     description: TGA mechanics and fiscal-monetary interaction
-    ingest_date: '2026-05-23'
+    ingest_date: '2026-05-24'
     wiki_nodes:
     - 03_wiki/mechanisms/Treasury_General_Account_Tga_Reserve_Swap.md
     - 03_wiki/frameworks/Fed_Fiscal_Agent_Treasury_Relationship.md
     - 03_wiki/mechanisms/Tga_Reserve_Inverse_Relationship_Fed_Balance_Sheet_Growth.md
+    - 03_wiki/mechanisms/Tga_Volatility_And_Reserve_Buffer_Demand.md
+    - 03_wiki/frameworks/Fed_Treasury_Operational_Choice_Space.md
+    notes: '2026-05-24: Added TGA volatility buffer and Fed-Treasury choice-space nodes from the same clipping.'
   02_sources/Clipping/I need a dollar (through your swap line).md:
     status: partial
     priority: normal
@@ -445,6 +480,7 @@ sources:
     ingest_date: '2026-05-23'
     wiki_nodes:
     - 03_wiki/concepts/Central_Bank_Credibility_Supply_Shock_Policy_Space.md
+    - 03_wiki/frameworks/Stagflation_Policy_Response_Tradeoff_Framework.md
   02_sources/Clipping/April BOJ_ onhold as expected, hawkish statement but cautious Ueda; maintain July hike call.md:
     status: pending
     priority: normal
@@ -551,6 +587,8 @@ sources:
     wiki_nodes:
     - 03_wiki/mechanisms/Non_Linear_Inflation_Amplifier_Mechanics.md
     - 03_wiki/frameworks/Supply_Shock_Policy_Response_Scenario_Taxonomy.md
+    - 03_wiki/frameworks/Stagflation_Regime_Diagnostic_Framework.md
+    - 03_wiki/frameworks/Stagflation_Policy_Response_Tradeoff_Framework.md
   02_sources/Inbox/Why Is Currency a Liability of the Fed_.md:
     status: completed
     priority: normal
@@ -601,13 +639,15 @@ sources:
     ingest_date: null
     wiki_nodes: []
   02_sources/books/watts_wray_mmt_macro/Watts_Wray_Macroeconomics.md:
-    status: pending
+    status: partial
     priority: normal
     domain: macro_outlook
     author: Watts, Wray
     description: MMT macroeconomics — alternative monetary theory framework
-    ingest_date: null
-    wiki_nodes: []
+    ingest_date: '2026-05-24'
+    wiki_nodes:
+    - 03_wiki/frameworks/US_1970s_Stagflation_And_Policy_Regime_Shift.md
+    - 03_wiki/mechanisms/Volcker_Disinflation_Sacrifice_Ratio_Channel.md
   02_sources/books/weithers_fx_guide/Weithers_FX_Guide.md:
     status: pending
     priority: low
@@ -647,17 +687,12 @@ sources:
     - Imf_Sna_Real_Sector_Accounting_Gdp_Identities_And_Sectoral_Accounts
     - 03_wiki/frameworks/Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis.md
     - 03_wiki/frameworks/Imf_Monetary_Analysis_Quantity_Theory_Velocity_And_Exchange_Rate_Regimes.md
+    - 03_wiki/frameworks/Stagflation_Regime_Diagnostic_Framework.md
+    - 03_wiki/mechanisms/Cost_Push_Inflation_Persistence_Mechanism.md
+    - 03_wiki/frameworks/Stagflation_Policy_Response_Tradeoff_Framework.md
+    - 03_wiki/frameworks/US_1970s_Stagflation_And_Policy_Regime_Shift.md
     notes: '2026-05-22: Created 4 wiki nodes covering all core chapters: SNA (Ch2),
       GFS fiscal (Ch3), monetary survey Ch5, flow of funds Ch6. Confidence:4 (single
       primary IMF textbook). BoP chapter (Ch4) covered by GFS/FoF nodes. Balance of
       payments detailed coverage not separately nodeified — ingested into flow of
       funds framework.'
-02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md:
-  wiki_nodes:
-  - Imf_Sna_Real_Sector_Accounting_Gdp_Identities_And_Sectoral_Accounts
-  - Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability
-  - Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework
-  - Imf_Flow_Of_Funds_4_Sector_Consistency_Framework
-  - Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis
-  - Imf_Monetary_Analysis_Quantity_Theory_Velocity_And_Exchange_Rate_Regimes
-  status: ingested

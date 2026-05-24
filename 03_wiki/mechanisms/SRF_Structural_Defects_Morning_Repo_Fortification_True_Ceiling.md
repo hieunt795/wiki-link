@@ -71,3 +71,5 @@ Still a partial fix: stigma, balance sheet costs, and haircuts remain. [RAW-CLIP
 ## "Plumbing Overrides Macro" Signal
 
 When repo rates drift persistently outside the target range (overcoming SRF ceiling), the Fed is forced into POMOs (bill purchases = RMOs) to inject reserves. This is the signal that plumbing dynamics have overwhelmed macro considerations. Fed can also cut IORB and/or SRFR to bring rates back within band — the direction effect on SOFR-FF basis depends on context (rate spike containment vs. calm). [RAW-CLIP]
+
+Eliminating SRF stigma requires normalizing its use through routine operations, not just price or timing adjustments. [LLM]

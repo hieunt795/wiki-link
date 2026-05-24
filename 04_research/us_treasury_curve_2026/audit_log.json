@@ -1,0 +1,34 @@
+{
+  "topic_slug": "us_treasury_curve_2026",
+  "audit_iterations": [
+    {
+      "iteration": 1,
+      "date": "2026-05-24",
+      "draft": "04_research/us_treasury_curve_2026/drafts/2026-05-24_draft_v1.md",
+      "checklist_version": "audit_checklist_v1",
+      "checks": {
+        "A1": { "pass": true, "notes": "All specific numbers carry [WEB-date] or [LLM-E] inline labels" },
+        "A2": { "pass": true, "notes": "No high-confidence (>=4) wiki nodes contradicted; most wiki nodes at confidence 1-2" },
+        "A3": { "pass": true, "notes": "[WEB-2026-05-22] on yield data, [WEB-2026-05-18] on breakevens/5y5y, [WEB-2026-04-24] on ACM, [WEB-2026-05-24] on TBAC/Japan; all sources listed at bottom" },
+        "B1": { "pass": true, "notes": "T-account chains in 3.1-3.4 use → notation; IF→THEN throughout" },
+        "B2": { "pass": true, "notes": "LENS 5 synthesis table and forward path conclusion drawn from LENS 1-4 findings" },
+        "B3": { "pass": true, "notes": "Counter-arguments present: (A) Fed restart QE would compress term premium 50-100bps, (B) Japan BOJ normalization is future tailwind for UST demand, (C) Scenario A vs B for inflation persistence" },
+        "C1": { "pass": true, "notes": "Fixed: added 5.2 RV Implications section covering 4 explicit trades (2s10s steepener, 20y fly, 5y TIPS breakeven widener, long 2y carry) and false trade analysis" },
+        "C2": { "pass": true, "notes": "5 TRUE_GAPs in 5.3 table: exact intermediate yields, ACM May update, Japan demand elasticity, FY2027-28 term premium impact, r* level" },
+        "D1": { "pass": true, "notes": "No contradictions detected" },
+        "D2": { "pass": true, "notes": "No contradiction nodes required" },
+        "E1": { "pass": true, "notes": "Fixed: removed 2 extra '---' separators (between LENS 3/4 and LENS 4/5). Final count: 3 total (header open, header close, before SOURCES)" },
+        "T1": { "pass": true, "notes": "All numbers carry source labels; derived calculations marked [LLM-E]" },
+        "T2": { "pass": true, "notes": "No gaming/combat metaphors. 'Bear steepener' is standard market terminology, not combat language" },
+        "T3": { "pass": true, "notes": "IF→THEN structure throughout: LENS 1.3, 2.2, 2.3, 2.4, 3.1-3.4, 4.1, 5.2 RV trades" }
+      },
+      "blocking_fails_resolved": 2,
+      "warnings_remaining": 0,
+      "reviewer": "agent_self_audit"
+    }
+  ],
+  "final_approved": true,
+  "approved_at": "2026-05-24",
+  "approved_by": "user",
+  "note": "All checks passed. Published to 05_reports/2026-05/us_treasury_curve_2026.md"
+}

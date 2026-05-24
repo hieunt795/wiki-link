@@ -27,10 +27,22 @@ source_refs:
 - path: 02_sources/deep-research/Private Credit, Basel, and Regional Dynamics.md
   pages: ''
   weight: primary
-related: []
+related:
+- node: '[[Private_Credit_SRT_NAV_Loans_Bank_Partnerships]]'
+  relation: downstream_bank_pc_structure
+- node: '[[Bank_Private_Credit_Partnership_Model_Post_Basel]]'
+  relation: partnership_stub
+- node: '[[Bank_NBFI_Leverage_Loop]]'
+  relation: systemic_feedback_channel
 date_created: '2026-05-23'
-date_updated: '2026-05-23'
+date_updated: '2026-05-24'
 ---
 
-[LLM] Auto-generated stub from Private Credit, Basel, and Regional Dynamics.md. Review and expand.
+## Scope Boundary
+
+[LLM] This node should remain focused on the regulatory migration driver: Basel III capital and liquidity requirements pushing credit risk from banks toward private-credit/NBFI structures.
+
+[LLM] The detailed bank-private-credit partnership mechanics belong to [[Private_Credit_SRT_NAV_Loans_Bank_Partnerships]].
+
+[LLM] The fund-finance and bank liquidity feedback mechanism belongs to [[Bank_NBFI_Leverage_Loop]].
 

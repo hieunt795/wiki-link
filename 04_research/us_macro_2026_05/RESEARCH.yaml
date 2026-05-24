@@ -1,0 +1,47 @@
+topic_slug: us_macro_2026_05
+title: "US Macroeconomic Research: Inflation, Fed & UST Dynamics"
+created: 2026-05-24
+status: active
+domain_template: 06_templates/domains/monetary_policy/standard.yaml
+style_template: 06_templates/styles/research_memo.yaml
+analysis_mode: standard
+primary_question: >
+  Analyze the outlook for US inflation, Fed QT, Treasury issuance, and yield curve drivers in 2026.
+sub_questions:
+  - "What are the primary factors driving the US inflation outlook in 2026?"
+  - "How does Fed QT impact system liquidity in 2026?"
+  - "What is the US Treasury's issuance strategy in 2026?"
+  - "What are the primary drivers of the US yield curve term premium?"
+coverage_probe:
+  - query: "US inflation outlook 2026 CPI PPI factors"
+    state: INGESTED
+  - query: "Fed balance sheet QT impact on liquidity 2026"
+    state: INGESTED
+  - query: "US Treasury debt issuance strategy 2026"
+    state: INGESTED
+  - query: "drivers of US yield curve term premium 2026"
+    state: INGESTED
+sources_used:
+  wiki:
+    - "[[Quantitative_Tightening_QT_Balance_Sheet_Runoff]]"
+    - "[[Monetary_Policy_Transmission_Short_Long_Rate_Frictions]]"
+    - "[[TGA_Target_Creep_Bill_Issuance_Reserve_Neutralization]]"
+  raw:
+    - "[WEB-2026-05-24] Federal Reserve FOMC Summary of Economic Projections"
+    - "[WEB-2026-05-24] NY Fed Market Operations Reports"
+    - "[WEB-2026-05-24] US Treasury Quarterly Refunding Statement"
+    - "[WEB-2026-05-24] Fed Research: Drivers of Term Premium"
+findings:
+  - file: "findings/us_inflation_2026.md"
+    status: stable
+    confidence: 3
+  - file: "findings/fed_qt_liquidity.md"
+    status: stable
+    confidence: 4
+  - file: "findings/ust_issuance.md"
+    status: stable
+    confidence: 4
+  - file: "findings/yield_curve_drivers.md"
+    status: stable
+    confidence: 4
+gaps: []

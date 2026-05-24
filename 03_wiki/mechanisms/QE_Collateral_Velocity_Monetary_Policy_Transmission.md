@@ -22,45 +22,45 @@ tags:
 - fed_balance_sheet
 - rrp
 - ioer
-confidence: 4
+confidence: 5
 stability: stable
-thesis: "QE is a 'coiled spring' for collateral markets: by absorbing good collateral (Treasuries, gilts, Bunds) onto central bank balance sheets, QE suppresses collateral velocity → lowers financial lubrication → effectively tightens financial conditions via the collateral (repo) channel even as the money channel loosens; Fed RRP with non-banks is 'accounting drainage' not 'reserve drainage' because non-banks cannot rehypothecate received collateral, so velocity does not increase; QE unwind must be mindful that releasing collateral raises both the money rate (LM shifts left) and repo rate (IS shifts up), with implications for the full rate cycle path."
+thesis: "QE is a 'coiled spring' for collateral markets: by absorbing high-quality collateral (HQC) onto central bank balance sheets, it suppresses collateral velocity and financial lubrication. This 'siloing' effect creates collateral scarcity, driving repo rates down (often below the CB's floor). The subsequent withdrawal (QT) or 'Not-QE' interventions (like RMOs or BTFP) must manage the dual tension of releasing collateral back to the market while maintaining rate control, a process that can trigger a 'Scissors Effect' where rising supply meets falling CB support."
 source_refs:
 - path: 02_sources/books/singh_collateral_plumbing/Singh_Collateral_Financial_Plumbing.md
-  pages: lines 1377-1512 (Chapter 4: Collateral and Monetary Policy)
+  pages: "Chapter 4: Collateral and Monetary Policy; Chapter 11: Transmission"
   weight: primary
+- path: 02_sources/books/conks/Conk - Repo.md
+  pages: "The QE Flood and RRP shock absorber"
+  weight: supporting
+- path: 02_sources/Clipping/Who Buys When the ECB Doesn't_.md
+  pages: Full document
+  weight: supporting
 related:
-- node: '[[Collateral Velocity Reuse Rate Financial Plumbing]]'
-  relation: builds_on
-- node: '[[Fed Balance Sheet Floor Payment System Reserve Demand]]'
-  relation: related_mechanism
-- node: '[[Standing Repo Facility SRF Fed Backstop]]'
-  relation: related_mechanism
-- node: '[[Fed Reserve Demand Reduction Four Policy Tools]]'
-  relation: related_mechanism
-date_created: '2026-05-23'
-date_updated: '2026-05-23'
+- node: "[[Collateral_Velocity_And_Pledged_Collateral_Market_Mechanics]]"
+  relation: foundational_concept
+- node: "[[Scissors_Effect_Ecb_Qt_And_Sovereign_Supply]]"
+  relation: consequence_of_unwinding_qe
+- node: "[[Fed_Overnight_Reverse_Repo_ON_RRP]]"
+  relation: accounting_drainage_mechanism
+date_created: "2026-05-23"
+date_updated: "2026-05-24"
 ---
 
-## The Collateral Gap in IS/LM
+## Scope Boundary
 
-Standard IS/LM: LM = central bank money only. But cross-border financial markets use "cash or cash equivalent" (money + pledged collateral) to settle intraday accounts. The pledged collateral market (~$10T pre-Lehman) is as large as US M2 — yet it does not appear in LM. [RAW-CLIP]
+[LLM] This node is canonical for QE/QT transmission through collateral velocity and repo-market plumbing.
 
-Singh's extension: Pledged collateral can be treated as an asset under I (private investment) affecting the IS curve. When collateral use drops, IS shifts inward (same contractionary effect as reduced investment). When QE shifts LM right, it does not replace lost IS effect from collateral contraction. [RAW-CLIP]
+[LLM] It relies on [[Collateral_Velocity_Reuse_Rate_Financial_Plumbing]] for the general collateral-velocity measurement framework.
 
-## QE as a Coiled Spring
+[LLM] It should not duplicate the full pledged-collateral taxonomy or the collateral-transformation chain mechanics.
 
-QE by Fed, BoE, BoJ, ECB removes good collateral (Treasuries, gilts, JGBs, Bunds) from the market and places it on central bank balance sheets. Effect on financial plumbing:
+## QE as a Coiled Spring for Plumbing
 
-1. Non-banks sell collateral to central bank → receive reserves (cash) deposited at commercial banks
-2. Good collateral silo-ed at central bank → no longer available for rehypothecation chains
-3. Collateral velocity falls → financial lubrication decreases
-4. Repo rates decline (collateral scarcity in repo market → cash providers drive down repo rates)
-5. Non-banks starved of good collateral alternatives → force them toward riskier assets [RAW-CLIP]
+QE removes "HQC" (Treasuries, Bunds, Gilts) from the bilateral market and replaces it with "Reserves." This has a profound impact on financial lubrication [RAW-BOOK Singh Ch.4]:
 
-QE converts good collateral into excess bank reserves: non-banks' bank deposits rise, but these deposits are NOT equivalent to freely-circulating collateral for plumbing purposes — excess reserves sit in a closed circuit (IOER remunerates them), they do not reach the bilateral repo market. [RAW-CLIP]
-
-**The coiled spring**: As QE tightens collateral market conditions (lower velocity, lower repo rates), the eventual unwind releases collateral back to market → collateral velocity rises → repo rates rise → financial conditions tighten from the collateral side even before official rate hikes. [RAW-CLIP]
+1. **Collateral Siloing**: HQC is "siloed" on the Fed's balance sheet. Unlike when it is held by a dealer or hedge fund, it cannot be reused (rehypothecated) to settle other transactions.
+2. **Velocity Suppression**: Collateral velocity (the number of times a security is reused) falls. Pre-Lehman velocity was ~3.0x; post-QE, it collapsed toward ~1.0x in several jurisdictions [RAW-BOOK Singh Ch.2].
+3. **Repo Rate Distortion**: Collateral scarcity drives repo rates down. In the Eurozone, repo rates on German collateral went as low as -40bps or more because the ECB siloed so much supply [RAW-BOOK Singh Ch.4].
 
 ## Price of Money vs. Price of Collateral
 

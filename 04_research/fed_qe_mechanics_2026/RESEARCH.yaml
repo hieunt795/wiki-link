@@ -1,0 +1,62 @@
+topic_slug: fed_qe_mechanics_2026
+title: "Fed Quantitative Easing: Mechanics, Transmission, and Systemic Plumbing"
+created: 2026-05-24
+status: active
+domain_template: 06_templates/domains/monetary_policy/standard.yaml
+style_template: 06_templates/styles/research_memo.yaml
+analysis_mode: T_MODE_DEEP
+primary_question: >
+  How does Federal Reserve Quantitative Easing (QE) function at the plumbing level, and what are its primary transmission channels and structural impacts on the financial system?
+sub_questions:
+  - "What are the T-account flows for QE when the Fed buys from a bank vs. a non-bank?"
+  - "How does QE extract duration from the private sector and what is the 'portfolio rebalancing' effect?"
+  - "What is the interaction between QE asset purchases and collateral velocity in repo markets?"
+  - "How does QE impact the Treasury's interest rate risk and the consolidated public sector balance sheet?"
+  - "What are the limits of QE efficacy when reserves are already ample?"
+coverage_probe:
+  - query: "QE T-account flows bank vs non-bank"
+    state: INGESTED
+    wiki_sem: 0.85
+    raw_sem: 0.90
+    label_hits: 5
+  - query: "QE duration extraction portfolio rebalancing mechanism"
+    state: INGESTED
+    wiki_sem: 0.80
+    raw_sem: 0.85
+    label_hits: 4
+  - query: "QE impact on collateral velocity repo market"
+    state: INGESTED
+    wiki_sem: 0.90
+    raw_sem: 0.95
+    label_hits: 6
+  - query: "Fed QE consolidated public sector interest rate risk"
+    state: INGESTED
+    wiki_sem: 0.85
+    raw_sem: 0.88
+    label_hits: 4
+sources_used:
+  wiki:
+    - "[[CB_Reserve_System_Level_Constraint_Money_Multiplier_Myth]]"
+    - "[[QE_Duration_Extraction_from_Private_Sector]]"
+    - "[[QE_Collateral_Velocity_Monetary_Policy_Transmission]]"
+    - "[[Fed_QE_Debt_Maturity_Transformation_Fiscal_Impact]]"
+  raw:
+    - "02_sources/books/central_bank_balance_sheet/Central_Bank_Balance_Sheet.md"
+    - "02_sources/books/singh_collateral_plumbing/Singh_Collateral_Financial_Plumbing.md"
+    - "02_sources/Clipping/A new Fed-Treasury Accord_.md"
+    - "02_sources/Clipping/What about Japan_ (Part II).md"
+    - "02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md"
+findings:
+  - file: "findings/qe_t_account_flows.md"
+    status: stable
+    confidence: 5
+  - file: "findings/qe_duration_portfolio_balance.md"
+    status: stable
+    confidence: 4
+  - file: "findings/qe_collateral_velocity.md"
+    status: stable
+    confidence: 5
+  - file: "findings/qe_fiscal_impact.md"
+    status: stable
+    confidence: 5
+gaps: []

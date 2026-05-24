@@ -26,14 +26,14 @@ stability: stable
 thesis: "EM balance sheet crises follow a structurally recurring pattern: (1) rapid growth + financial opening → FX borrowing buildup by private sector; (2) implicit exchange rate guarantee (from limited FX flexibility) removes borrowers' incentive to hedge → moral hazard → large unhedged FX exposures in banking and nonbank sectors; (3) trigger event (sudden stop, risk premium spike, terms-of-trade shock) → authorities face 'fear of floating' — depreciation would bankrupt unhedged FX borrowers and collapse banks → authorities defend exchange rate at cost of reserves; (4) crisis becomes inevitable regardless of delay; the 3-sector FX balance sheet matrix (CB + banks + nonbanks, split by maturity and residency) is the analytical tool for diagnosing latent vulnerability before trigger."
 source_refs:
 - path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
-  pages: lines 3693-3814 (Chapter 6 Section 3: The Anatomy of an EM Balance Sheet Crisis)
+  pages: "lines 3693-3814 (Chapter 6 Section 3: The Anatomy of an EM Balance Sheet Crisis)"
   weight: primary
 related:
-- node: '[[IMF Balance Of Payments Framework And External Account Analysis]]'
+- node: '[[IMF_Balance_Of_Payments_Framework_And_External_Account_Analysis]]'
   relation: companion
-- node: '[[Financial Procyclicality Financial Accelerator And Macroprudential Instruments]]'
+- node: '[[Financial_Procyclicality_Accelerator_Macroprudential_Instruments]]'
   relation: related_concept
-- node: '[[EM Central Bank Policy Mix FIT Framework]]'
+- node: '[[EM_Central_Bank_Policy_Mix_FIT_Framework]]'
   relation: related_mechanism
 date_created: '2026-05-23'
 date_updated: '2026-05-23'

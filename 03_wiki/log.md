@@ -4,6 +4,49 @@ Chronological record of all ingest, update, promotion, and audit operations.
 
 ---
 
+## 2026-05-24
+
+- **2026-05-24**: INGEST: Created mechanism node `TGA Volatility And Reserve Buffer Demand` from The Checking Account of the U.S. Federal Government....md
+- **2026-05-24**: INGEST: Created framework node `Fed Treasury Operational Choice Space` from The Checking Account of the U.S. Federal Government....md
+- **2026-05-24**: INGEST: Created contradiction node `Warsh Balance Sheet Stimulus Swap Vs Structural Demand Neutrality` from Warsh and the Fed's Balance Sheet.md
+- **2026-05-24**: INGEST: Created synthesis node `US Macro Constraint Stack Fed Treasury Curve Inflation External Sector` from Lipschitz_Schadler_Macroeconomics.md
+- **2026-05-24**: INGEST: Created framework node `Warsh Fed Balance Sheet Operating Doctrine` from Warsh and the Fed's Balance Sheet.md
+- **2026-05-24**: INGEST: Created framework node `Warsh Maturity Sovereignty Framework` from A new Fed-Treasury Accord_.md
+- **2026-05-24**: INGEST: Created framework node `Warsh Credit Allocation Exit Framework` from A new Fed-Treasury Accord_.md
+- **2026-05-24**: INGEST: Created mechanism node `Warsh Reserve Floor And Structural Demand Constraint` from Warsh and the Fed's Balance Sheet.md
+
+- **WIKI EXPANSION**: 10 Core Federal Reserve Nodes Upgraded
+  - Topic: Federal Reserve Operational Framework, Liquidity Facilities, and Balance Sheet Mechanics
+  - Nodes expanded: `Fed_Ample_Reserves_Rate_Control_Framework`, `Fed_Balance_Sheet_Size_And_Policy_Rate_Independence`, `Fed_Overnight_Reverse_Repo_ON_RRP`, `Fedwire_Payment_System_Reserve_Demand_And_Lsm_Policy`, `Standing_Repo_Facility_SRF_Fed_Backstop`, `Tga_Reserve_Swap_Mechanics_And_Debt_Ceiling_Dynamics`, `Fed_Fiscal_Agent_Treasury_Relationship`, `Fed_Dollar_Swap_Lines_Crisis_Hierarchy_and_Swapper_of_Last_Resort`, `Fed_RMO_Reserve_Management_Operations_Post_QT_Mechanics`, `Fed_Global_Jaws_FRP_FIMA_Public_Dollar_Architecture`.
+  - Quality: All nodes promoted to Confidence 4; mechanistic depth added with A->B->C causal chains and verified source citations (Duffie 2026, Conks, ECB/Fed Primer).
+  - Status: Metadata synchronized across `index.md`, `log.md`, and `_source_registry.yaml`.
+
+- **REPORT PUBLISHED**: `05_reports/2026-05/us_treasury_curve_2026.md`
+  - Topic: US Treasury Yield Curve 2026 — Bear Steepener, Term Premium Regime, RV Implications
+  - Mode: T_MODE_DEEP → Research Memo style
+  - Source basis: 7 wiki nodes + 7 fresh web fetches (Treasury H.15, FRED TIPS/5y5y, NY Fed ACM, TBAC May 2026, Japan WolfStreet, Ferrante Capital)
+  - Audit: 2 blocking fails resolved (C1: RV section added; E1: `---` count reduced to 3); 0 warnings
+  - Key findings: 2y=4.13%, 10y=4.56%, 30y=5.07%; ACM term premium 0.68% (Apr); 10y breakeven 2.48%; 5y5y 2.29%; bear steepener driven by fiscal supply ($1.9T deficit) + Fed duration withdrawal + Japan selling ($29.6B Q1); 4 RV trade ideas
+  - Connected to: `04_research/fed_framework_2026/` and `05_reports/2026-05/fed_operating_framework_2026.md`
+
+- **RESEARCH WORKSPACE**: `04_research/us_treasury_curve_2026/` created
+  - 3 findings files, 1 T_MODE_DEEP draft, 1 approved audit_log.json, 1 data snapshot
+  - 5 TRUE_GAPs logged: intermediate yields, ACM May update, Japan demand elasticity, FY2027-28 supply impact, r* level
+
+- **REPORT PUBLISHED**: `05_reports/2026-05/fed_operating_framework_2026.md`
+  - Topic: Fed Operating Framework 2026 — Rate Path, QT Halt, Balance Sheet, Reserve Adequacy
+  - Mode: T_MODE_DEEP → Research Memo style
+  - Source basis: 8 wiki nodes + Duffie BPEA 2026 + 5 fresh web fetches (Fed H.4.1, FOMC Minutes, SEP)
+  - Audit: 3 blocking fails resolved; B3 counter-argument added (FHLB/FBO segmentation); T3 warning accepted
+  - Key findings: QT halted Dec 2025 ($2.2T total); RMPs $10B/month; reserves $3.13T near LCLoR floor; rate hold 3.5–3.75% on tariff-driven inflation
+
+- **RESEARCH WORKSPACE**: `04_research/fed_framework_2026/` created
+  - 3 findings files, 1 T_MODE_DEEP draft, 1 approved audit_log.json
+  - 3 TRUE_GAPs logged: SRF usage data, reserve demand elasticity update, Fedwire payment delay index
+  - 1 PENDING gap: May 2026 FOMC decision
+
+---
+
 ## 2026-05-20
 
 - **INIT**: Wiki structure created. Directories established. Schema files written.
@@ -134,3 +177,11 @@ Chronological record of all ingest, update, promotion, and audit operations.
 - **2026-05-23**: INGEST: Created mechanism node `Bank Credit Line Private Credit Funds Systemic Channel` from Deep Dive_ Private Credit.md
 - **2026-05-23**: INGEST: Created concept node `Insurance Pension Private Credit Structural Investor Role` from Deep Dive_ Private Credit.md
 - **2026-05-23**: INGEST: Created mechanism node `Private Credit Systemic Stress Transmission Mechanism` from Deep Dive_ Private Credit.md
+- **2026-05-24**: MAINTENANCE: Expanded 5 thin nodes with verified source data: Money Multiplier Myth, CB Credibility, NBFI Supervisory Gap, Scissors Effect, and Sovereign Basis Trade. (System audit complete, 127 thin nodes remaining)
+- **2026-05-24**: INGEST: Created framework node `Fed Balance Sheet Recomposition and Net Expansion` from A new Fed-Treasury Accord_.md and Warsh and the Fed's Balance Sheet.md
+- **2026-05-24**: INGEST: Created framework node `Stagflation Regime Diagnostic Framework` from Macroeconomic Accounting and Analysis IMF.md and Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
+- **2026-05-24**: INGEST: Created mechanism node `Cost Push Inflation Persistence Mechanism` from Macroeconomic Accounting and Analysis IMF.md
+- **2026-05-24**: INGEST: Created framework node `Stagflation Policy Response Tradeoff Framework` from Macroeconomic Accounting and Analysis IMF.md, Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md, and Fed, ECB, and BoJ_ A Matter of Credibility.md
+- **2026-05-24**: INGEST: Created framework node `US 1970s Stagflation And Policy Regime Shift` from Watts_Wray_Macroeconomics.md, Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-2.md, and Macroeconomic Accounting and Analysis IMF.md
+- **2026-05-24**: INGEST: Created framework node `Volcker Fed Reaction Function Break` from Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-4.md
+- **2026-05-24**: INGEST: Created mechanism node `Volcker Disinflation Sacrifice Ratio Channel` from Watts_Wray_Macroeconomics.md and Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-4.md

@@ -63,3 +63,5 @@ The near-demise of the Fed Funds market means:
 - EFFR is no longer a meaningful interbank lending rate — it primarily reflects this thin FHLB-foreign bank arbitrage
 - Fed now sets policy via IORB (the risk-free rate for reserves), not by targeting EFFR through open market operations
 - Volume: ~$100B/day Fed Funds vs. ~$1.1T/day SOFR — SOFR has become the operational monetary standard [RAW-CLIP]
+
+The Fed's continued formal targeting of EFFR reflects legacy convention; the operational transmission runs through IORB, SOFR, and the bilateral repo market. [LLM]

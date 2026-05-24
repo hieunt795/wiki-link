@@ -1,0 +1,130 @@
+# RESEARCH.yaml — US Treasury Yield Curve 2026
+topic_slug: us_treasury_curve_2026
+title: "US Treasury Yield Curve 2026 — Shape, Drivers, Term Premium, and RV Implications"
+created: 2026-05-24
+last_updated: 2026-05-24
+status: active
+owner: user
+
+domain_template: 06_templates/domains/monetary_policy/policy_stance_analysis.yaml
+style_template: 06_templates/styles/research_memo.yaml
+analysis_mode: T_MODE_DEEP
+
+primary_question: >
+  What is driving the shape and level of the US Treasury yield curve in May 2026 —
+  specifically: why is the long end elevated, what is the term premium decomposition,
+  and what does the curve signal about inflation expectations, fiscal sustainability,
+  and Fed policy path?
+
+sub_questions:
+  - "sq1: What does the full Treasury yield curve look like as of May 2026, and how does it compare to prior regimes?"
+  - "sq2: How do we decompose the 10y nominal yield into: expected policy rate path, real rate (r*), inflation expectations (breakeven), and term premium (ACM)?"
+  - "sq3: What structural forces are driving the long-end term premium — fiscal supply, Fed duration withdrawal, foreign demand, or inflation uncertainty?"
+  - "sq4: What does the 5y5y forward inflation rate and TIPS breakeven structure imply about tariff inflation expectations?"
+  - "sq5: How does Japan's Treasury selling and JGB yield normalization affect the US long end?"
+  - "sq6: What are the RV implications — which points on the curve are rich/cheap, and what trades does the structure suggest?"
+
+coverage_probe:
+  last_run: 2026-05-24
+  queries:
+    - query: "US Treasury yield curve term premium slope 2026"
+      state: TRUE_GAP
+      wiki_hits: 0
+      raw_hits: 0
+      action: webfetch_fresh_data
+    - query: "Treasury market dealer intermediation capacity"
+      state: INGESTED
+      wiki_nodes:
+        - "[[Treasury_Market_Dealer_Intermediation_Capacity]]"
+      action: search_pipeline(wiki_only=True)
+    - query: "TIPS breakeven inflation expectations monetary policy transmission"
+      state: INGESTED
+      wiki_nodes:
+        - "[[Monetary_Policy_Transmission_Short_Long_Rate_Frictions]]"
+      action: search_pipeline(wiki_only=True)
+    - query: "swap spreads SLR LCR dealer balance sheet Treasury plumbing"
+      state: INGESTED
+      wiki_nodes:
+        - "[[Swap_Spreads_Balance_Sheet_Plumbing_Frictions]]"
+        - "[[Slr_Lcr_Balance_Sheet_Constraints_Treasury_Market_Dealer]]"
+      action: search_pipeline(wiki_only=True)
+    - query: "Treasury issuance fiscal deficit supply premium long-end"
+      state: TRUE_GAP
+      wiki_hits: 0
+      raw_hits: 0
+      action: webfetch_fresh_data
+
+sources_used:
+  wiki:
+    - "[[Treasury_Market_Dealer_Intermediation_Capacity]]"
+    - "[[Monetary_Policy_Transmission_Short_Long_Rate_Frictions]]"
+    - "[[Swap_Spreads_Balance_Sheet_Plumbing_Frictions]]"
+    - "[[Fixed_Income_Relative_Value_Framework]]"
+    - "[[Treasury_Tbill_Supply_RRP_Drain_MMF_Cash_Routing]]"
+    - "[[Treasury_QE_Duration_Swap_RRP_Drain_Mechanisms]]"
+    - "[[Slr_Lcr_Balance_Sheet_Constraints_Treasury_Market_Dealer]]"
+    - "[[Fed_Ample_Reserves_Range_Floor_Framework]]"
+    - "[[Quantitative_Tightening_Qt_Balance_Sheet_Runoff]]"
+  raw: []
+  fresh_data:
+    - url: "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/"
+      fetched: 2026-05-24
+      content_saved: "04_research/us_treasury_curve_2026/data/2026-05-22_yield_snapshot.md"
+    - url: "https://www.newyorkfed.org/research/data_indicators/term-premia-tabs"
+      fetched: 2026-05-24
+      notes: "ACM 10y term premium: 0.68% as of 2026-04-24"
+    - url: "https://fred.stlouisfed.org/series/T10YIE"
+      fetched: 2026-05-24
+      notes: "10y TIPS breakeven: 2.48% as of 2026-05-18"
+    - url: "https://fred.stlouisfed.org/series/T5YIFR"
+      fetched: 2026-05-24
+      notes: "5y5y forward inflation: 2.29% as of 2026-05-18"
+    - url: "https://wolfstreet.com/2026/04/15/the-largest-foreign-holders-of-us-treasury-securities-and-the-basis-trade-april-2026-update/"
+      fetched: 2026-05-24
+      notes: "Japan sold $29.6B UST in Q1 2026; JGB 10y ~2.3%"
+    - url: "https://home.treasury.gov/news/press-releases/sb0491"
+      fetched: 2026-05-24
+      notes: "TBAC May 2026: $125B refunding, $1.9T CBO deficit FY2026, $1.3T projected shortfall FY2027-28"
+    - url: "https://ferrantecapitaladvisers.com/insights/treasury-term-premium-regime-2026/"
+      fetched: 2026-05-24
+      notes: "Term premium regime shift: supply, demand deterioration, fiscal uncertainty"
+
+findings:
+  - file: "findings/yield_curve_current_structure.md"
+    status: draft
+    promoted_to: null
+    confidence: 2
+    review_needed: false
+  - file: "findings/term_premium_decomposition.md"
+    status: draft
+    promoted_to: null
+    confidence: 2
+    review_needed: false
+  - file: "findings/yield_curve_drivers.md"
+    status: draft
+    promoted_to: null
+    confidence: 2
+    review_needed: false
+
+gaps:
+  - query: "exact 5y, 7y, 20y Treasury yields May 22 2026"
+    type: TRUE_GAP
+    logged: 2026-05-24
+    action_required: fetch_source
+    source_candidates:
+      - "US Treasury daily yield curve data (home.treasury.gov)"
+      - "FRED DGS5, DGS7, DGS20 series"
+    status: open
+    note: "2y=4.13%, 10y=4.56%, 30y=5.07% confirmed. Intermediate points estimated [LLM-E]."
+  - query: "ACM term premium May 2026 (most recent data is April 24)"
+    type: TRUE_GAP
+    logged: 2026-05-24
+    action_required: fetch_source
+    source_candidates:
+      - "NY Fed term premia daily data (newyorkfed.org)"
+    status: open
+    note: "Most recent confirmed: 0.68% on 2026-04-24. Likely higher now given 30y at 5.07%."
+
+contradictions: []
+promotion_candidates: []
+audit_log: "04_research/us_treasury_curve_2026/audit_log.json"

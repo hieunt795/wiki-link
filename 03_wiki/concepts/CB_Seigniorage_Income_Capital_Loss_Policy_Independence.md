@@ -28,7 +28,7 @@ source_refs:
   pages: lines 579-651 (Section 5 and Conclusion)
   weight: primary
 related:
-- node: '[[CB Reserve Requirements Taxonomy Surplus Shortage Liquidity Framework]]'
+- node: '[[CB_Reserve_Requirements_Taxonomy_Surplus_Shortage_Liquidity]]'
   relation: companion
 - node: '[[Central Bank Credibility Supply Shock Policy Space]]'
   relation: related_concept

@@ -1,0 +1,144 @@
+# RESEARCH.yaml — Research Session Template
+# Copy this file to 04_research/{topic_slug}/ and fill in the fields.
+# This file is the central state document for a research session.
+
+# ── SESSION IDENTITY ──────────────────────────────────────────────────────────
+topic_slug: fed_framework_2026
+title: "Fed Operating Framework 2026 — Rate Path, QT, Balance Sheet, RRP Drain"
+created: 2026-05-24
+last_updated: 2026-05-24
+status: active                             # active | paused | complete | archived
+owner: user
+
+# ── TEMPLATE SELECTION ────────────────────────────────────────────────────────
+domain_template: "06_templates/domains/monetary_policy/balance_sheet_operations.yaml"
+style_template: null
+analysis_mode: T_MODE_DEEP
+
+# ── RESEARCH QUESTIONS ────────────────────────────────────────────────────────
+primary_question: >
+  What is the Fed's complete operating framework in 2026 — covering the interest rate path,
+  QT trajectory, balance sheet composition, ON RRP drain, and reserve adequacy — and how do
+  these elements interact to define the current monetary policy stance?
+
+sub_questions:
+  - "sq1: What is the current FOMC rate path and dot plot projections for 2026?"
+  - "sq2: Where is QT in 2026 — pace, composition (Treasuries vs MBS), and estimated end date?"
+  - "sq3: What is the status of the ON RRP facility — current balances, drain trajectory, policy implications?"
+  - "sq4: Are reserves still ample in 2026 — signals: SOFR-IORB, EFFR-IORB, repo spikes?"
+  - "sq5: What is the Fed's balance sheet composition and size target for end of normalization?"
+  - "sq6: How does Treasury issuance (TGA, bill/coupon mix) interact with reserve supply in 2026?"
+  - "sq7: What tools does the Fed have if reserve scarcity materializes (SRF, TOMOs, IORB tiering)?"
+
+# ── COVERAGE PROBE RESULTS ────────────────────────────────────────────────────
+coverage_probe:
+  last_run: 2026-05-24
+  queries:
+    - query: "FOMC rate path dot plot 2026"
+      state: TRUE_GAP
+      action_taken: web_fetch
+    - query: "quantitative tightening QT balance sheet runoff 2026"
+      state: TRUE_GAP
+      action_taken: web_fetch
+    - query: "ON RRP overnight reverse repo balances 2026"
+      state: TRUE_GAP
+      action_taken: web_fetch
+    - query: "reserve adequacy SOFR IORB EFFR spread 2026"
+      state: TRUE_GAP
+      action_taken: web_fetch
+    - query: "Fed balance sheet composition Treasuries MBS 2026"
+      state: TRUE_GAP
+      action_taken: web_fetch
+    - query: "SRF standing repo facility TOMOs reserve scarcity tools"
+      state: TRUE_GAP
+      action_taken: wiki_search
+  note: "All 2026 current-data queries TRUE_GAP in wiki (expected). Structural mechanics INGESTED in wiki. Fresh data fetched via WebFetch."
+
+# ── SOURCE INVENTORY ──────────────────────────────────────────────────────────
+sources_used:
+  wiki:
+    - "[[Fed_Ample_Reserves_Range_Floor_Framework]]"
+    - "[[Quantitative_Tightening_Qt_Balance_Sheet_Runoff]]"
+    - "[[Fed_Overnight_Reverse_Repo_On_Rrp]]"
+    - "[[Reserve_Floor_Payment_System_Demand]]"
+    - "[[Fed_QT_2022_Balance_Sheet_Runoff_Policy]]"
+    - "[[Fed_Treasury_Accord_2026_Proposal]]"
+    - "[[Ample_Reserves_Buffer_Sizing_Tga_Volatility]]"
+  raw:
+    - "02_sources/books/duffie_bpea_payments_2026/Duffie_BPEA_Payments_Liquidity_2026.md"
+    - "02_sources/books/conks/Conks - Fed's Policies and Facilities.md"
+  fresh_data:
+    - url: "https://www.federalreserve.gov/releases/h41/current/"
+      fetched: 2026-05-24
+    - url: "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260318.htm"
+      fetched: 2026-05-24
+    - url: "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm"
+      fetched: 2026-05-24
+    - url: "https://tellerwindow.newyorkfed.org/2026/03/31/the-implementation-of-reserve-management-purchases-to-maintain-ample-reserves/"
+      fetched: 2026-05-24
+  #   content_saved: "04_research/{topic}/data/filename.md"
+
+# ── FINDINGS REGISTRY ─────────────────────────────────────────────────────────
+findings:
+  - file: "findings/fed_rate_path_fomc_2026.md"
+    status: stable
+    confidence: 2
+    sub_question: sq1
+    review_needed: false
+  - file: "findings/fed_qt_halt_rmp_balance_sheet_2026.md"
+    status: stable
+    confidence: 2
+    sub_question: "sq2, sq5"
+    review_needed: false
+  - file: "findings/fed_on_rrp_reserve_adequacy_2026.md"
+    status: stable
+    confidence: 2
+    sub_question: "sq3, sq4, sq6"
+    review_needed: false
+
+# ── GAP LOG ───────────────────────────────────────────────────────────────────
+gaps:
+  - query: "SRF daily usage data 2026"
+    type: TRUE_GAP
+    logged: 2026-05-24
+    action_required: fetch_source
+    source_candidates:
+      - "NY Fed TOMO/SRF daily operation data"
+      - "FOMC Minutes discussing SRF usage patterns"
+    status: open
+  - query: "Reserve demand elasticity to EFFR 2025-2026 update"
+    type: TRUE_GAP
+    logged: 2026-05-24
+    action_required: fetch_source
+    source_candidates:
+      - "Logan-Schulhofer-Wohl 2025 paper (updated)"
+    status: open
+  - query: "May 2026 FOMC decision and statement"
+    type: PENDING
+    logged: 2026-05-24
+    action_required: check_after_fomc_meeting
+    status: open
+
+# ── CONTRADICTIONS DETECTED ───────────────────────────────────────────────────
+contradictions: []
+# Example entry:
+# - id: "contra_topic_001"
+#   claim_a: "..."
+#   source_a: "02_sources/..."
+#   claim_b: "..."
+#   source_b: "..."
+#   contradiction_node_created: false
+#   status: open
+
+# ── PROMOTION CHECKLIST ───────────────────────────────────────────────────────
+promotion_candidates: []
+# Example entry:
+# - finding: "findings/concept.md"
+#   ready: false
+#   target_type: mechanism
+#   target_slug: concept_mechanism
+#   blocking_issues:
+#     - "confidence too low (1) — needs source verification"
+
+# ── AUDIT LOG REFERENCE ───────────────────────────────────────────────────────
+audit_log: "04_research/{topic_slug}/audit_log.json"

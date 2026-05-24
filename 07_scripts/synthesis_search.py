@@ -137,17 +137,18 @@ def _log_gap(query: str, topic: str, wiki_sem: float, raw_sem: float):
 
 
 def _print_gap_message(query: str):
-    print(f"""
-[TRUE_GAP] "{query}"
-  → No relevant sources found in wiki or raw corpus.
-  → Gap logged to .cache/gap_queue.jsonl
-  → Add this to RESEARCH.yaml gaps[] with type: TRUE_GAP
-  → Suggested source types:
-      Monetary:  BIS WP, Fed FEDS notes, ECB WP, IMF WP
-      Basel:     BCBS consultative papers, BIS Quarterly Review, FSB reports
-      Markets:   ISDA, SIFMA, Federal Reserve FEDS notes, NY Fed SR
-      Macro:     IMF WEO, BIS Annual Report, NBER working papers
-""".strip())
+    msg = (
+        f'[TRUE_GAP] "{query}"\n'
+        "  -> No relevant sources found in wiki or raw corpus.\n"
+        "  -> Gap logged to .cache/gap_queue.jsonl\n"
+        "  -> Add this to RESEARCH.yaml gaps[] with type: TRUE_GAP\n"
+        "  -> Suggested source types:\n"
+        "      Monetary:  BIS WP, Fed FEDS notes, ECB WP, IMF WP\n"
+        "      Basel:     BCBS consultative papers, BIS Quarterly Review, FSB reports\n"
+        "      Markets:   ISDA, SIFMA, Federal Reserve FEDS notes, NY Fed SR\n"
+        "      Macro:     IMF WEO, BIS Annual Report, NBER working papers"
+    )
+    print(msg.encode("ascii", errors="replace").decode("ascii"))
 
 
 def get_gap_queue() -> list[dict]:

@@ -78,4 +78,4 @@ Each segment has its own benchmark rate:
 
 **However:** cross-segment transmission is structurally blocked — changes in DR007 do not cleanly translate to LPR changes or Treasury yield movements. [RAW-CLIP — Yi Gang, 2021]
 
-This segmentation is the structural constraint driving continued reform pressure toward a more integrated price-based framework.
+This segmentation is the structural constraint driving continued reform pressure toward a more integrated price-based framework. [LLM]

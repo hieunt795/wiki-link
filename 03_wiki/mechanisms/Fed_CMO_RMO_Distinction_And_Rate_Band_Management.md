@@ -54,3 +54,5 @@ CMOs typically precede RMOs in a tightening-to-normalization cycle:
 4. Rate band pressure dissipates
 
 [RAW-CLIP — Conks Plumbing Notes: Swifter Injections, A Faulty Relief Valve]
+
+The CMO-to-RMO transition marks the shift from reactive rate management to proactive reserve supply restoration. [LLM]

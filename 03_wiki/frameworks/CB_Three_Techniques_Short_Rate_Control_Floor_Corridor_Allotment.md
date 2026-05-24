@@ -27,7 +27,7 @@ stability: stable
 thesis: "Bindseil (2014) identifies three fundamental techniques for a central bank to control the short-term interbank overnight rate: (1) one-directional standing facility (floor or ceiling system — banks systematically use one facility, which anchors market rates); (2) symmetric corridor with OMO volume set by CB (two-sided standing facilities equidistant from target, with market rate floating to target if net reserves balanced); (3) full allotment OMO within corridor (banks choose quantity demanded at a fixed rate, which anchors the market rate). These are the only three logically distinct approaches; all real-world implementations are combinations or variants. The 'separation principle' — that macroeconomic rate-setting and day-to-day implementation are fully separable — breaks down in crisis."
 source_refs:
 - path: 02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md
-  pages: lines 922-1270 (Chapters 4 and 6: Three Techniques + Corridor Width)
+  pages: "lines 922-1270 (Chapters 4 and 6: Three Techniques + Corridor Width)"
   weight: primary
 related:
 - node: '[[Fed Balance Sheet Floor Payment System Reserve Demand]]'

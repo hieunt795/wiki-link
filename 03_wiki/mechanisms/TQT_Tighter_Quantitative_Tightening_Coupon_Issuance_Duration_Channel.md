@@ -68,3 +68,5 @@ Treasury Secretary Yellen announced large increases in coupon issuance (Q3 2023:
 | **TQT** | **Treasury** | **Issue coupon bonds (duration)** | **Stronger tightening** |
 | Treasury QE | Treasury | Buy back bonds, inject reserves/RRP drain | Easing |
 | Not-QE (BTFP etc.) | Fed | Repo/liquidity facilities | Stealth easing |
+
+The Treasury's capacity for TQT means financial conditions depend on issuance maturity strategy, creating an implicit coordination constraint between the Fed's QT pace and Treasury's duration decisions. [LLM]

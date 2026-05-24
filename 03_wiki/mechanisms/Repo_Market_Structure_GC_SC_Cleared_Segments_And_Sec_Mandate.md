@@ -61,9 +61,15 @@ related:
 - node: '[[LCLoR_Lowest_Comfortable_Level_Of_Reserves_And_QT_Calibration]]'
   relation: repo_rate_spikes_signal_reserve_scarcity
 date_created: '2026-05-23'
-date_updated: '2026-05-23'
+date_updated: '2026-05-24'
 ---
 
+
+## Scope Boundary
+
+[LLM] This node is the canonical detailed taxonomy for U.S. repo segments across GC/SC purpose and cleared/uncleared structure.
+
+[LLM] [[Repo_Market_Mechanics_Triparty_Bilateral]] should be used as the broad primer, while [[Repo_Market_Clearing_Segments_FICC_Triparty_GCF_DVP_NCCBR]] should be used only as the compact rate/clearing lookup.
 
 ## The Two Dimensions of Repo Structure
 

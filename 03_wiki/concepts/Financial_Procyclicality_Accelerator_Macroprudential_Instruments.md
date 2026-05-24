@@ -26,14 +26,14 @@ stability: stable
 thesis: "Financial procyclicality is the dynamic interaction where the financial cycle amplifies the economic cycle: during booms, rising asset prices boost collateral values → more credit → higher asset prices → more leverage → bigger crash; three mechanisms drive this — the financial accelerator (net worth/external finance premium), collateral constraints (Kiyotaki-Moore), and risk-taking cycles; macroprudential instruments (LTV, CCyB, sectoral capital requirements) exist to dampen these self-reinforcing loops by imposing countercyclical buffers."
 source_refs:
 - path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
-  pages: lines 400-700 (Chapter 14: Macroprudential Policy)
+  pages: "lines 400-700 (Chapter 14: Macroprudential Policy)"
   weight: primary
 related:
-- node: '[[EM Central Bank Policy Mix FIT Framework]]'
+- node: '[[EM_Central_Bank_Policy_Mix_FIT_Framework]]'
   relation: companion
-- node: '[[Uncleared Bilateral Repo UBR Hedge Fund Leverage Systemic Risk]]'
+- node: '[[Uncleared_Bilateral_Repo_UBR_Hedge_Fund_Leverage_Systemic_Risk]]'
   relation: related_mechanism
-- node: '[[Nbfi Sovereign Market Supervisory Gap]]'
+- node: '[[Nbfi_Sovereign_Market_Supervisory_Gap]]'
   relation: related_concept
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
@@ -59,7 +59,7 @@ During expansions: corporate net worth rises (higher profits + asset prices) →
 
 During contractions: net worth falls → premium spikes → credit contracts → GDP falls → worse net worth → [doom loop]. [RAW-CLIP]
 
-**Policy implication**: Macroprudential capital requirements must tighten when corporate net worth is artificially elevated (bubble), not just when credit risk appears elevated in bank stress tests.
+**Policy implication**: Macroprudential capital requirements must tighten when corporate net worth is artificially elevated (bubble), not just when credit risk appears elevated in bank stress tests. [LLM]
 
 ## Mechanism 2 — Collateral Constraints (Kiyotaki-Moore 1997)
 

@@ -37,9 +37,17 @@ related:
   relation: extends
 - node: '[[SRF Structural Defects Morning Repo Fortification True Ceiling]]'
   relation: related_mechanism
+- node: '[[Repo_Market_Structure_GC_SC_Cleared_Segments_And_Sec_Mandate]]'
+  relation: canonical_detailed_taxonomy
 date_created: '2026-05-23'
-date_updated: '2026-05-23'
+date_updated: '2026-05-24'
 ---
+
+## Scope Boundary
+
+[LLM] This node is a compact clearing-and-rate reference for the four repo segments.
+
+[LLM] It overlaps by design with [[Repo_Market_Structure_GC_SC_Cleared_Segments_And_Sec_Mandate]], which should be treated as the canonical detailed taxonomy, especially for GC/SC purpose, FICC access, SOFR effects, and SEC mandate implications.
 
 ## Repo Market Clearing Taxonomy
 

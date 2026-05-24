@@ -28,10 +28,22 @@ source_refs:
 - path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
   pages: ''
   weight: primary
-related: []
+related:
+- node: '[[Treasury_General_Account_Tga_Reserve_Swap]]'
+  relation: canonical_accounting_node
+- node: '[[Tga_Volatility_And_Reserve_Buffer_Demand]]'
+  relation: volatility_extension
 date_created: '2026-05-23'
-date_updated: '2026-05-23'
+date_updated: '2026-05-24'
 ---
 
-[LLM] Auto-generated stub from The Checking Account of the U.S. Federal Government....md. Review and expand.
+## Scope Boundary
+
+[LLM] This node is a duplicate routing stub for the TGA-reserve inverse relationship.
+
+[LLM] The canonical accounting node is [[Treasury_General_Account_Tga_Reserve_Swap]].
+
+[LLM] The canonical volatility and reserve-buffer extension is [[Tga_Volatility_And_Reserve_Buffer_Demand]].
+
+[LLM] Do not expand this file separately unless a later source distinguishes persistent TGA level effects from the broader TGA reserve-swap mechanism.
 

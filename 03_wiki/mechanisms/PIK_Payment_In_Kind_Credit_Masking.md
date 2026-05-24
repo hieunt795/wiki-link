@@ -65,13 +65,19 @@ related:
 - node: '[[Private Credit Reflexive Loop]]'
   relation: shared_tag:private-credit
 date_created: '2026-05-21'
-date_updated: '2026-05-21'
+date_updated: '2026-05-24'
 ---
 
 
 ## Overview
 
 PIK is structurally different from cash-pay default — it does not trigger covenant breaches, does not appear in non-accrual statistics, and does not force fund managers to mark down positions. [LLM] FSOC (2024) explicitly identifies PIK as a mechanism that "can mask underlying credit problems and delay recognition of losses."
+
+## Scope Boundary
+
+[LLM] This node is the canonical mechanism for borrower-level PIK accrual and credit-stress masking.
+
+[LLM] It should not be used as the canonical explanation of fund-level subscription facilities, NAV lending, or bank credit-line exposure; those belong to [[Private_Credit_Subscription_Nav_Lending_Hidden_Leverage]] and [[Bank_NBFI_Leverage_Loop]].
 
 ## Mechanism / How It Works
 
