@@ -159,20 +159,20 @@
     "domain": "monetary_policy"
   },
   {
-    "node_id": "scissors_effect_ecb_qt_and_sovereign_supply_001",
+    "node_id": "scissors_effect_ecb_qt_sovereign_supply_001",
     "stem": "Scissors_Effect_Ecb_Qt_And_Sovereign_Supply",
-    "label": "Scissors Effect ECB QT and Sovereign Supply",
+    "label": "Scissors Effect ECB QT And Sovereign Supply",
     "source": "wiki",
     "source_file": "03_wiki/mechanisms/Scissors_Effect_Ecb_Qt_And_Sovereign_Supply.md",
-    "confidence": 1,
-    "thesis": "The scissors effect describes the simultaneous compression of ECB sovereign bond demand (via QT) and expansion of net sovereign issuance: from 2023, ECB withdrawals from German paper exceeded Germany's own net borrowing, meaning the private sector must absorb both incremental new supply and ongoing ECB portfolio runoff — a compounding demand shock with no historical precedent in the post-2012 eurozone. [LLM]",
+    "confidence": 3,
+    "thesis": "The 'scissors effect' occurs when a central bank simultaneously withdraws from the sovereign bond market through quantitative tightening (QT) while government issuance (net borrowing) is rising. This creates a dual pressure on the market, as the residual buyer must absorb both the new issuance and the maturing bonds being rolled off the central bank's balance sheet.",
     "tags": [
       "ecb",
       "qt",
-      "bund",
-      "sovereign_supply",
-      "eurozone",
-      "fiscal_policy"
+      "sovereign_debt",
+      "issuance",
+      "liquidity",
+      "eurozone"
     ],
     "domain": "monetary_policy"
   },
@@ -182,8 +182,8 @@
     "label": "QE Duration Extraction from Private Sector",
     "source": "wiki",
     "source_file": "03_wiki/mechanisms/Qe_Duration_Extraction_From_Private_Sector.md",
-    "confidence": 1,
-    "thesis": "Quantitative easing systematically strips duration from the private financial system: by purchasing long-duration government bonds and issuing near-zero-duration bank reserves, central banks transfer duration risk onto the sovereign balance sheet while leaving private investors — especially deposit-heavy households — with portfolios that cannot hedge rising-rate risk. In Japan, a decade of BOJ QE left 67% of households with near-zero-duration savings despite having decades of consumption needs to fund.",
+    "confidence": 4,
+    "thesis": "Quantitative easing (QE) functions as a structural duration-for-liquidity swap. By purchasing long-duration government bonds and issuing near-zero-duration bank reserves, central banks systematically extract interest rate risk from the private sector. This forces private investors into a 'portfolio rebalancing' process—seeking higher-yielding, longer-duration risky assets to replace the duration lost to the central bank, thereby easing financial conditions across the broader economy.",
     "tags": [
       "qe",
       "duration",
@@ -375,8 +375,8 @@
     "label": "Fed Global Jaws FRP FIMA Public Dollar Architecture",
     "source": "wiki",
     "source_file": "03_wiki/mechanisms/Fed_Global_Jaws_FRP_FIMA_Public_Dollar_Architecture.md",
-    "confidence": 3,
-    "thesis": "The Fed has assembled a four-layer \"global jaws\" architecture to control dollar rates for all market participants: (1) private floor = ON RRP (banks/MMFs/GSEs), (2) public floor = Foreign Repo Pool/FRP (foreign official institutions since 1970s), (3) private ceiling = Fed swap lines (allied central banks at OIS+25bps), (4) public ceiling = FIMA repo facility (all foreign official institutions, March 2020). The FRP allows FOIs to earn yield on excess dollars; FIMA allows FOIs to borrow dollars against their Treasury holdings. Together they prevent foreign governments from being forced to firesell U.S. assets in crises, structurally reinforcing dollar hegemony.\n",
+    "confidence": 4,
+    "thesis": "The Fed has assembled a four-layer \"global jaws\" architecture to control dollar rates for all market participants, operating as a \"range floor system\" (or \"soft floor\") rather than a single fixed rate. This architecture consists of: (1) private floor = ON RRP (banks/MMFs/GSEs), (2) public floor = Foreign Repo Pool/FRP (foreign official institutions), (3) private ceiling = Fed swap lines (allied central banks), and (4) public ceiling = FIMA repo facility (all foreign official institutions). The system ensures that both private and public dollar rates (unsecured and secured) evolve within a narrow range (typically 10-15 basis points), preventing forced asset firesales by foreign governments while structurally reinforcing dollar hegemony.\n",
     "tags": [
       "fed",
       "FRP",
@@ -587,6 +587,25 @@
     "domain": "financial_markets"
   },
   {
+    "node_id": "warsh_reserve_floor_and_structural_demand_constraint_mec_001",
+    "stem": "Warsh_Reserve_Floor_And_Structural_Demand_Constraint",
+    "label": "Warsh Reserve Floor And Structural Demand Constraint",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Warsh_Reserve_Floor_And_Structural_Demand_Constraint.md",
+    "confidence": 3,
+    "thesis": "Warsh's balance-sheet shrinking program runs into a reserve-floor constraint: the Fed cannot reduce reserves below the system's structural demand without causing money-market dislocations. This makes the question not whether the balance sheet can be smaller, but how far it can shrink before SOFR and related rates lose their stable floor.\n",
+    "tags": [
+      "warsh",
+      "reserves",
+      "floor",
+      "structural_demand",
+      "qt",
+      "sofr",
+      "liquidity"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "japan_filp_to_qe_structural_succession_001",
     "stem": "Japan_Filp_To_Qe_Structural_Succession",
     "label": "Japan FILP to QE Structural Succession",
@@ -662,22 +681,21 @@
     "domain": "monetary_policy"
   },
   {
-    "node_id": "fed_dollar_swap_lines_crisis_hierarchy_001",
+    "node_id": "fed_dollar_swap_lines_crisis_hierarchy_and_swapper_of_last_resort_mec_001",
     "stem": "Fed_Dollar_Swap_Lines_Crisis_Hierarchy_And_Swapper_Of_Last_Resort",
     "label": "Fed Dollar Swap Lines Crisis Hierarchy and Swapper of Last Resort",
     "source": "wiki",
     "source_file": "03_wiki/mechanisms/Fed_Dollar_Swap_Lines_Crisis_Hierarchy_And_Swapper_Of_Last_Resort.md",
-    "confidence": 3,
-    "thesis": "During dollar funding stress, private FX swap market makers withdraw in a predictable sequence (small participants → NY foreign bank branches → US G-SIB dealers) before the Fed activates dollar swap lines at OIS+25bps as the public dealer of last resort. The FX swap basis spread is the primary real-time indicator of offshore dollar scarcity. The Fed, as \"swapper of last resort,\" has expanded its swap line network after every crisis (GFC 2008, Repocalypse 2019, COVID 2020, SVB 2023), gradually transforming swap lines from backstop to casual dollar supply tool.\n",
+    "confidence": 4,
+    "thesis": "The Federal Reserve acts as the global \"Swapper of Last Resort\" by providing unlimited USD liquidity to foreign central banks through swap lines; this mechanism prevents offshore dollar shortages from triggering forced sales of US Treasuries and serves as the ultimate backstop in the global dollar funding hierarchy.\n",
     "tags": [
-      "swap-lines",
       "fed",
-      "FX-swap",
-      "dollar-shortage",
-      "FIMA",
-      "crisis-mechanism",
-      "lender-of-last-resort",
-      "March-2020"
+      "swap_lines",
+      "eurodollar",
+      "fx_swap",
+      "fima",
+      "liquidity",
+      "backstop"
     ],
     "domain": "monetary_policy"
   },
@@ -698,6 +716,24 @@
       "financial_stability"
     ],
     "domain": "monetary_policy"
+  },
+  {
+    "node_id": "cost_push_inflation_persistence_mec_001",
+    "stem": "Cost_Push_Inflation_Persistence_Mechanism",
+    "label": "Cost Push Inflation Persistence Mechanism",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Cost_Push_Inflation_Persistence_Mechanism.md",
+    "confidence": 4,
+    "thesis": "Cost-push inflation becomes persistent when a relative-price shock, wage shock, or productivity-cost mismatch is accommodated by monetary policy or embedded in contracts and expectations.\n",
+    "tags": [
+      "inflation",
+      "cost_push",
+      "wages",
+      "productivity",
+      "energy_prices",
+      "monetary_accommodation"
+    ],
+    "domain": "macro_outlook"
   },
   {
     "node_id": "asian_dollar_market_acu_structure_sibor_001",
@@ -831,20 +867,39 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "volcker_disinflation_sacrifice_ratio_channel_mec_001",
+    "stem": "Volcker_Disinflation_Sacrifice_Ratio_Channel",
+    "label": "Volcker Disinflation Sacrifice Ratio Channel",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Volcker_Disinflation_Sacrifice_Ratio_Channel.md",
+    "confidence": 3,
+    "thesis": "Volcker-style disinflation works through a costly slack channel: tighter policy raises unemployment and reduces output to break inflation persistence, with the sacrifice ratio measuring the output loss per unit of disinflation.\n",
+    "tags": [
+      "volcker",
+      "disinflation",
+      "sacrifice_ratio",
+      "unemployment",
+      "hysteresis",
+      "output_gap"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "standing_repo_facility_srf_mec_001",
     "stem": "Standing_Repo_Facility_SRF_Fed_Backstop",
-    "label": "Standing Repo Facility SRF Fed Backstop",
+    "label": "Standing Repo Facility (SRF) Fed Backstop",
     "source": "wiki",
     "source_file": "03_wiki/mechanisms/Standing_Repo_Facility_SRF_Fed_Backstop.md",
-    "confidence": 3,
-    "thesis": "The Standing Repo Facility (SRF) acts as a ceiling for the SOFR and a liquidity safety valve for the US Treasury market, designed to cap secured rates and mitigate dealer balance sheet stress by providing a destigmatized backstop.\n",
+    "confidence": 4,
+    "thesis": "The Standing Repo Facility (SRF) is the Federal Reserve's \"upper jaw\" in its interest rate corridor, designed to cap secured overnight rates (SOFR) and serve as a \"dealer of last resort\" for primary dealers and banks during liquidity stress.\n",
     "tags": [
       "fed",
       "repo",
-      "sofr",
       "srf",
       "liquidity",
-      "backstop"
+      "backstop",
+      "sofr",
+      "primary_dealer"
     ],
     "domain": "monetary_policy"
   },
@@ -886,13 +941,34 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "qe_collateral_velocity_monetary_policy_001",
+    "stem": "QE_Collateral_Velocity_Monetary_Policy_Transmission",
+    "label": "QE Collateral Velocity And Monetary Policy Transmission",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/QE_Collateral_Velocity_Monetary_Policy_Transmission.md",
+    "confidence": 5,
+    "thesis": "QE is a 'coiled spring' for collateral markets: by absorbing high-quality collateral (HQC) onto central bank balance sheets, it suppresses collateral velocity and financial lubrication. This 'siloing' effect creates collateral scarcity, driving repo rates down (often below the CB's floor). The subsequent withdrawal (QT) or 'Not-QE' interventions (like RMOs or BTFP) must manage the dual tension of releasing collateral back to the market while maintaining rate control, a process that can trigger a 'Scissors Effect' where rising supply meets falling CB support.",
+    "tags": [
+      "qe",
+      "collateral",
+      "repo",
+      "monetary_policy_transmission",
+      "collateral_velocity",
+      "financial_plumbing",
+      "fed_balance_sheet",
+      "rrp",
+      "ioer"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "fed_rmo_reserve_management_operations_001",
     "stem": "Fed_RMO_Reserve_Management_Operations_Post_QT_Mechanics",
     "label": "Fed RMO Reserve Management Operations Post QT Mechanics",
     "source": "wiki",
     "source_file": "03_wiki/mechanisms/Fed_RMO_Reserve_Management_Operations_Post_QT_Mechanics.md",
-    "confidence": 3,
-    "thesis": "Reserve Management Operations (RMOs) are the Fed's post-QT balance sheet tool: outright bill purchases that inject reserves to maintain ample liquidity — NOT QE. Unlike QE (swapping reserves for long-duration Treasuries to absorb risk and stimulate), RMOs simply offset the structural reserve drains that continue even after QT ends: currency in circulation growth, bank asset expansion, and TGA re-accumulation. The Fed ended QT2 on December 1, 2025; RMOs were expected to start Q1 2026 (~$20-30B/month), totaling ~$240B in reserve injections needed by end-2027.\n",
+    "confidence": 4,
+    "thesis": "Reserve Management Operations (RMOs), formally implemented as \"Reserve Management Purchases\" (RMPs) in late 2025, are the Fed's tool for maintaining an ample supply of reserves post-QT through outright purchases of short-term Treasury securities (bills). Triggered by money market stress (SOFR-IORB spreads > 30bps), RMOs are operationally distinct from Quantitative Easing (QE); while QE aims to extract duration risk for stimulus, RMOs purely offset structural reserve drains (currency growth, TGA accumulation) to ensure effective control of the policy rate. On December 10, 2025, the Fed initiated RMPs at a rate of ~$40 billion per month following a sharp spike in repo rates.\n",
     "tags": [
       "fed",
       "rmo",
@@ -1089,6 +1165,24 @@
       "monetary_policy",
       "china",
       "sterilization"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
+    "node_id": "tga_volatility_and_reserve_buffer_demand_mec_001",
+    "stem": "Tga_Volatility_And_Reserve_Buffer_Demand",
+    "label": "TGA Volatility And Reserve Buffer Demand",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Tga_Volatility_And_Reserve_Buffer_Demand.md",
+    "confidence": 3,
+    "thesis": "The Treasury General Account affects Fed rate control not only through its level but through its volatility. When Treasury cash balances swing sharply, the Fed must carry a larger reserve buffer to prevent sudden reserve scarcity or excess from pushing overnight rates out of its desired operating range.\n",
+    "tags": [
+      "tga",
+      "reserves",
+      "volatility",
+      "buffer",
+      "rate_control",
+      "treasury"
     ],
     "domain": "monetary_policy"
   },
@@ -1577,6 +1671,26 @@
     "domain": "financial_markets"
   },
   {
+    "node_id": "endogenous_bank_money_loans_create_deposits_001",
+    "stem": "Endogenous_Bank_Money_Loans_Create_Deposits",
+    "label": "Endogenous Bank Money Creation Loans Create Deposits",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Endogenous_Bank_Money_Loans_Create_Deposits.md",
+    "confidence": 4,
+    "thesis": "Banks create money endogenously by making loans: when a creditworthy borrower receives a loan, the bank simultaneously creates a new asset (the loan IOU) and a new liability (a deposit) ex nihilo — no prior deposit or reserve is needed. The central bank then provides whatever reserves are required for interbank settlement at the target policy rate. The money supply is therefore demand-driven (endogenous), not supply-constrained by the monetary base as the neoclassical money multiplier implies. The CB sets the price of money (short-term interest rate), not its quantity.",
+    "tags": [
+      "monetary_theory",
+      "endogenous_money",
+      "bank_credit",
+      "money_creation",
+      "reserves",
+      "mmt",
+      "central_bank",
+      "money_multiplier"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "fed_policy_rate_shift_effr_to_secured_rate_tgcr_001",
     "stem": "Fed_Policy_Rate_Shift_Effr_To_Secured_Rate_Tgcr",
     "label": "Fed Policy Rate Shift EFFR to Secured Rate TGCR",
@@ -1625,8 +1739,8 @@
     "label": "Fed QE Debt Maturity Transformation Fiscal Impact",
     "source": "wiki",
     "source_file": "03_wiki/mechanisms/Fed_Qe_Debt_Maturity_Transformation_Fiscal_Impact.md",
-    "confidence": 1,
-    "thesis": "Fed QE programs systematically undid the Treasury's interest rate hedges by purchasing long-term bonds and issuing overnight reserve liabilities in exchange — effectively converting fixed-rate government debt to floating-rate, so that when interest rates rose after 2022, the combined Treasury-Fed entity faced higher interest costs than if the Treasury had simply retained its long-term debt issuance; this overlap makes the separation of monetary and fiscal policy responsibility structurally ambiguous. [LLM]",
+    "confidence": 5,
+    "thesis": "Fed QE programs perform a 'maturity swap' on the consolidated public sector balance sheet (Fed + Treasury). By purchasing long-term fixed-rate Treasuries and issuing floating-rate reserves (IORB), the Fed effectively converts the sovereign's interest rate hedge into a floating-rate mortgage. This creates a 'Giant Carry Trade' for the public sector, which generates profits when rates are low but causes massive fiscal losses—and a cessation of Fed remittances to the Treasury—when interest rates rise.",
     "tags": [
       "fed",
       "qe",
@@ -1679,19 +1793,19 @@
     "domain": "monetary_policy"
   },
   {
-    "node_id": "fed_overnight_reverse_repo_on_rrp_001",
+    "node_id": "fed_overnight_reverse_repo_on_rrp_mec_001",
     "stem": "Fed_Overnight_Reverse_Repo_On_Rrp",
     "label": "Fed Overnight Reverse Repo ON RRP",
     "source": "wiki",
     "source_file": "03_wiki/mechanisms/Fed_Overnight_Reverse_Repo_On_Rrp.md",
-    "confidence": 3,
-    "thesis": "The Fed Overnight Reverse Repo facility (ON RRP) is the Fed liquidity shock absorber: it accepts cash from money market funds and GSEs overnight in exchange for Treasury collateral, paying the ON RRP rate. When bank deposits and bill supply are abundant, RRP drains to zero; when reserves are scarce and bill supply falls, RRP surges as MMFs have nowhere else to park cash.",
+    "confidence": 4,
+    "thesis": "The ON RRP facility serves as the Federal Reserve's primary rate-floor mechanism and \"liquidity shock absorber.\" It accepts cash from non-bank entities (MMFs, GSEs, Primary Dealers) overnight in exchange for Treasury collateral, effectively \"neutralizing\" excess reserves and preventing money market rates from falling below the FOMC's target range.\n",
     "tags": [
       "rrp",
-      "money-market",
-      "fed-facilities",
+      "money_market",
+      "fed_facilities",
       "reserves",
-      "mmt"
+      "liquidity_sponge"
     ],
     "domain": "monetary_policy"
   },
@@ -1941,6 +2055,26 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "treasury_tbill_supply_rrp_drain_mmf_routing_001",
+    "stem": "Treasury_Tbill_Supply_RRP_Drain_MMF_Cash_Routing",
+    "label": "Treasury T-bill Supply RRP Drain And MMF Cash Routing",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Treasury_Tbill_Supply_RRP_Drain_MMF_Cash_Routing.md",
+    "confidence": 1,
+    "thesis": "T-bill supply and Fed ON RRP balances are substitutes for MMF cash: high T-bill issuance routes MMF funds out of the RRP into bills (draining RRP, boosting reserves), while T-bill supply contractions — particularly during debt ceiling episodes — drive MMF cash back into the RRP, inflating it and preventing reserve growth even as the TGA is drawn down.",
+    "tags": [
+      "tbills",
+      "rrp",
+      "mmf",
+      "tga",
+      "treasury_issuance",
+      "money_market",
+      "reserves",
+      "debt_limit"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "policy_fed_qt_2022_001",
     "stem": "Fed_QT_2022_Balance_Sheet_Runoff_Policy",
     "label": "Fed Quantitative Tightening 2022 — Balance Sheet Runoff Policy",
@@ -1993,6 +2127,24 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "warsh_balance_sheet_stimulus_swap_vs_structural_demand_neutrality_con_001",
+    "stem": "Warsh_Balance_Sheet_Stimulus_Swap_Vs_Structural_Demand_Neutrality",
+    "label": "Warsh Balance Sheet Stimulus Swap Vs Structural Demand Neutrality",
+    "source": "wiki",
+    "source_file": "03_wiki/contradictions/Warsh_Balance_Sheet_Stimulus_Swap_Vs_Structural_Demand_Neutrality.md",
+    "confidence": 3,
+    "thesis": "The Warsh argument treats balance-sheet reduction as a way to \"redeploy\" stimulus into lower policy rates, but the clipping argues that this is a category error when the Fed is merely meeting structural reserve demand. In that critique, shrinking the balance sheet because structural reserve demand has fallen does not create spare stimulus to spend on rate cuts.\n",
+    "tags": [
+      "warsh",
+      "qt",
+      "reserves",
+      "structural_demand",
+      "balance_sheet",
+      "contradiction"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "irrbb_eve_nii_dual_metric_framework_001",
     "stem": "Irrbb_Eve_Nii_Dual_Metric_Framework",
     "label": "IRRBB EVE NII Dual Metric Framework",
@@ -2027,6 +2179,24 @@
       "intervention",
       "rate_corridor",
       "fed"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
+    "node_id": "volcker_fed_reaction_function_break_frm_001",
+    "stem": "Volcker_Fed_Reaction_Function_Break",
+    "label": "Volcker Fed Reaction Function Break",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Volcker_Fed_Reaction_Function_Break.md",
+    "confidence": 4,
+    "thesis": "The Volcker shift was a break in the Fed reaction function: after 1979, the Fed responded more than one-for-one to inflation shocks, temporarily used monetary targeting, and subordinated output stabilization to restoring inflation credibility.\n",
+    "tags": [
+      "volcker",
+      "fed",
+      "disinflation",
+      "monetary_targeting",
+      "taylor_rule",
+      "credibility"
     ],
     "domain": "monetary_policy"
   },
@@ -2070,6 +2240,63 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "warsh_fed_balance_sheet_operating_doctrine_frm_001",
+    "stem": "Warsh_Fed_Balance_Sheet_Operating_Doctrine",
+    "label": "Warsh Fed Balance Sheet Operating Doctrine",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Warsh_Fed_Balance_Sheet_Operating_Doctrine.md",
+    "confidence": 3,
+    "thesis": "Warsh's balance-sheet doctrine is not just \"QT for its own sake.\" It is a broader operating model in which the Fed shrinks its market footprint, stops allocating credit, keeps maturity-risk management with the Treasury, and uses the balance sheet mainly for short-term reserve provision or collateralized lending rather than for long-duration asset accumulation.\n",
+    "tags": [
+      "warsh",
+      "fed",
+      "treasury",
+      "balance_sheet",
+      "maturity",
+      "independence",
+      "credit_allocation"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
+    "node_id": "us_1970s_stagflation_policy_regime_shift_frm_001",
+    "stem": "US_1970s_Stagflation_And_Policy_Regime_Shift",
+    "label": "US 1970s Stagflation And Policy Regime Shift",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/US_1970s_Stagflation_And_Policy_Regime_Shift.md",
+    "confidence": 3,
+    "thesis": "US stagflation in the 1970s reflected a regime break in which demand pressure, oil shocks, distributional conflict, productivity slowdown, and weak monetary credibility made the Phillips-curve tradeoff unstable and forced a shift toward inflation-first central banking.\n",
+    "tags": [
+      "stagflation",
+      "great_inflation",
+      "oil_shock",
+      "fed",
+      "phillips_curve",
+      "volcker"
+    ],
+    "domain": "macro_outlook"
+  },
+  {
+    "node_id": "cb_three_techniques_rate_control_001",
+    "stem": "CB_Three_Techniques_Short_Rate_Control_Floor_Corridor_Allotment",
+    "label": "CB Three Techniques Short Rate Control Floor Corridor Full Allotment",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/CB_Three_Techniques_Short_Rate_Control_Floor_Corridor_Allotment.md",
+    "confidence": 4,
+    "thesis": "Bindseil (2014) identifies three fundamental techniques for a central bank to control the short-term interbank overnight rate: (1) one-directional standing facility (floor or ceiling system — banks systematically use one facility, which anchors market rates); (2) symmetric corridor with OMO volume set by CB (two-sided standing facilities equidistant from target, with market rate floating to target if net reserves balanced); (3) full allotment OMO within corridor (banks choose quantity demanded at a fixed rate, which anchors the market rate). These are the only three logically distinct approaches; all real-world implementations are combinations or variants. The 'separation principle' — that macroeconomic rate-setting and day-to-day implementation are fully separable — breaks down in crisis.",
+    "tags": [
+      "central_bank",
+      "monetary_policy_implementation",
+      "standing_facilities",
+      "corridor_system",
+      "floor_system",
+      "omo",
+      "reserves",
+      "interbank_market"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "cb_balance_sheet_trilemma_frm_001",
     "stem": "CB_Balance_Sheet_Trilemma",
     "label": "Central Bank Balance Sheet Trilemma",
@@ -2083,6 +2310,24 @@
       "volatility",
       "intervention",
       "trilemma"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
+    "node_id": "warsh_credit_allocation_exit_frm_001",
+    "stem": "Warsh_Credit_Allocation_Exit_Framework",
+    "label": "Warsh Credit Allocation Exit Framework",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Warsh_Credit_Allocation_Exit_Framework.md",
+    "confidence": 3,
+    "thesis": "Warsh's credit-allocation doctrine argues that the Fed should stop steering credit toward particular sectors through asset purchases such as MBS. If the state wants sectoral subsidy or emergency support, that choice should be made by the Treasury or Congress, where political accountability belongs.\n",
+    "tags": [
+      "warsh",
+      "fed",
+      "credit_allocation",
+      "mbs",
+      "independence",
+      "fiscal_policy"
     ],
     "domain": "monetary_policy"
   },
@@ -2124,6 +2369,24 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "fed_treasury_operational_choice_space_frm_001",
+    "stem": "Fed_Treasury_Operational_Choice_Space",
+    "label": "Fed Treasury Operational Choice Space",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Fed_Treasury_Operational_Choice_Space.md",
+    "confidence": 3,
+    "thesis": "The relationship between the Federal Reserve and the Treasury is an operational design space, not a fixed natural law. The location of government cash, the size of the Treasury's balance at the Fed, and the rules that govern interaction with reserves can all be redesigned, which means part of the Fed's balance-sheet footprint is a policy choice rather than a necessity.\n",
+    "tags": [
+      "fed",
+      "treasury",
+      "tga",
+      "institutional_design",
+      "fiscal_agent",
+      "balance_sheet"
+    ],
+    "domain": "fiscal_policy"
+  },
+  {
     "node_id": "fed_ample_reserves_range_floor_frm_001",
     "stem": "Fed_Ample_Reserves_Range_Floor_Framework",
     "label": "Fed Ample Reserves Range Floor Framework",
@@ -2142,7 +2405,7 @@
     "domain": "monetary_policy"
   },
   {
-    "node_id": "cb_reserve_requirements_taxonomy_surplus_001",
+    "node_id": "cb_reserve_requirements_taxonomy_surplus_shortage_liquidity_001",
     "stem": "CB_Reserve_Requirements_Taxonomy_Surplus_Shortage_Liquidity",
     "label": "CB Reserve Requirements Taxonomy And Surplus Shortage Liquidity Framework",
     "source": "wiki",
@@ -2179,6 +2442,26 @@
     "domain": "financial_markets"
   },
   {
+    "node_id": "fed_balance_sheet_recomposition_and_net_expansion_frm_001",
+    "stem": "Fed_Balance_Sheet_Recomposition_And_Net_Expansion",
+    "label": "Fed Balance Sheet Recomposition and Net Expansion",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Fed_Balance_Sheet_Recomposition_And_Net_Expansion.md",
+    "confidence": 3,
+    "thesis": "The Fed can shorten the duration and sector mix of its balance sheet by increasing short-term Treasury holdings while letting MBS and long bonds run off, but that is a composition shift, not an automatic increase in total assets. Total assets rise only when net purchases exceed runoff or sales.\n",
+    "tags": [
+      "fed",
+      "balance_sheet",
+      "bills",
+      "mbs",
+      "duration",
+      "reserves",
+      "maturity",
+      "rmo"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "basel_iii_endgame_001",
     "stem": "Basel_III_Endgame_Capital_Liquidity_Credit_Migration",
     "label": "Basel III Endgame — Capital, Liquidity, and Credit Migration",
@@ -2199,6 +2482,62 @@
       "originate-to-distribute"
     ],
     "domain": "financial_markets"
+  },
+  {
+    "node_id": "em_cb_policy_mix_fit_framework_001",
+    "stem": "EM_Central_Bank_Policy_Mix_FIT_Framework",
+    "label": "EM Central Bank Policy Mix And FIT Framework",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/EM_Central_Bank_Policy_Mix_FIT_Framework.md",
+    "confidence": 1,
+    "thesis": "Perry & Juhro's post-GFC paradigm for emerging market central banking: the 'policy mix' combines (1) flexible inflation targeting (FIT) with an explicit exchange rate stabilization role; (2) macroprudential policy to manage financial procyclicality and systemic risk; (3) capital flow management (CFM) to navigate the impossible trinity; and (4) payment system policy — these four pillars form a coordinated dual mandate (price stability + financial system stability) replacing the pre-GFC single-instrument ITF focused solely on price stability.",
+    "tags": [
+      "inflation_targeting",
+      "macroprudential",
+      "capital_flow_management",
+      "policy_mix",
+      "eme",
+      "fit_framework",
+      "perry_warjiyo"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
+    "node_id": "duration_targeting_convergence_yield_001",
+    "stem": "Duration_Targeting_Convergence_Yield_Statistical_Immunization",
+    "label": "Duration Targeting Convergence To Yield And Statistical Immunization",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Duration_Targeting_Convergence_Yield_Statistical_Immunization.md",
+    "confidence": 4,
+    "thesis": "Duration-targeted (DT) bond portfolios — which maintain a stable duration through periodic rebalancing — exhibit a gravitational pull toward the initial yield over multi-year horizons, regardless of whether yields rise or fall; the key insight (Homer-Leibowitz 2013 edition): over a horizon equal to approximately 2×duration−1 years ('effective maturity'), cumulative accruals precisely offset cumulative price gains/losses, making annualized return converge to the initial yield for virtually any yield path; this creates 'statistical immunization' and simultaneously a 'yield trap' — you cannot escape the initial yield without changing the duration target.",
+    "tags": [
+      "duration",
+      "fixed_income",
+      "bond_portfolio",
+      "yield",
+      "convergence",
+      "immunization",
+      "risk_management"
+    ],
+    "domain": "financial_markets"
+  },
+  {
+    "node_id": "stagflation_policy_response_tradeoff_frm_001",
+    "stem": "Stagflation_Policy_Response_Tradeoff_Framework",
+    "label": "Stagflation Policy Response Tradeoff Framework",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Stagflation_Policy_Response_Tradeoff_Framework.md",
+    "confidence": 3,
+    "thesis": "In a stagflation shock, the policy choice is state-contingent: central banks can look through direct price effects only if inflation expectations remain anchored and the shock does not become persistent through wages, contracts, or production networks.\n",
+    "tags": [
+      "stagflation",
+      "central_banks",
+      "supply_shock",
+      "credibility",
+      "real_income",
+      "policy_response"
+    ],
+    "domain": "monetary_policy"
   },
   {
     "node_id": "imf_gfs_fiscal_accounting_framework_deficit_measurement_and_sustainability_001",
@@ -2346,13 +2685,14 @@
     "source": "wiki",
     "source_file": "03_wiki/frameworks/Fed_Fiscal_Agent_Treasury_Relationship.md",
     "confidence": 4,
-    "thesis": "The Federal Reserve Banks act as the fiscal agent for the U.S. Treasury, managing the Treasury General Account (TGA),  processing daily financial transactions, and facilitating the auction and redemption of government securities.  This operational role is distinct from monetary policy, with the Fed following mandates and regulations  issued by the Treasury Department.\n",
+    "thesis": "The Federal Reserve Banks serve as the primary fiscal agent for the U.S. Treasury, providing the operational infrastructure for the federal government's banking, debt issuance, and payment processing; this relationship makes the Fed's balance sheet the nexus where fiscal and monetary flows converge, most visibly through the Treasury General Account (TGA).\n",
     "tags": [
       "fed",
       "treasury",
-      "fiscal-agent",
-      "governance",
-      "operational-framework"
+      "tga",
+      "fiscal_agent",
+      "debt_issuance",
+      "payment_system"
     ],
     "domain": "monetary_policy"
   },
@@ -2396,6 +2736,24 @@
       "corridor"
     ],
     "domain": "monetary_policy"
+  },
+  {
+    "node_id": "stagflation_regime_diagnostic_frm_001",
+    "stem": "Stagflation_Regime_Diagnostic_Framework",
+    "label": "Stagflation Regime Diagnostic Framework",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Stagflation_Regime_Diagnostic_Framework.md",
+    "confidence": 3,
+    "thesis": "Stagflation is best diagnosed as a regime in which inflation pressure is supply-side or cost-side while real activity weakens, forcing policy makers to choose between inflation stabilization and employment/output protection.\n",
+    "tags": [
+      "stagflation",
+      "inflation",
+      "supply_shock",
+      "unemployment",
+      "output_gap",
+      "policy_tradeoff"
+    ],
+    "domain": "macro_outlook"
   },
   {
     "node_id": "basel_regional_implementation_dynamics_001",
@@ -2535,6 +2893,24 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "warsh_maturity_sovereignty_frm_001",
+    "stem": "Warsh_Maturity_Sovereignty_Framework",
+    "label": "Warsh Maturity Sovereignty Framework",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Warsh_Maturity_Sovereignty_Framework.md",
+    "confidence": 3,
+    "thesis": "Warsh's maturity-sovereignty view assigns the Treasury, not the Fed, primary responsibility for the government's debt-duration profile. The Fed may supply reserves or provide temporary market-function support, but it should not systematically transform long-duration Treasury debt into overnight liabilities through QE because that reverses the Treasury's own maturity choice.\n",
+    "tags": [
+      "warsh",
+      "treasury",
+      "maturity",
+      "duration",
+      "fed",
+      "debt_management"
+    ],
+    "domain": "fiscal_policy"
+  },
+  {
     "node_id": "mptm_framework_001",
     "stem": "Monetary_Policy_Transmission_Mechanisms_Framework",
     "label": "Monetary Policy Transmission Mechanism — All Channels",
@@ -2575,6 +2951,26 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "em_balance_sheet_crisis_anatomy_001",
+    "stem": "Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating",
+    "label": "EM Balance Sheet Crisis Anatomy And Fear Of Floating",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating.md",
+    "confidence": 4,
+    "thesis": "EM balance sheet crises follow a structurally recurring pattern: (1) rapid growth + financial opening → FX borrowing buildup by private sector; (2) implicit exchange rate guarantee (from limited FX flexibility) removes borrowers' incentive to hedge → moral hazard → large unhedged FX exposures in banking and nonbank sectors; (3) trigger event (sudden stop, risk premium spike, terms-of-trade shock) → authorities face 'fear of floating' — depreciation would bankrupt unhedged FX borrowers and collapse banks → authorities defend exchange rate at cost of reserves; (4) crisis becomes inevitable regardless of delay; the 3-sector FX balance sheet matrix (CB + banks + nonbanks, split by maturity and residency) is the analytical tool for diagnosing latent vulnerability before trigger.",
+    "tags": [
+      "em_crisis",
+      "balance_sheet_crisis",
+      "fear_of_floating",
+      "fx_exposure",
+      "sudden_stop",
+      "imf",
+      "financial_vulnerability",
+      "exchange_rate"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "china_shadow_banking_wmp_trust_001",
     "stem": "China_Shadow_Banking_WMP_Trust_Structure_And_CBIRC_Shutdown",
     "label": "China Shadow Banking WMP Trust Structure and CBIRC Shutdown",
@@ -2596,20 +2992,19 @@
     "domain": "financial_markets"
   },
   {
-    "node_id": "fed_balance_sheet_size_and_policy_rate_independence_001",
+    "node_id": "fed_balance_sheet_size_and_policy_rate_independence_con_001",
     "stem": "Fed_Balance_Sheet_Size_And_Policy_Rate_Independence",
     "label": "Fed Balance Sheet Size and Policy Rate Independence",
     "source": "wiki",
     "source_file": "03_wiki/concepts/Fed_Balance_Sheet_Size_And_Policy_Rate_Independence.md",
-    "confidence": 1,
-    "thesis": "The claim that Fed balance sheet reduction \"creates room\" for rate cuts is mechanically flawed: in an ample reserves regime, balance sheet size and the fed funds rate are independent instruments — QT drains reserves but does not mechanically lower the policy rate, and the logical precondition for rate cuts (slowing inflation) is unrelated to the size of the balance sheet, making the Warsh thesis a category error. [LLM]",
+    "confidence": 4,
+    "thesis": "In an ample reserves regime, the Federal Reserve's balance sheet size and its policy rate (Federal Funds Rate) are independent instruments. The use of administered rates (IORB and ON RRP) allows the Fed to control the price of money regardless of the quantity of reserves, provided they remain above the system's structural demand floor.\n",
     "tags": [
       "fed",
       "qt",
       "balance_sheet",
       "ffr",
       "ample_reserves",
-      "warsh",
       "monetary_policy"
     ],
     "domain": "monetary_policy"
@@ -2658,7 +3053,7 @@
     "source": "wiki",
     "source_file": "03_wiki/concepts/Fedwire_Payment_System_Reserve_Demand_And_Lsm_Policy.md",
     "confidence": 4,
-    "thesis": "The Fed's Fedwire RTGS payment system generates structural demand for reserve balances because banks must pre-load reserves for outgoing payments before receiving inflows; post-GFC intraday liquidity regulations caused daylight overdrafts to collapse from $120B/day to under $5B/day, dramatically raising the minimum reserve floor; adding a Liquidity Savings Mechanism (LSM) to Fedwire could substantially reduce reserve demand without sacrificing payment speed.",
+    "thesis": "The Federal Reserve's Fedwire RTGS system generates a structural floor on reserve demand because banks must \"pre-load\" balances to cover gross outgoing payments; post-GFC regulatory stigma and intraday liquidity rules have collapsed daylight overdraft usage, forcing the Fed to maintain trillions in reserves to prevent payment delays and repo rate spikes.\n",
     "tags": [
       "fedwire",
       "rtgs",
@@ -2677,8 +3072,8 @@
     "label": "Sovereign Basis Trade Repo Leverage",
     "source": "wiki",
     "source_file": "03_wiki/concepts/Sovereign_Basis_Trade_Repo_Leverage.md",
-    "confidence": 3,
-    "thesis": "The cash-futures basis trade — hedge funds buying cash USTs via repo, selling futures — is the primary glue holding Treasury cash, futures, and repo markets together. Estimated >$1 trillion in exposure, leveraged up to 60x via repos. Conks' analysis: the systemic fear of basis trade blowup is overblown under normal repo rate volatility (basis traders can absorb ≤50bps repo spikes; up to 200bps near delivery). The real systemic risk is not yield moves (which are partially hedged by futures shorts) but a simultaneous detachment of cash/futures prices PLUS a repo shock (margin trigger) at futures roll periods. The Fed is morally committed to a \"basis purchase facility\" backstop as the last resort.",
+    "confidence": 4,
+    "thesis": "The cash-futures basis trade — hedge funds buying cash sovereign bonds via repo and selling futures — is a critical source of marginal demand in both US Treasury and European sovereign markets. Operating at extreme leverage (up to 200x in some European segments), these trades bind cash, futures, and repo markets together, but create systemic sensitivity to simultaneous repo funding shocks and cash-futures price detachments.",
     "tags": [
       "hedge_fund",
       "repo",
@@ -2688,6 +3083,26 @@
       "nbfi",
       "futures",
       "UST"
+    ],
+    "domain": "financial_markets"
+  },
+  {
+    "node_id": "financial_procyclicality_accelerator_macroprudential_001",
+    "stem": "Financial_Procyclicality_Accelerator_Macroprudential_Instruments",
+    "label": "Financial Procyclicality Financial Accelerator And Macroprudential Instruments",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Financial_Procyclicality_Accelerator_Macroprudential_Instruments.md",
+    "confidence": 1,
+    "thesis": "Financial procyclicality is the dynamic interaction where the financial cycle amplifies the economic cycle: during booms, rising asset prices boost collateral values → more credit → higher asset prices → more leverage → bigger crash; three mechanisms drive this — the financial accelerator (net worth/external finance premium), collateral constraints (Kiyotaki-Moore), and risk-taking cycles; macroprudential instruments (LTV, CCyB, sectoral capital requirements) exist to dampen these self-reinforcing loops by imposing countercyclical buffers.",
+    "tags": [
+      "financial_stability",
+      "procyclicality",
+      "financial_accelerator",
+      "macroprudential",
+      "systemic_risk",
+      "credit_cycle",
+      "asset_bubbles",
+      "leverage"
     ],
     "domain": "financial_markets"
   },
@@ -2790,7 +3205,7 @@
     "label": "CB Reserve System Level Constraint And Money Multiplier Myth",
     "source": "wiki",
     "source_file": "03_wiki/concepts/CB_Reserve_System_Level_Constraint_Money_Multiplier_Myth.md",
-    "confidence": 1,
+    "confidence": 4,
     "thesis": "Two foundational misconceptions about commercial bank reserves: (1) individual banks appear to choose between reserves and other assets, but at the system level total reserves are entirely determined by the central bank's balance sheet identities — no individual bank action can reduce system-wide reserves; (2) banks do not require reserves to lend — the money multiplier (reserves → lending) has causality reversed; broad money expands with economic activity and narrow money is subsequently supplied by the CB to meet requirements.",
     "tags": [
       "reserves",
@@ -2846,8 +3261,8 @@
     "label": "NBFI Sovereign Market Supervisory Gap",
     "source": "wiki",
     "source_file": "03_wiki/concepts/Nbfi_Sovereign_Market_Supervisory_Gap.md",
-    "confidence": 1,
-    "thesis": "The institutional infrastructure for managing stress in the NBFI sovereign buyer base — data quality, supervisory frameworks, crisis liquidity facilities, and stress simulation — remains incomplete relative to the growing systemic role NBFIs play as marginal buyers of European government debt; this gap means market stress events lack the crisis containment tools that existed when banks were the dominant holders. [LLM]",
+    "confidence": 3,
+    "thesis": "The institutional infrastructure for managing stress in the NBFI sovereign buyer base — including data quality, supervisory frameworks, and crisis liquidity facilities — remains incomplete relative to their growing role as marginal buyers. This 'supervisory gap' is highlighted by the absence of an ECB liquidity facility for NBFIs (unlike the BoE's CNRF) and the migration of credit risk to leveraged, short-term funded entities while liquidity risk remains concentrated in the banking system.",
     "tags": [
       "nbfi",
       "financial_stability",
@@ -2972,21 +3387,20 @@
     "domain": "financial_markets"
   },
   {
-    "node_id": "tga_reserve_swap_mechanics_and_debt_ceiling_dynamics_001",
+    "node_id": "tga_reserve_swap_mechanics_and_debt_ceiling_dynamics_con_001",
     "stem": "Tga_Reserve_Swap_Mechanics_And_Debt_Ceiling_Dynamics",
-    "label": "TGA Reserve Swap Mechanics And Debt Ceiling Dynamics",
+    "label": "Tga Reserve Swap Mechanics And Debt Ceiling Dynamics",
     "source": "wiki",
     "source_file": "03_wiki/concepts/Tga_Reserve_Swap_Mechanics_And_Debt_Ceiling_Dynamics.md",
-    "confidence": 3,
-    "thesis": "The Treasury General Account (TGA) and bank reserves are two liabilities on the Fed's balance sheet that move inversely: every TGA drawdown injects reserves into the banking system (liquidity positive), while every TGA refill (via Treasury issuance) drains reserves (liquidity negative); debt ceiling episodes force extraordinary TGA dynamics that temporarily distort the Fed's reserve scarcity signals.",
+    "confidence": 4,
+    "thesis": "The Treasury General Account (TGA) and bank reserves are offsetting liabilities on the Federal Reserve's balance sheet; every dollar the Treasury collects or issues as debt drains a dollar of reserves, while every dollar spent injects reserves, making TGA management a primary driver of systemic liquidity volatility, especially during debt ceiling episodes.\n",
     "tags": [
       "tga",
       "reserves",
       "debt_ceiling",
+      "fed_balance_sheet",
       "treasury",
-      "liquidity",
-      "fed",
-      "plumbing"
+      "liquidity_drain"
     ],
     "domain": "monetary_policy"
   },
@@ -3114,8 +3528,8 @@
     "label": "Central Bank Credibility Supply Shock Policy Space",
     "source": "wiki",
     "source_file": "03_wiki/concepts/Central_Bank_Credibility_Supply_Shock_Policy_Space.md",
-    "confidence": 1,
-    "thesis": "A central bank's accumulated credibility determines its \"look-through\" policy space during supply shocks: well-anchored inflation expectations allow the CB to tolerate temporary inflation above target without responding (preserving growth), while low credibility forces tightening even if the shock is transitory — making credibility a prerequisite for optimal flexible average inflation targeting and supply-shock management. [LLM]",
+    "confidence": 3,
+    "thesis": "A central bank's accumulated credibility determines its 'look-through' policy space during supply shocks. Well-anchored inflation expectations allow the CB to tolerate temporary inflation above target without responding (preserving growth), whereas low credibility or jumping expectations force the CB to react (hike) to send a signal of determination, even if the shock is transitory.",
     "tags": [
       "credibility",
       "inflation_expectations",
@@ -3129,13 +3543,13 @@
     "domain": "monetary_policy"
   },
   {
-    "node_id": "fed_ample_reserves_rate_control_framework_001",
+    "node_id": "fed_ample_reserves_rate_control_framework_con_001",
     "stem": "Fed_Ample_Reserves_Rate_Control_Framework",
     "label": "Fed Ample Reserves Rate Control Framework",
     "source": "wiki",
     "source_file": "03_wiki/concepts/Fed_Ample_Reserves_Rate_Control_Framework.md",
-    "confidence": 3,
-    "thesis": "Post-GFC, the Fed shifted from scarce-reserve corridor to ample-reserve floor system: IORB sets the ceiling, ON RRP sets the floor, and SRF acts as a backstop ceiling, making fed funds rate control near-automatic without daily open market operations.",
+    "confidence": 4,
+    "thesis": "Post-GFC, the Fed shifted from a scarce-reserve corridor to an ample-reserve floor system where the Federal Funds Rate (FFR) is controlled via administered rates (IORB and ON RRP) rather than daily open market operations (OMOs). This framework relies on a \"leaky floor\" arbitrage mechanism and a standing backstop (SRF) to maintain the policy rate within the FOMC's target range.\n",
     "tags": [
       "fed",
       "iorb",
@@ -3146,6 +3560,26 @@
       "qt"
     ],
     "domain": "monetary_policy"
+  },
+  {
+    "node_id": "us_macro_constraint_stack_fed_treasury_curve_inflation_external_sector_syn_001",
+    "stem": "US_Macro_Constraint_Stack_Fed_Treasury_Curve_Inflation_External_Sector",
+    "label": "US Macro Constraint Stack Fed Treasury Curve Inflation External Sector",
+    "source": "wiki",
+    "source_file": "03_wiki/synthesis/US_Macro_Constraint_Stack_Fed_Treasury_Curve_Inflation_External_Sector.md",
+    "confidence": 3,
+    "thesis": "US macro outcomes are best read as a stack of linked constraints rather than as isolated indicators. Fed and Treasury plumbing sets the reserve and funding backdrop, the Treasury curve prices the policy path and term premium, inflation reflects both demand and supply/cost pressures, and import and exchange-rate channels determine how domestic shocks leak into prices and growth.\n",
+    "tags": [
+      "us",
+      "fed",
+      "treasury",
+      "yield_curve",
+      "inflation",
+      "imports",
+      "rates",
+      "external_sector"
+    ],
+    "domain": "macro_outlook"
   },
   {
     "node_id": "indicator_effr_001",
