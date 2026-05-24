@@ -1,6 +1,6 @@
 # Wiki Index
 
-**Total nodes:** 195  |  **Last updated:** 2026-05-24
+**Total nodes:** 196  |  **Last updated:** 2026-05-24
 
 ---
 
@@ -71,7 +71,7 @@
 - **[[US Shadow Banking Post-GFC Market Based Finance Structure]]**  ★★★☆☆
   Post-GFC shadow banking became a repo-centric collateral market rather than a CDO machine.
 
-## Mechanisms (105)
+## Mechanisms (106)
 
 - **[[Ample Reserves Buffer Sizing TGA Volatility]]**  ★☆☆☆☆
   The minimum ample reserves buffer required for rate control can be estimated as B = sigma*sqrt(Delta)*z*(epsilon*Delta/2), where sigma is the standard...
@@ -93,6 +93,8 @@
   The Output Floor (72.5% of SA-RWA, fully phased-in Jan 2027) prevents banks from using internal IRB models to reduce RWA below 72.5% of the Standardis...
 - **[[CB FX Rate Target Balance Sheet Constraint And Sterilization]]**  ★★★★☆
   When a CB commits to an exchange rate target, NFA becomes endogenous (determined by BOP flows); the CB retains only NDA as policy instrument. Sterilization offsets NFA changes via NDA but faces two binding limits: reserve depletion (depreciation defense) and quasi-fiscal carrying cost (appreciation defense).
+- **[[CB Quasi Fiscal Sterilization Seigniorage Fiscal Monetary Nexus]]**  ★★★★☆
+  FX targeting creates a quasi-fiscal channel that runs in both directions: normal seigniorage transfers CB profits to government; sterilization of inflows inverts this (CB earns low-yield FX, pays high-yield domestic = loss); NCG expansion accommodates fiscal deficits as de facto monetization; fiscal dominance is the endpoint when government financing requirements prevent independent monetary policy.
 - **[[BoJ QE Duration Extraction Household Wealth Transfer]]**  ★☆☆☆☆
   BoJ QE systematically extracted duration from the private sector by swapping long-duration JGBs for near-zero-duration reserves, leaving Japanese hous...
 - **[[Bond Accrual Price Effect Interaction]]**  ★★★☆☆
