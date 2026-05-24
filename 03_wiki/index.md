@@ -1,6 +1,6 @@
 # Wiki Index
 
-**Total nodes:** 198  |  **Last updated:** 2026-05-24
+**Total nodes:** 200  |  **Last updated:** 2026-05-24
 
 ---
 
@@ -288,7 +288,7 @@
   QE suppresses collateral velocity by absorbing high-quality collateral onto central-bank balance sheets.
 - **[[Treasury T-bill Supply RRP Drain And MMF Cash Routing]]**  ★★★☆☆
   Treasury bill supply routes money-market cash between ON RRP, bills, and bank reserves.
-## Frameworks (43)
+## Frameworks (45)
 
 - **[[Basel III Endgame — Capital, Liquidity, and Credit Migration]]**  ★★☆☆☆
   Basel III and its Endgame extensions create a structured causal chain: RWA requirements + output floor + leverage ratio + LCR/NSFR raise the cost of h...
@@ -326,6 +326,10 @@
   Post-GFC, regulators engineered a transition from an unsecured to a secured lending standard (LIBOR → SOFR, Fed Funds → repo/IORB), forcing banks to b...
 - **[[Global Dollar System Eurodollar Architecture]]**  ★★★☆☆
   The global dollar system is a network of 26+ interconnected offshore dollar funding markets — including FX swaps, Eurodollars, cross-currency basis sw...
+- **[[Imf Inflation Analysis Cpi Gdp Deflator Four Types Core]]**  ★★★★☆
+  IMF inflation analysis: 4 causal types (policy-induced, cost-push, demand-pull, inertial), CPI vs GDP deflator differences (coverage, import treatment, Laspeyres vs Paasche), core/underlying distinction, NAIRU, Japan non-accommodation example.
+- **[[Imf Tax Revenue Analysis Elasticity Buoyancy Effort Tanzi]]**  ★★★★☆
+  IMF tax analysis: elasticity (unchanged system) vs buoyancy (including discretionary changes), taxable capacity and tax effort, Tanzi 8-criterion revenue productivity diagnostic test, Tanzi collection-lag effect.
 - **[[IMF Balance of Payments Framework and External Account Analysis]]**  ★★★★☆
   The BoP records all resident/non-resident transactions using double-entry accounting; key analytical tools are the current/capital/financial account i...
 - **[[IMF Flow Of Funds 4-Sector Consistency Framework]]**  ★★★★☆

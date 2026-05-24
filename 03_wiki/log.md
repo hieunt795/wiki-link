@@ -55,6 +55,10 @@ Chronological record of all ingest, update, promotion, and audit operations.
   - `03_wiki/mechanisms/Imf_Exchange_Rate_Assessment_And_Crawling_Peg_Design.md` — Confidence 4: Box 4.8 (4-indicator ER assessment), active vs passive crawl design, rate-of-crawl determination, band widening as managed float transition, Poland 1990–1995 case study
   - `03_wiki/frameworks/Imf_Financial_Programming_NDA_Ceiling_And_BOP_Monetary_Approach.md` — Confidence 4: Monetary approach to BOP (excess NDA → NFA loss, one-for-one), NDA ceiling conditionality logic, controllability hierarchy (Cb > NCG > NFA), three monetary survey sector links, indirect monetization mechanism despite legal prohibition
 
+- **WIKI NODES CREATED** (IMF Macro Accounting — Chapter 2 inflation + Chapter 3 tax analysis):
+  - `03_wiki/frameworks/Imf_Inflation_Analysis_Cpi_Gdp_Deflator_Four_Types_Core.md` — Confidence 4: 4 inflation types (policy-induced, cost-push, demand-pull, inertial), CPI vs GDP deflator (3 differences: coverage/imports/Laspeyres-Paasche), core vs underlying inflation, NAIRU taxonomy (5 unemployment types), Japan non-accommodation example, inflation diagnostic
+  - `03_wiki/frameworks/Imf_Tax_Revenue_Analysis_Elasticity_Buoyancy_Effort_Tanzi.md` — Confidence 4: tax elasticity (unchanged system) vs buoyancy (including discretionary), taxable capacity definition, tax effort = actual/capacity ratio, 3 structural determinants of taxable capacity (openness/income/composition), Tanzi 8-criterion revenue productivity diagnostic test (concentration, dispersion, erosion, collection lags, specificity, objectivity, enforcement, cost), Tanzi effect (inflation–collection lag cycle)
+
 - **WIKI NODE CREATED**: `03_wiki/mechanisms/CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus.md`
   - Confidence: 4 | Stability: stable | T_MODE_DEEP
   - Source basis: Lipschitz & Schadler (Box 4.1, Box 4.6, p.2720-2763, p.2948-2969), IMF Macro Accounting (Box 3.7, GFS CB profit treatment, sterilization exercise), Perry Warjiyo Ch.11 (fiscal-monetary coordination, CB independence under crisis)
