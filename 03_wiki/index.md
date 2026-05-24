@@ -1,6 +1,6 @@
 # Wiki Index
 
-**Total nodes:** 194  |  **Last updated:** 2026-05-24
+**Total nodes:** 195  |  **Last updated:** 2026-05-24
 
 ---
 
@@ -71,7 +71,7 @@
 - **[[US Shadow Banking Post-GFC Market Based Finance Structure]]**  ★★★☆☆
   Post-GFC shadow banking became a repo-centric collateral market rather than a CDO machine.
 
-## Mechanisms (104)
+## Mechanisms (105)
 
 - **[[Ample Reserves Buffer Sizing TGA Volatility]]**  ★☆☆☆☆
   The minimum ample reserves buffer required for rate control can be estimated as B = sigma*sqrt(Delta)*z*(epsilon*Delta/2), where sigma is the standard...
@@ -91,6 +91,8 @@
   Basel III increased CET1 and liquidity requirements force banks to retreat from capital-intensive corporate and leveraged lending; private credit fund...
 - **[[Basel Output Floor Specialized Lending Impact]]**  ★☆☆☆☆
   The Output Floor (72.5% of SA-RWA, fully phased-in Jan 2027) prevents banks from using internal IRB models to reduce RWA below 72.5% of the Standardis...
+- **[[CB FX Rate Target Balance Sheet Constraint And Sterilization]]**  ★★★★☆
+  When a CB commits to an exchange rate target, NFA becomes endogenous (determined by BOP flows); the CB retains only NDA as policy instrument. Sterilization offsets NFA changes via NDA but faces two binding limits: reserve depletion (depreciation defense) and quasi-fiscal carrying cost (appreciation defense).
 - **[[BoJ QE Duration Extraction Household Wealth Transfer]]**  ★☆☆☆☆
   BoJ QE systematically extracted duration from the private sector by swapping long-duration JGBs for near-zero-duration reserves, leaving Japanese hous...
 - **[[Bond Accrual Price Effect Interaction]]**  ★★★☆☆

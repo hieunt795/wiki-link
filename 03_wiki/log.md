@@ -45,6 +45,18 @@ Chronological record of all ingest, update, promotion, and audit operations.
   - 3 TRUE_GAPs logged: SRF usage data, reserve demand elasticity update, Fedwire payment delay index
   - 1 PENDING gap: May 2026 FOMC decision
 
+- **WIKI NODE CREATED**: `03_wiki/mechanisms/CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization.md`
+  - Confidence: 4 | Stability: stable
+  - T_MODE_DEEP construction: read Lipschitz & Schadler lines 2241–2858 (Box 4.7, Table 4.8, Bulgaria case), IMF Macro Accounting lines 3699–3749 (sterilization, reserve adequacy), Perry Warjiyo lines 212–295 (dual instruments, FIT)
+  - Thesis: NFA endogeneity under FX target → CB retains only NDA; sterilization faces reserve depletion (Case A) and quasi-fiscal carrying cost (Case B)
+  - Content: T-account mechanics (2 directions), 4-factor sterilization decision matrix, regime comparison (5 regimes), Greenspan-Guidotti rule, Mundell-Fleming ineffectiveness, dual-instrument EME resolution, HEALTHY/STRESS/CRISIS diagnostic pattern
+
+- **RESEARCH WORKSPACE**: `04_research/vietnam_imf_macro_2026/` created
+  - Topic: Vietnam macro accounts under IMF accounting framework (SNA + GFS + BOP + Monetary Survey)
+  - Key findings: Private surplus +7.6% GDP, Govt deficit -1.5%, CA +6.1% GDP [2024 identity ✓]; Credit/GDP 134%; FX reserves 2.4 months (below IMF adequacy); SBV sold $9.3bn FX 2024
+  - 4 TRUE_GAPs: SBV balance sheet detail, fiscal financing breakdown, FX exposure matrix, quasi-fiscal scale
+  - Status: in_progress
+
 ---
 
 ## 2026-05-20

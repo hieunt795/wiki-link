@@ -1,0 +1,80 @@
+topic_slug: vietnam_imf_macro_2026
+title: "Vietnam Macro Accounts — IMF Accounting Framework"
+primary_question: "Dưới góc độ IMF macro accounting (SNA + GFS + BOP + Monetary Survey), cân đối vĩ mô của Việt Nam đang ở đâu và rủi ro chính là gì?"
+sub_questions:
+  - id: sq1
+    text: "Real sector (SNA): GDP, tiết kiệm, đầu tư — saving-investment gap của khu vực tư và chính phủ?"
+    probe_state: PARTIAL
+    notes: "Savings ~37% GDP, investment ~30-33% GDP. FDI $35bn 2024. Private surplus ≈ +7.6% GDP."
+  - id: sq2
+    text: "Fiscal sector (GFS): cấu trúc thu-chi, thâm hụt, tài trợ — có quasi-fiscal không?"
+    probe_state: PARTIAL
+    notes: "Revenue 17.6% GDP 2024. Deficit 1.5% 2024 → 3.3% 2025. Debt 31.3% GDP. VBSP/VDB là quasi-fiscal."
+  - id: sq3
+    text: "External sector (BOP): cơ cấu CA surplus, dự trữ FX, financial account — adequate coverage?"
+    probe_state: PARTIAL
+    notes: "CA +6.1% GDP 2024. FX $80-83bn = 2.4 months imports (moderately below IMF adequacy)."
+  - id: sq4
+    text: "Monetary sector: Monetary Survey của SBV — M2 = NFA + NDA đang dịch chuyển như thế nào?"
+    probe_state: PARTIAL
+    notes: "Credit/GDP 134%. Credit growth 15% 2024, 19% Jun 2025. NFA giảm do FX intervention."
+  - id: sq5
+    text: "Flow of Funds 4-sector: sectoral balance identity có nhất quán? Rủi ro tích lũy ở đâu?"
+    probe_state: PARTIAL
+    notes: "(Sp-Ip) + (Sg-Ig) = CAB → private surplus 7.6% + govt deficit -1.5% = CA +6.1%. Nhất quán."
+  - id: sq6
+    text: "EM balance sheet vulnerability: FX mismatch, fear of floating, sudden stop risk cho Vietnam?"
+    probe_state: TRUE_GAP
+    notes: "Cần phân tích cụ thể FX exposure của ngân hàng và khu vực phi ngân hàng VN."
+
+coverage_probe:
+  primary_question_state: TRUE_GAP
+  wiki_foundation:
+    - node: "Imf_Flow_Of_Funds_4_Sector_Consistency_Framework"
+      relevance: PRIMARY — khung phân tích chính
+    - node: "Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability"
+      relevance: PRIMARY — fiscal module
+    - node: "Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework"
+      relevance: PRIMARY — monetary module
+    - node: "Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis"
+      relevance: PRIMARY — external module
+    - node: "Imf_Sna_Real_Sector_Accounting_Gdp_Identities_And_Sectoral_Accounts"
+      relevance: PRIMARY — real sector module
+    - node: "Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating"
+      relevance: SECONDARY — EM vulnerability framework
+    - node: "EM_Central_Bank_Policy_Mix_FIT_Framework"
+      relevance: SECONDARY — SBV policy framework context
+  data_sources_used:
+    - "IMF Article IV Vietnam 2025 (Country Report 25/283, Sep 2025)"
+    - "AMRO Vietnam Annual Consultation Report Feb 2025"
+    - "SBV official communications 2024-2025"
+    - "World Bank / Trading Economics / CEIC data"
+
+gaps:
+  - id: gap1
+    type: TRUE_GAP
+    description: "SBV balance sheet chi tiết: NFA, NCG, CPS, reserve money breakdown theo năm"
+    suggested_sources:
+      - "SBV Annual Report (sbv.gov.vn)"
+      - "IMF IFS database — Vietnam monetary accounts"
+  - id: gap2
+    type: TRUE_GAP
+    description: "Fiscal financing breakdown: domestic bank vs nonbank vs external — cụ thể bao nhiêu % từ CB"
+    suggested_sources:
+      - "Vietnam Ministry of Finance annual report"
+      - "IMF GFS database"
+  - id: gap3
+    type: TRUE_GAP
+    description: "FX exposure matrix của ngân hàng và nonbank Việt Nam — unhedged FX liabilities"
+    suggested_sources:
+      - "SBV banking supervision report"
+      - "IMF FSAP Vietnam (if available)"
+  - id: gap4
+    type: TRUE_GAP
+    description: "Quasi-fiscal: chi phí sterilization của SBV, lỗ tỷ giá, VDB off-budget lending scale"
+    suggested_sources:
+      - "SBV balance sheet NII data"
+      - "ADB Vietnam fiscal diagnostic"
+
+status: in_progress
+date_created: "2026-05-24"
