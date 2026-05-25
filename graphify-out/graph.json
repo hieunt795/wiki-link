@@ -31,8 +31,18 @@
       "type": "mechanism"
     },
     {
+      "id": "sterilization_offset_coefficient_eme_001",
+      "label": "Sterilization Effectiveness — Offset and Sterilization Coefficients in EMEs",
+      "type": "mechanism"
+    },
+    {
       "id": "collateral_velocity_reuse_rate_plumbing_001",
       "label": "Collateral Velocity Reuse Rate And Financial Plumbing",
+      "type": "mechanism"
+    },
+    {
+      "id": "enhanced_taylor_rule_eme_fx_augmented_001",
+      "label": "Enhanced Taylor Rule for EME — FX Deviation Augmentation",
       "type": "mechanism"
     },
     {
@@ -53,6 +63,11 @@
     {
       "id": "scissors_effect_ecb_qt_sovereign_supply_001",
       "label": "Scissors Effect ECB QT And Sovereign Supply",
+      "type": "mechanism"
+    },
+    {
+      "id": "incomes_policy_wage_controls_stabilization_001",
+      "label": "Incomes Policy — Wage Controls In Stabilization Programs",
       "type": "mechanism"
     },
     {
@@ -78,6 +93,11 @@
     {
       "id": "lcr_nsfr_long_term_lending_penalty_001",
       "label": "LCR NSFR Long-Term Lending Penalty",
+      "type": "mechanism"
+    },
+    {
+      "id": "imf_real_interest_rate_fisher_equation_portfolio_choice_001",
+      "label": "IMF Real Interest Rate — Fisher Equation And Portfolio Choice",
       "type": "mechanism"
     },
     {
@@ -256,6 +276,11 @@
       "type": "mechanism"
     },
     {
+      "id": "imf_money_multiplier_decomposition_001",
+      "label": "Money Multiplier — Ratio Decomposition and Three-Agent Determination",
+      "type": "mechanism"
+    },
+    {
       "id": "qe_collateral_velocity_monetary_policy_001",
       "label": "QE Collateral Velocity And Monetary Policy Transmission",
       "type": "mechanism"
@@ -341,8 +366,18 @@
       "type": "mechanism"
     },
     {
+      "id": "imf_monetary_survey_valuation_adjustment_001",
+      "label": "IMF Monetary Survey — Valuation Adjustment and Transaction Flow Decomposition",
+      "type": "mechanism"
+    },
+    {
       "id": "tga_reform_as_fed_balance_sheet_reduction_tool_001",
       "label": "TGA Reform as Fed Balance Sheet Reduction Tool",
+      "type": "mechanism"
+    },
+    {
+      "id": "capital_flow_management_cfm_taxonomy_001",
+      "label": "Capital Flow Management — Taxonomy, Triggers, and Instruments",
       "type": "mechanism"
     },
     {
@@ -656,6 +691,11 @@
       "type": "framework"
     },
     {
+      "id": "capital_flow_push_pull_determinants_eme_001",
+      "label": "Capital Flow Push-Pull Determinants in EMEs",
+      "type": "framework"
+    },
+    {
       "id": "private_credit_stress_monitoring_001",
       "label": "Private Credit Stress Monitoring Framework",
       "type": "framework"
@@ -696,8 +736,18 @@
       "type": "framework"
     },
     {
+      "id": "imf_public_expenditure_taxonomy_001",
+      "label": "IMF Public Expenditure Analysis — Taxonomy and Policy Issues",
+      "type": "framework"
+    },
+    {
       "id": "pbc_dual_track_monetary_policy_framework_001",
       "label": "PBC Dual-Track Monetary Policy Framework",
+      "type": "framework"
+    },
+    {
+      "id": "imf_macro_crisis_vector_framework_001",
+      "label": "IMF Macro Crisis Vector Framework — Fiscal, External, And Banking Transmission",
       "type": "framework"
     },
     {
@@ -783,6 +833,11 @@
     {
       "id": "warsh_maturity_sovereignty_frm_001",
       "label": "Warsh Maturity Sovereignty Framework",
+      "type": "framework"
+    },
+    {
+      "id": "labor_market_unemployment_taxonomy_nairu_001",
+      "label": "Labor Market Unemployment Taxonomy And NAIRU",
       "type": "framework"
     },
     {
@@ -881,6 +936,11 @@
       "type": "concept"
     },
     {
+      "id": "transition_economy_monetary_issues_001",
+      "label": "Transition Economy Monetary Special Issues",
+      "type": "concept"
+    },
+    {
       "id": "eurodollar_system_mechanics_and_post_reform_decline_001",
       "label": "Eurodollar System Mechanics And Post-Reform Decline",
       "type": "mechanism"
@@ -963,6 +1023,11 @@
     {
       "id": "fed_ample_reserves_rate_control_framework_con_001",
       "label": "Fed Ample Reserves Rate Control Framework",
+      "type": "concept"
+    },
+    {
+      "id": "currency_substitution_dollarization_001",
+      "label": "Currency Substitution and Dollarization — Monetary Control Implications",
       "type": "concept"
     },
     {
@@ -1199,6 +1264,14 @@
       "target": "Private_Credit_Stress_Monitoring_Framework"
     },
     {
+      "source": "imf_money_multiplier_decomposition_001",
+      "target": "Currency_Substitution_Dollarization_Monetary_Control"
+    },
+    {
+      "source": "imf_money_multiplier_decomposition_001",
+      "target": "CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus"
+    },
+    {
       "source": "qe_collateral_velocity_monetary_policy_001",
       "target": "Collateral_Velocity_Reuse_Rate_Financial_Plumbing"
     },
@@ -1387,8 +1460,28 @@
       "target": "SLR_LCR_Balance_Sheet_Constraints_Treasury_Market_Dealer"
     },
     {
+      "source": "imf_gfs_fiscal_accounting_framework_deficit_measurement_and_sustainability_001",
+      "target": "Imf_Macro_Crisis_Vector_Framework"
+    },
+    {
       "source": "fed_volatility_suppressor_secured_standard_001",
       "target": "Treasury_Market_Dealer_Intermediation_Capacity"
+    },
+    {
+      "source": "imf_public_expenditure_taxonomy_001",
+      "target": "CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus"
+    },
+    {
+      "source": "imf_macro_crisis_vector_framework_001",
+      "target": "Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability"
+    },
+    {
+      "source": "imf_macro_crisis_vector_framework_001",
+      "target": "Imf_Flow_Of_Funds_4_Sector_Consistency_Framework"
+    },
+    {
+      "source": "imf_balance_of_payments_framework_and_external_account_analysis_001",
+      "target": "Imf_Monetary_Survey_Valuation_Adjustment_Transaction_Flow_Decomposition"
     },
     {
       "source": "basel_regional_implementation_dynamics_001",
@@ -1417,6 +1510,10 @@
     {
       "source": "concept_fi_rv_001",
       "target": "Swap_Carry_And_Roll_Down_Analysis"
+    },
+    {
+      "source": "currency_substitution_dollarization_001",
+      "target": "Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating"
     },
     {
       "source": "indicator_effr_001",

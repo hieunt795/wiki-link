@@ -107,6 +107,26 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "sterilization_offset_coefficient_eme_001",
+    "stem": "Sterilization_Offset_Coefficient_EME_Monetary_Autonomy",
+    "label": "Sterilization Effectiveness — Offset and Sterilization Coefficients in EMEs",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Sterilization_Offset_Coefficient_EME_Monetary_Autonomy.md",
+    "confidence": 3,
+    "thesis": "Under open capital accounts with an FX target, the effectiveness of CB sterilization is constrained by two competing forces measured as coefficients: the offset coefficient (how much of CB tightening is neutralized by induced capital inflows) and the sterilization coefficient (how much of FX intervention liquidity is reabsorbed). When the offset coefficient exceeds the sterilization coefficient, the CB's net control over money supply is negative — tightening attracts more inflows than can be sterilized, undermining monetary autonomy. [LLM]\n",
+    "tags": [
+      "sterilization",
+      "fx_intervention",
+      "capital_flows",
+      "monetary_autonomy",
+      "em_policy",
+      "kouri_porter",
+      "indonesia",
+      "offset_coefficient"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "collateral_velocity_reuse_rate_plumbing_001",
     "stem": "Collateral_Velocity_Reuse_Rate_Financial_Plumbing",
     "label": "Collateral Velocity Reuse Rate And Financial Plumbing",
@@ -125,6 +145,26 @@
       "financial_stability"
     ],
     "domain": "financial_markets"
+  },
+  {
+    "node_id": "enhanced_taylor_rule_eme_fx_augmented_001",
+    "stem": "Enhanced_Taylor_Rule_EME_FX_Augmented",
+    "label": "Enhanced Taylor Rule for EME — FX Deviation Augmentation",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Enhanced_Taylor_Rule_EME_FX_Augmented.md",
+    "confidence": 3,
+    "thesis": "Standard Taylor rules (inflation deviation + output gap → interest rate) are incomplete for EMEs with significant exchange rate pass-through to inflation. An FX-augmented (\"enhanced\") Taylor rule adds real exchange rate deviation from equilibrium as a third driver of the policy rate. Empirical estimates show this coefficient ranges from 0 (pure IT countries like Chile) to 0.8 (Mexico) with Indonesia at 0.3, reflecting how directly the exchange rate feeds into the CB's reaction function. The enhanced rule produces better R-squared fit and more optimal countercyclical response than the standard rule in high-pass-through EMEs. [LLM]\n",
+    "tags": [
+      "taylor_rule",
+      "fx_intervention",
+      "monetary_policy_rule",
+      "open_economy",
+      "exchange_rate_passthrough",
+      "em_policy",
+      "inflation_targeting",
+      "interest_rate"
+    ],
+    "domain": "monetary_policy"
   },
   {
     "node_id": "eurobond_blue_red_bond_adverse_selection_moral_hazard_001",
@@ -198,6 +238,29 @@
       "eurozone"
     ],
     "domain": "monetary_policy"
+  },
+  {
+    "node_id": "incomes_policy_wage_controls_stabilization_001",
+    "stem": "Incomes_Policy_Wage_Controls_Stabilization_Programs",
+    "label": "Incomes Policy — Wage Controls In Stabilization Programs",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Incomes_Policy_Wage_Controls_Stabilization_Programs.md",
+    "confidence": 4,
+    "thesis": "Incomes policies — government interventions to restrain wage and price growth — are used in stabilization programs primarily to break inertial inflation (perpetuated through contracts and indexation) rather than to address excess demand. Three institutional forms exist: guideline approach, social contract, and tax-incentive policy (TIP). In transition economies, the four-step design challenge covers: (1) norm selection (wage bill vs. average wage), (2) indexation (backward vs. forward-looking), (3) coverage (public vs. also private enterprises), and (4) enforcement (excess wage tax or social pact). Historical evidence shows wage controls play a valuable but temporary role — effectiveness diminishes rapidly, and they must be exited before structural distortions accumulate.\n",
+    "tags": [
+      "incomes_policy",
+      "wage_controls",
+      "stabilization_program",
+      "anti_inflation",
+      "inertial_inflation",
+      "transition_economy",
+      "wage_norm",
+      "indexation",
+      "excess_wage_tax",
+      "imf_macro_accounting",
+      "heterodox_stabilization"
+    ],
+    "domain": "fiscal_policy"
   },
   {
     "node_id": "qe_duration_extraction_from_private_sector_001",
@@ -296,6 +359,28 @@
       "private-credit-driver"
     ],
     "domain": "basel_risk"
+  },
+  {
+    "node_id": "imf_real_interest_rate_fisher_equation_portfolio_choice_001",
+    "stem": "Imf_Real_Interest_Rate_Fisher_Equation_And_Portfolio_Choice",
+    "label": "IMF Real Interest Rate — Fisher Equation And Portfolio Choice",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Imf_Real_Interest_Rate_Fisher_Equation_And_Portfolio_Choice.md",
+    "confidence": 4,
+    "thesis": "The Fisher equation decomposes the nominal interest rate into a real rate plus expected inflation: Rr ≈ Rn − Pᵉ (approximate) or Rr = (Rn − Pᵉ)/(1 + Pᵉ) (exact). Portfolio choice theory classifies assets into four types (money, bonds/credit instruments, equities, real assets), with demand driven by expected return, riskiness, and liquidity. In high-inflation environments where real returns on financial assets are negative, rational agents substitute away from money and domestic bonds toward real assets or foreign currency — the mechanism behind dollarization and financial repression.\n",
+    "tags": [
+      "fisher_equation",
+      "real_interest_rate",
+      "nominal_interest_rate",
+      "inflation_expectation",
+      "portfolio_choice",
+      "opportunity_cost_of_money",
+      "asset_substitution",
+      "financial_repression",
+      "imf_macro_accounting",
+      "monetary_analysis"
+    ],
+    "domain": "monetary_policy"
   },
   {
     "node_id": "bank_credit_line_private_credit_funds_systemic_channel_001",
@@ -964,6 +1049,26 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "imf_money_multiplier_decomposition_001",
+    "stem": "Imf_Money_Multiplier_Ratio_Decomposition_Three_Agent",
+    "label": "Money Multiplier — Ratio Decomposition and Three-Agent Determination",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Imf_Money_Multiplier_Ratio_Decomposition_Three_Agent.md",
+    "confidence": 4,
+    "thesis": "The money multiplier links reserve money (monetary base) to broad money (M2) through the behavioral choices of three agents: the monetary authority (reserve requirements), commercial banks (excess reserve ratio), and the public (currency and time deposit ratios). The simple multiplier mm=(1+c)/(c+r) extends to a full decomposition across deposit types and reserve categories: mm=(1+c+b)/ (c+rd+rt·b+re·(1+b)). Rising c (currency flight) or re (precautionary excess reserves) compresses the multiplier, as do financial innovation (shifts deposits to non-bank instruments) and currency substitution (FX deposits exit the multiplier chain).\n",
+    "tags": [
+      "money_multiplier",
+      "monetary_base",
+      "reserve_requirements",
+      "currency_deposit_ratio",
+      "monetary_survey",
+      "m2",
+      "banking_system",
+      "imf_macro_accounting"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "qe_collateral_velocity_monetary_policy_001",
     "stem": "QE_Collateral_Velocity_Monetary_Policy_Transmission",
     "label": "QE Collateral Velocity And Monetary Policy Transmission",
@@ -1290,6 +1395,27 @@
     "domain": "fiscal_policy"
   },
   {
+    "node_id": "imf_monetary_survey_valuation_adjustment_001",
+    "stem": "Imf_Monetary_Survey_Valuation_Adjustment_Transaction_Flow_Decomposition",
+    "label": "IMF Monetary Survey — Valuation Adjustment and Transaction Flow Decomposition",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Imf_Monetary_Survey_Valuation_Adjustment_Transaction_Flow_Decomposition.md",
+    "confidence": 4,
+    "thesis": "Changes in monetary survey stock items (especially NFA) between two periods reflect both actual transaction flows AND valuation effects from exchange rate changes. Box 5.8 of the IMF Macro Accounting framework provides a formal decomposition: the transaction component is converted at the period-average exchange rate, while the valuation adjustment (VAj) captures the revaluation of the opening stock due to exchange rate movement. Failing to separate these components causes ΔNFA in the monetary survey (local currency) to diverge from ΔRES in the BOP (foreign currency), invalidating monetary programming targets.\n",
+    "tags": [
+      "valuation_adjustment",
+      "monetary_survey",
+      "nfa",
+      "exchange_rate",
+      "transaction_flow",
+      "financial_programming",
+      "imf_macro_accounting",
+      "balance_of_payments",
+      "reconciliation"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "tga_reform_as_fed_balance_sheet_reduction_tool_001",
     "stem": "Tga_Reform_As_Fed_Balance_Sheet_Reduction_Tool",
     "label": "TGA Reform as Fed Balance Sheet Reduction Tool",
@@ -1305,6 +1431,26 @@
       "reserves",
       "money_market",
       "treasury_cash_management"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
+    "node_id": "capital_flow_management_cfm_taxonomy_001",
+    "stem": "Capital_Flow_Management_CFM_Taxonomy_Triggers_Instruments",
+    "label": "Capital Flow Management — Taxonomy, Triggers, and Instruments",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Capital_Flow_Management_CFM_Taxonomy_Triggers_Instruments.md",
+    "confidence": 3,
+    "thesis": "Capital Flow Management (CFM) is a third policy instrument used by EME central banks to manage the impossible trinity when interest rates and FX intervention alone are insufficient. CFM tools range from administrative (taxes, URR, restrictions) to prudential (NOP, LDR, FX loan caps), with IMF 2012 guidance identifying three trigger conditions for deployment. CFM reduces the offset coefficient by directly restricting the volume of inflows that generate sterilization pressure and quasi-fiscal costs. [LLM]\n",
+    "tags": [
+      "cfm",
+      "capital_controls",
+      "capital_flows",
+      "em_policy",
+      "macroprudential",
+      "fx_intervention",
+      "impossible_trinity",
+      "perry_warjiyo"
     ],
     "domain": "monetary_policy"
   },
@@ -2492,6 +2638,26 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "capital_flow_push_pull_determinants_eme_001",
+    "stem": "Capital_Flow_Push_Pull_Determinants_EME",
+    "label": "Capital Flow Push-Pull Determinants in EMEs",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Capital_Flow_Push_Pull_Determinants_EME.md",
+    "confidence": 3,
+    "thesis": "Capital flows to EMEs are jointly determined by global push factors (advanced-economy interest rates, VIX, global growth) and domestic pull factors (EME growth, yields, exchange rate stability, institutional quality). FDI is driven primarily by domestic fundamentals and governance; portfolio and banking flows are dominated by global push factors and respond faster and more reversibly. The composition of inflows determines the FX target + sterilization burden: PI and short-term bank flows require the most sterilization and generate the largest quasi-fiscal costs. [LLM]\n",
+    "tags": [
+      "capital_flows",
+      "em_policy",
+      "push_pull",
+      "hot_money",
+      "fdi",
+      "portfolio_flows",
+      "impossible_trinity",
+      "lucas_paradox"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "private_credit_stress_monitoring_001",
     "stem": "Private_Credit_Stress_Monitoring_Framework",
     "label": "Private Credit Stress Monitoring Framework",
@@ -2652,6 +2818,27 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "imf_public_expenditure_taxonomy_001",
+    "stem": "Imf_Public_Expenditure_Analysis_Taxonomy_And_Policy_Issues",
+    "label": "IMF Public Expenditure Analysis — Taxonomy and Policy Issues",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Imf_Public_Expenditure_Analysis_Taxonomy_And_Policy_Issues.md",
+    "confidence": 3,
+    "thesis": "Public expenditure analysis addresses three fundamental problems: spending level (aggregate fiscal stance), efficiency (value delivered per unit of spending), and mix (allocation across types and programs). The IMF taxonomy disaggregates expenditure into wages/salaries, goods and services, subsidies (7 forms), transfers, interest, and capital. Subsidies are the most analytically complex category — spanning cash grants to regulatory subsidies and exchange rate subsidies — and include large quasi-fiscal operations that do not appear in the budget. The primary macroeconomic concern is controlling the wage bill and subsidy burden, which are the most politically rigid and most inflationary components of government spending. [LLM]\n",
+    "tags": [
+      "public_expenditure",
+      "subsidies",
+      "fiscal_policy",
+      "budget",
+      "social_safety_net",
+      "sequestering",
+      "imf_macro_accounting",
+      "government_spending",
+      "quasi_fiscal"
+    ],
+    "domain": "fiscal_policy"
+  },
+  {
     "node_id": "pbc_dual_track_monetary_policy_framework_001",
     "stem": "Pbc_Dual_Track_Monetary_Policy_Framework",
     "label": "PBC Dual-Track Monetary Policy Framework",
@@ -2666,6 +2853,30 @@
       "rrr",
       "interest_rate",
       "capital_controls"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
+    "node_id": "imf_macro_crisis_vector_framework_001",
+    "stem": "Imf_Macro_Crisis_Vector_Framework",
+    "label": "IMF Macro Crisis Vector Framework — Fiscal, External, And Banking Transmission",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Imf_Macro_Crisis_Vector_Framework.md",
+    "confidence": 4,
+    "thesis": "The IMF Macro Accounting framework identifies three distinct crisis vectors, each with a specific balance-sheet transmission mechanism: (1) Fiscal vector — 4 modes of deficit financing each generate a distinct macroeconomic imbalance (inflation, exchange rate crisis, debt explosion, crowding out); (2) External vector — under a fixed peg, unsustainable current account deficits trigger rational speculative attacks before reserves are exhausted; reserve adequacy must be assessed against financial vulnerability indicators (M2/FX ratio, short-term FX liabilities) rather than just the 3-month import rule; (3) Banking vector — the fractional reserve system's maturity mismatch makes banks inherently illiquid; a single bank's payment difficulty can freeze credit across the entire system through a confidence contagion chain, requiring LOLR intervention. The 4-sector flow of funds matrix (government, private, banking, external) is the accounting tool for tracing which sector's imbalance is generating each crisis vector.\n",
+    "tags": [
+      "crisis_transmission",
+      "speculative_attack",
+      "fiscal_crisis",
+      "banking_crisis",
+      "financial_vulnerability",
+      "reserve_adequacy",
+      "lolr",
+      "current_account_sustainability",
+      "lawson_doctrine",
+      "imf_macro_accounting",
+      "balance_of_payments",
+      "krugman_model"
     ],
     "domain": "monetary_policy"
   },
@@ -3001,6 +3212,28 @@
       "debt_management"
     ],
     "domain": "fiscal_policy"
+  },
+  {
+    "node_id": "labor_market_unemployment_taxonomy_nairu_001",
+    "stem": "Labor_Market_Unemployment_Taxonomy_And_NAIRU",
+    "label": "Labor Market Unemployment Taxonomy And NAIRU",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Labor_Market_Unemployment_Taxonomy_And_NAIRU.md",
+    "confidence": 4,
+    "thesis": "The IMF framework identifies five unemployment categories (seasonal, frictional, cyclical, structural, disguised) each requiring distinct policy responses. The NAIRU (Non-Accelerating Inflation Rate of Unemployment) defines the inflation- compatible full employment floor — below it, demand management generates inflation without sustainable output gains. In transition economies, \"disguised unemployment\" (workers with zero or negative marginal product, common in SOEs) is the dominant form — standard unemployment statistics systematically understate true labor market distress.\n",
+    "tags": [
+      "labor_market",
+      "unemployment",
+      "nairu",
+      "structural_unemployment",
+      "frictional_unemployment",
+      "disguised_unemployment",
+      "labor_force_participation",
+      "transition_economy",
+      "imf_macro_accounting",
+      "real_sector_analysis"
+    ],
+    "domain": "monetary_policy"
   },
   {
     "node_id": "imf_tax_revenue_analysis_elasticity_buoyancy_effort_tanzi_001",
@@ -3374,6 +3607,27 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "transition_economy_monetary_issues_001",
+    "stem": "Transition_Economy_Monetary_Special_Issues",
+    "label": "Transition Economy Monetary Special Issues",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Transition_Economy_Monetary_Special_Issues.md",
+    "confidence": 3,
+    "thesis": "Monetary analysis in transition economies (post-communist reform) faces five structural distortions absent from standard frameworks: (1) rapid, discrete velocity jumps (up to 3-fold in one quarter, Armenia/Georgia 1993); (2) banking systems that do not behave as profit maximizers (monobank legacy); (3) interenterprise arrears that substitute for bank credit when credit is tightened; (4) interest rates that may perversely amplify inflation via enterprise borrowing to service debt; (5) very wide lending-deposit spreads due to NPL burden, preferential credit legacy, and non-interest reserve requirements. Hyperinflation episodes (Cagan: ≥50% monthly) show real money demand can collapse to 1/30th of pre- inflation levels, with recovery taking years even after stabilization. [LLM]\n",
+    "tags": [
+      "transition_economy",
+      "monetary_policy",
+      "velocity",
+      "dollarization",
+      "banking_system",
+      "fiscal_dominance",
+      "hyperinflation",
+      "imf_macro_accounting",
+      "monobank"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "eurodollar_system_mechanics_and_post_reform_decline_001",
     "stem": "Eurodollar_System_Mechanics_And_Post_Reform_Decline",
     "label": "Eurodollar System Mechanics And Post-Reform Decline",
@@ -3695,6 +3949,26 @@
       "ample_reserves",
       "rate_control",
       "qt"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
+    "node_id": "currency_substitution_dollarization_001",
+    "stem": "Currency_Substitution_Dollarization_Monetary_Control",
+    "label": "Currency Substitution and Dollarization — Monetary Control Implications",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Currency_Substitution_Dollarization_Monetary_Control.md",
+    "confidence": 3,
+    "thesis": "Currency substitution occurs when residents hold FX assets (deposits, cash) as a substitute for domestic money, driven by high inflation, exchange rate instability, or institutional distrust of the CB. FX deposits/M2 ratios reached 30-60% in peak transition economies. Dollarization undermines CB monetary control: base money (RM) no longer fully determines M2 because FX deposits lie partly outside the domestic money multiplier chain. Attempts to reverse dollarization by force (banning FX deposits) typically backfire by driving FX holdings offshore, further shrinking the domestic monetary base. [LLM]\n",
+    "tags": [
+      "dollarization",
+      "currency_substitution",
+      "monetary_control",
+      "fx_deposits",
+      "transition_economy",
+      "em_policy",
+      "inflation",
+      "imf_macro_accounting"
     ],
     "domain": "monetary_policy"
   },
