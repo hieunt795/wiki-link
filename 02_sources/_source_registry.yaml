@@ -1,8 +1,8 @@
 meta:
-  total_sources: 63
-  total_ingested: 51
-  coverage_pct: 81.0
-  last_updated: '2026-05-24'
+  total_sources: 66
+  total_ingested: 53
+  coverage_pct: 80.3
+  last_updated: '2026-05-25'
 sources:
   02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md:
     status: partial
@@ -696,3 +696,57 @@ sources:
       primary IMF textbook). BoP chapter (Ch4) covered by GFS/FoF nodes. Balance of
       payments detailed coverage not separately nodeified — ingested into flow of
       funds framework.'
+  02_sources/regulator/bcbs/bcbs144.md:
+    status: partial
+    priority: high
+    domain: banking_regulation
+    author: BCBS
+    description: 'BCBS Principles for Sound Liquidity Risk Management and Supervision,
+      September 2008. 17 principles covering: liquidity risk governance, measurement,
+      HQLA cushion (pre-LCR), CFP, stress testing, intraday liquidity, FTP internal
+      pricing, supervisory assessment. Pre-Basel III standard that directly foreshadowed
+      LCR, NSFR, and ILAAP.'
+    ingest_date: '2026-05-25'
+    wiki_nodes:
+    - 03_wiki/regulations/Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008.md
+    - 03_wiki/mechanisms/Bcbs_Hqla_Liquidity_Cushion_Principle_12.md
+    - 03_wiki/mechanisms/Bcbs_Liquidity_Stress_Testing_Principle_10.md
+    - 03_wiki/mechanisms/Bcbs_Liquidity_Contingency_Funding_Plan_Principle_11.md
+    - 03_wiki/mechanisms/Bcbs_Liquidity_Internal_Pricing_Ftp_Principle_4.md
+    - 03_wiki/mechanisms/Bcbs_Intraday_Liquidity_Management_Principle_8.md
+    notes: '2026-05-25: Created 6 wiki nodes: 1 regulation overview + 5 mechanism nodes
+      for key principles (P4 FTP, P8 intraday, P10 stress, P11 CFP, P12 HQLA cushion).
+      Principles 2-3 (governance), 5-7 (measurement/funding), 9 (collateral), 13 (disclosure),
+      14-17 (supervisory) covered in overview node only — candidate for further detailed
+      nodes if needed.'
+  02_sources/regulator/bcbs/d368.md:
+    status: partial
+    priority: high
+    domain: banking_regulation
+    author: BCBS
+    description: 'BCBS Standards: Interest Rate Risk in the Banking Book (IRRBB),
+      April 2016. 12 principles (banks + supervisors), EVE vs NII dual measures,
+      standardised framework with 6 shock scenarios, NMD behavioural assumptions,
+      outlier threshold ΔEVE > 15% Tier 1, CSRBB definition.'
+    ingest_date: '2026-05-25'
+    wiki_nodes:
+    - 03_wiki/regulations/Bcbs_Irrbb_Standards_D368_2016.md
+    - 03_wiki/mechanisms/Bcbs_Irrbb_Nmd_Standardised_Framework.md
+    - 03_wiki/frameworks/Irrbb_Eve_Nii_Dual_Metric_Framework.md
+    notes: '2026-05-25: Created 2 new nodes + enriched existing EVE/NII framework node
+      with d368 source. Key coverage: 12 principles overview, 6 shock scenarios, outlier
+      test (15% Tier 1), NMD separation procedure + Table 2 caps, standardised framework
+      5-stage EVE, ICAAP capital adequacy. Not yet covered: detailed model governance
+      (P6), P5 prepayment/term deposit behavioural assumptions, Annex 2 shock magnitudes.'
+  02_sources/regulator/bcbs/BaselFramework.md:
+    status: pending
+    priority: high
+    domain: banking_regulation
+    author: BCBS
+    description: 'Full Basel Framework (25,952 lines): SCO, CAP, RBC, CRE, MAR, LCR,
+      NSFR, LEV, SRP, DIS sections and more. Complete consolidated Basel III/IV standard.'
+    ingest_date: null
+    wiki_nodes: []
+    notes: 'Very large file — requires chunked approach. Prioritise: LCR (LIQ30),
+      NSFR (LIQ40), leverage ratio (LEV), capital adequacy (CAP), output floor (RBC
+      section). Do not attempt full ingest in single session.'

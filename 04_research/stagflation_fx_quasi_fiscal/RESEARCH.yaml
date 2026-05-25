@@ -1,0 +1,139 @@
+topic_slug: stagflation_fx_quasi_fiscal
+title: "Stagflation Under FX Rate Target + Quasi-Fiscal Operations"
+created: 2026-05-25
+last_updated: 2026-05-25
+status: active
+owner: user
+
+domain_template: 06_templates/domains/monetary_policy/policy_stance_analysis.yaml
+style_template: 06_templates/styles/research_memo.yaml
+analysis_mode: T_MODE_DEEP
+
+primary_question: >
+  How does stagflation emerge and persist in an economy operating under an FX rate
+  target regime combined with significant quasi-fiscal operations (sterilization costs,
+  CB quasi-fiscal losses, NCG accommodation)?
+
+sub_questions:
+  - "What are the transmission channels from FX target + sterilization to persistent inflation?"
+  - "How do quasi-fiscal costs (sterilization losses, NCG expansion) drain fiscal space and suppress growth?"
+  - "What is the sequencing: does inflation or stagnation come first in this regime?"
+  - "How does fiscal dominance interact with the FX target to produce a stagflationary trap?"
+  - "What are the diagnostic signals (CB balance sheet, NCG, NFA) that precede stagflation onset?"
+  - "What exit paths exist from FX-target-induced stagflation without triggering a currency crisis?"
+
+coverage_probe:
+  last_run: 2026-05-25
+  queries:
+    - query: "stagflation under FX rate targeting quasi-fiscal costs"
+      state: TRUE_GAP
+      wiki_sem_score: 0.000
+      raw_sem_score: 0.000
+      wiki_hits: 0
+      raw_hits: 0
+      action: use_wiki_nodes_as_foundation + agentic_search
+    - query: "FX rate target sterilization quasi-fiscal deficit"
+      state: TRUE_GAP
+      wiki_sem_score: 0.000
+      raw_sem_score: 0.000
+      wiki_hits: 0
+      raw_hits: 0
+      action: build_from_CB_FX_Target_and_Quasi_Fiscal_nodes
+    - query: "đình lạm lạm phát đình đốn tỷ giá neo"
+      state: TRUE_GAP
+      wiki_sem_score: 0.000
+      raw_sem_score: 0.000
+      wiki_hits: 0
+      raw_hits: 93_label_hits
+      action: dense_search_label_only
+
+sources_used:
+  wiki:
+    - "[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
+    - "[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]"
+  raw: []
+  fresh_data: []
+
+findings:
+  - file: "findings/stagflation_via_fx_target_quasi_fiscal_mechanism.md"
+    status: draft
+    promoted_to: null
+    confidence: 2
+    review_needed: true
+    notes: "Three-pathway synthesis from wiki building blocks"
+
+  - file: "findings/stagflation_fx_qf_deep_analysis.md"
+    status: draft
+    promoted_to: null
+    confidence: 2
+    review_needed: true
+    notes: "T_MODE_DEEP full analysis — 6 lenses, T-account tracing, historical cases, policy exit"
+    template_insights:
+      - "Three-element heterodox stabilization program pattern (Poland model) — appears in both FX regime and incomes policy nodes → candidate for new wiki node"
+      - "Fear-of-floating → stagflation amplifier nexus — not yet in wiki, sourced from Lipschitz"
+
+  - file: "findings/combined_balance_sheets_fx_target.md"
+    status: stable
+    promoted_to: "03_wiki/mechanisms/CB_FX_Target_Five_Entity_Balance_Sheet_Trace.md"
+    confidence: 3
+    review_needed: false
+    notes: "Full T-account trace across CB/DMB/GOV/PRIV/EXT — 6 scenarios, quadruple-entry accounting, diagnostic formulas"
+
+promotion_candidates:
+  - finding: "findings/stagflation_fx_qf_deep_analysis.md"
+    ready: true
+    target_type: mechanism
+    target_slug: FX_Target_Quasi_Fiscal_Stagflation_Trap_Mechanism
+    promoted_to: "03_wiki/mechanisms/FX_Target_Quasi_Fiscal_Stagflation_Trap_Mechanism.md"
+    confidence_achieved: 3
+    notes: "Promoted with IMF + Lipschitz source backing; LLM-E timing leads retained as [LLM] in node"
+
+  - finding: "findings/stagflation_via_fx_target_quasi_fiscal_mechanism.md"
+    ready: true
+    target_type: mechanism
+    target_slug: Fear_Of_Floating_Stagflation_Amplifier_Mechanism
+    promoted_to: "03_wiki/mechanisms/Fear_Of_Floating_Stagflation_Amplifier_Mechanism.md"
+    confidence_achieved: 4
+    notes: "Sourced from Lipschitz p.3693–3814 + Mundell-Fleming"
+
+  - finding: "findings/stagflation_fx_qf_deep_analysis.md"
+    ready: true
+    target_type: framework
+    target_slug: Heterodox_Stabilization_Three_Element_Program
+    promoted_to: "03_wiki/frameworks/Heterodox_Stabilization_Three_Element_Program.md"
+    confidence_achieved: 4
+    notes: "Sourced from IMF Macro p.1005 + Poland case p.3780–3804"
+
+  - finding: "findings/combined_balance_sheets_fx_target.md"
+    ready: true
+    target_type: mechanism
+    target_slug: CB_FX_Target_Five_Entity_Balance_Sheet_Trace
+    promoted_to: "03_wiki/mechanisms/CB_FX_Target_Five_Entity_Balance_Sheet_Trace.md"
+    confidence_achieved: 3
+    notes: "Sourced from IMF Box 5.2, 5.7, 6.4 + Lipschitz dual deterioration"
+
+gaps:
+  - query: "stagflation under FX rate targeting quasi-fiscal costs"
+    type: TRUE_GAP
+    logged: 2026-05-25
+    action_required: acquire_sources_for_timing_leads
+    source_candidates:
+      - "IMF WP on stagflation in fixed exchange rate regimes (Ghosh, Gulde, Wolf — Exchange Rate Regimes and Inflation)"
+      - "BIS WP on sterilization costs and monetary policy effectiveness in EMEs — quantify carry cost % GDP by country"
+      - "NBER working papers on fiscal dominance and stagflation in developing countries"
+      - "IMF WEO chapter on stagflation risk in EMs — current policy discussion"
+    status: partial
+    resolved_components:
+      - "Fear-of-floating stagflation mechanism: promoted (conf 4)"
+      - "Three-element heterodox program: promoted (conf 4)"
+      - "FX target stagflation trap: promoted (conf 3)"
+      - "Five-entity balance sheet trace: promoted (conf 3)"
+    remaining_llm_e:
+      - "Early warning timing leads (T-12, T-8, T-6 months) — no source in corpus; need BIS/IMF WP empirical timing studies"
+      - "Sterilization cost ~0.5% GDP — derived from assumed 20% GDP stock; need country-specific data"
+      - "Crowding out multiplier magnitude — not quantified in corpus"
+      - "CB profit transfer YoY decline threshold (>15%) — LLM-E heuristic"
+
+contradictions: []
+promotion_candidates: []
+audit_log: "04_research/stagflation_fx_quasi_fiscal/audit_log.json"

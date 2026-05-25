@@ -27,6 +27,9 @@ source_refs:
 - path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
   pages: Chapter 3-4
   weight: primary
+- path: 02_sources/regulator/bcbs/d368.md
+  pages: "para 8–11 (IRRBB definition + EVE/NII intro), para 33–34 (EVE vs NII complementarity), para 69–70 (P8 disclosure: ΔEVE and ΔNII under 6 scenarios), para 88–89 (P12 outlier test: 15% Tier 1), Table B (six prescribed scenarios: parallel up/down, steepener, flattener, short rate up/down)"
+  weight: supporting
 related:
 - node: '[[Basel Driven Credit Migration To Private Markets]]'
   relation: shared_tag:basel
@@ -36,10 +39,14 @@ related:
   relation: shared_tag:basel
 - node: '[[Basel III Endgame — Capital, Liquidity, and Credit Migration]]'
   relation: shared_tag:basel
-- node: '[[Non Maturity Deposit Fair Margin And Replicating Portfolio]]'
+- node: '[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]'
   relation: shared_tag:alm
+- node: '[[Bcbs_Irrbb_Standards_D368_2016]]'
+  relation: regulatory_source
+- node: '[[Bcbs_Irrbb_Nmd_Standardised_Framework]]'
+  relation: nmd_detail
 date_created: '2026-05-22'
-date_updated: '2026-05-22'
+date_updated: '2026-05-25'
 ---
 
 
