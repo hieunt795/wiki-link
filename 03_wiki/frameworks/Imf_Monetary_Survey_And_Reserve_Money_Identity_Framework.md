@@ -45,7 +45,7 @@ related:
 - node: '[[IMF SNA Real Sector Accounting GDP Identities And Sectoral Accounts]]'
   relation: shared_tag:imf
 date_created: '2026-05-22'
-date_updated: '2026-05-22'
+date_updated: '2026-05-25'
 ---
 
 
@@ -60,20 +60,79 @@ Level 3: Financial Survey = Monetary Survey + Other Financial Institutions (OFIs
 ```
 The monetary survey focuses on the banking sector because: (1) monetary liabilities strongly influence aggregate nominal spending; (2) data are available even in developing economies; (3) banks typically account for the bulk of financial assets in less developed markets [RAW-CLIP].
 
-## The Monetary Authorities Balance Sheet (Analytical Form)
+## Monetary Authorities Balance Sheet (Box 5.2 — Analytical Form)
 ```
-ASSETS                              LIABILITIES
-Net Foreign Assets (NFA)            Reserve Money (RM)
-  Gold, FX, SDRs, IMF reserve pos.    Currency issued (in banks + outside)
-  Less: foreign liabilities           DMBs' deposits at MA
-Net Claims on Government (NCG)      Government deposits
-  Government securities + loans     Foreign liabilities
-  Less: government deposits           Use of IMF credit
-Claims on DMBs (Cb)                 Capital accounts + OIN(net)
-Claims on Private Sector
-Other Items Net (OINm)
+ASSETS                                    LIABILITIES
+──────────────────────────────────────────────────────────────────────
+NFA  Net Foreign Assets                   RM  Reserve Money
+  + Gold holdings                           Currency outside banks (CY)
+  + Foreign exchange reserves               DMB cash in vault
+  + Reserve position in IMF                 DMB deposits at MA
+  + SDR holdings
+  − Short-term foreign liabilities        Government deposits
+    (deposits of foreign CBs,               (Treasury accounts at CB)
+     swap facilities, overdrafts)
+  − Use of IMF credit                     Foreign liabilities
+                                            Use of IMF credit
+NCG  Net Claims on Government               Other short-term foreign debt
+  + Government securities held
+  + Direct loans to Treasury             Capital accounts + OINm
+  − Government deposits at MA              Physical assets of CB
+                                            Capital and reserves
+Cb   Claims on DMBs                         Valuation adjustments
+  (discount window lending,                  Unclassified items
+   repo/liquidity facilities)
+
+CPS  Claims on Private Sector
+  (direct CB lending, rare in
+   modern central banking)
+
+OINm Other Items Net
+  (physical assets, capital,
+   valuation adjustments)
+──────────────────────────────────────────────────────────────────────
+Identity: NFA + NCG + Cb + CPS + OINm = RM + Govt deposits + Foreign liabilities
 ```
-[RAW-CLIP]
+[RAW-BOOK IMF Macro Box 5.2 p.4336–4353]
+
+## Deposit Money Banks Balance Sheet (Box 5.5 — Analytical Form)
+```
+ASSETS                                    LIABILITIES
+──────────────────────────────────────────────────────────────────────
+Reserves                                  Demand Deposits (DD)
+  Cash in vault                             Sight deposits
+  Deposits with Monetary Authorities        Checking accounts
+
+Foreign Assets                            Quasi-money (QM)
+  Claims on nonresident banks               Time deposits
+  Claims on nonresident nonbanks            Savings deposits
+                                            Foreign currency deposits
+Claims on Government
+  Treasury bills                          Money Market Instruments
+  Other government securities               Certificates of deposit
+  Loans and advances to govt                Promissory notes
+
+Claims on Nonfinancial                    Bonds
+  Public Enterprises
+                                          Restricted Deposits
+Claims on Private Sector (CPS)              Import prepayments
+  Discounts, loans, mortgages               Other restricted deposits
+  Investments, overdrafts
+                                          Foreign Liabilities
+Claims on Nonmonetary
+  Financial Institutions                  Government Deposits
+
+                                          Credit from Monetary Authorities
+                                            (discount window borrowing)
+
+                                          Liabilities to Nonmonetary
+                                            Financial Institutions
+
+                                          Capital Accounts
+──────────────────────────────────────────────────────────────────────
+Identity: Reserves + Foreign Assets + Claims = Deposits + Liabilities + Capital
+```
+[RAW-BOOK IMF Macro Box 5.5 p.4432–4530]
 
 ## Reserve Money Identity
 The balance sheet constraint gives the fundamental identity:
@@ -104,6 +163,95 @@ M2 = NFA + NCG + CPS + OIN(b)
 ```
 
 This is the core IMF monetary programming identity: **broad money is fully determined by net foreign assets plus net domestic credit** [RAW-CLIP].
+
+### Monetary Survey Balance Sheet (Box 5.7 — Consolidated)
+MA and DMB balance sheets are consolidated; interbank positions cancel out.
+
+```
+ASSETS                                    LIABILITIES
+──────────────────────────────────────────────────────────────────────
+NFA  Net Foreign Assets                   M1  Narrow Money
+  = MA NFA                                  CY  Currency outside banks
+  + DMB net foreign assets                  DD  Demand deposits
+    (net of interbank claims)
+
+NCG  Net Claims on Government             QM  Quasi-money
+  = MA claims on govt                       Time deposits
+  + DMB claims on govt                      Savings deposits
+  − Govt deposits at MA                     Foreign currency deposits
+  − Govt deposits at DMBs                     of residents
+
+CPS  Claims on Private Sector           ──────────────────────────────
+  = MA CPS + all DMB credit             M2 = M1 + QM
+    to nongovernment private            NDA = NDC + OINb
+    sector                              NDC = NCG + CPS
+
+OINb Other Items Net (banking)          M2 = NFA + NDA
+  = Residual; absorbs valuation           (Money market instruments,
+    adjustments, capital accounts,         bonds, restricted deposits
+    unclassified interbank items           included where applicable)
+──────────────────────────────────────────────────────────────────────
+Identity: NFA + NCG + CPS + OINb = M2
+```
+[RAW-BOOK IMF Macro Box 5.7 p.4546–4580]
+
+**Formal zero-sum form (Box 6.4, Equation 6) [RAW-BOOK IMF Macro Box 6.4 p.5503–5504]:**
+
+```
+Banking sector identity (Eq. 6):
+  ΔM2 = ΔNFA + ΔNDC + ΔOINb
+  ΔM2 − ΔNFA − ΔNDC − ΔOINb = 0                  ... (6)
+
+Where:
+  ΔM2   = Change in broad money (liabilities side of monetary survey)
+  ΔNFA  = Change in net foreign assets (includes MA + DMB FX positions)
+  ΔNDC  = Change in net domestic credit = ΔNCGnet + ΔCPS
+           (NCGnet = claims on govt net of govt deposits; CPS = credit to private)
+  ΔOINb = Change in other items net (banking sector residual; absorbs
+           valuation adjustments, unclassified items, capital accounts)
+
+Banking sector saving-investment gap (by convention):
+  Sb − Ib = 0   (banking sector has zero real transactions)
+  → Only financial intermediation; no autonomous saving or investment
+```
+
+**Flow direction interpretation:**
+```
+ΔNFA ↑ (reserve accumulation)  →  ΔM2 ↑  (monetary expansion from FX inflows)
+ΔNCGnet ↑ (more credit to govt) →  ΔM2 ↑  (monetization of deficit)
+ΔCPS ↑ (more credit to private) →  ΔM2 ↑  (private credit expansion)
+ΔOINb ↓ (capital losses, write-offs) → ΔM2 ↓ (contraction from losses)
+```
+
+**NDA ceiling derivation (financial programming):**
+```
+From Eq. 6: ΔNDA = ΔM2 − ΔNFA
+  → ΔNDA ≤ ΔM2(target) − ΔNFA(program)
+  → ΔNDA ceiling = programmed money demand growth − target reserve change
+
+This is the IMF NDA ceiling in financial programming: ensures domestic credit
+creation is consistent with the money demand and reserve accumulation targets.
+```
+
+### M2 Growth Decomposition
+Each component of the monetary survey contributes to M2 growth in proportion to its share [RAW-BOOK IMF Macro p.4572–4578]:
+
+```
+ΔM2/M2 = (ΔNFA/NFA) × (NFA/M2)
+        + (ΔNCG/NCG) × (NCG/M2)
+        + (ΔCPS/CPS) × (CPS/M2)
+        + (ΔOINb/OINb) × (OINb/M2)
+
+Interpretation:
+  → Each term = growth rate of component × weight in M2
+  → NFA/M2 = openness weight: high in open/dollarized economies
+  → NCG/M2 = fiscal monetization weight: elevated during CB deficit financing
+  → CPS/M2 = private credit weight: dominant in financially developed economies
+  → OINb/M2 = residual / valuation effect weight
+
+Policy use: decompose observed M2 growth into its sources to isolate
+  whether expansion is FX-driven (ΔNFA), fiscal (ΔNCG), or private credit (ΔCPS).
+```
 
 ## Money Definitions
 - **Reserve Money (RM / M0):** Currency issued + DMBs' deposits at MA

@@ -133,6 +133,45 @@ The **Capital Account balance** (net lending/borrowing) is the sector's S-I gap 
 - **Unit labor costs:** Wage costs per unit of output (wages / productivity); key competitiveness indicator
 - **Unemployment rate:** ILO definition: seeking work + available for work; "hidden unemployment" in transition economies [RAW-CLIP]
 
+## Formal GDP / GNDI Identities (Box 6.4, Equation 1)
+
+The IMF Flow of Funds framework (Box 6.4, Eq. 1) expresses the overall economy's accounting identity in zero-sum form [RAW-BOOK IMF Macro Box 6.4 p.5494]:
+
+```
+GNDI Identity (zero-sum form):
+  −GNDI + C + I + X − M + Yt + TRt = 0           ... (1)
+
+Equivalently:
+  GNDI = C + I + X − M + Yt + TRt
+
+Where:
+  GNDI = Gross National Disposable Income
+  C    = Total final consumption (private + government)
+  I    = Gross investment
+  X    = Exports of goods and nonfactor services
+  M    = Imports of goods and nonfactor services
+  Yt   = Net factor income from abroad
+  TRt  = Net current transfers from abroad
+
+Saving-investment gap (economy-wide):
+  S − I = CAB    or    −S + I + CAB = 0
+  where CAB = X − M + Yt + TRt  (current account balance)
+```
+
+**Sectoral decomposition (private + government):**
+```
+GNDI = GNDIp + GNDIg
+  C   = Cp + Cg
+  I   = Ip + Ig
+
+Therefore:
+  (Sp − Ip) + (Sg − Ig) = CAB                    ... (core identity)
+
+Where:
+  Sp − Ip = GNDIp − Cp − Ip  (private saving-investment gap)
+  Sg − Ig = GNDIg − Cg − Ig  (government saving-investment gap)
+```
+
 ## Fiscal-External Linkage (Box 2.2 Identity)
 ```
 GDP = C + I + G + X - M                        ... (expenditure)

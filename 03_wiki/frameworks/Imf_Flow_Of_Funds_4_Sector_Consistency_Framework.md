@@ -45,7 +45,7 @@ related:
 - node: '[[IMF SNA Real Sector Accounting GDP Identities And Sectoral Accounts]]'
   relation: shared_tag:imf
 date_created: '2026-05-22'
-date_updated: '2026-05-22'
+date_updated: '2026-05-25'
 ---
 
 
@@ -132,5 +132,183 @@ Primary sources (per IMF methodology):
 - **National accounts:** GDP, saving, investment (from SNA)
 
 When the same transaction appears in two data sources (e.g., NFA change in both BoP and monetary survey), a single primary source must be chosen to avoid double-counting [RAW-CLIP].
+
+---
+
+## Analytical Uses: External and Fiscal Imbalance Tracing
+
+The FoF framework's interlocking structure allows analysts to trace the origins of imbalance in one sector and its repercussions across others [RAW-BOOK IMF Macro Ch.6 p.5518].
+
+### External Imbalance (CAD Origin Analysis)
+An increase in the current account deficit can be traced to either sector's saving-investment deterioration [RAW-BOOK IMF Macro Ch.6 p.5522]:
+```
+CAD increase → must come from:
+  (a) Private sector: fall in Sp, or rise in Ip, or both
+  (b) Government sector: rise in deficit (Ig - Sg increases)
+  
+Policy prescriptions differ:
+  → Private consumption boom → demand management, possibly exchange rate
+  → Private investment boom (Lawson doctrine): may be self-financing; 
+    less urgent if inflows are FDI-quality
+  → Government deficit → fiscal consolidation is the priority instrument
+
+Financing analysis (from FoF table):
+  → Rise in net foreign borrowing (NFB) by government or private sector
+  → Increase in FDI
+  → Drawdown of official reserves (reduction in NFA)
+```
+
+### Fiscal Imbalance (Transmission Analysis)
+When government expenditure rises without offsetting revenue [RAW-BOOK IMF Macro Ch.6 p.5526]:
+
+```
+Case A: Financed by tax increase
+  → Private disposable income falls
+  → IF private sector cuts spending: private nonfinancial balance unchanged
+    → No deterioration in CAB from private side
+  → IF private sector maintains spending (reduces saving):
+    → Private nonfinancial balance worsens
+    → Private sector borrows from banking system OR runs down cash balances
+      OR borrows abroad
+    → CAB deteriorates regardless of which financing route
+
+Case B: Financed by CB credit (monetization)
+  → NCG rises → RM rises → M2 expands
+  → Nominal GDP rises: (i) higher tax revenues partly offset initial deficit;
+    (ii) private sector's nominal income rises → private balance improves
+  → Private sector holds incremental savings as money balances (M2 demand)
+  → If extra income induces both domestic AND import spending:
+    → CAB deteriorates, affecting the external sector column
+
+Key insight: The FoF matrix makes these transmission channels explicit and
+  measurable — every financing route for the fiscal deficit shows up as a
+  counterpart entry in another sector's financial transactions column.
+```
+
+### Flow of Funds Table: Column and Row Structure (Table 6.1)
+
+The schematic FoF table has 6 sector columns + horizontal check column [RAW-BOOK IMF Macro Table 6.1 p.5535]:
+
+```
+Column 1: Overall Economy — GDP-level aggregates (X, M, Yt, TRt)
+Column 2: Domestic Economy — consolidated domestic (= sum of cols 3+4+5)
+Column 3: General Government — GFS data
+Column 4: Private Sector — residual; national accounts minus government
+Column 5: Banking System — monetary survey data; real balance = 0 by convention
+Column 6: Rest of the World — from BOP, recorded from ROW perspective
+Column 7: Horizontal Check — each row must sum to 0
+
+Row blocks:
+  Block 1 (nonfinancial): GNDI, consumption, investment, X, M, Yt, TRt
+  Block 2 (gap row):       Nonfinancial balance (S - I) per sector
+  Block 3 (financing):     FDI, NFB, ΔNFA, ΔM2, ΔNDC (by sector), nonbank
+  Block 4 (residual):      Net errors and omissions (ΔOINd — balancing item)
+  Block 5 (vertical check): Each column must sum to 0
+```
+
+The banking sector column shows: zero nonfinancial balance (convention) + ΔNFA (monetary) + ΔNDC (banking system's lending to govt + private) − ΔM2 = 0. This restates the monetary survey identity: ΔM2 = ΔNFA + ΔNDC + ΔOINb. [RAW-BOOK IMF Macro Table 6.1 p.5503–5504]
+
+---
+
+## Box 6.4 — Complete Sector Accounting Identities (All 8 Equations)
+
+Full formal system from IMF Macro Accounting Box 6.4 [RAW-BOOK IMF Macro p.5489–5509]. Every row and column of the FoF matrix sums to zero — these equations make that constraint explicit for each sector.
+
+```
+─────────────────────────────────────────────────────────────────────
+SECTOR 1: OVERALL ECONOMY
+─────────────────────────────────────────────────────────────────────
+Saving-investment gap:
+  S − I = CAB                                      (economy-wide)
+  −S + I + CAB = 0
+
+GNDI definition (Eq. 1):
+  −GNDI + C + I + X − M + Yt + TRt = 0            ... (1)
+  ↔ GNDI = C + I + X − M + Yt + TRt
+  ↔ CAB = GNDI − C − I = X − M + Yt + TRt
+
+─────────────────────────────────────────────────────────────────────
+SECTOR 2: GENERAL GOVERNMENT
+─────────────────────────────────────────────────────────────────────
+Saving-investment gap (Eq. 2):
+  Sg − Ig = GNDIg − Cg − Ig                       ... (2)
+
+Financing identity (Eq. 3):
+  (Sg − Ig) + NFBg + ΔNDCg + NB = 0               ... (3)
+
+  Variables:
+    Sg − Ig  = fiscal surplus (+) or deficit (−)
+    NFBg     = net foreign borrowing by government
+    ΔNDCg    = net domestic bank credit to government (monetization)
+    NB       = nonbank domestic borrowing (bond issuance to public)
+
+─────────────────────────────────────────────────────────────────────
+SECTOR 3: PRIVATE SECTOR (NONGOVERNMENT)
+─────────────────────────────────────────────────────────────────────
+Saving-investment gap (Eq. 4):
+  Sp − Ip = GNDIp − Cp − Ip                       ... (4)
+
+Financing identity (Eq. 5):
+  FDIp + NFBp + ΔNDCp − ΔM2 − NB = 0             ... (5)
+
+  Variables:
+    FDIp   = FDI inflows to private sector
+    NFBp   = net foreign borrowing by private sector
+    ΔNDCp  = change in bank credit to private sector
+    −ΔM2   = change in money holdings (accumulation = use of funds, sign −)
+    −NB    = private sector's nonbank lending to government (sign −)
+
+─────────────────────────────────────────────────────────────────────
+SECTOR 4: BANKING SYSTEM
+─────────────────────────────────────────────────────────────────────
+Saving-investment gap (by convention):
+  Sb − Ib = 0     (banking sector has zero real S-I balance)
+
+Monetary survey identity (Eq. 6):
+  ΔM2 − ΔNFA − ΔNDC − ΔOINb = 0                  ... (6)
+  ↔ ΔM2 = ΔNFA + ΔNDC + ΔOINb
+
+  Variables:
+    ΔM2   = change in broad money (M2) — liabilities of banking system
+    ΔNFA  = change in net foreign assets of banking system
+    ΔNDC  = change in net domestic credit = ΔNDCg + ΔNDCp
+    ΔOINb = change in other items net (residual; absorbs valuation effects)
+
+─────────────────────────────────────────────────────────────────────
+SECTOR 5: FOREIGN SECTOR (viewed from rest-of-world perspective)
+─────────────────────────────────────────────────────────────────────
+Saving-investment gap (Eq. 7):
+  −CAB = −X + M − Yt − TRt                        ... (7)
+  (ROW's surplus = country's current account deficit)
+
+BOP financing identity (Eq. 8):
+  CAB + Fr = 0
+  −CAB − FDI − NFB + ΔNFA + ΔOINt = 0            ... (8)
+
+  Variables:
+    Fr    = total financing flow = FDI + NFB − ΔNFA − ΔOINt
+    FDI   = total foreign direct investment inflows
+    NFB   = total net foreign borrowing (= NFBg + NFBp)
+    ΔNFA  = change in banking system net foreign assets (+ = reserve accumulation)
+    ΔOINt = foreign sector other items net / errors and omissions
+
+─────────────────────────────────────────────────────────────────────
+CROSS-SECTOR CONSISTENCY CHECK
+─────────────────────────────────────────────────────────────────────
+Horizontal: each row sums to 0 (closed system)
+Vertical:   each column sums to 0 (each sector's gap = financing)
+
+Key cross-sector links:
+  NDC = NDCg + NDCp  (banking credit split between govt and private)
+  NFB = NFBg + NFBp  (foreign borrowing split between govt and private)
+  NB appears as +NB in Eq. 3 (govt receives nonbank financing)
+     and as −NB in Eq. 5 (private sector provides nonbank financing)
+  → NB cancels in horizontal sum ✓
+
+  ΔM2 in Eq. 5 (private accumulation) = ΔM2 in Eq. 6 (banking liability)
+  → same variable, both sides of the intermediation relationship ✓
+```
+
+**Accounting limitation:** These 8 equations are accounting identities, not behavioral models. They hold ex post by construction. To derive policy implications, behavioral equations for consumption, investment, money demand, and capital flows must supplement the accounting constraints. [RAW-BOOK IMF Macro Ch.6 p.5455]
 
 

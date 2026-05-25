@@ -108,6 +108,43 @@ Exceptional financing is classified below the line (non-autonomous, non-repeatin
 
 **Sustainability vs. Viability:** External position is *sustainable* if obligations can be met without exceptional financing over the medium/long term. It is *viable* if no recourse to IMF resources or rescheduling is needed [RAW-CLIP].
 
+## Formal BOP Identity (Box 6.4, Equations 7–8)
+
+The IMF Flow of Funds framework expresses the external sector in zero-sum form from the rest-of-world perspective [RAW-BOOK IMF Macro Box 6.4 p.5506–5509]:
+
+```
+Foreign sector saving-investment gap (Eq. 7):
+  −CAB = −X + M − Yt − TRt                        ... (7)
+  (from ROW perspective: ROW's surplus = country's deficit)
+
+BOP financing identity (Eq. 8):
+  CAB + Fr = 0
+  −CAB − FDI − NFB + ΔNFA + ΔOINt = 0            ... (8)
+
+Where:
+  Fr   = Total capital and financial flows financing the CAB
+       = FDI + NFB − ΔNFA − ΔOINt
+  FDI  = Foreign direct investment inflows
+  NFB  = Net foreign borrowing (government + private)
+  ΔNFA = Change in banking system net foreign assets (+ = reserve accumulation)
+  ΔOINt = Other items net (foreign sector residual / errors)
+
+Sign convention:
+  ΔNFA > 0 = reserve accumulation (increase in assets) → negative contribution
+             to financing (uses FX rather than provides it)
+  NFB  > 0 = new borrowing (increase in liabilities) → positive contribution
+             to financing (brings in FX)
+```
+
+**Consistency with monetary survey:** ΔNFA in the BOP must equal transaction-component ΔNFA in the monetary survey (after valuation adjustment). See [[Imf_Monetary_Survey_Valuation_Adjustment_Transaction_Flow_Decomposition]].
+
+```
+Financing identity (from country perspective, above-line / below-line):
+  CAB = −ΔFI − ΔRES
+  where ΔFI = FDI + NFB (financial flows in),  ΔRES = −ΔNFA
+  → CAB + ΔFI + ΔRES = 0   (overall balance ex post = 0 by definition)
+```
+
 ## Capital Inflows: Four Key Risks
 1. Capital inflows can be temporary and quickly reversed
 2. Under fixed exchange rate: intervention → monetary expansion → inflation (unless sterilized)

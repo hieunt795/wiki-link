@@ -4,6 +4,45 @@ Chronological record of all ingest, update, promotion, and audit operations.
 
 ---
 
+## 2026-05-25
+
+- **WIKI NODE UPDATED** (IMF Macro Accounting — full balance sheet enrichment):
+  - `03_wiki/frameworks/Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework.md` — Added all three analytical balance sheets from source: (1) MA Balance Sheet (Box 5.2): full asset/liability breakdown — NFA (gold, FX, IMF reserve pos., SDRs, less short-term foreign liabilities, less use of IMF credit), NCG, Cb, CPS, OINm on assets; RM (CY, DMB cash in vault, DMB deposits at MA), govt deposits, foreign liabilities, capital+OINm on liabilities; identity: NFA+NCG+Cb+CPS+OINm = RM+Govt deposits+Foreign liabilities; (2) DMB Balance Sheet (Box 5.5): full line items — Reserves, Foreign Assets, Claims on Govt, Claims on NFPEs, CPS, Claims on NMFIs on assets; DD, QM (time/savings/FX deposits), money market instruments, bonds, restricted deposits, foreign liabilities, govt deposits, credit from MA, liabilities to NMFIs, capital accounts on liabilities; (3) Monetary Survey (Box 5.7) consolidated: NFA (MA+DMB net of interbank) + NCG (net of all govt deposits) + CPS + OINb = M2; M2 = M1 (CY+DD) + QM; M2=NFA+NDA shown; (4) M2 Growth Decomposition: ΔM2/M2 = Σ(Δcomponent/component × component/M2) with policy interpretation for isolating FX-driven vs. fiscal vs. private credit sources.
+
+- **WIKI NODES UPDATED** (IMF Macro Accounting — Box 6.4 equations enrichment across 5 nodes):
+  - `03_wiki/frameworks/Imf_Flow_Of_Funds_4_Sector_Consistency_Framework.md` — Added Box 6.4 complete formal system: all 8 sector accounting identities in zero-sum form (Eqs. 1–8), cross-sector consistency check, variable definitions, accounting-vs-behavioral limitation caveat
+  - `03_wiki/frameworks/Imf_Sna_Real_Sector_Accounting_Gdp_Identities_And_Sectoral_Accounts.md` — Added Eq. 1 formal GNDI zero-sum identity (−GNDI + C + I + X − M + Yt + TRt = 0) and sectoral decomposition (Sp−Ip) + (Sg−Ig) = CAB with explicit variable definitions
+  - `03_wiki/frameworks/Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis.md` — Added Eq. 7–8 BOP identity in zero-sum form (−CAB − FDI − NFB + ΔNFA + ΔOINt = 0), sign convention explanation, link to valuation adjustment node
+  - `03_wiki/frameworks/Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability.md` — Added Eq. 2–3 fiscal sector identities: Sg−Ig = GNDIg−Cg−Ig and financing constraint (Sg−Ig) + NFBg + ΔNDCg + NB = 0 with link to crisis vector modes
+  - `03_wiki/frameworks/Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework.md` — Added Eq. 6 monetary survey identity in zero-sum form (ΔM2 − ΔNFA − ΔNDC − ΔOINb = 0) with flow direction interpretation and NDA ceiling derivation
+  - `03_wiki/frameworks/Imf_Monetary_Analysis_Quantity_Theory_Velocity_And_Exchange_Rate_Regimes.md` — Added Eq. 4–5 private sector identities: Sp−Ip = GNDIp−Cp−Ip and financing constraint (FDIp + NFBp + ΔNDCp − ΔM2 − NB = 0) with sign convention interpretation and M2 link
+
+- **WIKI NODE CREATED** (IMF Macro Accounting — crisis vector mechanisms research):
+  - `03_wiki/frameworks/Imf_Macro_Crisis_Vector_Framework.md` — Confidence 4: synthesizes all crisis transmission mechanisms from IMF Macro Accounting Chs. 3-5; 3 crisis vectors mapped: (1) Fiscal — 4 modes of deficit financing → 4 crisis outcomes (inflation/exchange rate crisis/explosive debt/crowding out) with balance sheet effects per mode; (2) External — speculative attack under fixed peg (Krugman 1979 expectations mechanism, attack before reserves exhausted), current account sustainability/solvency condition (PV(future surpluses) ≥ external debt), Lawson doctrine critique (contamination spillover, real exchange rate reversal risk), financial vulnerability reserve adequacy indicators (M2/FX ratio Calvo 1996, short-term FX liabilities, monetary base threshold, capital account openness), credibility as reserve amplifier (Poland 1991 vs. Mexico 1994); (3) Banking — fractional reserve maturity mismatch → illiquidity → contagion → systemwide confidence freeze → CB LOLR (isolate + guarantee + systemwide liquidity) → balance sheet: Cb↑ → RM↑ + quasi-fiscal recapitalization risk; cross-sector amplification matrix; diagnostic section for all 4 fiscal financing modes + banking + external vectors.
+
+- **WIKI NODE CREATED** (IMF Macro Accounting Ch.5 — deep research session, Box 5.8):
+  - `03_wiki/mechanisms/Imf_Monetary_Survey_Valuation_Adjustment_Transaction_Flow_Decomposition.md` — Confidence 4: formal decomposition of monetary survey stock changes into (1) transaction flows (converted at average exchange rate) and (2) valuation adjustments from exchange rate movements; VAj formula and treatment in OIN(net); ΔNFA vs. ΔRES reconciliation methodology; policy application — NDA ceiling calculations must use transaction-only ΔNFA; diagnostic section for analyst use.
+
+- **WIKI NODE UPDATED** (IMF Macro Accounting Ch.5 — confidence upgrade):
+  - `03_wiki/mechanisms/Imf_Money_Multiplier_Ratio_Decomposition_Three_Agent.md` — Confidence raised 3→4: core simple mm=(1+c)/(c+r) and extended mm=(1+c+b)/(c+rd+rt·b+re·(1+b)) formulas directly verified from source lines 4708–4754; three-agent framework (MA/banks/public) verified from source lines 4756–4758; [LLM] markers retained only on GFC contextual example and seigniorage section.
+
+- **WIKI NODE UPDATED** (IMF Macro Accounting Ch.6 — enriched with analytical uses):
+  - `03_wiki/frameworks/Imf_Flow_Of_Funds_4_Sector_Consistency_Framework.md` — Added external imbalance analysis (CAD origin tracing: private vs. government sector); fiscal imbalance transmission analysis (tax increase vs. CB monetization channels); detailed Table 6.1 column and row structure explanation; banking sector column identity restating ΔM2 = ΔNFA + ΔNDC + ΔOINb.
+
+- **WIKI NODES CREATED** (IMF Macro Accounting — remaining coverage gaps):
+  - `03_wiki/mechanisms/Imf_Real_Interest_Rate_Fisher_Equation_And_Portfolio_Choice.md` — Confidence 4: 4 asset types (money/bonds/equities/real assets) with return-risk-liquidity tradeoffs; rate of return = income + capital gain; Fisher equation (Rr ≈ Rn − Pᵉ approximate; exact discrete form for high inflation); negative real rates in transition → asset substitution → dollarization mechanism; diagnostic (calculate Rr → portfolio substitution signal)
+  - `03_wiki/mechanisms/Incomes_Policy_Wage_Controls_Stabilization_Programs.md` — Confidence 4: 3 motivations (inertial inflation / SOE decapitalization / exchange rate credibility); 3 institutional approaches (guidelines / social contract / TIP); 4-step design (norm selection / indexation / coverage / enforcement); wage bill vs. average wage norm tradeoffs; partial forward-looking indexation; Poland popiwek EWT rates (100%–500% progressive, reduced to 300% 1993); private sector coverage exemption; temporary effectiveness profile
+  - `03_wiki/frameworks/Labor_Market_Unemployment_Taxonomy_And_NAIRU.md` — Confidence 4: 5 unemployment types (seasonal / frictional / cyclical / structural / disguised); NAIRU definition and its policy implication (cannot reduce unemployment below NAIRU without inflation); discouraged worker effect; labor force participation rate distortions; disguised unemployment dominant form in SOE-heavy transition economies; NAIRU shifts from structural rigidities
+
+---
+
+
+  - `03_wiki/mechanisms/Imf_Real_Interest_Rate_Fisher_Equation_And_Portfolio_Choice.md` — Confidence 4: 4 asset types (money/bonds/equities/real assets) with return-risk-liquidity tradeoffs; rate of return = income + capital gain; Fisher equation (Rr ≈ Rn − Pᵉ approximate; exact discrete form for high inflation); negative real rates in transition → asset substitution → dollarization mechanism; diagnostic (calculate Rr → portfolio substitution signal)
+  - `03_wiki/mechanisms/Incomes_Policy_Wage_Controls_Stabilization_Programs.md` — Confidence 4: 3 motivations (inertial inflation / SOE decapitalization / exchange rate credibility); 3 institutional approaches (guidelines / social contract / TIP); 4-step design (norm selection / indexation / coverage / enforcement); wage bill vs. average wage norm tradeoffs; partial forward-looking indexation; Poland popiwek EWT rates (100%–500% progressive, reduced to 300% 1993); private sector coverage exemption; temporary effectiveness profile
+  - `03_wiki/frameworks/Labor_Market_Unemployment_Taxonomy_And_NAIRU.md` — Confidence 4: 5 unemployment types (seasonal / frictional / cyclical / structural / disguised); NAIRU definition and its policy implication (cannot reduce unemployment below NAIRU without inflation); discouraged worker effect; labor force participation rate distortions; disguised unemployment dominant form in SOE-heavy transition economies; NAIRU shifts from structural rigidities
+
+---
+
 ## 2026-05-24
 
 - **2026-05-24**: INGEST: Created mechanism node `TGA Volatility And Reserve Buffer Demand` from The Checking Account of the U.S. Federal Government....md

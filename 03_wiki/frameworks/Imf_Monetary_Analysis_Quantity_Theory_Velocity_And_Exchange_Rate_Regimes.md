@@ -130,3 +130,47 @@ Fixed exchange rate with no sterilization option — reserve money can only be c
 **Floating rate + capital inflows:** Appreciation of domestic currency; competitiveness erosion [RAW-CLIP]
 **Both regimes:** Risk of temporary consumption boom financed by capital inflows → debt accumulation → eventual absorption cut [RAW-CLIP]
 
+## Private Sector Financing Identity (Box 6.4, Equations 4–5)
+
+The private sector's saving-investment gap and its financing [RAW-BOOK IMF Macro Box 6.4 p.5499–5500]:
+
+```
+Private sector saving-investment gap (Eq. 4):
+  Sp − Ip = GNDIp − Cp − Ip                       ... (4)
+
+Private sector financing identity (Eq. 5):
+  FDIp + NFBp + ΔNDCp − ΔM2 − NB = 0             ... (5)
+
+Where:
+  Sp − Ip  = Private saving-investment surplus (+) or deficit (−)
+  FDIp     = FDI inflows to private sector (+ = increase in liabilities)
+  NFBp     = Net foreign borrowing by private sector (+ = new borrowing)
+  ΔNDCp    = Change in banking credit to private sector (+ = more credit)
+  ΔM2      = Change in private sector's money holdings (+ = accumulation)
+             → negative sign: accumulating money is a USE of financing, not a source
+  NB       = Private sector's nonbank lending to government (+ = private buys govt bonds)
+             → negative sign: buying govt bonds is a USE of savings, not a financing source
+
+Sign convention (FoF framework):
+  + = decrease in assets or increase in liabilities (SOURCES of financing)
+  − = increase in assets or decrease in liabilities (USES of financing)
+```
+
+**Interpretation:**
+```
+When private sector is in DEFICIT (Sp − Ip < 0):
+  → Financed by: FDI inflows (+FDIp), foreign borrowing (+NFBp),
+    bank credit (+ΔNDCp), running down money balances (−ΔM2 < 0)
+  → Reduced by: lending to government (+NB = buying bonds)
+
+When private sector is in SURPLUS (Sp − Ip > 0):
+  → Surplus deployed as: money accumulation (+ΔM2 > 0),
+    lending to government (+NB > 0), repaying foreign loans (−NFBp < 0)
+```
+
+**Link to monetary survey (Eq. 6):**
+ΔNDCp (private credit, part of ΔNDC in banking identity) + ΔM2 (private money demand)
+together connect the private sector financing position to the banking sector balance sheet.
+When private sector accumulates money (ΔM2 ↑), the banking sector's M2 liabilities grow —
+the counterpart is credit creation (ΔNDCp ↑) or reserve accumulation (ΔNFA ↑).
+

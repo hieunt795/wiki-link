@@ -91,6 +91,39 @@ EXPENDITURES
 ```
 [RAW-CLIP]
 
+## Formal Fiscal Accounting Identities (Box 6.4, Equations 2–3)
+
+The IMF Flow of Funds framework (Box 6.4) expresses the government sector in zero-sum form [RAW-BOOK IMF Macro Box 6.4 p.5496–5497]:
+
+```
+Government saving-investment gap (Eq. 2):
+  Sg − Ig = GNDIg − Cg − Ig                       ... (2)
+
+Where:
+  Sg   = Government saving = GNDIg − Cg
+  Ig   = Government gross investment (capital expenditure)
+  GNDIg = Government gross national disposable income
+           (revenues + grants − transfers to households − interest payments)
+  Cg   = Government final consumption expenditure
+
+Government financing identity (Eq. 3):
+  (Sg − Ig) + NFBg + ΔNDCg + NB = 0               ... (3)
+
+Where:
+  Sg − Ig  = Fiscal surplus (+) or deficit (−)
+  NFBg     = Net foreign borrowing by government (+ = new borrowing)
+  ΔNDCg    = Change in banking system's net domestic credit to government
+             (+ = more bank credit, i.e., monetization or bank financing)
+  NB       = Net nonbank domestic borrowing (+ = new bond issuance to public)
+
+Rearranged — how a fiscal deficit is financed:
+  IF (Sg − Ig) < 0  (deficit):
+    |Sg − Ig| = NFBg + ΔNDCg + NB
+    → foreign borrowing + bank credit + nonbank borrowing = deficit
+```
+
+**Link to deficit financing crisis vectors:** ΔNDCg = monetization (MODE 1 crisis vector); NFBg = foreign borrowing (MODE 4); NB = domestic nonbank (MODE 3). See [[Imf_Macro_Crisis_Vector_Framework]].
+
 ## Deficit Concepts and Measures
 ```
 Conventional Fiscal Deficit = Revenue - Expenditure (including net lending)

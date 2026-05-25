@@ -23,20 +23,21 @@ tags:
   - m2
   - banking_system
   - imf_macro_accounting
-confidence: 3
+confidence: 4
 stability: stable
 thesis: >
   The money multiplier links reserve money (monetary base) to broad money (M2)
   through the behavioral choices of three agents: the monetary authority (reserve
   requirements), commercial banks (excess reserve ratio), and the public (currency
-  and time deposit ratios). The simple multiplier mm=(c+1)/(c+r) extends to a
-  full decomposition across deposit types and reserve categories. Rising c (currency
-  flight) or re (precautionary excess reserves) compresses the multiplier, as do
-  financial innovation (shifts deposits to non-bank instruments) and currency
-  substitution (FX deposits exit the multiplier chain). [LLM]
+  and time deposit ratios). The simple multiplier mm=(1+c)/(c+r) extends to a
+  full decomposition across deposit types and reserve categories: mm=(1+c+b)/
+  (c+rd+rt·b+re·(1+b)). Rising c (currency flight) or re (precautionary excess
+  reserves) compresses the multiplier, as do financial innovation (shifts deposits
+  to non-bank instruments) and currency substitution (FX deposits exit the
+  multiplier chain).
 source_refs:
   - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 4700–4758 (money multiplier derivation, simple and extended form, three-agent behavioral determination)"
+    pages: "lines 4702–4758 (Box concept: fractional reserve basis of multiplier; simple mm derivation lines 4708–4726; extended mm with rd/rt/re lines 4728–4754; three-agent behavioral determination lines 4756–4758)"
     weight: primary
 related:
   - node: "[[Currency_Substitution_Dollarization_Monetary_Control]]"
