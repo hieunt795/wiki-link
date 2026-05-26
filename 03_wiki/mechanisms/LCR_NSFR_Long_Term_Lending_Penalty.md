@@ -21,35 +21,38 @@ tags:
 - HQLA
 - funding-cost
 - private-credit-driver
-confidence: 1
+confidence: 3
 stability: stable
-thesis: 'LCR forces banks to hold HQLA equal to 30-day stressed net outflows (including
-  assumed drawdowns on corporate credit lines), while NSFR requires stable funding
-  ≥85% of notional for loans with residual maturity ≥1 year. [LLM] Together these
-  two rules create a structural funding cost penalty that makes long-duration corporate
-  and specialized lending uneconomical relative to short-term or HQLA assets — amplifying
-  the capital-cost pressure from RWA and Output Floor to produce the bank retreat
-  from corporate credit.
-
-  '
+thesis: >
+  LCR forces banks to hold HQLA ≥ 30-day stressed net cash outflows (including
+  assumed draw-down of 10% on committed credit lines to non-financial corporates
+  and 30-40% on committed liquidity/credit lines to financial entities per LCR40),
+  while NSFR requires stable funding covering 85% of notional for unrated performing
+  loans ≥1yr (NSF30.31); together these rules create a structural funding cost
+  penalty — HQLA opportunity cost on the LCR side, expensive long-term stable
+  funding premium on the NSFR side — that makes long-duration corporate and
+  specialized lending uneconomical relative to short-term or HQLA assets.
 steps:
-- 'Step 1 (LCR): Bank extends €100M credit line to PE/corporate borrower'
-- 'Step 2 (LCR): Regulator assumes 100% drawdown in 30-day stress → bank must hold
-  €100M HQLA (govts, CB reserves)'
+- 'Step 1 (LCR): Bank extends €100M committed credit line to PE/corporate borrower'
+- 'Step 2 (LCR): LCR40 applies 10% drawdown rate for committed credit lines to non-financial
+  corporates → bank must hold €10M HQLA (govts, CB reserves) against contingent outflow'
 - 'Step 3 (LCR): HQLA earns near-zero yield → opportunity cost = (lending spread −
-  HQLA yield) × €100M'
-- 'Step 4 (NSFR): Bank makes €100M corporate loan, residual maturity >1yr → RSF factor
-  = 85%'
-- 'Step 5 (NSFR): Must fund 85% of loan with ASF sources: retail term deposits, long-term
-  wholesale bonds — both expensive'
-- 'Step 6: Combined LCR + NSFR funding cost eliminates spread advantage → bank exits
-  long-term corporate lending'
+  HQLA yield) × €10M for the undrawn portion'
+- 'Step 4 (NSFR): Bank makes €100M unrated corporate loan, residual maturity >1yr → RSF
+  factor = 85% per NSF30.31(2)'
+- 'Step 5 (NSFR): Must fund €85M with ASF sources: stable retail deposits (95% ASF) or
+  long-term wholesale bonds (100% ASF) — both carry tenor premium over short-term wholesale (0% ASF)'
+- 'Step 6: Combined LCR opportunity cost + NSFR stable-funding premium eliminates spread
+  advantage → bank exits long-term corporate lending'
 transmission_lags: medium
 empirical_evidence: strong
 source_refs:
+- path: 02_sources/regulator/bcbs/BaselFramework.md
+  pages: "LCR20 (30-day stress scenario), LCR30 (HQLA definition), LCR40.40-42 (wholesale run-off rates), NSF30.31 (85% RSF for unrated performing loans ≥1yr), NSF99 (ASF/RSF summary tables)"
+  weight: primary
 - path: 02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md
   pages: Section II.4 — Quy Tắc Thanh Khoản
-  weight: primary
+  weight: supporting
 related:
 - node: '[[Basel_Output_Floor_Specialized_Lending_Impact]]'
   relation: works_in_conjunction_with
@@ -78,7 +81,7 @@ date_updated: '2026-05-21'
 
 While RWA and the Output Floor attack the capital (equity) side of bank economics, LCR and NSFR attack the funding (liability) side. The combined effect is a double squeeze that makes holding long-duration, illiquid corporate loans structurally unprofitable for regulated banks. [LLM]
 
-**LCR mechanics:** Requires High Quality Liquid Assets (unencumbered govt bonds, CB reserves) ≥ net cash outflows over a 30-day stress scenario. Credit lines to corporates and funds carry a 100% assumed drawdown rate in stress → every €1 of undrawn credit line requires €1 of zero-yield HQLA buffer.
+**LCR mechanics (LCR20/40):** Requires High Quality Liquid Assets (unencumbered govt bonds, CB reserves) ≥ net cash outflows over a 30-day stress scenario. LCR40 applies product-specific draw-down rates: committed credit lines to non-financial corporates → 10%; committed liquidity lines to non-financials → 30%; committed credit/liquidity lines to financial institutions → 40%. The HQLA opportunity cost (near-zero yield vs. lending spread) applies to the buffer required against contingent outflows.
 
 **NSFR mechanics:** Available Stable Funding (ASF) ≥ Required Stable Funding (RSF). RSF factors:
 - Loans >1yr to non-financial corporates: **85%**

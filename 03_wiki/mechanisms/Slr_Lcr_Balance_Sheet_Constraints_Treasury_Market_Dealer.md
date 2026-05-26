@@ -11,7 +11,9 @@ aliases:
 - he so don bay bo sung
 - ti le dam bao thanh khoan
 domain:
-  primary: financial_markets
+  primary: basel_risk
+  secondary:
+  - financial_markets
 tags:
 - slr
 - lcr

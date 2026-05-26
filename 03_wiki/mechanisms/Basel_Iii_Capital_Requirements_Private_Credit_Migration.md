@@ -16,13 +16,16 @@ tags:
 - cet1
 - leveraged_lending
 - regulatory_arbitrage
-confidence: 1
+confidence: 2
 stability: evolving
-thesis: Basel III increased CET1 and liquidity requirements force banks to retreat
-  from capital-intensive corporate and leveraged lending; private credit funds — not
-  subject to equivalent capital requirements — fill the financing void, a process
-  characterised as regulatory arbitrage that has structurally migrated lending from
-  the regulated banking sector into the shadow banking / NBFI sector. [LLM]
+thesis: >
+  Basel III's interlocking capital (RWA + Output Floor) and liquidity (LCR/NSFR)
+  requirements make holding long-duration unrated corporate credit structurally
+  uneconomical for regulated banks, forcing retreat from capital-intensive corporate
+  and leveraged lending; private credit funds — not subject to equivalent capital
+  requirements — fill the resulting financing void, a process characterised as
+  regulatory arbitrage that has structurally migrated lending from the regulated
+  banking sector into the shadow banking / NBFI sector. [LLM]
 source_refs:
 - path: 02_sources/deep-research/Private Credit, Basel, and Regional Dynamics.md
   pages: ''

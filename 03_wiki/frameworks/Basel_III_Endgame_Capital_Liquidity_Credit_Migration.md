@@ -12,9 +12,9 @@ aliases:
 - credit migration to private credit
 - originate-to-distribute
 domain:
-  primary: financial_markets
+  primary: basel_risk
   secondary:
-  - monetary_policy
+  - financial_markets
   - macro_outlook
 tags:
 - Basel

@@ -21,6 +21,46 @@
       "date_updated": "2026-05-26"
     },
     {
+      "id": "basel_gsib_surcharge_bucket_methodology_capital_add_on_001",
+      "title": "Basel G-SIB Surcharge: 5-Category Score, Bucket Methodology, and CET1 Add-On",
+      "type": "concept",
+      "domain": "basel_risk",
+      "confidence": 3,
+      "tags": [
+        "gsib",
+        "systemic_risk",
+        "capital_surcharge",
+        "indicator_based",
+        "cet1",
+        "higher_loss_absorbency",
+        "bucket_methodology",
+        "basel3"
+      ],
+      "thesis": "G-SIBs are identified annually via a 12-indicator scoring methodology across 5 equal-weighted categories (size, cross-jurisdictional activity, interconnectedness, substitutability, complexity); banks scoring ≥130 bps are designated G-SIBs and allocated to Buckets 1–5 (1.0%–3.5% CET1 add-on), with an empty Bucket 5 (3.5%) serving as an anti-gaming deterrent — if populated, a new bucket at 4.5% is created; the add-on extends the capital conservation buffer and triggers the same MDA distribution restriction mechanism when breached.",
+      "stability": "stable",
+      "date_updated": "2026-05-26"
+    },
+    {
+      "id": "basel_iii_leverage_ratio_non_rwa_capital_constraint_001",
+      "title": "Basel III Leverage Ratio: Non-RWA Capital Backstop",
+      "type": "concept",
+      "domain": "basel_risk",
+      "confidence": 3,
+      "tags": [
+        "leverage_ratio",
+        "slr",
+        "tier1_capital",
+        "exposure_measure",
+        "off_balance_sheet",
+        "non_rwa",
+        "dealer_constraints",
+        "basel3"
+      ],
+      "thesis": "The Basel III leverage ratio (Tier 1 capital / total exposure measure ≥ 3%) is a non-risk-based backstop to the RWA capital framework — it constrains balance sheet expansion regardless of risk weight, capturing both on-balance sheet assets and off-balance sheet items (derivatives at 1.4× (RC+PFE), SFT exposures, and undrawn commitments) under a single gross exposure measure that cannot be reduced by collateral netting or credit risk mitigation.",
+      "stability": "stable",
+      "date_updated": "2026-05-26"
+    },
+    {
       "id": "cb_hidden_fx_reserves_net_effective_intervention_capacity_001",
       "title": "CB Hidden FX Reserves Net Effective Intervention Capacity",
       "type": "concept",
@@ -837,7 +877,7 @@
       "id": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
       "title": "Basel III Capital And Liquidity Constraint Mechanics",
       "type": "framework",
-      "domain": "monetary_policy",
+      "domain": "basel_risk",
       "confidence": 3,
       "tags": [
         "basel",
@@ -854,10 +894,31 @@
       "date_updated": "2026-05-22"
     },
     {
+      "id": "basel_iii_capital_stack_cet1_tier1_total_buffer_architecture_001",
+      "title": "Basel III Capital Stack: CET1, Tier1, Total + Buffer Architecture",
+      "type": "framework",
+      "domain": "basel_risk",
+      "confidence": 3,
+      "tags": [
+        "capital_adequacy",
+        "cet1",
+        "tier1",
+        "tier2",
+        "at1",
+        "basel3",
+        "capital_buffer",
+        "mda",
+        "regulatory_capital"
+      ],
+      "thesis": "Basel III establishes a three-tier capital hierarchy (CET1, AT1, Tier 2) with hard minimums (CET1 ≥ 4.5%, Tier 1 ≥ 6%, Total ≥ 8% of RWA) layered beneath a Capital Conservation Buffer of 2.5% CET1; breaching the buffer triggers Maximum Distributable Amount (MDA) constraints that mechanically restrict dividends, buybacks, and discretionary bonuses in proportion to the shortfall, creating a graduated capital restoration regime without formal insolvency.",
+      "stability": "stable",
+      "date_updated": "2026-05-26"
+    },
+    {
       "id": "basel_iii_endgame_001",
       "title": "Basel III Endgame — Capital, Liquidity, and Credit Migration",
       "type": "framework",
-      "domain": "financial_markets",
+      "domain": "basel_risk",
       "confidence": 2,
       "tags": [
         "Basel",
@@ -2275,10 +2336,30 @@
       "date_updated": "2026-05-24"
     },
     {
+      "id": "basel_ccyb_countercyclical_buffer_macroprudential_activation_001",
+      "title": "Basel CCyB: Countercyclical Capital Buffer — Macroprudential Activation and Reciprocity",
+      "type": "mechanism",
+      "domain": "basel_risk",
+      "confidence": 3,
+      "tags": [
+        "ccyb",
+        "macroprudential",
+        "countercyclical",
+        "credit_cycle",
+        "capital_buffer",
+        "reciprocity",
+        "cet1",
+        "basel3"
+      ],
+      "thesis": "The CCyB (0–2.5% of RWA, met with CET1) is a national macroprudential tool activated when excess aggregate credit growth signals systemic risk accumulation; increases take effect after a pre-announcement period of up to 12 months while decreases are effective immediately, preventing the buffer from becoming procyclical during downturns; internationally active banks compute a weighted average across jurisdictions they lend into, and mandatory reciprocity among Basel Committee members ensures consistent global application up to 2.5%.",
+      "stability": "stable",
+      "date_updated": "2026-05-26"
+    },
+    {
       "id": "basel_driven_credit_migration_to_private_markets_001",
       "title": "Basel Driven Credit Migration To Private Markets",
       "type": "mechanism",
-      "domain": "monetary_policy",
+      "domain": "basel_risk",
       "confidence": 3,
       "tags": [
         "private_credit",
@@ -2298,7 +2379,7 @@
       "title": "Basel III Capital Requirements Private Credit Migration",
       "type": "mechanism",
       "domain": "basel_risk",
-      "confidence": 1,
+      "confidence": 2,
       "tags": [
         "basel_iii",
         "private_credit",
@@ -2307,16 +2388,76 @@
         "leveraged_lending",
         "regulatory_arbitrage"
       ],
-      "thesis": "Basel III increased CET1 and liquidity requirements force banks to retreat from capital-intensive corporate and leveraged lending; private credit funds — not subject to equivalent capital requirements — fill the financing void, a process characterised as regulatory arbitrage that has structurally migrated lending from the regulated banking sector into the shadow banking / NBFI sector. [LLM]",
+      "thesis": "Basel III's interlocking capital (RWA + Output Floor) and liquidity (LCR/NSFR) requirements make holding long-duration unrated corporate credit structurally uneconomical for regulated banks, forcing retreat from capital-intensive corporate and leveraged lending; private credit funds — not subject to equivalent capital requirements — fill the resulting financing void, a process characterised as regulatory arbitrage that has structurally migrated lending from the regulated banking sector into the shadow banking / NBFI sector. [LLM]",
       "stability": "evolving",
       "date_updated": "2026-05-24"
+    },
+    {
+      "id": "basel_iii_lcr_hqla_cashflow_mechanics_001",
+      "title": "Basel III LCR: HQLA Stock and 30-Day Net Cash Outflow Mechanics",
+      "type": "mechanism",
+      "domain": "basel_risk",
+      "confidence": 3,
+      "tags": [
+        "lcr",
+        "hqla",
+        "liquidity",
+        "run_off_rates",
+        "stress_scenario",
+        "level1_level2",
+        "30day_horizon",
+        "basel3"
+      ],
+      "thesis": "The LCR requires banks to hold a stock of unencumbered HQLA ≥ 100% of total net cash outflows over a 30-day combined idiosyncratic and market-wide stress scenario; HQLA is tiered into Level 1 (no limit, no haircut), Level 2A (≤40% of stock; 15% haircut), and Level 2B (≤15% of stock; 25–50% haircuts), while the outflow denominator applies product-specific run-off rates (retail stable 3–5%, less stable ≥10%; wholesale operational 25%; non-financial corporate 40%; financial institution 100%) capped such that net inflows cannot reduce required outflows by more than 75%.",
+      "stability": "stable",
+      "date_updated": "2026-05-26"
+    },
+    {
+      "id": "basel_iii_nsfr_available_required_stable_funding_001",
+      "title": "Basel III NSFR: Available and Required Stable Funding Factor Tables",
+      "type": "mechanism",
+      "domain": "basel_risk",
+      "confidence": 3,
+      "tags": [
+        "nsfr",
+        "asf",
+        "rsf",
+        "stable_funding",
+        "structural_liquidity",
+        "1year_horizon",
+        "basel3",
+        "liquidity"
+      ],
+      "thesis": "The NSFR requires ASF / RSF ≥ 100% on a structural 1-year horizon; ASF is weighted by liability stability (100% for capital/long-term debt → 95% stable retail → 90% less stable retail → 50% short-term wholesale → 0% short-term financial institution funding), while RSF reflects asset illiquidity (0% cash/CB reserves → 5% Level 1 HQLA → 15% Level 2A → 50% Level 2B/short-term loans → 65% low-RW mortgages ≥1yr → 85% high-RW performing loans ≥1yr → 100% encumbered or illiquid), with the 85% RSF for unrated corporate loans ≥1yr being the primary mechanism constraining bank balance sheet capacity for long-term corporate credit.",
+      "stability": "stable",
+      "date_updated": "2026-05-26"
+    },
+    {
+      "id": "basel_iv_output_floor_72pct_internal_model_constraint_001",
+      "title": "Basel IV Output Floor: 72.5% SA-RWA Floor on Internal Models",
+      "type": "mechanism",
+      "domain": "basel_risk",
+      "confidence": 3,
+      "tags": [
+        "output_floor",
+        "rwa",
+        "irb",
+        "internal_models",
+        "standardised_approach",
+        "basel4",
+        "capital_adequacy",
+        "credit_risk"
+      ],
+      "thesis": "The output floor requires that a bank's total RWA (used for capital ratio calculation) must not fall below 72.5% of the RWA computed using only standardised approaches — constraining the capital reduction achievable through internal models (IRB for credit risk, IMA for market risk, IMM for counterparty credit risk) and eliminating incentives for excessive model optimisation, particularly in specialised lending and low-risk mortgage portfolios.",
+      "stability": "stable",
+      "date_updated": "2026-05-26"
     },
     {
       "id": "basel_output_floor_specialized_lending_001",
       "title": "Basel Output Floor Specialized Lending Impact",
       "type": "mechanism",
       "domain": "basel_risk",
-      "confidence": 1,
+      "confidence": 3,
       "tags": [
         "basel-iii",
         "output-floor",
@@ -2326,7 +2467,7 @@
         "capital-charge",
         "private-credit-driver"
       ],
-      "thesis": "The Output Floor (72.5% of SA-RWA, fully phased-in Jan 2027) prevents banks from using internal IRB models to reduce RWA below 72.5% of the Standardised Approach calculation, eliminating the capital optimization advantage that made specialized lending (project finance, CRE, unrated mid-market loans) viable on bank balance sheets — regardless of actual historical default rates. [LLM] This is the single largest driver of bank retreat from specialized corporate credit, creating the structural gap that private credit fills.",
+      "thesis": "The Output Floor (72.5% of SA-RWA, fully phased-in Jan 2028 per RBC90) prevents banks from using internal IRB models to reduce RWA below 72.5% of the Standardised Approach calculation, eliminating the capital optimization advantage that made specialized lending (project finance, CRE, unrated mid-market loans) viable on bank balance sheets — regardless of actual historical default rates; unrated specialized loans default to SA risk weights of 100–150%, making post-floor capital costs prohibitive relative to earned spread. [LLM] This is the primary driver of bank retreat from specialized corporate credit, creating the structural gap that private credit fills.",
       "stability": "evolving",
       "date_updated": "2026-05-21"
     },
@@ -3607,7 +3748,7 @@
       "title": "LCR NSFR Long-Term Lending Penalty",
       "type": "mechanism",
       "domain": "basel_risk",
-      "confidence": 1,
+      "confidence": 3,
       "tags": [
         "LCR",
         "NSFR",
@@ -3618,7 +3759,7 @@
         "funding-cost",
         "private-credit-driver"
       ],
-      "thesis": "LCR forces banks to hold HQLA equal to 30-day stressed net outflows (including assumed drawdowns on corporate credit lines), while NSFR requires stable funding ≥85% of notional for loans with residual maturity ≥1 year. [LLM] Together these two rules create a structural funding cost penalty that makes long-duration corporate and specialized lending uneconomical relative to short-term or HQLA assets — amplifying the capital-cost pressure from RWA and Output Floor to produce the bank retreat from corporate credit.",
+      "thesis": "LCR forces banks to hold HQLA ≥ 30-day stressed net cash outflows (including assumed draw-down of 10% on committed credit lines to non-financial corporates and 30-40% on committed liquidity/credit lines to financial entities per LCR40), while NSFR requires stable funding covering 85% of notional for unrated performing loans ≥1yr (NSF30.31); together these rules create a structural funding cost penalty — HQLA opportunity cost on the LCR side, expensive long-term stable funding premium on the NSFR side — that makes long-duration corporate and specialized lending uneconomical relative to short-term or HQLA assets.",
       "stability": "stable",
       "date_updated": "2026-05-21"
     },
@@ -4224,7 +4365,7 @@
       "id": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
       "title": "SLR LCR Balance Sheet Constraints Treasury Market Dealer",
       "type": "mechanism",
-      "domain": "financial_markets",
+      "domain": "basel_risk",
       "confidence": 3,
       "tags": [
         "slr",
@@ -4912,6 +5053,41 @@
       "source": "bank_alm_structural_liquidity_management_nsfr_lcr_framework_001",
       "target": "non_maturity_deposit_and_revolving_facility_behavioral_assumptions_alco_governance_001",
       "relation": "nmd_lcr_connection"
+    },
+    {
+      "source": "basel_gsib_surcharge_bucket_methodology_capital_add_on_001",
+      "target": "basel_iii_capital_stack_cet1_tier1_total_buffer_architecture_001",
+      "relation": "additional_buffer_layer"
+    },
+    {
+      "source": "basel_gsib_surcharge_bucket_methodology_capital_add_on_001",
+      "target": "basel_ccyb_countercyclical_buffer_macroprudential_activation_001",
+      "relation": "buffer_stack_peer"
+    },
+    {
+      "source": "basel_gsib_surcharge_bucket_methodology_capital_add_on_001",
+      "target": "basel_iii_leverage_ratio_non_rwa_capital_constraint_001",
+      "relation": "gsib_leverage_add_on"
+    },
+    {
+      "source": "basel_gsib_surcharge_bucket_methodology_capital_add_on_001",
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "constraint_system_component"
+    },
+    {
+      "source": "basel_iii_leverage_ratio_non_rwa_capital_constraint_001",
+      "target": "basel_iii_capital_stack_cet1_tier1_total_buffer_architecture_001",
+      "relation": "complementary_constraint"
+    },
+    {
+      "source": "basel_iii_leverage_ratio_non_rwa_capital_constraint_001",
+      "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
+      "relation": "us_implementation_context"
+    },
+    {
+      "source": "basel_iii_leverage_ratio_non_rwa_capital_constraint_001",
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "part_of_four_constraints"
     },
     {
       "source": "cb_hidden_fx_reserves_net_effective_intervention_capacity_001",
@@ -5627,6 +5803,26 @@
       "source": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
       "target": "basel_output_floor_specialized_lending_001",
       "relation": "shared_tag:rwa"
+    },
+    {
+      "source": "basel_iii_capital_stack_cet1_tier1_total_buffer_architecture_001",
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "detailed_mechanics"
+    },
+    {
+      "source": "basel_iii_capital_stack_cet1_tier1_total_buffer_architecture_001",
+      "target": "basel_iv_output_floor_72pct_internal_model_constraint_001",
+      "relation": "rwa_floor_complement"
+    },
+    {
+      "source": "basel_iii_capital_stack_cet1_tier1_total_buffer_architecture_001",
+      "target": "basel_ccyb_countercyclical_buffer_macroprudential_activation_001",
+      "relation": "macroprudential_buffer_extension"
+    },
+    {
+      "source": "basel_iii_capital_stack_cet1_tier1_total_buffer_architecture_001",
+      "target": "bcbs_irrbb_standards_d368_2016_001",
+      "relation": "pillar2_complement"
     },
     {
       "source": "basel_iii_endgame_001",
@@ -7024,6 +7220,16 @@
       "relation": "leverage_feedback_channel"
     },
     {
+      "source": "basel_ccyb_countercyclical_buffer_macroprudential_activation_001",
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "constraint_system_component"
+    },
+    {
+      "source": "basel_ccyb_countercyclical_buffer_macroprudential_activation_001",
+      "target": "imf_flow_of_funds_4_sector_consistency_framework_001",
+      "relation": "credit_cycle_macro_context"
+    },
+    {
       "source": "basel_driven_credit_migration_to_private_markets_001",
       "target": "private_credit_insurer_structural_channel_001",
       "relation": "shared_tag:private_credit"
@@ -7052,6 +7258,66 @@
       "source": "basel_iii_capital_requirements_private_credit_migration_001",
       "target": "bank_nbfi_leverage_loop_001",
       "relation": "systemic_feedback_channel"
+    },
+    {
+      "source": "basel_iii_lcr_hqla_cashflow_mechanics_001",
+      "target": "basel_iii_nsfr_available_required_stable_funding_001",
+      "relation": "complementary_liquidity_standard"
+    },
+    {
+      "source": "basel_iii_lcr_hqla_cashflow_mechanics_001",
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "part_of_four_constraints"
+    },
+    {
+      "source": "basel_iii_lcr_hqla_cashflow_mechanics_001",
+      "target": "basel_iii_leverage_ratio_non_rwa_capital_constraint_001",
+      "relation": "balance_sheet_constraint_peer"
+    },
+    {
+      "source": "basel_iii_lcr_hqla_cashflow_mechanics_001",
+      "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
+      "relation": "us_dealer_transmission"
+    },
+    {
+      "source": "basel_iii_lcr_hqla_cashflow_mechanics_001",
+      "target": "bank_alm_structural_liquidity_management_nsfr_lcr_framework_001",
+      "relation": "alm_implementation_context"
+    },
+    {
+      "source": "basel_iii_nsfr_available_required_stable_funding_001",
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "part_of_four_constraints"
+    },
+    {
+      "source": "basel_iii_nsfr_available_required_stable_funding_001",
+      "target": "basel_driven_credit_migration_to_private_markets_001",
+      "relation": "structural_driver"
+    },
+    {
+      "source": "basel_iii_nsfr_available_required_stable_funding_001",
+      "target": "bank_alm_structural_liquidity_management_nsfr_lcr_framework_001",
+      "relation": "alm_implementation_context"
+    },
+    {
+      "source": "basel_iii_nsfr_available_required_stable_funding_001",
+      "target": "funds_transfer_pricing_rate_decomposition_base_liquidity_credit_optionality_components_001",
+      "relation": "ftp_liquidity_cost_source"
+    },
+    {
+      "source": "basel_iv_output_floor_72pct_internal_model_constraint_001",
+      "target": "basel_output_floor_specialized_lending_001",
+      "relation": "credit_impact_application"
+    },
+    {
+      "source": "basel_iv_output_floor_72pct_internal_model_constraint_001",
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "component_of"
+    },
+    {
+      "source": "basel_iv_output_floor_72pct_internal_model_constraint_001",
+      "target": "basel_driven_credit_migration_to_private_markets_001",
+      "relation": "credit_migration_driver"
     },
     {
       "source": "basel_output_floor_specialized_lending_001",

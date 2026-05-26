@@ -10,7 +10,7 @@ aliases:
 - Cơ chế vốn Basel III
 - Sàn đầu ra Basel
 domain:
-  primary: monetary_policy
+  primary: basel_risk
 tags:
 - basel
 - rwa

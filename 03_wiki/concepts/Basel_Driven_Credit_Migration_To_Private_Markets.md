@@ -10,7 +10,7 @@ aliases:
 - Dịch chuyển tín dụng tư nhân
 - Vòng lặp thanh khoản ngân hàng-private credit
 domain:
-  primary: monetary_policy
+  primary: basel_risk
 tags:
 - private_credit
 - basel
