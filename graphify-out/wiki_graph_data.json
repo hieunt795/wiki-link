@@ -1,6 +1,28 @@
 {
   "nodes": [
     {
+      "id": "cb_hidden_fx_reserves_net_effective_intervention_capacity_001",
+      "title": "CB Hidden FX Reserves Net Effective Intervention Capacity",
+      "type": "concept",
+      "domain": "monetary_policy",
+      "confidence": 1,
+      "tags": [
+        "fx_reserves",
+        "hidden_reserves",
+        "net_effective_reserves",
+        "off_balance_sheet",
+        "reserve_adequacy",
+        "fx_swap",
+        "forward",
+        "em_crisis",
+        "bpm6",
+        "bis"
+      ],
+      "thesis": "[LLM] Gross FX reserves as officially reported overstate a central bank's true intervention capacity when the CB carries outstanding FX swap far legs, outright forward delivery obligations, or collateral posted for hedges — all of which are off-balance-sheet claims on those reserves. Net effective reserves (gross minus all forward and swap obligations) is the quantity that determines how long a CB can sustain spot intervention; historical EM crises (Thailand 1997, Turkey 2021) featured gross reserves that appeared adequate while net reserves were near zero or negative due to hidden forward book.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
+    },
+    {
       "id": "cb_reserve_system_constraint_multiplier_myth_001",
       "title": "CB Reserve System Level Constraint And Money Multiplier Myth",
       "type": "concept",
@@ -2069,6 +2091,48 @@
       "date_updated": "2026-05-22"
     },
     {
+      "id": "cb_fx_forward_and_ndf_intervention_delivery_versus_cash_settlement_001",
+      "title": "CB FX Forward And NDF Intervention Delivery Versus Cash Settlement",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 1,
+      "tags": [
+        "fx_intervention",
+        "forward",
+        "ndf",
+        "off_balance_sheet",
+        "delivery_risk",
+        "offshore_fx",
+        "reserve_management",
+        "em_policy",
+        "capital_controls"
+      ],
+      "thesis": "[LLM] Outright forwards commit the CB to deliver actual FX at a future date at a pre-agreed rate, creating an off-balance-sheet obligation that only affects NFA at settlement — allowing the CB to signal rate commitment without immediate reserve cost, but creating delivery risk if reserves are insufficient at maturity. NDFs (Non-Deliverable Forwards) settle the profit/loss in domestic currency with no FX delivery, enabling CB intervention in offshore markets or for restricted currencies without touching gross reserves; the tradeoff is that NDF exposure does not appear in reserve reports, creating opacity around the true cost of intervention.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
+    },
+    {
+      "id": "cb_fx_options_and_cancelable_forward_intervention_structures_001",
+      "title": "CB FX Options And Cancelable Forward Intervention Structures",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 1,
+      "tags": [
+        "fx_intervention",
+        "fx_options",
+        "cancelable_forward",
+        "seagull",
+        "range_forward",
+        "zero_cost_structure",
+        "optionality",
+        "em_policy",
+        "reserve_management"
+      ],
+      "thesis": "[LLM] Central banks use FX options primarily as buyers (purchasing the right to intervene at a strike price) rather than sellers, because selling options creates unlimited downside exposure. Cancelable forwards give the CB the right to cancel delivery if market conditions change, functioning as a forward plus an embedded option — useful for signaling commitment while preserving optionality, but at a wider bid-ask spread. Zero-cost structures (seagull, range forward) create rate corridors with no upfront premium but bind the CB to deliver within a range, converting discretionary intervention into a semi-automatic rule.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
+    },
+    {
       "id": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
       "title": "CB FX Rate Target Balance Sheet Constraint And Sterilization",
       "type": "mechanism",
@@ -2090,6 +2154,27 @@
       "thesis": "When a central bank targets an exchange rate (fixed peg, crawling peg, or managed band), NFA becomes an endogenous variable determined by BOP flows and intervention — not a free policy instrument. The CB retains control only over NDA. Sterilization (offsetting NFA changes via NDA) can preserve the monetary base target in the short run, but faces two binding limits: (1) reserve depletion when defending against depreciation, and (2) quasi-fiscal carrying costs when sterilizing appreciation-driven inflows. Sustained sterilization against a persistent shock is unsustainable and, if delayed, results in a larger eventual adjustment.",
       "stability": "stable",
       "date_updated": "2026-05-24"
+    },
+    {
+      "id": "cb_fx_swap_intervention_mechanics_and_off_balance_sheet_exposure_001",
+      "title": "CB FX Swap Intervention Mechanics And Off Balance Sheet Exposure",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 1,
+      "tags": [
+        "fx_intervention",
+        "fx_swap",
+        "off_balance_sheet",
+        "nfa",
+        "reserve_management",
+        "sterilization",
+        "dollar_liquidity",
+        "hidden_reserves",
+        "em_policy"
+      ],
+      "thesis": "[LLM] A central bank FX swap (buy-sell or sell-buy) consists of two legs settled at different dates: the near leg changes NFA immediately, while the far leg creates an off-balance-sheet forward commitment that reverses the NFA position at maturity. CB use swaps rather than spot to (1) inject/drain FX liquidity temporarily without permanently depleting reserves, (2) obscure intervention scale from monthly reserve reports, and (3) provide short-term dollar funding to commercial banks without surrendering spot reserves. The outstanding far-leg book reduces net effective reserves below reported gross reserves.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
     },
     {
       "id": "cb_fx_target_five_entity_balance_sheet_trace_001",
@@ -4415,6 +4500,31 @@
   ],
   "edges": [
     {
+      "source": "cb_hidden_fx_reserves_net_effective_intervention_capacity_001",
+      "target": "cb_fx_swap_intervention_mechanics_and_off_balance_sheet_exposure_001",
+      "relation": "primary_source — swap far-leg book is main driver of hidden reserves"
+    },
+    {
+      "source": "cb_hidden_fx_reserves_net_effective_intervention_capacity_001",
+      "target": "cb_fx_forward_and_ndf_intervention_delivery_versus_cash_settlement_001",
+      "relation": "contributing_source — forward delivery obligations reduce net reserves"
+    },
+    {
+      "source": "cb_hidden_fx_reserves_net_effective_intervention_capacity_001",
+      "target": "cb_fx_options_and_cancelable_forward_intervention_structures_001",
+      "relation": "contributing_source — sold options create contingent claims on reserves"
+    },
+    {
+      "source": "cb_hidden_fx_reserves_net_effective_intervention_capacity_001",
+      "target": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
+      "relation": "policy_context — net effective reserves determine how long FX target can hold"
+    },
+    {
+      "source": "cb_hidden_fx_reserves_net_effective_intervention_capacity_001",
+      "target": "imf_fx_regime_monetary_accounts_balance_sheet_endogeneity_001",
+      "relation": "accounting_framework — NFA in monetary accounts reflects only on-BS positions"
+    },
+    {
       "source": "cb_reserve_system_constraint_multiplier_myth_001",
       "target": "cb_reserve_requirements_taxonomy_surplus_shortage_liquidity_001",
       "relation": "companion"
@@ -6380,6 +6490,31 @@
       "relation": "shared_tag:duration"
     },
     {
+      "source": "cb_fx_forward_and_ndf_intervention_delivery_versus_cash_settlement_001",
+      "target": "cb_fx_swap_intervention_mechanics_and_off_balance_sheet_exposure_001",
+      "relation": "sibling_instrument — swap adds near leg; forward is single future delivery"
+    },
+    {
+      "source": "cb_fx_forward_and_ndf_intervention_delivery_versus_cash_settlement_001",
+      "target": "cb_fx_options_and_cancelable_forward_intervention_structures_001",
+      "relation": "sibling_instrument — cancelable forward = forward + embedded option"
+    },
+    {
+      "source": "cb_fx_forward_and_ndf_intervention_delivery_versus_cash_settlement_001",
+      "target": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
+      "relation": "parent_mechanism — forward is off-BS implementation of FX target defense"
+    },
+    {
+      "source": "cb_fx_options_and_cancelable_forward_intervention_structures_001",
+      "target": "cb_fx_swap_intervention_mechanics_and_off_balance_sheet_exposure_001",
+      "relation": "sibling_instrument — swap obligates two legs; option preserves CB choice"
+    },
+    {
+      "source": "cb_fx_options_and_cancelable_forward_intervention_structures_001",
+      "target": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
+      "relation": "parent_mechanism — options implement discretionary defense of FX target"
+    },
+    {
       "source": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
       "target": "imf_monetary_survey_and_reserve_money_identity_framework_001",
       "relation": "identity_foundation"
@@ -6408,6 +6543,16 @@
       "source": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
       "target": "policy_trilemma_efficiency_frontier_equivalence_001",
       "relation": "theoretical_root"
+    },
+    {
+      "source": "cb_fx_swap_intervention_mechanics_and_off_balance_sheet_exposure_001",
+      "target": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
+      "relation": "parent_mechanism — swap is one implementation of sterilized intervention"
+    },
+    {
+      "source": "cb_fx_swap_intervention_mechanics_and_off_balance_sheet_exposure_001",
+      "target": "fx_swap_basis_cip_deviation_dollar_scarcity_001",
+      "relation": "market_context — CIP deviation affects swap pricing for CB"
     },
     {
       "source": "cb_fx_target_five_entity_balance_sheet_trace_001",

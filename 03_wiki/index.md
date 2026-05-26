@@ -1,11 +1,13 @@
 # Wiki Index
 
-**Total nodes:** 227  |  **Last updated:** 2026-05-26
+**Total nodes:** 231  |  **Last updated:** 2026-05-26
 
 ---
 
-## Concepts (24)
+## Concepts (25)
 
+- **[[CB Hidden FX Reserves Net Effective Intervention Capacity]]**  ★☆☆☆☆
+  [LLM] Gross FX reserves as officially reported overstate a central bank's true intervention capacity when the CB carries outstanding FX swap far legs,...
 - **[[CB Reserve System Level Constraint And Money Multiplier Myth]]**  ★★★★☆
   Two foundational misconceptions about commercial bank reserves: (1) individual banks appear to choose between reserves and other assets, but at the sy...
 - **[[CB Seigniorage Income Capital Loss And Policy Independence]]**  ★☆☆☆☆
@@ -55,7 +57,7 @@
 - **[[Warsh Balance Sheet Stimulus Swap]]**  ★★☆☆☆
   The "Warsh Hypothesis" posits that the Fed's balance sheet and policy rate are substitutable forms of stimulus; significantly shrinking the balance sh...
 
-## Mechanisms (132)
+## Mechanisms (135)
 
 - **[[Ample Reserves Buffer Sizing TGA Volatility]]**  ★☆☆☆☆
   The minimum ample reserves buffer required for rate control can be estimated as B = sigma*sqrt(Delta)*z*(epsilon*Delta/2), where sigma is the standard...
@@ -93,8 +95,14 @@
   BoJ QE systematically extracted duration from the private sector by swapping long-duration JGBs for near-zero-duration reserves, leaving Japanese hous...
 - **[[Bond Accrual Price Effect Interaction]]**  ★★★☆☆
   Over a multi-period horizon, a bond portfolio's coupon accruals (reinvestment income) accumulate roughly as the square of the horizon while price effe...
+- **[[CB FX Forward And NDF Intervention Delivery Versus Cash Settlement]]**  ★☆☆☆☆
+  [LLM] Outright forwards commit the CB to deliver actual FX at a future date at a pre-agreed rate, creating an off-balance-sheet obligation that only a...
+- **[[CB FX Options And Cancelable Forward Intervention Structures]]**  ★☆☆☆☆
+  [LLM] Central banks use FX options primarily as buyers (purchasing the right to intervene at a strike price) rather than sellers, because selling opti...
 - **[[CB FX Rate Target Balance Sheet Constraint And Sterilization]]**  ★★★★☆
   When a central bank targets an exchange rate (fixed peg, crawling peg, or managed band), NFA becomes an endogenous variable determined by BOP flows an...
+- **[[CB FX Swap Intervention Mechanics And Off Balance Sheet Exposure]]**  ★☆☆☆☆
+  [LLM] A central bank FX swap (buy-sell or sell-buy) consists of two legs settled at different dates: the near leg changes NFA immediately, while the f...
 - **[[CB FX Target — Five-Entity Combined Balance Sheet Trace (T-Account Scenarios)]]**  ★★★☆☆
   Every FX intervention and sterilization operation propagates simultaneously across five balance sheets — CB, DMBs, Government, Private sector, and Ext...
 - **[[CB Quasi-Fiscal Mechanism — Sterilization Costs, Seigniorage, and the Fiscal-Monetary Nexus]]**  ★★★★☆
