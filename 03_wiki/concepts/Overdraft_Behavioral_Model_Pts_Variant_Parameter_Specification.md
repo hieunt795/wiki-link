@@ -7,7 +7,7 @@ aliases:
 - BC030306 PTS
 - OD utilization model specification ABBank
 domain:
-  primary: financial_markets
+  primary: alm
 tags:
 - alm
 - behavioral_model

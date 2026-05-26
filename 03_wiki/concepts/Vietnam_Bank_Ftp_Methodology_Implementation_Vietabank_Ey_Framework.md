@@ -10,7 +10,7 @@ aliases:
 - EY FTP Vietnam
 - định giá điều chuyển vốn ngân hàng Việt Nam
 domain:
-  primary: financial_markets
+  primary: alm
 tags:
 - ftp
 - alm

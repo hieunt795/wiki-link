@@ -10,7 +10,7 @@ aliases:
 - overdraft ALCO governance
 - behavioral assumption model validation ALM
 domain:
-  primary: financial_markets
+  primary: alm
 tags:
 - alm
 - nmd

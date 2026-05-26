@@ -10,7 +10,7 @@ aliases:
 - ALM framework
 - balance sheet management banking
 domain:
-  primary: financial_markets
+  primary: alm
 tags:
 - alm
 - irrbb

@@ -7,7 +7,7 @@ aliases:
 - BC030304 PPL PTS
 - ABBank term deposit policy parameters
 domain:
-  primary: financial_markets
+  primary: alm
 tags:
 - alm
 - behavioral_model

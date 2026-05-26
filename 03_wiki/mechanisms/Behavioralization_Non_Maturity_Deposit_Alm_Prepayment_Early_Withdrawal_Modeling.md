@@ -11,7 +11,7 @@ aliases:
 - prepayment model banking
 - early withdrawal model term deposit
 domain:
-  primary: financial_markets
+  primary: alm
 tags:
 - alm
 - behavioral_model

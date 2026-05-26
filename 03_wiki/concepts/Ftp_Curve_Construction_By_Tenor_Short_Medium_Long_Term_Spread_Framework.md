@@ -10,7 +10,7 @@ aliases:
 - FTP rate curve ALCO
 - cost of funds curve banking
 domain:
-  primary: financial_markets
+  primary: alm
 tags:
 - ftp
 - alm

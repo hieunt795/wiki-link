@@ -10,7 +10,7 @@ aliases:
 - FTP transmission risk
 - ALM FTP behavioral incentive
 domain:
-  primary: financial_markets
+  primary: alm
 tags:
 - ftp
 - alm

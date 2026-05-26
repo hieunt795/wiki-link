@@ -8,7 +8,7 @@ aliases:
 - Biên lãi ròng tiền gửi không kỳ hạn
 - Non-Maturity Deposit Hedging
 domain:
-  primary: monetary_policy
+  primary: alm
 tags:
 - alm
 - non_maturity_deposits

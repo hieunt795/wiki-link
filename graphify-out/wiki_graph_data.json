@@ -4,7 +4,7 @@
       "id": "bank_alm_structural_liquidity_management_nsfr_lcr_framework_001",
       "title": "Bank ALM Structural Liquidity Management NSFR LCR Framework",
       "type": "concept",
-      "domain": "financial_markets",
+      "domain": "alm",
       "confidence": 1,
       "tags": [
         "alm",
@@ -200,7 +200,7 @@
       "id": "ftp_curve_construction_by_tenor_short_medium_long_term_spread_framework_001",
       "title": "FTP Curve Construction By Tenor — Short Medium Long Term Spread Framework",
       "type": "concept",
-      "domain": "financial_markets",
+      "domain": "alm",
       "confidence": 1,
       "tags": [
         "ftp",
@@ -296,7 +296,7 @@
       "id": "funds_transfer_pricing_rate_decomposition_base_liquidity_credit_optionality_components_001",
       "title": "Funds Transfer Pricing Rate Decomposition — Base Liquidity Credit Optionality Components",
       "type": "concept",
-      "domain": "financial_markets",
+      "domain": "alm",
       "confidence": 1,
       "tags": [
         "ftp",
@@ -378,7 +378,7 @@
       "id": "non_maturity_deposit_and_revolving_facility_behavioral_assumptions_alco_governance_001",
       "title": "Non-Maturity Deposit And Revolving Facility Behavioral Assumptions ALCO Governance",
       "type": "concept",
-      "domain": "financial_markets",
+      "domain": "alm",
       "confidence": 1,
       "tags": [
         "alm",
@@ -399,7 +399,7 @@
       "id": "overdraft_behavioral_model_ppl_pts_policy_specification_001",
       "title": "Overdraft Behavioral Model — PPL PTS Policy Specification",
       "type": "concept",
-      "domain": "financial_markets",
+      "domain": "alm",
       "confidence": 1,
       "tags": [
         "alm",
@@ -416,7 +416,7 @@
       "id": "overdraft_behavioral_model_pts_variant_parameter_specification_001",
       "title": "Overdraft Behavioral Model — PTS Variant Parameter Specification",
       "type": "concept",
-      "domain": "financial_markets",
+      "domain": "alm",
       "confidence": 1,
       "tags": [
         "alm",
@@ -525,7 +525,7 @@
       "id": "term_deposit_alm_governance_policy_procedure_limit_framework_001",
       "title": "Term Deposit ALM Governance — Policy Procedure Limit Framework",
       "type": "concept",
-      "domain": "financial_markets",
+      "domain": "alm",
       "confidence": 1,
       "tags": [
         "alm",
@@ -545,7 +545,7 @@
       "id": "term_deposit_behavioral_model_ppl_pts_policy_specification_001",
       "title": "Term Deposit Behavioral Model — PPL PTS Policy Specification",
       "type": "concept",
-      "domain": "financial_markets",
+      "domain": "alm",
       "confidence": 1,
       "tags": [
         "alm",
@@ -562,7 +562,7 @@
       "id": "term_deposit_behavioral_model_pts_variant_parameter_specification_001",
       "title": "Term Deposit Behavioral Model — PTS Variant Parameter Specification",
       "type": "concept",
-      "domain": "financial_markets",
+      "domain": "alm",
       "confidence": 1,
       "tags": [
         "alm",
@@ -676,7 +676,7 @@
       "id": "vietnam_bank_ftp_methodology_implementation_vietabank_ey_framework_001",
       "title": "Vietnam Bank FTP Methodology Implementation — VietABank EY Framework",
       "type": "concept",
-      "domain": "financial_markets",
+      "domain": "alm",
       "confidence": 1,
       "tags": [
         "ftp",
@@ -817,7 +817,7 @@
       "id": "bank_alm_banking_book_risk_management_framework_001",
       "title": "Bank ALM Banking Book Risk Management Framework",
       "type": "framework",
-      "domain": "financial_markets",
+      "domain": "alm",
       "confidence": 1,
       "tags": [
         "alm",
@@ -1548,7 +1548,7 @@
       "id": "irrbb_eve_nii_dual_metric_framework_001",
       "title": "IRRBB EVE NII Dual Metric Framework",
       "type": "framework",
-      "domain": "monetary_policy",
+      "domain": "alm",
       "confidence": 4,
       "tags": [
         "basel",
@@ -2334,7 +2334,7 @@
       "id": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
       "title": "Behavioralization Non-Maturity Deposit ALM — Prepayment Early Withdrawal Modeling",
       "type": "mechanism",
-      "domain": "financial_markets",
+      "domain": "alm",
       "confidence": 1,
       "tags": [
         "alm",
@@ -2976,7 +2976,7 @@
       "id": "ftp_as_unified_balance_sheet_control_mechanism_transmission_to_risk_factors_001",
       "title": "FTP As Unified Balance Sheet Control Mechanism — Transmission To Risk Factors",
       "type": "mechanism",
-      "domain": "financial_markets",
+      "domain": "alm",
       "confidence": 1,
       "tags": [
         "ftp",
@@ -3626,7 +3626,7 @@
       "id": "maturity_gap_analysis_interest_rate_risk_banking_book_001",
       "title": "Maturity Gap Analysis Interest Rate Risk Banking Book",
       "type": "mechanism",
-      "domain": "financial_markets",
+      "domain": "alm",
       "confidence": 1,
       "tags": [
         "irrbb",
@@ -3718,7 +3718,7 @@
       "id": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
       "title": "Non Maturity Deposit Fair Margin And Replicating Portfolio",
       "type": "mechanism",
-      "domain": "monetary_policy",
+      "domain": "alm",
       "confidence": 3,
       "tags": [
         "alm",
@@ -3753,7 +3753,7 @@
       "id": "overdraft_behavioral_model_utilization_rate_and_drawdown_alm_cashflow_001",
       "title": "Overdraft Behavioral Model — Utilization Rate And Drawdown ALM Cashflow",
       "type": "mechanism",
-      "domain": "financial_markets",
+      "domain": "alm",
       "confidence": 1,
       "tags": [
         "alm",
@@ -4510,7 +4510,7 @@
       "id": "term_deposit_behavioral_model_renewal_probability_and_early_withdrawal_alm_001",
       "title": "Term Deposit Behavioral Model — Renewal Probability And Early Withdrawal ALM",
       "type": "mechanism",
-      "domain": "financial_markets",
+      "domain": "alm",
       "confidence": 1,
       "tags": [
         "alm",

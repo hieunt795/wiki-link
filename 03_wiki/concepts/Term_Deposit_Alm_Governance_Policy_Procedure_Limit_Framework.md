@@ -9,7 +9,7 @@ aliases:
 - quản trị mô hình hành vi tiền gửi
 - ALM model policy procedure limit
 domain:
-  primary: financial_markets
+  primary: alm
 tags:
 - alm
 - governance

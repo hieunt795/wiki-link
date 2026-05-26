@@ -21,7 +21,7 @@ aliases:
 # ── CLASSIFICATION ─────────────────────────────────────────────────────────────
 domain:
   primary: monetary_policy                 # One of: monetary_policy | fiscal_policy |
-                                           #   basel_risk | financial_markets | macro_outlook
+                                           #   alm | basel_risk | financial_markets | macro_outlook
   secondary:                               # Optional additional domains
     - financial_markets
 tags:                                      # Lowercase, hyphenated. Max 10.

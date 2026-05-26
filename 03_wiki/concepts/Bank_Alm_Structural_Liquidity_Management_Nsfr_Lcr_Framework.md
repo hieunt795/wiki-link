@@ -10,7 +10,7 @@ aliases:
 - LCR NSFR ALM framework
 - wholesale funding risk
 domain:
-  primary: financial_markets
+  primary: alm
 tags:
 - alm
 - liquidity_risk

@@ -12,7 +12,7 @@ aliases:
 - FTP base liquidity credit spread
 - cost of funds transfer pricing
 domain:
-  primary: financial_markets
+  primary: alm
 tags:
 - ftp
 - alm

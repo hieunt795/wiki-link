@@ -7,7 +7,7 @@ aliases:
 - BC030304 PTS variant
 - renewal probability specification ABBank
 domain:
-  primary: financial_markets
+  primary: alm
 tags:
 - alm
 - behavioral_model

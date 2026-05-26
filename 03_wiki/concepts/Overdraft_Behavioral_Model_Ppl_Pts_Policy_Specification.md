@@ -7,7 +7,7 @@ aliases:
 - BC030306 PPL PTS
 - ABBank overdraft policy parameters
 domain:
-  primary: financial_markets
+  primary: alm
 tags:
 - alm
 - behavioral_model

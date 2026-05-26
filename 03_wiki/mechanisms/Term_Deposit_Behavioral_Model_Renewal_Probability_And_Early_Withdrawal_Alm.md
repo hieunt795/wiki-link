@@ -11,7 +11,7 @@ aliases:
 - early redemption ALM
 - xác suất tái tục tiền gửi
 domain:
-  primary: financial_markets
+  primary: alm
 tags:
 - alm
 - behavioral_model

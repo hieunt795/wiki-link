@@ -8,7 +8,7 @@ aliases:
 - Interest Rate Risk Banking Book
 - Khung đo lường IRRBB
 domain:
-  primary: monetary_policy
+  primary: alm
 tags:
 - basel
 - irrbb

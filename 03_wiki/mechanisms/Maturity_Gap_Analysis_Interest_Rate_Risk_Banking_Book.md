@@ -11,7 +11,7 @@ aliases:
 - gap analysis IRRBB
 - interest rate sensitivity banking book
 domain:
-  primary: financial_markets
+  primary: alm
 tags:
 - irrbb
 - gap_analysis

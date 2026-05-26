@@ -10,7 +10,7 @@ aliases:
 - revolving credit behavioral ALM
 - OD cashflow model banking
 domain:
-  primary: financial_markets
+  primary: alm
 tags:
 - alm
 - behavioral_model

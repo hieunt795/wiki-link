@@ -402,6 +402,7 @@ def _get_domain_vocab(domain: str) -> str:
     vocab = {
         "monetary_policy": "interest rate, QE, QT, corridor, floor system, reserve requirements, forward guidance, inflation targeting, transmission mechanism, policy rate",
         "fiscal_policy": "primary deficit, debt sustainability, crowding out, fiscal multiplier, automatic stabilizers, TGA, government bond issuance",
+        "alm": "asset liability management, FTP, funds transfer pricing, IRRBB, ALM, NMD, behavioralization, gap analysis, LCR, NSFR, behavioral model, maturity gap, repricing, EVE, NII, core deposit, replicating portfolio, non-maturity deposit, term deposit, overdraft, liquidity management banking book",
         "basel_risk": "CET1, Tier 1, RWA, LCR, NSFR, G-SIB, TLAC, bail-in, countercyclical buffer, IRB, SA approach",
         "financial_markets": "yield curve, duration, DV01, swap spread, repo, SOFR, FX basis, collateral, haircut, term premium",
         "macro_outlook": "GDP, CPI, output gap, current account, capital flows, FX reserves, business cycle, fiscal stance",
@@ -421,8 +422,8 @@ def _guess_domain(path: Path, fm: dict) -> str:
         return "financial_markets"
     if any(k in path_str for k in ["imf_macro", "lipschitz", "fiscal", "watts_wray"]):
         return "macro_outlook"
-    if "alm" in path_str or "elkenbracht" in path_str or "tata" in path_str:
-        return "financial_markets"
+    if any(k in path_str for k in ["alm", "elkenbracht", "tata", "ftp", "bc030304", "bc030306"]):
+        return "alm"
 
     return "monetary_policy"
 
