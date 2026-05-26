@@ -65,6 +65,11 @@ findings:
     confidence: 3
     promoted_to: null
     review_needed: false
+  - file: "findings/oin_taxonomy_and_mechanics.md"
+    status: stable
+    confidence: 4
+    promoted_to: null
+    review_needed: false
 
 gaps:
   - query: "quasi-fiscal cost quantification CB sterilization empirical estimates EM"

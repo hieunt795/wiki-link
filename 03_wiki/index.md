@@ -1,10 +1,10 @@
 # Wiki Index
 
-**Total nodes:** 231  |  **Last updated:** 2026-05-26
+**Total nodes:** 232  |  **Last updated:** 2026-05-26
 
 ---
 
-## Concepts (25)
+## Concepts (26)
 
 - **[[CB Hidden FX Reserves Net Effective Intervention Capacity]]**  ★☆☆☆☆
   [LLM] Gross FX reserves as officially reported overstate a central bank's true intervention capacity when the CB carries outstanding FX swap far legs,...
@@ -32,6 +32,8 @@
   Fixed income relative value (RV) is the systematic identification and monetisation of price discrepancies between economically similar instruments alo...
 - **[[Insurance Pension Private Credit Structural Investor Role]]**  ★☆☆☆☆
   Insurance companies and pension funds are the anchor investors in private credit because long-duration illiquid private credit naturally matches long-...
+- **[[MA Balance Sheet OIN Other Items Net Absorber Mechanics]]**  ★★★☆☆
+  OIN (Other Items Net) is the mandatory residual in the MA identity RM = NFA + NCG + Cb + OIN: any change in assets or liabilities that does not alter ...
 - **[[NBFI Sovereign Market Supervisory Gap]]**  ★★★☆☆
   The institutional infrastructure for managing stress in the NBFI sovereign buyer base — including data quality, supervisory frameworks, and crisis liq...
 - **[[Policy Trilemma Efficiency Frontier Equivalence]]**  ★☆☆☆☆

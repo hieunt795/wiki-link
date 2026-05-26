@@ -252,6 +252,30 @@
       "date_updated": "2026-05-23"
     },
     {
+      "id": "ma_balance_sheet_oin_other_items_net_absorber_mechanics_001",
+      "title": "MA Balance Sheet OIN Other Items Net Absorber Mechanics",
+      "type": "concept",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "oin",
+        "balance_sheet",
+        "valuation_adjustment",
+        "quasi_fiscal",
+        "recapitalization",
+        "monetary_survey",
+        "reserve_money",
+        "cb_capital",
+        "revaluation",
+        "absorber",
+        "monetary_authority",
+        "em_policy"
+      ],
+      "thesis": "OIN (Other Items Net) is the mandatory residual in the MA identity RM = NFA + NCG + Cb + OIN: any change in assets or liabilities that does not alter RM flows into OIN, making it a balance-sheet absorber that simultaneously captures (1) FX revaluation gains/losses on NFA when exchange rates change without actual transactions, (2) cumulative quasi-fiscal losses from sterilization as retained earnings decline, and (3) recapitalization injections when government restores CB capital. Negative OINm signals CB capital exhaustion and a latent fiscal cost that precedes formal recapitalization; in M2 decomposition, the OINb weight (ΔOINb/OINb × OINb/M2) isolates the quasi-fiscal and valuation component of broad money growth from genuine credit expansion.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
+    },
+    {
       "id": "nbfi_sovereign_market_supervisory_gap_001",
       "title": "NBFI Sovereign Market Supervisory Gap",
       "type": "concept",
@@ -4723,6 +4747,36 @@
       "source": "concept_fi_rv_001",
       "target": "swap_spreads_001",
       "relation": "related"
+    },
+    {
+      "source": "ma_balance_sheet_oin_other_items_net_absorber_mechanics_001",
+      "target": "imf_monetary_survey_and_reserve_money_identity_framework_001",
+      "relation": "identity_foundation — OIN is the fourth term of RM = NFA + NCG + Cb + OIN"
+    },
+    {
+      "source": "ma_balance_sheet_oin_other_items_net_absorber_mechanics_001",
+      "target": "imf_monetary_survey_valuation_adjustment_001",
+      "relation": "valuation_channel — FX revaluation flows into OIN via VAj mechanism"
+    },
+    {
+      "source": "ma_balance_sheet_oin_other_items_net_absorber_mechanics_001",
+      "target": "cb_fx_target_five_entity_balance_sheet_trace_001",
+      "relation": "applied_context — OINm decline in Scenario A; OINm exhaustion in Scenario D"
+    },
+    {
+      "source": "ma_balance_sheet_oin_other_items_net_absorber_mechanics_001",
+      "target": "cb_quasi_fiscal_sterilization_seigniorage_001",
+      "relation": "loss_source — QF losses accumulate in OINm as retained earnings fall"
+    },
+    {
+      "source": "ma_balance_sheet_oin_other_items_net_absorber_mechanics_001",
+      "target": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
+      "relation": "parent_mechanism — sterilization is the primary driver of OINm decline under FX target"
+    },
+    {
+      "source": "ma_balance_sheet_oin_other_items_net_absorber_mechanics_001",
+      "target": "imf_fx_regime_monetary_accounts_balance_sheet_endogeneity_001",
+      "relation": "regime_context — under FX target, OIN is the only NDA component freely adjustable"
     },
     {
       "source": "nbfi_sovereign_market_supervisory_gap_001",
