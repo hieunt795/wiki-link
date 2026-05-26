@@ -1,6 +1,26 @@
 {
   "nodes": [
     {
+      "id": "bank_alm_structural_liquidity_management_nsfr_lcr_framework_001",
+      "title": "Bank ALM Structural Liquidity Management NSFR LCR Framework",
+      "type": "concept",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "alm",
+        "liquidity_risk",
+        "nsfr",
+        "lcr",
+        "structural_liquidity",
+        "basel3",
+        "funding_stability",
+        "rollover_risk"
+      ],
+      "thesis": "[LLM] Structural liquidity management in ALM distinguishes between short-term liquidity (LCR — survival over 30-day stress) and structural funding stability (NSFR — alignment of long-term assets with stable funding over 1 year). ALM manages structural liquidity by ensuring the bank's funding tenor profile matches its asset maturity profile, avoiding over-reliance on short-term wholesale funding that creates rollover risk. Basel III LCR and NSFR create binding quantitative constraints that ALM must embed into FTP curve construction and balance sheet limits.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
+    },
+    {
       "id": "cb_hidden_fx_reserves_net_effective_intervention_capacity_001",
       "title": "CB Hidden FX Reserves Net Effective Intervention Capacity",
       "type": "concept",
@@ -78,6 +98,25 @@
       "thesis": "A central bank's accumulated credibility determines its 'look-through' policy space during supply shocks. Well-anchored inflation expectations allow the CB to tolerate temporary inflation above target without responding (preserving growth), whereas low credibility or jumping expectations force the CB to react (hike) to send a signal of determination, even if the shock is transitory.",
       "stability": "stable",
       "date_updated": "2026-05-24"
+    },
+    {
+      "id": "central_bank_currency_liability_tax_redemption_and_currency_franchise_001",
+      "title": "Central Bank Currency Liability Tax Redemption And Currency Franchise",
+      "type": "concept",
+      "domain": "monetary_policy",
+      "confidence": 1,
+      "tags": [
+        "central_bank_balance_sheet",
+        "currency",
+        "fed",
+        "monetary_liability",
+        "currency_franchise",
+        "seigniorage",
+        "tax_payment"
+      ],
+      "thesis": "[LLM] Currency is a liability of the central bank not because of formal redemption rights (convertibility to gold is gone) but because it extinguishes tax obligations — paying taxes with currency reduces the Treasury's tax-claim asset, so currency must be a liability of the issuer. This accounting identity also implies the \"currency franchise\": the value a central bank captures by issuing a liability (currency) that provides services (liquidity, legal tender status) to holders, analogous to the deposit franchise of commercial banks.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
     },
     {
       "id": "china_shadow_banking_wmp_trust_001",
@@ -158,6 +197,27 @@
       "date_updated": "2026-05-23"
     },
     {
+      "id": "ftp_curve_construction_by_tenor_short_medium_long_term_spread_framework_001",
+      "title": "FTP Curve Construction By Tenor — Short Medium Long Term Spread Framework",
+      "type": "concept",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "ftp",
+        "alm",
+        "ftp_curve",
+        "tenor",
+        "vnibor",
+        "alco",
+        "term_premium",
+        "cost_of_funds",
+        "senior_debt"
+      ],
+      "thesis": "[LLM] FTP curves are constructed by tenor zone: short-term (O/N to 3M) anchored to interbank rates (VNIBOR or equivalent) when markets are liquid; medium-term (6M to 2Y) reflects the bank's own senior debt issuance cost adjusted by an ALCO-determined dampening factor; long-term (3Y+) is based on long-term bond issuance cost plus a term premium for interest rate and liquidity uncertainty. The FTP curve must be marked to market regularly and approved by ALCO, since it directly determines profitability allocation and risk incentives across all business lines.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
+    },
+    {
       "id": "fed_ample_reserves_rate_control_framework_con_001",
       "title": "Fed Ample Reserves Rate Control Framework",
       "type": "concept",
@@ -233,6 +293,27 @@
       "date_updated": "2026-05-23"
     },
     {
+      "id": "funds_transfer_pricing_rate_decomposition_base_liquidity_credit_optionality_components_001",
+      "title": "Funds Transfer Pricing Rate Decomposition — Base Liquidity Credit Optionality Components",
+      "type": "concept",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "ftp",
+        "alm",
+        "funds_transfer_pricing",
+        "liquidity_spread",
+        "credit_spread",
+        "irrbb",
+        "optionality_cost",
+        "base_rate",
+        "liquidity_risk"
+      ],
+      "thesis": "[LLM] FTP Rate = Base Rate + Liquidity Spread + Credit Spread + Optionality Cost: the Base Rate (risk-free reference, e.g., VNIBOR/SBV rate) transmits monetary policy; the Liquidity Spread (term liquidity premium, marginal funding cost) transmits to liquidity risk and drives LCR/NSFR compliance incentives; the Credit Spread (expected loss + economic capital) transmits to credit risk; and Optionality Cost (embedded options: prepayment, early withdrawal) transmits to behavioral risk. Each component routes a distinct risk type to the ALM desk for centralized management.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
+    },
+    {
       "id": "insurance_pension_private_credit_structural_investor_role_001",
       "title": "Insurance Pension Private Credit Structural Investor Role",
       "type": "concept",
@@ -292,6 +373,61 @@
       "thesis": "The institutional infrastructure for managing stress in the NBFI sovereign buyer base — including data quality, supervisory frameworks, and crisis liquidity facilities — remains incomplete relative to their growing role as marginal buyers. This 'supervisory gap' is highlighted by the absence of an ECB liquidity facility for NBFIs (unlike the BoE's CNRF) and the migration of credit risk to leveraged, short-term funded entities while liquidity risk remains concentrated in the banking system.",
       "stability": "stable",
       "date_updated": "2026-05-24"
+    },
+    {
+      "id": "non_maturity_deposit_and_revolving_facility_behavioral_assumptions_alco_governance_001",
+      "title": "Non-Maturity Deposit And Revolving Facility Behavioral Assumptions ALCO Governance",
+      "type": "concept",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "alm",
+        "nmd",
+        "behavioral_assumptions",
+        "alco",
+        "irrbb",
+        "core_deposit",
+        "model_validation",
+        "Basel_irrbb",
+        "revolving_facility"
+      ],
+      "thesis": "[LLM] Non-maturity deposits (savings, current accounts) and revolving facilities (overdrafts, credit cards) require behavioral assumptions to replace missing contractual maturities in ALM models. ALCO governs these assumptions through an annual review cycle: behavioral assumptions (average life, core/non-core deposit split, utilization rates) must be back-tested against realized data, stress-tested against historical scenarios (rate shocks, credit events), and validated by an independent model validation function. Basel IRRBB supervisory expectations (BCBS d368) require banks to document and justify behavioral assumptions and update them when conditions change materially.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
+    },
+    {
+      "id": "overdraft_behavioral_model_ppl_pts_policy_specification_001",
+      "title": "Overdraft Behavioral Model — PPL PTS Policy Specification",
+      "type": "concept",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "alm",
+        "behavioral_model",
+        "overdraft",
+        "policy_procedure_limit",
+        "abbank"
+      ],
+      "thesis": "[LLM] The PPL PTS variant of BC030306 defines governance parameters for ABBank overdraft behavioral modeling: ALCO approval thresholds, maximum modeled utilization deviation from historical average, and stress scenario requirements for drawdown rate assumptions.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
+    },
+    {
+      "id": "overdraft_behavioral_model_pts_variant_parameter_specification_001",
+      "title": "Overdraft Behavioral Model — PTS Variant Parameter Specification",
+      "type": "concept",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "alm",
+        "behavioral_model",
+        "overdraft",
+        "parameter_specification",
+        "abbank"
+      ],
+      "thesis": "[LLM] The PTS variant of the ABBank overdraft behavioral model (BC030306) provides detailed statistical methodology for estimating overdraft utilization rates by segment, including model calibration procedures and confidence interval requirements.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
     },
     {
       "id": "policy_trilemma_efficiency_frontier_equivalence_001",
@@ -384,6 +520,60 @@
       "thesis": "High sovereign yields (as in the UK) serve as a market discipline mechanism that forces governments toward fiscal consolidation; artificially capping yields (as Japan via BoJ bond purchases, or eurozone via ECB TPI) does not eliminate the fiscal risk premium but displaces it into the currency — the Yen depreciation vs GBP stability pattern illustrates that sovereign risk shows up one way or another, and price discovery through yields is preferable to deferred currency adjustment. [LLM]",
       "stability": "evolving",
       "date_updated": "2026-05-23"
+    },
+    {
+      "id": "term_deposit_alm_governance_policy_procedure_limit_framework_001",
+      "title": "Term Deposit ALM Governance — Policy Procedure Limit Framework",
+      "type": "concept",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "alm",
+        "governance",
+        "behavioral_model",
+        "term_deposit",
+        "policy_procedure_limit",
+        "alco",
+        "irrbb",
+        "model_validation"
+      ],
+      "thesis": "[LLM] The policy/procedure/limit (PPL) framework for term deposit behavioral modeling defines: governance (ALCO approval of behavioral assumptions, annual model review cycle), model limits (maximum modeled duration extension beyond contractual maturity, minimum confidence interval for renewal probability), and procedure (data requirements, parameter estimation methodology, back-testing against realized renewal rates). PwC ABBank framework (BC030304) sets these constraints to ensure behavioral models remain conservative and auditable under Basel IRRBB supervisory review.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
+    },
+    {
+      "id": "term_deposit_behavioral_model_ppl_pts_policy_specification_001",
+      "title": "Term Deposit Behavioral Model — PPL PTS Policy Specification",
+      "type": "concept",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "alm",
+        "behavioral_model",
+        "term_deposit",
+        "policy_procedure_limit",
+        "abbank"
+      ],
+      "thesis": "[LLM] The PPL PTS (Policy Procedure Limit — parameter/technical specification) variant of BC030304 defines the governance parameters for ABBank term deposit behavioral modeling with precise quantitative limits and statistical thresholds for model acceptance.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
+    },
+    {
+      "id": "term_deposit_behavioral_model_pts_variant_parameter_specification_001",
+      "title": "Term Deposit Behavioral Model — PTS Variant Parameter Specification",
+      "type": "concept",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "alm",
+        "behavioral_model",
+        "term_deposit",
+        "parameter_specification",
+        "abbank"
+      ],
+      "thesis": "[LLM] The PTS (parameter/technical specification) variant of the ABBank term deposit behavioral model (BC030304) provides the detailed mathematical specification of the renewal and early withdrawal probability functions, including distributional assumptions, estimation methodology, and back-testing procedures. This document complements the HDSD (user guide) by defining model internals rather than operational procedures.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
     },
     {
       "id": "tga_reserve_swap_mechanics_and_debt_ceiling_dynamics_con_001",
@@ -481,6 +671,27 @@
       "thesis": "The U.S. Treasury market has two structurally distinct layers — the primary market (initial auction, globally liquid, dealer-intermediated) and the secondary market (secondary trading, concentrated in on-the-run bonds, with off-the-run bonds mostly held to maturity and prone to illiquidity) — with structural blindspots and monopoly power in the secondary layer that primary-market tools cannot address.",
       "stability": "stable",
       "date_updated": "2026-05-23"
+    },
+    {
+      "id": "vietnam_bank_ftp_methodology_implementation_vietabank_ey_framework_001",
+      "title": "Vietnam Bank FTP Methodology Implementation — VietABank EY Framework",
+      "type": "concept",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "ftp",
+        "alm",
+        "vietnam",
+        "vietabank",
+        "vnibor",
+        "sbv",
+        "alco",
+        "liquidity_spread",
+        "cost_of_funds"
+      ],
+      "thesis": "[LLM] VietABank (VAB) implemented an FTP system designed by EY to establish internal fund pricing as the backbone of ALM governance; the methodology defines FTP rate construction rules aligned with Vietnam money market conditions (VNIBOR, SBV policy rate), prescribes liquidity spread calculation for each product tenor, and sets governance rules for ALCO approval of FTP parameters. As a Vietnam commercial bank case, this methodology reflects adaptation of Basel-aligned FTP best practices to a partially dollarized, SBV-managed-float environment where VNIBOR can be illiquid at certain tenors.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
     },
     {
       "id": "warsh_balance_sheet_stimulus_swap_con_001",
@@ -601,6 +812,26 @@
       "thesis": "The US Treasury manages federal fiscal operations — issuing debt, maintaining the Treasury General Account (TGA) at the Fed, and setting debt maturity composition via the Quarterly Refunding. Treasury's cash management decisions (TGA drawdowns, T-bill vs coupon mix, extraordinary measures) have direct first-order effects on bank reserve levels and money market conditions independent of Fed policy.",
       "stability": "stable",
       "date_updated": "2026-05-23"
+    },
+    {
+      "id": "bank_alm_banking_book_risk_management_framework_001",
+      "title": "Bank ALM Banking Book Risk Management Framework",
+      "type": "framework",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "alm",
+        "irrbb",
+        "liquidity_risk",
+        "banking_book",
+        "ftp",
+        "gap_analysis",
+        "balance_sheet_management",
+        "basel3"
+      ],
+      "thesis": "[LLM] Asset-Liability Management (ALM) in commercial banks centrally manages the three core banking book risks — Interest Rate Risk in the Banking Book (IRRBB), liquidity risk, and structural currency risk — by controlling the balance sheet composition through Funds Transfer Pricing (FTP), gap analysis, and behavioral modeling of non-maturity deposits. ALM separates business unit pricing risk from structural balance sheet risk: business units book matched-maturity FTP rates and earn only customer margin, while the ALM desk absorbs all repricing, maturity transformation, and behavioral option risk.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
     },
     {
       "id": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
@@ -777,6 +1008,26 @@
       "thesis": "Central bank monetary policy operations can be classified into three archetypes by how they control the short-term interest rate: (1) one-directional standing facility with daily OMOs, (2) symmetric corridor with CB-determined OMO volume, and (3) full-allotment lending within a standing-facility corridor; the choice determines whether reserves are scarce, ample, or excess, and how the interbank market functions.",
       "stability": "evolving",
       "date_updated": "2026-05-22"
+    },
+    {
+      "id": "central_bank_supply_shock_policy_framework_direct_indirect_second_round_effects_001",
+      "title": "Central Bank Supply Shock Policy Framework — Direct Indirect Second Round Effects",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 1,
+      "tags": [
+        "supply_shock",
+        "inflation",
+        "monetary_policy",
+        "central_bank",
+        "fed",
+        "boe",
+        "boj",
+        "second_round_effects"
+      ],
+      "thesis": "[LLM] The standard CB framework for a negative supply shock partitions effects into: (1) direct effects — immediate pass-through to headline prices; (2) indirect effects — second-order cost increases spreading across the production network; and (3) second-round effects — changes in wage- and price-setting behavior that outlast the original shock. Policy responds to (3) only, holding through (1) and (2) unless longer-term expectations move. This taxonomy is incomplete when the structural production-network cascade is present, because the cascade amplifies prices through channels that do not require expectations to move first.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
     },
     {
       "id": "duration_targeting_bond_portfolio_framework_001",
@@ -2080,6 +2331,27 @@
       "date_updated": "2026-05-21"
     },
     {
+      "id": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
+      "title": "Behavioralization Non-Maturity Deposit ALM — Prepayment Early Withdrawal Modeling",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "alm",
+        "behavioral_model",
+        "nmd",
+        "term_deposit",
+        "early_withdrawal",
+        "prepayment",
+        "irrbb",
+        "ftp",
+        "behaviouralization"
+      ],
+      "thesis": "[LLM] Behavioralization is the ALM process of converting contractual cash flows of products with embedded optionality (non-maturity deposits, overdrafts, fixed-rate mortgages with prepayment) into modeled behavioral cash flows for interest rate risk and liquidity risk measurement. For term deposits, two behavioral probabilities drive the model: renewal probability (fraction that rolls over at maturity) and early withdrawal probability (fraction that exits before contractual maturity). These probabilities transform the contractual term structure into a behavioral term structure used for gap analysis and FTP curve application.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
+    },
+    {
       "id": "boj_qe_duration_extraction_household_wealth_transfer_001",
       "title": "BoJ QE Duration Extraction Household Wealth Transfer",
       "type": "mechanism",
@@ -2699,6 +2971,27 @@
       "thesis": "Post-2017, the Fed's G-SIB resolution liquidity requirements (from \"living wills\") created demand for around-the-clock HQLA buffers that overnight Fed Funds cannot satisfy. FHLBs — barred from earning IORB — filled this gap by supplying intraday reserves to G-SIBs via IBDAs (Interest-Bearing Deposit Accounts) at 5-10bps above the FOMC target range. This is why the Fed Funds market survived post-2008 despite being nearly extinct — it evolved into an IBDA/intraday liquidity mechanism dominated by FHLB lending. FHLBs now constitute ~97% of all Fed Funds lending.",
       "stability": "evolving",
       "date_updated": "2026-05-23"
+    },
+    {
+      "id": "ftp_as_unified_balance_sheet_control_mechanism_transmission_to_risk_factors_001",
+      "title": "FTP As Unified Balance Sheet Control Mechanism — Transmission To Risk Factors",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "ftp",
+        "alm",
+        "liquidity_risk",
+        "irrbb",
+        "lcr",
+        "nsfr",
+        "risk_transfer",
+        "balance_sheet_control",
+        "incentive_mechanism"
+      ],
+      "thesis": "[LLM] FTP functions as a unified control mechanism: ALM adjusts the FTP curve by tenor to create behavioral incentives for business units — raising Liquidity Spread on short tenors when LCR is below target causes Liability Centers to push short-term deposit gathering (improving HQLA) and Asset Centers to reduce short-tenor lending; raising Liquidity Spread on long tenors when NSFR is deficient incentivizes stable long-term funding. The FTP mechanism automatically separates pricing risk (stays with business unit as fixed margin) from structural risk (transferred to ALM), creating clear risk ownership across the bank.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
     },
     {
       "id": "fx_target_quasi_fiscal_stagflation_trap_001",
@@ -3330,6 +3623,26 @@
       "date_updated": "2026-05-21"
     },
     {
+      "id": "maturity_gap_analysis_interest_rate_risk_banking_book_001",
+      "title": "Maturity Gap Analysis Interest Rate Risk Banking Book",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "irrbb",
+        "gap_analysis",
+        "eve",
+        "nii",
+        "repricing_risk",
+        "banking_book",
+        "alm",
+        "basel_irrbb"
+      ],
+      "thesis": "[LLM] Maturity gap analysis measures IRRBB by bucketing rate-sensitive assets and liabilities into repricing time bands; a positive gap (assets reprice faster than liabilities) generates net interest income risk when rates fall, while a negative gap generates risk when rates rise. The EVE (Economic Value of Equity) perspective computes the present value sensitivity of the entire balance sheet to a parallel rate shift, while the NII (Net Interest Income) perspective measures earnings impact over a 12-month horizon — Basel IRRBB standards (d368/BCBS) require both.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
+    },
+    {
       "id": "mon_pol_trans_short_long_frictions_mec_001",
       "title": "Monetary Policy Transmission Short Long Rate Frictions",
       "type": "mechanism",
@@ -3435,6 +3748,27 @@
       "thesis": "Inflation propagation in response to supply shocks occurs through two distinct amplifiers: the structural amplifier (automatic input-output cascades through production networks) and the behavioral amplifier (changes in wage- and price-setting behavior driven by expectations). [LLM]",
       "stability": "stable",
       "date_updated": "2026-05-22"
+    },
+    {
+      "id": "overdraft_behavioral_model_utilization_rate_and_drawdown_alm_cashflow_001",
+      "title": "Overdraft Behavioral Model — Utilization Rate And Drawdown ALM Cashflow",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "alm",
+        "behavioral_model",
+        "overdraft",
+        "utilization_rate",
+        "drawdown",
+        "irrbb",
+        "liquidity_risk",
+        "lcr",
+        "revolving_credit"
+      ],
+      "thesis": "[LLM] Overdraft (OD) behavioral modeling in ALM estimates two behavioral parameters: (1) average utilization rate — the fraction of committed overdraft limits actually drawn at any time, and (2) drawdown behavior — whether drawdowns are correlated with credit/liquidity stress scenarios. Unlike term deposits, overdrafts are revolving facilities with no contractual maturity; behavioral modeling transforms committed limits into expected cashflow profiles for IRRBB (EVE/NII gap) and liquidity (LCR outflow rate) calculations. The PwC framework for ABBank (BC030306) prescribes statistical estimation of utilization rates by customer segment and product type.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
     },
     {
       "id": "pbc_interest_rate_transmission_dr007_to_lpr_001",
@@ -4022,6 +4356,26 @@
       "date_updated": "2026-05-25"
     },
     {
+      "id": "supply_chain_non_linear_shock_structural_amplification_001",
+      "title": "Supply Chain Non-Linear Shock Structural Amplification",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 1,
+      "tags": [
+        "supply_chain",
+        "non_linear_shock",
+        "production_network",
+        "inflation_transmission",
+        "gscpi",
+        "supply_shock",
+        "hormuz",
+        "cb_policy"
+      ],
+      "thesis": "[LLM] When a supply disruption (e.g., Hormuz closure) exhausts buffer capacity in multi-stage production networks, it triggers a structural cascade through input-output linkages that is automatic and conditional only on shock magnitude — distinct from the behavioral amplifier (wage-price spiral) that central banks monitor through expectations data. The structural channel shows up first in sectoral PPI, delivery times, and inventory drawdowns rather than CPI expectations surveys, meaning central banks using the behavioral second-round framework may miss the early phase entirely.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
+    },
+    {
       "id": "swap_carry_and_roll_down_analysis_001",
       "title": "Swap Carry And Roll Down Analysis",
       "type": "mechanism",
@@ -4151,6 +4505,27 @@
       "thesis": "TQT (Tighter Quantitative Tightening) — when the U.S. Treasury shifts issuance from short-term bills toward longer-duration coupon bonds (notes and bonds) — is more effective at tightening financial conditions than standard QT, because duration risk forces investors to reassess risk tolerance and sell riskier assets to offset the new duration exposure; the Treasury (not the Fed) controls this dimension of financial tightening.",
       "stability": "stable",
       "date_updated": "2026-05-23"
+    },
+    {
+      "id": "term_deposit_behavioral_model_renewal_probability_and_early_withdrawal_alm_001",
+      "title": "Term Deposit Behavioral Model — Renewal Probability And Early Withdrawal ALM",
+      "type": "mechanism",
+      "domain": "financial_markets",
+      "confidence": 1,
+      "tags": [
+        "alm",
+        "behavioral_model",
+        "term_deposit",
+        "renewal_probability",
+        "early_withdrawal",
+        "irrbb",
+        "liquidity_risk",
+        "ftp",
+        "nmd"
+      ],
+      "thesis": "[LLM] Term deposit behavioral modeling in ALM estimates two key probabilities: (1) renewal probability — the fraction of term deposits that roll over at contractual maturity rather than being withdrawn, and (2) early withdrawal probability — the fraction that exits before maturity. These probabilities are estimated from historical bank data using statistical models and allow ALM to construct a behavioral maturity profile that differs from the contractual maturity ladder, improving IRRBB measurement accuracy and FTP rate assignment. The PwC framework for ABBank (BC030304) defines model parameters, governance procedures, and validation requirements for these behavioral assumptions.",
+      "stability": "evolving",
+      "date_updated": "2026-05-26"
     },
     {
       "id": "treasury_buybacks_sovereign_debt_001",

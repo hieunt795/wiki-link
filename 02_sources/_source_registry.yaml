@@ -1,8 +1,8 @@
 meta:
-  total_sources: 66
-  total_ingested: 53
-  coverage_pct: 80.3
-  last_updated: '2026-05-25'
+  total_sources: 78
+  total_ingested: 57
+  coverage_pct: 66.7
+  last_updated: '2026-05-26'
 sources:
   02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md:
     status: partial
@@ -46,7 +46,8 @@ sources:
     priority: high
     domain: monetary_policy
     author: Warjiyo, Juhro
-    description: Central bank evolution, government control, 1970s oil shocks, and inflation-targeting transition
+    description: Central bank evolution, government control, 1970s oil shocks, and
+      inflation-targeting transition
     ingest_date: '2026-05-24'
     wiki_nodes:
     - 03_wiki/frameworks/US_1970s_Stagflation_And_Policy_Regime_Shift.md
@@ -68,7 +69,8 @@ sources:
     priority: high
     domain: monetary_policy
     author: Warjiyo, Juhro
-    description: Monetary policy reaction functions, Volcker-Greenspan era, and disinflation policy
+    description: Monetary policy reaction functions, Volcker-Greenspan era, and disinflation
+      policy
     ingest_date: '2026-05-24'
     wiki_nodes:
     - 03_wiki/frameworks/Volcker_Fed_Reaction_Function_Break.md
@@ -330,7 +332,8 @@ sources:
     ingest_date: '2026-05-24'
     wiki_nodes:
     - 03_wiki/synthesis/US_Macro_Constraint_Stack_Fed_Treasury_Curve_Inflation_External_Sector.md
-    notes: '2026-05-24: Added US macro synthesis node spanning Fed/Treasury plumbing, yield curve, inflation, imports, and rates.'
+    notes: '2026-05-24: Added US macro synthesis node spanning Fed/Treasury plumbing,
+      yield curve, inflation, imports, and rates.'
   02_sources/books/tata_bank_alm/Tata_Bank_ALM.md:
     status: pending
     priority: normal
@@ -422,7 +425,8 @@ sources:
     - 03_wiki/frameworks/Warsh_Fed_Balance_Sheet_Operating_Doctrine.md
     - 03_wiki/frameworks/Fed_Balance_Sheet_Recomposition_And_Net_Expansion.md
     - 03_wiki/mechanisms/Warsh_Reserve_Floor_And_Structural_Demand_Constraint.md
-    notes: '2026-05-24: Added contradiction, operating-doctrine, reserve-floor, and recomposition nodes separating Warsh stimulus claim from structural-demand critique.'
+    notes: '2026-05-24: Added contradiction, operating-doctrine, reserve-floor, and
+      recomposition nodes separating Warsh stimulus claim from structural-demand critique.'
   02_sources/Clipping/A new Fed-Treasury Accord_.md:
     status: partial
     priority: normal
@@ -436,7 +440,8 @@ sources:
     - 03_wiki/frameworks/Warsh_Maturity_Sovereignty_Framework.md
     - 03_wiki/frameworks/Warsh_Credit_Allocation_Exit_Framework.md
     - 03_wiki/frameworks/Fed_Balance_Sheet_Recomposition_And_Net_Expansion.md
-    notes: '2026-05-24: Added balance-sheet recomposition node separating size, duration, and sector-allocation effects.'
+    notes: '2026-05-24: Added balance-sheet recomposition node separating size, duration,
+      and sector-allocation effects.'
   02_sources/Clipping/The Checking Account of the U.S. Federal Government....md:
     status: partial
     priority: normal
@@ -450,7 +455,8 @@ sources:
     - 03_wiki/mechanisms/Tga_Reserve_Inverse_Relationship_Fed_Balance_Sheet_Growth.md
     - 03_wiki/mechanisms/Tga_Volatility_And_Reserve_Buffer_Demand.md
     - 03_wiki/frameworks/Fed_Treasury_Operational_Choice_Space.md
-    notes: '2026-05-24: Added TGA volatility buffer and Fed-Treasury choice-space nodes from the same clipping.'
+    notes: '2026-05-24: Added TGA volatility buffer and Fed-Treasury choice-space
+      nodes from the same clipping.'
   02_sources/Clipping/I need a dollar (through your swap line).md:
     status: partial
     priority: normal
@@ -578,26 +584,29 @@ sources:
       (mechanism, confidence:3); primary source on CCF formula and conservative PBOC
       approach since late 2023'
   02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md:
-    status: completed
+    status: partial
     priority: normal
     domain: monetary_policy
     author: Clip
     description: April 2026 CB commentary — Fed, BOJ, BOE
-    ingest_date: '2026-05-22'
+    ingest_date: '2026-05-26'
     wiki_nodes:
     - 03_wiki/mechanisms/Non_Linear_Inflation_Amplifier_Mechanics.md
     - 03_wiki/frameworks/Supply_Shock_Policy_Response_Scenario_Taxonomy.md
     - 03_wiki/frameworks/Stagflation_Regime_Diagnostic_Framework.md
     - 03_wiki/frameworks/Stagflation_Policy_Response_Tradeoff_Framework.md
+    - 03_wiki/mechanisms/Supply_Chain_Non_Linear_Shock_Structural_Amplification.md
+    - 03_wiki/frameworks/Central_Bank_Supply_Shock_Policy_Framework_Direct_Indirect_Second_Round_Effects.md
   02_sources/Inbox/Why Is Currency a Liability of the Fed_.md:
-    status: completed
+    status: partial
     priority: normal
     domain: monetary_policy
     author: Clip
     description: Currency as Fed liability — accounting and institutional explanation
-    ingest_date: '2026-05-22'
+    ingest_date: '2026-05-26'
     wiki_nodes:
     - 03_wiki/concepts/Currency_As_A_Central_Bank_Liability.md
+    - 03_wiki/concepts/Central_Bank_Currency_Liability_Tax_Redemption_And_Currency_Franchise.md
   02_sources/books/aci_dealing_certificate/ACI_Dealing_Certificate_Mastering.md:
     status: pending
     priority: low
@@ -714,30 +723,31 @@ sources:
     - 03_wiki/mechanisms/Bcbs_Liquidity_Contingency_Funding_Plan_Principle_11.md
     - 03_wiki/mechanisms/Bcbs_Liquidity_Internal_Pricing_Ftp_Principle_4.md
     - 03_wiki/mechanisms/Bcbs_Intraday_Liquidity_Management_Principle_8.md
-    notes: '2026-05-25: Created 6 wiki nodes: 1 regulation overview + 5 mechanism nodes
-      for key principles (P4 FTP, P8 intraday, P10 stress, P11 CFP, P12 HQLA cushion).
-      Principles 2-3 (governance), 5-7 (measurement/funding), 9 (collateral), 13 (disclosure),
-      14-17 (supervisory) covered in overview node only — candidate for further detailed
-      nodes if needed.'
+    notes: '2026-05-25: Created 6 wiki nodes: 1 regulation overview + 5 mechanism
+      nodes for key principles (P4 FTP, P8 intraday, P10 stress, P11 CFP, P12 HQLA
+      cushion). Principles 2-3 (governance), 5-7 (measurement/funding), 9 (collateral),
+      13 (disclosure), 14-17 (supervisory) covered in overview node only — candidate
+      for further detailed nodes if needed.'
   02_sources/regulator/bcbs/d368.md:
     status: partial
     priority: high
     domain: banking_regulation
     author: BCBS
     description: 'BCBS Standards: Interest Rate Risk in the Banking Book (IRRBB),
-      April 2016. 12 principles (banks + supervisors), EVE vs NII dual measures,
-      standardised framework with 6 shock scenarios, NMD behavioural assumptions,
-      outlier threshold ΔEVE > 15% Tier 1, CSRBB definition.'
+      April 2016. 12 principles (banks + supervisors), EVE vs NII dual measures, standardised
+      framework with 6 shock scenarios, NMD behavioural assumptions, outlier threshold
+      ΔEVE > 15% Tier 1, CSRBB definition.'
     ingest_date: '2026-05-25'
     wiki_nodes:
     - 03_wiki/regulations/Bcbs_Irrbb_Standards_D368_2016.md
     - 03_wiki/mechanisms/Bcbs_Irrbb_Nmd_Standardised_Framework.md
     - 03_wiki/frameworks/Irrbb_Eve_Nii_Dual_Metric_Framework.md
-    notes: '2026-05-25: Created 2 new nodes + enriched existing EVE/NII framework node
-      with d368 source. Key coverage: 12 principles overview, 6 shock scenarios, outlier
-      test (15% Tier 1), NMD separation procedure + Table 2 caps, standardised framework
-      5-stage EVE, ICAAP capital adequacy. Not yet covered: detailed model governance
-      (P6), P5 prepayment/term deposit behavioural assumptions, Annex 2 shock magnitudes.'
+    notes: '2026-05-25: Created 2 new nodes + enriched existing EVE/NII framework
+      node with d368 source. Key coverage: 12 principles overview, 6 shock scenarios,
+      outlier test (15% Tier 1), NMD separation procedure + Table 2 caps, standardised
+      framework 5-stage EVE, ICAAP capital adequacy. Not yet covered: detailed model
+      governance (P6), P5 prepayment/term deposit behavioural assumptions, Annex 2
+      shock magnitudes.'
   02_sources/regulator/bcbs/BaselFramework.md:
     status: pending
     priority: high
@@ -750,3 +760,91 @@ sources:
     notes: 'Very large file — requires chunked approach. Prioritise: LCR (LIQ30),
       NSFR (LIQ40), leverage ratio (LEV), capital adequacy (CAP), output floor (RBC
       section). Do not attempt full ingest in single session.'
+  02_sources/books/alm/A - Asset liability optimization.md:
+    title: Asset Liability Management Optimisation Lubinska Wiley 2020
+    status: partial
+    domain: financial_markets
+    wiki_nodes:
+    - 03_wiki/frameworks/Bank_Alm_Banking_Book_Risk_Management_Framework.md
+    - 03_wiki/mechanisms/Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling.md
+    - 03_wiki/mechanisms/Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book.md
+    ingest_date: '2026-05-26'
+  02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md:
+    title: Bank ALM Best Practice Bardaeva De Gruyter 2021
+    status: partial
+    domain: financial_markets
+    wiki_nodes:
+    - 03_wiki/concepts/Bank_Alm_Structural_Liquidity_Management_Nsfr_Lcr_Framework.md
+    ingest_date: '2026-05-26'
+  02_sources/regulator/ftp/ftp_transmission_analysis.md.md:
+    title: FTP Transmission Analysis Risk Factor Channels
+    status: partial
+    domain: financial_markets
+    wiki_nodes:
+    - 03_wiki/concepts/Funds_Transfer_Pricing_Rate_Decomposition_Base_Liquidity_Credit_Optionality_Components.md
+    - 03_wiki/mechanisms/Ftp_As_Unified_Balance_Sheet_Control_Mechanism_Transmission_To_Risk_Factors.md
+    - 03_wiki/concepts/Ftp_Curve_Construction_By_Tenor_Short_Medium_Long_Term_Spread_Framework.md
+    ingest_date: '2026-05-26'
+  02_sources/regulator/ftp/VAB - Phuong phap luan FTP.md:
+    title: VietABank FTP Methodology EY Consulting
+    status: partial
+    domain: financial_markets
+    wiki_nodes:
+    - 03_wiki/concepts/Vietnam_Bank_Ftp_Methodology_Implementation_Vietabank_Ey_Framework.md
+    ingest_date: '2026-05-26'
+  02_sources/regulator/other/BC030304_Term_Deposit_HDSD_arm.md:
+    title: ABBank BC030304 Term Deposit Behavioral Model HDSD ARM
+    status: partial
+    domain: financial_markets
+    wiki_nodes:
+    - 03_wiki/mechanisms/Term_Deposit_Behavioral_Model_Renewal_Probability_And_Early_Withdrawal_Alm.md
+    ingest_date: '2026-05-26'
+  02_sources/regulator/other/BC030304_Term_Deposit_HDSD_pts.md:
+    title: ABBank BC030304 Term Deposit Behavioral Model HDSD PTS
+    status: partial
+    domain: financial_markets
+    wiki_nodes:
+    - 03_wiki/concepts/Term_Deposit_Behavioral_Model_Pts_Variant_Parameter_Specification.md
+    ingest_date: '2026-05-26'
+  02_sources/regulator/other/BC030304_Term_Deposit_PPL_arm.md:
+    title: ABBank BC030304 Term Deposit PPL ARM
+    status: partial
+    domain: financial_markets
+    wiki_nodes:
+    - 03_wiki/concepts/Term_Deposit_Alm_Governance_Policy_Procedure_Limit_Framework.md
+    ingest_date: '2026-05-26'
+  02_sources/regulator/other/BC030304_Term_Deposit_PPL_pts.md:
+    title: ABBank BC030304 Term Deposit PPL PTS
+    status: partial
+    domain: financial_markets
+    wiki_nodes:
+    - 03_wiki/concepts/Term_Deposit_Behavioral_Model_Ppl_Pts_Policy_Specification.md
+    ingest_date: '2026-05-26'
+  02_sources/regulator/other/BC030306_OD_HDSD_arm.md:
+    title: ABBank BC030306 Overdraft Behavioral Model HDSD ARM
+    status: partial
+    domain: financial_markets
+    wiki_nodes:
+    - 03_wiki/mechanisms/Overdraft_Behavioral_Model_Utilization_Rate_And_Drawdown_Alm_Cashflow.md
+    ingest_date: '2026-05-26'
+  02_sources/regulator/other/BC030306_OD_HDSD_pts.md:
+    title: ABBank BC030306 Overdraft Behavioral Model HDSD PTS
+    status: partial
+    domain: financial_markets
+    wiki_nodes:
+    - 03_wiki/concepts/Overdraft_Behavioral_Model_Pts_Variant_Parameter_Specification.md
+    ingest_date: '2026-05-26'
+  02_sources/regulator/other/BC030306_OD_PPL_arm.md:
+    title: ABBank BC030306 Overdraft PPL ARM
+    status: partial
+    domain: financial_markets
+    wiki_nodes:
+    - 03_wiki/concepts/Non_Maturity_Deposit_And_Revolving_Facility_Behavioral_Assumptions_Alco_Governance.md
+    ingest_date: '2026-05-26'
+  02_sources/regulator/other/BC030306_OD_PPL_pts.md:
+    title: ABBank BC030306 Overdraft PPL PTS
+    status: partial
+    domain: financial_markets
+    wiki_nodes:
+    - 03_wiki/concepts/Overdraft_Behavioral_Model_Ppl_Pts_Policy_Specification.md
+    ingest_date: '2026-05-26'

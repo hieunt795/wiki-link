@@ -260,3 +260,22 @@ Chronological record of all ingest, update, promotion, and audit operations.
 - **2026-05-26**: INGEST: Created mechanism node `CB FX Options And Cancelable Forward Intervention Structures` from fx_options_cancelable_intervention.md
 - **2026-05-26**: INGEST: Created concept node `CB Hidden FX Reserves Net Effective Intervention Capacity` from hidden_reserves_net_effective_position.md
 - **2026-05-26**: INGEST: Created concept node `MA Balance Sheet OIN Other Items Net Absorber Mechanics` from oin_taxonomy_and_mechanics.md
+- **2026-05-26**: INGEST: Created mechanism node `Supply Chain Non-Linear Shock Structural Amplification` from Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
+- **2026-05-26**: INGEST: Created framework node `Central Bank Supply Shock Policy Framework — Direct Indirect Second Round Effects` from Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
+- **2026-05-26**: INGEST: Created concept node `Central Bank Currency Liability Tax Redemption And Currency Franchise` from Why Is Currency a Liability of the Fed_.md
+- **2026-05-26**: INGEST: Created framework node `Bank ALM Banking Book Risk Management Framework` from A - Asset liability optimization.md
+- **2026-05-26**: INGEST: Created mechanism node `Behavioralization Non-Maturity Deposit ALM — Prepayment Early Withdrawal Modeling` from A - Asset liability optimization.md
+- **2026-05-26**: INGEST: Created mechanism node `Maturity Gap Analysis Interest Rate Risk Banking Book` from A - Asset liability optimization.md
+- **2026-05-26**: INGEST: Created concept node `Bank ALM Structural Liquidity Management NSFR LCR Framework` from A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md
+- **2026-05-26**: INGEST: Created concept node `Funds Transfer Pricing Rate Decomposition — Base Liquidity Credit Optionality Components` from ftp_transmission_analysis.md.md
+- **2026-05-26**: INGEST: Created mechanism node `FTP As Unified Balance Sheet Control Mechanism — Transmission To Risk Factors` from ftp_transmission_analysis.md.md
+- **2026-05-26**: INGEST: Created concept node `FTP Curve Construction By Tenor — Short Medium Long Term Spread Framework` from ftp_transmission_analysis.md.md
+- **2026-05-26**: INGEST: Created concept node `Vietnam Bank FTP Methodology Implementation — VietABank EY Framework` from VAB - Phương pháp luận FTP_sent to client_FORMATTED_011122 ALM_EY rep 21.06 ALM cmt.md
+- **2026-05-26**: INGEST: Created mechanism node `Term Deposit Behavioral Model — Renewal Probability And Early Withdrawal ALM` from BC030304_Term_Deposit_HDSD_arm_FINAL (1).md
+- **2026-05-26**: INGEST: Created concept node `Term Deposit ALM Governance — Policy Procedure Limit Framework` from BC030304_Term_Deposit_PPL_arm_FINAL (1).md
+- **2026-05-26**: INGEST: Created mechanism node `Overdraft Behavioral Model — Utilization Rate And Drawdown ALM Cashflow` from BC030306_OD_HDSD_arm_FINAL (1).md
+- **2026-05-26**: INGEST: Created concept node `Non-Maturity Deposit And Revolving Facility Behavioral Assumptions ALCO Governance` from BC030306_OD_PPL_arm_FINAL (1).md
+- **2026-05-26**: INGEST: Created concept node `Term Deposit Behavioral Model — PTS Variant Parameter Specification` from BC030304_Term_Deposit_HDSD_pts_FINAL (1).md
+- **2026-05-26**: INGEST: Created concept node `Term Deposit Behavioral Model — PPL PTS Policy Specification` from BC030304_Term_Deposit_PPL_pts_FINAL (1).md
+- **2026-05-26**: INGEST: Created concept node `Overdraft Behavioral Model — PTS Variant Parameter Specification` from BC030306_OD_HDSD_pts_FINAL (1).md
+- **2026-05-26**: INGEST: Created concept node `Overdraft Behavioral Model — PPL PTS Policy Specification` from BC030306_OD_PPL_pts_FINAL (1).md

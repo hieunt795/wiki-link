@@ -1,0 +1,32 @@
+---
+node_id: term_deposit_behavioral_model_ppl_pts_policy_specification_001
+type: concept
+title: Term Deposit Behavioral Model — PPL PTS Policy Specification
+aliases:
+- term deposit PPL PTS
+- BC030304 PPL PTS
+- ABBank term deposit policy parameters
+domain:
+  primary: financial_markets
+tags:
+- alm
+- behavioral_model
+- term_deposit
+- policy_procedure_limit
+- abbank
+confidence: 1
+stability: evolving
+thesis: '[LLM] The PPL PTS (Policy Procedure Limit — parameter/technical specification)
+  variant of BC030304 defines the governance parameters for ABBank term deposit behavioral
+  modeling with precise quantitative limits and statistical thresholds for model acceptance.'
+source_refs:
+- path: 02_sources/regulator/other/BC030304_Term_Deposit_PPL_pts_FINAL (1).md
+  pages: ''
+  weight: primary
+related: []
+date_created: '2026-05-26'
+date_updated: '2026-05-26'
+---
+
+[LLM] Auto-generated stub from BC030304_Term_Deposit_PPL_pts_FINAL (1).md. Review and expand.
+
