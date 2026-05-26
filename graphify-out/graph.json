@@ -31,6 +31,11 @@
       "type": "mechanism"
     },
     {
+      "id": "bcbs_irrbb_nmd_standardised_framework_001",
+      "label": "BCBS IRRBB NMD Standardised Framework — Core/Non-Core Separation and Table 2 Caps",
+      "type": "mechanism"
+    },
+    {
       "id": "sterilization_offset_coefficient_eme_001",
       "label": "Sterilization Effectiveness — Offset and Sterilization Coefficients in EMEs",
       "type": "mechanism"
@@ -81,6 +86,11 @@
       "type": "mechanism"
     },
     {
+      "id": "fx_target_quasi_fiscal_stagflation_trap_001",
+      "label": "FX Rate Target + Quasi-Fiscal Operations — Stagflation Trap Mechanism",
+      "type": "mechanism"
+    },
+    {
       "id": "fed_ample_reserves_buffer_sizing_formula_001",
       "label": "Fed Ample Reserves Buffer Sizing Formula",
       "type": "mechanism"
@@ -93,6 +103,11 @@
     {
       "id": "lcr_nsfr_long_term_lending_penalty_001",
       "label": "LCR NSFR Long-Term Lending Penalty",
+      "type": "mechanism"
+    },
+    {
+      "id": "imf_fx_regime_monetary_accounts_balance_sheet_endogeneity_001",
+      "label": "IMF FX Regime Balance Sheet — Monetary Accounts Perspective (Chapter 5)",
       "type": "mechanism"
     },
     {
@@ -231,6 +246,11 @@
       "type": "mechanism"
     },
     {
+      "id": "bcbs_hqla_liquidity_cushion_p12_001",
+      "label": "BCBS HQLA Liquidity Cushion — Principle 12 (2008 Pre-LCR Standard)",
+      "type": "mechanism"
+    },
+    {
       "id": "private_credit_secondary_market_price_discovery_001",
       "label": "Private Credit Secondary Market Price Discovery",
       "type": "mechanism"
@@ -253,6 +273,11 @@
     {
       "id": "pbc_structural_monetary_policy_targeted_relending_001",
       "label": "PBC Structural Monetary Policy Targeted Relending",
+      "type": "mechanism"
+    },
+    {
+      "id": "bcbs_liquidity_internal_pricing_ftp_p4_001",
+      "label": "BCBS Liquidity Internal Pricing (FTP) — Principle 4 (2008)",
       "type": "mechanism"
     },
     {
@@ -411,6 +436,11 @@
       "type": "mechanism"
     },
     {
+      "id": "fear_of_floating_stagflation_amplifier_001",
+      "label": "Fear-Of-Floating As Stagflation Amplifier — FX Exposure Lock-In",
+      "type": "mechanism"
+    },
+    {
       "id": "fed_bs_floor_payment_system_001",
       "label": "Fed Balance Sheet Floor Payment System Reserve Demand",
       "type": "mechanism"
@@ -438,6 +468,11 @@
     {
       "id": "imf_exchange_rate_assessment_crawling_peg_design_001",
       "label": "IMF Exchange Rate Assessment And Crawling Peg Design",
+      "type": "mechanism"
+    },
+    {
+      "id": "supply_shock_production_network_cascade_amplification_001",
+      "label": "Supply Shock Production Network Cascade Amplification",
       "type": "mechanism"
     },
     {
@@ -486,6 +521,11 @@
       "type": "mechanism"
     },
     {
+      "id": "bcbs_liquidity_stress_testing_p10_001",
+      "label": "BCBS Liquidity Stress Testing Framework — Principle 10 (2008)",
+      "type": "mechanism"
+    },
+    {
       "id": "repo_market_mechanics_triparty_bilateral_001",
       "label": "Repo Market Mechanics Triparty Bilateral",
       "type": "mechanism"
@@ -493,6 +533,11 @@
     {
       "id": "endogenous_bank_money_loans_create_deposits_001",
       "label": "Endogenous Bank Money Creation Loans Create Deposits",
+      "type": "mechanism"
+    },
+    {
+      "id": "bcbs_liquidity_contingency_funding_plan_p11_001",
+      "label": "BCBS Contingency Funding Plan (CFP) — Principle 11 (2008)",
       "type": "mechanism"
     },
     {
@@ -531,8 +576,18 @@
       "type": "mechanism"
     },
     {
+      "id": "bcbs_intraday_liquidity_management_p8_001",
+      "label": "BCBS Intraday Liquidity Management — Principle 8 (2008)",
+      "type": "mechanism"
+    },
+    {
       "id": "srf_structural_defects_morning_repo_001",
       "label": "SRF Structural Defects Morning Repo Fortification And True Ceiling",
+      "type": "mechanism"
+    },
+    {
+      "id": "tax_extinguishment_as_proof_of_currency_liability_status_001",
+      "label": "Tax Extinguishment As Proof Of Currency Liability Status",
       "type": "mechanism"
     },
     {
@@ -591,6 +646,11 @@
       "type": "mechanism"
     },
     {
+      "id": "cb_fx_target_five_entity_balance_sheet_trace_001",
+      "label": "CB FX Target — Five-Entity Combined Balance Sheet Trace (T-Account Scenarios)",
+      "type": "mechanism"
+    },
+    {
       "id": "treasury_tbill_supply_rrp_drain_mmf_routing_001",
       "label": "Treasury T-bill Supply RRP Drain And MMF Cash Routing",
       "type": "mechanism"
@@ -614,6 +674,16 @@
       "id": "warsh_balance_sheet_stimulus_swap_vs_structural_demand_neutrality_con_001",
       "label": "Warsh Balance Sheet Stimulus Swap Vs Structural Demand Neutrality",
       "type": "contradiction"
+    },
+    {
+      "id": "bcbs_irrbb_standards_d368_2016_001",
+      "label": "BCBS IRRBB Standards (d368) — 12-Principle Framework, April 2016",
+      "type": "regulation"
+    },
+    {
+      "id": "bcbs_sound_liquidity_risk_management_17_principles_001",
+      "label": "BCBS Principles for Sound Liquidity Risk Management and Supervision (2008) — 17-Principle Framework",
+      "type": "regulation"
     },
     {
       "id": "irrbb_eve_nii_dual_metric_framework_001",
@@ -681,6 +751,16 @@
       "type": "framework"
     },
     {
+      "id": "imf_monetary_aggregate_targeting_innovation_controllability_001",
+      "label": "IMF Monetary Aggregate Targeting — Financial Innovation, Broader Aggregates, and the Controllability-Relevance Dilemma",
+      "type": "framework"
+    },
+    {
+      "id": "central_bank_energy_price_shock_three_stage_taxonomy_001",
+      "label": "Central Bank Energy Price Shock Three Stage Taxonomy",
+      "type": "framework"
+    },
+    {
       "id": "fed_ample_reserves_range_floor_frm_001",
       "label": "Fed Ample Reserves Range Floor Framework",
       "type": "framework"
@@ -708,6 +788,11 @@
     {
       "id": "basel_iii_endgame_001",
       "label": "Basel III Endgame — Capital, Liquidity, and Credit Migration",
+      "type": "framework"
+    },
+    {
+      "id": "heterodox_stabilization_three_element_program_001",
+      "label": "Heterodox Stabilization — Three-Element Program (FX Anchor + Fiscal + Incomes Policy)",
       "type": "framework"
     },
     {
@@ -951,6 +1036,11 @@
       "type": "concept"
     },
     {
+      "id": "currency_as_central_bank_liability_001",
+      "label": "Currency As Central Bank Liability",
+      "type": "concept"
+    },
+    {
       "id": "ust_market_structure_onrun_offrun_001",
       "label": "UST Market Primary Secondary OnRun OffRun Structure",
       "type": "concept"
@@ -1154,6 +1244,10 @@
     {
       "source": "lcr_nsfr_long_term_lending_penalty_001",
       "target": "Basel_III_Endgame_Capital_Liquidity_Credit_Migration"
+    },
+    {
+      "source": "imf_fx_regime_monetary_accounts_balance_sheet_endogeneity_001",
+      "target": "Imf_Monetary_Survey_Valuation_Adjustment_Transaction_Flow_Decomposition"
     },
     {
       "source": "bank_credit_line_private_credit_funds_systemic_channel_001",
