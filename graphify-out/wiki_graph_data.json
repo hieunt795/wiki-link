@@ -959,6 +959,28 @@
       "date_updated": "2026-05-20"
     },
     {
+      "id": "heterodox_stabilization_three_element_program_001",
+      "title": "Heterodox Stabilization — Three-Element Program (FX Anchor + Fiscal + Incomes Policy)",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "stabilization_program",
+        "heterodox",
+        "fx_anchor",
+        "incomes_policy",
+        "fiscal_consolidation",
+        "inertial_inflation",
+        "transition_economy",
+        "poland",
+        "anti_inflation",
+        "wage_controls"
+      ],
+      "thesis": "Heterodox stabilization — as exemplified by Poland 1990 — combines three mutually reinforcing elements: (1) FX rate anchor as nominal expectations anchor; (2) tight fiscal/monetary policy to remove excess demand; (3) incomes policy (wage controls) to break inertial inflation embedded in wage contracts and indexation. All three must operate simultaneously: the FX anchor without fiscal tightening depletes reserves; fiscal tightening without the FX anchor loses the expectations anchor; incomes policy without demand restraint creates shortages. Each element addresses a distinct inflation component — expectations, demand, and inertia — that the others cannot reach. Omitting any one raises the sacrifice ratio (output/employment cost per point of disinflation) substantially.",
+      "stability": "stable",
+      "date_updated": "2026-05-25"
+    },
+    {
       "id": "imf_balance_of_payments_framework_and_external_account_analysis_001",
       "title": "IMF Balance of Payments Framework and External Account Analysis",
       "type": "framework",
@@ -1021,9 +1043,9 @@
         "monetary_survey",
         "twin_deficits"
       ],
-      "thesis": "The IMF Flow of Funds framework integrates SNA, GFS, BoPM, and monetary survey into a quadruple-entry matrix where sectoral saving-investment gaps (Sp-Ip) + (Sg-Ig) = CAB, and every sector's real deficit is fully financed by financial transactions — forming the accounting backbone of IMF financial programming.",
-      "stability": "evolving",
-      "date_updated": "2026-05-25"
+      "thesis": "The IMF Flow of Funds framework integrates SNA, GFS, BoPM, and monetary survey into a quadruple-entry matrix where sectoral saving-investment gaps (Sp-Ip) + (Sg-Ig) = CAB, and every sector's real deficit is fully financed by financial transactions — forming the accounting backbone of IMF financial programming. Key methodological distinction: FoF treats sectoral balances as binding constraints; traditional market equilibrium treats supply=demand as constraints.",
+      "stability": "stable",
+      "date_updated": "2026-05-26"
     },
     {
       "id": "imf_gfs_fiscal_accounting_framework_deficit_measurement_and_sustainability_001",
@@ -1092,6 +1114,29 @@
       "thesis": "The IMF Macro Accounting framework identifies three distinct crisis vectors, each with a specific balance-sheet transmission mechanism: (1) Fiscal vector — 4 modes of deficit financing each generate a distinct macroeconomic imbalance (inflation, exchange rate crisis, debt explosion, crowding out); (2) External vector — under a fixed peg, unsustainable current account deficits trigger rational speculative attacks before reserves are exhausted; reserve adequacy must be assessed against financial vulnerability indicators (M2/FX ratio, short-term FX liabilities) rather than just the 3-month import rule; (3) Banking vector — the fractional reserve system's maturity mismatch makes banks inherently illiquid; a single bank's payment difficulty can freeze credit across the entire system through a confidence contagion chain, requiring LOLR intervention. The 4-sector flow of funds matrix (government, private, banking, external) is the accounting tool for tracing which sector's imbalance is generating each crisis vector.",
       "stability": "stable",
       "date_updated": "2026-05-25"
+    },
+    {
+      "id": "imf_monetary_aggregate_targeting_innovation_controllability_001",
+      "title": "IMF Monetary Aggregate Targeting — Financial Innovation, Broader Aggregates, and the Controllability-Relevance Dilemma",
+      "type": "framework",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "monetary_aggregate",
+        "financial_innovation",
+        "velocity",
+        "m3_m4",
+        "controllability",
+        "relevance",
+        "near_money",
+        "intermediate_target",
+        "monetary_policy_indicators",
+        "imf_macro_accounting",
+        "money_demand"
+      ],
+      "thesis": "Financial innovation blurs the boundary between money and near-money assets (demand deposits earning interest, liquid mutual funds), making M1 and M2 velocity unstable and potentially unreliable as intermediate monetary policy targets. Broader aggregates M3/M4/L are more \"relevant\" (better linked to aggregate demand) but less \"controllable\" (no reserve requirements, issued by non-bank institutions). This creates a fundamental dilemma: the aggregate most relevant to aggregate demand is the least controllable. The IMF solution is an eclectic multi-indicator approach — use monetary aggregates alongside interest rates, the yield curve, and the exchange rate.",
+      "stability": "stable",
+      "date_updated": "2026-05-26"
     },
     {
       "id": "imf_monetary_analysis_quantity_theory_velocity_and_exchange_rate_regimes_001",
@@ -1219,7 +1264,7 @@
       ],
       "thesis": "Basel IRRBB regulation (BCBS 368, 2016) mandates two complementary metrics — Economic Value of Equity (EVE) and Net Interest Income (NII) sensitivity — to measure structural interest rate risk in the banking book, capturing both long-run economic impact and short-run earnings impact from rate shocks.",
       "stability": "evolving",
-      "date_updated": "2026-05-22"
+      "date_updated": "2026-05-25"
     },
     {
       "id": "inflation_targeting_001",
@@ -1729,6 +1774,131 @@
       "date_updated": "2026-05-22"
     },
     {
+      "id": "bcbs_liquidity_contingency_funding_plan_p11_001",
+      "title": "BCBS Contingency Funding Plan (CFP) — Principle 11 (2008)",
+      "type": "mechanism",
+      "domain": "banking_regulation",
+      "confidence": 4,
+      "tags": [
+        "cfp",
+        "contingency_plan",
+        "liquidity_risk",
+        "bcbs",
+        "crisis_management",
+        "stress_scenarios",
+        "escalation",
+        "bcbs144"
+      ],
+      "thesis": "BCBS Principle 11 (2008) requires a formal Contingency Funding Plan (CFP) that is directly linked to stress test outcomes, covers a range of stress environments (not just a single scenario), has clear invocation and escalation procedures, and is regularly tested to verify operational feasibility. The CFP is not a static document — it must be updated at least annually and reviewed after each test. Key requirements: (1) clear roles and responsibilities with named alternates; (2) realistic timelines for contingency measure activation; (3) intraday coverage; (4) communication plans for internal and external parties; (5) integration with business continuity planning. CFPs that are not operationally tested are non-compliant even if the document is comprehensive.",
+      "stability": "stable",
+      "date_updated": "2026-05-25"
+    },
+    {
+      "id": "bcbs_hqla_liquidity_cushion_p12_001",
+      "title": "BCBS HQLA Liquidity Cushion — Principle 12 (2008 Pre-LCR Standard)",
+      "type": "mechanism",
+      "domain": "banking_regulation",
+      "confidence": 4,
+      "tags": [
+        "hqla",
+        "liquidity_cushion",
+        "bcbs",
+        "lrm_framework",
+        "liq_buffer",
+        "pre_lcr",
+        "unencumbered_assets",
+        "stress_insurance",
+        "bcbs144"
+      ],
+      "thesis": "BCBS Principle 12 (2008) requires banks to maintain a cushion of unencumbered, high quality liquid assets as insurance against a range of liquidity stress scenarios, sized to cover contractual and non-contractual outflows including loss of unsecured and secured funding. No legal, regulatory or operational impediment may prevent using these assets to obtain funding. The principle establishes the qualitative precursor to Basel III's LCR: the same concept of HQLA as a pre-positioned buffer, but without a specific ratio or standardised run-off assumptions. The cushion's core must be the most reliably liquid assets (cash, high-quality government bonds); the composition may widen for less severe but longer-duration stress.",
+      "stability": "stable",
+      "date_updated": "2026-05-25"
+    },
+    {
+      "id": "bcbs_irrbb_nmd_standardised_framework_001",
+      "title": "BCBS IRRBB NMD Standardised Framework — Core/Non-Core Separation and Table 2 Caps",
+      "type": "mechanism",
+      "domain": "banking_regulation",
+      "confidence": 4,
+      "tags": [
+        "nmd",
+        "non_maturity_deposit",
+        "irrbb",
+        "behavioural_assumptions",
+        "core_deposits",
+        "bcbs",
+        "d368",
+        "standardised_framework",
+        "eve",
+        "alm"
+      ],
+      "thesis": "BCBS d368 standardised framework (Section IV) requires banks to separate NMDs into core and non-core portions by category, subject to prescribed caps on the proportion of core deposits and maximum average repricing maturity per category. The two-step separation: (1) stable vs non-stable (based on 10-year observed volume changes); (2) core vs non-core within stable (portion unlikely to reprice under significant rate changes). Non-core NMDs are slotted overnight; core NMDs are distributed up to the category's maximum average maturity. The caps — retail transactional 90%/5yr, retail non-transactional 70%/4.5yr, wholesale 50%/4yr — directly determine the maximum EVE sensitivity reduction a bank can claim from NMD stability assumptions.",
+      "stability": "stable",
+      "date_updated": "2026-05-25"
+    },
+    {
+      "id": "bcbs_intraday_liquidity_management_p8_001",
+      "title": "BCBS Intraday Liquidity Management — Principle 8 (2008)",
+      "type": "mechanism",
+      "domain": "banking_regulation",
+      "confidence": 4,
+      "tags": [
+        "intraday_liquidity",
+        "payment_systems",
+        "settlement_risk",
+        "liquidity_risk",
+        "bcbs",
+        "real_time_gross_settlement",
+        "correspondent_banking",
+        "collateral_management",
+        "bcbs144"
+      ],
+      "thesis": "BCBS Principle 8 (2008) requires active intraday liquidity management across all payment and settlement systems, under both normal and stressed conditions. The principle addresses a critical systemic risk: a bank's failure to settle payments when expected can cascade through interconnected systems, triggering gridlock, contagion, and overnight funding pressures across many institutions. Six operational elements are required: (1) measurement and forecasting of gross inflows/outflows; (2) real-time monitoring of intraday positions; (3) arrangements to acquire sufficient intraday funding; (4) collateral management for intraday pledging; (5) timing control over outflows; (6) preparedness for unexpected disruptions.",
+      "stability": "stable",
+      "date_updated": "2026-05-25"
+    },
+    {
+      "id": "bcbs_liquidity_internal_pricing_ftp_p4_001",
+      "title": "BCBS Liquidity Internal Pricing (FTP) — Principle 4 (2008)",
+      "type": "mechanism",
+      "domain": "banking_regulation",
+      "confidence": 4,
+      "tags": [
+        "ftp",
+        "funds_transfer_pricing",
+        "liquidity_risk",
+        "internal_pricing",
+        "incentive_alignment",
+        "business_line",
+        "bcbs",
+        "bcbs144"
+      ],
+      "thesis": "BCBS Principle 4 (2008) requires banks to incorporate liquidity costs, benefits and risks in internal pricing (FTP), performance measurement and new product approval for all significant on- and off-balance sheet activities. The purpose is incentive alignment: business lines that create liquidity risk must bear the cost of that risk, so that line management incentives reinforce rather than undermine the bank-wide liquidity risk tolerance. A liquidity charge is assigned to positions, portfolios or transactions based on anticipated holding periods, market liquidity characteristics and the benefit of stable funding sources. This principle directly addresses the pre-2008 misalignment where business lines profited from activities that created liquidity risk without bearing the cost.",
+      "stability": "stable",
+      "date_updated": "2026-05-25"
+    },
+    {
+      "id": "bcbs_liquidity_stress_testing_p10_001",
+      "title": "BCBS Liquidity Stress Testing Framework — Principle 10 (2008)",
+      "type": "mechanism",
+      "domain": "banking_regulation",
+      "confidence": 4,
+      "tags": [
+        "stress_testing",
+        "liquidity_risk",
+        "bcbs",
+        "scenario_analysis",
+        "cfp",
+        "risk_tolerance",
+        "institution_specific",
+        "market_wide",
+        "bcbs144"
+      ],
+      "thesis": "BCBS Principle 10 (2008) requires regular stress testing across four scenario dimensions: short-term vs protracted, institution-specific vs market-wide (and combinations). Tests must feed directly into: (1) sizing of the HQLA cushion; (2) adjusting liquidity positions, strategies and limits; (3) shaping the Contingency Funding Plan (CFP). Critically, the standard pre-dates Basel III's ILAAP and SREP but establishes the same linkage principle: stress test results are not standalone exercises — they drive management action and capital/liquidity planning decisions. Scenarios must include simultaneous drying up of multiple funding markets, restriction on FX convertibility, and severe operational disruptions.",
+      "stability": "stable",
+      "date_updated": "2026-05-25"
+    },
+    {
       "id": "btfp_svb_crisis_emergency_lending_001",
       "title": "BTFP SVB Crisis and Fed Emergency Lending Evolution",
       "type": "mechanism",
@@ -1920,6 +2090,28 @@
       "thesis": "When a central bank targets an exchange rate (fixed peg, crawling peg, or managed band), NFA becomes an endogenous variable determined by BOP flows and intervention — not a free policy instrument. The CB retains control only over NDA. Sterilization (offsetting NFA changes via NDA) can preserve the monetary base target in the short run, but faces two binding limits: (1) reserve depletion when defending against depreciation, and (2) quasi-fiscal carrying costs when sterilizing appreciation-driven inflows. Sustained sterilization against a persistent shock is unsustainable and, if delayed, results in a larger eventual adjustment.",
       "stability": "stable",
       "date_updated": "2026-05-24"
+    },
+    {
+      "id": "cb_fx_target_five_entity_balance_sheet_trace_001",
+      "title": "CB FX Target — Five-Entity Combined Balance Sheet Trace (T-Account Scenarios)",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "balance_sheet",
+        "t_account",
+        "fx_intervention",
+        "sterilization",
+        "dual_deterioration",
+        "monetary_survey",
+        "flow_of_funds",
+        "quasi_fiscal",
+        "crowding_out",
+        "em_policy"
+      ],
+      "thesis": "Every FX intervention and sterilization operation propagates simultaneously across five balance sheets — CB, DMBs, Government, Private sector, and External — linked by three accounting identities (RM = NFA + NCG + Cb + OINm; M2 = NFA + NDC + OINb; (Sp−Ip) + (Sg−Ig) = CAB). The critical diagnostic insight is that M2 and RM remain stable in appearance throughout the buildup phases (sterilization cancels the FX effect), while the actual stress accumulates in the structure of M2: NFA/M2 falling, NCG/M2 rising, CPS/M2 falling. Dual deterioration — NFA↓ + NCG↑ simultaneously in the same period — is the leading signal of a regime under maximum stress, visible from the CB balance sheet before it manifests as crisis.",
+      "stability": "stable",
+      "date_updated": "2026-05-25"
     },
     {
       "id": "cb_quasi_fiscal_sterilization_seigniorage_001",
@@ -2400,6 +2592,28 @@
       "date_updated": "2026-05-23"
     },
     {
+      "id": "fx_target_quasi_fiscal_stagflation_trap_001",
+      "title": "FX Rate Target + Quasi-Fiscal Operations — Stagflation Trap Mechanism",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 3,
+      "tags": [
+        "stagflation",
+        "fx_target",
+        "quasi_fiscal",
+        "sterilization",
+        "fiscal_dominance",
+        "em_policy",
+        "policy_trap",
+        "impossible_trinity",
+        "fear_of_floating",
+        "inflation_persistence"
+      ],
+      "thesis": "Stagflation under an FX rate target is regime-structural, not shock-driven: the FX commitment simultaneously generates persistent inflation (by disabling the exchange rate as a cost-push shock absorber and enabling monetary accommodation) and suppresses growth (via quasi-fiscal drain on fiscal space, crowding out of private credit, and elevated domestic interest rates from sterilization). The trap is self-reinforcing: sterilization costs accumulate as quasi-fiscal losses, eroding seigniorage transfers to government, which must either cut spending (deepening stagnation) or accommodate via NCG expansion (deepening inflation). Fear of floating locks both channels shut simultaneously. Policy cannot solve inflation and stagnation with the same instrument when that instrument is neutered by the FX commitment.",
+      "stability": "stable",
+      "date_updated": "2026-05-25"
+    },
+    {
       "id": "fx_settlement_risk_cls_ptf_001",
       "title": "FX Settlement Risk, CLS, and PTF Market Structure Evolution",
       "type": "mechanism",
@@ -2436,6 +2650,26 @@
       "thesis": "The cross-currency basis (deviation from covered interest parity) reflects balance-sheet constraints that prevent arbitrage between currency markets; when global dollar demand surges and dealer intermediation capacity is constrained, the basis widens negative for foreign currencies against USD, signalling systemic dollar scarcity — the mechanism that activates demand for Fed swap line facilities during crises. [LLM]",
       "stability": "evolving",
       "date_updated": "2026-05-23"
+    },
+    {
+      "id": "fear_of_floating_stagflation_amplifier_001",
+      "title": "Fear-Of-Floating As Stagflation Amplifier — FX Exposure Lock-In",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "fear_of_floating",
+        "stagflation",
+        "fx_mismatch",
+        "balance_sheet_crisis",
+        "em_policy",
+        "fx_intervention",
+        "monetary_autonomy",
+        "policy_trap"
+      ],
+      "thesis": "Fear of floating — the authorities' inability to allow exchange rate depreciation because unhedged FX exposures in banking and nonbank sectors would trigger mass insolvencies — converts a standard BOP adjustment problem into a stagflation trap. The CB is locked: cannot depreciate (banking collapse), cannot raise rates freely (growth collapses), cannot cut rates (reserves bleed). Inflation persists because the FX channel is disabled as a shock absorber; growth stagnates because monetary and fiscal space is consumed by peg defense. The mechanism is self-reinforcing: the longer the peg is defended, the larger the unhedged FX exposure buildup, and the higher the eventual cost of adjustment.",
+      "stability": "stable",
+      "date_updated": "2026-05-25"
     },
     {
       "id": "fed_ample_reserves_buffer_sizing_formula_001",
@@ -2797,6 +3031,30 @@
       "thesis": "The IMF assesses exchange rate appropriateness using four complementary indicators (real exchange rate, FX reserve trend, current account balance, parallel market premium), none of which is individually decisive. When a fixed peg becomes untenable because of persistent inflation differential, the crawling peg regime provides a middle path: a preannounced depreciation path preserves nominal discipline (anchor function) while preventing competitiveness erosion. The critical design choice is passive crawl (match inflation differential → preserve real exchange rate) vs. active crawl (depreciate less than inflation → accept some competitiveness loss to decelerate inflation). An active crawl sacrifices exports for disinflation; extending the band width accommodates capital inflows without requiring full sterilization.",
       "stability": "stable",
       "date_updated": "2026-05-24"
+    },
+    {
+      "id": "imf_fx_regime_monetary_accounts_balance_sheet_endogeneity_001",
+      "title": "IMF FX Regime Balance Sheet — Monetary Accounts Perspective (Chapter 5)",
+      "type": "mechanism",
+      "domain": "monetary_policy",
+      "confidence": 4,
+      "tags": [
+        "fx_regime",
+        "nfa_endogeneity",
+        "reserve_money",
+        "sterilization",
+        "fixed_exchange_rate",
+        "currency_board",
+        "capital_flows",
+        "monetary_survey",
+        "imf_macro_accounting",
+        "dollarization",
+        "monetary_autonomy",
+        "impossible_trinity"
+      ],
+      "thesis": "Under a fixed exchange rate regime, the central bank's monetary accounts identity (RM = NFA + NCG + Cb + OIN) loses its normal causality: NFA becomes endogenous — determined by BOP flows and the intervention obligation — and money supply adjusts to clear the exchange market rather than serving as a policy instrument. This is the IMF Chapter 5 formulation of the same constraint captured in the impossible trinity: fixing the exchange rate surrenders monetary control. Sterilization can delay but not sustain monetary independence because of two limits — the depth of the securities market and the fiscal cost of the interest differential. The three real-world responses to capital inflows (partial intervention, partial sterilization, some monetary expansion) describe the middle ground between the pure fixed and pure float extremes.",
+      "stability": "stable",
+      "date_updated": "2026-05-26"
     },
     {
       "id": "imf_monetary_survey_valuation_adjustment_001",
@@ -4088,6 +4346,53 @@
       "date_updated": "2026-05-23"
     },
     {
+      "id": "bcbs_irrbb_standards_d368_2016_001",
+      "title": "BCBS IRRBB Standards (d368) — 12-Principle Framework, April 2016",
+      "type": "regulation",
+      "domain": "banking_regulation",
+      "confidence": 4,
+      "tags": [
+        "irrbb",
+        "bcbs",
+        "regulatory_standard",
+        "eve",
+        "nii",
+        "pillar_2",
+        "outlier_test",
+        "six_shock_scenarios",
+        "nmd",
+        "csrbb",
+        "d368",
+        "basel"
+      ],
+      "thesis": "BCBS d368 (April 2016) establishes the current IRRBB regulatory framework under Pillar 2 (Supervisory Review Process), replacing the 2004 IRR Principles. The framework defines three IRRBB sub-types (gap, basis, option risk) and requires banks to measure and disclose ΔEVE and ΔNII under six prescribed interest rate shock scenarios. Twelve principles cover: bank management of IRRBB (P1–P7), disclosure (P8), capital adequacy in ICAAP (P9), supervisory assessment (P10–P12). The outlier test — ΔEVE > 15% of Tier 1 capital under any prescribed scenario — triggers supervisory review. A supervisory standardised framework (Section IV) may be mandated for banks with inadequate internal measurement systems.",
+      "stability": "stable",
+      "date_updated": "2026-05-25"
+    },
+    {
+      "id": "bcbs_sound_liquidity_risk_management_17_principles_001",
+      "title": "BCBS Principles for Sound Liquidity Risk Management and Supervision (2008) — 17-Principle Framework",
+      "type": "regulation",
+      "domain": "banking_regulation",
+      "confidence": 4,
+      "tags": [
+        "bcbs",
+        "liquidity_risk",
+        "regulatory_standard",
+        "banking_supervision",
+        "lrm_framework",
+        "hqla",
+        "stress_testing",
+        "cfp",
+        "intraday_liquidity",
+        "ftp",
+        "basel"
+      ],
+      "thesis": "BCBS 2008 (bcbs144) establishes 17 binding principles for liquidity risk management and supervision, organized into five sections: (1) Fundamental principle — bank holds an HQLA cushion to survive stress; (2) Governance — board sets risk tolerance, senior management implements, internal pricing allocates liquidity costs to business lines; (3) Measurement and management — cash flow projection, cross-entity control, funding diversification, intraday management, collateral management, stress testing, contingency funding plan, HQLA cushion; (4) Public disclosure; (5) Supervisory role. The framework is the pre-Basel III standard that directly foreshadowed LCR (Principle 12), NSFR (Principle 7), and ILAAP/ICAAP integration (Principles 10–11). All 17 principles are applied proportionally based on bank size, complexity and systemic importance.",
+      "stability": "stable",
+      "date_updated": "2026-05-25"
+    },
+    {
       "id": "us_macro_constraint_stack_fed_treasury_curve_inflation_external_sector_syn_001",
       "title": "US Macro Constraint Stack Fed Treasury Curve Inflation External Sector",
       "type": "synthesis",
@@ -5030,6 +5335,31 @@
       "relation": "shared_tag:eurodollar"
     },
     {
+      "source": "heterodox_stabilization_three_element_program_001",
+      "target": "incomes_policy_wage_controls_stabilization_001",
+      "relation": "element_3_detail"
+    },
+    {
+      "source": "heterodox_stabilization_three_element_program_001",
+      "target": "imf_exchange_rate_assessment_crawling_peg_design_001",
+      "relation": "element_1_detail"
+    },
+    {
+      "source": "heterodox_stabilization_three_element_program_001",
+      "target": "imf_gfs_fiscal_accounting_framework_deficit_measurement_and_sustainability_001",
+      "relation": "element_2_detail"
+    },
+    {
+      "source": "heterodox_stabilization_three_element_program_001",
+      "target": "fx_target_quasi_fiscal_stagflation_trap_001",
+      "relation": "exit_path_from"
+    },
+    {
+      "source": "heterodox_stabilization_three_element_program_001",
+      "target": "stagflation_policy_response_tradeoff_frm_001",
+      "relation": "policy_response_context"
+    },
+    {
       "source": "imf_balance_of_payments_framework_and_external_account_analysis_001",
       "target": "imf_flow_of_funds_4_sector_consistency_framework_001",
       "relation": "shared_tag:imf"
@@ -5087,22 +5417,27 @@
     {
       "source": "imf_flow_of_funds_4_sector_consistency_framework_001",
       "target": "imf_gfs_fiscal_accounting_framework_deficit_measurement_and_sustainability_001",
-      "relation": "shared_tag:imf"
+      "relation": "government_sector_column_source_GFS"
     },
     {
       "source": "imf_flow_of_funds_4_sector_consistency_framework_001",
       "target": "imf_monetary_analysis_quantity_theory_velocity_and_exchange_rate_regimes_001",
-      "relation": "shared_tag:imf"
+      "relation": "banking_sector_column_source_MBS"
     },
     {
       "source": "imf_flow_of_funds_4_sector_consistency_framework_001",
       "target": "imf_monetary_survey_and_reserve_money_identity_framework_001",
-      "relation": "shared_tag:imf"
+      "relation": "banking_column_is_monetary_survey_identity_eq6"
     },
     {
       "source": "imf_flow_of_funds_4_sector_consistency_framework_001",
       "target": "imf_sna_real_sector_accounting_gdp_identities_and_sectoral_accounts_001",
-      "relation": "shared_tag:imf"
+      "relation": "nonfinancial_block_rows_sourced_from_SNA"
+    },
+    {
+      "source": "imf_flow_of_funds_4_sector_consistency_framework_001",
+      "target": "imf_financial_programming_nda_ceiling_bop_monetary_approach_001",
+      "relation": "FoF_provides_accounting_backbone_for_NDA_program_design"
     },
     {
       "source": "imf_gfs_fiscal_accounting_framework_deficit_measurement_and_sustainability_001",
@@ -5175,6 +5510,31 @@
       "relation": "exchange_rate_regime_determines_external_crisis_vulnerability"
     },
     {
+      "source": "imf_monetary_aggregate_targeting_innovation_controllability_001",
+      "target": "imf_monetary_analysis_quantity_theory_velocity_and_exchange_rate_regimes_001",
+      "relation": "velocity_instability_from_innovation_modifies_quantity_theory"
+    },
+    {
+      "source": "imf_monetary_aggregate_targeting_innovation_controllability_001",
+      "target": "imf_monetary_survey_and_reserve_money_identity_framework_001",
+      "relation": "M2_is_core_of_monetary_survey_but_innovation_pushes_toward_M3_M4"
+    },
+    {
+      "source": "imf_monetary_aggregate_targeting_innovation_controllability_001",
+      "target": "imf_money_multiplier_decomposition_001",
+      "relation": "near_money_outside_banking_system_breaks_multiplier_relationship"
+    },
+    {
+      "source": "imf_monetary_aggregate_targeting_innovation_controllability_001",
+      "target": "imf_financial_programming_nda_ceiling_bop_monetary_approach_001",
+      "relation": "NDA_ceiling_targets_M2_but_innovation_complicates_targeting"
+    },
+    {
+      "source": "imf_monetary_aggregate_targeting_innovation_controllability_001",
+      "target": "imf_real_interest_rate_fisher_equation_portfolio_choice_001",
+      "relation": "portfolio_shifts_driven_by_near_money_returns_explain_velocity_instability"
+    },
+    {
       "source": "imf_monetary_analysis_quantity_theory_velocity_and_exchange_rate_regimes_001",
       "target": "imf_monetary_survey_and_reserve_money_identity_framework_001",
       "relation": "shared_tag:imf"
@@ -5233,6 +5593,16 @@
       "source": "irrbb_eve_nii_dual_metric_framework_001",
       "target": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
       "relation": "shared_tag:alm"
+    },
+    {
+      "source": "irrbb_eve_nii_dual_metric_framework_001",
+      "target": "bcbs_irrbb_standards_d368_2016_001",
+      "relation": "regulatory_source"
+    },
+    {
+      "source": "irrbb_eve_nii_dual_metric_framework_001",
+      "target": "bcbs_irrbb_nmd_standardised_framework_001",
+      "relation": "nmd_detail"
     },
     {
       "source": "inflation_targeting_001",
@@ -5785,6 +6155,81 @@
       "relation": "shared_tag:libor"
     },
     {
+      "source": "bcbs_liquidity_contingency_funding_plan_p11_001",
+      "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
+      "relation": "parent_framework"
+    },
+    {
+      "source": "bcbs_liquidity_contingency_funding_plan_p11_001",
+      "target": "bcbs_liquidity_stress_testing_p10_001",
+      "relation": "cfp_is_stress_test_output"
+    },
+    {
+      "source": "bcbs_liquidity_contingency_funding_plan_p11_001",
+      "target": "bcbs_intraday_liquidity_management_p8_001",
+      "relation": "intraday_coverage_requirement"
+    },
+    {
+      "source": "bcbs_hqla_liquidity_cushion_p12_001",
+      "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
+      "relation": "parent_framework"
+    },
+    {
+      "source": "bcbs_hqla_liquidity_cushion_p12_001",
+      "target": "bcbs_liquidity_stress_testing_p10_001",
+      "relation": "cushion_sizing_input"
+    },
+    {
+      "source": "bcbs_hqla_liquidity_cushion_p12_001",
+      "target": "lcr_nsfr_long_term_lending_penalty_001",
+      "relation": "quantitative_successor_lcr"
+    },
+    {
+      "source": "bcbs_irrbb_nmd_standardised_framework_001",
+      "target": "bcbs_irrbb_standards_d368_2016_001",
+      "relation": "parent_regulatory_standard"
+    },
+    {
+      "source": "bcbs_irrbb_nmd_standardised_framework_001",
+      "target": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
+      "relation": "nmd_valuation_complement"
+    },
+    {
+      "source": "bcbs_irrbb_nmd_standardised_framework_001",
+      "target": "bcbs_liquidity_internal_pricing_ftp_p4_001",
+      "relation": "ftp_nmd_connection"
+    },
+    {
+      "source": "bcbs_intraday_liquidity_management_p8_001",
+      "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
+      "relation": "parent_framework"
+    },
+    {
+      "source": "bcbs_intraday_liquidity_management_p8_001",
+      "target": "bcbs_hqla_liquidity_cushion_p12_001",
+      "relation": "cushion_includes_intraday_needs"
+    },
+    {
+      "source": "bcbs_intraday_liquidity_management_p8_001",
+      "target": "reserve_floor_payment_001",
+      "relation": "payment_system_liquidity_demand"
+    },
+    {
+      "source": "bcbs_liquidity_internal_pricing_ftp_p4_001",
+      "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
+      "relation": "parent_framework"
+    },
+    {
+      "source": "bcbs_liquidity_internal_pricing_ftp_p4_001",
+      "target": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
+      "relation": "nmd_ftp_connection"
+    },
+    {
+      "source": "bcbs_liquidity_stress_testing_p10_001",
+      "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
+      "relation": "parent_framework"
+    },
+    {
       "source": "btfp_svb_crisis_emergency_lending_001",
       "target": "standing_repo_facility_srf_mec_001",
       "relation": "sibling_emergency_facility"
@@ -5963,6 +6408,31 @@
       "source": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
       "target": "policy_trilemma_efficiency_frontier_equivalence_001",
       "relation": "theoretical_root"
+    },
+    {
+      "source": "cb_fx_target_five_entity_balance_sheet_trace_001",
+      "target": "imf_monetary_survey_and_reserve_money_identity_framework_001",
+      "relation": "identity_foundation"
+    },
+    {
+      "source": "cb_fx_target_five_entity_balance_sheet_trace_001",
+      "target": "imf_flow_of_funds_4_sector_consistency_framework_001",
+      "relation": "flow_of_funds_framework"
+    },
+    {
+      "source": "cb_fx_target_five_entity_balance_sheet_trace_001",
+      "target": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
+      "relation": "upstream_mechanism"
+    },
+    {
+      "source": "cb_fx_target_five_entity_balance_sheet_trace_001",
+      "target": "cb_quasi_fiscal_sterilization_seigniorage_001",
+      "relation": "quasi_fiscal_channel"
+    },
+    {
+      "source": "cb_fx_target_five_entity_balance_sheet_trace_001",
+      "target": "fx_target_quasi_fiscal_stagflation_trap_001",
+      "relation": "macro_outcome"
     },
     {
       "source": "cb_quasi_fiscal_sterilization_seigniorage_001",
@@ -6380,6 +6850,36 @@
       "relation": "upstream_regulatory_driver_of_resolution_requirements"
     },
     {
+      "source": "fx_target_quasi_fiscal_stagflation_trap_001",
+      "target": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
+      "relation": "upstream_mechanism"
+    },
+    {
+      "source": "fx_target_quasi_fiscal_stagflation_trap_001",
+      "target": "cb_quasi_fiscal_sterilization_seigniorage_001",
+      "relation": "quasi_fiscal_channel"
+    },
+    {
+      "source": "fx_target_quasi_fiscal_stagflation_trap_001",
+      "target": "fear_of_floating_stagflation_amplifier_001",
+      "relation": "lock_in_mechanism"
+    },
+    {
+      "source": "fx_target_quasi_fiscal_stagflation_trap_001",
+      "target": "stagflation_regime_diagnostic_frm_001",
+      "relation": "regime_classification"
+    },
+    {
+      "source": "fx_target_quasi_fiscal_stagflation_trap_001",
+      "target": "sterilization_offset_coefficient_eme_001",
+      "relation": "quantifies_monetary_autonomy_loss"
+    },
+    {
+      "source": "fx_target_quasi_fiscal_stagflation_trap_001",
+      "target": "imf_macro_crisis_vector_framework_001",
+      "relation": "crisis_vector_context"
+    },
+    {
       "source": "fx_settlement_risk_cls_ptf_001",
       "target": "global_dollar_system_eurodollar_architecture_001",
       "relation": "component_of"
@@ -6393,6 +6893,26 @@
       "source": "fx_settlement_risk_cls_ptf_001",
       "target": "repo_market_mechanics_triparty_bilateral_001",
       "relation": "parallel_settlement_structure"
+    },
+    {
+      "source": "fear_of_floating_stagflation_amplifier_001",
+      "target": "em_balance_sheet_crisis_anatomy_001",
+      "relation": "source_concept"
+    },
+    {
+      "source": "fear_of_floating_stagflation_amplifier_001",
+      "target": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
+      "relation": "constraint_mechanism"
+    },
+    {
+      "source": "fear_of_floating_stagflation_amplifier_001",
+      "target": "cb_quasi_fiscal_sterilization_seigniorage_001",
+      "relation": "fiscal_cost_companion"
+    },
+    {
+      "source": "fear_of_floating_stagflation_amplifier_001",
+      "target": "stagflation_regime_diagnostic_frm_001",
+      "relation": "regime_outcome"
     },
     {
       "source": "fed_ample_reserves_buffer_sizing_formula_001",
@@ -6618,6 +7138,46 @@
       "source": "imf_exchange_rate_assessment_crawling_peg_design_001",
       "target": "cb_quasi_fiscal_sterilization_seigniorage_001",
       "relation": "fiscal_cost_companion"
+    },
+    {
+      "source": "imf_fx_regime_monetary_accounts_balance_sheet_endogeneity_001",
+      "target": "imf_monetary_survey_and_reserve_money_identity_framework_001",
+      "relation": "identity_foundation — this node explains what happens to that identity under FX target"
+    },
+    {
+      "source": "imf_fx_regime_monetary_accounts_balance_sheet_endogeneity_001",
+      "target": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
+      "relation": "companion_mechanism — Lipschitz formulation of the same constraint; richer on intervention T-accounts"
+    },
+    {
+      "source": "imf_fx_regime_monetary_accounts_balance_sheet_endogeneity_001",
+      "target": "cb_quasi_fiscal_sterilization_seigniorage_001",
+      "relation": "fiscal_cost_mechanism — sterilization interest cost channel"
+    },
+    {
+      "source": "imf_fx_regime_monetary_accounts_balance_sheet_endogeneity_001",
+      "target": "imf_exchange_rate_assessment_crawling_peg_design_001",
+      "relation": "regime_design — crawling peg as intermediate solution"
+    },
+    {
+      "source": "imf_fx_regime_monetary_accounts_balance_sheet_endogeneity_001",
+      "target": "imf_financial_programming_nda_ceiling_bop_monetary_approach_001",
+      "relation": "policy_application — NDA ceiling derived under fixed rate assumption"
+    },
+    {
+      "source": "imf_fx_regime_monetary_accounts_balance_sheet_endogeneity_001",
+      "target": "sterilization_offset_coefficient_eme_001",
+      "relation": "quantitative_measurement — offset and sterilization coefficients measure what this node describes"
+    },
+    {
+      "source": "imf_fx_regime_monetary_accounts_balance_sheet_endogeneity_001",
+      "target": "policy_trilemma_efficiency_frontier_equivalence_001",
+      "relation": "theoretical_root"
+    },
+    {
+      "source": "imf_fx_regime_monetary_accounts_balance_sheet_endogeneity_001",
+      "target": "imf_monetary_survey_valuation_adjustment_001",
+      "relation": "related"
     },
     {
       "source": "imf_monetary_survey_valuation_adjustment_001",
@@ -7578,6 +8138,26 @@
       "source": "policy_fed_hike_cycle_2022_001",
       "target": "entity_federal_reserve_001",
       "relation": "executed_by"
+    },
+    {
+      "source": "bcbs_irrbb_standards_d368_2016_001",
+      "target": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
+      "relation": "nmd_valuation_connection"
+    },
+    {
+      "source": "bcbs_irrbb_standards_d368_2016_001",
+      "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
+      "relation": "related_bcbs_standard"
+    },
+    {
+      "source": "bcbs_sound_liquidity_risk_management_17_principles_001",
+      "target": "irrbb_eve_nii_dual_metric_framework_001",
+      "relation": "successor_standard_for_irrbb"
+    },
+    {
+      "source": "bcbs_sound_liquidity_risk_management_17_principles_001",
+      "target": "lcr_nsfr_long_term_lending_penalty_001",
+      "relation": "successor_quantitative_standards"
     },
     {
       "source": "us_macro_constraint_stack_fed_treasury_curve_inflation_external_sector_syn_001",

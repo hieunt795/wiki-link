@@ -19,8 +19,8 @@ INDEX_PATH = ROOT / "03_wiki" / "index.md"
 WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:[|#][^\]]*)?\]\]")
 
 NODE_TYPES = [
-    "concept", "mechanism", "framework", "entity", "policy", "indicator", 
-    "relationship", "contradiction", "synthesis"
+    "concept", "mechanism", "framework", "entity", "policy", "indicator",
+    "relationship", "contradiction", "synthesis", "regulation"
 ]
 
 def split_frontmatter(text: str):

@@ -1,0 +1,82 @@
+topic_slug: ma_fx_target_balance_sheet
+title: "Money Authority Balance Sheet Under FX Rate Target"
+created: "2026-05-26"
+last_updated: "2026-05-26"
+status: active
+owner: user
+
+domain_template: null
+style_template: null
+analysis_mode: T_MODE_DEEP
+
+primary_question: >
+  Bảng cân đối của monetary authority thay đổi như thế nào khi CB cam kết FX rate target,
+  và các giới hạn cơ học của sterilization là gì?
+
+sub_questions:
+  - "Causality reversal trong RM = NFA + NDA xảy ra như thế nào khi có FX target?"
+  - "Sterilization hoạt động thế nào trên T-account và hai giới hạn binding là gì?"
+  - "Quasi-fiscal cost tích lũy qua kênh nào và kết nối với fiscal policy như thế nào?"
+  - "Capital account openness làm thay đổi hiệu lực monetary policy dưới FX target như thế nào?"
+  - "Phổ chế độ (fixed peg → currency board → managed float) có balance sheet implication gì?"
+
+coverage_probe:
+  last_run: "2026-05-26"
+  queries:
+    - query: "money authority balance sheet FX rate target sterilization NFA endogeneity"
+      state: INGESTED
+      notes: >
+        synth probe trả về TRUE_GAP do dense vector index còn 0 docs (cần Colab sync),
+        nhưng FTS5 search tìm được 4 nodes conf>=3 trực tiếp cover topic.
+        Wiki coverage đầy đủ — không phải gap thực sự.
+
+sources_used:
+  wiki:
+    - "[[IMF FX Regime Balance Sheet — Monetary Accounts Perspective (Chapter 5)]]"
+    - "[[CB FX Rate Target Balance Sheet Constraint And Sterilization]]"
+    - "[[CB Quasi-Fiscal Mechanism — Sterilization Costs, Seigniorage, and the Fiscal-Monetary Nexus]]"
+    - "[[CB FX Target — Five-Entity Combined Balance Sheet Trace (T-Account Scenarios)]]"
+    - "[[Sterilization Effectiveness — Offset and Sterilization Coefficients in EMEs]]"
+    - "[[IMF Monetary Survey And Reserve Money Identity Framework]]"
+    - "[[FX Rate Target + Quasi-Fiscal Operations — Stagflation Trap Mechanism]]"
+  raw:
+    - "02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md"
+    - "02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md"
+  fresh_data: []
+
+findings:
+  - file: "findings/ma_balance_sheet_identity_causality_reversal.md"
+    status: stable
+    confidence: 4
+    promoted_to: null
+    review_needed: false
+  - file: "findings/sterilization_mechanics_and_limits.md"
+    status: stable
+    confidence: 4
+    promoted_to: null
+    review_needed: false
+  - file: "findings/quasi_fiscal_channel_architecture.md"
+    status: stable
+    confidence: 4
+    promoted_to: null
+    review_needed: false
+  - file: "findings/regime_spectrum_balance_sheet_matrix.md"
+    status: stable
+    confidence: 3
+    promoted_to: null
+    review_needed: false
+
+gaps:
+  - query: "quasi-fiscal cost quantification CB sterilization empirical estimates EM"
+    type: TRUE_GAP
+    logged: "2026-05-26"
+    action_required: fetch_source
+    source_candidates:
+      - "BIS Working Paper on CB balance sheet sterilization costs"
+      - "IMF WP on quasi-fiscal operations in EMs"
+      - "Fed FEDS notes on sterilization effectiveness"
+    status: open
+
+contradictions: []
+promotion_candidates: []
+audit_log: "04_research/ma_fx_target_balance_sheet/audit_log.json"
