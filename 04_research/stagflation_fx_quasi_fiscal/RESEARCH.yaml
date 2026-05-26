@@ -1,7 +1,7 @@
 topic_slug: stagflation_fx_quasi_fiscal
 title: "Stagflation Under FX Rate Target + Quasi-Fiscal Operations"
 created: 2026-05-25
-last_updated: 2026-05-25
+last_updated: 2026-05-26
 status: active
 owner: user
 
@@ -51,16 +51,19 @@ sources_used:
   wiki:
     - "[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
     - "[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]"
-  raw: []
+    - "[[Imf_FX_Regime_Monetary_Accounts_Balance_Sheet_Endogeneity]]"
+  raw:
+    - "Lipschitz_Schadler_Macroeconomics.md: lines 2704, 2720, 2728, 2750-2757, 2791 (sterilization costs, fiscal dominance, Bulgaria)"
+    - "Macroeconomic Accounting and Analysis IMF.md: lines 890, 920-921, 923, 982-990, 992fn17, 1021, 2282-2288 (cost-push, inertial inflation, incomes policy, Poland, quasi-fiscal)"
   fresh_data: []
 
 findings:
   - file: "findings/stagflation_via_fx_target_quasi_fiscal_mechanism.md"
-    status: draft
+    status: confirmed
     promoted_to: null
-    confidence: 2
-    review_needed: true
-    notes: "Three-pathway synthesis from wiki building blocks"
+    confidence: 3
+    review_needed: false
+    notes: "Three-pathway synthesis — upgraded to conf 3 (2026-05-26): direct sourcing from Lipschitz Box 4.7 (sterilization cost), Lipschitz p.2757 (fiscal dominance), IMF-macro p.890/920-921 (cost-push + accommodation), IMF-macro p.1021 (Poland heterodox). Remaining LLM-E: timing leads, cost magnitudes."
 
   - file: "findings/stagflation_fx_qf_deep_analysis.md"
     status: draft

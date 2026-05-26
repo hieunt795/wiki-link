@@ -4,12 +4,14 @@ title: "T_MODE_DEEP — Stagflation Under FX Rate Target + Quasi-Fiscal: Full Me
 topic_slug: stagflation_fx_quasi_fiscal
 type: T_MODE_DEEP
 analysis_mode: T_MODE_DEEP
-confidence: 2
-status: draft
+confidence: 3
+status: confirmed
 created: 2026-05-25
+updated: 2026-05-26
 sources_used:
   - "[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
   - "[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]"
+  - "[[Imf_FX_Regime_Monetary_Accounts_Balance_Sheet_Endogeneity]]"
   - "[[Stagflation_Regime_Diagnostic_Framework]]"
   - "[[Stagflation_Policy_Response_Tradeoff_Framework]]"
   - "[[Imf_Exchange_Rate_Assessment_And_Crawling_Peg_Design]]"
@@ -20,6 +22,19 @@ sources_used:
   - "[[Imf_Inflation_Analysis_Cpi_Gdp_Deflator_Four_Types_Core]]"
   - "[[Imf_Monetary_Analysis_Quantity_Theory_Velocity_And_Exchange_Rate_Regimes]]"
   - "[[Cost_Push_Inflation_Persistence_Mechanism]]"
+new_raw_passages_confirmed_2026_05_26:
+  - "IMF-macro p.890+920-921: cost-push cannot persist IF monetary policy refuses to accommodate → under FX target CB cannot refuse → direct mechanism source for Tầng I"
+  - "IMF-macro p.923 fn: inertial inflation perpetuated through contracts/indexation"
+  - "IMF-macro p.982-990+992fn17: incomes policy role — break inertia + support FX anchor credibility"
+  - "IMF-macro p.1021: Poland three-element program explicitly described"
+  - "Lipschitz p.2720: sterilization cost mechanism (low-yield FX vs high-yield domestic)"
+  - "Lipschitz p.2757: fiscal dominance definition + vicious circle passage"
+  - "Lipschitz p.2791 Box 4.8: 'A vicious circle of depreciation, monetary accommodation, and inflation ensued' — Bulgaria direct case"
+remaining_llm_e:
+  - "Timing leads (T-12, T-8, T-6 months) — need empirical source"
+  - "Sterilization cost 0.5% GDP figure — LLM-E from assumed parameters"
+  - "Crowding out multiplier magnitude"
+  - "CB profit transfer decline threshold >15%"
 ---
 
 # TOP-DOWN ENTRY

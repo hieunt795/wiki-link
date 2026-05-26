@@ -30,7 +30,7 @@ TODAY = date.today()
 
 REQUIRED_FIELDS = ["node_id", "type", "title", "thesis", "confidence", "source_refs"]
 VALID_TYPES = {"concept", "mechanism", "entity", "relationship", "contradiction",
-               "synthesis", "policy", "framework", "indicator"}
+               "synthesis", "policy", "framework", "indicator", "regulation"}
 
 STALE_THRESHOLDS_DAYS = {
     "policy": 90,
@@ -42,6 +42,7 @@ STALE_THRESHOLDS_DAYS = {
     "relationship": 3 * 365,
     "contradiction": 365,
     "synthesis": 365,
+    "regulation": 2 * 365,
 }
 
 

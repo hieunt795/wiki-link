@@ -51,6 +51,7 @@ NODE_DIRS = {
     "policy":       WIKI_ROOT / "policies",
     "framework":    WIKI_ROOT / "frameworks",
     "indicator":    WIKI_ROOT / "indicators",
+    "regulation":   WIKI_ROOT / "regulations",
 }
 
 TODAY = date.today().isoformat()

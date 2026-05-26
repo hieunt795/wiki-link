@@ -250,3 +250,8 @@ Chronological record of all ingest, update, promotion, and audit operations.
 - **2026-05-24**: INGEST: Created framework node `US 1970s Stagflation And Policy Regime Shift` from Watts_Wray_Macroeconomics.md, Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-2.md, and Macroeconomic Accounting and Analysis IMF.md
 - **2026-05-24**: INGEST: Created framework node `Volcker Fed Reaction Function Break` from Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-4.md
 - **2026-05-24**: INGEST: Created mechanism node `Volcker Disinflation Sacrifice Ratio Channel` from Watts_Wray_Macroeconomics.md and Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-4.md
+
+- **2026-05-26**: INGEST: Created concept node `Currency As Central Bank Liability` from Why Is Currency a Liability of the Fed_.md
+- **2026-05-26**: INGEST: Created mechanism node `Tax Extinguishment As Proof Of Currency Liability Status` from Why Is Currency a Liability of the Fed_.md
+- **2026-05-26**: INGEST: Created mechanism node `Supply Shock Production Network Cascade Amplification` from Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
+- **2026-05-26**: INGEST: Created framework node `Central Bank Energy Price Shock Three Stage Taxonomy` from Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md

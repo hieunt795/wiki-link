@@ -1,0 +1,48 @@
+topic_slug: vietnam_monetary_balance_sheet
+title: "Vietnam Monetary Balance Sheet — IMF Chapter 5 Framework"
+date_created: "2026-05-26"
+status: active
+
+primary_question: >
+  Bảng cân đối của hệ thống ngân hàng Việt Nam theo cấu trúc IMF Monetary Accounts
+  (Chapter 5) trông như thế nào — cụ thể là Central Bank Survey (SBV),
+  Monetary Survey (M2 = NFA + NDA), và các dynamics NFA/NCG/CPS hiện tại?
+
+sub_questions:
+  - id: SQ1
+    text: "SBV balance sheet: cơ cấu NFA, NCG, Cb, Reserve Money (2020-2025)"
+  - id: SQ2
+    text: "Monetary Survey Vietnam: M2 decomposition — ΔNFA vs ΔNCG vs ΔCPS"
+  - id: SQ3
+    text: "Dollarization và FX deposits trong M2 — role và dynamics"
+  - id: SQ4
+    text: "Reserve money (M0) và money multiplier — mức độ và trend"
+  - id: SQ5
+    text: "Sterilization: SBV có sterilize FX accumulation không? Cơ chế nào?"
+
+coverage_probe:
+  state: TRUE_GAP
+  wiki_sem: 0.000
+  raw_sem: 0.000
+  label_hits: 79
+  note: >
+    Wiki có đầy đủ IMF framework (Chapter 5 nodes). Không có sources nào về Vietnam.
+    Sẽ dùng web data từ SBV/IMF IFS/World Bank cho current data,
+    kết hợp framework nodes đã có.
+
+gaps:
+  - type: TRUE_GAP
+    topic: "Vietnam SBV balance sheet historical data"
+    suggested_sources:
+      - "IMF International Financial Statistics (IFS) — Vietnam monetary data"
+      - "SBV Annual Report — bảng cân đối NHNN"
+      - "World Bank Vietnam Economic Monitor"
+      - "IMF Vietnam Article IV Consultation staff reports"
+      - "BIS Quarterly Review — Vietnam section"
+
+frameworks_used:
+  - "[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]"
+  - "[[Imf_Monetary_Survey_Valuation_Adjustment_Transaction_Flow_Decomposition]]"
+  - "[[Imf_Financial_Programming_NDA_Ceiling_And_BOP_Monetary_Approach]]"
+  - "[[Imf_Monetary_Analysis_Quantity_Theory_Velocity_And_Exchange_Rate_Regimes]]"
+  - "[[Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis]]"

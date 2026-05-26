@@ -56,6 +56,132 @@ Skip if:
 - One-paragraph mentions with no detail
 - Already exists as a wiki node (check `03_wiki/index.md` first)
 
+### Duplicate Check Rule
+
+Before creating any new node, check for possible duplicates using all of the following:
+
+- exact title match in `03_wiki/index.md`
+- filename match or near-match in `03_wiki/`
+- alias match, including Vietnamese aliases
+- same core concept expressed with different wording
+
+A concept counts as an existing node if any of these are true:
+- the title is the same
+- the slug is the same or trivially different
+- an alias matches the new concept name
+- the node thesis clearly refers to the same mechanism, framework, entity, or relationship
+
+#### Required duplicate check order
+
+1. Check `03_wiki/index.md` for title and alias matches
+2. Check the relevant `03_wiki/{type}/` folder for filename matches
+3. Check nearby related node types if the concept may have been classified differently
+4. Only create a new node if no equivalent node already exists
+
+#### Slug near-match rule
+
+Treat these as probable duplicates unless the source clearly distinguishes them:
+- singular vs plural variants
+- acronym vs full-name variants
+- British vs American spelling variants
+- hyphenated vs non-hyphenated variants
+- word-order variants with the same meaning
+
+Examples:
+- `Repo_Market_Funding` vs `Funding_in_Repo_Markets`
+- `Quantitative_Easing` vs `QE`
+- `Shadow_Banking` vs `Market_Based_Finance` if the node body shows they are being used equivalently
+
+#### Alias rule
+
+If a source uses a new name for an existing concept:
+- do not create a new node only because the wording is different
+- add the new wording to `aliases:` if justified
+- prefer one canonical node with multiple aliases over multiple near-duplicate nodes
+
+#### Cross-type duplicate rule
+
+If the concept already exists under a different node type:
+- do not automatically create a second node
+- first decide whether the difference is genuinely structural
+
+Create a separate node only if the new node serves a different role, for example:
+- `Basel_III_Capital_Framework` as a `framework`
+- `Capital_Conservation_Buffer` as a `policy` or `concept`
+
+#### Tie-break rule
+
+If unsure whether two nodes are duplicates:
+- prefer updating the existing node
+- add aliases and related links
+- create a new node only when the distinction is explicit and durable in the source
+
+#### Hard anti-duplication rule
+
+Never create a new node solely because:
+- the source uses different wording
+- the source is from a different author
+- the source adds detail to an existing concept
+- the existing node has low confidence
+
+In those cases, update the existing node instead.
+
+### Step 1.5 — If a node already exists
+
+Before creating a new node, check whether the concept already exists in:
+- `03_wiki/index.md`
+- the relevant `03_wiki/{type}/` folder
+- existing aliases in nearby related nodes
+
+If an equivalent node already exists:
+
+- Do NOT create a duplicate node.
+- Read the existing node first.
+- Compare the new source against the existing node's thesis, body, aliases, and `source_refs`.
+
+#### Case A — New source adds meaningful new information
+
+If the new source adds materially new content, update the existing node instead of creating a new one.
+
+Examples of materially new content:
+- a new transmission channel or mechanism step
+- a clearer institutional distinction
+- a new analytical component in a framework
+- a new jurisdictional or historical nuance
+- a stronger primary-source explanation of an existing claim
+
+In this case:
+- append a new entry to `source_refs`
+- expand or refine the body content
+- update `date_updated`
+- add new aliases if justified
+- update `confidence` only if the new source independently strengthens the claim
+
+#### Case B — New source mostly repeats existing content
+
+If the source adds no meaningful new detail:
+- do not modify the node body
+- do not create a duplicate node
+- still update `02_sources/_source_registry.yaml` to record that the source was reviewed and mapped
+
+#### Case C — New source conflicts with the existing node
+
+If the new source materially contradicts the existing node:
+- do not silently overwrite the old claim
+- do not merge the contradiction into the thesis as if it were settled
+- create a new `contradiction` node
+- link both nodes through `related:`
+
+#### Confidence update rule
+
+Increase `confidence` only when the new source provides independent and stronger support.
+Do NOT increase confidence when the new source merely restates, summarizes, or paraphrases the same claim without adding evidentiary strength.
+
+#### Thesis protection rule
+
+Do not rewrite the existing thesis unless the new source clearly requires refinement.
+Prefer preserving the original thesis and expanding the body unless the central claim itself must change.
+
 ### Step 2 — Create each wiki node
 
 File path: `03_wiki/{type}/{Title_In_CamelCase}.md`
