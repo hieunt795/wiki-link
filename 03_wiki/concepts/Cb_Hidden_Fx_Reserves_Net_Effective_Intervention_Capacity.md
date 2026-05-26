@@ -34,7 +34,7 @@ thesis: '[LLM] Gross FX reserves as officially reported overstate a central bank
   featured gross reserves that appeared adequate while net reserves were near zero
   or negative due to hidden forward book.'
 source_refs:
-- path: 04_research/fx_intervention_instruments/findings/hidden_reserves_net_effective_position.md
+- path: 04_research/ma_fx_target_balance_sheet/findings/hidden_reserves_net_effective_position.md
   pages: 'TRUE_GAP — pending ingest of BIS QR Sep 2022, IMF BPM6 Ch.6'
   weight: primary
 related:
@@ -52,5 +52,5 @@ date_created: '2026-05-26'
 date_updated: '2026-05-26'
 ---
 
-[LLM] Auto-generated stub — TRUE_GAP, awaiting source ingest. See 04_research/fx_intervention_instruments/ for full analysis.
+[LLM] Auto-generated stub — TRUE_GAP, awaiting source ingest. See 04_research/ma_fx_target_balance_sheet/findings/hidden_reserves_net_effective_position.md for full analysis.
 

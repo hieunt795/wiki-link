@@ -255,3 +255,8 @@ Chronological record of all ingest, update, promotion, and audit operations.
 - **2026-05-26**: INGEST: Created mechanism node `Tax Extinguishment As Proof Of Currency Liability Status` from Why Is Currency a Liability of the Fed_.md
 - **2026-05-26**: INGEST: Created mechanism node `Supply Shock Production Network Cascade Amplification` from Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
 - **2026-05-26**: INGEST: Created framework node `Central Bank Energy Price Shock Three Stage Taxonomy` from Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
+- **2026-05-26**: INGEST: Created mechanism node `CB FX Swap Intervention Mechanics And Off Balance Sheet Exposure` from fx_swap_intervention_mechanics.md
+- **2026-05-26**: INGEST: Created mechanism node `CB FX Forward And NDF Intervention Delivery Versus Cash Settlement` from forward_ndf_intervention.md
+- **2026-05-26**: INGEST: Created mechanism node `CB FX Options And Cancelable Forward Intervention Structures` from fx_options_cancelable_intervention.md
+- **2026-05-26**: INGEST: Created concept node `CB Hidden FX Reserves Net Effective Intervention Capacity` from hidden_reserves_net_effective_position.md
+- **2026-05-26**: INGEST: Created concept node `MA Balance Sheet OIN Other Items Net Absorber Mechanics` from oin_taxonomy_and_mechanics.md

@@ -82,3 +82,6 @@
 {"query": "stagflation FX rate target quasi-fiscal balance sheet endogeneity reserve flow balance sheet", "state": "TRUE_GAP", "topic": "", "wiki_sem": 0.0, "raw_sem": 0.0, "timestamp": "2026-05-26T09:23:09.665657+00:00"}
 {"query": "stagflation FX rate target quasi-fiscal balance sheet endogeneity yield curve duration positioning", "state": "TRUE_GAP", "topic": "", "wiki_sem": 0.0, "raw_sem": 0.0, "timestamp": "2026-05-26T09:23:10.124549+00:00"}
 {"query": "stagflation FX rate target quasi-fiscal balance sheet endogeneity historical precedent cycle", "state": "TRUE_GAP", "topic": "", "wiki_sem": 0.0, "raw_sem": 0.0, "timestamp": "2026-05-26T09:23:10.668415+00:00"}
+{"query": "money authority balance sheet FX rate target sterilization NFA endogeneity", "state": "TRUE_GAP", "topic": "", "wiki_sem": 0.0, "raw_sem": 0.0, "timestamp": "2026-05-26T11:47:39.301974+00:00"}
+{"query": "central bank FX swap forward intervention off-balance sheet", "state": "TRUE_GAP", "topic": "", "wiki_sem": 0.0, "raw_sem": 0.0, "timestamp": "2026-05-26T11:54:13.585253+00:00"}
+{"query": "OIN other items net central bank balance sheet valuation", "state": "TRUE_GAP", "topic": "", "wiki_sem": 0.0, "raw_sem": 0.0, "timestamp": "2026-05-26T12:07:28.270070+00:00"}

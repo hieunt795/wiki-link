@@ -33,7 +33,7 @@ thesis: '[LLM] A central bank FX swap (buy-sell or sell-buy) consists of two leg
   surrendering spot reserves. The outstanding far-leg book reduces net effective reserves
   below reported gross reserves.'
 source_refs:
-- path: 04_research/fx_intervention_instruments/findings/fx_swap_intervention_mechanics.md
+- path: 04_research/ma_fx_target_balance_sheet/findings/fx_swap_intervention_mechanics.md
   pages: 'TRUE_GAP — pending ingest of BIS WP 119 (Patel & Cavallino 2019), BIS QR Sep 2022'
   weight: primary
 related:
@@ -51,5 +51,5 @@ date_created: '2026-05-26'
 date_updated: '2026-05-26'
 ---
 
-[LLM] Auto-generated stub — TRUE_GAP, awaiting source ingest. See 04_research/fx_intervention_instruments/ for full analysis.
+[LLM] Auto-generated stub — TRUE_GAP, awaiting source ingest. See 04_research/ma_fx_target_balance_sheet/findings/fx_swap_intervention_mechanics.md for full analysis.
 

@@ -33,7 +33,7 @@ thesis: '[LLM] Central banks use FX options primarily as buyers (purchasing the 
   corridors with no upfront premium but bind the CB to deliver within a range, converting
   discretionary intervention into a semi-automatic rule.'
 source_refs:
-- path: 04_research/fx_intervention_instruments/findings/fx_options_cancelable_intervention.md
+- path: 04_research/ma_fx_target_balance_sheet/findings/fx_options_cancelable_intervention.md
   pages: 'TRUE_GAP — pending ingest of BIS Triennial FX Survey, ISDA option structures'
   weight: primary
 related:
@@ -49,5 +49,5 @@ date_created: '2026-05-26'
 date_updated: '2026-05-26'
 ---
 
-[LLM] Auto-generated stub — TRUE_GAP, awaiting source ingest. See 04_research/fx_intervention_instruments/ for full analysis.
+[LLM] Auto-generated stub — TRUE_GAP, awaiting source ingest. See 04_research/ma_fx_target_balance_sheet/findings/fx_options_cancelable_intervention.md for full analysis.
 

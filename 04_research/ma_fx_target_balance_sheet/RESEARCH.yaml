@@ -39,6 +39,10 @@ sources_used:
     - "[[Sterilization Effectiveness — Offset and Sterilization Coefficients in EMEs]]"
     - "[[IMF Monetary Survey And Reserve Money Identity Framework]]"
     - "[[FX Rate Target + Quasi-Fiscal Operations — Stagflation Trap Mechanism]]"
+    - "[[CB FX Swap Intervention Mechanics And Off Balance Sheet Exposure]]"
+    - "[[CB FX Forward And NDF Intervention Delivery Versus Cash Settlement]]"
+    - "[[CB FX Options And Cancelable Forward Intervention Structures]]"
+    - "[[CB Hidden FX Reserves Net Effective Intervention Capacity]]"
   raw:
     - "02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md"
     - "02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md"
@@ -70,6 +74,30 @@ findings:
     confidence: 4
     promoted_to: null
     review_needed: false
+  - file: "findings/fx_swap_intervention_mechanics.md"
+    status: draft
+    confidence: 1
+    promoted_to: null
+    review_needed: true
+    notes: "TRUE_GAP — [LLM] stub; pending BIS WP 119 (Patel & Cavallino 2019), BIS QR Sep 2022"
+  - file: "findings/forward_ndf_intervention.md"
+    status: draft
+    confidence: 1
+    promoted_to: null
+    review_needed: true
+    notes: "TRUE_GAP — [LLM] stub; pending BIS WP 119, IMF BPM6 Ch.6, Cantú et al. IMF WP"
+  - file: "findings/fx_options_cancelable_intervention.md"
+    status: draft
+    confidence: 1
+    promoted_to: null
+    review_needed: true
+    notes: "TRUE_GAP — [LLM] stub; pending BIS Triennial FX Survey, ISDA documentation"
+  - file: "findings/hidden_reserves_net_effective_position.md"
+    status: draft
+    confidence: 1
+    promoted_to: null
+    review_needed: true
+    notes: "TRUE_GAP — [LLM] stub; pending BIS QR Sep 2022, IMF BPM6 Ch.6"
 
 gaps:
   - query: "quasi-fiscal cost quantification CB sterilization empirical estimates EM"
@@ -80,6 +108,32 @@ gaps:
       - "BIS Working Paper on CB balance sheet sterilization costs"
       - "IMF WP on quasi-fiscal operations in EMs"
       - "Fed FEDS notes on sterilization effectiveness"
+    status: open
+  - query: "FX swap intervention mechanics near leg far leg off-balance-sheet CB"
+    type: TRUE_GAP
+    logged: "2026-05-26"
+    action_required: fetch_source
+    source_candidates:
+      - "BIS WP 119 — Patel & Cavallino (2019) FX intervention in EMs"
+      - "BIS Quarterly Review Sep 2022 — FX swaps off-balance sheet"
+      - "IMF BPM6 Ch.6 — FX derivatives classification"
+    status: open
+  - query: "NDF non-deliverable forward CB intervention offshore capital controls"
+    type: TRUE_GAP
+    logged: "2026-05-26"
+    action_required: fetch_source
+    source_candidates:
+      - "BIS WP 119 — Patel & Cavallino (2019)"
+      - "Cantú et al. IMF WP on FX intervention instruments in EMs"
+      - "IMF BPM6 Ch.6"
+    status: open
+  - query: "cancelable forward FX option CB pricing seagull range forward structures"
+    type: TRUE_GAP
+    logged: "2026-05-26"
+    action_required: fetch_source
+    source_candidates:
+      - "BIS Triennial FX Survey (OTC derivatives)"
+      - "ISDA FX option documentation"
     status: open
 
 contradictions: []

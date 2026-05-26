@@ -33,7 +33,7 @@ thesis: '[LLM] Outright forwards commit the CB to deliver actual FX at a future 
   without touching gross reserves; the tradeoff is that NDF exposure does not appear
   in reserve reports, creating opacity around the true cost of intervention.'
 source_refs:
-- path: 04_research/fx_intervention_instruments/findings/forward_ndf_intervention.md
+- path: 04_research/ma_fx_target_balance_sheet/findings/forward_ndf_intervention.md
   pages: 'TRUE_GAP — pending ingest of BIS WP 119, IMF BPM6 Ch.6, Cantú et al. IMF WP'
   weight: primary
 related:
@@ -49,5 +49,5 @@ date_created: '2026-05-26'
 date_updated: '2026-05-26'
 ---
 
-[LLM] Auto-generated stub — TRUE_GAP, awaiting source ingest. See 04_research/fx_intervention_instruments/ for full analysis.
+[LLM] Auto-generated stub — TRUE_GAP, awaiting source ingest. See 04_research/ma_fx_target_balance_sheet/findings/forward_ndf_intervention.md for full analysis.
 
