@@ -50,6 +50,13 @@ related:
     relation: nmd_valuation_connection
   - node: "[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]"
     relation: related_bcbs_standard
+  - node: "[[Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book]]"
+    relation: gap_analysis_mechanism
+  - node: "[[Bank_Alm_Banking_Book_Risk_Management_Framework]]"
+    relation: bank_implementation
+  - node: "[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]"
+    relation: behavioral_assumptions
+
 date_created: "2026-05-25"
 date_updated: "2026-05-25"
 ---

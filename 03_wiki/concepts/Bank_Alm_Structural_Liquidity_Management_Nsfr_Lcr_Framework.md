@@ -34,7 +34,13 @@ source_refs:
     Today and Tomorrow-De Gruyter (2021).md
   pages: ''
   weight: primary
-related: []
+related:
+  - node: "[[Bank_Alm_Banking_Book_Risk_Management_Framework]]"
+    relation: parent_framework
+  - node: "[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]"
+    relation: regulatory_standard
+  - node: "[[Non_Maturity_Deposit_And_Revolving_Facility_Behavioral_Assumptions_Alco_Governance]]"
+    relation: nmd_lcr_connection
 date_created: '2026-05-26'
 date_updated: '2026-05-26'
 ---

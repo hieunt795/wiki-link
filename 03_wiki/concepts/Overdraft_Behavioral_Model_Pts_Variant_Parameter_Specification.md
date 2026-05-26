@@ -23,7 +23,13 @@ source_refs:
 - path: 02_sources/regulator/other/BC030306_OD_HDSD_pts_FINAL (1).md
   pages: ''
   weight: primary
-related: []
+related:
+  - node: "[[Overdraft_Behavioral_Model_Utilization_Rate_And_Drawdown_Alm_Cashflow]]"
+    relation: parent_mechanism
+  - node: "[[Overdraft_Behavioral_Model_Ppl_Pts_Policy_Specification]]"
+    relation: policy_complement
+  - node: "[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]"
+    relation: behavioral_context
 date_created: '2026-05-26'
 date_updated: '2026-05-26'
 ---

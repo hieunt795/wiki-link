@@ -23,7 +23,13 @@ source_refs:
 - path: 02_sources/regulator/other/BC030304_Term_Deposit_PPL_pts_FINAL (1).md
   pages: ''
   weight: primary
-related: []
+related:
+  - node: "[[Term_Deposit_Behavioral_Model_Renewal_Probability_And_Early_Withdrawal_Alm]]"
+    relation: parent_mechanism
+  - node: "[[Term_Deposit_Behavioral_Model_Pts_Variant_Parameter_Specification]]"
+    relation: parameter_variant
+  - node: "[[Term_Deposit_Alm_Governance_Policy_Procedure_Limit_Framework]]"
+    relation: governance_context
 date_created: '2026-05-26'
 date_updated: '2026-05-26'
 ---

@@ -36,7 +36,17 @@ source_refs:
 - path: 02_sources/books/alm/A - Asset liability optimization.md
   pages: ''
   weight: primary
-related: []
+related:
+  - node: "[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]"
+    relation: nmd_valuation_framework
+  - node: "[[Non_Maturity_Deposit_And_Revolving_Facility_Behavioral_Assumptions_Alco_Governance]]"
+    relation: governance_framework
+  - node: "[[Bcbs_Irrbb_Nmd_Standardised_Framework]]"
+    relation: regulatory_context
+  - node: "[[Term_Deposit_Behavioral_Model_Renewal_Probability_And_Early_Withdrawal_Alm]]"
+    relation: term_deposit_application
+  - node: "[[Overdraft_Behavioral_Model_Utilization_Rate_And_Drawdown_Alm_Cashflow]]"
+    relation: overdraft_application
 date_created: '2026-05-26'
 date_updated: '2026-05-26'
 ---

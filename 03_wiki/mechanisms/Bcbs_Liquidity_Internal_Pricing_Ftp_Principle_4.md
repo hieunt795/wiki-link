@@ -43,6 +43,13 @@ related:
     relation: parent_framework
   - node: "[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]"
     relation: nmd_ftp_connection
+  - node: "[[Funds_Transfer_Pricing_Rate_Decomposition_Base_Liquidity_Credit_Optionality_Components]]"
+    relation: ftp_rate_decomposition
+  - node: "[[Ftp_As_Unified_Balance_Sheet_Control_Mechanism_Transmission_To_Risk_Factors]]"
+    relation: implementation_mechanism
+  - node: "[[Ftp_Curve_Construction_By_Tenor_Short_Medium_Long_Term_Spread_Framework]]"
+    relation: curve_construction
+
 date_created: "2026-05-25"
 date_updated: "2026-05-25"
 ---

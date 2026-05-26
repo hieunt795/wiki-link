@@ -4899,6 +4899,21 @@
   ],
   "edges": [
     {
+      "source": "bank_alm_structural_liquidity_management_nsfr_lcr_framework_001",
+      "target": "bank_alm_banking_book_risk_management_framework_001",
+      "relation": "parent_framework"
+    },
+    {
+      "source": "bank_alm_structural_liquidity_management_nsfr_lcr_framework_001",
+      "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
+      "relation": "regulatory_standard"
+    },
+    {
+      "source": "bank_alm_structural_liquidity_management_nsfr_lcr_framework_001",
+      "target": "non_maturity_deposit_and_revolving_facility_behavioral_assumptions_alco_governance_001",
+      "relation": "nmd_lcr_connection"
+    },
+    {
       "source": "cb_hidden_fx_reserves_net_effective_intervention_capacity_001",
       "target": "cb_fx_swap_intervention_mechanics_and_off_balance_sheet_exposure_001",
       "relation": "primary_source — swap far-leg book is main driver of hidden reserves"
@@ -5049,6 +5064,21 @@
       "relation": "related_mechanism"
     },
     {
+      "source": "ftp_curve_construction_by_tenor_short_medium_long_term_spread_framework_001",
+      "target": "funds_transfer_pricing_rate_decomposition_base_liquidity_credit_optionality_components_001",
+      "relation": "rate_decomposition_source"
+    },
+    {
+      "source": "ftp_curve_construction_by_tenor_short_medium_long_term_spread_framework_001",
+      "target": "ftp_as_unified_balance_sheet_control_mechanism_transmission_to_risk_factors_001",
+      "relation": "control_mechanism"
+    },
+    {
+      "source": "ftp_curve_construction_by_tenor_short_medium_long_term_spread_framework_001",
+      "target": "vietnam_bank_ftp_methodology_implementation_vietabank_ey_framework_001",
+      "relation": "vietnam_application"
+    },
+    {
       "source": "fed_ample_reserves_rate_control_framework_con_001",
       "target": "central_bank_monetary_policy_operational_framework_typology_001",
       "relation": "archetype_implementation"
@@ -5124,6 +5154,21 @@
       "relation": "related"
     },
     {
+      "source": "funds_transfer_pricing_rate_decomposition_base_liquidity_credit_optionality_components_001",
+      "target": "ftp_as_unified_balance_sheet_control_mechanism_transmission_to_risk_factors_001",
+      "relation": "implementation_mechanism"
+    },
+    {
+      "source": "funds_transfer_pricing_rate_decomposition_base_liquidity_credit_optionality_components_001",
+      "target": "vietnam_bank_ftp_methodology_implementation_vietabank_ey_framework_001",
+      "relation": "vietnam_application"
+    },
+    {
+      "source": "funds_transfer_pricing_rate_decomposition_base_liquidity_credit_optionality_components_001",
+      "target": "bcbs_liquidity_internal_pricing_ftp_p4_001",
+      "relation": "regulatory_basis"
+    },
+    {
       "source": "ma_balance_sheet_oin_other_items_net_absorber_mechanics_001",
       "target": "imf_monetary_survey_and_reserve_money_identity_framework_001",
       "relation": "identity_foundation — OIN is the fourth term of RM = NFA + NCG + Cb + OIN"
@@ -5162,6 +5207,56 @@
       "source": "nbfi_sovereign_market_supervisory_gap_001",
       "target": "sovereign_basis_trade_repo_leverage_001",
       "relation": "related_mechanism"
+    },
+    {
+      "source": "non_maturity_deposit_and_revolving_facility_behavioral_assumptions_alco_governance_001",
+      "target": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
+      "relation": "behavioral_mechanism"
+    },
+    {
+      "source": "non_maturity_deposit_and_revolving_facility_behavioral_assumptions_alco_governance_001",
+      "target": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
+      "relation": "nmd_valuation"
+    },
+    {
+      "source": "non_maturity_deposit_and_revolving_facility_behavioral_assumptions_alco_governance_001",
+      "target": "bcbs_irrbb_nmd_standardised_framework_001",
+      "relation": "regulatory_requirement"
+    },
+    {
+      "source": "non_maturity_deposit_and_revolving_facility_behavioral_assumptions_alco_governance_001",
+      "target": "bcbs_irrbb_standards_d368_2016_001",
+      "relation": "parent_standard"
+    },
+    {
+      "source": "non_maturity_deposit_and_revolving_facility_behavioral_assumptions_alco_governance_001",
+      "target": "bank_alm_banking_book_risk_management_framework_001",
+      "relation": "parent_framework"
+    },
+    {
+      "source": "overdraft_behavioral_model_ppl_pts_policy_specification_001",
+      "target": "overdraft_behavioral_model_utilization_rate_and_drawdown_alm_cashflow_001",
+      "relation": "parent_mechanism"
+    },
+    {
+      "source": "overdraft_behavioral_model_ppl_pts_policy_specification_001",
+      "target": "overdraft_behavioral_model_pts_variant_parameter_specification_001",
+      "relation": "parameter_variant"
+    },
+    {
+      "source": "overdraft_behavioral_model_ppl_pts_policy_specification_001",
+      "target": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
+      "relation": "behavioral_context"
+    },
+    {
+      "source": "overdraft_behavioral_model_pts_variant_parameter_specification_001",
+      "target": "overdraft_behavioral_model_utilization_rate_and_drawdown_alm_cashflow_001",
+      "relation": "parent_mechanism"
+    },
+    {
+      "source": "overdraft_behavioral_model_pts_variant_parameter_specification_001",
+      "target": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
+      "relation": "behavioral_context"
     },
     {
       "source": "shadow_banking_market_based_finance_001",
@@ -5209,6 +5304,41 @@
       "relation": "related_mechanism"
     },
     {
+      "source": "term_deposit_alm_governance_policy_procedure_limit_framework_001",
+      "target": "term_deposit_behavioral_model_renewal_probability_and_early_withdrawal_alm_001",
+      "relation": "behavioral_model"
+    },
+    {
+      "source": "term_deposit_alm_governance_policy_procedure_limit_framework_001",
+      "target": "term_deposit_behavioral_model_ppl_pts_policy_specification_001",
+      "relation": "policy_spec"
+    },
+    {
+      "source": "term_deposit_alm_governance_policy_procedure_limit_framework_001",
+      "target": "term_deposit_behavioral_model_pts_variant_parameter_specification_001",
+      "relation": "parameter_spec"
+    },
+    {
+      "source": "term_deposit_alm_governance_policy_procedure_limit_framework_001",
+      "target": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
+      "relation": "behavioral_methodology"
+    },
+    {
+      "source": "term_deposit_behavioral_model_ppl_pts_policy_specification_001",
+      "target": "term_deposit_behavioral_model_renewal_probability_and_early_withdrawal_alm_001",
+      "relation": "parent_mechanism"
+    },
+    {
+      "source": "term_deposit_behavioral_model_ppl_pts_policy_specification_001",
+      "target": "term_deposit_behavioral_model_pts_variant_parameter_specification_001",
+      "relation": "parameter_variant"
+    },
+    {
+      "source": "term_deposit_behavioral_model_pts_variant_parameter_specification_001",
+      "target": "term_deposit_behavioral_model_renewal_probability_and_early_withdrawal_alm_001",
+      "relation": "parent_mechanism"
+    },
+    {
       "source": "tga_reserve_swap_mechanics_and_debt_ceiling_dynamics_con_001",
       "target": "treasury_general_account_tga_reserve_swap_mec_001",
       "relation": "core_mechanism"
@@ -5252,6 +5382,11 @@
       "source": "ust_market_structure_onrun_offrun_001",
       "target": "sovereign_debt_market_discipline_price_discovery_role_001",
       "relation": "related_concept"
+    },
+    {
+      "source": "vietnam_bank_ftp_methodology_implementation_vietabank_ey_framework_001",
+      "target": "ftp_as_unified_balance_sheet_control_mechanism_transmission_to_risk_factors_001",
+      "relation": "control_mechanism"
     },
     {
       "source": "warsh_balance_sheet_stimulus_swap_con_001",
@@ -5447,6 +5582,26 @@
       "source": "entity_us_treasury_001",
       "target": "fed_treasury_accord_2026_frm_001",
       "relation": "counterparty_in"
+    },
+    {
+      "source": "bank_alm_banking_book_risk_management_framework_001",
+      "target": "bcbs_irrbb_standards_d368_2016_001",
+      "relation": "regulatory_basis"
+    },
+    {
+      "source": "bank_alm_banking_book_risk_management_framework_001",
+      "target": "irrbb_eve_nii_dual_metric_framework_001",
+      "relation": "irrbb_measurement"
+    },
+    {
+      "source": "bank_alm_banking_book_risk_management_framework_001",
+      "target": "maturity_gap_analysis_interest_rate_risk_banking_book_001",
+      "relation": "gap_analysis_mechanism"
+    },
+    {
+      "source": "bank_alm_banking_book_risk_management_framework_001",
+      "target": "ftp_as_unified_balance_sheet_control_mechanism_transmission_to_risk_factors_001",
+      "relation": "ftp_control"
     },
     {
       "source": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
@@ -6120,21 +6275,6 @@
     },
     {
       "source": "irrbb_eve_nii_dual_metric_framework_001",
-      "target": "basel_driven_credit_migration_to_private_markets_001",
-      "relation": "shared_tag:basel"
-    },
-    {
-      "source": "irrbb_eve_nii_dual_metric_framework_001",
-      "target": "us_shadow_banking_post_gfc_market_based_finance_structure_001",
-      "relation": "shared_tag:basel"
-    },
-    {
-      "source": "irrbb_eve_nii_dual_metric_framework_001",
-      "target": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
-      "relation": "shared_tag:alm"
-    },
-    {
-      "source": "irrbb_eve_nii_dual_metric_framework_001",
       "target": "bcbs_irrbb_standards_d368_2016_001",
       "relation": "regulatory_source"
     },
@@ -6142,6 +6282,16 @@
       "source": "irrbb_eve_nii_dual_metric_framework_001",
       "target": "bcbs_irrbb_nmd_standardised_framework_001",
       "relation": "nmd_detail"
+    },
+    {
+      "source": "irrbb_eve_nii_dual_metric_framework_001",
+      "target": "maturity_gap_analysis_interest_rate_risk_banking_book_001",
+      "relation": "measurement_mechanism"
+    },
+    {
+      "source": "irrbb_eve_nii_dual_metric_framework_001",
+      "target": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
+      "relation": "nmd_valuation_complement"
     },
     {
       "source": "inflation_targeting_001",
@@ -6739,6 +6889,11 @@
       "relation": "ftp_nmd_connection"
     },
     {
+      "source": "bcbs_irrbb_nmd_standardised_framework_001",
+      "target": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
+      "relation": "behavioral_methodology"
+    },
+    {
       "source": "bcbs_intraday_liquidity_management_p8_001",
       "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
       "relation": "parent_framework"
@@ -6762,6 +6917,16 @@
       "source": "bcbs_liquidity_internal_pricing_ftp_p4_001",
       "target": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
       "relation": "nmd_ftp_connection"
+    },
+    {
+      "source": "bcbs_liquidity_internal_pricing_ftp_p4_001",
+      "target": "ftp_as_unified_balance_sheet_control_mechanism_transmission_to_risk_factors_001",
+      "relation": "implementation_mechanism"
+    },
+    {
+      "source": "bcbs_liquidity_internal_pricing_ftp_p4_001",
+      "target": "ftp_curve_construction_by_tenor_short_medium_long_term_spread_framework_001",
+      "relation": "curve_construction"
     },
     {
       "source": "bcbs_liquidity_stress_testing_p10_001",
@@ -6902,6 +7067,21 @@
       "source": "basel_output_floor_specialized_lending_001",
       "target": "lcr_nsfr_long_term_lending_penalty_001",
       "relation": "shared_tag:basel-iii"
+    },
+    {
+      "source": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
+      "target": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
+      "relation": "nmd_valuation_framework"
+    },
+    {
+      "source": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
+      "target": "term_deposit_behavioral_model_renewal_probability_and_early_withdrawal_alm_001",
+      "relation": "term_deposit_application"
+    },
+    {
+      "source": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
+      "target": "overdraft_behavioral_model_utilization_rate_and_drawdown_alm_cashflow_001",
+      "relation": "overdraft_application"
     },
     {
       "source": "bond_accrual_price_effect_interaction_001",
@@ -7904,6 +8084,16 @@
       "relation": "shared_tag:LCR"
     },
     {
+      "source": "maturity_gap_analysis_interest_rate_risk_banking_book_001",
+      "target": "bcbs_irrbb_standards_d368_2016_001",
+      "relation": "regulatory_requirement"
+    },
+    {
+      "source": "maturity_gap_analysis_interest_rate_risk_banking_book_001",
+      "target": "ftp_as_unified_balance_sheet_control_mechanism_transmission_to_risk_factors_001",
+      "relation": "ftp_gap_interaction"
+    },
+    {
       "source": "mon_pol_trans_short_long_frictions_mec_001",
       "target": "mptm_framework_001",
       "relation": "detail_of"
@@ -7944,11 +8134,6 @@
       "relation": "seigniorage_depends_on_multiplier_stability"
     },
     {
-      "source": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
-      "target": "private_credit_insurer_structural_channel_001",
-      "relation": "shared_tag:alm"
-    },
-    {
       "source": "nonlinear_inflation_amplifiers_mec_001",
       "target": "mptm_framework_001",
       "relation": "extension_of"
@@ -7957,6 +8142,11 @@
       "source": "nonlinear_inflation_amplifiers_mec_001",
       "target": "inflation_targeting_001",
       "relation": "constraint_on"
+    },
+    {
+      "source": "overdraft_behavioral_model_utilization_rate_and_drawdown_alm_cashflow_001",
+      "target": "ftp_as_unified_balance_sheet_control_mechanism_transmission_to_risk_factors_001",
+      "relation": "ftp_interaction"
     },
     {
       "source": "pik_payment_in_kind_credit_masking_001",
@@ -8722,6 +8912,11 @@
       "source": "bcbs_irrbb_standards_d368_2016_001",
       "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
       "relation": "related_bcbs_standard"
+    },
+    {
+      "source": "bcbs_irrbb_standards_d368_2016_001",
+      "target": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
+      "relation": "behavioral_assumptions"
     },
     {
       "source": "bcbs_sound_liquidity_risk_management_17_principles_001",

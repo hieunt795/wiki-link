@@ -35,7 +35,15 @@ source_refs:
 - path: 02_sources/regulator/other/BC030306_OD_HDSD_arm_FINAL (1).md
   pages: ''
   weight: primary
-related: []
+related:
+  - node: "[[Overdraft_Behavioral_Model_Ppl_Pts_Policy_Specification]]"
+    relation: policy_spec
+  - node: "[[Overdraft_Behavioral_Model_Pts_Variant_Parameter_Specification]]"
+    relation: parameter_spec
+  - node: "[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]"
+    relation: behavioral_methodology
+  - node: "[[Ftp_As_Unified_Balance_Sheet_Control_Mechanism_Transmission_To_Risk_Factors]]"
+    relation: ftp_interaction
 date_created: '2026-05-26'
 date_updated: '2026-05-26'
 ---

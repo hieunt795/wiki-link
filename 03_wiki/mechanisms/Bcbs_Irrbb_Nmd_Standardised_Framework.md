@@ -48,6 +48,11 @@ related:
     relation: eve_measurement_context
   - node: "[[Bcbs_Liquidity_Internal_Pricing_Ftp_Principle_4]]"
     relation: ftp_nmd_connection
+  - node: "[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]"
+    relation: behavioral_methodology
+  - node: "[[Non_Maturity_Deposit_And_Revolving_Facility_Behavioral_Assumptions_Alco_Governance]]"
+    relation: governance_framework
+
 date_created: "2026-05-25"
 date_updated: "2026-05-25"
 ---

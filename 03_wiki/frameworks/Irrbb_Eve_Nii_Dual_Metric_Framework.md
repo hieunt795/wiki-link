@@ -31,20 +31,16 @@ source_refs:
   pages: "para 8–11 (IRRBB definition + EVE/NII intro), para 33–34 (EVE vs NII complementarity), para 69–70 (P8 disclosure: ΔEVE and ΔNII under 6 scenarios), para 88–89 (P12 outlier test: 15% Tier 1), Table B (six prescribed scenarios: parallel up/down, steepener, flattener, short rate up/down)"
   weight: supporting
 related:
-- node: '[[Basel Driven Credit Migration To Private Markets]]'
-  relation: shared_tag:basel
-- node: '[[Basel III Capital And Liquidity Constraint Mechanics]]'
-  relation: shared_tag:basel
-- node: '[[US Shadow Banking Post-GFC Market Based Finance Structure]]'
-  relation: shared_tag:basel
-- node: '[[Basel III Endgame — Capital, Liquidity, and Credit Migration]]'
-  relation: shared_tag:basel
-- node: '[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]'
-  relation: shared_tag:alm
-- node: '[[Bcbs_Irrbb_Standards_D368_2016]]'
-  relation: regulatory_source
-- node: '[[Bcbs_Irrbb_Nmd_Standardised_Framework]]'
-  relation: nmd_detail
+  - node: "[[Bcbs_Irrbb_Standards_D368_2016]]"
+    relation: regulatory_source
+  - node: "[[Bcbs_Irrbb_Nmd_Standardised_Framework]]"
+    relation: nmd_detail
+  - node: "[[Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book]]"
+    relation: measurement_mechanism
+  - node: "[[Bank_Alm_Banking_Book_Risk_Management_Framework]]"
+    relation: parent_framework
+  - node: "[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]"
+    relation: nmd_valuation_complement
 date_created: '2026-05-22'
 date_updated: '2026-05-25'
 ---

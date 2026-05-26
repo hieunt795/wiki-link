@@ -36,7 +36,15 @@ source_refs:
 - path: 02_sources/regulator/ftp/ftp_transmission_analysis.md.md
   pages: ''
   weight: primary
-related: []
+related:
+  - node: "[[Ftp_As_Unified_Balance_Sheet_Control_Mechanism_Transmission_To_Risk_Factors]]"
+    relation: implementation_mechanism
+  - node: "[[Ftp_Curve_Construction_By_Tenor_Short_Medium_Long_Term_Spread_Framework]]"
+    relation: curve_construction
+  - node: "[[Vietnam_Bank_Ftp_Methodology_Implementation_Vietabank_Ey_Framework]]"
+    relation: vietnam_application
+  - node: "[[Bcbs_Liquidity_Internal_Pricing_Ftp_Principle_4]]"
+    relation: regulatory_basis
 date_created: '2026-05-26'
 date_updated: '2026-05-26'
 ---
