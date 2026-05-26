@@ -1,7 +1,9 @@
 topic_slug: vietnam_monetary_balance_sheet
 title: "Vietnam Monetary Balance Sheet — IMF Chapter 5 Framework"
 date_created: "2026-05-26"
+last_updated: "2026-05-26"
 status: active
+analysis_mode: T_MODE_DEEP
 
 primary_question: >
   Bảng cân đối của hệ thống ngân hàng Việt Nam theo cấu trúc IMF Monetary Accounts
@@ -40,9 +42,35 @@ gaps:
       - "IMF Vietnam Article IV Consultation staff reports"
       - "BIS Quarterly Review — Vietnam section"
 
+findings:
+  - file: "findings/monetary_survey_imf_framework.md"
+    status: provisional
+    confidence: 2
+    sub_questions: [SQ1, SQ2]
+  - file: "findings/sbv_nfa_reserves_dynamics.md"
+    status: provisional
+    confidence: 3
+    sub_questions: [SQ1, SQ3, SQ5]
+  - file: "findings/m2_velocity_inflation_paradox.md"
+    status: provisional
+    confidence: 3
+    sub_questions: [SQ2, SQ4]
+
+drafts:
+  - file: "drafts/2026-05-26_draft_v1.md"
+    status: superseded
+    date: "2026-05-26"
+  - file: "drafts/2026-05-26_draft_v2.md"
+    status: current
+    date: "2026-05-26"
+    analysis_mode: T_MODE_DEEP
+    coverage: "SBV MA balance sheet + Monetary Survey + 3 T-account scenarios + OIN + regime spectrum"
+
 frameworks_used:
   - "[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]"
   - "[[Imf_Monetary_Survey_Valuation_Adjustment_Transaction_Flow_Decomposition]]"
   - "[[Imf_Financial_Programming_NDA_Ceiling_And_BOP_Monetary_Approach]]"
   - "[[Imf_Monetary_Analysis_Quantity_Theory_Velocity_And_Exchange_Rate_Regimes]]"
   - "[[Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis]]"
+  - "[[MA Balance Sheet OIN Other Items Net Absorber Mechanics]]"
+  - "[[CB FX Rate Target Balance Sheet Constraint And Sterilization]]"
