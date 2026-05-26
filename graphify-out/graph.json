@@ -211,6 +211,11 @@
       "type": "mechanism"
     },
     {
+      "id": "term_deposit_behavioral_model_renewal_probability_and_early_withdrawal_alm_001",
+      "label": "Term Deposit Behavioral Model — Renewal Probability And Early Withdrawal ALM",
+      "type": "mechanism"
+    },
+    {
       "id": "private_credit_srt_001",
       "label": "Private Credit — SRT, NAV Loans, and Bank-PC Interconnection",
       "type": "mechanism"
@@ -256,6 +261,16 @@
       "type": "mechanism"
     },
     {
+      "id": "ftp_as_unified_balance_sheet_control_mechanism_transmission_to_risk_factors_001",
+      "label": "FTP As Unified Balance Sheet Control Mechanism — Transmission To Risk Factors",
+      "type": "mechanism"
+    },
+    {
+      "id": "supply_chain_non_linear_shock_structural_amplification_001",
+      "label": "Supply Chain Non-Linear Shock Structural Amplification",
+      "type": "mechanism"
+    },
+    {
       "id": "private_credit_subscription_nav_lending_hidden_leverage_001",
       "label": "Private Credit Subscription NAV Lending Hidden Leverage",
       "type": "mechanism"
@@ -278,6 +293,11 @@
     {
       "id": "bcbs_liquidity_internal_pricing_ftp_p4_001",
       "label": "BCBS Liquidity Internal Pricing (FTP) — Principle 4 (2008)",
+      "type": "mechanism"
+    },
+    {
+      "id": "cb_fx_options_and_cancelable_forward_intervention_structures_001",
+      "label": "CB FX Options And Cancelable Forward Intervention Structures",
       "type": "mechanism"
     },
     {
@@ -401,6 +421,11 @@
       "type": "mechanism"
     },
     {
+      "id": "maturity_gap_analysis_interest_rate_risk_banking_book_001",
+      "label": "Maturity Gap Analysis Interest Rate Risk Banking Book",
+      "type": "mechanism"
+    },
+    {
       "id": "capital_flow_management_cfm_taxonomy_001",
       "label": "Capital Flow Management — Taxonomy, Triggers, and Instruments",
       "type": "mechanism"
@@ -471,11 +496,6 @@
       "type": "mechanism"
     },
     {
-      "id": "supply_shock_production_network_cascade_amplification_001",
-      "label": "Supply Shock Production Network Cascade Amplification",
-      "type": "mechanism"
-    },
-    {
       "id": "pbc_interest_rate_transmission_dr007_to_lpr_001",
       "label": "PBC Interest Rate Transmission DR007 to LPR",
       "type": "mechanism"
@@ -493,6 +513,11 @@
     {
       "id": "quantitative_tightening_qt_balance_sheet_runoff_001",
       "label": "Quantitative Tightening QT Balance Sheet Runoff",
+      "type": "mechanism"
+    },
+    {
+      "id": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
+      "label": "Behavioralization Non-Maturity Deposit ALM — Prepayment Early Withdrawal Modeling",
       "type": "mechanism"
     },
     {
@@ -571,6 +596,11 @@
       "type": "mechanism"
     },
     {
+      "id": "cb_fx_swap_intervention_mechanics_and_off_balance_sheet_exposure_001",
+      "label": "CB FX Swap Intervention Mechanics And Off Balance Sheet Exposure",
+      "type": "mechanism"
+    },
+    {
       "id": "dv01_duration_001",
       "label": "DV01, Duration, and Convexity — Fixed Income Risk Measures",
       "type": "mechanism"
@@ -583,11 +613,6 @@
     {
       "id": "srf_structural_defects_morning_repo_001",
       "label": "SRF Structural Defects Morning Repo Fortification And True Ceiling",
-      "type": "mechanism"
-    },
-    {
-      "id": "tax_extinguishment_as_proof_of_currency_liability_status_001",
-      "label": "Tax Extinguishment As Proof Of Currency Liability Status",
       "type": "mechanism"
     },
     {
@@ -631,6 +656,11 @@
       "type": "mechanism"
     },
     {
+      "id": "overdraft_behavioral_model_utilization_rate_and_drawdown_alm_cashflow_001",
+      "label": "Overdraft Behavioral Model — Utilization Rate And Drawdown ALM Cashflow",
+      "type": "mechanism"
+    },
+    {
       "id": "ample_reserves_buffer_sizing_tga_volatility_001",
       "label": "Ample Reserves Buffer Sizing TGA Volatility",
       "type": "mechanism"
@@ -653,6 +683,11 @@
     {
       "id": "treasury_tbill_supply_rrp_drain_mmf_routing_001",
       "label": "Treasury T-bill Supply RRP Drain And MMF Cash Routing",
+      "type": "mechanism"
+    },
+    {
+      "id": "cb_fx_forward_and_ndf_intervention_delivery_versus_cash_settlement_001",
+      "label": "CB FX Forward And NDF Intervention Delivery Versus Cash Settlement",
       "type": "mechanism"
     },
     {
@@ -688,6 +723,11 @@
     {
       "id": "irrbb_eve_nii_dual_metric_framework_001",
       "label": "IRRBB EVE NII Dual Metric Framework",
+      "type": "framework"
+    },
+    {
+      "id": "bank_alm_banking_book_risk_management_framework_001",
+      "label": "Bank ALM Banking Book Risk Management Framework",
       "type": "framework"
     },
     {
@@ -756,11 +796,6 @@
       "type": "framework"
     },
     {
-      "id": "central_bank_energy_price_shock_three_stage_taxonomy_001",
-      "label": "Central Bank Energy Price Shock Three Stage Taxonomy",
-      "type": "framework"
-    },
-    {
       "id": "fed_ample_reserves_range_floor_frm_001",
       "label": "Fed Ample Reserves Range Floor Framework",
       "type": "framework"
@@ -813,6 +848,11 @@
     {
       "id": "imf_gfs_fiscal_accounting_framework_deficit_measurement_and_sustainability_001",
       "label": "IMF GFS Fiscal Accounting Framework Deficit Measurement And Sustainability",
+      "type": "framework"
+    },
+    {
+      "id": "central_bank_supply_shock_policy_framework_direct_indirect_second_round_effects_001",
+      "label": "Central Bank Supply Shock Policy Framework — Direct Indirect Second Round Effects",
       "type": "framework"
     },
     {
@@ -956,6 +996,16 @@
       "type": "concept"
     },
     {
+      "id": "central_bank_currency_liability_tax_redemption_and_currency_franchise_001",
+      "label": "Central Bank Currency Liability Tax Redemption And Currency Franchise",
+      "type": "concept"
+    },
+    {
+      "id": "overdraft_behavioral_model_ppl_pts_policy_specification_001",
+      "label": "Overdraft Behavioral Model — PPL PTS Policy Specification",
+      "type": "concept"
+    },
+    {
       "id": "fed_balance_sheet_size_and_policy_rate_independence_con_001",
       "label": "Fed Balance Sheet Size and Policy Rate Independence",
       "type": "concept"
@@ -981,6 +1031,11 @@
       "type": "concept"
     },
     {
+      "id": "term_deposit_behavioral_model_pts_variant_parameter_specification_001",
+      "label": "Term Deposit Behavioral Model — PTS Variant Parameter Specification",
+      "type": "concept"
+    },
+    {
       "id": "financial_procyclicality_accelerator_macroprudential_001",
       "label": "Financial Procyclicality Financial Accelerator And Macroprudential Instruments",
       "type": "concept"
@@ -1001,14 +1056,34 @@
       "type": "concept"
     },
     {
+      "id": "non_maturity_deposit_and_revolving_facility_behavioral_assumptions_alco_governance_001",
+      "label": "Non-Maturity Deposit And Revolving Facility Behavioral Assumptions ALCO Governance",
+      "type": "concept"
+    },
+    {
+      "id": "ftp_curve_construction_by_tenor_short_medium_long_term_spread_framework_001",
+      "label": "FTP Curve Construction By Tenor — Short Medium Long Term Spread Framework",
+      "type": "concept"
+    },
+    {
       "id": "currency_fed_liability_con_001",
       "label": "Currency as a Central Bank Liability",
+      "type": "concept"
+    },
+    {
+      "id": "ma_balance_sheet_oin_other_items_net_absorber_mechanics_001",
+      "label": "MA Balance Sheet OIN Other Items Net Absorber Mechanics",
       "type": "concept"
     },
     {
       "id": "central_bank_monetary_policy_operational_framework_typology_001",
       "label": "Central Bank Monetary Policy Operational Framework Typology",
       "type": "framework"
+    },
+    {
+      "id": "funds_transfer_pricing_rate_decomposition_base_liquidity_credit_optionality_components_001",
+      "label": "Funds Transfer Pricing Rate Decomposition — Base Liquidity Credit Optionality Components",
+      "type": "concept"
     },
     {
       "id": "cb_reserve_system_constraint_multiplier_myth_001",
@@ -1018,6 +1093,11 @@
     {
       "id": "usd_swap_lines_geopolitical_dollar_integration_tool_001",
       "label": "USD Swap Lines Geopolitical Dollar Integration Tool",
+      "type": "concept"
+    },
+    {
+      "id": "vietnam_bank_ftp_methodology_implementation_vietabank_ey_framework_001",
+      "label": "Vietnam Bank FTP Methodology Implementation — VietABank EY Framework",
       "type": "concept"
     },
     {
@@ -1033,11 +1113,6 @@
     {
       "id": "nbfi_sovereign_market_supervisory_gap_001",
       "label": "NBFI Sovereign Market Supervisory Gap",
-      "type": "concept"
-    },
-    {
-      "id": "currency_as_central_bank_liability_001",
-      "label": "Currency As Central Bank Liability",
       "type": "concept"
     },
     {
@@ -1091,6 +1166,11 @@
       "type": "mechanism"
     },
     {
+      "id": "overdraft_behavioral_model_pts_variant_parameter_specification_001",
+      "label": "Overdraft Behavioral Model — PTS Variant Parameter Specification",
+      "type": "concept"
+    },
+    {
       "id": "warsh_balance_sheet_stimulus_swap_con_001",
       "label": "Warsh Balance Sheet Stimulus Swap",
       "type": "concept"
@@ -1104,6 +1184,26 @@
       "id": "pboc_rmb_fix_counter_cyclical_factor_and_fx_management_001",
       "label": "PBOC RMB Fix Counter Cyclical Factor And FX Management",
       "type": "mechanism"
+    },
+    {
+      "id": "bank_alm_structural_liquidity_management_nsfr_lcr_framework_001",
+      "label": "Bank ALM Structural Liquidity Management NSFR LCR Framework",
+      "type": "concept"
+    },
+    {
+      "id": "term_deposit_behavioral_model_ppl_pts_policy_specification_001",
+      "label": "Term Deposit Behavioral Model — PPL PTS Policy Specification",
+      "type": "concept"
+    },
+    {
+      "id": "term_deposit_alm_governance_policy_procedure_limit_framework_001",
+      "label": "Term Deposit ALM Governance — Policy Procedure Limit Framework",
+      "type": "concept"
+    },
+    {
+      "id": "cb_hidden_fx_reserves_net_effective_intervention_capacity_001",
+      "label": "CB Hidden FX Reserves Net Effective Intervention Capacity",
+      "type": "concept"
     },
     {
       "id": "central_bank_credibility_supply_shock_policy_space_001",

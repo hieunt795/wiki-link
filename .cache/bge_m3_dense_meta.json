@@ -818,6 +818,27 @@
     "domain": "basel_risk"
   },
   {
+    "node_id": "term_deposit_behavioral_model_renewal_probability_and_early_withdrawal_alm_001",
+    "stem": "Term_Deposit_Behavioral_Model_Renewal_Probability_And_Early_Withdrawal_Alm",
+    "label": "Term Deposit Behavioral Model — Renewal Probability And Early Withdrawal ALM",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Term_Deposit_Behavioral_Model_Renewal_Probability_And_Early_Withdrawal_Alm.md",
+    "confidence": 1,
+    "thesis": "[LLM] Term deposit behavioral modeling in ALM estimates two key probabilities: (1) renewal probability — the fraction of term deposits that roll over at contractual maturity rather than being withdrawn, and (2) early withdrawal probability — the fraction that exits before maturity. These probabilities are estimated from historical bank data using statistical models and allow ALM to construct a behavioral maturity profile that differs from the contractual maturity ladder, improving IRRBB measurement accuracy and FTP rate assignment. The PwC framework for ABBank (BC030304) defines model parameters, governance procedures, and validation requirements for these behavioral assumptions.",
+    "tags": [
+      "alm",
+      "behavioral_model",
+      "term_deposit",
+      "renewal_probability",
+      "early_withdrawal",
+      "irrbb",
+      "liquidity_risk",
+      "ftp",
+      "nmd"
+    ],
+    "domain": "alm"
+  },
+  {
     "node_id": "private_credit_srt_001",
     "stem": "Private_Credit_SRT_NAV_Loans_Bank_Partnerships",
     "label": "Private Credit — SRT, NAV Loans, and Bank-PC Interconnection",
@@ -989,6 +1010,47 @@
     "domain": "basel_risk"
   },
   {
+    "node_id": "ftp_as_unified_balance_sheet_control_mechanism_transmission_to_risk_factors_001",
+    "stem": "Ftp_As_Unified_Balance_Sheet_Control_Mechanism_Transmission_To_Risk_Factors",
+    "label": "FTP As Unified Balance Sheet Control Mechanism — Transmission To Risk Factors",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Ftp_As_Unified_Balance_Sheet_Control_Mechanism_Transmission_To_Risk_Factors.md",
+    "confidence": 1,
+    "thesis": "[LLM] FTP functions as a unified control mechanism: ALM adjusts the FTP curve by tenor to create behavioral incentives for business units — raising Liquidity Spread on short tenors when LCR is below target causes Liability Centers to push short-term deposit gathering (improving HQLA) and Asset Centers to reduce short-tenor lending; raising Liquidity Spread on long tenors when NSFR is deficient incentivizes stable long-term funding. The FTP mechanism automatically separates pricing risk (stays with business unit as fixed margin) from structural risk (transferred to ALM), creating clear risk ownership across the bank.",
+    "tags": [
+      "ftp",
+      "alm",
+      "liquidity_risk",
+      "irrbb",
+      "lcr",
+      "nsfr",
+      "risk_transfer",
+      "balance_sheet_control",
+      "incentive_mechanism"
+    ],
+    "domain": "alm"
+  },
+  {
+    "node_id": "supply_chain_non_linear_shock_structural_amplification_001",
+    "stem": "Supply_Chain_Non_Linear_Shock_Structural_Amplification",
+    "label": "Supply Chain Non-Linear Shock Structural Amplification",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Supply_Chain_Non_Linear_Shock_Structural_Amplification.md",
+    "confidence": 1,
+    "thesis": "[LLM] When a supply disruption (e.g., Hormuz closure) exhausts buffer capacity in multi-stage production networks, it triggers a structural cascade through input-output linkages that is automatic and conditional only on shock magnitude — distinct from the behavioral amplifier (wage-price spiral) that central banks monitor through expectations data. The structural channel shows up first in sectoral PPI, delivery times, and inventory drawdowns rather than CPI expectations surveys, meaning central banks using the behavioral second-round framework may miss the early phase entirely.",
+    "tags": [
+      "supply_chain",
+      "non_linear_shock",
+      "production_network",
+      "inflation_transmission",
+      "gscpi",
+      "supply_shock",
+      "hormuz",
+      "cb_policy"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "private_credit_subscription_nav_lending_hidden_leverage_001",
     "stem": "Private_Credit_Subscription_Nav_Lending_Hidden_Leverage",
     "label": "Private Credit Subscription NAV Lending Hidden Leverage",
@@ -1082,6 +1144,27 @@
       "bcbs144"
     ],
     "domain": "banking_regulation"
+  },
+  {
+    "node_id": "cb_fx_options_and_cancelable_forward_intervention_structures_001",
+    "stem": "Cb_Fx_Options_And_Cancelable_Forward_Intervention_Structures",
+    "label": "CB FX Options And Cancelable Forward Intervention Structures",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Cb_Fx_Options_And_Cancelable_Forward_Intervention_Structures.md",
+    "confidence": 1,
+    "thesis": "[LLM] Central banks use FX options primarily as buyers (purchasing the right to intervene at a strike price) rather than sellers, because selling options creates unlimited downside exposure. Cancelable forwards give the CB the right to cancel delivery if market conditions change, functioning as a forward plus an embedded option — useful for signaling commitment while preserving optionality, but at a wider bid-ask spread. Zero-cost structures (seagull, range forward) create rate corridors with no upfront premium but bind the CB to deliver within a range, converting discretionary intervention into a semi-automatic rule.",
+    "tags": [
+      "fx_intervention",
+      "fx_options",
+      "cancelable_forward",
+      "seagull",
+      "range_forward",
+      "zero_cost_structure",
+      "optionality",
+      "em_policy",
+      "reserve_management"
+    ],
+    "domain": "monetary_policy"
   },
   {
     "node_id": "volcker_disinflation_sacrifice_ratio_channel_mec_001",
@@ -1544,6 +1627,26 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "maturity_gap_analysis_interest_rate_risk_banking_book_001",
+    "stem": "Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book",
+    "label": "Maturity Gap Analysis Interest Rate Risk Banking Book",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book.md",
+    "confidence": 1,
+    "thesis": "[LLM] Maturity gap analysis measures IRRBB by bucketing rate-sensitive assets and liabilities into repricing time bands; a positive gap (assets reprice faster than liabilities) generates net interest income risk when rates fall, while a negative gap generates risk when rates rise. The EVE (Economic Value of Equity) perspective computes the present value sensitivity of the entire balance sheet to a parallel rate shift, while the NII (Net Interest Income) perspective measures earnings impact over a 12-month horizon — Basel IRRBB standards (d368/BCBS) require both.",
+    "tags": [
+      "irrbb",
+      "gap_analysis",
+      "eve",
+      "nii",
+      "repricing_risk",
+      "banking_book",
+      "alm",
+      "basel_irrbb"
+    ],
+    "domain": "alm"
+  },
+  {
     "node_id": "capital_flow_management_cfm_taxonomy_001",
     "stem": "Capital_Flow_Management_CFM_Taxonomy_Triggers_Instruments",
     "label": "Capital Flow Management — Taxonomy, Triggers, and Instruments",
@@ -1821,25 +1924,6 @@
     "domain": "monetary_policy"
   },
   {
-    "node_id": "supply_shock_production_network_cascade_amplification_001",
-    "stem": "Supply_Shock_Production_Network_Cascade_Amplification",
-    "label": "Supply Shock Production Network Cascade Amplification",
-    "source": "wiki",
-    "source_file": "03_wiki/mechanisms/Supply_Shock_Production_Network_Cascade_Amplification.md",
-    "confidence": 1,
-    "thesis": "[LLM] Supply shocks propagate through two analytically distinct amplifiers: (1) a structural amplifier — automatic, rooted in input-output architecture of multi-stage production networks, triggered once buffer capacity is exhausted and independent of expectations; (2) a behavioural amplifier — conditional on labour market tightness and salience of inflation to wage- and price-setters (classical second-round effects). Standard central bank frameworks subsume the structural channel under indirect effects rather than treating it as a separate non-linear propagation mechanism with its own policy timing implications.",
-    "tags": [
-      "supply_shock",
-      "inflation_transmission",
-      "production_network",
-      "nonlinear_dynamics",
-      "input_output",
-      "second_round_effects",
-      "supply_chain"
-    ],
-    "domain": "monetary_policy"
-  },
-  {
     "node_id": "pbc_interest_rate_transmission_dr007_to_lpr_001",
     "stem": "Pbc_Interest_Rate_Transmission_Dr007_To_Lpr",
     "label": "PBC Interest Rate Transmission DR007 to LPR",
@@ -1919,6 +2003,27 @@
       "tightening"
     ],
     "domain": "monetary_policy"
+  },
+  {
+    "node_id": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
+    "stem": "Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling",
+    "label": "Behavioralization Non-Maturity Deposit ALM — Prepayment Early Withdrawal Modeling",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling.md",
+    "confidence": 1,
+    "thesis": "[LLM] Behavioralization is the ALM process of converting contractual cash flows of products with embedded optionality (non-maturity deposits, overdrafts, fixed-rate mortgages with prepayment) into modeled behavioral cash flows for interest rate risk and liquidity risk measurement. For term deposits, two behavioral probabilities drive the model: renewal probability (fraction that rolls over at maturity) and early withdrawal probability (fraction that exits before contractual maturity). These probabilities transform the contractual term structure into a behavioral term structure used for gap analysis and FTP curve application.",
+    "tags": [
+      "alm",
+      "behavioral_model",
+      "nmd",
+      "term_deposit",
+      "early_withdrawal",
+      "prepayment",
+      "irrbb",
+      "ftp",
+      "behaviouralization"
+    ],
+    "domain": "alm"
   },
   {
     "node_id": "pbc_medium_term_lending_facility_rate_transmission_001",
@@ -2214,6 +2319,27 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "cb_fx_swap_intervention_mechanics_and_off_balance_sheet_exposure_001",
+    "stem": "Cb_Fx_Swap_Intervention_Mechanics_And_Off_Balance_Sheet_Exposure",
+    "label": "CB FX Swap Intervention Mechanics And Off Balance Sheet Exposure",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Cb_Fx_Swap_Intervention_Mechanics_And_Off_Balance_Sheet_Exposure.md",
+    "confidence": 1,
+    "thesis": "[LLM] A central bank FX swap (buy-sell or sell-buy) consists of two legs settled at different dates: the near leg changes NFA immediately, while the far leg creates an off-balance-sheet forward commitment that reverses the NFA position at maturity. CB use swaps rather than spot to (1) inject/drain FX liquidity temporarily without permanently depleting reserves, (2) obscure intervention scale from monthly reserve reports, and (3) provide short-term dollar funding to commercial banks without surrendering spot reserves. The outstanding far-leg book reduces net effective reserves below reported gross reserves.",
+    "tags": [
+      "fx_intervention",
+      "fx_swap",
+      "off_balance_sheet",
+      "nfa",
+      "reserve_management",
+      "sterilization",
+      "dollar_liquidity",
+      "hidden_reserves",
+      "em_policy"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
     "node_id": "dv01_duration_001",
     "stem": "DV01_Duration_Convexity_Fixed_Income",
     "label": "DV01, Duration, and Convexity — Fixed Income Risk Measures",
@@ -2270,24 +2396,6 @@
       "morning_repos",
       "srf_ceiling",
       "dealer_balance_sheet"
-    ],
-    "domain": "monetary_policy"
-  },
-  {
-    "node_id": "tax_extinguishment_as_proof_of_currency_liability_status_001",
-    "stem": "Tax_Extinguishment_As_Proof_Of_Currency_Liability_Status",
-    "label": "Tax Extinguishment As Proof Of Currency Liability Status",
-    "source": "wiki",
-    "source_file": "03_wiki/mechanisms/Tax_Extinguishment_As_Proof_Of_Currency_Liability_Status.md",
-    "confidence": 1,
-    "thesis": "[LLM] The mechanism that confirms currency is a central bank liability: (1) taxpayer owes taxes → Treasury holds a tax-claim asset; (2) taxpayer pays in currency → Treasury's tax-claim asset decreases; (3) therefore currency must have been an asset to the taxpayer, making it a liability of the issuer. This tax-payment property distinguishes currency from equity or seigniorage revenue.",
-    "tags": [
-      "currency",
-      "central_bank_balance_sheet",
-      "tax",
-      "liability",
-      "fed_act_section_16",
-      "monetary_base"
     ],
     "domain": "monetary_policy"
   },
@@ -2443,6 +2551,27 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "overdraft_behavioral_model_utilization_rate_and_drawdown_alm_cashflow_001",
+    "stem": "Overdraft_Behavioral_Model_Utilization_Rate_And_Drawdown_Alm_Cashflow",
+    "label": "Overdraft Behavioral Model — Utilization Rate And Drawdown ALM Cashflow",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Overdraft_Behavioral_Model_Utilization_Rate_And_Drawdown_Alm_Cashflow.md",
+    "confidence": 1,
+    "thesis": "[LLM] Overdraft (OD) behavioral modeling in ALM estimates two behavioral parameters: (1) average utilization rate — the fraction of committed overdraft limits actually drawn at any time, and (2) drawdown behavior — whether drawdowns are correlated with credit/liquidity stress scenarios. Unlike term deposits, overdrafts are revolving facilities with no contractual maturity; behavioral modeling transforms committed limits into expected cashflow profiles for IRRBB (EVE/NII gap) and liquidity (LCR outflow rate) calculations. The PwC framework for ABBank (BC030306) prescribes statistical estimation of utilization rates by customer segment and product type.",
+    "tags": [
+      "alm",
+      "behavioral_model",
+      "overdraft",
+      "utilization_rate",
+      "drawdown",
+      "irrbb",
+      "liquidity_risk",
+      "lcr",
+      "revolving_credit"
+    ],
+    "domain": "alm"
+  },
+  {
     "node_id": "ample_reserves_buffer_sizing_tga_volatility_001",
     "stem": "Ample_Reserves_Buffer_Sizing_Tga_Volatility",
     "label": "Ample Reserves Buffer Sizing TGA Volatility",
@@ -2495,7 +2624,7 @@
       "banking_book",
       "hedge"
     ],
-    "domain": "monetary_policy"
+    "domain": "alm"
   },
   {
     "node_id": "cb_fx_target_five_entity_balance_sheet_trace_001",
@@ -2536,6 +2665,27 @@
       "money_market",
       "reserves",
       "debt_limit"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
+    "node_id": "cb_fx_forward_and_ndf_intervention_delivery_versus_cash_settlement_001",
+    "stem": "Cb_Fx_Forward_And_Ndf_Intervention_Delivery_Versus_Cash_Settlement",
+    "label": "CB FX Forward And NDF Intervention Delivery Versus Cash Settlement",
+    "source": "wiki",
+    "source_file": "03_wiki/mechanisms/Cb_Fx_Forward_And_Ndf_Intervention_Delivery_Versus_Cash_Settlement.md",
+    "confidence": 1,
+    "thesis": "[LLM] Outright forwards commit the CB to deliver actual FX at a future date at a pre-agreed rate, creating an off-balance-sheet obligation that only affects NFA at settlement — allowing the CB to signal rate commitment without immediate reserve cost, but creating delivery risk if reserves are insufficient at maturity. NDFs (Non-Deliverable Forwards) settle the profit/loss in domestic currency with no FX delivery, enabling CB intervention in offshore markets or for restricted currencies without touching gross reserves; the tradeoff is that NDF exposure does not appear in reserve reports, creating opacity around the true cost of intervention.",
+    "tags": [
+      "fx_intervention",
+      "forward",
+      "ndf",
+      "off_balance_sheet",
+      "delivery_risk",
+      "offshore_fx",
+      "reserve_management",
+      "em_policy",
+      "capital_controls"
     ],
     "domain": "monetary_policy"
   },
@@ -2673,7 +2823,27 @@
       "alm",
       "interest_rate_risk"
     ],
-    "domain": "monetary_policy"
+    "domain": "alm"
+  },
+  {
+    "node_id": "bank_alm_banking_book_risk_management_framework_001",
+    "stem": "Bank_Alm_Banking_Book_Risk_Management_Framework",
+    "label": "Bank ALM Banking Book Risk Management Framework",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Bank_Alm_Banking_Book_Risk_Management_Framework.md",
+    "confidence": 1,
+    "thesis": "[LLM] Asset-Liability Management (ALM) in commercial banks centrally manages the three core banking book risks — Interest Rate Risk in the Banking Book (IRRBB), liquidity risk, and structural currency risk — by controlling the balance sheet composition through Funds Transfer Pricing (FTP), gap analysis, and behavioral modeling of non-maturity deposits. ALM separates business unit pricing risk from structural balance sheet risk: business units book matched-maturity FTP rates and earn only customer margin, while the ALM desk absorbs all repricing, maturity transformation, and behavioral option risk.",
+    "tags": [
+      "alm",
+      "irrbb",
+      "liquidity_risk",
+      "banking_book",
+      "ftp",
+      "gap_analysis",
+      "balance_sheet_management",
+      "basel3"
+    ],
+    "domain": "alm"
   },
   {
     "node_id": "sovereign_debt_intervention_ladder_001",
@@ -2922,27 +3092,6 @@
     "domain": "monetary_policy"
   },
   {
-    "node_id": "central_bank_energy_price_shock_three_stage_taxonomy_001",
-    "stem": "Central_Bank_Energy_Price_Shock_Three_Stage_Taxonomy",
-    "label": "Central Bank Energy Price Shock Three Stage Taxonomy",
-    "source": "wiki",
-    "source_file": "03_wiki/frameworks/Central_Bank_Energy_Price_Shock_Three_Stage_Taxonomy.md",
-    "confidence": 1,
-    "thesis": "[LLM] Central banks apply a three-part taxonomy when responding to energy price shocks: (1) direct effects — immediate pass-through to headline CPI via energy prices; (2) indirect effects — cost pass-through via energy-intensive intermediate goods and production inputs; (3) second-round effects — changes in wage- and price-setting behaviour that outlast the original shock. Policy is calibrated to look through direct and indirect effects unless second-round effects materialize (expectations drift), but this framework may miss structural cascade propagation that precedes any expectations move.",
-    "tags": [
-      "supply_shock",
-      "monetary_policy_framework",
-      "inflation",
-      "energy_shock",
-      "boe",
-      "fed",
-      "boj",
-      "second_round_effects",
-      "policy_framework"
-    ],
-    "domain": "monetary_policy"
-  },
-  {
     "node_id": "fed_ample_reserves_range_floor_frm_001",
     "stem": "Fed_Ample_Reserves_Range_Floor_Framework",
     "label": "Fed Ample Reserves Range Floor Framework",
@@ -3157,6 +3306,26 @@
       "quasi_fiscal"
     ],
     "domain": "fiscal_policy"
+  },
+  {
+    "node_id": "central_bank_supply_shock_policy_framework_direct_indirect_second_round_effects_001",
+    "stem": "Central_Bank_Supply_Shock_Policy_Framework_Direct_Indirect_Second_Round_Effects",
+    "label": "Central Bank Supply Shock Policy Framework — Direct Indirect Second Round Effects",
+    "source": "wiki",
+    "source_file": "03_wiki/frameworks/Central_Bank_Supply_Shock_Policy_Framework_Direct_Indirect_Second_Round_Effects.md",
+    "confidence": 1,
+    "thesis": "[LLM] The standard CB framework for a negative supply shock partitions effects into: (1) direct effects — immediate pass-through to headline prices; (2) indirect effects — second-order cost increases spreading across the production network; and (3) second-round effects — changes in wage- and price-setting behavior that outlast the original shock. Policy responds to (3) only, holding through (1) and (2) unless longer-term expectations move. This taxonomy is incomplete when the structural production-network cascade is present, because the cascade amplifies prices through channels that do not require expectations to move first.",
+    "tags": [
+      "supply_shock",
+      "inflation",
+      "monetary_policy",
+      "central_bank",
+      "fed",
+      "boe",
+      "boj",
+      "second_round_effects"
+    ],
+    "domain": "monetary_policy"
   },
   {
     "node_id": "fed_volatility_suppressor_secured_standard_001",
@@ -3725,6 +3894,42 @@
     "domain": "financial_markets"
   },
   {
+    "node_id": "central_bank_currency_liability_tax_redemption_and_currency_franchise_001",
+    "stem": "Central_Bank_Currency_Liability_Tax_Redemption_And_Currency_Franchise",
+    "label": "Central Bank Currency Liability Tax Redemption And Currency Franchise",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Central_Bank_Currency_Liability_Tax_Redemption_And_Currency_Franchise.md",
+    "confidence": 1,
+    "thesis": "[LLM] Currency is a liability of the central bank not because of formal redemption rights (convertibility to gold is gone) but because it extinguishes tax obligations — paying taxes with currency reduces the Treasury's tax-claim asset, so currency must be a liability of the issuer. This accounting identity also implies the \"currency franchise\": the value a central bank captures by issuing a liability (currency) that provides services (liquidity, legal tender status) to holders, analogous to the deposit franchise of commercial banks.",
+    "tags": [
+      "central_bank_balance_sheet",
+      "currency",
+      "fed",
+      "monetary_liability",
+      "currency_franchise",
+      "seigniorage",
+      "tax_payment"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
+    "node_id": "overdraft_behavioral_model_ppl_pts_policy_specification_001",
+    "stem": "Overdraft_Behavioral_Model_Ppl_Pts_Policy_Specification",
+    "label": "Overdraft Behavioral Model — PPL PTS Policy Specification",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Overdraft_Behavioral_Model_Ppl_Pts_Policy_Specification.md",
+    "confidence": 1,
+    "thesis": "[LLM] The PPL PTS variant of BC030306 defines governance parameters for ABBank overdraft behavioral modeling: ALCO approval thresholds, maximum modeled utilization deviation from historical average, and stress scenario requirements for drawdown rate assumptions.",
+    "tags": [
+      "alm",
+      "behavioral_model",
+      "overdraft",
+      "policy_procedure_limit",
+      "abbank"
+    ],
+    "domain": "alm"
+  },
+  {
     "node_id": "fed_balance_sheet_size_and_policy_rate_independence_con_001",
     "stem": "Fed_Balance_Sheet_Size_And_Policy_Rate_Independence",
     "label": "Fed Balance Sheet Size and Policy Rate Independence",
@@ -3820,6 +4025,23 @@
     "domain": "financial_markets"
   },
   {
+    "node_id": "term_deposit_behavioral_model_pts_variant_parameter_specification_001",
+    "stem": "Term_Deposit_Behavioral_Model_Pts_Variant_Parameter_Specification",
+    "label": "Term Deposit Behavioral Model — PTS Variant Parameter Specification",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Term_Deposit_Behavioral_Model_Pts_Variant_Parameter_Specification.md",
+    "confidence": 1,
+    "thesis": "[LLM] The PTS (parameter/technical specification) variant of the ABBank term deposit behavioral model (BC030304) provides the detailed mathematical specification of the renewal and early withdrawal probability functions, including distributional assumptions, estimation methodology, and back-testing procedures. This document complements the HDSD (user guide) by defining model internals rather than operational procedures.",
+    "tags": [
+      "alm",
+      "behavioral_model",
+      "term_deposit",
+      "parameter_specification",
+      "abbank"
+    ],
+    "domain": "alm"
+  },
+  {
     "node_id": "financial_procyclicality_accelerator_macroprudential_001",
     "stem": "Financial_Procyclicality_Accelerator_Macroprudential_Instruments",
     "label": "Financial Procyclicality Financial Accelerator And Macroprudential Instruments",
@@ -3896,6 +4118,48 @@
     "domain": "financial_markets"
   },
   {
+    "node_id": "non_maturity_deposit_and_revolving_facility_behavioral_assumptions_alco_governance_001",
+    "stem": "Non_Maturity_Deposit_And_Revolving_Facility_Behavioral_Assumptions_Alco_Governance",
+    "label": "Non-Maturity Deposit And Revolving Facility Behavioral Assumptions ALCO Governance",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Non_Maturity_Deposit_And_Revolving_Facility_Behavioral_Assumptions_Alco_Governance.md",
+    "confidence": 1,
+    "thesis": "[LLM] Non-maturity deposits (savings, current accounts) and revolving facilities (overdrafts, credit cards) require behavioral assumptions to replace missing contractual maturities in ALM models. ALCO governs these assumptions through an annual review cycle: behavioral assumptions (average life, core/non-core deposit split, utilization rates) must be back-tested against realized data, stress-tested against historical scenarios (rate shocks, credit events), and validated by an independent model validation function. Basel IRRBB supervisory expectations (BCBS d368) require banks to document and justify behavioral assumptions and update them when conditions change materially.",
+    "tags": [
+      "alm",
+      "nmd",
+      "behavioral_assumptions",
+      "alco",
+      "irrbb",
+      "core_deposit",
+      "model_validation",
+      "Basel_irrbb",
+      "revolving_facility"
+    ],
+    "domain": "alm"
+  },
+  {
+    "node_id": "ftp_curve_construction_by_tenor_short_medium_long_term_spread_framework_001",
+    "stem": "Ftp_Curve_Construction_By_Tenor_Short_Medium_Long_Term_Spread_Framework",
+    "label": "FTP Curve Construction By Tenor — Short Medium Long Term Spread Framework",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Ftp_Curve_Construction_By_Tenor_Short_Medium_Long_Term_Spread_Framework.md",
+    "confidence": 1,
+    "thesis": "[LLM] FTP curves are constructed by tenor zone: short-term (O/N to 3M) anchored to interbank rates (VNIBOR or equivalent) when markets are liquid; medium-term (6M to 2Y) reflects the bank's own senior debt issuance cost adjusted by an ALCO-determined dampening factor; long-term (3Y+) is based on long-term bond issuance cost plus a term premium for interest rate and liquidity uncertainty. The FTP curve must be marked to market regularly and approved by ALCO, since it directly determines profitability allocation and risk incentives across all business lines.",
+    "tags": [
+      "ftp",
+      "alm",
+      "ftp_curve",
+      "tenor",
+      "vnibor",
+      "alco",
+      "term_premium",
+      "cost_of_funds",
+      "senior_debt"
+    ],
+    "domain": "alm"
+  },
+  {
     "node_id": "currency_fed_liability_con_001",
     "stem": "Currency_As_A_Central_Bank_Liability",
     "label": "Currency as a Central Bank Liability",
@@ -3909,6 +4173,30 @@
       "accounting",
       "taxation",
       "monetary_theory"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
+    "node_id": "ma_balance_sheet_oin_other_items_net_absorber_mechanics_001",
+    "stem": "Ma_Balance_Sheet_Oin_Other_Items_Net_Absorber_Mechanics",
+    "label": "MA Balance Sheet OIN Other Items Net Absorber Mechanics",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Ma_Balance_Sheet_Oin_Other_Items_Net_Absorber_Mechanics.md",
+    "confidence": 3,
+    "thesis": "OIN (Other Items Net) is the mandatory residual in the MA identity RM = NFA + NCG + Cb + OIN: any change in assets or liabilities that does not alter RM flows into OIN, making it a balance-sheet absorber that simultaneously captures (1) FX revaluation gains/losses on NFA when exchange rates change without actual transactions, (2) cumulative quasi-fiscal losses from sterilization as retained earnings decline, and (3) recapitalization injections when government restores CB capital. Negative OINm signals CB capital exhaustion and a latent fiscal cost that precedes formal recapitalization; in M2 decomposition, the OINb weight (ΔOINb/OINb × OINb/M2) isolates the quasi-fiscal and valuation component of broad money growth from genuine credit expansion.",
+    "tags": [
+      "oin",
+      "balance_sheet",
+      "valuation_adjustment",
+      "quasi_fiscal",
+      "recapitalization",
+      "monetary_survey",
+      "reserve_money",
+      "cb_capital",
+      "revaluation",
+      "absorber",
+      "monetary_authority",
+      "em_policy"
     ],
     "domain": "monetary_policy"
   },
@@ -3931,6 +4219,27 @@
       "bindseil"
     ],
     "domain": "monetary_policy"
+  },
+  {
+    "node_id": "funds_transfer_pricing_rate_decomposition_base_liquidity_credit_optionality_components_001",
+    "stem": "Funds_Transfer_Pricing_Rate_Decomposition_Base_Liquidity_Credit_Optionality_Components",
+    "label": "Funds Transfer Pricing Rate Decomposition — Base Liquidity Credit Optionality Components",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Funds_Transfer_Pricing_Rate_Decomposition_Base_Liquidity_Credit_Optionality_Components.md",
+    "confidence": 1,
+    "thesis": "[LLM] FTP Rate = Base Rate + Liquidity Spread + Credit Spread + Optionality Cost: the Base Rate (risk-free reference, e.g., VNIBOR/SBV rate) transmits monetary policy; the Liquidity Spread (term liquidity premium, marginal funding cost) transmits to liquidity risk and drives LCR/NSFR compliance incentives; the Credit Spread (expected loss + economic capital) transmits to credit risk; and Optionality Cost (embedded options: prepayment, early withdrawal) transmits to behavioral risk. Each component routes a distinct risk type to the ALM desk for centralized management.",
+    "tags": [
+      "ftp",
+      "alm",
+      "funds_transfer_pricing",
+      "liquidity_spread",
+      "credit_spread",
+      "irrbb",
+      "optionality_cost",
+      "base_rate",
+      "liquidity_risk"
+    ],
+    "domain": "alm"
   },
   {
     "node_id": "cb_reserve_system_constraint_multiplier_myth_001",
@@ -3968,6 +4277,27 @@
       "rmb"
     ],
     "domain": "monetary_policy"
+  },
+  {
+    "node_id": "vietnam_bank_ftp_methodology_implementation_vietabank_ey_framework_001",
+    "stem": "Vietnam_Bank_Ftp_Methodology_Implementation_Vietabank_Ey_Framework",
+    "label": "Vietnam Bank FTP Methodology Implementation — VietABank EY Framework",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Vietnam_Bank_Ftp_Methodology_Implementation_Vietabank_Ey_Framework.md",
+    "confidence": 1,
+    "thesis": "[LLM] VietABank (VAB) implemented an FTP system designed by EY to establish internal fund pricing as the backbone of ALM governance; the methodology defines FTP rate construction rules aligned with Vietnam money market conditions (VNIBOR, SBV policy rate), prescribes liquidity spread calculation for each product tenor, and sets governance rules for ALCO approval of FTP parameters. As a Vietnam commercial bank case, this methodology reflects adaptation of Basel-aligned FTP best practices to a partially dollarized, SBV-managed-float environment where VNIBOR can be illiquid at certain tenors.",
+    "tags": [
+      "ftp",
+      "alm",
+      "vietnam",
+      "vietabank",
+      "vnibor",
+      "sbv",
+      "alco",
+      "liquidity_spread",
+      "cost_of_funds"
+    ],
+    "domain": "alm"
   },
   {
     "node_id": "transition_economy_monetary_issues_001",
@@ -4024,25 +4354,6 @@
       "sovereign_bond",
       "eurozone",
       "macroprudential"
-    ],
-    "domain": "monetary_policy"
-  },
-  {
-    "node_id": "currency_as_central_bank_liability_001",
-    "stem": "Currency_As_Central_Bank_Liability",
-    "label": "Currency As Central Bank Liability",
-    "source": "wiki",
-    "source_file": "03_wiki/concepts/Currency_As_Central_Bank_Liability.md",
-    "confidence": 1,
-    "thesis": "[LLM] Central bank-issued currency is classified as a liability — not an asset — because it extinguishes the holder's tax obligation to the government: paying taxes with currency reduces the Treasury's tax-claim asset by an equal amount, confirming the currency was an asset to the holder and a liability to the issuer. The legal basis in the US is Federal Reserve Act Section 16.",
-    "tags": [
-      "central_bank_balance_sheet",
-      "currency",
-      "seigniorage",
-      "fed",
-      "liability",
-      "tax_payment",
-      "monetary_base"
     ],
     "domain": "monetary_policy"
   },
@@ -4238,6 +4549,23 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "overdraft_behavioral_model_pts_variant_parameter_specification_001",
+    "stem": "Overdraft_Behavioral_Model_Pts_Variant_Parameter_Specification",
+    "label": "Overdraft Behavioral Model — PTS Variant Parameter Specification",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Overdraft_Behavioral_Model_Pts_Variant_Parameter_Specification.md",
+    "confidence": 1,
+    "thesis": "[LLM] The PTS variant of the ABBank overdraft behavioral model (BC030306) provides detailed statistical methodology for estimating overdraft utilization rates by segment, including model calibration procedures and confidence interval requirements.",
+    "tags": [
+      "alm",
+      "behavioral_model",
+      "overdraft",
+      "parameter_specification",
+      "abbank"
+    ],
+    "domain": "alm"
+  },
+  {
     "node_id": "warsh_balance_sheet_stimulus_swap_con_001",
     "stem": "Warsh_Balance_Sheet_Stimulus_Swap",
     "label": "Warsh Balance Sheet Stimulus Swap",
@@ -4292,6 +4620,85 @@
       "cfets",
       "bbop",
       "crawling_peg"
+    ],
+    "domain": "monetary_policy"
+  },
+  {
+    "node_id": "bank_alm_structural_liquidity_management_nsfr_lcr_framework_001",
+    "stem": "Bank_Alm_Structural_Liquidity_Management_Nsfr_Lcr_Framework",
+    "label": "Bank ALM Structural Liquidity Management NSFR LCR Framework",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Bank_Alm_Structural_Liquidity_Management_Nsfr_Lcr_Framework.md",
+    "confidence": 1,
+    "thesis": "[LLM] Structural liquidity management in ALM distinguishes between short-term liquidity (LCR — survival over 30-day stress) and structural funding stability (NSFR — alignment of long-term assets with stable funding over 1 year). ALM manages structural liquidity by ensuring the bank's funding tenor profile matches its asset maturity profile, avoiding over-reliance on short-term wholesale funding that creates rollover risk. Basel III LCR and NSFR create binding quantitative constraints that ALM must embed into FTP curve construction and balance sheet limits.",
+    "tags": [
+      "alm",
+      "liquidity_risk",
+      "nsfr",
+      "lcr",
+      "structural_liquidity",
+      "basel3",
+      "funding_stability",
+      "rollover_risk"
+    ],
+    "domain": "alm"
+  },
+  {
+    "node_id": "term_deposit_behavioral_model_ppl_pts_policy_specification_001",
+    "stem": "Term_Deposit_Behavioral_Model_Ppl_Pts_Policy_Specification",
+    "label": "Term Deposit Behavioral Model — PPL PTS Policy Specification",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Term_Deposit_Behavioral_Model_Ppl_Pts_Policy_Specification.md",
+    "confidence": 1,
+    "thesis": "[LLM] The PPL PTS (Policy Procedure Limit — parameter/technical specification) variant of BC030304 defines the governance parameters for ABBank term deposit behavioral modeling with precise quantitative limits and statistical thresholds for model acceptance.",
+    "tags": [
+      "alm",
+      "behavioral_model",
+      "term_deposit",
+      "policy_procedure_limit",
+      "abbank"
+    ],
+    "domain": "alm"
+  },
+  {
+    "node_id": "term_deposit_alm_governance_policy_procedure_limit_framework_001",
+    "stem": "Term_Deposit_Alm_Governance_Policy_Procedure_Limit_Framework",
+    "label": "Term Deposit ALM Governance — Policy Procedure Limit Framework",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Term_Deposit_Alm_Governance_Policy_Procedure_Limit_Framework.md",
+    "confidence": 1,
+    "thesis": "[LLM] The policy/procedure/limit (PPL) framework for term deposit behavioral modeling defines: governance (ALCO approval of behavioral assumptions, annual model review cycle), model limits (maximum modeled duration extension beyond contractual maturity, minimum confidence interval for renewal probability), and procedure (data requirements, parameter estimation methodology, back-testing against realized renewal rates). PwC ABBank framework (BC030304) sets these constraints to ensure behavioral models remain conservative and auditable under Basel IRRBB supervisory review.",
+    "tags": [
+      "alm",
+      "governance",
+      "behavioral_model",
+      "term_deposit",
+      "policy_procedure_limit",
+      "alco",
+      "irrbb",
+      "model_validation"
+    ],
+    "domain": "alm"
+  },
+  {
+    "node_id": "cb_hidden_fx_reserves_net_effective_intervention_capacity_001",
+    "stem": "Cb_Hidden_Fx_Reserves_Net_Effective_Intervention_Capacity",
+    "label": "CB Hidden FX Reserves Net Effective Intervention Capacity",
+    "source": "wiki",
+    "source_file": "03_wiki/concepts/Cb_Hidden_Fx_Reserves_Net_Effective_Intervention_Capacity.md",
+    "confidence": 1,
+    "thesis": "[LLM] Gross FX reserves as officially reported overstate a central bank's true intervention capacity when the CB carries outstanding FX swap far legs, outright forward delivery obligations, or collateral posted for hedges — all of which are off-balance-sheet claims on those reserves. Net effective reserves (gross minus all forward and swap obligations) is the quantity that determines how long a CB can sustain spot intervention; historical EM crises (Thailand 1997, Turkey 2021) featured gross reserves that appeared adequate while net reserves were near zero or negative due to hidden forward book.",
+    "tags": [
+      "fx_reserves",
+      "hidden_reserves",
+      "net_effective_reserves",
+      "off_balance_sheet",
+      "reserve_adequacy",
+      "fx_swap",
+      "forward",
+      "em_crisis",
+      "bpm6",
+      "bis"
     ],
     "domain": "monetary_policy"
   },
@@ -8182,7 +8589,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0001",
@@ -8193,7 +8600,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0002",
@@ -8204,7 +8611,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0003",
@@ -8215,7 +8622,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0004",
@@ -8226,7 +8633,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0005",
@@ -8237,7 +8644,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0006",
@@ -8248,7 +8655,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0007",
@@ -8259,7 +8666,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0008",
@@ -8270,7 +8677,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0009",
@@ -8281,7 +8688,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0010",
@@ -8292,7 +8699,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0011",
@@ -8303,7 +8710,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0012",
@@ -8314,7 +8721,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0013",
@@ -8325,7 +8732,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0014",
@@ -8336,7 +8743,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0015",
@@ -8347,7 +8754,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0016",
@@ -8358,7 +8765,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0017",
@@ -8369,7 +8776,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0018",
@@ -8380,7 +8787,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0019",
@@ -8391,7 +8798,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0020",
@@ -8402,7 +8809,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0021",
@@ -8413,7 +8820,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0022",
@@ -8424,7 +8831,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0023",
@@ -8435,7 +8842,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0024",
@@ -8446,7 +8853,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0025",
@@ -8457,7 +8864,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0026",
@@ -8468,7 +8875,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0027",
@@ -8479,7 +8886,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0028",
@@ -8490,7 +8897,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0029",
@@ -8501,7 +8908,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0030",
@@ -8512,7 +8919,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0031",
@@ -8523,7 +8930,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0032",
@@ -8534,7 +8941,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0033",
@@ -8545,7 +8952,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0034",
@@ -8556,7 +8963,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0035",
@@ -8567,7 +8974,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0036",
@@ -8578,7 +8985,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0037",
@@ -8589,7 +8996,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0038",
@@ -8600,7 +9007,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0039",
@@ -8611,7 +9018,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0040",
@@ -8622,7 +9029,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0041",
@@ -8633,7 +9040,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0042",
@@ -8644,7 +9051,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0043",
@@ -8655,7 +9062,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0044",
@@ -8666,7 +9073,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0045",
@@ -8677,7 +9084,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0046",
@@ -8688,7 +9095,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0047",
@@ -8699,7 +9106,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0048",
@@ -8710,7 +9117,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0049",
@@ -8721,7 +9128,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0050",
@@ -8732,7 +9139,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0051",
@@ -8743,7 +9150,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0052",
@@ -8754,7 +9161,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0053",
@@ -8765,7 +9172,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0054",
@@ -8776,7 +9183,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0055",
@@ -8787,7 +9194,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0056",
@@ -8798,7 +9205,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0057",
@@ -8809,7 +9216,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0058",
@@ -8820,7 +9227,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0059",
@@ -8831,7 +9238,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0060",
@@ -8842,7 +9249,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0061",
@@ -8853,7 +9260,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0062",
@@ -8864,7 +9271,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0063",
@@ -8875,7 +9282,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0064",
@@ -8886,7 +9293,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0065",
@@ -8897,7 +9304,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0066",
@@ -8908,7 +9315,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0067",
@@ -8919,7 +9326,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0068",
@@ -8930,7 +9337,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0069",
@@ -8941,7 +9348,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0070",
@@ -8952,7 +9359,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0071",
@@ -8963,7 +9370,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0072",
@@ -8974,7 +9381,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0073",
@@ -8985,7 +9392,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0074",
@@ -8996,7 +9403,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0075",
@@ -9007,7 +9414,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0076",
@@ -9018,7 +9425,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0077",
@@ -9029,7 +9436,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0078",
@@ -9040,7 +9447,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0079",
@@ -9051,7 +9458,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0080",
@@ -9062,7 +9469,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0081",
@@ -9073,7 +9480,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0082",
@@ -9084,7 +9491,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0083",
@@ -9095,7 +9502,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0084",
@@ -9106,7 +9513,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0085",
@@ -9117,7 +9524,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0086",
@@ -9128,7 +9535,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0087",
@@ -9139,7 +9546,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0088",
@@ -9150,7 +9557,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Elkenbracht_Huizing_Handbook_ALM__0089",
@@ -9161,7 +9568,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Singh_Collateral_Financial_Plumbing__0000",
@@ -17348,6 +17755,853 @@
     "domain": "monetary_policy"
   },
   {
+    "node_id": "raw__A - Asset liability optimization__0000",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0001",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0002",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0003",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0004",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0005",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0006",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0007",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0008",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0009",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0010",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0011",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0012",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0013",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0014",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0015",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0016",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0017",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0018",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0019",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0020",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0021",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0022",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0023",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0024",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0025",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0026",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0027",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0028",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0029",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0030",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0031",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0032",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0033",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0034",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0035",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0036",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0037",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0038",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0039",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0040",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0041",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0042",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0043",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0044",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0045",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Asset liability optimization__0046",
+    "stem": "A - Asset liability optimization",
+    "label": "A - Asset liability optimization",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Asset liability optimization.md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0000",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0001",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0002",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0003",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0004",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0005",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0006",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0007",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0008",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0009",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0010",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0011",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0012",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0013",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0014",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0015",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0016",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0017",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0018",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0019",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0020",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0021",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0022",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0023",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0024",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0025",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0026",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0027",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0028",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
+    "node_id": "raw__A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)__0029",
+    "stem": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "label": "A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021)",
+    "source": "raw",
+    "source_file": "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md",
+    "confidence": 0,
+    "thesis": "",
+    "tags": [],
+    "domain": "alm"
+  },
+  {
     "node_id": "raw__Tuckman_Serrat_Fixed_Income_2022__0000",
     "stem": "Tuckman_Serrat_Fixed_Income_2022",
     "label": "Tuckman_Serrat_Fixed_Income_2022",
@@ -23461,7 +24715,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0001",
@@ -23472,7 +24726,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0002",
@@ -23483,7 +24737,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0003",
@@ -23494,7 +24748,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0004",
@@ -23505,7 +24759,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0005",
@@ -23516,7 +24770,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0006",
@@ -23527,7 +24781,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0007",
@@ -23538,7 +24792,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0008",
@@ -23549,7 +24803,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0009",
@@ -23560,7 +24814,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0010",
@@ -23571,7 +24825,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0011",
@@ -23582,7 +24836,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0012",
@@ -23593,7 +24847,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0013",
@@ -23604,7 +24858,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0014",
@@ -23615,7 +24869,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0015",
@@ -23626,7 +24880,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0016",
@@ -23637,7 +24891,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0017",
@@ -23648,7 +24902,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0018",
@@ -23659,7 +24913,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0019",
@@ -23670,7 +24924,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0020",
@@ -23681,7 +24935,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0021",
@@ -23692,7 +24946,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0022",
@@ -23703,7 +24957,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0023",
@@ -23714,7 +24968,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0024",
@@ -23725,7 +24979,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0025",
@@ -23736,7 +24990,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0026",
@@ -23747,7 +25001,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0027",
@@ -23758,7 +25012,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0028",
@@ -23769,7 +25023,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0029",
@@ -23780,7 +25034,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0030",
@@ -23791,7 +25045,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0031",
@@ -23802,7 +25056,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Tata_Bank_ALM_2025__0032",
@@ -23813,7 +25067,7 @@
     "confidence": 0,
     "thesis": "",
     "tags": [],
-    "domain": "financial_markets"
+    "domain": "alm"
   },
   {
     "node_id": "raw__Neftci_Principles_of_Financial_Engineering__0000",
