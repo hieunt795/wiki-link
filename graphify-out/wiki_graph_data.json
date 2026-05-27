@@ -354,6 +354,133 @@
       "date_updated": "2026-05-26"
     },
     {
+      "id": "hqla_classification_level1_level2a_level2b_001",
+      "title": "Hqla Classification Level1 Level2a Level2b",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "hqla",
+        "lcr",
+        "liquidity_buffer",
+        "alm",
+        "bcbs",
+        "haircut"
+      ],
+      "thesis": "[LLM] Under the LCR, HQLA is classified into Level 1 (central bank reserves, sovereign/central bank debt with 0% RW — no haircut, no cap), Level 2A (sovereign debt ≥ AA-, RMBS, covered bonds — 15% haircut, ≤ 40% of total HQLA), and Level 2B (lower-rated corporate bonds, RMBS, equities meeting criteria — 25-50% haircuts, ≤ 15% of total HQLA). Operational requirements include: unencumbered, accessible to liquidity management, and tradeable in active markets.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "icaap_ilaap_srep_information_four_category_framework_001",
+      "title": "Icaap Ilaap Srep Information Four Category Framework",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "icaap",
+        "ilaap",
+        "srep",
+        "eba",
+        "information_requirements",
+        "governance"
+      ],
+      "thesis": "[LLM] EBA GL/2016/10 organises ICAAP/ILAAP supervisory information into 4 categories: (1) General -- governance, risk management framework, RAF, stress testing programme, business model; (2) ICAAP-specific -- risk identification, capital calculation methodology, internal capital allocation, capital planning, ICAAP stress tests; (3) ILAAP-specific -- funding strategy, liquidity buffers and collateral policy, FTP/cost-benefit allocation, intraday liquidity management, liquidity stress tests, LCP; (4) Conclusions -- ICAAP/ILAAP outcomes, internal validation results, internal audit reports. All four categories submitted at reference dates proportionate to SREP category.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "ilaap_cross_border_liquidity_transferability_group_impediments_001",
+      "title": "Ilaap Cross Border Liquidity Transferability Group Impediments",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "ilaap",
+        "cross_border",
+        "liquidity_risk",
+        "group_management",
+        "ecb",
+        "ring_fencing"
+      ],
+      "thesis": "[LLM] For banking groups with cross-border operations, the ILAAP must identify and quantify impediments to intragroup liquidity transfer — including regulatory ring-fencing (local regulatory requirements preventing outflows), operational constraints (systems, FX conversion), and legal restrictions (local insolvency law). The analysis must be currency-specific (material currencies identified and monitored separately) and assess how much group-level liquidity actually reaches the stressed entity. A misleadingly adequate group LCR may mask local deficiencies that the ILAAP must surface.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "ilaap_economic_and_normative_perspective_dual_pillar_001",
+      "title": "Ilaap Economic And Normative Perspective Dual Pillar",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "ilaap",
+        "ecb",
+        "economic_perspective",
+        "normative_perspective",
+        "liquidity_adequacy"
+      ],
+      "thesis": "[LLM] The ECB ILAAP Guide's Principle 3 defines two complementary perspectives banks must maintain: the economic perspective — internal view of actual liquidity risk and buffer adequacy under stressed conditions, using internal models and assumptions calibrated to the bank's specific circumstances; and the normative perspective — compliance with regulatory requirements (LCR, NSFR) and supervisory expectations going forward. Both perspectives must inform each other and be consistent, with the economic perspective anchoring the normative one.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "ilaap_information_specific_funding_strategy_buffer_lcp_srep_001",
+      "title": "Ilaap Information Specific Funding Strategy Buffer Lcp Srep",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "ilaap",
+        "srep",
+        "eba",
+        "funding_strategy",
+        "liquidity_buffer",
+        "lcp",
+        "intraday"
+      ],
+      "thesis": "[LLM] EBA GL/2016/10 Section 7 specifies ILAAP information for SREP: (a) Funding strategy -- multi-year funding plan, currency breakdown, forecast LCR/NSFR; (b) Liquidity buffers -- internal minimum buffer definition, criteria for asset liquidity value, time-to-monetise, asset encumbrance policy, collateral location/transferability; (c) FTP/cost-benefit allocation mechanism; (d) Intraday liquidity -- monitoring tools, escalation for intraday shortfalls; (e) Liquidity stress tests -- idiosyncratic, market-wide, combined scenarios; (f) LCP -- early warning tools, execution strategies, testing procedures. Quality assurance: independent validation and internal audit results required.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "ilaap_liquidity_adequacy_statement_board_approved_conclusion_001",
+      "title": "Ilaap Liquidity Adequacy Statement Board Approved Conclusion",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "ilaap",
+        "governance",
+        "board",
+        "liquidity_adequacy",
+        "ecb",
+        "ssm"
+      ],
+      "thesis": "[LLM] The Liquidity Adequacy Statement (LAS) is the formal, board-approved conclusion of the ILAAP — the management body's own assessment of whether the institution maintains adequate liquidity. ECB expects the LAS to: demonstrate the board actively challenged key assumptions (not rubber-stamped); reference specific ILAAP outcomes (stress test results, risk identification, buffer metrics); explain the main supporting arguments; and commit to specific actions if liquidity adequacy is insufficient. Without a substantive LAS, the ILAAP is a compliance document, not a governance tool.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "ilaap_normative_perspective_regulatory_ratio_multi_year_projection_001",
+      "title": "Ilaap Normative Perspective Regulatory Ratio Multi Year Projection",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "ilaap",
+        "normative_perspective",
+        "lcr",
+        "nsfr",
+        "ecb",
+        "multi_year",
+        "regulatory_compliance"
+      ],
+      "thesis": "[LLM] The normative perspective in the ILAAP is a multi-year forward-looking assessment of the bank's ability to comply with all liquidity regulatory and supervisory requirements (LCR, NSFR, Individual Liquidity Guidance) under both baseline and adverse scenarios. Unlike the economic perspective (internal risk view), the normative perspective is structured around externally imposed ratios. Critical: the normative perspective does NOT require LCR ≥ 100% under severe stress — it requires a credible plan to remain viable and return to compliance, with the LCR path monitored and linked to the risk appetite statement, LCP, and recovery plan.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
       "id": "insurance_pension_private_credit_structural_investor_role_001",
       "title": "Insurance Pension Private Credit Structural Investor Role",
       "type": "concept",
@@ -371,6 +498,168 @@
       "thesis": "Insurance companies and pension funds are the anchor investors in private credit because long-duration illiquid private credit naturally matches long-duration illiquid liabilities; life insurers grew private placement lending from $386bn (2014) to $849bn (2024), reaching 14% of general account assets — driven by post-2008 low rates and private equity firms acquiring life insurers to access \"permanent capital\"; however, as retail/semi-liquid channels grow, the investor base becomes more liquidity-sensitive, introducing reflexive redemption risk. [LLM]",
       "stability": "evolving",
       "date_updated": "2026-05-23"
+    },
+    {
+      "id": "lcr_below_100_usage_supervisory_response_disclosure_requirements_001",
+      "title": "Lcr Below 100 Usage Supervisory Response Disclosure Requirements",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "lcr",
+        "supervisory_response",
+        "disclosure",
+        "liquidity_buffer_usage",
+        "alm",
+        "bcbs"
+      ],
+      "thesis": "[LLM] The LCR is designed to be usable in stress — banks are expected to draw on HQLA when LCR falls below 100%, not freeze those assets to maintain the ratio. When LCR breaches 100%, bcbs238 requires: (1) immediate notification to supervisors; (2) monthly reporting (vs baseline) with capability to accelerate to weekly/daily; (3) disclosure to supervisor of: reason for breach, firm-specific vs systemic trigger, overall risk profile, magnitude and duration of breach. Supervisory response is graduated — the standard is not a hard floor that triggers automatic penalties.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "lcr_derivatives_downgrade_trigger_three_notch_assumption_additional_collateral_001",
+      "title": "Lcr Derivatives Downgrade Trigger Three Notch Assumption Additional Collateral",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "lcr",
+        "derivatives",
+        "downgrade_trigger",
+        "collateral",
+        "alm",
+        "bcbs"
+      ],
+      "thesis": "[LLM] LCR (bcbs238) derivatives outflows include: (1) 100% of net derivatives cash outflows (all maturities within 30d); (2) Additional collateral required under a 3-notch credit rating downgrade — banks must model all contractual triggers from downgrade up to and including 3 notches. This includes collateral substitution rights, mark-to-market variation margin calls, and loss of non-segregated rehypothecation rights. (3) 20% add-on for potential valuation changes on posted collateral securing derivatives. The 3-notch downgrade assumption is a key driver of HQLA buffer sizing for derivative-active banks.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "lcr_monitoring_tools_maturity_mismatch_funding_concentration_001",
+      "title": "Lcr Monitoring Tools Maturity Mismatch Funding Concentration",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "lcr",
+        "monitoring",
+        "maturity_gap",
+        "funding_concentration",
+        "alm",
+        "bcbs"
+      ],
+      "thesis": "[LLM] Beyond the LCR ratio, bcbs238 Part 2 defines five supervisory monitoring tools: (1) contractual maturity mismatch (gap schedule of all cash flows), (2) concentration of funding by counterparty/instrument/currency, (3) available unencumbered assets eligible as collateral, (4) LCR by significant currency, and (5) market-related monitoring indicators (CDS spreads, equity prices, rollover rates). These tools provide early warning signals beyond what LCR alone captures.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "lcr_retail_deposit_run_off_rates_stable_less_stable_categories_001",
+      "title": "Lcr Retail Deposit Run Off Rates Stable Less Stable Categories",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "lcr",
+        "run_off_rate",
+        "retail_deposits",
+        "deposit_insurance",
+        "alm",
+        "bcbs"
+      ],
+      "thesis": "[LLM] The LCR (bcbs238) defines two retail deposit categories with different 30-day outflow assumptions: (1) Stable deposits — 5% standard run-off rate; 3% if the jurisdiction has an effective deposit insurance scheme (prompt payouts, legally binding coverage, well-funded, high public awareness). Deposit insurance alone does not make a deposit 'stable'. (2) Less stable deposits — minimum 10%, with supervisors free to add higher buckets for specific risk characteristics (online-only deposits, foreign currency, high-value deposits, Internet banking deposits). Small business deposits (≤€1M) treated equivalently to retail if managed as retail internally.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "lcr_secured_funding_run_off_by_collateral_quality_asset_level_001",
+      "title": "Lcr Secured Funding Run Off By Collateral Quality Asset Level",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "lcr",
+        "secured_funding",
+        "repo",
+        "collateral",
+        "run_off_rate",
+        "alm",
+        "bcbs"
+      ],
+      "thesis": "[LLM] LCR secured funding run-off (bcbs238): outstanding maturing secured transactions are assumed to roll over at rates depending on collateral quality: 0% run-off for repos backed by Level 1 HQLA (regardless of counterparty); 15% for Level 2A collateral; 25% for Level 2B; 25% if backed by non-HQLA with central bank/sovereign counterparty; 50% for non-HQLA with other counterparties; 100% for all others. This asymmetry creates strong incentive to hold Level 1 assets as repo collateral — a Level 1 HQLA book is self-funding even in stress, while non-HQLA repo funding disappears entirely.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "lcr_wholesale_unsecured_funding_run_off_by_counterparty_type_001",
+      "title": "Lcr Wholesale Unsecured Funding Run Off By Counterparty Type",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "lcr",
+        "wholesale_funding",
+        "run_off_rate",
+        "outflow_rates",
+        "alm",
+        "bcbs"
+      ],
+      "thesis": "[LLM] LCR wholesale unsecured funding outflows (bcbs238) are calibrated by counterparty type and funding sensitivity to stress: (a) Small business customers (≤€1M): retail treatment (5%/10%); (b) Operational deposits from clearing/custody/cash management: 25% (only operational portion; non-operational portion = 40% or 100%); (c) Non-financial corporates, sovereigns, PSEs, multilaterals: 40% outflow for operating accounts; 100% for non-operational deposits; (d) Financial institutions (non-operational): 100%; (e) Other legal entities: 100%. Term deposits >30d from any wholesale counterparty: 0%.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "liquidity_stress_test_depositor_behaviour_assumptions_key_driver_001",
+      "title": "Liquidity Stress Test Depositor Behaviour Assumptions Key Driver",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "depositor_behaviour",
+        "liquidity_stress_testing",
+        "svb",
+        "digital_banking",
+        "fsi",
+        "2023"
+      ],
+      "thesis": "[LLM] Depositor behaviour assumptions are the most critical and uncertain driver in liquidity stress test outcomes: run-off rates for retail deposits (distinguishing stable from unstable / digitally-accessible), corporate deposits, and financial institution deposits determine the severity of the funding shock. Post-2023, digital banking has accelerated deposit outflow speed — the 2023 SVB run showed deposits can flee in hours rather than days, requiring stress tests to model intraday outflow velocity and the role of social media in triggering depositor panic. Historical calibrations may systematically underestimate modern deposit outflow speed.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "liquidity_stress_test_static_balance_sheet_assumption_shock_isolation_001",
+      "title": "Liquidity Stress Test Static Balance Sheet Assumption Shock Isolation",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "liquidity_stress_testing",
+        "methodology",
+        "static_balance_sheet",
+        "ecb_ssm",
+        "fsi"
+      ],
+      "thesis": "[LLM] Many supervisor-run sector-wide liquidity stress tests (notably ECB/SSM) use a static balance sheet assumption: no new inflows after the reference date, no contract renegotiations, no management responses modeled. This isolates the pure initial shock impact before mitigating actions, enabling clean cross-bank comparison and providing an upper bound for inherent vulnerability. Trade-off: it is unrealistic (management always reacts) and may overstate survival difficulty while missing dynamic amplification effects from collective management responses. Alternative: dynamic exercises allowing management responses (BCB, Riksbank approaches) better reflect realized stress but are harder to compare across banks.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "liquidity_stress_test_three_building_blocks_assets_liabilities_management_response_001",
+      "title": "Liquidity Stress Test Three Building Blocks Assets Liabilities Management Response",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "liquidity_stress_testing",
+        "haircut",
+        "outflow_rates",
+        "management_response",
+        "alm",
+        "fsi"
+      ],
+      "thesis": "[LLM] A bank liquidity stress test comprises three building blocks: (1) Asset treatment — applying haircuts to liquid asset values reflecting market illiquidity (fire sale discounts) under stress; (2) Liability treatment — modeling deposit outflow rates by counterparty type (retail stable/unstable, corporate, financial institution) and run-off of wholesale funding and contingent commitments; (3) Management response — actions available (draw credit lines, asset sales, collateral posting with central bank) and their impact on the survival horizon. Second-round effects from collective management responses across the banking system are the hardest to model and remain largely qualitative.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
     },
     {
       "id": "ma_balance_sheet_oin_other_items_net_absorber_mechanics_001",
@@ -506,6 +795,23 @@
       "date_updated": "2026-05-23"
     },
     {
+      "id": "reverse_stress_testing_failure_point_business_model_viability_001",
+      "title": "Reverse Stress Testing Failure Point Business Model Viability",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "reverse_stress_testing",
+        "business_model",
+        "recovery_planning",
+        "eba",
+        "risk_management"
+      ],
+      "thesis": "[LLM] Reverse stress testing (RST) inverts the stress test logic: instead of applying a scenario and measuring impact, it starts from a defined failure outcome (e.g. business model failure, liquidity exhaustion, capital breach) and works backward to identify scenarios that would cause it. RST is required under EBA GL/2018/04 for both regular stress testing and recovery planning purposes; it exposes tail risks and hidden vulnerabilities in business model assumptions that forward-looking scenario analysis may miss.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
       "id": "shadow_banking_market_based_finance_001",
       "title": "Shadow Banking Market Based Finance",
       "type": "concept",
@@ -560,6 +866,93 @@
       "thesis": "High sovereign yields (as in the UK) serve as a market discipline mechanism that forces governments toward fiscal consolidation; artificially capping yields (as Japan via BoJ bond purchases, or eurozone via ECB TPI) does not eliminate the fiscal risk premium but displaces it into the currency — the Yen depreciation vs GBP stability pattern illustrates that sovereign risk shows up one way or another, and price discovery through yields is preferable to deferred currency adjustment. [LLM]",
       "stability": "evolving",
       "date_updated": "2026-05-23"
+    },
+    {
+      "id": "stress_testing_eba_2018_taxonomy_eleven_defined_terms_001",
+      "title": "Stress Testing Eba 2018 Taxonomy Eleven Defined Terms",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "eba",
+        "stress_testing",
+        "taxonomy",
+        "definitions",
+        "2018"
+      ],
+      "thesis": "[LLM] EBA GL/2018/04 defines 11 stress testing terms forming the EU taxonomy: (1) Solvency stress test -- capital position impact; (2) Liquidity stress test -- liquidity impact; (3) Bottom-up -- institution runs own models; (4) Top-down -- supervisory common methodology; (5) Static balance sheet -- no new business during scenario; (6) Dynamic balance sheet -- management can change structure; (7) Portfolio stress test -- individual portfolio/risk level; (8) Sensitivity analysis -- single or simple multi-factor shock; (9) Scenario analysis -- multi-factor coherent narrative; (10) Reverse stress test -- backward from failure outcome; (11) Second-round/feedback effects -- spillover from collective reactions.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "stress_testing_management_actions_before_after_presentation_conservative_rules_001",
+      "title": "Stress Testing Management Actions Before After Presentation Conservative Rules",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "eba",
+        "stress_testing",
+        "management_actions",
+        "icaap",
+        "ilaap",
+        "2018"
+      ],
+      "thesis": "[LLM] EBA GL/2018/04 Section 4.8.2 mandates that stress test results be presented both before and after management actions -- showing the assumed mitigating impact. Rules: (1) actions must be consistent with stated strategies/policies (dividend, capital distribution); (2) must be feasible under the stress scenario -- banks must be conservative about actions difficult to execute in stressed markets; (3) immediate vs contingent actions must be distinguished with pre-defined triggers; (4) actions used in ICAAP stress tests cannot be double-counted in ILAAP management actions and vice versa.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "stress_testing_methodology_taxonomy_sensitivity_scenario_reverse_001",
+      "title": "Stress Testing Methodology Taxonomy Sensitivity Scenario Reverse",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "stress_testing",
+        "methodology",
+        "sensitivity",
+        "scenario",
+        "reverse_stress_testing",
+        "bcbs"
+      ],
+      "thesis": "[LLM] Stress testing methods form a spectrum: (1) Sensitivity tests — shock one parameter in isolation, no feedback effects, fast but incomplete; (2) Scenario tests — multi-factor shock calibrated to a real/hypothetical macro event, capturing cross-risk interaction and non-linear profiles; (3) Reverse stress tests — start from a defined failure outcome (insolvency, illiquidity, capital breach) and identify what inputs would produce it. BCBS bcbs155 P3 requires banks to use a range of techniques — no single method is sufficient alone. The three types are complementary, not substitutes.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "stress_testing_scenario_severity_design_forward_looking_001",
+      "title": "Stress Testing Scenario Severity Design Forward Looking",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "stress_testing",
+        "scenario_design",
+        "severity",
+        "forward_looking",
+        "bcbs"
+      ],
+      "thesis": "[LLM] Effective stress scenarios must balance severity (severe enough to reveal hidden vulnerabilities) with plausibility (credible enough to drive management action). BCBS bcbs155 P8 requires scenarios to: span a severity spectrum from moderate to extreme; include forward-looking hypothetical events alongside historical ones; cover system-wide interactions and feedback effects; use appropriate time horizons (short-term tactical vs medium-term strategic). Pre-crisis failure: boards rejected extreme scenarios as implausible, producing a systematic bias toward insufficient severity.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "supervisory_common_scenario_stress_test_systemic_risk_assessment_001",
+      "title": "Supervisory Common Scenario Stress Test Systemic Risk Assessment",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "stress_testing",
+        "supervisory_review",
+        "systemic_risk",
+        "common_scenario",
+        "bcbs"
+      ],
+      "thesis": "[LLM] BCBS bcbs155 P20 recommends supervisors run sector-wide common-scenario stress tests to assess systemic risk concentrations across banks — scenarios are set by the supervisor, not individual banks, to enable cross-bank comparison. Critical limitation: common supervisory scenarios must NOT substitute bank-designed tests because a common scenario cannot capture individual bank-specific vulnerabilities. Banks with robust internal ST programmes should be able to run common supervisory scenarios with minimal effort (P20 compliance is a floor, not a ceiling).",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
     },
     {
       "id": "term_deposit_alm_governance_policy_procedure_limit_framework_001",
@@ -1339,6 +1732,30 @@
       "date_updated": "2026-05-25"
     },
     {
+      "id": "ilaap_liquidity_adequacy_assessment_framework_001",
+      "title": "ILAAP — Internal Liquidity Adequacy Assessment Process Framework",
+      "type": "framework",
+      "domain": "banking_regulation",
+      "confidence": 4,
+      "tags": [
+        "ilaap",
+        "liquidity_risk",
+        "stress_testing",
+        "cfp",
+        "srep",
+        "risk_appetite",
+        "bcbs",
+        "eba",
+        "ecb",
+        "supervisory_review",
+        "governance",
+        "survival_period"
+      ],
+      "thesis": "ILAAP is a bank's own comprehensive internal process for assessing its liquidity adequacy — broader and more adaptive than LCR/NSFR because it encompasses internal stress tests (producing survival periods and time-to-central-bank metrics), risk appetite calibration, contingency planning, and a board-approved liquidity adequacy statement. Introduced by EBA/DNB in 2012 based on BCBS bcbs144 Principles 10–12, formalised by ECB in November 2018 under SSM. The regulator (L-SREP) challenges the ILAAP and issues Individual Liquidity Guidance that extends beyond LCR requirements. The core value proposition: banks understand their own business model, client behaviour, and market exposures better than supervisors can through standardised metrics — the ILAAP forces banks to make and justify those assumptions.",
+      "stability": "stable",
+      "date_updated": "2026-05-27"
+    },
+    {
       "id": "imf_balance_of_payments_framework_and_external_account_analysis_001",
       "title": "IMF Balance of Payments Framework and External Account Analysis",
       "type": "framework",
@@ -1681,6 +2098,24 @@
       "thesis": "The IMF framework identifies five unemployment categories (seasonal, frictional, cyclical, structural, disguised) each requiring distinct policy responses. The NAIRU (Non-Accelerating Inflation Rate of Unemployment) defines the inflation- compatible full employment floor — below it, demand management generates inflation without sustainable output gains. In transition economies, \"disguised unemployment\" (workers with zero or negative marginal product, common in SOEs) is the dominant form — standard unemployment statistics systematically understate true labor market distress.",
       "stability": "stable",
       "date_updated": "2026-05-25"
+    },
+    {
+      "id": "liquidity_stress_test_three_supervisory_approaches_fsi_59_001",
+      "title": "Liquidity Stress Test Three Supervisory Approaches Fsi 59",
+      "type": "framework",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "liquidity_stress_testing",
+        "fsi_insights",
+        "nbfi",
+        "sector_wide",
+        "ecb_ssm",
+        "2024"
+      ],
+      "thesis": "[LLM] FSI Insights No. 59 (Oct 2024) identifies three approaches supervisors use for liquidity stress testing: (1) aggregating bank-run stress tests into a sector-wide view (universal baseline); (2) bespoke sector-wide exercises designed by supervisors — exemplified by BCB (since early 2000s), ECB/SSM (100 significant institutions, 2019), and Riksbank; and (3) exploratory bank-NBFI interaction exercises (BoE, MAS) — most complex, typically one-off. The third approach remains largely qualitative due to data limitations on interbank and bank-NBFI exposures.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
     },
     {
       "id": "monetary_policy_instruments_operational_framework_001",
@@ -2316,6 +2751,24 @@
       "thesis": "Subscription credit facilities (secured by LP capital call rights) and NAV loans (secured by portfolio cash flows via SPV) allow private credit funds to borrow from regulated banks, creating a hidden leverage layer that (1) artificially inflates reported IRR by delaying LP capital calls, and (2) links PC fund solvency to bank willingness to roll short-term financing. [LLM] In stress, simultaneous drawdown of these facilities creates a correlated liquidity demand on banks — the inverse of the intended \"risk transfer\" rationale of Basel regulation.",
       "stability": "evolving",
       "date_updated": "2026-05-24"
+    },
+    {
+      "id": "bank_nbfi_liquidity_amplification_three_channels_fire_sale_funding_contagion_001",
+      "title": "Bank Nbfi Liquidity Amplification Three Channels Fire Sale Funding Contagion",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "nbfi",
+        "contagion",
+        "fire_sale",
+        "liquidity_stress_testing",
+        "systemic_risk",
+        "fsi"
+      ],
+      "thesis": "[LLM] Banks and NBFIs interact in liquidity stress through three amplification channels: (1) Asset liquidation — NBFI fire sales (triggered by redemption shocks or margin calls) depress prices of assets also held by banks, impairing bank collateral values; (2) Funding withdrawal — NBFIs withdraw repo, FX swap, and money market funding from banks; (3) Contagion — depositor/investor runs triggered by perceived bank-NBFI similarity. March 2020 (dash-for-cash), 2022 UK LDI pension crisis, and 2023 SVB/Credit Suisse stress all involved at least two of these three channels. Authorities have begun designing exploratory bank-NBFI stress tests (BoE, MAS) to map these linkages.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
     },
     {
       "id": "bank_private_credit_partnership_model_post_basel_001",
@@ -3643,6 +4096,57 @@
       "date_updated": "2026-05-25"
     },
     {
+      "id": "ilaap_adverse_scenario_calibration_vulnerability_based_p7_001",
+      "title": "Ilaap Adverse Scenario Calibration Vulnerability Based P7",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "ilaap",
+        "stress_testing",
+        "scenario_design",
+        "ecb",
+        "p7"
+      ],
+      "thesis": "[LLM] ECB ILAAP Guide Principle 7 requires adverse stress scenarios to be institution-specific rather than generic: calibrated to the bank's actual business model vulnerabilities, covering all material risks on an institution-wide basis. Calibration process: (1) use sensitivity analysis to identify material vulnerabilities; (2) design scenarios capturing those specific vulnerabilities; (3) reference historical liquidity events but extend beyond historical precedent (hypothetical scenarios required). Cross-border groups must test liquidity transferability impediments under each scenario. Minimum: one reverse stress test annually (identifying what would make the model unviable).",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "ilaap_recovery_plan_management_actions_no_double_counting_001",
+      "title": "Ilaap Recovery Plan Management Actions No Double Counting",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "ilaap",
+        "recovery_planning",
+        "management_actions",
+        "ecb",
+        "governance"
+      ],
+      "thesis": "[LLM] ILAAP management actions (pre-recovery responses to liquidity stress) and recovery plan options (post-trigger crisis measures) are temporally distinct but must not overlap: if the bank uses an action under ILAAP (e.g. issues debt to boost liquidity buffer), that same action cannot be counted again in the recovery plan as available capacity. ECB Principle 2 / Chunk 12 SSM Guide: any material ILAAP management action must immediately trigger re-assessment of recovery plan feasibility to prevent double-counting of crisis capacity. The bank's total crisis response capacity = ILAAP actions + ADDITIONAL recovery options (not ILAAP actions + ALL recovery options).",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "ilaap_risk_identification_gross_approach_mitigants_assessed_separately_001",
+      "title": "Ilaap Risk Identification Gross Approach Mitigants Assessed Separately",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "ilaap",
+        "risk_identification",
+        "gross_approach",
+        "ecb",
+        "p4"
+      ],
+      "thesis": "[LLM] ECB ILAAP Principle 4 mandates a two-step risk identification process: (1) 'Gross approach' — identify all material risks before any mitigation (hedging, netting, collateral, insurance); (2) separately assess mitigation effectiveness under stress. This prevents the common failure of hiding material risks behind assumed mitigation that may not function under stress (e.g. hedges that fail in correlated market crises, collateral haircuts that increase when needed most). Risk cannot be excluded because it is difficult to quantify — conservative estimates are required.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
       "id": "incomes_policy_wage_controls_stabilization_001",
       "title": "Incomes Policy — Wage Controls In Stabilization Programs",
       "type": "mechanism",
@@ -3762,6 +4266,41 @@
       "thesis": "LCR forces banks to hold HQLA ≥ 30-day stressed net cash outflows (including assumed draw-down of 10% on committed credit lines to non-financial corporates and 30-40% on committed liquidity/credit lines to financial entities per LCR40), while NSFR requires stable funding covering 85% of notional for unrated performing loans ≥1yr (NSF30.31); together these rules create a structural funding cost penalty — HQLA opportunity cost on the LCR side, expensive long-term stable funding premium on the NSFR side — that makes long-duration corporate and specialized lending uneconomical relative to short-term or HQLA assets.",
       "stability": "stable",
       "date_updated": "2026-05-21"
+    },
+    {
+      "id": "liquidity_stress_contagion_second_round_effects_system_wide_001",
+      "title": "Liquidity Stress Contagion Second Round Effects System Wide",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "contagion",
+        "second_round_effects",
+        "liquidity_stress_testing",
+        "nbfi",
+        "systemic_risk"
+      ],
+      "thesis": "[LLM] In system-wide liquidity stress, liquidity drains from weaker institutions toward stronger ones; individual banks' management reactions — asset sales, credit line drawdowns, funding substitution — alter both the bank's own survival and the shock's propagation to other institutions. Second-round effects require assumptions about management responses, contagion channels (interbank markets, common exposures), and bank-NBFI linkages that current models inadequately capture. Post-2023 banking turmoil (SVB, Credit Suisse) has reinforced the need to model technology-driven deposit velocity and NBFI interaction.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "liquidity_stress_three_scenario_types_idiosyncratic_market_wide_combined_eba_001",
+      "title": "Liquidity Stress Three Scenario Types Idiosyncratic Market Wide Combined Eba",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "eba",
+        "stress_testing",
+        "liquidity_risk",
+        "idiosyncratic",
+        "market_wide",
+        "combined"
+      ],
+      "thesis": "[LLM] EBA GL/2018/04 Section 4.7.6 requires three mandatory liquidity stress scenarios: (1) Idiosyncratic -- bank-specific event causing institution-specific funding withdrawal while system functions normally (e.g. credit downgrade, reputational event); (2) Market-wide -- systemic stress affecting all banks simultaneously (e.g. interbank market freeze, broad credit spread widening); (3) Combined -- simultaneous idiosyncratic and market-wide stress (most severe; also calibration scenario for LCR). Key output metric: lowest cumulative net cash flow within the assessed time period under each scenario.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
     },
     {
       "id": "maturity_gap_analysis_interest_rate_risk_banking_book_001",
@@ -4362,6 +4901,23 @@
       "date_updated": "2026-05-20"
     },
     {
+      "id": "reverse_stress_testing_near_default_scenario_recovery_planning_application_001",
+      "title": "Reverse Stress Testing Near Default Scenario Recovery Planning Application",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "eba",
+        "reverse_stress_testing",
+        "recovery_planning",
+        "near_default",
+        "2018"
+      ],
+      "thesis": "[LLM] EBA GL/2018/04 Sections 4.6.5 and 4.7 extend RST to recovery planning: institutions develop 'near-default' scenarios -- conditions where the business model becomes unviable UNLESS recovery actions succeed. RST serves dual purpose: (1) calibrate forward-looking scenario severity (if RST scenario is plausible, forward scenarios may be too mild); (2) test recovery action effectiveness -- can specific options restore viability from this near-default state? RST minimum annually; frequency increases if business model or risk profile changes materially. RST results must be reported to management body and feed into risk appetite review.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
       "id": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
       "title": "SLR LCR Balance Sheet Constraints Treasury Market Dealer",
       "type": "mechanism",
@@ -4495,6 +5051,59 @@
       "thesis": "Under open capital accounts with an FX target, the effectiveness of CB sterilization is constrained by two competing forces measured as coefficients: the offset coefficient (how much of CB tightening is neutralized by induced capital inflows) and the sterilization coefficient (how much of FX intervention liquidity is reabsorbed). When the offset coefficient exceeds the sterilization coefficient, the CB's net control over money supply is negative — tightening attracts more inflows than can be sterilized, undermining monetary autonomy. [LLM]",
       "stability": "stable",
       "date_updated": "2026-05-25"
+    },
+    {
+      "id": "stress_testing_funding_asset_liquidity_joint_shock_interaction_001",
+      "title": "Stress Testing Funding Asset Liquidity Joint Shock Interaction",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "stress_testing",
+        "funding_liquidity",
+        "market_liquidity",
+        "interaction",
+        "bcbs",
+        "p10"
+      ],
+      "thesis": "[LLM] BCBS bcbs155 P10 requires banks to model simultaneous pressures in asset and funding markets — a defining feature of real liquidity crises: price shocks → asset illiquidity (fire sale discounts) → impaired collateral values → reduced secured funding access → margin calls → forced asset sales (amplifying price drop). The joint shock is far more severe than either shock alone because deteriorating collateral values and deteriorating funding access are mutually reinforcing. Ignoring the interaction produces systematic underestimation of liquidity risk.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "stress_testing_governance_integration_bank_risk_framework_001",
+      "title": "Stress Testing Governance Integration Bank Risk Framework",
+      "type": "mechanism",
+      "domain": "basel_risk",
+      "confidence": 1,
+      "tags": [
+        "stress_testing",
+        "governance",
+        "risk_appetite",
+        "bcbs",
+        "use_test"
+      ],
+      "thesis": "[LLM] Effective stress testing must be embedded in the institution's governance structure — results must be actively used in risk appetite decisions, capital planning, and board-level escalation rather than treated as compliance exercises. BCBS bcbs155 Principles 1–3 establish that senior management is responsible for stress test design, the programme covers all material risks, and results feed into business decisions.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "stress_testing_solvency_liquidity_interaction_icaap_ilaap_integration_001",
+      "title": "Stress Testing Solvency Liquidity Interaction Icaap Ilaap Integration",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "eba",
+        "stress_testing",
+        "icaap",
+        "ilaap",
+        "solvency_liquidity_link",
+        "2018"
+      ],
+      "thesis": "[LLM] EBA GL/2018/04 Section 4.8 requires explicit integration of solvency and liquidity stress tests: capital ratio deterioration can trigger liquidity outflows (market perception effect), and liquidity crisis can cause capital losses (forced asset sales). The mapping between these two must be documented. ICAAP stress tests: minimum 2-year horizon. Both must use consistent management action assumptions -- actions used in ICAAP cannot be double-counted in ILAAP. Results reported before and after management actions.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
     },
     {
       "id": "supply_chain_non_linear_shock_structural_amplification_001",
@@ -5018,6 +5627,101 @@
       "date_updated": "2026-05-25"
     },
     {
+      "id": "basel_iii_lcr_liquidity_coverage_ratio_standard_2013_001",
+      "title": "Basel Iii Lcr Liquidity Coverage Ratio Standard 2013",
+      "type": "regulation",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "lcr",
+        "hqla",
+        "liquidity_risk",
+        "bcbs",
+        "basel_iii",
+        "alm",
+        "2013"
+      ],
+      "thesis": "[LLM] Basel III's LCR (bcbs238, Jan 2013) requires banks to maintain a stock of unencumbered HQLA sufficient to cover total net cash outflows (NCO) over 30 calendar days under a combined idiosyncratic and market-wide stress scenario: LCR = HQLA / NCO ≥ 100%. Phase-in: 60% from Jan 2015, rising 10 pp per year to 100% from Jan 2019. The standard defines HQLA in two levels and prescribes standardised outflow rates by counterparty/product type.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "bcbs_stress_testing_sound_practices_21_principles_2009_001",
+      "title": "Bcbs Stress Testing Sound Practices 21 Principles 2009",
+      "type": "regulation",
+      "domain": "basel_risk",
+      "confidence": 1,
+      "tags": [
+        "stress_testing",
+        "bcbs",
+        "governance",
+        "scenario_design",
+        "supervisory_review",
+        "2009"
+      ],
+      "thesis": "[LLM] BCBS bcbs155 (May 2009) articulates 21 principles governing sound stress testing for banks and supervisors, organized into: governance/risk governance integration, methodology and scenario selection, specific risk/product coverage, and supervisor assessment principles. The document was a direct response to pre-crisis stress testing failures and is foundational to all subsequent EBA and ECB stress testing guidelines.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "eba_gl_2016_10_icaap_ilaap_information_for_srep_001",
+      "title": "Eba Gl 2016 10 Icaap Ilaap Information For Srep",
+      "type": "regulation",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "eba",
+        "icaap",
+        "ilaap",
+        "srep",
+        "capital_adequacy",
+        "liquidity_adequacy",
+        "2016"
+      ],
+      "thesis": "[LLM] EBA Guidelines GL/2016/10 (Nov 2016, apply from Jan 2017) specify what ICAAP and ILAAP information competent authorities must collect from institutions for SREP assessment. Four information categories: (1) general — governance, risk management, stress testing frameworks, business model; (2) ICAAP-specific — methodology design, internal capital estimates, capital planning; (3) ILAAP-specific — funding strategy, liquidity buffers, collateral, intraday liquidity, CFP; and (4) conclusions and quality assurance. The guidelines do not prescribe specific ICAAP/ILAAP formats but standardise supervisory information requirements.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "eba_gl_2018_04_institutions_stress_testing_001",
+      "title": "Eba Gl 2018 04 Institutions Stress Testing",
+      "type": "regulation",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "eba",
+        "stress_testing",
+        "reverse_stress_testing",
+        "srep",
+        "p2g",
+        "governance",
+        "2018"
+      ],
+      "thesis": "[LLM] EBA Guidelines GL/2018/04 (July 2018, apply from 2019) update and replace CEBS GL32, establishing a common EU stress testing taxonomy covering: programme governance, data infrastructure, scenario types (sensitivity analysis, scenario analysis, reverse stress testing), proportionality (smaller banks may focus on qualitative aspects), specific risk areas (credit, market, operational, liquidity, conduct), and the interaction between solvency and liquidity stress tests. Reverse stress testing is required for both regular risk management and recovery planning.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
+      "id": "ecb_ilaap_guide_2018_seven_principles_ssm_001",
+      "title": "Ecb Ilaap Guide 2018 Seven Principles Ssm",
+      "type": "regulation",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "ilaap",
+        "ecb",
+        "ssm",
+        "srep",
+        "liquidity_risk",
+        "governance",
+        "stress_testing",
+        "2018"
+      ],
+      "thesis": "[LLM] The ECB ILAAP Guide (Nov 2018) formalises 7 supervisory principles for significant institutions under the SSM: (1) management body accountable for ILAAP governance; (2) ILAAP integral to overall management framework; (3) ILAAP ensures liquidity adequacy from economic AND normative perspectives — both must complement each other; (4) all material risks identified; (5) internal liquidity buffers are high-quality and clearly defined; (6) risk quantification methodologies are adequate, consistent, independently validated; (7) regular stress testing ensures adequacy in adverse conditions. The ECB assesses ILAAPs against these 7 principles within SREP.",
+      "stability": "evolving",
+      "date_updated": "2026-05-27"
+    },
+    {
       "id": "us_macro_constraint_stack_fed_treasury_curve_inflation_external_sector_syn_001",
       "title": "US Macro Constraint Stack Fed Treasury Curve Inflation External Sector",
       "type": "synthesis",
@@ -5345,6 +6049,16 @@
       "relation": "regulatory_basis"
     },
     {
+      "source": "ilaap_economic_and_normative_perspective_dual_pillar_001",
+      "target": "ilaap_liquidity_adequacy_assessment_framework_001",
+      "relation": "related"
+    },
+    {
+      "source": "ilaap_economic_and_normative_perspective_dual_pillar_001",
+      "target": "ecb_ilaap_guide_2018_seven_principles_ssm_001",
+      "relation": "related"
+    },
+    {
       "source": "ma_balance_sheet_oin_other_items_net_absorber_mechanics_001",
       "target": "imf_monetary_survey_and_reserve_money_identity_framework_001",
       "relation": "identity_foundation — OIN is the fourth term of RM = NFA + NCG + Cb + OIN"
@@ -5433,6 +6147,21 @@
       "source": "overdraft_behavioral_model_pts_variant_parameter_specification_001",
       "target": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
       "relation": "behavioral_context"
+    },
+    {
+      "source": "reverse_stress_testing_failure_point_business_model_viability_001",
+      "target": "eba_gl_2018_04_institutions_stress_testing_001",
+      "relation": "related"
+    },
+    {
+      "source": "reverse_stress_testing_failure_point_business_model_viability_001",
+      "target": "bcbs_stress_testing_sound_practices_21_principles_2009_001",
+      "relation": "related"
+    },
+    {
+      "source": "reverse_stress_testing_failure_point_business_model_viability_001",
+      "target": "stress_testing_governance_integration_bank_risk_framework_001",
+      "relation": "related"
     },
     {
       "source": "shadow_banking_market_based_finance_001",
@@ -6250,6 +6979,26 @@
       "relation": "policy_response_context"
     },
     {
+      "source": "ilaap_liquidity_adequacy_assessment_framework_001",
+      "target": "bcbs_liquidity_stress_testing_p10_001",
+      "relation": "stress_test_is_ilaap_input"
+    },
+    {
+      "source": "ilaap_liquidity_adequacy_assessment_framework_001",
+      "target": "bcbs_liquidity_contingency_funding_plan_p11_001",
+      "relation": "cfp_is_ilaap_output"
+    },
+    {
+      "source": "ilaap_liquidity_adequacy_assessment_framework_001",
+      "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
+      "relation": "conceptual_foundation"
+    },
+    {
+      "source": "ilaap_liquidity_adequacy_assessment_framework_001",
+      "target": "bcbs_hqla_liquidity_cushion_p12_001",
+      "relation": "hqla_buffer_from_ilaap_sizing"
+    },
+    {
       "source": "imf_balance_of_payments_framework_and_external_account_analysis_001",
       "target": "imf_flow_of_funds_4_sector_consistency_framework_001",
       "relation": "shared_tag:imf"
@@ -6558,6 +7307,26 @@
       "source": "labor_market_unemployment_taxonomy_nairu_001",
       "target": "transition_economy_monetary_issues_001",
       "relation": "disguised_unemployment_dominant_in_transition"
+    },
+    {
+      "source": "liquidity_stress_test_three_supervisory_approaches_fsi_59_001",
+      "target": "liquidity_stress_contagion_second_round_effects_system_wide_001",
+      "relation": "related"
+    },
+    {
+      "source": "liquidity_stress_test_three_supervisory_approaches_fsi_59_001",
+      "target": "ilaap_liquidity_adequacy_assessment_framework_001",
+      "relation": "related"
+    },
+    {
+      "source": "liquidity_stress_test_three_supervisory_approaches_fsi_59_001",
+      "target": "basel_iii_lcr_liquidity_coverage_ratio_standard_2013_001",
+      "relation": "related"
+    },
+    {
+      "source": "liquidity_stress_test_three_supervisory_approaches_fsi_59_001",
+      "target": "eba_gl_2018_04_institutions_stress_testing_001",
+      "relation": "related"
     },
     {
       "source": "monetary_policy_instruments_operational_framework_001",
@@ -9193,6 +9962,71 @@
       "source": "bcbs_sound_liquidity_risk_management_17_principles_001",
       "target": "lcr_nsfr_long_term_lending_penalty_001",
       "relation": "successor_quantitative_standards"
+    },
+    {
+      "source": "basel_iii_lcr_liquidity_coverage_ratio_standard_2013_001",
+      "target": "hqla_classification_level1_level2a_level2b_001",
+      "relation": "related"
+    },
+    {
+      "source": "basel_iii_lcr_liquidity_coverage_ratio_standard_2013_001",
+      "target": "lcr_monitoring_tools_maturity_mismatch_funding_concentration_001",
+      "relation": "related"
+    },
+    {
+      "source": "basel_iii_lcr_liquidity_coverage_ratio_standard_2013_001",
+      "target": "ilaap_liquidity_adequacy_assessment_framework_001",
+      "relation": "related"
+    },
+    {
+      "source": "basel_iii_lcr_liquidity_coverage_ratio_standard_2013_001",
+      "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
+      "relation": "related"
+    },
+    {
+      "source": "bcbs_stress_testing_sound_practices_21_principles_2009_001",
+      "target": "eba_gl_2018_04_institutions_stress_testing_001",
+      "relation": "related"
+    },
+    {
+      "source": "bcbs_stress_testing_sound_practices_21_principles_2009_001",
+      "target": "stress_testing_governance_integration_bank_risk_framework_001",
+      "relation": "related"
+    },
+    {
+      "source": "bcbs_stress_testing_sound_practices_21_principles_2009_001",
+      "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
+      "relation": "related"
+    },
+    {
+      "source": "eba_gl_2016_10_icaap_ilaap_information_for_srep_001",
+      "target": "ilaap_liquidity_adequacy_assessment_framework_001",
+      "relation": "related"
+    },
+    {
+      "source": "eba_gl_2016_10_icaap_ilaap_information_for_srep_001",
+      "target": "ecb_ilaap_guide_2018_seven_principles_ssm_001",
+      "relation": "related"
+    },
+    {
+      "source": "eba_gl_2016_10_icaap_ilaap_information_for_srep_001",
+      "target": "eba_gl_2018_04_institutions_stress_testing_001",
+      "relation": "related"
+    },
+    {
+      "source": "eba_gl_2018_04_institutions_stress_testing_001",
+      "target": "ilaap_liquidity_adequacy_assessment_framework_001",
+      "relation": "related"
+    },
+    {
+      "source": "ecb_ilaap_guide_2018_seven_principles_ssm_001",
+      "target": "ilaap_liquidity_adequacy_assessment_framework_001",
+      "relation": "related"
+    },
+    {
+      "source": "ecb_ilaap_guide_2018_seven_principles_ssm_001",
+      "target": "eba_gl_2018_04_institutions_stress_testing_001",
+      "relation": "related"
     },
     {
       "source": "us_macro_constraint_stack_fed_treasury_curve_inflation_external_sector_syn_001",
