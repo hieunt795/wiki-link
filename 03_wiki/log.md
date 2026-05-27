@@ -279,3 +279,15 @@ Chronological record of all ingest, update, promotion, and audit operations.
 - **2026-05-26**: INGEST: Created concept node `Term Deposit Behavioral Model — PPL PTS Policy Specification` from BC030304_Term_Deposit_PPL_pts_FINAL (1).md
 - **2026-05-26**: INGEST: Created concept node `Overdraft Behavioral Model — PTS Variant Parameter Specification` from BC030306_OD_HDSD_pts_FINAL (1).md
 - **2026-05-26**: INGEST: Created concept node `Overdraft Behavioral Model — PPL PTS Policy Specification` from BC030306_OD_PPL_pts_FINAL (1).md
+- **2026-05-27**: INGEST: Created regulation node `Bcbs Stress Testing Sound Practices 21 Principles 2009` from bcbs155.md
+- **2026-05-27**: INGEST: Created mechanism node `Stress Testing Governance Integration Bank Risk Framework` from bcbs155.md
+- **2026-05-27**: INGEST: Created regulation node `Basel Iii Lcr Liquidity Coverage Ratio Standard 2013` from bcbs238.md
+- **2026-05-27**: INGEST: Created concept node `Hqla Classification Level1 Level2a Level2b` from bcbs238.md
+- **2026-05-27**: INGEST: Created concept node `Lcr Monitoring Tools Maturity Mismatch Funding Concentration` from bcbs238.md
+- **2026-05-27**: INGEST: Created framework node `Liquidity Stress Test Three Supervisory Approaches Fsi 59` from insights59.md
+- **2026-05-27**: INGEST: Created mechanism node `Liquidity Stress Contagion Second Round Effects System Wide` from insights59.md
+- **2026-05-27**: INGEST: Created regulation node `Ecb Ilaap Guide 2018 Seven Principles Ssm` from ssm.ilaap_guide_201811.en.md
+- **2026-05-27**: INGEST: Created concept node `Ilaap Economic And Normative Perspective Dual Pillar` from ssm.ilaap_guide_201811.en.md
+- **2026-05-27**: INGEST: Created regulation node `Eba Gl 2016 10 Icaap Ilaap Information For Srep` from Final report on Guidelines on ICAAP ILAAP (EBA-GL-2016-10).md
+- **2026-05-27**: INGEST: Created regulation node `Eba Gl 2018 04 Institutions Stress Testing` from Guidelines on institutions stress testing (EBA-GL-2018-04).md
+- **2026-05-27**: INGEST: Created concept node `Reverse Stress Testing Failure Point Business Model Viability` from Guidelines on institutions stress testing (EBA-GL-2018-04).md

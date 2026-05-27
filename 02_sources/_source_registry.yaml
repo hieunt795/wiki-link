@@ -1,8 +1,8 @@
 meta:
-  total_sources: 78
-  total_ingested: 57
-  coverage_pct: 66.7
-  last_updated: '2026-05-26'
+  total_sources: 85
+  total_ingested: 63
+  coverage_pct: 74.1
+  last_updated: '2026-05-27'
 sources:
   02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md:
     status: partial
@@ -848,3 +848,107 @@ sources:
     wiki_nodes:
     - 03_wiki/concepts/Overdraft_Behavioral_Model_Ppl_Pts_Policy_Specification.md
     ingest_date: '2026-05-26'
+  02_sources/regulator/bcbs/bcbs155.md:
+    status: partial
+    priority: high
+    domain: banking_regulation
+    author: BCBS
+    description: 'BCBS 155: Principles for Sound Stress Testing Practices and Supervision
+      (May 2009). 21 principles covering governance integration, methodology, scenario
+      selection, specific risk areas, and supervisory expectations. Post-GFC foundational
+      document for all subsequent EBA/ECB stress testing frameworks.'
+    ingest_date: '2026-05-27'
+    wiki_nodes:
+    - 03_wiki/regulations/Bcbs_Stress_Testing_Sound_Practices_21_Principles_2009.md
+    - 03_wiki/mechanisms/Stress_Testing_Governance_Integration_Bank_Risk_Framework.md
+    notes: '2026-05-27: Created 2 wiki nodes: 1 regulation (21 principles overview)
+      + 1 mechanism (governance integration).'
+  02_sources/regulator/bcbs/bcbs238.md:
+    status: partial
+    priority: high
+    domain: banking_regulation
+    author: BCBS
+    description: 'Basel III: The Liquidity Coverage Ratio and liquidity risk monitoring
+      tools (January 2013). Defines LCR = HQLA / net cash outflows ≥ 100% over 30-day
+      stress horizon. Defines Level 1/2A/2B HQLA classification, standardised outflow
+      rates, and 5 supervisory monitoring tools.'
+    ingest_date: '2026-05-27'
+    wiki_nodes:
+    - 03_wiki/regulations/Basel_Iii_Lcr_Liquidity_Coverage_Ratio_Standard_2013.md
+    - 03_wiki/concepts/Hqla_Classification_Level1_Level2a_Level2b.md
+    - 03_wiki/concepts/Lcr_Monitoring_Tools_Maturity_Mismatch_Funding_Concentration.md
+    notes: '2026-05-27: Created 3 wiki nodes: 1 regulation (LCR standard) + 2 concepts
+      (HQLA classification, monitoring tools).'
+  02_sources/regulator/bcbs/insights59.md:
+    status: partial
+    priority: medium
+    domain: banking_regulation
+    author: FSI / BIS
+    description: 'FSI Insights No. 59: Liquidity stress tests for banks — range of
+      practices and possible developments (October 2024). Reviews 3 supervisory approaches:
+      bank-run aggregation, bespoke sector-wide exercises (BCB, ECB/SSM, Riksbank),
+      and NBFI-bank interaction exercises (BoE, MAS). Post-2023 turmoil implications.'
+    ingest_date: '2026-05-27'
+    wiki_nodes:
+    - 03_wiki/frameworks/Liquidity_Stress_Test_Three_Supervisory_Approaches_Fsi_59.md
+    - 03_wiki/mechanisms/Liquidity_Stress_Contagion_Second_Round_Effects_System_Wide.md
+    notes: '2026-05-27: Created 2 wiki nodes: 1 framework (3 supervisory approaches)
+      + 1 mechanism (second-round effects / contagion).'
+  02_sources/regulator/bcbs/ssm.ilaap_guide_201811.en.md:
+    status: partial
+    priority: high
+    domain: banking_regulation
+    author: ECB / SSM
+    description: ECB Guide to the Internal Liquidity Adequacy Assessment Process (ILAAP),
+      November 2018. Establishes 7 ILAAP principles for significant institutions under
+      SSM. Introduces dual economic/normative perspective framework. Forms basis of
+      L-SREP liquidity assessment.
+    ingest_date: '2026-05-27'
+    wiki_nodes:
+    - 03_wiki/regulations/Ecb_Ilaap_Guide_2018_Seven_Principles_Ssm.md
+    - 03_wiki/concepts/Ilaap_Economic_And_Normative_Perspective_Dual_Pillar.md
+    - 03_wiki/frameworks/Ilaap_Internal_Liquidity_Adequacy_Assessment_Framework.md
+    notes: '2026-05-27: Created 2 wiki nodes (regulation overview, dual perspective
+      concept). Also updating existing ILAAP framework node.'
+  02_sources/regulator/bcbs/Final report on Guidelines on ICAAP ILAAP (EBA-GL-2016-10).md:
+    status: partial
+    priority: high
+    domain: banking_regulation
+    author: EBA
+    description: 'EBA Final Report GL/2016/10: Guidelines on ICAAP and ILAAP information
+      collected for SREP purposes (November 2016, apply from January 2017). Specifies
+      4 categories of ICAAP/ILAAP information supervisors must collect: general governance/stress
+      testing, ICAAP-specific, ILAAP-specific, and conclusions/QA.'
+    ingest_date: '2026-05-27'
+    wiki_nodes:
+    - 03_wiki/regulations/Eba_Gl_2016_10_Icaap_Ilaap_Information_For_Srep.md
+    notes: '2026-05-27: Created 1 regulation node. EN version (GL-2016-10_EN.md) is
+      same document — registered separately.'
+  02_sources/regulator/bcbs/Guidelines on ICAAP ILAAP (EBA-GL-2016-10)_EN.md:
+    status: ingested
+    priority: low
+    domain: banking_regulation
+    author: EBA
+    description: EBA GL/2016/10 EN version (10 February 2017). Same document as Final
+      Report but EN official translation. Duplicate of Final Report GL/2016/10 — no
+      separate wiki nodes created.
+    ingest_date: '2026-05-27'
+    wiki_nodes:
+    - 03_wiki/regulations/Eba_Gl_2016_10_Icaap_Ilaap_Information_For_Srep.md
+    notes: '2026-05-27: Duplicate of Final Report file. Registered as reference to
+      same node.'
+  02_sources/regulator/bcbs/Guidelines on institutions stress testing (EBA-GL-2018-04).md:
+    status: partial
+    priority: high
+    domain: banking_regulation
+    author: EBA
+    description: EBA Guidelines GL/2018/04 on institutions' stress testing (July 2018,
+      apply from 2019). Replaces CEBS GL32. Covers stress testing taxonomy, governance,
+      scenario types, proportionality, reverse stress testing, specific risk areas
+      (credit/market/operational/liquidity/conduct), and solvency-liquidity interaction.
+    ingest_date: '2026-05-27'
+    wiki_nodes:
+    - 03_wiki/regulations/Eba_Gl_2018_04_Institutions_Stress_Testing.md
+    - 03_wiki/concepts/Reverse_Stress_Testing_Failure_Point_Business_Model_Viability.md
+    notes: '2026-05-27: Created 2 wiki nodes: 1 regulation (framework overview) +
+      1 concept (reverse stress testing).'
