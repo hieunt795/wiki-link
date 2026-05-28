@@ -1,6 +1,8 @@
 ---
 node_id: bcbs_sound_liquidity_risk_management_17_principles_001
 type: regulation
+jurisdiction: international
+issuer: bcbs
 title: BCBS Principles for Sound Liquidity Risk Management and Supervision (2008) — 17-Principle Framework
 aliases:
   - BCBS liquidity risk principles 2008

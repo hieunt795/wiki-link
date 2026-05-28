@@ -1,6 +1,8 @@
 ---
 node_id: bcbs_stress_testing_sound_practices_21_principles_2009_001
 type: regulation
+jurisdiction: international
+issuer: bcbs
 title: Bcbs Stress Testing Sound Practices 21 Principles 2009
 aliases:
 - BCBS 155

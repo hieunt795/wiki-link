@@ -1,6 +1,8 @@
 ---
 node_id: ecb_ilaap_guide_2018_seven_principles_ssm_001
 type: regulation
+jurisdiction: international
+issuer: ecb
 title: Ecb Ilaap Guide 2018 Seven Principles Ssm
 aliases:
 - ECB ILAAP Guide 2018

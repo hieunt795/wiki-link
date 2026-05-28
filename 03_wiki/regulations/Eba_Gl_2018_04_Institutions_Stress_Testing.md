@@ -1,6 +1,8 @@
 ---
 node_id: eba_gl_2018_04_institutions_stress_testing_001
 type: regulation
+jurisdiction: international
+issuer: eba
 title: Eba Gl 2018 04 Institutions Stress Testing
 aliases:
 - EBA GL/2018/04

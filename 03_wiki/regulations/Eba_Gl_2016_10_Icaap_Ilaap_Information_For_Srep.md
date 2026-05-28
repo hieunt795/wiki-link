@@ -1,6 +1,8 @@
 ---
 node_id: eba_gl_2016_10_icaap_ilaap_information_for_srep_001
 type: regulation
+jurisdiction: international
+issuer: eba
 title: Eba Gl 2016 10 Icaap Ilaap Information For Srep
 aliases:
 - EBA GL/2016/10

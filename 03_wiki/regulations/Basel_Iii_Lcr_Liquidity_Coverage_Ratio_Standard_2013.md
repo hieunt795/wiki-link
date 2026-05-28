@@ -1,6 +1,8 @@
 ---
 node_id: basel_iii_lcr_liquidity_coverage_ratio_standard_2013_001
 type: regulation
+jurisdiction: international
+issuer: bcbs
 title: Basel Iii Lcr Liquidity Coverage Ratio Standard 2013
 aliases:
 - LCR

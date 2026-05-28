@@ -1,6 +1,8 @@
 ---
 node_id: bcbs_irrbb_standards_d368_2016_001
 type: regulation
+jurisdiction: international
+issuer: bcbs
 title: BCBS IRRBB Standards (d368) — 12-Principle Framework, April 2016
 aliases:
   - BCBS d368 IRRBB 2016
