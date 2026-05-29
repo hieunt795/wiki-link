@@ -20,17 +20,9 @@ tags:
 - negative-rate
 - deposit-beta
 - floor-risk
-- node: '[[NII]]'
-  relation: related_to
-- node: '[[EVE]]'
-  relation: related_to
 - margin-compression
 - swaption
 - interest-rate-floor
-- node: '[[IRRBB]]'
-  relation: related_to
-- node: '[[ALM]]'
-  relation: related_to
 confidence: 1
 stability: stable
 thesis: 'In a low/negative interest rate environment, ALM faces a structural dilemma
@@ -54,6 +46,14 @@ related:
 - node: '[[IRRBB_Standardised_Versus_Internal_Model_Approach]]'
   relation: related_to
 - node: '[[ILAAP_Supervisory_Liquidity_Framework]]'
+  relation: related_to
+- node: '[[NII]]'
+  relation: related_to
+- node: '[[EVE]]'
+  relation: related_to
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[ALM]]'
   relation: related_to
 date_created: '2026-05-28'
 date_updated: '2026-05-28'

@@ -14,18 +14,12 @@ domain:
   primary: alm
   secondary: []
 tags:
-- node: '[[NMD]]'
-  relation: related_to
 - non-maturity-deposits
 - decay-model
 - behavioralization
 - deposit-segmentation
 - average-life
 - logistic-regression
-- node: '[[IRRBB]]'
-  relation: related_to
-- node: '[[ALM]]'
-  relation: related_to
 confidence: 1
 stability: stable
 thesis: 'Deposit decay modeling estimates the expected outflow rate of non-maturity
@@ -45,6 +39,12 @@ related:
 - node: '[[IRRBB_Standardised_Versus_Internal_Model_Approach]]'
   relation: related_to
 - node: '[[ALM_Low_Negative_Interest_Rate_Environment]]'
+  relation: related_to
+- node: '[[NMD]]'
+  relation: related_to
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[ALM]]'
   relation: related_to
 date_created: '2026-05-28'
 date_updated: '2026-05-28'

@@ -22,10 +22,6 @@ tags:
 - BRRD
 - recovery-planning
 - gone-concern
-- node: '[[ALM]]'
-  relation: related_to
-- node: '[[Basel_III]]'
-  relation: related_to
 confidence: 1
 stability: stable
 thesis: 'Under the BRRD framework, a bank that exhausts recovery options enters resolution
@@ -49,6 +45,10 @@ related:
 - node: '[[Optimal_Funding_Tenor_Cost_Risk_Tradeoff]]'
   relation: related_to
 - node: '[[Bank_Capital_Structure_And_Capital_Management_Alm]]'
+  relation: related_to
+- node: '[[ALM]]'
+  relation: related_to
+- node: '[[Basel_III]]'
   relation: related_to
 date_created: '2026-05-28'
 date_updated: '2026-05-28'

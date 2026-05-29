@@ -20,12 +20,6 @@ tags:
 - HTM-portfolio
 - concentration-risk
 - governance-failure
-- node: '[[IRRBB]]'
-  relation: related_to
-- node: '[[ALM]]'
-  relation: related_to
-- node: '[[NMD]]'
-  relation: related_to
 confidence: 1
 stability: stable
 thesis: 'The SVB failure in March 2023 exemplifies how unhedged duration mismatch
@@ -47,6 +41,12 @@ related:
 - node: '[[Integrated_Stress_Testing_Capital_Liquidity_Link]]'
   relation: related_to
 - node: '[[ALM_Enterprise_Risk_Management_Framework]]'
+  relation: related_to
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[ALM]]'
+  relation: related_to
+- node: '[[NMD]]'
   relation: related_to
 date_created: '2026-05-28'
 date_updated: '2026-05-28'

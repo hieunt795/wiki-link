@@ -13,19 +13,9 @@ domain:
   primary: alm
   secondary: []
 tags:
-- node: '[[ALM]]'
-  relation: related_to
-- node: '[[ERM]]'
-  relation: related_to
-- node: '[[ALCO]]'
-  relation: related_to
 - risk appetite
-- node: '[[CET1]]'
-  relation: related_to
 - earnings-at-risk
 - revaluation-reserve
-- node: '[[RWA]]'
-  relation: related_to
 - governance
 confidence: 1
 stability: stable
@@ -47,6 +37,16 @@ related:
 - node: '[[ILAAP_Supervisory_Liquidity_Framework]]'
   relation: related_to
 - node: '[[Bcbs_Irrbb_Standards_2016]]'
+  relation: related_to
+- node: '[[ALM]]'
+  relation: related_to
+- node: '[[ERM]]'
+  relation: related_to
+- node: '[[ALCO]]'
+  relation: related_to
+- node: '[[CET1]]'
+  relation: related_to
+- node: '[[RWA]]'
   relation: related_to
 date_created: '2026-05-28'
 date_updated: '2026-05-28'

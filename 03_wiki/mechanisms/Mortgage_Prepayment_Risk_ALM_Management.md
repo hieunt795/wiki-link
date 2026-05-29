@@ -18,20 +18,8 @@ domain:
 tags:
 - mortgage
 - prepayment
-- node: '[[MBS]]'
-  relation: related_to
-- node: '[[CPR]]'
-  relation: related_to
-- node: '[[OAS]]'
-  relation: related_to
 - negative-convexity
-- node: '[[MSR]]'
-  relation: related_to
 - S-curve
-- node: '[[IRRBB]]'
-  relation: related_to
-- node: '[[ALM]]'
-  relation: related_to
 - stochastic-EaR
 confidence: 1
 stability: stable
@@ -53,6 +41,18 @@ related:
 - node: '[[Interest_Rate_Basis_Risk_Measurement_ALM]]'
   relation: related_to
 - node: '[[IRRBB_Standardised_Versus_Internal_Model_Approach]]'
+  relation: related_to
+- node: '[[MBS]]'
+  relation: related_to
+- node: '[[CPR]]'
+  relation: related_to
+- node: '[[OAS]]'
+  relation: related_to
+- node: '[[MSR]]'
+  relation: related_to
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[ALM]]'
   relation: related_to
 date_created: '2026-05-28'
 date_updated: '2026-05-28'

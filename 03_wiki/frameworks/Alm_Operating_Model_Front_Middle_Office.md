@@ -22,10 +22,6 @@ tags:
 - conflicts-of-interest
 - lines-of-defense
 - FTP
-- node: '[[ALM]]'
-  relation: related_to
-- node: '[[ALCO]]'
-  relation: related_to
 confidence: 1
 stability: stable
 thesis: 'Banks organize ALM/Treasury in two contrasted operating models — front office
@@ -47,6 +43,10 @@ related:
 - node: '[[Ftp_Transfer_Price_Curve_And_Structural_Contribution]]'
   relation: related_to
 - node: '[[Alm_Role_Srep_Pillar2_Capital_Liquidity]]'
+  relation: related_to
+- node: '[[ALM]]'
+  relation: related_to
+- node: '[[ALCO]]'
   relation: related_to
 date_created: '2026-05-28'
 date_updated: '2026-05-28'

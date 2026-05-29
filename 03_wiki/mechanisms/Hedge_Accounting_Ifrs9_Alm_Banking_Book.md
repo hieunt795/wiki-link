@@ -21,10 +21,6 @@ tags:
 - fair-value-hedge
 - cash-flow-hedge
 - OCI
-- node: '[[IRRBB]]'
-  relation: related_to
-- node: '[[ALM]]'
-  relation: related_to
 confidence: 1
 stability: stable
 thesis: 'IFRS 9 replaced IAS 39 hedge accounting by eliminating the ex-post effectiveness
@@ -45,6 +41,10 @@ related:
 - node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
   relation: related_to
 - node: '[[ALM_Hedging_Strategy_Design]]'
+  relation: related_to
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[ALM]]'
   relation: related_to
 date_created: '2026-05-28'
 date_updated: '2026-05-28'

@@ -14,18 +14,6 @@ domain:
   primary: alm
   secondary: []
 tags:
-- node: '[[IRRBB]]'
-  relation: related_to
-- node: '[[BCBS]]'
-  relation: related_to
-- node: '[[Pillar2]]'
-  relation: related_to
-- node: '[[EVE]]'
-  relation: related_to
-- node: '[[NII]]'
-  relation: related_to
-- node: '[[SOT]]'
-  relation: related_to
 - supervisory-outlier-test
 - standardised-approach
 - internal-model
@@ -51,6 +39,18 @@ related:
 - node: '[[ILAAP_Supervisory_Liquidity_Framework]]'
   relation: related_to
 - node: '[[Interest_Rate_Basis_Risk_Measurement_ALM]]'
+  relation: related_to
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[BCBS]]'
+  relation: related_to
+- node: '[[Pillar2]]'
+  relation: related_to
+- node: '[[EVE]]'
+  relation: related_to
+- node: '[[NII]]'
+  relation: related_to
+- node: '[[SOT]]'
   relation: related_to
 date_created: '2026-05-28'
 date_updated: '2026-05-28'

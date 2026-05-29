@@ -15,20 +15,10 @@ domain:
   secondary: []
 tags:
 - basis-risk
-- node: '[[IRRBB]]'
-  relation: related_to
 - multi-curve
-- node: '[[EURIBOR]]'
-  relation: related_to
-- node: '[[OIS]]'
-  relation: related_to
 - tenor-basis
 - gap-analysis
 - key-rate-duration
-- node: '[[NII]]'
-  relation: related_to
-- node: '[[PV01]]'
-  relation: related_to
 confidence: 1
 stability: stable
 thesis: 'Post-2008, basis spreads between EURIBOR tenors and between IBOR and OIS
@@ -49,6 +39,16 @@ related:
 - node: '[[NMD_Decay_Model_Volume_Segmentation]]'
   relation: related_to
 - node: '[[Hedge_Accounting_IFRS9_ALM]]'
+  relation: related_to
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[EURIBOR]]'
+  relation: related_to
+- node: '[[OIS]]'
+  relation: related_to
+- node: '[[NII]]'
+  relation: related_to
+- node: '[[PV01]]'
   relation: related_to
 date_created: '2026-05-28'
 date_updated: '2026-05-28'

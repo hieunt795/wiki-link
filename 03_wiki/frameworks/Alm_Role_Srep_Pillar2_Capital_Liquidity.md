@@ -22,12 +22,6 @@ tags:
 - TSCR
 - ICAAP
 - ILAAP
-- node: '[[ALM]]'
-  relation: related_to
-- node: '[[IRRBB]]'
-  relation: related_to
-- node: '[[Basel_III]]'
-  relation: related_to
 confidence: 1
 stability: stable
 thesis: 'The Supervisory Review and Evaluation Process (SREP) evaluates banks across
@@ -54,6 +48,12 @@ related:
 - node: '[[Bcbs_Irrbb_Standards_2016]]'
   relation: related_to
 - node: '[[Alm_Operating_Model_Front_Middle_Office]]'
+  relation: related_to
+- node: '[[ALM]]'
+  relation: related_to
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[Basel_III]]'
   relation: related_to
 date_created: '2026-05-28'
 date_updated: '2026-05-28'

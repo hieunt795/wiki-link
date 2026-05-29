@@ -14,20 +14,12 @@ domain:
   primary: alm
   secondary: []
 tags:
-- node: '[[NMD]]'
-  relation: related_to
 - stochastic-model
-- node: '[[Vasicek]]'
-  relation: related_to
 - credit-spread
 - Monte-Carlo
-- node: '[[Cholesky]]'
-  relation: related_to
 - margin-compression
 - floor-risk
 - replicating-portfolio
-- node: '[[IRRBB]]'
-  relation: related_to
 confidence: 1
 stability: stable
 thesis: 'The Bohn stochastic three-factor NMD model drives deposit value via correlated
@@ -48,6 +40,14 @@ related:
 - node: '[[ALM_Low_Negative_Interest_Rate_Environment]]'
   relation: related_to
 - node: '[[IRRBB_Standardised_Versus_Internal_Model_Approach]]'
+  relation: related_to
+- node: '[[NMD]]'
+  relation: related_to
+- node: '[[Vasicek]]'
+  relation: related_to
+- node: '[[Cholesky]]'
+  relation: related_to
+- node: '[[IRRBB]]'
   relation: related_to
 date_created: '2026-05-28'
 date_updated: '2026-05-28'

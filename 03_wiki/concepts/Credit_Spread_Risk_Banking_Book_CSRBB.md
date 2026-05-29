@@ -16,22 +16,10 @@ domain:
   primary: alm
   secondary: []
 tags:
-- node: '[[CSRBB]]'
-  relation: related_to
 - credit-spread
 - hazard-rate
 - reduced-form
-- node: '[[OAS]]'
-  relation: related_to
-- node: '[[IRRBB]]'
-  relation: related_to
-- node: '[[IFRS9]]'
-  relation: related_to
 - duration
-- node: '[[LGD]]'
-  relation: related_to
-- node: '[[ALM]]'
-  relation: related_to
 confidence: 1
 stability: stable
 thesis: 'CSRBB is the sensitivity of banking book economic value to changes in credit
@@ -52,6 +40,18 @@ related:
 - node: '[[Hedge_Accounting_IFRS9_ALM]]'
   relation: related_to
 - node: '[[Interest_Rate_Basis_Risk_Measurement_ALM]]'
+  relation: related_to
+- node: '[[CSRBB]]'
+  relation: related_to
+- node: '[[OAS]]'
+  relation: related_to
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[IFRS9]]'
+  relation: related_to
+- node: '[[LGD]]'
+  relation: related_to
+- node: '[[ALM]]'
   relation: related_to
 date_created: '2026-05-28'
 date_updated: '2026-05-28'
