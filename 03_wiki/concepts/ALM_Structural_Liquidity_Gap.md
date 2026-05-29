@@ -1,55 +1,52 @@
 ---
 node_id: alm_structural_liquidity_gap_001
 type: concept
-title: "ALM Structural Liquidity Gap — Medium-Long Term Liquidity Management"
+title: ALM Structural Liquidity Gap — Medium-Long Term Liquidity Management
 aliases:
-  - Structural liquidity
-  - Medium-long term liquidity gap
-  - Structural liquidity risk
-  - Beyond-LCR liquidity management
-  - NSFR structural liquidity
-  - khe hở thanh khoản cơ cấu
-  - quản lý thanh khoản trung dài hạn
-
+- Structural liquidity
+- Medium-long term liquidity gap
+- Structural liquidity risk
+- Beyond-LCR liquidity management
+- NSFR structural liquidity
+- khe hở thanh khoản cơ cấu
+- quản lý thanh khoản trung dài hạn
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - liquidity
-  - nsfr
-  - structural_liquidity
-  - maturity_ladder
-  - funding
-  - behavioural_models
-
+- liquidity
+- nsfr
+- structural_liquidity
+- maturity_ladder
+- funding
+- behavioural_models
 confidence: 1
 stability: stable
+thesis: '[LLM] Structural liquidity management governs the medium-to-long term balance
+  between assets and liabilities beyond the 1-year short-term horizon (the LCR window),
+  using gap ratios at 1Y, 3Y, and 5Y horizons to limit excessive maturity transformation;
+  the NSFR operationalizes the regulatory dimension of this management by requiring
+  that available stable funding (ASF) exceeds required stable funding (RSF) on a one-year
+  horizon, while internal structural limits add further buffers and behavioral modeling
+  assumptions determine the effective funding profile of behavioural items.
 
-thesis: >
-  [LLM] Structural liquidity management governs the medium-to-long term balance between assets
-  and liabilities beyond the 1-year short-term horizon (the LCR window), using gap ratios at
-  1Y, 3Y, and 5Y horizons to limit excessive maturity transformation; the NSFR operationalizes
-  the regulatory dimension of this management by requiring that available stable funding (ASF)
-  exceeds required stable funding (RSF) on a one-year horizon, while internal structural limits
-  add further buffers and behavioral modeling assumptions determine the effective funding profile
-  of behavioural items.
-
+  '
 source_refs:
-  - path: 02_sources/books/alm/A - Asset liability optimization.md
-    pages: "Ch 1 (Basel III LCR/NSFR overview), Ch 2 (Medium Long-Term Liquidity, Structural Liquidity Management)"
-    weight: primary
-
+- path: 02_sources/books/alm/A - Asset liability optimization.md
+  pages: Ch 1 (Basel III LCR/NSFR overview), Ch 2 (Medium Long-Term Liquidity, Structural
+    Liquidity Management)
+  weight: primary
+parent_node: '[[ALM_Balance_Sheet_Optimization_Framework]]'
 related:
-  - node: "[[ALM_Balance_Sheet_Optimization_Framework]]"
-    relation: component_of
-  - node: "[[ALM_Hedging_Strategy_Design]]"
-    relation: related_to
-  - node: "[[FTP_Methodology]]"
-    relation: related_to
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[ALM_Balance_Sheet_Optimization_Framework]]'
+  relation: component_of
+- node: '[[ALM_Hedging_Strategy_Design]]'
+  relation: related_to
+- node: '[[FTP_Methodology]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Short-Term vs. Structural Liquidity

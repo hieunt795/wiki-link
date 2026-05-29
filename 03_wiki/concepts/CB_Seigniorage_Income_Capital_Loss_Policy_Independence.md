@@ -22,11 +22,19 @@ tags:
 - monetary_policy
 confidence: 1
 stability: stable
-thesis: "Central bank income derives primarily from seigniorage — the spread between the zero or near-zero cost of issuing liabilities (banknotes, reserves) and the income earned on backing assets; while CB losses are theoretically compatible with continued monetary policy effectiveness (CB always meets domestic currency liabilities), the empirical evidence shows that poorly-capitalised CBs are associated with poor policy outcomes — the binding constraint is reputational: accumulated losses must not exceed the net present value of future seigniorage income, beyond which credibility collapses."
+thesis: 'Central bank income derives primarily from seigniorage — the spread between
+  the zero or near-zero cost of issuing liabilities (banknotes, reserves) and the
+  income earned on backing assets; while CB losses are theoretically compatible with
+  continued monetary policy effectiveness (CB always meets domestic currency liabilities),
+  the empirical evidence shows that poorly-capitalised CBs are associated with poor
+  policy outcomes — the binding constraint is reputational: accumulated losses must
+  not exceed the net present value of future seigniorage income, beyond which credibility
+  collapses.'
 source_refs:
 - path: 02_sources/books/central_bank_balance_sheet/Central_Bank_Balance_Sheet.md
   pages: lines 579-651 (Section 5 and Conclusion)
   weight: primary
+parent_node: null
 related:
 - node: '[[CB_Reserve_Requirements_Taxonomy_Surplus_Shortage_Liquidity]]'
   relation: companion

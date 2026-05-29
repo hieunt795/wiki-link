@@ -3,42 +3,45 @@ node_id: volcker_fed_reaction_function_break_frm_001
 type: framework
 title: Volcker Fed Reaction Function Break
 aliases:
-  - Volcker shock
-  - Paul Volcker Fed
-  - cu soc Volcker
-  - phan ung Fed thoi Volcker
+- Volcker shock
+- Paul Volcker Fed
+- cu soc Volcker
+- phan ung Fed thoi Volcker
 domain:
   primary: monetary_policy
   secondary:
-    - macro_outlook
+  - macro_outlook
 tags:
-  - volcker
-  - fed
-  - disinflation
-  - monetary_targeting
-  - taylor_rule
-  - credibility
+- volcker
+- fed
+- disinflation
+- monetary_targeting
+- taylor_rule
+- credibility
 confidence: 4
 stability: stable
-thesis: >
-  The Volcker shift was a break in the Fed reaction function: after 1979, the Fed
-  responded more than one-for-one to inflation shocks, temporarily used monetary
-  targeting, and subordinated output stabilization to restoring inflation
-  credibility.
+thesis: 'The Volcker shift was a break in the Fed reaction function: after 1979, the
+  Fed responded more than one-for-one to inflation shocks, temporarily used monetary
+  targeting, and subordinated output stabilization to restoring inflation credibility.
+
+  '
 source_refs:
-  - path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-4.md
-    pages: "Ch.7, Table 7.3"
-    weight: primary
-  - path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-2.md
-    pages: "Ch.2.2.2-2.2.3"
-    weight: supporting
+- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro -
+    Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-4.md
+  pages: Ch.7, Table 7.3
+  weight: primary
+- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro -
+    Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-2.md
+  pages: Ch.2.2.2-2.2.3
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[US 1970s Stagflation And Policy Regime Shift]]"
-    relation: policy_resolution
-  - node: "[[Stagflation Policy Response Tradeoff Framework]]"
-    relation: inflation_first_case
-  - node: "[[Central Bank Credibility Supply Shock Policy Space]]"
-    relation: credibility_restoration
+- node: '[[US 1970s Stagflation And Policy Regime Shift]]'
+  relation: policy_resolution
+- node: '[[Stagflation Policy Response Tradeoff Framework]]'
+  relation: inflation_first_case
+- node: '[[Central Bank Credibility Supply Shock Policy Space]]'
+  relation: credibility_restoration
 date_created: 2026-05-24
 date_updated: 2026-05-24
 ---

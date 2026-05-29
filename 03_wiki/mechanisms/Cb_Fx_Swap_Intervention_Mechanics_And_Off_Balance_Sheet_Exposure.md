@@ -34,8 +34,10 @@ thesis: '[LLM] A central bank FX swap (buy-sell or sell-buy) consists of two leg
   below reported gross reserves.'
 source_refs:
 - path: 04_research/ma_fx_target_balance_sheet/findings/fx_swap_intervention_mechanics.md
-  pages: 'TRUE_GAP — pending ingest of BIS WP 119 (Patel & Cavallino 2019), BIS QR Sep 2022'
+  pages: TRUE_GAP — pending ingest of BIS WP 119 (Patel & Cavallino 2019), BIS QR
+    Sep 2022
   weight: primary
+parent_node: '[[CB FX Rate Target Balance Sheet Constraint And Sterilization]]'
 related:
 - node: '[[CB Hidden FX Reserves Net Effective Intervention Capacity]]'
   relation: consequence — swap far-leg book reduces net effective reserves

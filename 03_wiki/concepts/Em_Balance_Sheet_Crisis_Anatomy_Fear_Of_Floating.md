@@ -23,11 +23,22 @@ tags:
 - exchange_rate
 confidence: 4
 stability: stable
-thesis: "EM balance sheet crises follow a structurally recurring pattern: (1) rapid growth + financial opening → FX borrowing buildup by private sector; (2) implicit exchange rate guarantee (from limited FX flexibility) removes borrowers' incentive to hedge → moral hazard → large unhedged FX exposures in banking and nonbank sectors; (3) trigger event (sudden stop, risk premium spike, terms-of-trade shock) → authorities face 'fear of floating' — depreciation would bankrupt unhedged FX borrowers and collapse banks → authorities defend exchange rate at cost of reserves; (4) crisis becomes inevitable regardless of delay; the 3-sector FX balance sheet matrix (CB + banks + nonbanks, split by maturity and residency) is the analytical tool for diagnosing latent vulnerability before trigger."
+thesis: 'EM balance sheet crises follow a structurally recurring pattern: (1) rapid
+  growth + financial opening → FX borrowing buildup by private sector; (2) implicit
+  exchange rate guarantee (from limited FX flexibility) removes borrowers'' incentive
+  to hedge → moral hazard → large unhedged FX exposures in banking and nonbank sectors;
+  (3) trigger event (sudden stop, risk premium spike, terms-of-trade shock) → authorities
+  face ''fear of floating'' — depreciation would bankrupt unhedged FX borrowers and
+  collapse banks → authorities defend exchange rate at cost of reserves; (4) crisis
+  becomes inevitable regardless of delay; the 3-sector FX balance sheet matrix (CB
+  + banks + nonbanks, split by maturity and residency) is the analytical tool for
+  diagnosing latent vulnerability before trigger.'
 source_refs:
 - path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
-  pages: "lines 3693-3814 (Chapter 6 Section 3: The Anatomy of an EM Balance Sheet Crisis)"
+  pages: 'lines 3693-3814 (Chapter 6 Section 3: The Anatomy of an EM Balance Sheet
+    Crisis)'
   weight: primary
+parent_node: null
 related:
 - node: '[[IMF_Balance_Of_Payments_Framework_And_External_Account_Analysis]]'
   relation: companion

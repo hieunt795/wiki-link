@@ -44,6 +44,7 @@ source_refs:
     Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-3.md
   pages: Ch.5 §5.1–5.4, pp.860-1109
   weight: primary
+parent_node: null
 related:
 - node: '[[Monetary_Policy_Instruments_Operational_Framework]]'
   relation: starts_from

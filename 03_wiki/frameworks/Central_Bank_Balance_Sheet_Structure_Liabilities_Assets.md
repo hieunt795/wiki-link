@@ -29,6 +29,7 @@ source_refs:
 - path: 02_sources/books/central_bank_balance_sheet/Central_Bank_Balance_Sheet.md
   pages: Rule CCBS Handbook No.32, BOE
   weight: primary
+parent_node: null
 related:
 - node: '[[Inflation Targeting Framework (ITF) and Post-GFC Policy Mix]]'
   relation: shared_tag:central-bank

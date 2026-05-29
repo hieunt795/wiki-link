@@ -41,25 +41,34 @@ thesis: 'OIN (Other Items Net) is the mandatory residual in the MA identity RM =
   the quasi-fiscal and valuation component of broad money growth from genuine credit
   expansion.'
 source_refs:
-- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-  pages: 'Box 5.2 p.4336–4353 (OINm components); Box 5.8 p.4651 (valuation → OIN); p.4572–4578 (M2 decomposition OINb weight); p.1841 (recapitalization fiscal treatment)'
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: Box 5.2 p.4336–4353 (OINm components); Box 5.8 p.4651 (valuation → OIN);
+    p.4572–4578 (M2 decomposition OINb weight); p.1841 (recapitalization fiscal treatment)
   weight: primary
 - path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
-  pages: 'lines 2720–2728 (sterilization losses → OINm decline); lines 2745–2753 (OINm exhaustion dual deterioration)'
+  pages: lines 2720–2728 (sterilization losses → OINm decline); lines 2745–2753 (OINm
+    exhaustion dual deterioration)
   weight: primary
+parent_node: '[[CB FX Rate Target Balance Sheet Constraint And Sterilization]]'
 related:
 - node: '[[IMF Monetary Survey And Reserve Money Identity Framework]]'
-  relation: identity_foundation — OIN is the fourth term of RM = NFA + NCG + Cb + OIN
+  relation: identity_foundation — OIN is the fourth term of RM = NFA + NCG + Cb +
+    OIN
 - node: '[[IMF Monetary Survey — Valuation Adjustment and Transaction Flow Decomposition]]'
   relation: valuation_channel — FX revaluation flows into OIN via VAj mechanism
 - node: '[[CB FX Target — Five-Entity Combined Balance Sheet Trace (T-Account Scenarios)]]'
-  relation: applied_context — OINm decline in Scenario A; OINm exhaustion in Scenario D
-- node: '[[CB Quasi-Fiscal Mechanism — Sterilization Costs, Seigniorage, and the Fiscal-Monetary Nexus]]'
+  relation: applied_context — OINm decline in Scenario A; OINm exhaustion in Scenario
+    D
+- node: '[[CB Quasi-Fiscal Mechanism — Sterilization Costs, Seigniorage, and the Fiscal-Monetary
+    Nexus]]'
   relation: loss_source — QF losses accumulate in OINm as retained earnings fall
 - node: '[[CB FX Rate Target Balance Sheet Constraint And Sterilization]]'
-  relation: parent_mechanism — sterilization is the primary driver of OINm decline under FX target
+  relation: parent_mechanism — sterilization is the primary driver of OINm decline
+    under FX target
 - node: '[[IMF FX Regime Balance Sheet — Monetary Accounts Perspective (Chapter 5)]]'
-  relation: regime_context — under FX target, OIN is the only NDA component freely adjustable
+  relation: regime_context — under FX target, OIN is the only NDA component freely
+    adjustable
 date_created: '2026-05-26'
 date_updated: '2026-05-26'
 ---

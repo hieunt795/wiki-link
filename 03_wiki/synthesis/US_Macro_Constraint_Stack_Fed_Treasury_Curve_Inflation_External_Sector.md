@@ -3,51 +3,64 @@ node_id: us_macro_constraint_stack_fed_treasury_curve_inflation_external_sector_
 type: synthesis
 title: US Macro Constraint Stack Fed Treasury Curve Inflation External Sector
 aliases:
-  - US macro stack
-  - chong lop vi mo My
-  - khung rang buoc vi mo My
-  - US macro pressure stack
+- US macro stack
+- chong lop vi mo My
+- khung rang buoc vi mo My
+- US macro pressure stack
 domain:
   primary: macro_outlook
-  secondary: [monetary_policy, fiscal_policy, financial_markets]
-tags: [us, fed, treasury, yield_curve, inflation, imports, rates, external_sector]
+  secondary:
+  - monetary_policy
+  - fiscal_policy
+  - financial_markets
+tags:
+- us
+- fed
+- treasury
+- yield_curve
+- inflation
+- imports
+- rates
+- external_sector
 confidence: 3
 stability: evolving
-thesis: >
-  US macro outcomes are best read as a stack of linked constraints rather than as
-  isolated indicators. Fed and Treasury plumbing sets the reserve and funding
-  backdrop, the Treasury curve prices the policy path and term premium, inflation
-  reflects both demand and supply/cost pressures, and import and exchange-rate
-  channels determine how domestic shocks leak into prices and growth.
+thesis: 'US macro outcomes are best read as a stack of linked constraints rather than
+  as isolated indicators. Fed and Treasury plumbing sets the reserve and funding backdrop,
+  the Treasury curve prices the policy path and term premium, inflation reflects both
+  demand and supply/cost pressures, and import and exchange-rate channels determine
+  how domestic shocks leak into prices and growth.
+
+  '
 source_refs:
-  - path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
-    pages: "Ch. 2-5, 24"
-    weight: primary
-  - path: 02_sources/books/choudhry_banking_fixed_income/Choudhry_Analysing_Yield_Curve.md
-    pages: "Ch. 1-2, 12-13"
-    weight: supporting
-  - path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
-    pages: "full document"
-    weight: supporting
-  - path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
-    pages: "full document"
-    weight: supporting
-  - path: 02_sources/Clipping/A new Fed-Treasury Accord_.md
-    pages: "full document"
-    weight: supporting
+- path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
+  pages: Ch. 2-5, 24
+  weight: primary
+- path: 02_sources/books/choudhry_banking_fixed_income/Choudhry_Analysing_Yield_Curve.md
+  pages: Ch. 1-2, 12-13
+  weight: supporting
+- path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
+  pages: full document
+  weight: supporting
+- path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
+  pages: full document
+  weight: supporting
+- path: 02_sources/Clipping/A new Fed-Treasury Accord_.md
+  pages: full document
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Fed Fiscal Agent Treasury Relationship]]"
-    relation: plumbing_layer
-  - node: "[[Fed Balance Sheet Size and Policy Rate Independence]]"
-    relation: policy_rate_layer
-  - node: "[[UST Market Primary Secondary OnRun OffRun Structure]]"
-    relation: curve_market_layer
-  - node: "[[Monetary Policy Transmission Short Long Rate Frictions]]"
-    relation: transmission_layer
-  - node: "[[Non-Linear Inflation Amplifier Mechanics]]"
-    relation: inflation_layer
-  - node: "[[Imf Balance Of Payments Framework and External Account Analysis]]"
-    relation: external_sector_layer
+- node: '[[Fed Fiscal Agent Treasury Relationship]]'
+  relation: plumbing_layer
+- node: '[[Fed Balance Sheet Size and Policy Rate Independence]]'
+  relation: policy_rate_layer
+- node: '[[UST Market Primary Secondary OnRun OffRun Structure]]'
+  relation: curve_market_layer
+- node: '[[Monetary Policy Transmission Short Long Rate Frictions]]'
+  relation: transmission_layer
+- node: '[[Non-Linear Inflation Amplifier Mechanics]]'
+  relation: inflation_layer
+- node: '[[Imf Balance Of Payments Framework and External Account Analysis]]'
+  relation: external_sector_layer
 date_created: 2026-05-24
 date_updated: 2026-05-24
 ---

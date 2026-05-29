@@ -42,6 +42,7 @@ source_refs:
 - path: 02_sources/books/duffie_bpea_payments_2026/Duffie_BPEA_Payments_Liquidity_2026.md
   pages: Sections I, II, III — Abstract, p.1-40
   weight: primary
+parent_node: null
 related:
 - node: '[[Interest_Rate_Corridor_Floor_System_Standing_Facilities]]'
   relation: mechanism_of

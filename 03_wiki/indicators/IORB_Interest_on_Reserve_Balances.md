@@ -1,69 +1,66 @@
 ---
 node_id: indicator_iorb_001
 type: indicator
-title: "IORB — Interest on Reserve Balances"
+title: IORB — Interest on Reserve Balances
 aliases:
-  - IORB
-  - IOR
-  - IOER
-  - interest on excess reserves
-  - interest on reserves
-  - lãi suất dự trữ
-
+- IORB
+- IOR
+- IOER
+- interest on excess reserves
+- interest on reserves
+- lãi suất dự trữ
 domain:
   primary: monetary_policy
 tags:
-  - interest-rate
-  - reserves
-  - fed-floor
-  - ample-reserves
-  - policy-rate
-
+- interest-rate
+- reserves
+- fed-floor
+- ample-reserves
+- policy-rate
 confidence: 3
 stability: stable
-
 indicator_type: monetary
 frequency: daily (set by FOMC decision)
-data_source: "Federal Reserve Board — set at each FOMC meeting; effective next business day"
-interpretation: >
-  IORB is the floor for the federal funds rate in the ample reserves framework:
-  no bank will lend reserves below the rate it earns by simply holding them at the Fed.
-  When EFFR trades below IORB, it signals FHLB arbitrage (FHLBs can't earn IORB but
-  lend to banks above it). When market rates persistently approach or exceed IORB,
-  reserve scarcity is emerging and the Fed should act.
+data_source: Federal Reserve Board — set at each FOMC meeting; effective next business
+  day
+interpretation: 'IORB is the floor for the federal funds rate in the ample reserves
+  framework: no bank will lend reserves below the rate it earns by simply holding
+  them at the Fed. When EFFR trades below IORB, it signals FHLB arbitrage (FHLBs can''t
+  earn IORB but lend to banks above it). When market rates persistently approach or
+  exceed IORB, reserve scarcity is emerging and the Fed should act.
 
-thesis: >
-  IORB is the interest rate the Federal Reserve pays on all reserve balances held by
-  depository institutions, serving as the effective floor of the federal funds rate
-  under the ample reserves operating framework. It replaced the distinction between
+  '
+thesis: 'IORB is the interest rate the Federal Reserve pays on all reserve balances
+  held by depository institutions, serving as the effective floor of the federal funds
+  rate under the ample reserves operating framework. It replaced the distinction between
   required reserve interest (IOR) and excess reserve interest (IOER) in July 2021,
   when reserve requirements were set to zero. IORB is the primary lever the Fed uses
-  to transmit the FOMC's target range into overnight money markets.
+  to transmit the FOMC''s target range into overnight money markets.
 
+  '
 source_refs:
-  - path: 02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md
-    weight: primary
-  - path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
-    weight: supporting
-  - path: 02_sources/books/conks/Conks - Plumping note (Money market.md
-    weight: supporting
-
+- path: 02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md
+  weight: primary
+- path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
+  weight: supporting
+- path: 02_sources/books/conks/Conks - Plumping note (Money market.md
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[EFFR_Effective_Federal_Funds_Rate]]"
-    relation: floors
-  - node: "[[Fed_Ample_Reserves_Range_Floor_Framework]]"
-    relation: core_instrument_of
-  - node: "[[Fed_Overnight_Reverse_Repo_On_Rrp]]"
-    relation: above
-  - node: "[[Interest_Rate_Corridor_Floor_System_Standing_Facilities]]"
-    relation: defines_floor_of
-  - node: "[[Fhlb_Effr_Iorb_Arbitrage_Floor_Mechanism]]"
-    relation: drives
-  - node: "[[Reserve_Floor_Payment_System_Demand]]"
-    relation: related_to
-  - node: "[[Federal_Reserve]]"
-    relation: set_by
-
+- node: '[[EFFR_Effective_Federal_Funds_Rate]]'
+  relation: floors
+- node: '[[Fed_Ample_Reserves_Range_Floor_Framework]]'
+  relation: core_instrument_of
+- node: '[[Fed_Overnight_Reverse_Repo_On_Rrp]]'
+  relation: above
+- node: '[[Interest_Rate_Corridor_Floor_System_Standing_Facilities]]'
+  relation: defines_floor_of
+- node: '[[Fhlb_Effr_Iorb_Arbitrage_Floor_Mechanism]]'
+  relation: drives
+- node: '[[Reserve_Floor_Payment_System_Demand]]'
+  relation: related_to
+- node: '[[Federal_Reserve]]'
+  relation: set_by
 date_created: 2026-05-23
 date_updated: 2026-05-23
 last_reviewed: 2026-05-23

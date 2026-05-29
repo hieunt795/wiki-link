@@ -3,50 +3,54 @@ node_id: bcbs_liquidity_stress_testing_p10_001
 type: mechanism
 title: BCBS Liquidity Stress Testing Framework — Principle 10 (2008)
 aliases:
-  - BCBS liquidity stress test 2008
-  - Principle 10 liquidity scenarios
-  - institution-specific market-wide liquidity stress
-  - stress test to CFP link
-  - kiểm tra sức chịu đựng thanh khoản BCBS
-  - nguyên tắc 10 kịch bản căng thẳng thanh khoản
+- BCBS liquidity stress test 2008
+- Principle 10 liquidity scenarios
+- institution-specific market-wide liquidity stress
+- stress test to CFP link
+- kiểm tra sức chịu đựng thanh khoản BCBS
+- nguyên tắc 10 kịch bản căng thẳng thanh khoản
 domain:
   primary: banking_regulation
   secondary: financial_stability
 tags:
-  - stress_testing
-  - liquidity_risk
-  - bcbs
-  - scenario_analysis
-  - cfp
-  - risk_tolerance
-  - institution_specific
-  - market_wide
-  - bcbs144
+- stress_testing
+- liquidity_risk
+- bcbs
+- scenario_analysis
+- cfp
+- risk_tolerance
+- institution_specific
+- market_wide
+- bcbs144
 confidence: 4
 stability: stable
-thesis: >
-  BCBS Principle 10 (2008) requires regular stress testing across four scenario
-  dimensions: short-term vs protracted, institution-specific vs market-wide
-  (and combinations). Tests must feed directly into: (1) sizing of the HQLA cushion;
-  (2) adjusting liquidity positions, strategies and limits; (3) shaping the
-  Contingency Funding Plan (CFP). Critically, the standard pre-dates Basel III's
-  ILAAP and SREP but establishes the same linkage principle: stress test results
-  are not standalone exercises — they drive management action and capital/liquidity
-  planning decisions. Scenarios must include simultaneous drying up of multiple
-  funding markets, restriction on FX convertibility, and severe operational disruptions.
+thesis: 'BCBS Principle 10 (2008) requires regular stress testing across four scenario
+  dimensions: short-term vs protracted, institution-specific vs market-wide (and combinations).
+  Tests must feed directly into: (1) sizing of the HQLA cushion; (2) adjusting liquidity
+  positions, strategies and limits; (3) shaping the Contingency Funding Plan (CFP).
+  Critically, the standard pre-dates Basel III''s ILAAP and SREP but establishes the
+  same linkage principle: stress test results are not standalone exercises — they
+  drive management action and capital/liquidity planning decisions. Scenarios must
+  include simultaneous drying up of multiple funding markets, restriction on FX convertibility,
+  and severe operational disruptions.
+
+  '
 source_refs:
-  - path: 02_sources/regulator/bcbs/bcbs144.md
-    pages: "para 94–109 (Principle 10 full: process, scenarios, assumptions, utilisation), para 99 (scenario types), para 103 (assumption list), para 108–109 (utilisation: management actions, CFP link)"
-    weight: primary
+- path: 02_sources/regulator/bcbs/bcbs144.md
+  pages: 'para 94–109 (Principle 10 full: process, scenarios, assumptions, utilisation),
+    para 99 (scenario types), para 103 (assumption list), para 108–109 (utilisation:
+    management actions, CFP link)'
+  weight: primary
+parent_node: '[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]'
 related:
-  - node: "[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]"
-    relation: parent_framework
-  - node: "[[Bcbs_Hqla_Liquidity_Cushion_Principle_12]]"
-    relation: cushion_sizing_output
-  - node: "[[Bcbs_Liquidity_Contingency_Funding_Plan_Principle_11]]"
-    relation: cfp_input
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]'
+  relation: parent_framework
+- node: '[[Bcbs_Hqla_Liquidity_Cushion_Principle_12]]'
+  relation: cushion_sizing_output
+- node: '[[Bcbs_Liquidity_Contingency_Funding_Plan_Principle_11]]'
+  relation: cfp_input
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## The Four-Dimension Scenario Matrix

@@ -32,6 +32,7 @@ source_refs:
 - path: 02_sources/Clipping/What about Japan_ (Part II).md
   pages: Full document
   weight: secondary
+parent_node: null
 related:
 - node: '[[Central_Bank_Balance_Sheet_Structure_Liabilities_Assets]]'
   relation: specialized_case

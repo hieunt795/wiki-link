@@ -36,13 +36,14 @@ source_refs:
     ALM_EY rep 21.06 ALM cmt.md
   pages: ''
   weight: primary
+parent_node: null
 related:
-  - node: "[[Funds_Transfer_Pricing_Rate_Decomposition_Base_Liquidity_Credit_Optionality_Components]]"
-    relation: component_framework
-  - node: "[[Ftp_Curve_Construction_By_Tenor_Short_Medium_Long_Term_Spread_Framework]]"
-    relation: curve_framework
-  - node: "[[Ftp_As_Unified_Balance_Sheet_Control_Mechanism_Transmission_To_Risk_Factors]]"
-    relation: control_mechanism
+- node: '[[Funds_Transfer_Pricing_Rate_Decomposition_Base_Liquidity_Credit_Optionality_Components]]'
+  relation: component_framework
+- node: '[[Ftp_Curve_Construction_By_Tenor_Short_Medium_Long_Term_Spread_Framework]]'
+  relation: curve_framework
+- node: '[[Ftp_As_Unified_Balance_Sheet_Control_Mechanism_Transmission_To_Risk_Factors]]'
+  relation: control_mechanism
 date_created: '2026-05-26'
 date_updated: '2026-05-26'
 ---

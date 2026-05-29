@@ -3,49 +3,49 @@ node_id: fed_dollar_swap_lines_crisis_hierarchy_and_swapper_of_last_resort_mec_0
 type: mechanism
 title: Fed Dollar Swap Lines Crisis Hierarchy and Swapper of Last Resort
 aliases:
-  - Swapper of Last Resort
-  - Central Bank Liquidity Swaps
-  - Global Dollar Backstop
-  - FX Swap Lines
-  - Hệ thống hoán đổi USD (Swap Lines)
+- Swapper of Last Resort
+- Central Bank Liquidity Swaps
+- Global Dollar Backstop
+- FX Swap Lines
+- Hệ thống hoán đổi USD (Swap Lines)
 domain:
   primary: monetary_policy
 tags:
-  - fed
-  - swap_lines
-  - eurodollar
-  - fx_swap
-  - fima
-  - liquidity
-  - backstop
-
+- fed
+- swap_lines
+- eurodollar
+- fx_swap
+- fima
+- liquidity
+- backstop
 confidence: 4
 stability: stable
+thesis: 'The Federal Reserve acts as the global "Swapper of Last Resort" by providing
+  unlimited USD liquidity to foreign central banks through swap lines; this mechanism
+  prevents offshore dollar shortages from triggering forced sales of US Treasuries
+  and serves as the ultimate backstop in the global dollar funding hierarchy.
 
-thesis: >
-  The Federal Reserve acts as the global "Swapper of Last Resort" by providing unlimited USD liquidity to foreign central banks through swap lines; this mechanism prevents offshore dollar shortages from triggering forced sales of US Treasuries and serves as the ultimate backstop in the global dollar funding hierarchy.
-
+  '
 source_refs:
-  - path: 02_sources/Clipping/I need a dollar (through your swap line).md
-    pages: "Full document"
-    weight: primary
-  - path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
-    pages: "497, 853-919, 1171-1257"
-    weight: primary
-  - path: 02_sources/books/central_bank_balance_sheet/Central_Bank_Balance_Sheet.md
-    pages: "384-402"
-    weight: supporting
-
+- path: 02_sources/Clipping/I need a dollar (through your swap line).md
+  pages: Full document
+  weight: primary
+- path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
+  pages: 497, 853-919, 1171-1257
+  weight: primary
+- path: 02_sources/books/central_bank_balance_sheet/Central_Bank_Balance_Sheet.md
+  pages: 384-402
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Eurodollar System Mechanics And Post-Reform Decline]]"
-    relation: offshore_funding_context
-  - node: "[[Fed Global Jaws FRP FIMA Public Dollar Architecture]]"
-    relation: complementary_facility
-  - node: "[[FX Swap Basis CIP Deviation Dollar Scarcity]]"
-    relation: market_indicator
-  - node: "[[USD Swap Lines Geopolitical Dollar Integration Tool]]"
-    relation: geopolitical_implication
-
+- node: '[[Eurodollar System Mechanics And Post-Reform Decline]]'
+  relation: offshore_funding_context
+- node: '[[Fed Global Jaws FRP FIMA Public Dollar Architecture]]'
+  relation: complementary_facility
+- node: '[[FX Swap Basis CIP Deviation Dollar Scarcity]]'
+  relation: market_indicator
+- node: '[[USD Swap Lines Geopolitical Dollar Integration Tool]]'
+  relation: geopolitical_implication
 date_created: 2026-05-22
 date_updated: 2026-05-24
 ---

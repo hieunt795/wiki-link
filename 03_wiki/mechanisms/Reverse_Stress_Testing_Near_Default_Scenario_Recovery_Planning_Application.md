@@ -30,6 +30,7 @@ source_refs:
     (EBA-GL-2018-04).md
   pages: ''
   weight: primary
+parent_node: null
 related: []
 date_created: '2026-05-27'
 date_updated: '2026-05-27'

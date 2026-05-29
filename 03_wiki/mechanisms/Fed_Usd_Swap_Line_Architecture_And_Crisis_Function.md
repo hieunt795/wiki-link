@@ -28,6 +28,7 @@ source_refs:
 - path: 02_sources/Clipping/I need a dollar (through your swap line).md
   pages: ''
   weight: primary
+parent_node: null
 related:
 - node: '[[Fed_Dollar_Swap_Lines_Crisis_Hierarchy_And_Swapper_Of_Last_Resort]]'
   relation: canonical_detailed_swap_line_mechanism

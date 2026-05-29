@@ -1,63 +1,59 @@
 ---
 node_id: entity_us_treasury_001
 type: entity
-title: "US Treasury Department"
+title: US Treasury Department
 aliases:
-  - US Treasury
-  - Treasury
-  - Department of the Treasury
-  - MOF (US context)
-  - Bộ Tài chính Mỹ
-
+- US Treasury
+- Treasury
+- Department of the Treasury
+- MOF (US context)
+- Bộ Tài chính Mỹ
 domain:
   primary: fiscal_policy
   secondary:
-    - monetary_policy
-    - financial_markets
+  - monetary_policy
+  - financial_markets
 tags:
-  - fiscal-policy
-  - united-states
-  - tga
-  - debt-issuance
-  - fiscal-agent
-
+- fiscal-policy
+- united-states
+- tga
+- debt-issuance
+- fiscal-agent
 confidence: 3
 stability: stable
-
 entity_type: institution
 jurisdiction: US
 established: 1789
-mandate: "Manage federal government finances: tax collection, debt issuance, payment processing, financial regulation"
-
-thesis: >
-  The US Treasury manages federal fiscal operations — issuing debt, maintaining the
-  Treasury General Account (TGA) at the Fed, and setting debt maturity composition
-  via the Quarterly Refunding. Treasury's cash management decisions (TGA drawdowns,
+mandate: 'Manage federal government finances: tax collection, debt issuance, payment
+  processing, financial regulation'
+thesis: 'The US Treasury manages federal fiscal operations — issuing debt, maintaining
+  the Treasury General Account (TGA) at the Fed, and setting debt maturity composition
+  via the Quarterly Refunding. Treasury''s cash management decisions (TGA drawdowns,
   T-bill vs coupon mix, extraordinary measures) have direct first-order effects on
   bank reserve levels and money market conditions independent of Fed policy.
 
+  '
 source_refs:
-  - path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
-    weight: primary
-  - path: 02_sources/Clipping/A new Fed-Treasury Accord_.md
-    weight: supporting
-  - path: 02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md
-    weight: supporting
-
+- path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
+  weight: primary
+- path: 02_sources/Clipping/A new Fed-Treasury Accord_.md
+  weight: supporting
+- path: 02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Fed_Fiscal_Agent_Treasury_Relationship]]"
-    relation: principal_in
-  - node: "[[Treasury_General_Account_Tga_Reserve_Swap]]"
-    relation: controls
-  - node: "[[Debt_Ceiling_Extraordinary_Measures_Treasury]]"
-    relation: executes
-  - node: "[[Tga_Reserve_Swap_Mechanics_And_Debt_Ceiling_Dynamics]]"
-    relation: drives
-  - node: "[[Fed_Treasury_Accord_2026_Proposal]]"
-    relation: counterparty_in
-  - node: "[[Federal_Reserve]]"
-    relation: principal_of_fiscal_agent
-
+- node: '[[Fed_Fiscal_Agent_Treasury_Relationship]]'
+  relation: principal_in
+- node: '[[Treasury_General_Account_Tga_Reserve_Swap]]'
+  relation: controls
+- node: '[[Debt_Ceiling_Extraordinary_Measures_Treasury]]'
+  relation: executes
+- node: '[[Tga_Reserve_Swap_Mechanics_And_Debt_Ceiling_Dynamics]]'
+  relation: drives
+- node: '[[Fed_Treasury_Accord_2026_Proposal]]'
+  relation: counterparty_in
+- node: '[[Federal_Reserve]]'
+  relation: principal_of_fiscal_agent
 date_created: 2026-05-23
 date_updated: 2026-05-23
 last_reviewed: 2026-05-23

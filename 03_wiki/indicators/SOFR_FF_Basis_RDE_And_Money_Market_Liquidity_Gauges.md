@@ -50,6 +50,7 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Shadow Banking and Cash Markets.md
   pages: Money Market Blindspot I; Money Market Blindspot II
   weight: primary
+parent_node: null
 related:
 - node: '[[LCLoR_Lowest_Comfortable_Level_Of_Reserves_And_QT_Calibration]]'
   relation: RDE_feeds_into_LCLoR_determination

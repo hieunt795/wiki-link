@@ -60,6 +60,7 @@ source_refs:
 - path: 02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md
   pages: Section VII — Kết Quả Hệ Thống
   weight: supporting
+parent_node: null
 related:
 - node: '[[Private_Credit_SRT_NAV_Loans_Bank_Partnerships]]'
   relation: mechanism_context

@@ -34,11 +34,12 @@ source_refs:
     (EBA-GL-2018-04).md
   pages: ''
   weight: primary
+parent_node: null
 related:
-  - Bcbs_Stress_Testing_Sound_Practices_21_Principles_2009
-  - Reverse_Stress_Testing_Failure_Point_Business_Model_Viability
-  - Ilaap_Internal_Liquidity_Adequacy_Assessment_Framework
-  - Eba_Gl_2016_10_Icaap_Ilaap_Information_For_Srep
+- Bcbs_Stress_Testing_Sound_Practices_21_Principles_2009
+- Reverse_Stress_Testing_Failure_Point_Business_Model_Viability
+- Ilaap_Internal_Liquidity_Adequacy_Assessment_Framework
+- Eba_Gl_2016_10_Icaap_Ilaap_Information_For_Srep
 date_created: '2026-05-27'
 date_updated: '2026-05-27'
 ---

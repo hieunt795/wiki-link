@@ -20,11 +20,16 @@ tags:
 - liquidity
 confidence: 1
 stability: stable
-thesis: Post-Basel III, Principal Trading Firms (PTFs) using HFT strategies on electronic platforms displaced large G-SIB banks as the dominant Treasury market makers — because PTFs are not subject to G-SIB capital constraints and can intermediate large volumes without the regulatory penalty that caused banks like JPMorgan to exit tri-party repo, creating a faster but more opaque and fragile market-making ecosystem.
+thesis: Post-Basel III, Principal Trading Firms (PTFs) using HFT strategies on electronic
+  platforms displaced large G-SIB banks as the dominant Treasury market makers — because
+  PTFs are not subject to G-SIB capital constraints and can intermediate large volumes
+  without the regulatory penalty that caused banks like JPMorgan to exit tri-party
+  repo, creating a faster but more opaque and fragile market-making ecosystem.
 source_refs:
 - path: 02_sources/books/conks/Conks - Liquidity and Market Dynamics.md
   pages: batch 4 (chars ~26638-35400)
   weight: primary
+parent_node: null
 related:
 - node: '[[UST Market Primary Secondary OnRun OffRun Structure]]'
   relation: extends

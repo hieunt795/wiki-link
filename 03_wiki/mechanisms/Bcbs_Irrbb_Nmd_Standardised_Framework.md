@@ -1,60 +1,65 @@
 ---
 node_id: bcbs_irrbb_nmd_standardised_framework_001
 type: mechanism
-title: BCBS IRRBB NMD Standardised Framework — Core/Non-Core Separation and Table 2 Caps
+title: BCBS IRRBB NMD Standardised Framework — Core/Non-Core Separation and Table
+  2 Caps
 aliases:
-  - BCBS NMD IRRBB treatment
-  - d368 NMD behavioural assumptions
-  - non-maturity deposit core cap IRRBB
-  - NMD Table 2 IRRBB caps
-  - tiền gửi không kỳ hạn IRRBB phân loại lõi
-  - NMD phân loại lõi phi lõi giới hạn
+- BCBS NMD IRRBB treatment
+- d368 NMD behavioural assumptions
+- non-maturity deposit core cap IRRBB
+- NMD Table 2 IRRBB caps
+- tiền gửi không kỳ hạn IRRBB phân loại lõi
+- NMD phân loại lõi phi lõi giới hạn
 domain:
   primary: banking_regulation
   secondary: interest_rate_risk
 tags:
-  - nmd
-  - non_maturity_deposit
-  - irrbb
-  - behavioural_assumptions
-  - core_deposits
-  - bcbs
-  - d368
-  - standardised_framework
-  - eve
-  - alm
+- nmd
+- non_maturity_deposit
+- irrbb
+- behavioural_assumptions
+- core_deposits
+- bcbs
+- d368
+- standardised_framework
+- eve
+- alm
 confidence: 4
 stability: stable
-thesis: >
-  BCBS d368 standardised framework (Section IV) requires banks to separate NMDs into
-  core and non-core portions by category, subject to prescribed caps on the proportion
-  of core deposits and maximum average repricing maturity per category. The two-step
-  separation: (1) stable vs non-stable (based on 10-year observed volume changes);
-  (2) core vs non-core within stable (portion unlikely to reprice under significant
-  rate changes). Non-core NMDs are slotted overnight; core NMDs are distributed up
-  to the category's maximum average maturity. The caps — retail transactional 90%/5yr,
-  retail non-transactional 70%/4.5yr, wholesale 50%/4yr — directly determine the
-  maximum EVE sensitivity reduction a bank can claim from NMD stability assumptions.
-source_refs:
-  - path: 02_sources/regulator/bcbs/d368.md
-    pages: "para 44–46 (P5: NMD behavioural assumptions), para 109–115 (standardised framework NMD treatment: categories, separation, slotting), Table 2 (NMD core caps and average maturity limits), para 112 (10-year observation, stable/non-stable/core definition)"
-    weight: primary
-related:
-  - node: "[[Bcbs_Irrbb_Standards_D368_2016]]"
-    relation: parent_regulatory_standard
-  - node: "[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]"
-    relation: nmd_valuation_complement
-  - node: "[[Irrbb_Eve_Nii_Dual_Metric_Framework]]"
-    relation: eve_measurement_context
-  - node: "[[Bcbs_Liquidity_Internal_Pricing_Ftp_Principle_4]]"
-    relation: ftp_nmd_connection
-  - node: "[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]"
-    relation: behavioral_methodology
-  - node: "[[Non_Maturity_Deposit_And_Revolving_Facility_Behavioral_Assumptions_Alco_Governance]]"
-    relation: governance_framework
+thesis: 'BCBS d368 standardised framework (Section IV) requires banks to separate
+  NMDs into core and non-core portions by category, subject to prescribed caps on
+  the proportion of core deposits and maximum average repricing maturity per category.
+  The two-step separation: (1) stable vs non-stable (based on 10-year observed volume
+  changes); (2) core vs non-core within stable (portion unlikely to reprice under
+  significant rate changes). Non-core NMDs are slotted overnight; core NMDs are distributed
+  up to the category''s maximum average maturity. The caps — retail transactional
+  90%/5yr, retail non-transactional 70%/4.5yr, wholesale 50%/4yr — directly determine
+  the maximum EVE sensitivity reduction a bank can claim from NMD stability assumptions.
 
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+  '
+source_refs:
+- path: 02_sources/regulator/bcbs/d368.md
+  pages: 'para 44–46 (P5: NMD behavioural assumptions), para 109–115 (standardised
+    framework NMD treatment: categories, separation, slotting), Table 2 (NMD core
+    caps and average maturity limits), para 112 (10-year observation, stable/non-stable/core
+    definition)'
+  weight: primary
+parent_node: null
+related:
+- node: '[[Bcbs_Irrbb_Standards_D368_2016]]'
+  relation: parent_regulatory_standard
+- node: '[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]'
+  relation: nmd_valuation_complement
+- node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
+  relation: eve_measurement_context
+- node: '[[Bcbs_Liquidity_Internal_Pricing_Ftp_Principle_4]]'
+  relation: ftp_nmd_connection
+- node: '[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]'
+  relation: behavioral_methodology
+- node: '[[Non_Maturity_Deposit_And_Revolving_Facility_Behavioral_Assumptions_Alco_Governance]]'
+  relation: governance_framework
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Why NMDs Are the Critical IRRBB Behavioural Assumption

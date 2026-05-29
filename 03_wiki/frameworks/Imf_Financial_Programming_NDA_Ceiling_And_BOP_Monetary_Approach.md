@@ -3,60 +3,65 @@ node_id: imf_financial_programming_nda_ceiling_bop_monetary_approach_001
 type: framework
 title: IMF Financial Programming — NDA Ceiling And Monetary Approach To BOP
 aliases:
-  - IMF financial programming
-  - NDA ceiling IMF programs
-  - monetary approach to BOP
-  - domestic credit ceiling
-  - NDA target
-  - trần tín dụng nội địa IMF
-  - phương pháp tiền tệ cán cân thanh toán
-  - chương trình tài chính IMF
-  - trần NDA
+- IMF financial programming
+- NDA ceiling IMF programs
+- monetary approach to BOP
+- domestic credit ceiling
+- NDA target
+- trần tín dụng nội địa IMF
+- phương pháp tiền tệ cán cân thanh toán
+- chương trình tài chính IMF
+- trần NDA
 domain:
   primary: monetary_policy
   secondary: fiscal_policy
 tags:
-  - imf_program
-  - financial_programming
-  - nda
-  - nfa
-  - monetary_approach_bop
-  - domestic_credit_ceiling
-  - policy_conditionality
-  - adjustment_program
-  - bop_surplus_deficit
-  - reserve_money_control
-  - controllability
+- imf_program
+- financial_programming
+- nda
+- nfa
+- monetary_approach_bop
+- domestic_credit_ceiling
+- policy_conditionality
+- adjustment_program
+- bop_surplus_deficit
+- reserve_money_control
+- controllability
 confidence: 4
 stability: stable
-thesis: >
-  The IMF financial programming framework rests on the monetary survey identity: any
-  excess of domestic credit (NDA) expansion over the increase in money demand is
-  mechanically reflected in a one-for-one decline in net foreign assets (NFA) — a
-  BOP deficit. This is the theoretical justification for setting NDA ceilings as the
-  primary conditionality tool in Fund-supported adjustment programs. The framework also
-  distinguishes the controllability hierarchy among reserve money components: claims
-  on DMBs (Cb) are most directly under CB control; NFA is largely exogenous (BOP
-  outcome); NCG is often passively determined by the government's fiscal position
+thesis: 'The IMF financial programming framework rests on the monetary survey identity:
+  any excess of domestic credit (NDA) expansion over the increase in money demand
+  is mechanically reflected in a one-for-one decline in net foreign assets (NFA) —
+  a BOP deficit. This is the theoretical justification for setting NDA ceilings as
+  the primary conditionality tool in Fund-supported adjustment programs. The framework
+  also distinguishes the controllability hierarchy among reserve money components:
+  claims on DMBs (Cb) are most directly under CB control; NFA is largely exogenous
+  (BOP outcome); NCG is often passively determined by the government''s fiscal position
   (especially without CB independence). This hierarchy determines where conditionality
   is most binding.
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 4595–4601 (monetary approach to BOP, NDA ceiling justification), lines 4380 (controllability hierarchy of RM components), lines 4382–4401 (5 instruments for RM control), lines 4603–4605 (links to government accounts and fiscal monetization)"
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: lines 4595–4601 (monetary approach to BOP, NDA ceiling justification), lines
+    4380 (controllability hierarchy of RM components), lines 4382–4401 (5 instruments
+    for RM control), lines 4603–4605 (links to government accounts and fiscal monetization)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]"
-    relation: identity_foundation
-  - node: "[[Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis]]"
-    relation: external_link
-  - node: "[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
-    relation: constraint_mechanism
-  - node: "[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]"
-    relation: fiscal_monetization_link
-  - node: "[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]"
-    relation: fiscal_anchor
-date_created: "2026-05-24"
-date_updated: "2026-05-24"
+- node: '[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]'
+  relation: identity_foundation
+- node: '[[Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis]]'
+  relation: external_link
+- node: '[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]'
+  relation: constraint_mechanism
+- node: '[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]'
+  relation: fiscal_monetization_link
+- node: '[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]'
+  relation: fiscal_anchor
+date_created: '2026-05-24'
+date_updated: '2026-05-24'
 ---
 
 ## The Monetary Approach to the Balance of Payments

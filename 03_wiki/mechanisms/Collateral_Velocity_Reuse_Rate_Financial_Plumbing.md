@@ -23,11 +23,21 @@ tags:
 - financial_stability
 confidence: 4
 stability: stable
-thesis: "Collateral velocity (reuse rate) = total pledged collateral received by large dealer banks / primary collateral sources (hedge funds + custodians); the ratio measures the length of collateral chains and acts as an analog to the velocity of money — higher velocity means greater financial lubrication; velocity fell from ~3.0x (end-2007, $10T total) to ~1.8x (end-2015, $5.6T), driven by counterparty risk and QE draining good collateral from the market; 10-15 global dealer banks are the sole intermediaries capable of moving collateral across borders in bulk, and deleveraging has two components: balance-sheet shrinking AND shortening of collateral chains (reduced interconnectedness), the latter being underappreciated."
+thesis: 'Collateral velocity (reuse rate) = total pledged collateral received by large
+  dealer banks / primary collateral sources (hedge funds + custodians); the ratio
+  measures the length of collateral chains and acts as an analog to the velocity of
+  money — higher velocity means greater financial lubrication; velocity fell from
+  ~3.0x (end-2007, $10T total) to ~1.8x (end-2015, $5.6T), driven by counterparty
+  risk and QE draining good collateral from the market; 10-15 global dealer banks
+  are the sole intermediaries capable of moving collateral across borders in bulk,
+  and deleveraging has two components: balance-sheet shrinking AND shortening of collateral
+  chains (reduced interconnectedness), the latter being underappreciated.'
 source_refs:
 - path: 02_sources/books/singh_collateral_plumbing/Singh_Collateral_Financial_Plumbing.md
-  pages: lines 595-920 (Chapters 1-2; collateral definition, velocity methodology, deleveraging)
+  pages: lines 595-920 (Chapters 1-2; collateral definition, velocity methodology,
+    deleveraging)
   weight: primary
+parent_node: null
 related:
 - node: '[[QE Collateral Velocity Monetary Policy Transmission]]'
   relation: extends

@@ -3,52 +3,56 @@ node_id: bcbs_intraday_liquidity_management_p8_001
 type: mechanism
 title: BCBS Intraday Liquidity Management — Principle 8 (2008)
 aliases:
-  - BCBS intraday liquidity Principle 8
-  - intraday liquidity risk management 2008
-  - payment and settlement intraday liquidity
-  - intraday funding risk BCBS
-  - quản lý thanh khoản trong ngày BCBS
-  - nguyên tắc 8 thanh khoản trong ngày
+- BCBS intraday liquidity Principle 8
+- intraday liquidity risk management 2008
+- payment and settlement intraday liquidity
+- intraday funding risk BCBS
+- quản lý thanh khoản trong ngày BCBS
+- nguyên tắc 8 thanh khoản trong ngày
 domain:
   primary: banking_regulation
   secondary: payment_systems
 tags:
-  - intraday_liquidity
-  - payment_systems
-  - settlement_risk
-  - liquidity_risk
-  - bcbs
-  - real_time_gross_settlement
-  - correspondent_banking
-  - collateral_management
-  - bcbs144
+- intraday_liquidity
+- payment_systems
+- settlement_risk
+- liquidity_risk
+- bcbs
+- real_time_gross_settlement
+- correspondent_banking
+- collateral_management
+- bcbs144
 confidence: 4
 stability: stable
-thesis: >
-  BCBS Principle 8 (2008) requires active intraday liquidity management across
-  all payment and settlement systems, under both normal and stressed conditions.
-  The principle addresses a critical systemic risk: a bank's failure to settle
-  payments when expected can cascade through interconnected systems, triggering
-  gridlock, contagion, and overnight funding pressures across many institutions.
-  Six operational elements are required: (1) measurement and forecasting of gross
-  inflows/outflows; (2) real-time monitoring of intraday positions; (3) arrangements
-  to acquire sufficient intraday funding; (4) collateral management for intraday
-  pledging; (5) timing control over outflows; (6) preparedness for unexpected disruptions.
+thesis: 'BCBS Principle 8 (2008) requires active intraday liquidity management across
+  all payment and settlement systems, under both normal and stressed conditions. The
+  principle addresses a critical systemic risk: a bank''s failure to settle payments
+  when expected can cascade through interconnected systems, triggering gridlock, contagion,
+  and overnight funding pressures across many institutions. Six operational elements
+  are required: (1) measurement and forecasting of gross inflows/outflows; (2) real-time
+  monitoring of intraday positions; (3) arrangements to acquire sufficient intraday
+  funding; (4) collateral management for intraday pledging; (5) timing control over
+  outflows; (6) preparedness for unexpected disruptions.
+
+  '
 source_refs:
-  - path: 02_sources/regulator/bcbs/bcbs144.md
-    pages: "para 77–87 (Principle 8 full: systemic rationale, objectives, six operational elements), para 77 (systemic contagion risk), para 78 (objectives), para 79 (challenges), para 80–85 (six elements), para 86–87 (scope, correspondents)"
-    weight: primary
+- path: 02_sources/regulator/bcbs/bcbs144.md
+  pages: 'para 77–87 (Principle 8 full: systemic rationale, objectives, six operational
+    elements), para 77 (systemic contagion risk), para 78 (objectives), para 79 (challenges),
+    para 80–85 (six elements), para 86–87 (scope, correspondents)'
+  weight: primary
+parent_node: '[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]'
 related:
-  - node: "[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]"
-    relation: parent_framework
-  - node: "[[Bcbs_Liquidity_Contingency_Funding_Plan_Principle_11]]"
-    relation: cfp_intraday_coverage
-  - node: "[[Bcbs_Hqla_Liquidity_Cushion_Principle_12]]"
-    relation: cushion_includes_intraday_needs
-  - node: "[[Reserve_Floor_Payment_System_Demand]]"
-    relation: payment_system_liquidity_demand
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]'
+  relation: parent_framework
+- node: '[[Bcbs_Liquidity_Contingency_Funding_Plan_Principle_11]]'
+  relation: cfp_intraday_coverage
+- node: '[[Bcbs_Hqla_Liquidity_Cushion_Principle_12]]'
+  relation: cushion_includes_intraday_needs
+- node: '[[Reserve_Floor_Payment_System_Demand]]'
+  relation: payment_system_liquidity_demand
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Why Intraday Matters Systemically

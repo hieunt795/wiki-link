@@ -1,59 +1,56 @@
 ---
 node_id: alm_balance_sheet_optimization_framework_001
 type: framework
-title: "ALM Balance Sheet Optimization Framework"
+title: ALM Balance Sheet Optimization Framework
 aliases:
-  - ALM Optimization
-  - Balance Sheet Optimization
-  - Strategic ALM
-  - Target Balance Sheet Profile
-  - tối ưu hóa bảng cân đối ALM
-  - quản lý bảng cân đối chiến lược
-
+- ALM Optimization
+- Balance Sheet Optimization
+- Strategic ALM
+- Target Balance Sheet Profile
+- tối ưu hóa bảng cân đối ALM
+- quản lý bảng cân đối chiến lược
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - alm
-  - optimization
-  - balance_sheet
-  - nii
-  - eve
-  - liquidity
-  - irrbb
-  - funding
-
+- alm
+- optimization
+- balance_sheet
+- nii
+- eve
+- liquidity
+- irrbb
+- funding
 confidence: 1
 stability: stable
+thesis: '[LLM] ALM balance sheet optimization is a formal process that defines the
+  target composition of assets and liabilities by simultaneously maximizing asset
+  profitability and minimizing funding costs, subject to constraints on interest rate
+  risk (NII volatility, EVE), liquidity ratios (LCR, NSFR, structural gaps), capital
+  absorption, and funding concentration — replacing reactive balance sheet management
+  with a proactive, mathematically grounded approach. [LLM] The optimization output
+  is a target profile for the banking book that maximizes profitability within regulatory
+  and internal risk limits, integrating IRR and liquidity risk under a single framework
+  rather than managing them in silos.
 
-thesis: >
-  [LLM] ALM balance sheet optimization is a formal process that defines the target composition
-  of assets and liabilities by simultaneously maximizing asset profitability and minimizing
-  funding costs, subject to constraints on interest rate risk (NII volatility, EVE), liquidity
-  ratios (LCR, NSFR, structural gaps), capital absorption, and funding concentration — replacing
-  reactive balance sheet management with a proactive, mathematically grounded approach. [LLM]
-  The optimization output is a target profile for the banking book that maximizes profitability
-  within regulatory and internal risk limits, integrating IRR and liquidity risk under a single
-  framework rather than managing them in silos.
-
+  '
 source_refs:
-  - path: 02_sources/books/alm/A - Asset liability optimization.md
-    pages: "Introduction, Ch 1, Ch 4"
-    weight: primary
-
+- path: 02_sources/books/alm/A - Asset liability optimization.md
+  pages: Introduction, Ch 1, Ch 4
+  weight: primary
+parent_node: '[[ALM_Banking_Book_Risk_Management]]'
 related:
-  - node: "[[ALM_Banking_Book_Risk_Management]]"
-    relation: component_of
-  - node: "[[Income_Gap_vs_Economic_Value_Gap]]"
-    relation: related_to
-  - node: "[[ALM_Structural_Liquidity_Gap]]"
-    relation: component_of
-  - node: "[[FTP_Methodology]]"
-    relation: implements
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[ALM_Banking_Book_Risk_Management]]'
+  relation: component_of
+- node: '[[Income_Gap_vs_Economic_Value_Gap]]'
+  relation: related_to
+- node: '[[ALM_Structural_Liquidity_Gap]]'
+  relation: component_of
+- node: '[[FTP_Methodology]]'
+  relation: implements
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Core Concept

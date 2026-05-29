@@ -28,19 +28,23 @@ source_refs:
   pages: Chapter 3-4
   weight: primary
 - path: 02_sources/regulator/bcbs/d368.md
-  pages: "para 8–11 (IRRBB definition + EVE/NII intro), para 33–34 (EVE vs NII complementarity), para 69–70 (P8 disclosure: ΔEVE and ΔNII under 6 scenarios), para 88–89 (P12 outlier test: 15% Tier 1), Table B (six prescribed scenarios: parallel up/down, steepener, flattener, short rate up/down)"
+  pages: 'para 8–11 (IRRBB definition + EVE/NII intro), para 33–34 (EVE vs NII complementarity),
+    para 69–70 (P8 disclosure: ΔEVE and ΔNII under 6 scenarios), para 88–89 (P12 outlier
+    test: 15% Tier 1), Table B (six prescribed scenarios: parallel up/down, steepener,
+    flattener, short rate up/down)'
   weight: supporting
+parent_node: '[[Bank_Alm_Banking_Book_Risk_Management_Framework]]'
 related:
-  - node: "[[Bcbs_Irrbb_Standards_D368_2016]]"
-    relation: regulatory_source
-  - node: "[[Bcbs_Irrbb_Nmd_Standardised_Framework]]"
-    relation: nmd_detail
-  - node: "[[Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book]]"
-    relation: measurement_mechanism
-  - node: "[[Bank_Alm_Banking_Book_Risk_Management_Framework]]"
-    relation: parent_framework
-  - node: "[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]"
-    relation: nmd_valuation_complement
+- node: '[[Bcbs_Irrbb_Standards_D368_2016]]'
+  relation: regulatory_source
+- node: '[[Bcbs_Irrbb_Nmd_Standardised_Framework]]'
+  relation: nmd_detail
+- node: '[[Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book]]'
+  relation: measurement_mechanism
+- node: '[[Bank_Alm_Banking_Book_Risk_Management_Framework]]'
+  relation: parent_framework
+- node: '[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]'
+  relation: nmd_valuation_complement
 date_created: '2026-05-22'
 date_updated: '2026-05-25'
 ---

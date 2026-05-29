@@ -18,18 +18,25 @@ tags:
 - macroprudential
 confidence: 3
 stability: stable
-thesis: "The institutional infrastructure for managing stress in the NBFI sovereign buyer base — including data quality, supervisory frameworks, and crisis liquidity facilities — remains incomplete relative to their growing role as marginal buyers. This 'supervisory gap' is highlighted by the absence of an ECB liquidity facility for NBFIs (unlike the BoE's CNRF) and the migration of credit risk to leveraged, short-term funded entities while liquidity risk remains concentrated in the banking system."
+thesis: The institutional infrastructure for managing stress in the NBFI sovereign
+  buyer base — including data quality, supervisory frameworks, and crisis liquidity
+  facilities — remains incomplete relative to their growing role as marginal buyers.
+  This 'supervisory gap' is highlighted by the absence of an ECB liquidity facility
+  for NBFIs (unlike the BoE's CNRF) and the migration of credit risk to leveraged,
+  short-term funded entities while liquidity risk remains concentrated in the banking
+  system.
 source_refs:
 - path: 02_sources/Clipping/Who Buys When the ECB Doesn't_.md
   pages: Full document
   weight: primary
+parent_node: null
 related:
-- node: "[[Nbfi_Sovereign_Bond_Absorption_Post_Ecb_Qt]]"
+- node: '[[Nbfi_Sovereign_Bond_Absorption_Post_Ecb_Qt]]'
   relation: related_mechanism
-- node: "[[Sovereign_Basis_Trade_Repo_Leverage]]"
+- node: '[[Sovereign_Basis_Trade_Repo_Leverage]]'
   relation: related_mechanism
-date_created: "2026-05-23"
-date_updated: "2026-05-24"
+date_created: '2026-05-23'
+date_updated: '2026-05-24'
 ---
 
 ## The Structural Shift in Sovereign Market Buyers

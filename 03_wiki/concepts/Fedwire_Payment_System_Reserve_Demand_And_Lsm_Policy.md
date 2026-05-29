@@ -3,44 +3,45 @@ node_id: fedwire_payment_system_reserve_demand_and_lsm_policy_001
 type: mechanism
 title: Fedwire Payment System Reserve Demand And LSM Policy
 aliases:
-  - Fedwire RTGS Reserve Demand
-  - Payment System Reserve Floor
-  - Liquidity Savings Mechanism
-  - LSM Fedwire
-  - Nhu cầu dự trữ hệ thống thanh toán Fedwire
+- Fedwire RTGS Reserve Demand
+- Payment System Reserve Floor
+- Liquidity Savings Mechanism
+- LSM Fedwire
+- Nhu cầu dự trữ hệ thống thanh toán Fedwire
 domain:
   primary: monetary_policy
 tags:
-  - fedwire
-  - rtgs
-  - reserves
-  - payment_system
-  - lsm
-  - daylight_overdraft
-  - fed
-  - balance_sheet
-
+- fedwire
+- rtgs
+- reserves
+- payment_system
+- lsm
+- daylight_overdraft
+- fed
+- balance_sheet
 confidence: 4
 stability: stable
+thesis: 'The Federal Reserve''s Fedwire RTGS system generates a structural floor on
+  reserve demand because banks must "pre-load" balances to cover gross outgoing payments;
+  post-GFC regulatory stigma and intraday liquidity rules have collapsed daylight
+  overdraft usage, forcing the Fed to maintain trillions in reserves to prevent payment
+  delays and repo rate spikes.
 
-thesis: >
-  The Federal Reserve's Fedwire RTGS system generates a structural floor on reserve demand because banks must "pre-load" balances to cover gross outgoing payments; post-GFC regulatory stigma and intraday liquidity rules have collapsed daylight overdraft usage, forcing the Fed to maintain trillions in reserves to prevent payment delays and repo rate spikes.
-
+  '
 source_refs:
-  - path: 02_sources/books/duffie_bpea_payments_2026/Duffie_BPEA_Payments_Liquidity_2026.md
-    pages: "Sections I, II, VII"
-    weight: primary
-
+- path: 02_sources/books/duffie_bpea_payments_2026/Duffie_BPEA_Payments_Liquidity_2026.md
+  pages: Sections I, II, VII
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Reserve Floor — Payment System Demand and the Minimum Ample Level]]"
-    relation: conceptual_extension
-  - node: "[[Fed Ample Reserves Rate Control Framework]]"
-    relation: operational_context
-  - node: "[[Standing_Repo_Facility_SRF_Fed_Backstop]]"
-    relation: liquidity_backstop
-  - node: "[[TGA Reserve Swap Mechanics And Debt Ceiling Dynamics]]"
-    relation: reserve_volatility_source
-
+- node: '[[Reserve Floor — Payment System Demand and the Minimum Ample Level]]'
+  relation: conceptual_extension
+- node: '[[Fed Ample Reserves Rate Control Framework]]'
+  relation: operational_context
+- node: '[[Standing_Repo_Facility_SRF_Fed_Backstop]]'
+  relation: liquidity_backstop
+- node: '[[TGA Reserve Swap Mechanics And Debt Ceiling Dynamics]]'
+  relation: reserve_volatility_source
 date_created: 2026-05-22
 date_updated: 2026-05-25
 ---

@@ -1,51 +1,54 @@
 ---
 node_id: basel_iii_leverage_ratio_non_rwa_capital_constraint_001
 type: concept
-title: "Basel III Leverage Ratio: Non-RWA Capital Backstop"
+title: 'Basel III Leverage Ratio: Non-RWA Capital Backstop'
 aliases:
-  - leverage ratio Basel III
-  - LEV Basel
-  - supplementary leverage ratio
-  - SLR
-  - tỷ lệ đòn bẩy Basel III
-  - đòn bẩy phi rủi ro
+- leverage ratio Basel III
+- LEV Basel
+- supplementary leverage ratio
+- SLR
+- tỷ lệ đòn bẩy Basel III
+- đòn bẩy phi rủi ro
 domain:
   primary: basel_risk
   secondary:
-    - financial_markets
+  - financial_markets
 tags:
-  - leverage_ratio
-  - slr
-  - tier1_capital
-  - exposure_measure
-  - off_balance_sheet
-  - non_rwa
-  - dealer_constraints
-  - basel3
+- leverage_ratio
+- slr
+- tier1_capital
+- exposure_measure
+- off_balance_sheet
+- non_rwa
+- dealer_constraints
+- basel3
 confidence: 3
 stability: stable
-thesis: >
-  The Basel III leverage ratio (Tier 1 capital / total exposure measure ≥ 3%)
-  is a non-risk-based backstop to the RWA capital framework — it constrains
-  balance sheet expansion regardless of risk weight, capturing both on-balance
-  sheet assets and off-balance sheet items (derivatives at 1.4× (RC+PFE),
-  SFT exposures, and undrawn commitments) under a single gross exposure measure
-  that cannot be reduced by collateral netting or credit risk mitigation.
+thesis: 'The Basel III leverage ratio (Tier 1 capital / total exposure measure ≥ 3%)
+  is a non-risk-based backstop to the RWA capital framework — it constrains balance
+  sheet expansion regardless of risk weight, capturing both on-balance sheet assets
+  and off-balance sheet items (derivatives at 1.4× (RC+PFE), SFT exposures, and undrawn
+  commitments) under a single gross exposure measure that cannot be reduced by collateral
+  netting or credit risk mitigation.
+
+  '
 source_refs:
-  - path: 02_sources/regulator/bcbs/BaselFramework.md
-    pages: "LEV10 (scope), LEV20 (calculation, 3% minimum), LEV30 (exposure measurement: on-BS, derivatives, SFTs, off-BS), LEV40 (G-SIB requirement)"
-    weight: primary
+- path: 02_sources/regulator/bcbs/BaselFramework.md
+  pages: 'LEV10 (scope), LEV20 (calculation, 3% minimum), LEV30 (exposure measurement:
+    on-BS, derivatives, SFTs, off-BS), LEV40 (G-SIB requirement)'
+  weight: primary
+parent_node: '[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]'
 related:
-  - node: "[[Basel_Iii_Capital_Stack_Cet1_Tier1_Total_Buffer_Architecture]]"
-    relation: complementary_constraint
-  - node: "[[Slr_Lcr_Balance_Sheet_Constraints_Treasury_Market_Dealer]]"
-    relation: us_implementation_context
-  - node: "[[Basel_Gsib_Surcharge_Bucket_Methodology_Capital_Add_On]]"
-    relation: g_sib_additional_requirement
-  - node: "[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]"
-    relation: part_of_four_constraints
-date_created: "2026-05-26"
-date_updated: "2026-05-26"
+- node: '[[Basel_Iii_Capital_Stack_Cet1_Tier1_Total_Buffer_Architecture]]'
+  relation: complementary_constraint
+- node: '[[Slr_Lcr_Balance_Sheet_Constraints_Treasury_Market_Dealer]]'
+  relation: us_implementation_context
+- node: '[[Basel_Gsib_Surcharge_Bucket_Methodology_Capital_Add_On]]'
+  relation: g_sib_additional_requirement
+- node: '[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]'
+  relation: part_of_four_constraints
+date_created: '2026-05-26'
+date_updated: '2026-05-26'
 ---
 
 ## Overview

@@ -1,46 +1,50 @@
 ---
 node_id: optimal_funding_tenor_cost_risk_tradeoff_001
 type: framework
-title: "Optimal Funding Tenors: Cost-Risk Tradeoff for Uncollateralised Derivatives and ALM"
+title: 'Optimal Funding Tenors: Cost-Risk Tradeoff for Uncollateralised Derivatives
+  and ALM'
 aliases:
-  - Funding tenor optimisation
-  - Short-term vs long-term funding tradeoff
-  - FVA funding tenor
-  - Tối ưu kỳ hạn tài trợ vốn
-  - Chi phí tài trợ và rủi ro thanh khoản
-
+- Funding tenor optimisation
+- Short-term vs long-term funding tradeoff
+- FVA funding tenor
+- Tối ưu kỳ hạn tài trợ vốn
+- Chi phí tài trợ và rủi ro thanh khoản
 domain:
   primary: alm
 tags:
-  - funding_tenor
-  - fva
-  - liquidity_risk
-  - cost_of_funds
-  - regulatory_liquidity_cost
-  - wholesale_funding
-  - alm
-
+- funding_tenor
+- fva
+- liquidity_risk
+- cost_of_funds
+- regulatory_liquidity_cost
+- wholesale_funding
+- alm
 confidence: 1
 stability: stable
+thesis: '[LLM] The choice of wholesale funding tenor involves a fundamental tradeoff:
+  short-term funding benefits from the normally upward-sloping funding spread curve
+  (lower cost of funds) but creates rollover and repricing risk; long-term funding
+  eliminates liquidity risk but introduces overborrowing inefficiencies (high bid-offer
+  costs) and pays a larger term premium. [LLM] Regulatory requirements (LCR''s short-term
+  liquidity charge, NSFR''s stable funding cost) create additional non-linear tenor
+  costs that shift the optimal tenor toward longer funding than pure carry optimisation
+  would suggest.
 
-thesis: >
-  [LLM] The choice of wholesale funding tenor involves a fundamental tradeoff: short-term funding benefits from the normally upward-sloping funding spread curve (lower cost of funds) but creates rollover and repricing risk; long-term funding eliminates liquidity risk but introduces overborrowing inefficiencies (high bid-offer costs) and pays a larger term premium. [LLM] Regulatory requirements (LCR's short-term liquidity charge, NSFR's stable funding cost) create additional non-linear tenor costs that shift the optimal tenor toward longer funding than pure carry optimisation would suggest.
-
+  '
 source_refs:
-  - path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
-    pages: "Ch 22 — Optimal Funding Tenors (Barclays)"
-    weight: primary
-
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: Ch 22 — Optimal Funding Tenors (Barclays)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Funding_Gap_Profile_And_Behavioural_Maturity_Calendar]]"
-    relation: related_to
-  - node: "[[Secured_Funding_Instruments_Repo_Covered_Bond_Abs]]"
-    relation: related_to
-  - node: "[[Bank_Capital_Structure_And_Capital_Management_Alm]]"
-    relation: related_to
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Funding_Gap_Profile_And_Behavioural_Maturity_Calendar]]'
+  relation: related_to
+- node: '[[Secured_Funding_Instruments_Repo_Covered_Bond_Abs]]'
+  relation: related_to
+- node: '[[Bank_Capital_Structure_And_Capital_Management_Alm]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## The Core Problem

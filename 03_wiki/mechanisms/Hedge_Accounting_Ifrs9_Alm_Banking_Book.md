@@ -3,49 +3,51 @@ node_id: hedge_accounting_ifrs9_alm_banking_book_001
 type: mechanism
 title: Hedge Accounting IFRS 9 for ALM Banking Book
 aliases:
-  - IFRS 9 hedge accounting
-  - IAS 39 replacement hedge accounting
-  - fair value hedge banking book
-  - cash flow hedge ALM
-  - kế toán phòng ngừa rủi ro IFRS 9
-  - IAS 39 thay thế kế toán phòng ngừa
-  - phòng ngừa giá trị hợp lý ngân hàng
+- IFRS 9 hedge accounting
+- IAS 39 replacement hedge accounting
+- fair value hedge banking book
+- cash flow hedge ALM
+- kế toán phòng ngừa rủi ro IFRS 9
+- IAS 39 thay thế kế toán phòng ngừa
+- phòng ngừa giá trị hợp lý ngân hàng
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - IFRS9
-  - hedge-accounting
-  - IAS39
-  - fair-value-hedge
-  - cash-flow-hedge
-  - OCI
-  - node: "[[IRRBB]]"
-    relation: related_to
-  - node: "[[ALM]]"
-    relation: related_to
+- IFRS9
+- hedge-accounting
+- IAS39
+- fair-value-hedge
+- cash-flow-hedge
+- OCI
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[ALM]]'
+  relation: related_to
 confidence: 1
 stability: stable
-thesis: >
-  IFRS 9 replaced IAS 39 hedge accounting by eliminating the ex-post effectiveness
-  test requirement (the 80–125% range) and aligning hedge designation with the
-  bank's actual risk management strategy; four asset classification categories
-  determine P&L vs OCI treatment; basis risk can be designated as a separate
-  hedged component; but portfolio macro hedging remains under IAS 39 pending
-  IASB completion of its portfolio hedging project. [LLM]
+thesis: 'IFRS 9 replaced IAS 39 hedge accounting by eliminating the ex-post effectiveness
+  test requirement (the 80–125% range) and aligning hedge designation with the bank''s
+  actual risk management strategy; four asset classification categories determine
+  P&L vs OCI treatment; basis risk can be designated as a separate hedged component;
+  but portfolio macro hedging remains under IAS 39 pending IASB completion of its
+  portfolio hedging project. [LLM]
+
+  '
 source_refs:
-  - path: "02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md"
-    pages: "Chapter 12: Hedge Accounting (IFRS 9 and ALM)"
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: 'Chapter 12: Hedge Accounting (IFRS 9 and ALM)'
+parent_node: null
 related:
-  - node: "[[Eve_Calculation_Mechanics_Discount_And_Shock]]"
-    relation: related_to
-  - node: "[[Irrbb_Eve_Nii_Dual_Metric_Framework]]"
-    relation: related_to
-  - node: "[[ALM_Hedging_Strategy_Design]]"
-    relation: related_to
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Eve_Calculation_Mechanics_Discount_And_Shock]]'
+  relation: related_to
+- node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
+  relation: related_to
+- node: '[[ALM_Hedging_Strategy_Design]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Thesis

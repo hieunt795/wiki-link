@@ -27,6 +27,7 @@ source_refs:
 - path: 02_sources/Clipping/What about Japan_ (Part I).md
   pages: ''
   weight: primary
+parent_node: null
 related:
 - node: '[[Japan Sovereign Carry Trade Framework]]'
   relation: shared_tag:japan

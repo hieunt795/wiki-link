@@ -1,50 +1,51 @@
 ---
 node_id: ftp_transfer_price_curve_and_structural_contribution_001
 type: mechanism
-title: "FTP Transfer Price Curve and Structural Contribution"
+title: FTP Transfer Price Curve and Structural Contribution
 aliases:
-  - funds transfer pricing
-  - FTP curve
-  - transfer price curve
-  - cost of funds curve
-  - structural contribution
-  - định giá chuyển giao vốn
-  - đường cong giá chuyển giao
-
+- funds transfer pricing
+- FTP curve
+- transfer price curve
+- cost of funds curve
+- structural contribution
+- định giá chuyển giao vốn
+- đường cong giá chuyển giao
 domain:
   primary: alm
   secondary:
-    - financial_markets
+  - financial_markets
 tags:
-  - FTP
-  - transfer_pricing
-  - NIM
-  - liquidity_risk
-  - interest_rate_risk
-  - IRRBB
-  - treasury
-
+- FTP
+- transfer_pricing
+- NIM
+- liquidity_risk
+- interest_rate_risk
+- IRRBB
+- treasury
 confidence: 1
 stability: stable
+thesis: '[LLM] Funds Transfer Pricing (FTP) is an internal bank process that assigns
+  a maturity-matched funding rate to each asset and an earning rate to each liability,
+  using the transfer price curve; FTP decomposes net interest margin into business-unit
+  contributions and centralizes interest rate and liquidity risk in treasury, which
+  earns the "structural contribution" — the spread between the liability FTP rate
+  and the asset FTP rate reflecting the term premium and liquidity premium.
 
-thesis: >
-  [LLM] Funds Transfer Pricing (FTP) is an internal bank process that assigns a maturity-matched funding rate to each asset and an earning rate to each liability, using the transfer price curve; FTP decomposes net interest margin into business-unit contributions and centralizes interest rate and liquidity risk in treasury, which earns the "structural contribution" — the spread between the liability FTP rate and the asset FTP rate reflecting the term premium and liquidity premium.
-
+  '
 source_refs:
-  - path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
-    pages: "Ch 2, sections 2.3.1–2.3.11"
-    weight: primary
-
+- path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
+  pages: Ch 2, sections 2.3.1–2.3.11
+  weight: primary
+parent_node: '[[Bank_Alm_Banking_Book_Risk_Management_Framework]]'
 related:
-  - node: "[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]"
-    relation: related_to
-  - node: "[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]"
-    relation: related_to
-  - node: "[[Bank_Alm_Banking_Book_Risk_Management_Framework]]"
-    relation: component_of
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]'
+  relation: related_to
+- node: '[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]'
+  relation: related_to
+- node: '[[Bank_Alm_Banking_Book_Risk_Management_Framework]]'
+  relation: component_of
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Purpose of FTP

@@ -21,11 +21,18 @@ tags:
 - balance_sheet
 confidence: 1
 stability: stable
-thesis: "Reserve requirements serve five distinct policy purposes (monetary policy, liquidity management, structural liquidity, revenue, and sectoral behaviour); separately, whether a CB operates with a liquidity surplus (asset-driven balance sheet, e.g. FX intervention, debt monetisation) or shortage (liability-driven, e.g. inflation targeting with floating rate) fundamentally shapes the effectiveness of monetary policy transmission, CB income, and CB's ability to control terms of market operations."
+thesis: Reserve requirements serve five distinct policy purposes (monetary policy,
+  liquidity management, structural liquidity, revenue, and sectoral behaviour); separately,
+  whether a CB operates with a liquidity surplus (asset-driven balance sheet, e.g.
+  FX intervention, debt monetisation) or shortage (liability-driven, e.g. inflation
+  targeting with floating rate) fundamentally shapes the effectiveness of monetary
+  policy transmission, CB income, and CB's ability to control terms of market operations.
 source_refs:
 - path: 02_sources/books/central_bank_balance_sheet/Central_Bank_Balance_Sheet.md
-  pages: lines 306-499 (required reserves, voluntary/excess reserves, asset vs liability driven sections)
+  pages: lines 306-499 (required reserves, voluntary/excess reserves, asset vs liability
+    driven sections)
   weight: primary
+parent_node: null
 related:
 - node: '[[CB_Reserve_System_Level_Constraint_Money_Multiplier_Myth]]'
   relation: companion

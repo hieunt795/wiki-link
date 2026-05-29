@@ -21,11 +21,16 @@ tags:
 - liquidity
 confidence: 1
 stability: stable
-thesis: The U.S. Treasury market has two structurally distinct layers — the primary market (initial auction, globally liquid, dealer-intermediated) and the secondary market (secondary trading, concentrated in on-the-run bonds, with off-the-run bonds mostly held to maturity and prone to illiquidity) — with structural blindspots and monopoly power in the secondary layer that primary-market tools cannot address.
+thesis: The U.S. Treasury market has two structurally distinct layers — the primary
+  market (initial auction, globally liquid, dealer-intermediated) and the secondary
+  market (secondary trading, concentrated in on-the-run bonds, with off-the-run bonds
+  mostly held to maturity and prone to illiquidity) — with structural blindspots and
+  monopoly power in the secondary layer that primary-market tools cannot address.
 source_refs:
 - path: 02_sources/books/conks/Conks - Liquidity and Market Dynamics.md
   pages: batch 3 (chars ~17854-26638)
   weight: primary
+parent_node: null
 related:
 - node: '[[Treasury Buybacks Sovereign Debt Liquidity Intervention]]'
   relation: context

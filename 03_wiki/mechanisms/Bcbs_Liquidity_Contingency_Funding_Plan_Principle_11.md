@@ -3,50 +3,55 @@ node_id: bcbs_liquidity_contingency_funding_plan_p11_001
 type: mechanism
 title: BCBS Contingency Funding Plan (CFP) — Principle 11 (2008)
 aliases:
-  - BCBS CFP Principle 11
-  - contingency funding plan liquidity 2008
-  - liquidity crisis response plan
-  - CFP invocation escalation procedures
-  - kế hoạch tài trợ dự phòng thanh khoản
-  - CFP thanh khoản BCBS nguyên tắc 11
+- BCBS CFP Principle 11
+- contingency funding plan liquidity 2008
+- liquidity crisis response plan
+- CFP invocation escalation procedures
+- kế hoạch tài trợ dự phòng thanh khoản
+- CFP thanh khoản BCBS nguyên tắc 11
 domain:
   primary: banking_regulation
   secondary: financial_stability
 tags:
-  - cfp
-  - contingency_plan
-  - liquidity_risk
-  - bcbs
-  - crisis_management
-  - stress_scenarios
-  - escalation
-  - bcbs144
+- cfp
+- contingency_plan
+- liquidity_risk
+- bcbs
+- crisis_management
+- stress_scenarios
+- escalation
+- bcbs144
 confidence: 4
 stability: stable
-thesis: >
-  BCBS Principle 11 (2008) requires a formal Contingency Funding Plan (CFP) that
-  is directly linked to stress test outcomes, covers a range of stress environments
-  (not just a single scenario), has clear invocation and escalation procedures,
-  and is regularly tested to verify operational feasibility. The CFP is not a
-  static document — it must be updated at least annually and reviewed after each test.
-  Key requirements: (1) clear roles and responsibilities with named alternates;
-  (2) realistic timelines for contingency measure activation; (3) intraday coverage;
-  (4) communication plans for internal and external parties; (5) integration with
-  business continuity planning. CFPs that are not operationally tested are
-  non-compliant even if the document is comprehensive.
+thesis: 'BCBS Principle 11 (2008) requires a formal Contingency Funding Plan (CFP)
+  that is directly linked to stress test outcomes, covers a range of stress environments
+  (not just a single scenario), has clear invocation and escalation procedures, and
+  is regularly tested to verify operational feasibility. The CFP is not a static document
+  — it must be updated at least annually and reviewed after each test. Key requirements:
+  (1) clear roles and responsibilities with named alternates; (2) realistic timelines
+  for contingency measure activation; (3) intraday coverage; (4) communication plans
+  for internal and external parties; (5) integration with business continuity planning.
+  CFPs that are not operationally tested are non-compliant even if the document is
+  comprehensive.
+
+  '
 source_refs:
-  - path: 02_sources/regulator/bcbs/bcbs144.md
-    pages: "para 110–122 (Principle 11 full: design, roles, communication, testing), para 110 (CFP definition), para 111 (content requirements), para 113 (scenario range), para 114–115 (roles, escalation), para 116 (communication plan), para 117–120 (design elements), para 121 (testing and update), para 122 (BCP integration)"
-    weight: primary
+- path: 02_sources/regulator/bcbs/bcbs144.md
+  pages: 'para 110–122 (Principle 11 full: design, roles, communication, testing),
+    para 110 (CFP definition), para 111 (content requirements), para 113 (scenario
+    range), para 114–115 (roles, escalation), para 116 (communication plan), para
+    117–120 (design elements), para 121 (testing and update), para 122 (BCP integration)'
+  weight: primary
+parent_node: '[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]'
 related:
-  - node: "[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]"
-    relation: parent_framework
-  - node: "[[Bcbs_Liquidity_Stress_Testing_Principle_10]]"
-    relation: cfp_is_stress_test_output
-  - node: "[[Bcbs_Intraday_Liquidity_Management_Principle_8]]"
-    relation: intraday_coverage_requirement
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]'
+  relation: parent_framework
+- node: '[[Bcbs_Liquidity_Stress_Testing_Principle_10]]'
+  relation: cfp_is_stress_test_output
+- node: '[[Bcbs_Intraday_Liquidity_Management_Principle_8]]'
+  relation: intraday_coverage_requirement
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Definition

@@ -27,6 +27,7 @@ source_refs:
 - path: 02_sources/books/howard_corb_swaps/Howard_Corb_Interest_Rate_Swaps.md
   pages: Chapter 2.5.2, Chapter 8.4
   weight: primary
+parent_node: null
 related:
 - node: '[[Swap Carry And Roll Down Analysis]]'
   relation: shared_tag:swaps

@@ -31,6 +31,7 @@ source_refs:
 - path: 02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md
   pages: Ch. 1, 4, 6
   weight: primary
+parent_node: null
 related:
 - node: '[[Monetary Policy Instruments Operational Framework]]'
   relation: shared_tag:corridor

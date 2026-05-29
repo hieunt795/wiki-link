@@ -3,56 +3,60 @@ node_id: imf_tax_revenue_analysis_elasticity_buoyancy_effort_tanzi_001
 type: framework
 title: IMF Tax Revenue Analysis — Elasticity, Buoyancy, Tax Effort, and Tanzi Diagnostic
 aliases:
-  - tax elasticity vs buoyancy IMF
-  - taxable capacity and tax effort
-  - Tanzi diagnostic test
-  - revenue productivity assessment
-  - tax buoyancy GDP growth
-  - phân tích thu ngân sách IMF
-  - độ co giãn thuế vs tăng trưởng thuế
-  - năng lực thu và nỗ lực thuế
-  - kiểm tra Tanzi
-  - năng suất thu ngân sách
+- tax elasticity vs buoyancy IMF
+- taxable capacity and tax effort
+- Tanzi diagnostic test
+- revenue productivity assessment
+- tax buoyancy GDP growth
+- phân tích thu ngân sách IMF
+- độ co giãn thuế vs tăng trưởng thuế
+- năng lực thu và nỗ lực thuế
+- kiểm tra Tanzi
+- năng suất thu ngân sách
 domain:
   primary: fiscal_policy
 tags:
-  - tax_revenue
-  - tax_elasticity
-  - tax_buoyancy
-  - taxable_capacity
-  - tax_effort
-  - tanzi_diagnostic
-  - revenue_productivity
-  - fiscal_analysis
-  - imf_program
-  - collection_lag
+- tax_revenue
+- tax_elasticity
+- tax_buoyancy
+- taxable_capacity
+- tax_effort
+- tanzi_diagnostic
+- revenue_productivity
+- fiscal_analysis
+- imf_program
+- collection_lag
 confidence: 4
 stability: stable
-thesis: >
-  The IMF fiscal revenue framework distinguishes two core measurement concepts —
-  elasticity (revenue response under an unchanged tax system, measuring built-in
+thesis: 'The IMF fiscal revenue framework distinguishes two core measurement concepts
+  — elasticity (revenue response under an unchanged tax system, measuring built-in
   flexibility) vs. buoyancy (total revenue response including discretionary changes,
-  measuring overall performance) — and combines them with taxable capacity
-  analysis to compute tax effort: how intensively a country uses its tax base relative
-  to structural capacity. The Tanzi 8-criterion diagnostic test provides an operational
-  checklist for assessing revenue productivity. The inflation–collection lag relationship
-  (Tanzi effect) degrades real revenue under high inflation, creating a vicious cycle
-  of deficit → monetization → inflation → eroded real revenue → larger deficit.
+  measuring overall performance) — and combines them with taxable capacity analysis
+  to compute tax effort: how intensively a country uses its tax base relative to structural
+  capacity. The Tanzi 8-criterion diagnostic test provides an operational checklist
+  for assessing revenue productivity. The inflation–collection lag relationship (Tanzi
+  effect) degrades real revenue under high inflation, creating a vicious cycle of
+  deficit → monetization → inflation → eroded real revenue → larger deficit.
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 2105–2201 (tax elasticity/buoyancy, taxable capacity, tax effort analysis, Tanzi 8-criterion diagnostic test, collection lags and inflation)"
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: lines 2105–2201 (tax elasticity/buoyancy, taxable capacity, tax effort analysis,
+    Tanzi 8-criterion diagnostic test, collection lags and inflation)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]"
-    relation: accounting_foundation
-  - node: "[[Imf_Inflation_Analysis_Cpi_Gdp_Deflator_Four_Types_Core]]"
-    relation: inflation_nexus
-  - node: "[[Imf_Financial_Programming_NDA_Ceiling_And_BOP_Monetary_Approach]]"
-    relation: program_constraint
-  - node: "[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]"
-    relation: fiscal_monetary_nexus
-date_created: "2026-05-24"
-date_updated: "2026-05-24"
+- node: '[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]'
+  relation: accounting_foundation
+- node: '[[Imf_Inflation_Analysis_Cpi_Gdp_Deflator_Four_Types_Core]]'
+  relation: inflation_nexus
+- node: '[[Imf_Financial_Programming_NDA_Ceiling_And_BOP_Monetary_Approach]]'
+  relation: program_constraint
+- node: '[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]'
+  relation: fiscal_monetary_nexus
+date_created: '2026-05-24'
+date_updated: '2026-05-24'
 ---
 
 ## The Core Distinction: Elasticity vs. Buoyancy

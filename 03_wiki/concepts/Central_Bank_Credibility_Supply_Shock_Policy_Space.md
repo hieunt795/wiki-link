@@ -20,18 +20,23 @@ tags:
 - boj
 confidence: 3
 stability: stable
-thesis: "A central bank's accumulated credibility determines its 'look-through' policy space during supply shocks. Well-anchored inflation expectations allow the CB to tolerate temporary inflation above target without responding (preserving growth), whereas low credibility or jumping expectations force the CB to react (hike) to send a signal of determination, even if the shock is transitory."
+thesis: A central bank's accumulated credibility determines its 'look-through' policy
+  space during supply shocks. Well-anchored inflation expectations allow the CB to
+  tolerate temporary inflation above target without responding (preserving growth),
+  whereas low credibility or jumping expectations force the CB to react (hike) to
+  send a signal of determination, even if the shock is transitory.
 source_refs:
 - path: 02_sources/Clipping/Fed, ECB, and BoJ_ A Matter of Credibility.md
   pages: Full document
   weight: primary
+parent_node: null
 related:
-- node: "[[Supply_Shock_Policy_Response_Scenario_Taxonomy]]"
+- node: '[[Supply_Shock_Policy_Response_Scenario_Taxonomy]]'
   relation: related_framework
-- node: "[[Non_Linear_Inflation_Amplifier_Mechanics]]"
+- node: '[[Non_Linear_Inflation_Amplifier_Mechanics]]'
   relation: related_mechanism
-date_created: "2026-05-23"
-date_updated: "2026-05-24"
+date_created: '2026-05-23'
+date_updated: '2026-05-24'
 ---
 
 ## The Credibility Leeway in Supply Shocks

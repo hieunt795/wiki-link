@@ -18,18 +18,23 @@ tags:
 - eurozone
 confidence: 3
 stability: stable
-thesis: "The 'scissors effect' occurs when a central bank simultaneously withdraws from the sovereign bond market through quantitative tightening (QT) while government issuance (net borrowing) is rising. This creates a dual pressure on the market, as the residual buyer must absorb both the new issuance and the maturing bonds being rolled off the central bank's balance sheet."
+thesis: The 'scissors effect' occurs when a central bank simultaneously withdraws
+  from the sovereign bond market through quantitative tightening (QT) while government
+  issuance (net borrowing) is rising. This creates a dual pressure on the market,
+  as the residual buyer must absorb both the new issuance and the maturing bonds being
+  rolled off the central bank's balance sheet.
 source_refs:
 - path: 02_sources/Clipping/Who Buys When the ECB Doesn't_.md
   pages: Full document
   weight: primary
+parent_node: null
 related:
-- node: "[[Nbfi_Sovereign_Bond_Absorption_Post_Ecb_Qt]]"
+- node: '[[Nbfi_Sovereign_Bond_Absorption_Post_Ecb_Qt]]'
   relation: related_mechanism
-- node: "[[Ecb_Qt_Sovereign_Yield_Volatility_Amplification]]"
+- node: '[[Ecb_Qt_Sovereign_Yield_Volatility_Amplification]]'
   relation: related_mechanism
-date_created: "2026-05-24"
-date_updated: "2026-05-24"
+date_created: '2026-05-24'
+date_updated: '2026-05-24'
 ---
 
 ## Mechanism of the Scissors Effect

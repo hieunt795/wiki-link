@@ -48,6 +48,7 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Plumping note (Money market.md
   pages: ''
   weight: secondary
+parent_node: null
 related:
 - node: '[[Repo_Market_Structure_GC_SC_Cleared_Segments_And_Sec_Mandate]]'
   relation: rate_complex_this_node_targets

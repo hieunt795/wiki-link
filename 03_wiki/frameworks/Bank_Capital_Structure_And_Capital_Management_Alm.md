@@ -1,52 +1,56 @@
 ---
 node_id: bank_capital_structure_capital_management_alm_001
 type: framework
-title: "Bank Capital Structure and Capital Management in ALM"
+title: Bank Capital Structure and Capital Management in ALM
 aliases:
-  - Bank capital stack
-  - CET1 AT1 T2 capital hierarchy
-  - Capital management ALM
-  - SREP Pillar 2 capital
-  - Quản lý vốn ngân hàng
-  - Cấu trúc vốn Basel III
-
+- Bank capital stack
+- CET1 AT1 T2 capital hierarchy
+- Capital management ALM
+- SREP Pillar 2 capital
+- Quản lý vốn ngân hàng
+- Cấu trúc vốn Basel III
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - capital_management
-  - cet1
-  - at1
-  - tier2
-  - tlac
-  - mrel
-  - srep
-  - rwa
-  - leverage_ratio
-  - capital_buffers
-
+- capital_management
+- cet1
+- at1
+- tier2
+- tlac
+- mrel
+- srep
+- rwa
+- leverage_ratio
+- capital_buffers
 confidence: 1
 stability: stable
+thesis: '[LLM] Bank capital management is the continuous balancing of capital supply
+  (the quality stack from CET1 through AT1, Tier 2, and TLAC/MREL liabilities) against
+  capital demand (RWA- and leverage-based requirements plus buffers) under evolving
+  regulatory standards; capital instruments are simultaneously a source of long-term
+  funding for ALM and a critical input to the SREP process that determines the binding
+  constraint on distributions. [LLM] The ALM linkage runs in both directions: capital
+  bucketing transfers proceeds of capital issuance at floating rates to the business,
+  while FVOCI accounting for HQLA bonds creates mark-to-market CET1 volatility when
+  rates move.
 
-thesis: >
-  [LLM] Bank capital management is the continuous balancing of capital supply (the quality stack from CET1 through AT1, Tier 2, and TLAC/MREL liabilities) against capital demand (RWA- and leverage-based requirements plus buffers) under evolving regulatory standards; capital instruments are simultaneously a source of long-term funding for ALM and a critical input to the SREP process that determines the binding constraint on distributions. [LLM] The ALM linkage runs in both directions: capital bucketing transfers proceeds of capital issuance at floating rates to the business, while FVOCI accounting for HQLA bonds creates mark-to-market CET1 volatility when rates move.
-
+  '
 source_refs:
-  - path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
-    pages: "Ch 18 — Capital Management (Deutsche Bank)"
-    weight: primary
-
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: Ch 18 — Capital Management (Deutsche Bank)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Bank_Alm_Structural_Liquidity_Management_Nsfr_Lcr_Framework]]"
-    relation: related_to
-  - node: "[[Asset_Encumbrance_Management_Bank_Alm]]"
-    relation: related_to
-  - node: "[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]"
-    relation: implements
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Bank_Alm_Structural_Liquidity_Management_Nsfr_Lcr_Framework]]'
+  relation: related_to
+- node: '[[Asset_Encumbrance_Management_Bank_Alm]]'
+  relation: related_to
+- node: '[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]'
+  relation: implements
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Capital Hierarchy

@@ -3,52 +3,57 @@ node_id: capital_flow_management_cfm_taxonomy_001
 type: mechanism
 title: Capital Flow Management — Taxonomy, Triggers, and Instruments
 aliases:
-  - CFM instruments
-  - capital controls taxonomy
-  - foreign capital flow management
-  - unremunerated reserve requirement URR
-  - capital flow management triggers
-  - quản lý dòng vốn ngoại
-  - công cụ CFM
-  - biện pháp kiểm soát vốn
+- CFM instruments
+- capital controls taxonomy
+- foreign capital flow management
+- unremunerated reserve requirement URR
+- capital flow management triggers
+- quản lý dòng vốn ngoại
+- công cụ CFM
+- biện pháp kiểm soát vốn
 domain:
   primary: monetary_policy
   secondary: financial_markets
 tags:
-  - cfm
-  - capital_controls
-  - capital_flows
-  - em_policy
-  - macroprudential
-  - fx_intervention
-  - impossible_trinity
-  - perry_warjiyo
+- cfm
+- capital_controls
+- capital_flows
+- em_policy
+- macroprudential
+- fx_intervention
+- impossible_trinity
+- perry_warjiyo
 confidence: 3
 stability: stable
-thesis: >
-  Capital Flow Management (CFM) is a third policy instrument used by EME central banks
-  to manage the impossible trinity when interest rates and FX intervention alone are
-  insufficient. CFM tools range from administrative (taxes, URR, restrictions) to
-  prudential (NOP, LDR, FX loan caps), with IMF 2012 guidance identifying three trigger
-  conditions for deployment. CFM reduces the offset coefficient by directly restricting
-  the volume of inflows that generate sterilization pressure and quasi-fiscal costs. [LLM]
+thesis: 'Capital Flow Management (CFM) is a third policy instrument used by EME central
+  banks to manage the impossible trinity when interest rates and FX intervention alone
+  are insufficient. CFM tools range from administrative (taxes, URR, restrictions)
+  to prudential (NOP, LDR, FX loan caps), with IMF 2012 guidance identifying three
+  trigger conditions for deployment. CFM reduces the offset coefficient by directly
+  restricting the volume of inflows that generate sterilization pressure and quasi-fiscal
+  costs. [LLM]
+
+  '
 source_refs:
-  - path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
-    pages: "lines 287–355 (CFM principles, targets, instruments, country cases: Brazil, Colombia, Korea, Croatia)"
-    weight: primary
+- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro -
+    Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
+  pages: 'lines 287–355 (CFM principles, targets, instruments, country cases: Brazil,
+    Colombia, Korea, Croatia)'
+  weight: primary
+parent_node: '[[EM_Central_Bank_Policy_Mix_FIT_Framework]]'
 related:
-  - node: "[[EM_Central_Bank_Policy_Mix_FIT_Framework]]"
-    relation: component_of
-  - node: "[[Sterilization_Offset_Coefficient_EME_Monetary_Autonomy]]"
-    relation: reduces_offset_coefficient
-  - node: "[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
-    relation: complements
-  - node: "[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]"
-    relation: reduces_sterilization_pressure
-  - node: "[[Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating]]"
-    relation: preventive_tool
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[EM_Central_Bank_Policy_Mix_FIT_Framework]]'
+  relation: component_of
+- node: '[[Sterilization_Offset_Coefficient_EME_Monetary_Autonomy]]'
+  relation: reduces_offset_coefficient
+- node: '[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]'
+  relation: complements
+- node: '[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]'
+  relation: reduces_sterilization_pressure
+- node: '[[Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating]]'
+  relation: preventive_tool
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Why CFM Exists: Gap in the Standard Policy Toolkit

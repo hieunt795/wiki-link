@@ -1,74 +1,70 @@
 ---
 node_id: mechanism_treasury_dealer_capacity_001
 type: mechanism
-title: "Treasury Market Dealer Intermediation Capacity"
+title: Treasury Market Dealer Intermediation Capacity
 aliases:
-  - dealer intermediation capacity
-  - Treasury market dealer constraints
-  - primary dealer balance sheet
-  - dealer balance sheet capacity
-  - khả năng trung gian của dealer thị trường Treasury
-
+- dealer intermediation capacity
+- Treasury market dealer constraints
+- primary dealer balance sheet
+- dealer balance sheet capacity
+- khả năng trung gian của dealer thị trường Treasury
 domain:
   primary: financial_markets
   secondary:
-    - monetary_policy
-    - fiscal_policy
+  - monetary_policy
+  - fiscal_policy
 tags:
-  - treasury-market
-  - dealer
-  - balance-sheet
-  - liquidity
-  - slr
-  - market-structure
-
+- treasury-market
+- dealer
+- balance-sheet
+- liquidity
+- slr
+- market-structure
 confidence: 2
 stability: evolving
-
-thesis: >
-  Primary dealers intermediate between Treasury issuance and end investors by
-  warehousing Treasury inventory on their balance sheets. Their capacity to do so
-  is directly constrained by regulatory capital ratios — SLR, LCR, and G-SIB surcharge
+thesis: 'Primary dealers intermediate between Treasury issuance and end investors
+  by warehousing Treasury inventory on their balance sheets. Their capacity to do
+  so is directly constrained by regulatory capital ratios — SLR, LCR, and G-SIB surcharge
   — which treat Treasury holdings as consuming balance sheet. As Treasury supply has
   grown from ~$14tn (2019) toward ~$30tn (2025), dealer intermediation capacity has
   grown proportionally less, creating a structural capacity gap that widens during
   stress events (March 2020, September 2019, SVB March 2023).
 
+  '
 source_refs:
-  - path: 02_sources/books/duffie_bpea_payments_2026/Duffie_BPEA_Payments_Liquidity_2026.md
-    weight: primary
-  - path: 02_sources/books/conks/Conks - Plumping note (Money market.md
-    weight: supporting
-  - path: 02_sources/deep-research/Deep Dive_ Private Credit.md
-    weight: supporting
-
+- path: 02_sources/books/duffie_bpea_payments_2026/Duffie_BPEA_Payments_Liquidity_2026.md
+  weight: primary
+- path: 02_sources/books/conks/Conks - Plumping note (Money market.md
+  weight: supporting
+- path: 02_sources/deep-research/Deep Dive_ Private Credit.md
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Slr_Lcr_Balance_Sheet_Constraints_Treasury_Market_Dealer]]"
-    relation: constrained_by
-  - node: "[[Swap_Spreads_Balance_Sheet_Plumbing_Frictions]]"
-    relation: drives
-  - node: "[[Repo_Market_Mechanics_Triparty_Bilateral]]"
-    relation: uses
-  - node: "[[Fed_Overnight_Reverse_Repo_On_Rrp]]"
-    relation: substituted_by
-  - node: "[[Standing_Repo_Facility_SRF_Fed_Backstop]]"
-    relation: backstopped_by
-  - node: "[[Collateral_Velocity_Rehypothecation]]"
-    relation: related_to
-  - node: "[[BIS_Bank_for_International_Settlements]]"
-    relation: monitored_by
-
+- node: '[[Slr_Lcr_Balance_Sheet_Constraints_Treasury_Market_Dealer]]'
+  relation: constrained_by
+- node: '[[Swap_Spreads_Balance_Sheet_Plumbing_Frictions]]'
+  relation: drives
+- node: '[[Repo_Market_Mechanics_Triparty_Bilateral]]'
+  relation: uses
+- node: '[[Fed_Overnight_Reverse_Repo_On_Rrp]]'
+  relation: substituted_by
+- node: '[[Standing_Repo_Facility_SRF_Fed_Backstop]]'
+  relation: backstopped_by
+- node: '[[Collateral_Velocity_Rehypothecation]]'
+  relation: related_to
+- node: '[[BIS_Bank_for_International_Settlements]]'
+  relation: monitored_by
 steps:
-  - "Step 1: Treasury issues new bonds at auction; primary dealers obligated to bid"
-  - "Step 2: Dealers warehouse unsold inventory on balance sheet (funded via repo)"
-  - "Step 3: Dealers intermediate: buy from Treasury, sell to end investors over days/weeks"
-  - "Step 4: SLR/LCR constraints limit warehouse capacity → larger spread required to clear inventory"
-  - "Step 5: Under stress, dealer willingness to warehouse collapses → bid-ask widens, yields spike"
-  - "Step 6: Fed SRF/ON RRP or Treasury buyback programs provide relief valve"
-
+- 'Step 1: Treasury issues new bonds at auction; primary dealers obligated to bid'
+- 'Step 2: Dealers warehouse unsold inventory on balance sheet (funded via repo)'
+- 'Step 3: Dealers intermediate: buy from Treasury, sell to end investors over days/weeks'
+- 'Step 4: SLR/LCR constraints limit warehouse capacity → larger spread required to
+  clear inventory'
+- 'Step 5: Under stress, dealer willingness to warehouse collapses → bid-ask widens,
+  yields spike'
+- 'Step 6: Fed SRF/ON RRP or Treasury buyback programs provide relief valve'
 transmission_lags: immediate
 empirical_evidence: strong
-
 date_created: 2026-05-23
 date_updated: 2026-05-23
 last_reviewed: 2026-05-23

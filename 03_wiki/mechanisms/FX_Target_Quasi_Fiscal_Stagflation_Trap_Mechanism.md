@@ -3,67 +3,80 @@ node_id: fx_target_quasi_fiscal_stagflation_trap_001
 type: mechanism
 title: FX Rate Target + Quasi-Fiscal Operations — Stagflation Trap Mechanism
 aliases:
-  - FX target stagflation trap
-  - quasi-fiscal stagflation
-  - regime-structural stagflation EME
-  - đình lạm kiểu neo tỷ giá
-  - bẫy đình lạm FX target
-  - đình lạm cấu trúc chính sách EME
-  - tỷ giá mục tiêu chi phí bán tài chính đình lạm
+- FX target stagflation trap
+- quasi-fiscal stagflation
+- regime-structural stagflation EME
+- đình lạm kiểu neo tỷ giá
+- bẫy đình lạm FX target
+- đình lạm cấu trúc chính sách EME
+- tỷ giá mục tiêu chi phí bán tài chính đình lạm
 domain:
   primary: monetary_policy
   secondary: fiscal_policy
 tags:
-  - stagflation
-  - fx_target
-  - quasi_fiscal
-  - sterilization
-  - fiscal_dominance
-  - em_policy
-  - policy_trap
-  - impossible_trinity
-  - fear_of_floating
-  - inflation_persistence
+- stagflation
+- fx_target
+- quasi_fiscal
+- sterilization
+- fiscal_dominance
+- em_policy
+- policy_trap
+- impossible_trinity
+- fear_of_floating
+- inflation_persistence
 confidence: 3
 stability: stable
-thesis: >
-  Stagflation under an FX rate target is regime-structural, not shock-driven:
-  the FX commitment simultaneously generates persistent inflation (by disabling
-  the exchange rate as a cost-push shock absorber and enabling monetary accommodation)
+thesis: 'Stagflation under an FX rate target is regime-structural, not shock-driven:
+  the FX commitment simultaneously generates persistent inflation (by disabling the
+  exchange rate as a cost-push shock absorber and enabling monetary accommodation)
   and suppresses growth (via quasi-fiscal drain on fiscal space, crowding out of private
-  credit, and elevated domestic interest rates from sterilization). The trap is
-  self-reinforcing: sterilization costs accumulate as quasi-fiscal losses, eroding
-  seigniorage transfers to government, which must either cut spending (deepening
-  stagnation) or accommodate via NCG expansion (deepening inflation). Fear of floating
-  locks both channels shut simultaneously. Policy cannot solve inflation and stagnation
-  with the same instrument when that instrument is neutered by the FX commitment.
+  credit, and elevated domestic interest rates from sterilization). The trap is self-reinforcing:
+  sterilization costs accumulate as quasi-fiscal losses, eroding seigniorage transfers
+  to government, which must either cut spending (deepening stagnation) or accommodate
+  via NCG expansion (deepening inflation). Fear of floating locks both channels shut
+  simultaneously. Policy cannot solve inflation and stagnation with the same instrument
+  when that instrument is neutered by the FX commitment.
+
+  '
 source_refs:
-  - path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
-    pages: "lines 2241–2244 (impossible trinity), lines 2371–2377 (Mundell-Fleming: monetary policy ineffective under fixed FX), lines 2694–2728 (sterilization mechanics and quasi-fiscal cost), lines 2730–2763 (fiscal dominance: no scope for independent monetary policy), lines 2753 (dual deterioration: NFA↓ + NCG↑), lines 2757 (fiscal dominance vicious circle), lines 3693–3814 (fear of floating, FX mismatch buildup)"
-    weight: primary
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 878–927 (four inflation types: cost-push, inertial), lines 1941–1945 (four deficit financing modes → four crisis types), lines 2280–2292 (Box 3.7 quasi-fiscal operations taxonomy), lines 3451–3459 (speculative attack under fixed peg, Krugman 1979), lines 4867 (inertial inflation definition)"
-    weight: primary
-  - path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
-    pages: "lines 265–273 (offset coefficient α=0.7, sterilization coefficient β=0.5, Indonesia 2000–2010: α > β → net loss of monetary autonomy), lines 289–293 (sterilization cost of reserve accumulation)"
-    weight: supporting
+- path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
+  pages: 'lines 2241–2244 (impossible trinity), lines 2371–2377 (Mundell-Fleming:
+    monetary policy ineffective under fixed FX), lines 2694–2728 (sterilization mechanics
+    and quasi-fiscal cost), lines 2730–2763 (fiscal dominance: no scope for independent
+    monetary policy), lines 2753 (dual deterioration: NFA↓ + NCG↑), lines 2757 (fiscal
+    dominance vicious circle), lines 3693–3814 (fear of floating, FX mismatch buildup)'
+  weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: 'lines 878–927 (four inflation types: cost-push, inertial), lines 1941–1945
+    (four deficit financing modes → four crisis types), lines 2280–2292 (Box 3.7 quasi-fiscal
+    operations taxonomy), lines 3451–3459 (speculative attack under fixed peg, Krugman
+    1979), lines 4867 (inertial inflation definition)'
+  weight: primary
+- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro -
+    Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
+  pages: 'lines 265–273 (offset coefficient α=0.7, sterilization coefficient β=0.5,
+    Indonesia 2000–2010: α > β → net loss of monetary autonomy), lines 289–293 (sterilization
+    cost of reserve accumulation)'
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
-    relation: upstream_mechanism
-  - node: "[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]"
-    relation: quasi_fiscal_channel
-  - node: "[[Fear_Of_Floating_Stagflation_Amplifier_Mechanism]]"
-    relation: lock_in_mechanism
-  - node: "[[Stagflation_Regime_Diagnostic_Framework]]"
-    relation: regime_classification
-  - node: "[[Heterodox_Stabilization_Three_Element_Program]]"
-    relation: exit_path
-  - node: "[[Sterilization_Offset_Coefficient_EME_Monetary_Autonomy]]"
-    relation: quantifies_monetary_autonomy_loss
-  - node: "[[Imf_Macro_Crisis_Vector_Framework]]"
-    relation: crisis_vector_context
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]'
+  relation: upstream_mechanism
+- node: '[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]'
+  relation: quasi_fiscal_channel
+- node: '[[Fear_Of_Floating_Stagflation_Amplifier_Mechanism]]'
+  relation: lock_in_mechanism
+- node: '[[Stagflation_Regime_Diagnostic_Framework]]'
+  relation: regime_classification
+- node: '[[Heterodox_Stabilization_Three_Element_Program]]'
+  relation: exit_path
+- node: '[[Sterilization_Offset_Coefficient_EME_Monetary_Autonomy]]'
+  relation: quantifies_monetary_autonomy_loss
+- node: '[[Imf_Macro_Crisis_Vector_Framework]]'
+  relation: crisis_vector_context
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## What Makes This Stagflation Regime-Structural

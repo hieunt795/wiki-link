@@ -32,6 +32,7 @@ source_refs:
 - path: 07_scripts/02_sources/regulator/bcbs/ssm.ilaap_guide_201811.en.md
   pages: ''
   weight: primary
+parent_node: null
 related: []
 date_created: '2026-05-27'
 date_updated: '2026-05-27'

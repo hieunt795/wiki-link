@@ -3,57 +3,59 @@ node_id: mortgage_prepayment_risk_alm_management_001
 type: mechanism
 title: Mortgage Prepayment Risk and ALM Management
 aliases:
-  - mortgage prepayment ALM
-  - MBS negative convexity
-  - OAS mortgage pricing
-  - CPR prepayment model
-  - MSR duration
-  - rủi ro trả nợ sớm thế chấp ALM
-  - mô hình CPR thế chấp
-  - độ lồi âm MBS
-  - lãi suất điều chỉnh OAS
+- mortgage prepayment ALM
+- MBS negative convexity
+- OAS mortgage pricing
+- CPR prepayment model
+- MSR duration
+- rủi ro trả nợ sớm thế chấp ALM
+- mô hình CPR thế chấp
+- độ lồi âm MBS
+- lãi suất điều chỉnh OAS
 domain:
   primary: alm
   secondary: []
 tags:
-  - mortgage
-  - prepayment
-  - node: "[[MBS]]"
-    relation: related_to
-  - node: "[[CPR]]"
-    relation: related_to
-  - node: "[[OAS]]"
-    relation: related_to
-  - negative-convexity
-  - node: "[[MSR]]"
-    relation: related_to
-  - S-curve
-  - node: "[[IRRBB]]"
-    relation: related_to
-  - node: "[[ALM]]"
-    relation: related_to
-  - stochastic-EaR
+- mortgage
+- prepayment
+- node: '[[MBS]]'
+  relation: related_to
+- node: '[[CPR]]'
+  relation: related_to
+- node: '[[OAS]]'
+  relation: related_to
+- negative-convexity
+- node: '[[MSR]]'
+  relation: related_to
+- S-curve
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[ALM]]'
+  relation: related_to
+- stochastic-EaR
 confidence: 1
 stability: stable
-thesis: >
-  Mortgage prepayment risk arises from four distinct borrower behaviors (turnover,
+thesis: 'Mortgage prepayment risk arises from four distinct borrower behaviors (turnover,
   rate-driven refinancing, cash-out refinancing, and default) that produce negative
   convexity in mortgage cash flows; the aggregate prepayment speed (CPR) drives MBS
   valuation via OAS pricing, and ALM must use stochastic earnings-at-risk rather than
   static gap analysis because hedge rebalancing costs materialize as rate volatility
   increases. [LLM]
+
+  '
 source_refs:
-  - path: "02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md"
-    pages: "Chapter 9: Mortgage Prepayment Risk and ALM Management"
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: 'Chapter 9: Mortgage Prepayment Risk and ALM Management'
+parent_node: null
 related:
-  - node: "[[NMD_Stochastic_Three_Factor_Model]]"
-    relation: related_to
-  - node: "[[Interest_Rate_Basis_Risk_Measurement_ALM]]"
-    relation: related_to
-  - node: "[[IRRBB_Standardised_Versus_Internal_Model_Approach]]"
-    relation: related_to
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[NMD_Stochastic_Three_Factor_Model]]'
+  relation: related_to
+- node: '[[Interest_Rate_Basis_Risk_Measurement_ALM]]'
+  relation: related_to
+- node: '[[IRRBB_Standardised_Versus_Internal_Model_Approach]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Thesis

@@ -21,11 +21,17 @@ tags:
 - interbank
 confidence: 1
 stability: stable
-thesis: The U.S. Fed Funds market is now sustained almost entirely by a single arbitrage trade — Federal Home Loan Banks (FHLBs), which cannot earn IORB on reserves, lend reserves to foreign bank branches at EFFR; those foreign banks (exempt from U.S. regulatory costs) deposit the reserves at the Fed and earn the IORB-EFFR spread (~5-10bps), representing the last meaningful unsecured interbank lending activity in the post-Basel III system.
+thesis: The U.S. Fed Funds market is now sustained almost entirely by a single arbitrage
+  trade — Federal Home Loan Banks (FHLBs), which cannot earn IORB on reserves, lend
+  reserves to foreign bank branches at EFFR; those foreign banks (exempt from U.S.
+  regulatory costs) deposit the reserves at the Fed and earn the IORB-EFFR spread
+  (~5-10bps), representing the last meaningful unsecured interbank lending activity
+  in the post-Basel III system.
 source_refs:
 - path: 02_sources/books/conks/Conks - Liquidity and Market Dynamics.md
   pages: batches 36-38 (chars ~205000-225000)
   weight: primary
+parent_node: null
 related:
 - node: '[[Fed Ample Reserves Rate Control Framework]]'
   relation: context

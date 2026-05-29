@@ -30,16 +30,25 @@ tags:
 - sofr-ff
 confidence: 4
 stability: stable
-thesis: 'Reserve Management Operations (RMOs), formally implemented as "Reserve Management Purchases" (RMPs) in late 2025, are the Fed''s tool for maintaining an ample supply of reserves post-QT through outright purchases of short-term Treasury securities (bills). Triggered by money market stress (SOFR-IORB spreads > 30bps), RMOs are operationally distinct from Quantitative Easing (QE); while QE aims to extract duration risk for stimulus, RMOs purely offset structural reserve drains (currency growth, TGA accumulation) to ensure effective control of the policy rate. On December 10, 2025, the Fed initiated RMPs at a rate of ~$40 billion per month following a sharp spike in repo rates.
+thesis: 'Reserve Management Operations (RMOs), formally implemented as "Reserve Management
+  Purchases" (RMPs) in late 2025, are the Fed''s tool for maintaining an ample supply
+  of reserves post-QT through outright purchases of short-term Treasury securities
+  (bills). Triggered by money market stress (SOFR-IORB spreads > 30bps), RMOs are
+  operationally distinct from Quantitative Easing (QE); while QE aims to extract duration
+  risk for stimulus, RMOs purely offset structural reserve drains (currency growth,
+  TGA accumulation) to ensure effective control of the policy rate. On December 10,
+  2025, the Fed initiated RMPs at a rate of ~$40 billion per month following a sharp
+  spike in repo rates.
 
-'
+  '
 source_refs:
 - path: 02_sources/books/duffie_bpea_payments_2026/Duffie_BPEA_Payments_Liquidity_2026.md
-  pages: "2, 10, 27"
+  pages: 2, 10, 27
   weight: primary
 - path: 02_sources/books/conks/Conks - Plumping note (Money market.md
   pages: Plumbing Notes - It's Not QE; Plumbing Notes - The Post-QT Era
   weight: supporting
+parent_node: null
 related:
 - node: '[[Quantitative_Tightening_Qt_Balance_Sheet_Runoff]]'
   relation: RMO_replaces_QT_as_balance_sheet_tool

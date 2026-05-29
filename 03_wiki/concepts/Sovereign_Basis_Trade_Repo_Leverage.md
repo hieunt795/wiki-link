@@ -24,7 +24,12 @@ tags:
 - UST
 confidence: 4
 stability: stable
-thesis: "The cash-futures basis trade — hedge funds buying cash sovereign bonds via repo and selling futures — is a critical source of marginal demand in both US Treasury and European sovereign markets. Operating at extreme leverage (up to 200x in some European segments), these trades bind cash, futures, and repo markets together, but create systemic sensitivity to simultaneous repo funding shocks and cash-futures price detachments."
+thesis: The cash-futures basis trade — hedge funds buying cash sovereign bonds via
+  repo and selling futures — is a critical source of marginal demand in both US Treasury
+  and European sovereign markets. Operating at extreme leverage (up to 200x in some
+  European segments), these trades bind cash, futures, and repo markets together,
+  but create systemic sensitivity to simultaneous repo funding shocks and cash-futures
+  price detachments.
 source_refs:
 - path: 02_sources/Clipping/Who Buys When the ECB Doesn't_.md
   pages: Full document
@@ -32,17 +37,18 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Plumping note (Money market.md
   pages: Plumbing Notes - The Basis Trade Scare
   weight: primary
+parent_node: null
 related:
-- node: "[[Repo_Market_Structure_GC_SC_Cleared_Segments_And_Sec_Mandate]]"
+- node: '[[Repo_Market_Structure_GC_SC_Cleared_Segments_And_Sec_Mandate]]'
   relation: repo_financing_channel_for_basis_trades
-- node: "[[Slr_Lcr_Balance_Sheet_Constraints_Treasury_Market_Dealer]]"
+- node: '[[Slr_Lcr_Balance_Sheet_Constraints_Treasury_Market_Dealer]]'
   relation: Basel_III_made_hedge_funds_the_marginal_sovereign_buyer
-- node: "[[Standing_Repo_Facility_SRF_Fed_Backstop]]"
+- node: '[[Standing_Repo_Facility_SRF_Fed_Backstop]]'
   relation: SRF_sets_ceiling_on_repo_cost_for_basis_traders
-- node: "[[Scissors_Effect_Ecb_Qt_And_Sovereign_Supply]]"
+- node: '[[Scissors_Effect_Ecb_Qt_And_Sovereign_Supply]]'
   relation: related_mechanism
-date_created: "2026-05-23"
-date_updated: "2026-05-24"
+date_created: '2026-05-23'
+date_updated: '2026-05-24'
 ---
 
 ## Structure of the Trade

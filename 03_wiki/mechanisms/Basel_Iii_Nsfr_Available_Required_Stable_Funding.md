@@ -1,57 +1,59 @@
 ---
 node_id: basel_iii_nsfr_available_required_stable_funding_001
 type: mechanism
-title: "Basel III NSFR: Available and Required Stable Funding Factor Tables"
+title: 'Basel III NSFR: Available and Required Stable Funding Factor Tables'
 aliases:
-  - NSFR Basel III
-  - Net Stable Funding Ratio
-  - ASF factor
-  - RSF factor
-  - tỷ lệ tài trợ ổn định ròng
-  - NSFR ASF RSF
-  - structural funding ratio
+- NSFR Basel III
+- Net Stable Funding Ratio
+- ASF factor
+- RSF factor
+- tỷ lệ tài trợ ổn định ròng
+- NSFR ASF RSF
+- structural funding ratio
 domain:
   primary: basel_risk
   secondary:
-    - financial_markets
+  - financial_markets
 tags:
-  - nsfr
-  - asf
-  - rsf
-  - stable_funding
-  - structural_liquidity
-  - 1year_horizon
-  - basel3
-  - liquidity
+- nsfr
+- asf
+- rsf
+- stable_funding
+- structural_liquidity
+- 1year_horizon
+- basel3
+- liquidity
 confidence: 3
 stability: stable
-thesis: >
-  The NSFR requires ASF / RSF ≥ 100% on a structural 1-year horizon; ASF is
-  weighted by liability stability (100% for capital/long-term debt → 95% stable
-  retail → 90% less stable retail → 50% short-term wholesale → 0% short-term
-  financial institution funding), while RSF reflects asset illiquidity (0% cash/CB
-  reserves → 5% Level 1 HQLA → 15% Level 2A → 50% Level 2B/short-term loans →
-  65% low-RW mortgages ≥1yr → 85% high-RW performing loans ≥1yr → 100% encumbered
-  or illiquid), with the 85% RSF for unrated corporate loans ≥1yr being the
-  primary mechanism constraining bank balance sheet capacity for long-term corporate
-  credit.
+thesis: 'The NSFR requires ASF / RSF ≥ 100% on a structural 1-year horizon; ASF is
+  weighted by liability stability (100% for capital/long-term debt → 95% stable retail
+  → 90% less stable retail → 50% short-term wholesale → 0% short-term financial institution
+  funding), while RSF reflects asset illiquidity (0% cash/CB reserves → 5% Level 1
+  HQLA → 15% Level 2A → 50% Level 2B/short-term loans → 65% low-RW mortgages ≥1yr
+  → 85% high-RW performing loans ≥1yr → 100% encumbered or illiquid), with the 85%
+  RSF for unrated corporate loans ≥1yr being the primary mechanism constraining bank
+  balance sheet capacity for long-term corporate credit.
+
+  '
 source_refs:
-  - path: 02_sources/regulator/bcbs/BaselFramework.md
-    pages: "NSF10 (definitions, scope), NSF20 (minimum requirement, reporting), NSF30 (ASF/RSF calculation: 30.5-30.32), NSF99 (summary tables 1-3)"
-    weight: primary
+- path: 02_sources/regulator/bcbs/BaselFramework.md
+  pages: 'NSF10 (definitions, scope), NSF20 (minimum requirement, reporting), NSF30
+    (ASF/RSF calculation: 30.5-30.32), NSF99 (summary tables 1-3)'
+  weight: primary
+parent_node: '[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]'
 related:
-  - node: "[[Basel_Iii_Lcr_Hqla_Cashflow_Mechanics]]"
-    relation: complementary_liquidity_standard
-  - node: "[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]"
-    relation: part_of_four_constraints
-  - node: "[[Basel_Driven_Credit_Migration_To_Private_Markets]]"
-    relation: structural_driver
-  - node: "[[Bank_Alm_Structural_Liquidity_Management_Nsfr_Lcr_Framework]]"
-    relation: alm_implementation_context
-  - node: "[[Funds_Transfer_Pricing_Rate_Decomposition_Base_Liquidity_Credit_Optionality_Components]]"
-    relation: ftp_liquidity_cost_source
-date_created: "2026-05-26"
-date_updated: "2026-05-26"
+- node: '[[Basel_Iii_Lcr_Hqla_Cashflow_Mechanics]]'
+  relation: complementary_liquidity_standard
+- node: '[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]'
+  relation: part_of_four_constraints
+- node: '[[Basel_Driven_Credit_Migration_To_Private_Markets]]'
+  relation: structural_driver
+- node: '[[Bank_Alm_Structural_Liquidity_Management_Nsfr_Lcr_Framework]]'
+  relation: alm_implementation_context
+- node: '[[Funds_Transfer_Pricing_Rate_Decomposition_Base_Liquidity_Credit_Optionality_Components]]'
+  relation: ftp_liquidity_cost_source
+date_created: '2026-05-26'
+date_updated: '2026-05-26'
 ---
 
 ## Overview

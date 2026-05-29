@@ -20,11 +20,17 @@ tags:
 - china
 confidence: 1
 stability: evolving
-thesis: The PBC decoupled LPR from the MLF rate in July 2024 because the MLF was centrally set at a fixed rate via quantity bidding (not market-formed), making LPR an administered price rather than a genuine market rate; the reform linked LPR to the 7-day OMO reverse repo rate so that a single short-term policy rate could transmit simultaneously to the credit market (via LPR) and the bond market (via yield curve), converging toward mainstream central bank frameworks.
+thesis: The PBC decoupled LPR from the MLF rate in July 2024 because the MLF was centrally
+  set at a fixed rate via quantity bidding (not market-formed), making LPR an administered
+  price rather than a genuine market rate; the reform linked LPR to the 7-day OMO
+  reverse repo rate so that a single short-term policy rate could transmit simultaneously
+  to the credit market (via LPR) and the bond market (via yield curve), converging
+  toward mainstream central bank frameworks.
 source_refs:
 - path: 02_sources/academic/Guo_Chinas_Monetary_Policy_Framework_2025.md
   pages: batch 3 (chars ~15512-20593)
   weight: primary
+parent_node: '[[PBOC Monetary Policy Framework And Interest Rate Transmission]]'
 related:
 - node: '[[China LPR Quoting Mechanism And Credit Channel Dominance]]'
   relation: reforms

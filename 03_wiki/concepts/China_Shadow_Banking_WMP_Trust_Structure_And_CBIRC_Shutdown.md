@@ -44,6 +44,7 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Shadow Banking and Cash Markets.md
   pages: The Shadow Bank Shutdown
   weight: primary
+parent_node: null
 related:
 - node: '[[Shadow_Banking_Market_Based_Finance]]'
   relation: US_counterpart_comparison

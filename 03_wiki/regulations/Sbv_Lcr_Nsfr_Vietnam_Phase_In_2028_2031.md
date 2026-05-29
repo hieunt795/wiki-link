@@ -3,56 +3,53 @@ node_id: sbv_lcr_nsfr_vietnam_phase_in_2028_2031_001
 type: regulation
 jurisdiction: vietnam
 issuer: sbv
-title: "SBV LCR NSFR Vietnam Phase-In 2028–2031"
+title: SBV LCR NSFR Vietnam Phase-In 2028–2031
 aliases:
-  - LCR Vietnam phase-in
-  - tỷ lệ khả năng chi trả Vietnam
-  - tỷ lệ NSFR Vietnam
-  - tỷ lệ nguồn vốn ổn định ròng
-  - SBV LCR schedule
-  - SBV liquidity ratios 2028
-
+- LCR Vietnam phase-in
+- tỷ lệ khả năng chi trả Vietnam
+- tỷ lệ NSFR Vietnam
+- tỷ lệ nguồn vốn ổn định ròng
+- SBV LCR schedule
+- SBV liquidity ratios 2028
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - lcr
-  - nsfr
-  - hqla
-  - liquidity-risk
-  - sbv
-  - vietnam-banking
-  - phase-in
-  - basel-iii
-
+- lcr
+- nsfr
+- hqla
+- liquidity-risk
+- sbv
+- vietnam-banking
+- phase-in
+- basel-iii
 confidence: 1
 stability: evolving
-
-thesis: >
-  [LLM] Under the SBV's 2026 draft prudential circular, Vietnamese banks must phase in
-  Basel III LCR from 2028 (70%) through 2031+ (100%), calculated in two dimensions —
-  VND-equivalent LCR and standalone VND LCR. NSFR = 100% applies from 2028 (or earlier
+thesis: '[LLM] Under the SBV''s 2026 draft prudential circular, Vietnamese banks must
+  phase in Basel III LCR from 2028 (70%) through 2031+ (100%), calculated in two dimensions
+  — VND-equivalent LCR and standalone VND LCR. NSFR = 100% applies from 2028 (or earlier
   upon voluntary early adoption with SBV approval). Banks may opt into the LCR/NSFR
   regime before 2028 mandatory date by notifying SBV and providing independent auditor
   confirmation of compliance at the last fiscal year-end.
 
+  '
 source_refs:
-  - path: 02_sources/regulator/sbv/10_DTTT_thay_the_Thong_tu_22_260421_37a8.md
-    pages: "Điều 14 (application), Điều 17 (LCR formula and schedule), Điều 15 (liquidity risk mgmt)"
-    weight: primary
-  - path: 02_sources/regulator/bcbs/bcbs238.md
-    pages: ""
-    weight: supporting
-
+- path: 02_sources/regulator/sbv/10_DTTT_thay_the_Thong_tu_22_260421_37a8.md
+  pages: Điều 14 (application), Điều 17 (LCR formula and schedule), Điều 15 (liquidity
+    risk mgmt)
+  weight: primary
+- path: 02_sources/regulator/bcbs/bcbs238.md
+  pages: ''
+  weight: supporting
+parent_node: '[[Sbv_Draft_2026_Prudential_Safety_Ratios_Banks]]'
 related:
-  - node: "[[Sbv_Draft_2026_Prudential_Safety_Ratios_Banks]]"
-    relation: component_of
-  - node: "[[Basel_Iii_Lcr_Liquidity_Coverage_Ratio_Standard_2013]]"
-    relation: implements
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Sbv_Draft_2026_Prudential_Safety_Ratios_Banks]]'
+  relation: component_of
+- node: '[[Basel_Iii_Lcr_Liquidity_Coverage_Ratio_Standard_2013]]'
+  relation: implements
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 [LLM] Auto-generated stub from draft circular replacing TT22/2019, Articles 14–17. Verify numbers against final enacted text.

@@ -3,58 +3,67 @@ node_id: cb_fx_target_five_entity_balance_sheet_trace_001
 type: mechanism
 title: CB FX Target — Five-Entity Combined Balance Sheet Trace (T-Account Scenarios)
 aliases:
-  - FX target combined balance sheets
-  - five-entity T-account FX
-  - dual deterioration T-account
-  - quasi-fiscal T-account trace
-  - bảng cân đối kết hợp dưới tỷ giá mục tiêu
-  - truy tài khoản T xuyên suốt năm thực thể
+- FX target combined balance sheets
+- five-entity T-account FX
+- dual deterioration T-account
+- quasi-fiscal T-account trace
+- bảng cân đối kết hợp dưới tỷ giá mục tiêu
+- truy tài khoản T xuyên suốt năm thực thể
 domain:
   primary: monetary_policy
   secondary: fiscal_policy
 tags:
-  - balance_sheet
-  - t_account
-  - fx_intervention
-  - sterilization
-  - dual_deterioration
-  - monetary_survey
-  - flow_of_funds
-  - quasi_fiscal
-  - crowding_out
-  - em_policy
+- balance_sheet
+- t_account
+- fx_intervention
+- sterilization
+- dual_deterioration
+- monetary_survey
+- flow_of_funds
+- quasi_fiscal
+- crowding_out
+- em_policy
 confidence: 3
 stability: stable
-thesis: >
-  Every FX intervention and sterilization operation propagates simultaneously across
-  five balance sheets — CB, DMBs, Government, Private sector, and External — linked by
-  three accounting identities (RM = NFA + NCG + Cb + OINm; M2 = NFA + NDC + OINb;
-  (Sp−Ip) + (Sg−Ig) = CAB). The critical diagnostic insight is that M2 and RM remain
-  stable in appearance throughout the buildup phases (sterilization cancels the FX
-  effect), while the actual stress accumulates in the structure of M2: NFA/M2 falling,
-  NCG/M2 rising, CPS/M2 falling. Dual deterioration — NFA↓ + NCG↑ simultaneously in
-  the same period — is the leading signal of a regime under maximum stress, visible
-  from the CB balance sheet before it manifests as crisis.
+thesis: 'Every FX intervention and sterilization operation propagates simultaneously
+  across five balance sheets — CB, DMBs, Government, Private sector, and External
+  — linked by three accounting identities (RM = NFA + NCG + Cb + OINm; M2 = NFA +
+  NDC + OINb; (Sp−Ip) + (Sg−Ig) = CAB). The critical diagnostic insight is that M2
+  and RM remain stable in appearance throughout the buildup phases (sterilization
+  cancels the FX effect), while the actual stress accumulates in the structure of
+  M2: NFA/M2 falling, NCG/M2 rising, CPS/M2 falling. Dual deterioration — NFA↓ + NCG↑
+  simultaneously in the same period — is the leading signal of a regime under maximum
+  stress, visible from the CB balance sheet before it manifests as crisis.
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "Box 5.2 (MA balance sheet analytical form), Box 5.7 (Monetary Survey consolidated: M2 = NFA + NDC + OINb), Box 6.4 Eq.6 (ΔM2 = ΔNFA + ΔNDC + ΔOINb), Box 6.4 Eqs.2–5 (government, private, banking, external sector identities), p.4572–4578 (M2 decomposition by component), p.1841 (recapitalization fiscal treatment), p.2288 (quasi-fiscal taxonomy), p.3745 (Greenspan-Guidotti NFA/RM floor)"
-    weight: primary
-  - path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
-    pages: "lines 2694–2710 (depreciation defense T-account), lines 2720–2728 (sterilization quasi-fiscal cost), lines 2745–2753 (NCG + NFA dual deterioration mechanism), lines 2771–2792 (Bulgaria 1994–96: NFA +12.1 → −234.5, hyperinflation sequence)"
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: 'Box 5.2 (MA balance sheet analytical form), Box 5.7 (Monetary Survey consolidated:
+    M2 = NFA + NDC + OINb), Box 6.4 Eq.6 (ΔM2 = ΔNFA + ΔNDC + ΔOINb), Box 6.4 Eqs.2–5
+    (government, private, banking, external sector identities), p.4572–4578 (M2 decomposition
+    by component), p.1841 (recapitalization fiscal treatment), p.2288 (quasi-fiscal
+    taxonomy), p.3745 (Greenspan-Guidotti NFA/RM floor)'
+  weight: primary
+- path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
+  pages: 'lines 2694–2710 (depreciation defense T-account), lines 2720–2728 (sterilization
+    quasi-fiscal cost), lines 2745–2753 (NCG + NFA dual deterioration mechanism),
+    lines 2771–2792 (Bulgaria 1994–96: NFA +12.1 → −234.5, hyperinflation sequence)'
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]"
-    relation: identity_foundation
-  - node: "[[Imf_Flow_Of_Funds_4_Sector_Consistency_Framework]]"
-    relation: flow_of_funds_framework
-  - node: "[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
-    relation: upstream_mechanism
-  - node: "[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]"
-    relation: quasi_fiscal_channel
-  - node: "[[FX_Target_Quasi_Fiscal_Stagflation_Trap_Mechanism]]"
-    relation: macro_outcome
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]'
+  relation: identity_foundation
+- node: '[[Imf_Flow_Of_Funds_4_Sector_Consistency_Framework]]'
+  relation: flow_of_funds_framework
+- node: '[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]'
+  relation: upstream_mechanism
+- node: '[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]'
+  relation: quasi_fiscal_channel
+- node: '[[FX_Target_Quasi_Fiscal_Stagflation_Trap_Mechanism]]'
+  relation: macro_outcome
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Accounting Identities — Three Must Hold Simultaneously

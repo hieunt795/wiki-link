@@ -3,53 +3,50 @@ node_id: sbv_draft_2026_prudential_safety_ratios_banks_001
 type: regulation
 jurisdiction: vietnam
 issuer: sbv
-title: "SBV Draft 2026 Prudential Safety Ratios Banks"
+title: SBV Draft 2026 Prudential Safety Ratios Banks
 aliases:
-  - Dự thảo Thông tư 2026 thay thế TT22
-  - Draft TT replacing TT22/2019
-  - SBV safety ratios 2026
-  - tỷ lệ bảo đảm an toàn ngân hàng
-  - giới hạn an toàn TCTD 2026
-
+- Dự thảo Thông tư 2026 thay thế TT22
+- Draft TT replacing TT22/2019
+- SBV safety ratios 2026
+- tỷ lệ bảo đảm an toàn ngân hàng
+- giới hạn an toàn TCTD 2026
 domain:
   primary: basel_risk
   secondary:
-    - alm
+  - alm
 tags:
-  - sbv
-  - prudential
-  - vietnam-banking
-  - lcr
-  - nsfr
-  - leverage-ratio
-  - loan-to-deposit
-  - credit-concentration
-  - draft-regulation
-
+- sbv
+- prudential
+- vietnam-banking
+- lcr
+- nsfr
+- leverage-ratio
+- loan-to-deposit
+- credit-concentration
+- draft-regulation
 confidence: 1
 stability: evolving
+thesis: '[LLM] The SBV''s 2026 draft circular (replacing TT22/2019/TT-NHNN) introduces
+  a comprehensive prudential framework for Vietnamese banks covering seven mandatory
+  safety ratios: (a) credit concentration limits, (b) LCR (tỷ lệ khả năng chi trả),
+  (c) NSFR (tỷ lệ nguồn vốn ổn định ròng), (d) government bond holding limits, (e)
+  equity investment limits, (f) LDR ≤ 85%, and (g) leverage ratio ≥ 3%. This framework
+  aligns Vietnamese banking regulation with Basel III liquidity and leverage standards
+  while setting domestic phase-in schedules.
 
-thesis: >
-  [LLM] The SBV's 2026 draft circular (replacing TT22/2019/TT-NHNN) introduces a comprehensive
-  prudential framework for Vietnamese banks covering seven mandatory safety ratios: (a) credit
-  concentration limits, (b) LCR (tỷ lệ khả năng chi trả), (c) NSFR (tỷ lệ nguồn vốn ổn định
-  ròng), (d) government bond holding limits, (e) equity investment limits, (f) LDR ≤ 85%,
-  and (g) leverage ratio ≥ 3%. This framework aligns Vietnamese banking regulation with Basel
-  III liquidity and leverage standards while setting domestic phase-in schedules.
-
+  '
 source_refs:
-  - path: 02_sources/regulator/sbv/10_DTTT_thay_the_Thong_tu_22_260421_37a8.md
-    pages: "Điều 1 (scope), Điều 8 (leverage), Điều 13 (LDR), Điều 14-17 (LCR/NSFR)"
-    weight: primary
-
+- path: 02_sources/regulator/sbv/10_DTTT_thay_the_Thong_tu_22_260421_37a8.md
+  pages: Điều 1 (scope), Điều 8 (leverage), Điều 13 (LDR), Điều 14-17 (LCR/NSFR)
+  weight: primary
+parent_node: '[[Sbv_Lcr_Nsfr_Vietnam_Phase_In_2028_2031]]'
 related:
-  - node: "[[Sbv_Lcr_Nsfr_Vietnam_Phase_In_2028_2031]]"
-    relation: component_of
-  - node: "[[Basel_Iii_Lcr_Liquidity_Coverage_Ratio_Standard_2013]]"
-    relation: implements
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Sbv_Lcr_Nsfr_Vietnam_Phase_In_2028_2031]]'
+  relation: component_of
+- node: '[[Basel_Iii_Lcr_Liquidity_Coverage_Ratio_Standard_2013]]'
+  relation: implements
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 [LLM] Auto-generated stub from draft circular 10_DTTT replacing TT22/2019. Status: DRAFT — number not yet assigned (/2026/TT-NHNN). Review against final enacted text when available.

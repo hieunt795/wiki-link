@@ -3,55 +3,59 @@ node_id: currency_substitution_dollarization_001
 type: concept
 title: Currency Substitution and Dollarization — Monetary Control Implications
 aliases:
-  - currency substitution
-  - dollarization
-  - FX deposits
-  - dollarization ratio
-  - monetary control under dollarization
-  - đô la hóa
-  - thay thế tiền tệ
-  - tiền gửi ngoại tệ
-  - kiểm soát tiền tệ đô la hóa
+- currency substitution
+- dollarization
+- FX deposits
+- dollarization ratio
+- monetary control under dollarization
+- đô la hóa
+- thay thế tiền tệ
+- tiền gửi ngoại tệ
+- kiểm soát tiền tệ đô la hóa
 domain:
   primary: monetary_policy
   secondary: financial_markets
 tags:
-  - dollarization
-  - currency_substitution
-  - monetary_control
-  - fx_deposits
-  - transition_economy
-  - em_policy
-  - inflation
-  - imf_macro_accounting
+- dollarization
+- currency_substitution
+- monetary_control
+- fx_deposits
+- transition_economy
+- em_policy
+- inflation
+- imf_macro_accounting
 confidence: 3
 stability: stable
-thesis: >
-  Currency substitution occurs when residents hold FX assets (deposits, cash) as a
-  substitute for domestic money, driven by high inflation, exchange rate instability,
+thesis: 'Currency substitution occurs when residents hold FX assets (deposits, cash)
+  as a substitute for domestic money, driven by high inflation, exchange rate instability,
   or institutional distrust of the CB. FX deposits/M2 ratios reached 30-60% in peak
-  transition economies. Dollarization undermines CB monetary control: base money
-  (RM) no longer fully determines M2 because FX deposits lie partly outside the
-  domestic money multiplier chain. Attempts to reverse dollarization by force (banning
-  FX deposits) typically backfire by driving FX holdings offshore, further shrinking
-  the domestic monetary base. [LLM]
+  transition economies. Dollarization undermines CB monetary control: base money (RM)
+  no longer fully determines M2 because FX deposits lie partly outside the domestic
+  money multiplier chain. Attempts to reverse dollarization by force (banning FX deposits)
+  typically backfire by driving FX holdings offshore, further shrinking the domestic
+  monetary base. [LLM]
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 4778–4820 (currency substitution definition, dollarization ratio, transition economy peak, monetary control implications, anti-dollarization backfire)"
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: lines 4778–4820 (currency substitution definition, dollarization ratio, transition
+    economy peak, monetary control implications, anti-dollarization backfire)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Imf_Money_Multiplier_Ratio_Decomposition_Three_Agent]]"
-    relation: dollarization_compresses_domestic_multiplier
-  - node: "[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
-    relation: dollarized_system_amplifies_fx_target_constraints
-  - node: "[[Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating]]"
-    relation: dollarization_amplifies_balance_sheet_crisis_risk
-  - node: "[[Hyperinflation_Dynamics_Cagan_Real_Money_Collapse]]"
-    relation: hyperinflation_triggers_flight_to_fx
-  - node: "[[Transition_Economy_Monetary_Special_Issues]]"
-    relation: dollarization_is_dominant_transition_economy_problem
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Imf_Money_Multiplier_Ratio_Decomposition_Three_Agent]]'
+  relation: dollarization_compresses_domestic_multiplier
+- node: '[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]'
+  relation: dollarized_system_amplifies_fx_target_constraints
+- node: '[[Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating]]'
+  relation: dollarization_amplifies_balance_sheet_crisis_risk
+- node: '[[Hyperinflation_Dynamics_Cagan_Real_Money_Collapse]]'
+  relation: hyperinflation_triggers_flight_to_fx
+- node: '[[Transition_Economy_Monetary_Special_Issues]]'
+  relation: dollarization_is_dominant_transition_economy_problem
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Definition and Measurement

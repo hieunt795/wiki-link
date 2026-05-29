@@ -52,6 +52,7 @@ source_refs:
 - path: 02_sources/deep-research/Deep Dive_ Private Credit.md
   pages: 'Section: From Niche to Global Capital Pool'
   weight: supporting
+parent_node: null
 related:
 - node: '[[Basel_III_Endgame_Capital_Liquidity_Credit_Migration]]'
   relation: regional_lens_on

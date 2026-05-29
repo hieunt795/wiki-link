@@ -19,7 +19,13 @@ tags:
 - interest_rate_risk
 confidence: 5
 stability: stable
-thesis: "Fed QE programs perform a 'maturity swap' on the consolidated public sector balance sheet (Fed + Treasury). By purchasing long-term fixed-rate Treasuries and issuing floating-rate reserves (IORB), the Fed effectively converts the sovereign's interest rate hedge into a floating-rate mortgage. This creates a 'Giant Carry Trade' for the public sector, which generates profits when rates are low but causes massive fiscal losses—and a cessation of Fed remittances to the Treasury—when interest rates rise."
+thesis: Fed QE programs perform a 'maturity swap' on the consolidated public sector
+  balance sheet (Fed + Treasury). By purchasing long-term fixed-rate Treasuries and
+  issuing floating-rate reserves (IORB), the Fed effectively converts the sovereign's
+  interest rate hedge into a floating-rate mortgage. This creates a 'Giant Carry Trade'
+  for the public sector, which generates profits when rates are low but causes massive
+  fiscal losses—and a cessation of Fed remittances to the Treasury—when interest rates
+  rise.
 source_refs:
 - path: 02_sources/Clipping/A new Fed-Treasury Accord_.md
   pages: Full document
@@ -27,13 +33,14 @@ source_refs:
 - path: 02_sources/Clipping/What about Japan_ (Part I).md
   pages: Full document
   weight: supporting
+parent_node: null
 related:
-- node: "[[QE_Duration_Extraction_from_Private_Sector]]"
+- node: '[[QE_Duration_Extraction_from_Private_Sector]]'
   relation: related_mechanism
-- node: "[[CB_Seigniorage_Income_Capital_Loss_Policy_Independence]]"
+- node: '[[CB_Seigniorage_Income_Capital_Loss_Policy_Independence]]'
   relation: fiscal_consequence_of_qe_losses
-date_created: "2026-05-23"
-date_updated: "2026-05-24"
+date_created: '2026-05-23'
+date_updated: '2026-05-24'
 ---
 
 ## The Fed-Treasury Maturity Swap

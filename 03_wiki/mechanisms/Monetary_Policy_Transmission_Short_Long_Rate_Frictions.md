@@ -3,32 +3,36 @@ node_id: mon_pol_trans_short_long_frictions_mec_001
 type: mechanism
 title: Monetary Policy Transmission Short Long Rate Frictions
 aliases:
-  - Transmission Frictions
-  - Những điểm nghẽn truyền dẫn từ lãi suất ngắn hạn sang dài hạn
-  - Short-to-Long Rate Transmission
-
+- Transmission Frictions
+- Những điểm nghẽn truyền dẫn từ lãi suất ngắn hạn sang dài hạn
+- Short-to-Long Rate Transmission
 domain:
   primary: monetary_policy
-  secondary: [macro_outlook]
-tags: [transmission, interest_rate_channel, yield_curve, term_premium]
-
+  secondary:
+  - macro_outlook
+tags:
+- transmission
+- interest_rate_channel
+- yield_curve
+- term_premium
 confidence: 3
 stability: stable
+thesis: 'Transmission from short-term policy rates to medium- and long-term yields
+  is non-linear and subject to structural frictions, including asymmetric effectiveness
+  across business cycles and shifts in market expectations that can decouple policy
+  actions from long-term rate movements.
 
-thesis: >
-  Transmission from short-term policy rates to medium- and long-term yields is non-linear and subject to structural frictions, including asymmetric effectiveness across business cycles and shifts in market expectations that can decouple policy actions from long-term rate movements.
-
+  '
 source_refs:
-  - path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
-    pages: "Section 2"
-    weight: primary
-
+- path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
+  pages: Section 2
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Monetary_Policy_Transmission_Mechanisms_Framework]]"
-    relation: detail_of
-  - node: "[[DV01_Duration_Convexity_Fixed_Income]]"
-    relation: analytics_for
-
+- node: '[[Monetary_Policy_Transmission_Mechanisms_Framework]]'
+  relation: detail_of
+- node: '[[DV01_Duration_Convexity_Fixed_Income]]'
+  relation: analytics_for
 date_created: 2026-05-20
 date_updated: 2026-05-20
 ---

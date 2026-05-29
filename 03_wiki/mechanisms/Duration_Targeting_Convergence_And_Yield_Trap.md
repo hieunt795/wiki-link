@@ -26,6 +26,7 @@ source_refs:
 - path: 02_sources/books/homer_leibowitz_yield_book/Homer_Leibowitz_Inside_the_Yield_Book.md
   pages: Chapter 1-2
   weight: primary
+parent_node: null
 related:
 - node: '[[Duration Targeting Bond Portfolio Framework]]'
   relation: shared_tag:duration

@@ -29,16 +29,17 @@ stability: stable
 thesis: 'FX settlement risk — the risk one party delivers currency but the counterparty
   fails to deliver (Herstatt risk, 1974) — was structurally mitigated by CLS Group
   (2002) via payment-vs-payment (PvP) settlement. Simultaneously, the FX dealer oligopoly
-  eroded: from voice brokers → EBS/Reuters (1992) → single-bank platforms (2001)
-  → multi-dealer ECNs → algo trading (2004) → principal trading firms (PTFs) like
-  Jump Trading and XTX Markets entering the interdealer market post-GFC, displacing
-  bank proprietary desks constrained by regulation.
+  eroded: from voice brokers → EBS/Reuters (1992) → single-bank platforms (2001) →
+  multi-dealer ECNs → algo trading (2004) → principal trading firms (PTFs) like Jump
+  Trading and XTX Markets entering the interdealer market post-GFC, displacing bank
+  proprietary desks constrained by regulation.
 
   '
 source_refs:
 - path: 02_sources/books/conks/Conks - Global Dollar and Eurodollar Systems.md
   pages: The Foreign Exchange Evolution
   weight: primary
+parent_node: '[[Global_Dollar_System_Eurodollar_Architecture]]'
 related:
 - node: '[[Global_Dollar_System_Eurodollar_Architecture]]'
   relation: component_of

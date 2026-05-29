@@ -3,49 +3,51 @@ node_id: nmd_decay_model_volume_segmentation_001
 type: mechanism
 title: NMD Decay Model and Volume Segmentation
 aliases:
-  - NMD decay model
-  - non-maturity deposit behavioralization
-  - deposit average life estimation
-  - deposit volume segmentation
-  - mô hình suy giảm tiền gửi không kỳ hạn
-  - phân khúc khối lượng tiền gửi NMD
-  - tuổi thọ trung bình tiền gửi
+- NMD decay model
+- non-maturity deposit behavioralization
+- deposit average life estimation
+- deposit volume segmentation
+- mô hình suy giảm tiền gửi không kỳ hạn
+- phân khúc khối lượng tiền gửi NMD
+- tuổi thọ trung bình tiền gửi
 domain:
   primary: alm
   secondary: []
 tags:
-  - node: "[[NMD]]"
-    relation: related_to
-  - non-maturity-deposits
-  - decay-model
-  - behavioralization
-  - deposit-segmentation
-  - average-life
-  - logistic-regression
-  - node: "[[IRRBB]]"
-    relation: related_to
-  - node: "[[ALM]]"
-    relation: related_to
+- node: '[[NMD]]'
+  relation: related_to
+- non-maturity-deposits
+- decay-model
+- behavioralization
+- deposit-segmentation
+- average-life
+- logistic-regression
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[ALM]]'
+  relation: related_to
 confidence: 1
 stability: stable
-thesis: >
-  Deposit decay modeling estimates the expected outflow rate of non-maturity deposits
-  (NMDs) by defining "end of life" via logistic regression on threshold-breach
-  variables, computing average life via midpoint or monthly granular techniques,
-  and segmenting the portfolio to maximize cross-segment behavioral variance so that
-  each segment can be independently modeled and replicated. [LLM]
+thesis: 'Deposit decay modeling estimates the expected outflow rate of non-maturity
+  deposits (NMDs) by defining "end of life" via logistic regression on threshold-breach
+  variables, computing average life via midpoint or monthly granular techniques, and
+  segmenting the portfolio to maximize cross-segment behavioral variance so that each
+  segment can be independently modeled and replicated. [LLM]
+
+  '
 source_refs:
-  - path: "02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md"
-    pages: "Chapter 5: Non-Maturity Deposits — A Decay Model Approach (Soulellis)"
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: 'Chapter 5: Non-Maturity Deposits — A Decay Model Approach (Soulellis)'
+parent_node: null
 related:
-  - node: "[[NMD_Stochastic_Three_Factor_Model]]"
-    relation: related_to
-  - node: "[[IRRBB_Standardised_Versus_Internal_Model_Approach]]"
-    relation: related_to
-  - node: "[[ALM_Low_Negative_Interest_Rate_Environment]]"
-    relation: related_to
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[NMD_Stochastic_Three_Factor_Model]]'
+  relation: related_to
+- node: '[[IRRBB_Standardised_Versus_Internal_Model_Approach]]'
+  relation: related_to
+- node: '[[ALM_Low_Negative_Interest_Rate_Environment]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Thesis

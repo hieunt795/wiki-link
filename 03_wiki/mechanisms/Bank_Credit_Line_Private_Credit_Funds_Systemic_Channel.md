@@ -31,6 +31,7 @@ source_refs:
 - path: 02_sources/deep-research/Deep Dive_ Private Credit.md
   pages: ''
   weight: primary
+parent_node: null
 related:
 - node: '[[Bank_NBFI_Leverage_Loop]]'
   relation: canonical_bank_liquidity_feedback_loop

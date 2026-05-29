@@ -3,32 +3,37 @@ node_id: nonlinear_inflation_amplifiers_mec_001
 type: mechanism
 title: Non-Linear Inflation Amplifier Mechanics
 aliases:
-  - Structural vs Behavioral Amplifiers
-  - Cơ chế khuếch đại lạm phát phi tuyến
-  - Input-Output Cascade vs Second-Round Effects
-
+- Structural vs Behavioral Amplifiers
+- Cơ chế khuếch đại lạm phát phi tuyến
+- Input-Output Cascade vs Second-Round Effects
 domain:
   primary: monetary_policy
-  secondary: [macro_outlook]
-tags: [inflation, supply_chain, input_output, inflation_expectations, non_linear_dynamics]
-
+  secondary:
+  - macro_outlook
+tags:
+- inflation
+- supply_chain
+- input_output
+- inflation_expectations
+- non_linear_dynamics
 confidence: 3
 stability: stable
+thesis: 'Inflation propagation in response to supply shocks occurs through two distinct
+  amplifiers: the structural amplifier (automatic input-output cascades through production
+  networks) and the behavioral amplifier (changes in wage- and price-setting behavior
+  driven by expectations). [LLM]
 
-thesis: >
-  Inflation propagation in response to supply shocks occurs through two distinct amplifiers: the structural amplifier (automatic input-output cascades through production networks) and the behavioral amplifier (changes in wage- and price-setting behavior driven by expectations). [LLM]
-
+  '
 source_refs:
-  - path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
-    pages: "Introduction, Taking the Colimit sections"
-    weight: primary
-
+- path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
+  pages: Introduction, Taking the Colimit sections
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Monetary_Policy_Transmission_Mechanisms_Framework]]"
-    relation: extension_of
-  - node: "[[Inflation_Targeting_Framework_Central_Bank]]"
-    relation: constraint_on
-
+- node: '[[Monetary_Policy_Transmission_Mechanisms_Framework]]'
+  relation: extension_of
+- node: '[[Inflation_Targeting_Framework_Central_Bank]]'
+  relation: constraint_on
 date_created: 2026-05-22
 date_updated: 2026-05-22
 ---

@@ -3,35 +3,31 @@ node_id: sbv_tt83_2025_internal_control_three_lines_defense_001
 type: regulation
 jurisdiction: vietnam
 issuer: sbv
-title: "SBV TT83 2025 Internal Control System Three Lines of Defense"
+title: SBV TT83 2025 Internal Control System Three Lines of Defense
 aliases:
-  - TT83/2025/TT-NHNN
-  - Thông tư 83/2025 kiểm soát nội bộ
-  - SBV internal control system
-  - hệ thống kiểm soát nội bộ ngân hàng
-  - three lines of defense Vietnam banks
-  - ba tuyến bảo vệ ngân hàng
-
+- TT83/2025/TT-NHNN
+- Thông tư 83/2025 kiểm soát nội bộ
+- SBV internal control system
+- hệ thống kiểm soát nội bộ ngân hàng
+- three lines of defense Vietnam banks
+- ba tuyến bảo vệ ngân hàng
 domain:
   primary: basel_risk
   secondary:
-    - alm
+  - alm
 tags:
-  - internal-control
-  - three-lines-defense
-  - sbv
-  - tt83-2025
-  - risk-governance
-  - operational-risk
-  - icaap
-  - stress-testing
-  - vietnam-banking
-
+- internal-control
+- three-lines-defense
+- sbv
+- tt83-2025
+- risk-governance
+- operational-risk
+- icaap
+- stress-testing
+- vietnam-banking
 confidence: 1
 stability: evolving
-
-thesis: >
-  [LLM] TT83/2025/TT-NHNN (issued 31 December 2025) mandates a three-line-of-defense
+thesis: '[LLM] TT83/2025/TT-NHNN (issued 31 December 2025) mandates a three-line-of-defense
   internal control structure for Vietnamese commercial banks and foreign bank branches.
   Line 1: risk-generating business units; Line 2: Compliance and Risk Management functions;
   Line 3: Internal Audit. The circular also requires banks to establish a Risk Council,
@@ -39,23 +35,24 @@ thesis: >
   adequacy assessment process (ICAAP / đánh giá nội bộ về mức đủ vốn) covering all
   material risks including IRRBB and model risk.
 
+  '
 source_refs:
-  - path: 02_sources/regulator/sbv/TT83.md
-    pages: "Điều 3 (definitions), Điều 4 (ICS requirements and 3-lines), Điều 6 (org structure), Điều 5 (policies)"
-    weight: primary
-
+- path: 02_sources/regulator/sbv/TT83.md
+  pages: Điều 3 (definitions), Điều 4 (ICS requirements and 3-lines), Điều 6 (org
+    structure), Điều 5 (policies)
+  weight: primary
+parent_node: '[[Sbv_Tt83_2025_Risk_Governance_Icaap_Appetite]]'
 related:
-  - node: "[[Sbv_Tt14_2025_Irb_Governance_Risk_Parameters]]"
-    relation: cross_references
-  - node: "[[Sbv_Tt83_2025_Risk_Governance_Icaap_Appetite]]"
-    relation: component_of
-  - node: "[[Ecb_Ilaap_Guide_2018_Seven_Principles_Ssm]]"
-    relation: related_to
-  - node: "[[Eba_Gl_2016_10_Icaap_Ilaap_Information_For_Srep]]"
-    relation: related_to
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Sbv_Tt14_2025_Irb_Governance_Risk_Parameters]]'
+  relation: cross_references
+- node: '[[Sbv_Tt83_2025_Risk_Governance_Icaap_Appetite]]'
+  relation: component_of
+- node: '[[Ecb_Ilaap_Guide_2018_Seven_Principles_Ssm]]'
+  relation: related_to
+- node: '[[Eba_Gl_2016_10_Icaap_Ilaap_Information_For_Srep]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 [LLM] Auto-generated stub from TT83/2025/TT-NHNN. Review full circular for Chapters II–IV (control activities, risk management, internal audit).

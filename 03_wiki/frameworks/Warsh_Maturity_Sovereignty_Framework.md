@@ -3,38 +3,48 @@ node_id: warsh_maturity_sovereignty_frm_001
 type: framework
 title: Warsh Maturity Sovereignty Framework
 aliases:
-  - maturity sovereignty
-  - sovereign debt duration control
-  - chu quyen ky han no
-  - khung chu quyen ky han no
+- maturity sovereignty
+- sovereign debt duration control
+- chu quyen ky han no
+- khung chu quyen ky han no
 domain:
   primary: fiscal_policy
-  secondary: [monetary_policy, financial_markets]
-tags: [warsh, treasury, maturity, duration, fed, debt_management]
+  secondary:
+  - monetary_policy
+  - financial_markets
+tags:
+- warsh
+- treasury
+- maturity
+- duration
+- fed
+- debt_management
 confidence: 3
 stability: evolving
-thesis: >
-  Warsh's maturity-sovereignty view assigns the Treasury, not the Fed, primary
-  responsibility for the government's debt-duration profile. The Fed may supply
-  reserves or provide temporary market-function support, but it should not
-  systematically transform long-duration Treasury debt into overnight liabilities
-  through QE because that reverses the Treasury's own maturity choice.
+thesis: 'Warsh''s maturity-sovereignty view assigns the Treasury, not the Fed, primary
+  responsibility for the government''s debt-duration profile. The Fed may supply reserves
+  or provide temporary market-function support, but it should not systematically transform
+  long-duration Treasury debt into overnight liabilities through QE because that reverses
+  the Treasury''s own maturity choice.
+
+  '
 source_refs:
-  - path: 02_sources/Clipping/A new Fed-Treasury Accord_.md
-    pages: "full document"
-    weight: primary
-  - path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
-    pages: "full document"
-    weight: supporting
+- path: 02_sources/Clipping/A new Fed-Treasury Accord_.md
+  pages: full document
+  weight: primary
+- path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
+  pages: full document
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Warsh Fed Balance Sheet Operating Doctrine]]"
-    relation: component_framework
-  - node: "[[New Fed-Treasury Accord (2026 Proposal)]]"
-    relation: institutional_foundation
-  - node: "[[Fed Balance Sheet Size and Policy Rate Independence]]"
-    relation: contested_by
-  - node: "[[Fed Treasury Operational Choice Space]]"
-    relation: implementation_context
+- node: '[[Warsh Fed Balance Sheet Operating Doctrine]]'
+  relation: component_framework
+- node: '[[New Fed-Treasury Accord (2026 Proposal)]]'
+  relation: institutional_foundation
+- node: '[[Fed Balance Sheet Size and Policy Rate Independence]]'
+  relation: contested_by
+- node: '[[Fed Treasury Operational Choice Space]]'
+  relation: implementation_context
 date_created: 2026-05-24
 date_updated: 2026-05-24
 ---

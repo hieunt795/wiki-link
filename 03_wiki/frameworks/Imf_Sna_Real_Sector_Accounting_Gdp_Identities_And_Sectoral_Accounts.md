@@ -33,6 +33,7 @@ source_refs:
     IMF.md
   pages: 'Chapter 2: Analysis of the Real Sector'
   weight: primary
+parent_node: null
 related:
 - node: '[[IMF Balance of Payments Framework and External Account Analysis]]'
   relation: shared_tag:imf

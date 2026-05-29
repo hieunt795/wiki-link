@@ -3,48 +3,50 @@ node_id: fed_fiscal_agent_treasury_relationship_frm_001
 type: framework
 title: Fed Fiscal Agent Treasury Relationship
 aliases:
-  - Fiscal Agent
-  - Treasury Fed Relationship
-  - TGA Management
-  - Quan hệ Đại lý Tài khóa Fed-Bộ Tài chính
+- Fiscal Agent
+- Treasury Fed Relationship
+- TGA Management
+- Quan hệ Đại lý Tài khóa Fed-Bộ Tài chính
 domain:
   primary: monetary_policy
-  secondary: [fiscal_policy]
+  secondary:
+  - fiscal_policy
 tags:
-  - fed
-  - treasury
-  - tga
-  - fiscal_agent
-  - debt_issuance
-  - payment_system
-
+- fed
+- treasury
+- tga
+- fiscal_agent
+- debt_issuance
+- payment_system
 confidence: 4
 stability: stable
+thesis: 'The Federal Reserve Banks serve as the primary fiscal agent for the U.S.
+  Treasury, providing the operational infrastructure for the federal government''s
+  banking, debt issuance, and payment processing; this relationship makes the Fed''s
+  balance sheet the nexus where fiscal and monetary flows converge, most visibly through
+  the Treasury General Account (TGA).
 
-thesis: >
-  The Federal Reserve Banks serve as the primary fiscal agent for the U.S. Treasury, providing the operational infrastructure for the federal government's banking, debt issuance, and payment processing; this relationship makes the Fed's balance sheet the nexus where fiscal and monetary flows converge, most visibly through the Treasury General Account (TGA).
-
+  '
 source_refs:
-  - path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
-    pages: "Full document"
-    weight: primary
-  - path: 02_sources/books/cargill_central_bank_policy/Cargill_Financial_System_Policy.md
-    pages: "3340, 3538"
-    weight: supporting
-  - path: 02_sources/books/conks/Conks - Liquidity and Market Dynamics.md
-    pages: "2106"
-    weight: supporting
-
+- path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
+  pages: Full document
+  weight: primary
+- path: 02_sources/books/cargill_central_bank_policy/Cargill_Financial_System_Policy.md
+  pages: 3340, 3538
+  weight: supporting
+- path: 02_sources/books/conks/Conks - Liquidity and Market Dynamics.md
+  pages: '2106'
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[US Treasury Department]]"
-    relation: principal_counterparty
-  - node: "[[Treasury General Account TGA Reserve Swap]]"
-    relation: operational_output
-  - node: "[[TGA Reserve Swap Mechanics And Debt Ceiling Dynamics]]"
-    relation: liquidity_impact
-  - node: "[[New Fed-Treasury Accord (2026 Proposal)]]"
-    relation: policy_boundary_evolution
-
+- node: '[[US Treasury Department]]'
+  relation: principal_counterparty
+- node: '[[Treasury General Account TGA Reserve Swap]]'
+  relation: operational_output
+- node: '[[TGA Reserve Swap Mechanics And Debt Ceiling Dynamics]]'
+  relation: liquidity_impact
+- node: '[[New Fed-Treasury Accord (2026 Proposal)]]'
+  relation: policy_boundary_evolution
 date_created: 2026-05-22
 date_updated: 2026-05-25
 ---

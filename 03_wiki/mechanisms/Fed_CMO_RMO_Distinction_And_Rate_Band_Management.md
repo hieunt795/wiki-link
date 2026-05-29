@@ -20,11 +20,17 @@ tags:
 - rate_corridor
 confidence: 1
 stability: evolving
-thesis: The Fed uses two distinct reserve injection tools to maintain the federal funds rate within its target band — CMOs (Ceiling Management Operations) are emergency interventions that push market rates away from the SRF ceiling, while RMOs (Reserve Management Operations) are routine outright bill purchases that maintain ample reserves over time — with CMOs typically preceding RMOs when rates breach the upper limit of the target band.
+thesis: The Fed uses two distinct reserve injection tools to maintain the federal
+  funds rate within its target band — CMOs (Ceiling Management Operations) are emergency
+  interventions that push market rates away from the SRF ceiling, while RMOs (Reserve
+  Management Operations) are routine outright bill purchases that maintain ample reserves
+  over time — with CMOs typically preceding RMOs when rates breach the upper limit
+  of the target band.
 source_refs:
 - path: 02_sources/books/conks/Conks - Plumping note (Money market.md
   pages: batch 15 (chars ~121242-130089)
   weight: primary
+parent_node: null
 related:
 - node: '[[Fed RMO Reserve Management Operations Post QT Mechanics]]'
   relation: distinguishes

@@ -25,11 +25,17 @@ tags:
 - dealer_balance_sheet
 confidence: 1
 stability: evolving
-thesis: The SRF's advertised ceiling rate (SRFR) understates the true effective ceiling because dealers need ~25bps over SRFR to cover SRF balance sheet costs (can't net trades), haircuts on collateral, and negative carry risk — defects partially addressed by "morning Fed repos" (December 2024) that let dealers borrow at dawn rather than waiting until 1:15pm, but stigma persists structurally and cannot be eliminated by price or timing fixes alone.
+thesis: The SRF's advertised ceiling rate (SRFR) understates the true effective ceiling
+  because dealers need ~25bps over SRFR to cover SRF balance sheet costs (can't net
+  trades), haircuts on collateral, and negative carry risk — defects partially addressed
+  by "morning Fed repos" (December 2024) that let dealers borrow at dawn rather than
+  waiting until 1:15pm, but stigma persists structurally and cannot be eliminated
+  by price or timing fixes alone.
 source_refs:
 - path: 02_sources/books/conks/Conks - Plumping note (Money market.md
   pages: batch 12-13 (chars ~95936-112991)
   weight: primary
+parent_node: null
 related:
 - node: '[[Standing Repo Facility SRF Fed Backstop]]'
   relation: extends

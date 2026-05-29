@@ -3,55 +3,57 @@ node_id: bcbs_liquidity_internal_pricing_ftp_p4_001
 type: mechanism
 title: BCBS Liquidity Internal Pricing (FTP) — Principle 4 (2008)
 aliases:
-  - BCBS liquidity FTP Principle 4
-  - liquidity transfer pricing Basel
-  - internal liquidity cost allocation
-  - liquidity cost benefit risk attribution
-  - định giá thanh khoản nội bộ FTP
-  - phân bổ chi phí lợi ích rủi ro thanh khoản
+- BCBS liquidity FTP Principle 4
+- liquidity transfer pricing Basel
+- internal liquidity cost allocation
+- liquidity cost benefit risk attribution
+- định giá thanh khoản nội bộ FTP
+- phân bổ chi phí lợi ích rủi ro thanh khoản
 domain:
   primary: banking_regulation
   secondary: banking_operations
 tags:
-  - ftp
-  - funds_transfer_pricing
-  - liquidity_risk
-  - internal_pricing
-  - incentive_alignment
-  - business_line
-  - bcbs
-  - bcbs144
+- ftp
+- funds_transfer_pricing
+- liquidity_risk
+- internal_pricing
+- incentive_alignment
+- business_line
+- bcbs
+- bcbs144
 confidence: 4
 stability: stable
-thesis: >
-  BCBS Principle 4 (2008) requires banks to incorporate liquidity costs, benefits
-  and risks in internal pricing (FTP), performance measurement and new product
-  approval for all significant on- and off-balance sheet activities. The purpose
-  is incentive alignment: business lines that create liquidity risk must bear the
-  cost of that risk, so that line management incentives reinforce rather than
-  undermine the bank-wide liquidity risk tolerance. A liquidity charge is assigned
-  to positions, portfolios or transactions based on anticipated holding periods,
-  market liquidity characteristics and the benefit of stable funding sources.
-  This principle directly addresses the pre-2008 misalignment where business lines
-  profited from activities that created liquidity risk without bearing the cost.
-source_refs:
-  - path: 02_sources/regulator/bcbs/bcbs144.md
-    pages: "para 19–21 (Principle 4 full text: attribution, transparency, product approval), para 3 (pre-2008 failure: incentives misaligned with risk tolerance)"
-    weight: primary
-related:
-  - node: "[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]"
-    relation: parent_framework
-  - node: "[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]"
-    relation: nmd_ftp_connection
-  - node: "[[Funds_Transfer_Pricing_Rate_Decomposition_Base_Liquidity_Credit_Optionality_Components]]"
-    relation: ftp_rate_decomposition
-  - node: "[[Ftp_As_Unified_Balance_Sheet_Control_Mechanism_Transmission_To_Risk_Factors]]"
-    relation: implementation_mechanism
-  - node: "[[Ftp_Curve_Construction_By_Tenor_Short_Medium_Long_Term_Spread_Framework]]"
-    relation: curve_construction
+thesis: 'BCBS Principle 4 (2008) requires banks to incorporate liquidity costs, benefits
+  and risks in internal pricing (FTP), performance measurement and new product approval
+  for all significant on- and off-balance sheet activities. The purpose is incentive
+  alignment: business lines that create liquidity risk must bear the cost of that
+  risk, so that line management incentives reinforce rather than undermine the bank-wide
+  liquidity risk tolerance. A liquidity charge is assigned to positions, portfolios
+  or transactions based on anticipated holding periods, market liquidity characteristics
+  and the benefit of stable funding sources. This principle directly addresses the
+  pre-2008 misalignment where business lines profited from activities that created
+  liquidity risk without bearing the cost.
 
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+  '
+source_refs:
+- path: 02_sources/regulator/bcbs/bcbs144.md
+  pages: 'para 19–21 (Principle 4 full text: attribution, transparency, product approval),
+    para 3 (pre-2008 failure: incentives misaligned with risk tolerance)'
+  weight: primary
+parent_node: '[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]'
+related:
+- node: '[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]'
+  relation: parent_framework
+- node: '[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]'
+  relation: nmd_ftp_connection
+- node: '[[Funds_Transfer_Pricing_Rate_Decomposition_Base_Liquidity_Credit_Optionality_Components]]'
+  relation: ftp_rate_decomposition
+- node: '[[Ftp_As_Unified_Balance_Sheet_Control_Mechanism_Transmission_To_Risk_Factors]]'
+  relation: implementation_mechanism
+- node: '[[Ftp_Curve_Construction_By_Tenor_Short_Medium_Long_Term_Spread_Framework]]'
+  relation: curve_construction
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## The Pre-2008 Problem Principle 4 Solves

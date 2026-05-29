@@ -3,51 +3,53 @@ node_id: alm_enterprise_risk_management_framework_001
 type: framework
 title: ALM in the Enterprise Risk Management Framework
 aliases:
-  - ALM ERM integration
-  - ALCO governance framework
-  - bank risk appetite ALM
-  - khung quản trị rủi ro tài sản nợ
-  - ALM trong quản lý rủi ro doanh nghiệp
-  - ủy ban ALCO
+- ALM ERM integration
+- ALCO governance framework
+- bank risk appetite ALM
+- khung quản trị rủi ro tài sản nợ
+- ALM trong quản lý rủi ro doanh nghiệp
+- ủy ban ALCO
 domain:
   primary: alm
   secondary: []
 tags:
-  - node: "[[ALM]]"
-    relation: related_to
-  - node: "[[ERM]]"
-    relation: related_to
-  - node: "[[ALCO]]"
-    relation: related_to
-  - risk appetite
-  - node: "[[CET1]]"
-    relation: related_to
-  - earnings-at-risk
-  - revaluation-reserve
-  - node: "[[RWA]]"
-    relation: related_to
-  - governance
+- node: '[[ALM]]'
+  relation: related_to
+- node: '[[ERM]]'
+  relation: related_to
+- node: '[[ALCO]]'
+  relation: related_to
+- risk appetite
+- node: '[[CET1]]'
+  relation: related_to
+- earnings-at-risk
+- revaluation-reserve
+- node: '[[RWA]]'
+  relation: related_to
+- governance
 confidence: 1
 stability: stable
-thesis: >
-  ALM operates within the enterprise risk management (ERM) cycle as the governance
+thesis: 'ALM operates within the enterprise risk management (ERM) cycle as the governance
   mechanism that translates board-level risk appetite statements into balance sheet
   constraints on interest rate, liquidity, and capital risk; the five-step ERM cycle
   (identify → select controls → implement → monitor → report) and the ALCO committee
   structure jointly ensure that structural risks are hedged or capitalized within
   approved tolerances. [LLM]
+
+  '
 source_refs:
-  - path: "02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md"
-    pages: "Chapter 2: ALM in the Enterprise Risk Management Framework"
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: 'Chapter 2: ALM in the Enterprise Risk Management Framework'
+parent_node: null
 related:
-  - node: "[[IRRBB_Standardised_Versus_Internal_Model_Approach]]"
-    relation: related_to
-  - node: "[[ILAAP_Supervisory_Liquidity_Framework]]"
-    relation: related_to
-  - node: "[[Bcbs_Irrbb_Standards_2016]]"
-    relation: related_to
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[IRRBB_Standardised_Versus_Internal_Model_Approach]]'
+  relation: related_to
+- node: '[[ILAAP_Supervisory_Liquidity_Framework]]'
+  relation: related_to
+- node: '[[Bcbs_Irrbb_Standards_2016]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Thesis

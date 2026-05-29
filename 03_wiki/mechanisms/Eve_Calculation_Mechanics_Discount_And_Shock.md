@@ -1,46 +1,46 @@
 ---
 node_id: eve_calculation_mechanics_discount_and_shock_001
 type: mechanism
-title: "EVE Calculation Mechanics: Discounting Cashflows and Rate Shock"
+title: 'EVE Calculation Mechanics: Discounting Cashflows and Rate Shock'
 aliases:
-  - EVE calculation
-  - Economic Value of Equity mechanics
-  - Delta EVE
-  - tính toán EVE
-  - giá trị kinh tế của vốn chủ sở hữu
-
+- EVE calculation
+- Economic Value of Equity mechanics
+- Delta EVE
+- tính toán EVE
+- giá trị kinh tế của vốn chủ sở hữu
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - EVE
-  - economic_value
-  - discounted_cashflow
-  - interest_rate_shock
-  - IRRBB
-
+- EVE
+- economic_value
+- discounted_cashflow
+- interest_rate_shock
+- IRRBB
 confidence: 1
 stability: stable
+thesis: '[LLM] EVE is calculated as the present value of all asset cashflows minus
+  the present value of all liability cashflows (plus off-balance-sheet items), discounted
+  at the current risk-free yield curve; a rate shock scenario repeats the calculation
+  with a shifted curve, and the change in EVE (ΔEVE) measures the bank''s economic
+  capital sensitivity to that shock.
 
-thesis: >
-  [LLM] EVE is calculated as the present value of all asset cashflows minus the present value of all liability cashflows (plus off-balance-sheet items), discounted at the current risk-free yield curve; a rate shock scenario repeats the calculation with a shifted curve, and the change in EVE (ΔEVE) measures the bank's economic capital sensitivity to that shock.
-
+  '
 source_refs:
-  - path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
-    pages: "Ch 2, sections 2.1.1–2.1.2"
-    weight: primary
-
+- path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
+  pages: Ch 2, sections 2.1.1–2.1.2
+  weight: primary
+parent_node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
 related:
-  - node: "[[Irrbb_Eve_Nii_Dual_Metric_Framework]]"
-    relation: component_of
-  - node: "[[Duration_Gap_Analysis_Banking_Book]]"
-    relation: related_to
-  - node: "[[Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book]]"
-    relation: related_to
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
+  relation: component_of
+- node: '[[Duration_Gap_Analysis_Banking_Book]]'
+  relation: related_to
+- node: '[[Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Definition

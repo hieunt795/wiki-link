@@ -28,6 +28,7 @@ source_refs:
 - path: 02_sources/Clipping/Breaking Out of the Central Bank Balance Sheet Trilemma.md
   pages: Full document
   weight: primary
+parent_node: null
 related:
 - node: '[[Monetary_Policy_Instruments_Operational_Framework]]'
   relation: foundational_constraint

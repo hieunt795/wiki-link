@@ -22,11 +22,16 @@ tags:
 - debt_limit
 confidence: 1
 stability: evolving
-thesis: "T-bill supply and Fed ON RRP balances are substitutes for MMF cash: high T-bill issuance routes MMF funds out of the RRP into bills (draining RRP, boosting reserves), while T-bill supply contractions — particularly during debt ceiling episodes — drive MMF cash back into the RRP, inflating it and preventing reserve growth even as the TGA is drawn down."
+thesis: 'T-bill supply and Fed ON RRP balances are substitutes for MMF cash: high
+  T-bill issuance routes MMF funds out of the RRP into bills (draining RRP, boosting
+  reserves), while T-bill supply contractions — particularly during debt ceiling episodes
+  — drive MMF cash back into the RRP, inflating it and preventing reserve growth even
+  as the TGA is drawn down.'
 source_refs:
 - path: 02_sources/books/conks/Conks - Shadow Banking and Cash Markets.md
   pages: batch 4 (chars ~25041-34659)
   weight: primary
+parent_node: null
 related:
 - node: '[[Fed Overnight Reverse Repo ON RRP]]'
   relation: interacts_with

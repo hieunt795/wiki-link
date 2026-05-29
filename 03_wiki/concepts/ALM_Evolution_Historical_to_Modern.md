@@ -1,55 +1,53 @@
 ---
 node_id: alm_evolution_historical_to_modern_001
 type: concept
-title: "ALM Evolution — Historical to Modern"
+title: ALM Evolution — Historical to Modern
 aliases:
-  - ALM history
-  - Historical ALM concepts
-  - ALM development eras
-  - Evolution of asset liability management
-  - lịch sử phát triển ALM
-  - sự phát triển quản lý tài sản nợ
-
+- ALM history
+- Historical ALM concepts
+- ALM development eras
+- Evolution of asset liability management
+- lịch sử phát triển ALM
+- sự phát triển quản lý tài sản nợ
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - alm
-  - history
-  - regulation
-  - basel
-  - off_balance_sheet
-  - irrbb
-
+- alm
+- history
+- regulation
+- basel
+- off_balance_sheet
+- irrbb
 confidence: 1
 stability: stable
+thesis: '[LLM] ALM has evolved through six distinct conceptual eras from the 1950s
+  to the present, driven by successive waves of regulatory change, financial innovation,
+  and crisis response: from the minimal-intervention model of regulated interest rate
+  environments, through the emergence of gap analysis and duration immunization in
+  the 1970s–80s, the adoption of off-balance-sheet derivative hedging in the 1980s–90s,
+  Basel-driven balance sheet restrictions in the 1990s–2000s, the low-margin compression
+  era of the 2010s, and finally the current integrated optimization model that simultaneously
+  manages IRR, liquidity, capital, and funding cost under multi-dimensional regulatory
+  constraints.
 
-thesis: >
-  [LLM] ALM has evolved through six distinct conceptual eras from the 1950s to the present,
-  driven by successive waves of regulatory change, financial innovation, and crisis response:
-  from the minimal-intervention model of regulated interest rate environments, through the
-  emergence of gap analysis and duration immunization in the 1970s–80s, the adoption of
-  off-balance-sheet derivative hedging in the 1980s–90s, Basel-driven balance sheet
-  restrictions in the 1990s–2000s, the low-margin compression era of the 2010s, and finally
-  the current integrated optimization model that simultaneously manages IRR, liquidity,
-  capital, and funding cost under multi-dimensional regulatory constraints.
-
+  '
 source_refs:
-  - path: 02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md
-    pages: "Part 1 (Ch1–6), Ch7 (ALM historical concepts overview)"
-    weight: primary
-
+- path: 02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday,
+    Today and Tomorrow-De Gruyter (2021).md
+  pages: Part 1 (Ch1–6), Ch7 (ALM historical concepts overview)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[ALM_Balance_Sheet_Optimization_Framework]]"
-    relation: historical_context_for
-  - node: "[[ALM_Operating_Model]]"
-    relation: context_for
-  - node: "[[ALM_Role_SREP_Pillar2]]"
-    relation: context_for
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[ALM_Balance_Sheet_Optimization_Framework]]'
+  relation: historical_context_for
+- node: '[[ALM_Operating_Model]]'
+  relation: context_for
+- node: '[[ALM_Role_SREP_Pillar2]]'
+  relation: context_for
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Era 1: Minimal Intervention (Pre-1970s)

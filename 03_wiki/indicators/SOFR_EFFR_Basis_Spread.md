@@ -1,66 +1,63 @@
 ---
 node_id: indicator_sofr_effr_basis_001
 type: indicator
-title: "SOFR–EFFR Basis Spread"
+title: SOFR–EFFR Basis Spread
 aliases:
-  - SOFR-FF basis
-  - SOFR-EFFR spread
-  - repo-to-interbank spread
-  - secured-unsecured spread
-  - SOFR-FF basis spread
-
+- SOFR-FF basis
+- SOFR-EFFR spread
+- repo-to-interbank spread
+- secured-unsecured spread
+- SOFR-FF basis spread
 domain:
   primary: financial_markets
   secondary:
-    - monetary_policy
+  - monetary_policy
 tags:
-  - money-market
-  - repo
-  - basis-spread
-  - reserve-scarcity
-  - plumbing
-
+- money-market
+- repo
+- basis-spread
+- reserve-scarcity
+- plumbing
 confidence: 3
 stability: evolving
-
 indicator_type: market
 frequency: daily
-data_source: "Derived: SOFR (FRBNY) minus EFFR (FRBNY). Also tracked via OIS basis swaps (SOFR OIS vs FF OIS)."
-interpretation: >
-  Normal condition: SOFR slightly below EFFR (negative basis, ~0 to -5bps) because
-  secured borrowing is cheaper than unsecured. A positive basis spike (SOFR > EFFR)
-  signals repo market stress — excess demand for Treasury collateral or repo dealer
-  balance sheet constraints at month/quarter end. Conks targets 6bps SOFR-FF basis
-  as a normal-to-elevated threshold; sustained positive basis above ~10bps warrants
-  concern about plumbing conditions.
+data_source: 'Derived: SOFR (FRBNY) minus EFFR (FRBNY). Also tracked via OIS basis
+  swaps (SOFR OIS vs FF OIS).'
+interpretation: 'Normal condition: SOFR slightly below EFFR (negative basis, ~0 to
+  -5bps) because secured borrowing is cheaper than unsecured. A positive basis spike
+  (SOFR > EFFR) signals repo market stress — excess demand for Treasury collateral
+  or repo dealer balance sheet constraints at month/quarter end. Conks targets 6bps
+  SOFR-FF basis as a normal-to-elevated threshold; sustained positive basis above
+  ~10bps warrants concern about plumbing conditions.
 
-thesis: >
-  The SOFR–EFFR basis measures the spread between the overnight secured repo rate and
-  the overnight unsecured interbank rate. In the ample reserves floor system, this
-  basis should be small and slightly negative. Persistent or spiking positive basis
-  indicates dealer balance sheet stress, collateral shortage, or funding market
-  dislocations — the key plumbing friction indicator in Conks' money market framework.
+  '
+thesis: 'The SOFR–EFFR basis measures the spread between the overnight secured repo
+  rate and the overnight unsecured interbank rate. In the ample reserves floor system,
+  this basis should be small and slightly negative. Persistent or spiking positive
+  basis indicates dealer balance sheet stress, collateral shortage, or funding market
+  dislocations — the key plumbing friction indicator in Conks'' money market framework.
 
+  '
 source_refs:
-  - path: 02_sources/books/conks/Conks - Plumping note (Money market.md
-    weight: primary
-  - path: 02_sources/books/conks/Conk - Repo.md
-    weight: supporting
-
+- path: 02_sources/books/conks/Conks - Plumping note (Money market.md
+  weight: primary
+- path: 02_sources/books/conks/Conk - Repo.md
+  weight: supporting
+parent_node: '[[SOFR_Secured_Overnight_Financing_Rate]]'
 related:
-  - node: "[[SOFR_Secured_Overnight_Financing_Rate]]"
-    relation: component_of
-  - node: "[[EFFR_Effective_Federal_Funds_Rate]]"
-    relation: component_of
-  - node: "[[Repo_Market_Mechanics_Triparty_Bilateral]]"
-    relation: measures
-  - node: "[[Swap_Spreads_Balance_Sheet_Plumbing_Frictions]]"
-    relation: related_to
-  - node: "[[Standing_Repo_Facility_SRF_Fed_Backstop]]"
-    relation: bounded_by
-  - node: "[[Slr_Lcr_Balance_Sheet_Constraints_Treasury_Market_Dealer]]"
-    relation: driven_by
-
+- node: '[[SOFR_Secured_Overnight_Financing_Rate]]'
+  relation: component_of
+- node: '[[EFFR_Effective_Federal_Funds_Rate]]'
+  relation: component_of
+- node: '[[Repo_Market_Mechanics_Triparty_Bilateral]]'
+  relation: measures
+- node: '[[Swap_Spreads_Balance_Sheet_Plumbing_Frictions]]'
+  relation: related_to
+- node: '[[Standing_Repo_Facility_SRF_Fed_Backstop]]'
+  relation: bounded_by
+- node: '[[Slr_Lcr_Balance_Sheet_Constraints_Treasury_Market_Dealer]]'
+  relation: driven_by
 date_created: 2026-05-23
 date_updated: 2026-05-23
 last_reviewed: 2026-05-23

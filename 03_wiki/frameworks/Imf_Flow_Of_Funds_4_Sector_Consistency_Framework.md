@@ -24,20 +24,20 @@ tags:
 - twin_deficits
 confidence: 4
 stability: stable
-thesis: >-
-  The IMF Flow of Funds framework integrates SNA, GFS, BoPM, and monetary survey
+thesis: 'The IMF Flow of Funds framework integrates SNA, GFS, BoPM, and monetary survey
   into a quadruple-entry matrix where sectoral saving-investment gaps (Sp-Ip) + (Sg-Ig)
-  = CAB, and every sector's real deficit is fully financed by financial transactions
+  = CAB, and every sector''s real deficit is fully financed by financial transactions
   — forming the accounting backbone of IMF financial programming. Key methodological
   distinction: FoF treats sectoral balances as binding constraints; traditional market
-  equilibrium treats supply=demand as constraints.
+  equilibrium treats supply=demand as constraints.'
 source_refs:
 - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
     IMF.md
-  pages: "lines 5342–5526 (Chapter 6: The Flow of Funds — intro, S-I identity, three\
-    \ situations, FoF basics, recording conventions, schematic accounts, analytical\
-    \ uses, external/fiscal imbalance); lines 5489–5509 (Box 6.4 all 8 sector equations)"
+  pages: 'lines 5342–5526 (Chapter 6: The Flow of Funds — intro, S-I identity, three
+    situations, FoF basics, recording conventions, schematic accounts, analytical
+    uses, external/fiscal imbalance); lines 5489–5509 (Box 6.4 all 8 sector equations)'
   weight: primary
+parent_node: null
 related:
 - node: '[[IMF Balance of Payments Framework and External Account Analysis]]'
   relation: external_sector_column_source_BOP

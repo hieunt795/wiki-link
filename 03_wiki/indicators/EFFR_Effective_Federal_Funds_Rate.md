@@ -1,67 +1,65 @@
 ---
 node_id: indicator_effr_001
 type: indicator
-title: "EFFR — Effective Federal Funds Rate"
+title: EFFR — Effective Federal Funds Rate
 aliases:
-  - EFFR
-  - federal funds rate
-  - o/n FF
-  - interbank rate
-  - FF rate
-  - lãi suất quỹ liên bang hiệu dụng
-
+- EFFR
+- federal funds rate
+- o/n FF
+- interbank rate
+- FF rate
+- lãi suất quỹ liên bang hiệu dụng
 domain:
   primary: monetary_policy
   secondary:
-    - financial_markets
+  - financial_markets
 tags:
-  - interest-rate
-  - overnight
-  - unsecured
-  - fed-target
-  - money-market
-
+- interest-rate
+- overnight
+- unsecured
+- fed-target
+- money-market
 confidence: 3
 stability: stable
-
 indicator_type: monetary
 frequency: daily
-data_source: "Federal Reserve Bank of New York (FRBNY) — published each morning for prior day"
-interpretation: >
-  EFFR is the Fed's primary policy rate target. When EFFR trades within the FOMC's
-  target range, the floor system is functioning normally. EFFR trading toward the
-  upper bound signals tightening reserve conditions; sustained printing at the ceiling
-  signals reserve scarcity requiring Fed intervention.
+data_source: Federal Reserve Bank of New York (FRBNY) — published each morning for
+  prior day
+interpretation: 'EFFR is the Fed''s primary policy rate target. When EFFR trades within
+  the FOMC''s target range, the floor system is functioning normally. EFFR trading
+  toward the upper bound signals tightening reserve conditions; sustained printing
+  at the ceiling signals reserve scarcity requiring Fed intervention.
 
-thesis: >
-  The EFFR is the volume-weighted median rate of overnight federal funds transactions —
-  uncollateralised lending of reserve balances between depository institutions. It is
-  the Fed's operational target: the FOMC sets a target range (currently 25bps wide) and
-  uses IORB and ON RRP to keep EFFR within that range. EFFR diverging from IORB toward
-  the upper bound of the range is an early signal of emerging reserve scarcity.
+  '
+thesis: 'The EFFR is the volume-weighted median rate of overnight federal funds transactions
+  — uncollateralised lending of reserve balances between depository institutions.
+  It is the Fed''s operational target: the FOMC sets a target range (currently 25bps
+  wide) and uses IORB and ON RRP to keep EFFR within that range. EFFR diverging from
+  IORB toward the upper bound of the range is an early signal of emerging reserve
+  scarcity.
 
+  '
 source_refs:
-  - path: 02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md
-    weight: primary
-  - path: 02_sources/books/conks/Conks - Plumping note (Money market.md
-    weight: supporting
-  - path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
-    weight: supporting
-
+- path: 02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md
+  weight: primary
+- path: 02_sources/books/conks/Conks - Plumping note (Money market.md
+  weight: supporting
+- path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
+  weight: supporting
+parent_node: '[[SOFR_EFFR_Basis_Spread]]'
 related:
-  - node: "[[IORB_Interest_on_Reserve_Balances]]"
-    relation: bounded_by
-  - node: "[[SOFR_EFFR_Basis_Spread]]"
-    relation: component_of
-  - node: "[[Fed_Ample_Reserves_Range_Floor_Framework]]"
-    relation: target_of
-  - node: "[[Interest_Rate_Corridor_Floor_System_Standing_Facilities]]"
-    relation: measured_by
-  - node: "[[Federal_Reserve]]"
-    relation: controlled_by
-  - node: "[[Reserve_Floor_Payment_System_Demand]]"
-    relation: signal_for
-
+- node: '[[IORB_Interest_on_Reserve_Balances]]'
+  relation: bounded_by
+- node: '[[SOFR_EFFR_Basis_Spread]]'
+  relation: component_of
+- node: '[[Fed_Ample_Reserves_Range_Floor_Framework]]'
+  relation: target_of
+- node: '[[Interest_Rate_Corridor_Floor_System_Standing_Facilities]]'
+  relation: measured_by
+- node: '[[Federal_Reserve]]'
+  relation: controlled_by
+- node: '[[Reserve_Floor_Payment_System_Demand]]'
+  relation: signal_for
 date_created: 2026-05-23
 date_updated: 2026-05-23
 last_reviewed: 2026-05-23

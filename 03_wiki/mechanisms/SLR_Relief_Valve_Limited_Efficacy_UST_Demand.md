@@ -21,11 +21,16 @@ tags:
 - swap_spreads
 confidence: 1
 stability: evolving
-thesis: A partial SLR (Supplementary Leverage Ratio) reduction is a "faulty relief valve" for UST market liquidity because most large banks are bound by risk-based capital requirements, not SLR — so freeing SLR headroom does not incentivize additional UST purchases when banks fund those purchases with reserves (also 0% RWA), and only the most leverage-constrained banks see any benefit.
+thesis: A partial SLR (Supplementary Leverage Ratio) reduction is a "faulty relief
+  valve" for UST market liquidity because most large banks are bound by risk-based
+  capital requirements, not SLR — so freeing SLR headroom does not incentivize additional
+  UST purchases when banks fund those purchases with reserves (also 0% RWA), and only
+  the most leverage-constrained banks see any benefit.
 source_refs:
 - path: 02_sources/books/conks/Conks - Plumping note (Money market.md
   pages: batch 15-16 (chars ~121242-138915)
   weight: primary
+parent_node: null
 related:
 - node: '[[Basel III Capital And Liquidity Constraint Mechanics]]'
   relation: extends

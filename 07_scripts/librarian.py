@@ -209,32 +209,91 @@ def _collect_raw_chunks() -> list[dict]:
 
 
 def _rebuild_graph():
-    """Rebuild KG from wiki node [[wikilinks]] → graphify-out/graph.json."""
+    """Rebuild KG from wiki node frontmatter + [[wikilinks]] → graphify-out/graph.json.
+
+    Reads three edge sources per node (in priority order):
+      a) parent_node field (weight=2.0, relation="parent_node")
+      b) frontmatter related[] with typed relations
+      c) body [[wikilinks]]
+
+    Targets are resolved to node_ids via a lookup dict built in Pass 1.
+    """
     import re
+    from chunker import _split_frontmatter
+
     graph_out = ROOT / "graphify-out"
     graph_out.mkdir(exist_ok=True)
     nodes = []
     edges = []
     seen_edges: set[tuple[str, str]] = set()
 
+    WIKILINK_RE = re.compile(r"\[\[([^\]]+)\]\]")
+
+    # ── Pass 1: build lookup dict (lowercased key → node_id) ──────────────────
+    lookup: dict[str, str] = {}
     for md_file in WIKI_ROOT.rglob("*.md"):
         text = md_file.read_text(encoding="utf-8", errors="ignore")
-        # Extract node_id from frontmatter
-        from chunker import _split_frontmatter
+        fm, _ = _split_frontmatter(text)
+        nid = fm.get("node_id")
+        if not nid:
+            continue
+        lookup[md_file.stem.lower()] = nid
+        lookup[nid.lower()] = nid
+        title = fm.get("title", "")
+        if title:
+            lookup[title.lower()] = nid
+        for alias in fm.get("aliases", []) or []:
+            if isinstance(alias, str) and alias:
+                lookup[alias.lower()] = nid
+
+    def _resolve(raw: str) -> str:
+        clean = raw.strip("[] ").split("|")[0].split("#")[0].strip()
+        return lookup.get(clean.lower(), clean.replace(" ", "_").lower())
+
+    def _add_edge(src: str, target_raw: str, weight: float = 1.0, relation: str = "") -> None:
+        target = _resolve(target_raw)
+        if not target or target == src:
+            return
+        key = (src, target)
+        if key not in seen_edges:
+            seen_edges.add(key)
+            edge: dict = {"source": src, "target": target, "weight": weight}
+            if relation:
+                edge["relation"] = relation
+            edges.append(edge)
+
+    # ── Pass 2: collect nodes + edges ─────────────────────────────────────────
+    for md_file in WIKI_ROOT.rglob("*.md"):
+        text = md_file.read_text(encoding="utf-8", errors="ignore")
         fm, body = _split_frontmatter(text)
         nid = fm.get("node_id")
         if not nid:
             continue
-        nodes.append({"id": nid, "label": fm.get("title", md_file.stem),
-                       "type": fm.get("type", "concept")})
-        # Extract [[wikilinks]]
-        links = re.findall(r"\[\[([^\]]+)\]\]", text)
-        for link in links:
-            target = link.split("|")[0].strip().replace(" ", "_").lower()
-            key = (nid, target)
-            if key not in seen_edges:
-                seen_edges.add(key)
-                edges.append({"source": nid, "target": target, "weight": 1.0})
+
+        nodes.append({
+            "id":    nid,
+            "label": fm.get("title", md_file.stem),
+            "type":  fm.get("type", "concept"),
+        })
+
+        # a) parent_node explicit hierarchy (higher weight = stronger signal)
+        parent_raw = fm.get("parent_node")
+        if parent_raw and isinstance(parent_raw, str):
+            _add_edge(nid, parent_raw, weight=2.0, relation="parent_node")
+
+        # b) frontmatter related[]
+        related = fm.get("related", [])
+        if isinstance(related, list):
+            for rel in related:
+                if isinstance(rel, dict) and "node" in rel:
+                    _add_edge(nid, rel["node"], weight=1.0,
+                              relation=str(rel.get("relation", "")))
+                elif isinstance(rel, str):
+                    _add_edge(nid, rel)
+
+        # c) body [[wikilinks]]
+        for link in WIKILINK_RE.findall(body):
+            _add_edge(nid, link)
 
     graph = {"nodes": nodes, "edges": edges}
     (graph_out / "graph.json").write_text(

@@ -31,11 +31,11 @@ stability: stable
 thesis: 'Post-GFC, regulators engineered a transition from an unsecured to a secured
   lending standard (LIBOR → SOFR, Fed Funds → repo/IORB), forcing banks to become
   utilities constrained by Basel III while shadow banks absorbed risk. However, this
-  created a paradox: Treasuries — the collateral powering the secured standard —
-  are only truly "risk-free" when the Fed commits to buying them without limit. The
-  Fed''s "volatility suppressor" (unlimited QE commitment) emerged as the necessary
-  backstop of the secured standard, meaning every Basel III tightening increases reliance
-  on Fed intervention. The RRP → SRF escalation ladder operates as a "Not-QE" buffer
+  created a paradox: Treasuries — the collateral powering the secured standard — are
+  only truly "risk-free" when the Fed commits to buying them without limit. The Fed''s
+  "volatility suppressor" (unlimited QE commitment) emerged as the necessary backstop
+  of the secured standard, meaning every Basel III tightening increases reliance on
+  Fed intervention. The RRP → SRF escalation ladder operates as a "Not-QE" buffer
   that allows the Fed to stimulate without a formal pivot.
 
   '
@@ -44,6 +44,7 @@ source_refs:
   pages: The Coming Volatility Suppression; The Fed's Hidden Put; The Federal Reserve's
     Gambit
   weight: primary
+parent_node: null
 related:
 - node: '[[Basel_III_Endgame_Capital_Liquidity_Credit_Migration]]'
   relation: upstream_regulatory_driver

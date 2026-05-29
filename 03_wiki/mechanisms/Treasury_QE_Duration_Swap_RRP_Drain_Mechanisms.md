@@ -22,11 +22,17 @@ tags:
 - reserves
 confidence: 1
 stability: stable
-thesis: Treasury buybacks can function as "Treasury QE" via two distinct mechanisms — (1) duration-reducing swap (buy long-dated bonds, re-issue short-dated), which removes duration risk from private hands and stimulates risk assets if announced explicitly; and (2) RRP-drain QE (MMF withdraws from RRP to buy new Treasury bills which fund the buyback), which involuntarily boosts net liquidity without Fed balance sheet expansion.
+thesis: Treasury buybacks can function as "Treasury QE" via two distinct mechanisms
+  — (1) duration-reducing swap (buy long-dated bonds, re-issue short-dated), which
+  removes duration risk from private hands and stimulates risk assets if announced
+  explicitly; and (2) RRP-drain QE (MMF withdraws from RRP to buy new Treasury bills
+  which fund the buyback), which involuntarily boosts net liquidity without Fed balance
+  sheet expansion.
 source_refs:
 - path: 02_sources/books/conks/Conks - Liquidity and Market Dynamics.md
   pages: batches 24-26 (chars ~136000-160000)
   weight: primary
+parent_node: null
 related:
 - node: '[[Treasury Buybacks Sovereign Debt Liquidity Intervention]]'
   relation: extends

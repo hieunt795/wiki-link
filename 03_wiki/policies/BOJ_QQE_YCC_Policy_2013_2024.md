@@ -1,76 +1,73 @@
 ---
 node_id: policy_boj_qqe_ycc_001
 type: policy
-title: "BoJ Quantitative and Qualitative Easing + Yield Curve Control (2013–2024)"
+title: BoJ Quantitative and Qualitative Easing + Yield Curve Control (2013–2024)
 aliases:
-  - BOJ QQE
-  - Abenomics monetary pillar
-  - YCC policy Japan
-  - BoJ YCC
-  - chính sách kiểm soát đường cong lợi suất Nhật Bản
-  - nới lỏng định lượng và định tính Nhật Bản
-
+- BOJ QQE
+- Abenomics monetary pillar
+- YCC policy Japan
+- BoJ YCC
+- chính sách kiểm soát đường cong lợi suất Nhật Bản
+- nới lỏng định lượng và định tính Nhật Bản
 domain:
   primary: monetary_policy
   secondary:
-    - financial_markets
-    - fiscal_policy
+  - financial_markets
+  - fiscal_policy
 tags:
-  - japan
-  - ycc
-  - qe
-  - unconventional-policy
-  - balance-sheet
-  - financial-repression
-
+- japan
+- ycc
+- qe
+- unconventional-policy
+- balance-sheet
+- financial-repression
 confidence: 4
 stability: stable
-
 jurisdiction: JP
-period: "2013–2024"
+period: 2013–2024
 policy_type: unconventional_monetary
 instruments:
-  - "JGB purchases (unlimited at fixed yield under YCC)"
-  - "ETF and J-REIT purchases"
-  - "Negative interest rate policy (NIRP): -0.1% on excess reserves (2016–2024)"
-  - "Yield Curve Control: 10-year JGB yield target at ~0% (±band, widened over time)"
-outcome: >
-  BoJ balance sheet expanded to >130% of GDP; bank reserves reached 91% of GDP.
-  Inflation target of 2% achieved by 2023 (imported inflation + wage dynamics).
+- JGB purchases (unlimited at fixed yield under YCC)
+- ETF and J-REIT purchases
+- 'Negative interest rate policy (NIRP): -0.1% on excess reserves (2016–2024)'
+- 'Yield Curve Control: 10-year JGB yield target at ~0% (±band, widened over time)'
+outcome: 'BoJ balance sheet expanded to >130% of GDP; bank reserves reached 91% of
+  GDP. Inflation target of 2% achieved by 2023 (imported inflation + wage dynamics).
   YCC exit completed March 2024: NIRP ended, 10-year cap removed, policy rate raised
   to 0–0.1%. Sovereign carry trade unwound partially as yen funding costs rose.
 
-thesis: >
-  The BoJ's QQE + YCC regime was the most extensive unconventional monetary program
-  by any G7 central bank: unlimited JGB purchases at fixed yields (YCC) converted the
-  BoJ into buyer of last resort for Japanese sovereign debt, enabled a consolidated
+  '
+thesis: 'The BoJ''s QQE + YCC regime was the most extensive unconventional monetary
+  program by any G7 central bank: unlimited JGB purchases at fixed yields (YCC) converted
+  the BoJ into buyer of last resort for Japanese sovereign debt, enabled a consolidated
   public sector sovereign carry trade at 91% of GDP, and enforced financial repression
-  by stripping duration from private portfolios and suppressing household savings returns.
+  by stripping duration from private portfolios and suppressing household savings
+  returns.
 
+  '
 source_refs:
-  - path: 02_sources/Clipping/What about Japan_ (Part I).md
-    weight: primary
-  - path: 02_sources/Clipping/What about Japan_ (Part II).md
-    weight: primary
-  - path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
-    weight: supporting
-
+- path: 02_sources/Clipping/What about Japan_ (Part I).md
+  weight: primary
+- path: 02_sources/Clipping/What about Japan_ (Part II).md
+  weight: primary
+- path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Bank_of_Japan]]"
-    relation: executed_by
-  - node: "[[Japan_Sovereign_Carry_Trade_Framework]]"
-    relation: enables
-  - node: "[[Japan_Filp_To_Qe_Structural_Succession]]"
-    relation: succeeds
-  - node: "[[Financial_Repression_Via_Reserve_Creation]]"
-    relation: instance_of
-  - node: "[[Financial_Repression_Distributional_Welfare_Effects]]"
-    relation: produces
-  - node: "[[Duration_Targeting_Convergence_And_Yield_Trap]]"
-    relation: related_to
-  - node: "[[Quantitative_Tightening_Qt_Balance_Sheet_Runoff]]"
-    relation: contrasts_with
-
+- node: '[[Bank_of_Japan]]'
+  relation: executed_by
+- node: '[[Japan_Sovereign_Carry_Trade_Framework]]'
+  relation: enables
+- node: '[[Japan_Filp_To_Qe_Structural_Succession]]'
+  relation: succeeds
+- node: '[[Financial_Repression_Via_Reserve_Creation]]'
+  relation: instance_of
+- node: '[[Financial_Repression_Distributional_Welfare_Effects]]'
+  relation: produces
+- node: '[[Duration_Targeting_Convergence_And_Yield_Trap]]'
+  relation: related_to
+- node: '[[Quantitative_Tightening_Qt_Balance_Sheet_Runoff]]'
+  relation: contrasts_with
 date_created: 2026-05-23
 date_updated: 2026-05-23
 last_reviewed: 2026-05-23

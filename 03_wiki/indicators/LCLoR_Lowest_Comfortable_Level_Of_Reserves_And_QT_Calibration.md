@@ -27,8 +27,8 @@ confidence: 3
 stability: evolving
 thesis: 'The Fed calibrates QT (quantitative tightening) to drain reserves until they
   hit the LCLoR (Lowest Comfortable Level of Reserves) — estimated ~$3T for the US
-  banking system — below which repo rates spike above the EFFR target range. The
-  key early-warning signals are: rising EFFR above IORB, increasing daylight overdraft
+  banking system — below which repo rates spike above the EFFR target range. The key
+  early-warning signals are: rising EFFR above IORB, increasing daylight overdraft
   volumes, SRF usage picking up, and SOFR/TGCR printing above IORB. The RRP balance
   falling to zero is NOT the LCLoR signal — it merely means excess liquidity has been
   redeployed from the Fed''s shock absorber to private markets.
@@ -39,6 +39,7 @@ source_refs:
   pages: The Fed's Reckoning Part I; The Fed's Reckoning Part II; The Fed's New Target
     Part I
   weight: primary
+parent_node: null
 related:
 - node: '[[Ample_Reserves_Buffer_Sizing_Tga_Volatility]]'
   relation: quantifies_the_buffer_above_LCLoR

@@ -42,6 +42,7 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
   pages: The Fed's Global Put Part I; The Fed's Global Put Part II
   weight: primary
+parent_node: null
 related:
 - node: '[[EFFR_Effective_Federal_Funds_Rate]]'
   relation: rate_set_in_this_market

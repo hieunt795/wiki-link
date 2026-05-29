@@ -1,68 +1,66 @@
 ---
 node_id: indicator_sofr_001
 type: indicator
-title: "SOFR — Secured Overnight Financing Rate"
+title: SOFR — Secured Overnight Financing Rate
 aliases:
-  - SOFR
-  - secured overnight rate
-  - repo benchmark rate
-  - LIBOR replacement
-  - lãi suất repo qua đêm có bảo đảm
-
+- SOFR
+- secured overnight rate
+- repo benchmark rate
+- LIBOR replacement
+- lãi suất repo qua đêm có bảo đảm
 domain:
   primary: financial_markets
   secondary:
-    - monetary_policy
+  - monetary_policy
 tags:
-  - interest-rate
-  - overnight
-  - secured
-  - repo
-  - benchmark
-  - libor-replacement
-
+- interest-rate
+- overnight
+- secured
+- repo
+- benchmark
+- libor-replacement
 confidence: 3
 stability: stable
-
 indicator_type: market
 frequency: daily
-data_source: "Federal Reserve Bank of New York (FRBNY) — published each morning for prior business day; based on tri-party repo, bilateral repo, and GCF Repo transactions"
-interpretation: >
-  SOFR measures the cost of borrowing cash overnight collateralised by US Treasury
-  securities. Spikes above the SRF rate signal repo market stress. Persistent SOFR
-  near the ON RRP floor indicates excess liquidity; drift toward IORB and above
-  indicates tightening conditions. SOFR-EFFR basis compression/expansion signals
-  shifts in secured vs unsecured market balance.
+data_source: Federal Reserve Bank of New York (FRBNY) — published each morning for
+  prior business day; based on tri-party repo, bilateral repo, and GCF Repo transactions
+interpretation: 'SOFR measures the cost of borrowing cash overnight collateralised
+  by US Treasury securities. Spikes above the SRF rate signal repo market stress.
+  Persistent SOFR near the ON RRP floor indicates excess liquidity; drift toward IORB
+  and above indicates tightening conditions. SOFR-EFFR basis compression/expansion
+  signals shifts in secured vs unsecured market balance.
 
-thesis: >
-  SOFR is the ARRC-endorsed replacement for USD LIBOR, capturing the broad US Treasury
-  repo market across tri-party, bilateral, and GCF segments (~$1 trillion daily volume).
-  Unlike EFFR (unsecured), SOFR is secured by Treasuries, making it sensitive to
-  collateral availability and repo market stress. SOFR is the underlying rate for the
-  vast majority of new USD floating-rate contracts and OIS derivatives post-2023.
+  '
+thesis: 'SOFR is the ARRC-endorsed replacement for USD LIBOR, capturing the broad
+  US Treasury repo market across tri-party, bilateral, and GCF segments (~$1 trillion
+  daily volume). Unlike EFFR (unsecured), SOFR is secured by Treasuries, making it
+  sensitive to collateral availability and repo market stress. SOFR is the underlying
+  rate for the vast majority of new USD floating-rate contracts and OIS derivatives
+  post-2023.
 
+  '
 source_refs:
-  - path: 02_sources/books/conks/Conks - Plumping note (Money market.md
-    weight: primary
-  - path: 02_sources/books/conks/Conk - Repo.md
-    weight: supporting
-  - path: 02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md
-    weight: supporting
-
+- path: 02_sources/books/conks/Conks - Plumping note (Money market.md
+  weight: primary
+- path: 02_sources/books/conks/Conk - Repo.md
+  weight: supporting
+- path: 02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md
+  weight: supporting
+parent_node: '[[SOFR_EFFR_Basis_Spread]]'
 related:
-  - node: "[[EFFR_Effective_Federal_Funds_Rate]]"
-    relation: compared_with
-  - node: "[[SOFR_EFFR_Basis_Spread]]"
-    relation: component_of
-  - node: "[[Repo_Market_Mechanics_Triparty_Bilateral]]"
-    relation: measures
-  - node: "[[Fed_Overnight_Reverse_Repo_On_Rrp]]"
-    relation: floored_by
-  - node: "[[Standing_Repo_Facility_SRF_Fed_Backstop]]"
-    relation: capped_by
-  - node: "[[Interest_Rate_Swaps_OIS_Fixed_Floating]]"
-    relation: underlies
-
+- node: '[[EFFR_Effective_Federal_Funds_Rate]]'
+  relation: compared_with
+- node: '[[SOFR_EFFR_Basis_Spread]]'
+  relation: component_of
+- node: '[[Repo_Market_Mechanics_Triparty_Bilateral]]'
+  relation: measures
+- node: '[[Fed_Overnight_Reverse_Repo_On_Rrp]]'
+  relation: floored_by
+- node: '[[Standing_Repo_Facility_SRF_Fed_Backstop]]'
+  relation: capped_by
+- node: '[[Interest_Rate_Swaps_OIS_Fixed_Floating]]'
+  relation: underlies
 date_created: 2026-05-23
 date_updated: 2026-05-23
 last_reviewed: 2026-05-23

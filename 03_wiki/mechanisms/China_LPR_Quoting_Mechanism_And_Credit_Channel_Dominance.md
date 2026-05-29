@@ -19,11 +19,18 @@ tags:
 - market_segmentation
 confidence: 1
 stability: evolving
-thesis: The LPR is formed monthly by 20 quoting banks submitting spreads over the OMO (primarily MLF) rate to the National Interbank Funding Center, with the arithmetic mean after excluding outliers published for 1Y and 5Y+ maturities; China's monetary transmission is primarily driven by the credit channel (affecting credit availability) rather than the interest rate channel, and cross-market transmission between the money market (DR007), credit market (LPR), and bond market (Treasury yield) is structurally blocked.
+thesis: The LPR is formed monthly by 20 quoting banks submitting spreads over the
+  OMO (primarily MLF) rate to the National Interbank Funding Center, with the arithmetic
+  mean after excluding outliers published for 1Y and 5Y+ maturities; China's monetary
+  transmission is primarily driven by the credit channel (affecting credit availability)
+  rather than the interest rate channel, and cross-market transmission between the
+  money market (DR007), credit market (LPR), and bond market (Treasury yield) is structurally
+  blocked.
 source_refs:
 - path: 02_sources/academic/Guo_Chinas_Monetary_Policy_Framework_2025.md
   pages: batch 2 (chars ~7840-16051)
   weight: primary
+parent_node: '[[PBOC Monetary Policy Framework And Interest Rate Transmission]]'
 related:
 - node: '[[PBC Interest Rate Transmission DR007 to LPR]]'
   relation: extends

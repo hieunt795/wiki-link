@@ -1,46 +1,45 @@
 ---
 node_id: nii_sensitivity_forecast_static_dynamic_balance_sheet_001
 type: mechanism
-title: "NII Sensitivity and Forecasting: Static vs Dynamic Balance Sheet Assumptions"
+title: 'NII Sensitivity and Forecasting: Static vs Dynamic Balance Sheet Assumptions'
 aliases:
-  - NII forecast
-  - NII sensitivity
-  - net interest income sensitivity
-  - earning gap analysis
-  - dự báo thu nhập lãi thuần
-  - độ nhạy cảm NII
-
+- NII forecast
+- NII sensitivity
+- net interest income sensitivity
+- earning gap analysis
+- dự báo thu nhập lãi thuần
+- độ nhạy cảm NII
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - NII
-  - interest_income
-  - balance_sheet_assumptions
-  - rate_shock
-  - IRRBB
-  - repricing
-
+- NII
+- interest_income
+- balance_sheet_assumptions
+- rate_shock
+- IRRBB
+- repricing
 confidence: 1
 stability: stable
+thesis: '[LLM] NII sensitivity measures the change in a bank''s net interest income
+  for a given interest rate shock relative to a baseline forecast; its magnitude depends
+  critically on the balance sheet assumption chosen (run-off, static, or dynamic)
+  and on the timing of repricing events across asset and liability products.
 
-thesis: >
-  [LLM] NII sensitivity measures the change in a bank's net interest income for a given interest rate shock relative to a baseline forecast; its magnitude depends critically on the balance sheet assumption chosen (run-off, static, or dynamic) and on the timing of repricing events across asset and liability products.
-
+  '
 source_refs:
-  - path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
-    pages: "Ch 2, sections 2.2.1–2.2.5"
-    weight: primary
-
+- path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
+  pages: Ch 2, sections 2.2.1–2.2.5
+  weight: primary
+parent_node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
 related:
-  - node: "[[Irrbb_Eve_Nii_Dual_Metric_Framework]]"
-    relation: component_of
-  - node: "[[Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book]]"
-    relation: related_to
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
+  relation: component_of
+- node: '[[Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## What NII Measures

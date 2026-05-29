@@ -3,59 +3,63 @@ node_id: labor_market_unemployment_taxonomy_nairu_001
 type: framework
 title: Labor Market Unemployment Taxonomy And NAIRU
 aliases:
-  - unemployment taxonomy
-  - NAIRU
-  - non-accelerating inflation rate of unemployment
-  - frictional unemployment
-  - structural unemployment
-  - disguised unemployment
-  - discouraged workers
-  - labor force participation rate
-  - thất nghiệp phân loại
-  - tỷ lệ thất nghiệp không tăng tốc lạm phát NAIRU
-  - thất nghiệp tự nhiên
-  - thất nghiệp cơ cấu
-  - người nản lòng lao động
+- unemployment taxonomy
+- NAIRU
+- non-accelerating inflation rate of unemployment
+- frictional unemployment
+- structural unemployment
+- disguised unemployment
+- discouraged workers
+- labor force participation rate
+- thất nghiệp phân loại
+- tỷ lệ thất nghiệp không tăng tốc lạm phát NAIRU
+- thất nghiệp tự nhiên
+- thất nghiệp cơ cấu
+- người nản lòng lao động
 domain:
   primary: monetary_policy
   secondary: fiscal_policy
 tags:
-  - labor_market
-  - unemployment
-  - nairu
-  - structural_unemployment
-  - frictional_unemployment
-  - disguised_unemployment
-  - labor_force_participation
-  - transition_economy
-  - imf_macro_accounting
-  - real_sector_analysis
+- labor_market
+- unemployment
+- nairu
+- structural_unemployment
+- frictional_unemployment
+- disguised_unemployment
+- labor_force_participation
+- transition_economy
+- imf_macro_accounting
+- real_sector_analysis
 confidence: 4
 stability: stable
-thesis: >
-  The IMF framework identifies five unemployment categories (seasonal, frictional,
-  cyclical, structural, disguised) each requiring distinct policy responses. The
-  NAIRU (Non-Accelerating Inflation Rate of Unemployment) defines the inflation-
-  compatible full employment floor — below it, demand management generates
-  inflation without sustainable output gains. In transition economies, "disguised
-  unemployment" (workers with zero or negative marginal product, common in
-  SOEs) is the dominant form — standard unemployment statistics systematically
-  understate true labor market distress.
+thesis: 'The IMF framework identifies five unemployment categories (seasonal, frictional,
+  cyclical, structural, disguised) each requiring distinct policy responses. The NAIRU
+  (Non-Accelerating Inflation Rate of Unemployment) defines the inflation- compatible
+  full employment floor — below it, demand management generates inflation without
+  sustainable output gains. In transition economies, "disguised unemployment" (workers
+  with zero or negative marginal product, common in SOEs) is the dominant form — standard
+  unemployment statistics systematically understate true labor market distress.
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 935–964 (Employment and Unemployment: 5 unemployment types, NAIRU definition, discouraged worker effect, labor force participation rate, disguised unemployment in transition economies)"
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: 'lines 935–964 (Employment and Unemployment: 5 unemployment types, NAIRU
+    definition, discouraged worker effect, labor force participation rate, disguised
+    unemployment in transition economies)'
+  weight: primary
+parent_node: '[[Imf_Sna_Real_Sector_Accounting_Gdp_Identities_And_Sectoral_Accounts]]'
 related:
-  - node: "[[Imf_Sna_Real_Sector_Accounting_Gdp_Identities_And_Sectoral_Accounts]]"
-    relation: labor_income_component_of_gdp_identity
-  - node: "[[Imf_Inflation_Analysis_Cpi_Gdp_Deflator_Four_Types_Core]]"
-    relation: nairu_links_unemployment_to_inflation_stability
-  - node: "[[Incomes_Policy_Wage_Controls_Stabilization_Programs]]"
-    relation: wage_norms_interact_with_unemployment_incentives
-  - node: "[[Transition_Economy_Monetary_Special_Issues]]"
-    relation: disguised_unemployment_dominant_in_transition
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Imf_Sna_Real_Sector_Accounting_Gdp_Identities_And_Sectoral_Accounts]]'
+  relation: labor_income_component_of_gdp_identity
+- node: '[[Imf_Inflation_Analysis_Cpi_Gdp_Deflator_Four_Types_Core]]'
+  relation: nairu_links_unemployment_to_inflation_stability
+- node: '[[Incomes_Policy_Wage_Controls_Stabilization_Programs]]'
+  relation: wage_norms_interact_with_unemployment_incentives
+- node: '[[Transition_Economy_Monetary_Special_Issues]]'
+  relation: disguised_unemployment_dominant_in_transition
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Core Labor Market Definitions

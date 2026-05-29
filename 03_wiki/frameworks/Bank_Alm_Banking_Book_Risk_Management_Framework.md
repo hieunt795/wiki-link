@@ -34,17 +34,18 @@ source_refs:
 - path: 02_sources/books/alm/A - Asset liability optimization.md
   pages: ''
   weight: primary
+parent_node: null
 related:
-  - node: "[[Bcbs_Irrbb_Standards_D368_2016]]"
-    relation: regulatory_basis
-  - node: "[[Irrbb_Eve_Nii_Dual_Metric_Framework]]"
-    relation: irrbb_measurement
-  - node: "[[Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book]]"
-    relation: gap_analysis_mechanism
-  - node: "[[Bank_Alm_Structural_Liquidity_Management_Nsfr_Lcr_Framework]]"
-    relation: liquidity_complement
-  - node: "[[Ftp_As_Unified_Balance_Sheet_Control_Mechanism_Transmission_To_Risk_Factors]]"
-    relation: ftp_control
+- node: '[[Bcbs_Irrbb_Standards_D368_2016]]'
+  relation: regulatory_basis
+- node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
+  relation: irrbb_measurement
+- node: '[[Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book]]'
+  relation: gap_analysis_mechanism
+- node: '[[Bank_Alm_Structural_Liquidity_Management_Nsfr_Lcr_Framework]]'
+  relation: liquidity_complement
+- node: '[[Ftp_As_Unified_Balance_Sheet_Control_Mechanism_Transmission_To_Risk_Factors]]'
+  relation: ftp_control
 date_created: '2026-05-26'
 date_updated: '2026-05-26'
 ---

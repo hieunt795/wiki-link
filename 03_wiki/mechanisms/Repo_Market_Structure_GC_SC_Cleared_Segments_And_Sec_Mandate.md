@@ -51,6 +51,7 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
   pages: Plumbing Notes Repo 101; The Fed's New Target Part II
   weight: primary
+parent_node: null
 related:
 - node: '[[Fed_Policy_Rate_Shift_EFFR_To_Secured_Rate_Tgcr]]'
   relation: rates_produced_by_this_structure

@@ -3,48 +3,50 @@ node_id: fed_balance_sheet_recomposition_and_net_expansion_frm_001
 type: framework
 title: Fed Balance Sheet Recomposition and Net Expansion
 aliases:
-  - balance sheet composition swap
-  - tai cau bang can doi Fed
-  - short UST vs MBS mix
+- balance sheet composition swap
+- tai cau bang can doi Fed
+- short UST vs MBS mix
 domain:
   primary: monetary_policy
   secondary:
-    - financial_markets
-    - fiscal_policy
+  - financial_markets
+  - fiscal_policy
 tags:
-  - fed
-  - balance_sheet
-  - bills
-  - mbs
-  - duration
-  - reserves
-  - maturity
-  - rmo
+- fed
+- balance_sheet
+- bills
+- mbs
+- duration
+- reserves
+- maturity
+- rmo
 confidence: 3
 stability: evolving
-thesis: >
-  The Fed can shorten the duration and sector mix of its balance sheet by
-  increasing short-term Treasury holdings while letting MBS and long bonds run
-  off, but that is a composition shift, not an automatic increase in total
-  assets. Total assets rise only when net purchases exceed runoff or sales.
+thesis: 'The Fed can shorten the duration and sector mix of its balance sheet by increasing
+  short-term Treasury holdings while letting MBS and long bonds run off, but that
+  is a composition shift, not an automatic increase in total assets. Total assets
+  rise only when net purchases exceed runoff or sales.
+
+  '
 source_refs:
-  - path: 02_sources/Clipping/A new Fed-Treasury Accord_.md
-    pages: "full document"
-    weight: primary
-  - path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
-    pages: "full document"
-    weight: supporting
+- path: 02_sources/Clipping/A new Fed-Treasury Accord_.md
+  pages: full document
+  weight: primary
+- path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
+  pages: full document
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Fed Balance Sheet Size and Policy Rate Independence]]"
-    relation: size_vs_mix_distinction
-  - node: "[[Fed RMO Reserve Management Operations Post QT Mechanics]]"
-    relation: operational_counterpart
-  - node: "[[Fed QE Debt Maturity Transformation Fiscal Impact]]"
-    relation: opposite_direction
-  - node: "[[Warsh Fed Balance Sheet Operating Doctrine]]"
-    relation: doctrine_context
-  - node: "[[Warsh Reserve Floor And Structural Demand Constraint]]"
-    relation: rate_cut_claim_constraint
+- node: '[[Fed Balance Sheet Size and Policy Rate Independence]]'
+  relation: size_vs_mix_distinction
+- node: '[[Fed RMO Reserve Management Operations Post QT Mechanics]]'
+  relation: operational_counterpart
+- node: '[[Fed QE Debt Maturity Transformation Fiscal Impact]]'
+  relation: opposite_direction
+- node: '[[Warsh Fed Balance Sheet Operating Doctrine]]'
+  relation: doctrine_context
+- node: '[[Warsh Reserve Floor And Structural Demand Constraint]]'
+  relation: rate_cut_claim_constraint
 date_created: 2026-05-24
 date_updated: 2026-05-24
 ---

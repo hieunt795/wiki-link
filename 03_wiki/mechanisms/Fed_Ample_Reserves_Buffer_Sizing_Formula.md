@@ -29,6 +29,7 @@ source_refs:
 - path: 02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md
   pages: ''
   weight: primary
+parent_node: null
 related:
 - node: '[[Ample_Reserves_Buffer_Sizing_Tga_Volatility]]'
   relation: canonical_formula_node

@@ -27,6 +27,7 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
   pages: Full document
   weight: primary
+parent_node: null
 related:
 - node: '[[Fed Ample Reserves Rate Control Framework]]'
   relation: shared_tag:qt

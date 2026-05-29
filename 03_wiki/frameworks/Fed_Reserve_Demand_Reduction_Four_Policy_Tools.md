@@ -25,11 +25,20 @@ tags:
 - liquidity_regulation
 confidence: 1
 stability: stable
-thesis: "If the Fed aims to reduce the size of its balance sheet, four enabling policy tools can reduce the minimum required quantity of reserve balances without disrupting monetary policy implementation: (1) Temporary Open Market Operations (TOMOs) to sterilize unintended reserve shocks (TGA changes, FBO quarter-end window dressing); (2) revising liquidity regulations to reduce GSIB aversion to using Fed facilities; (3) adding a Liquidity Savings Mechanism (LSM) to Fedwire; and (4) tiering the IORB rate so banks with excess reserves prefer to lend them rather than hoard. The UK (BoE demand-driven approach) and Norway/New Zealand (IORB tiering) provide empirical precedents."
+thesis: 'If the Fed aims to reduce the size of its balance sheet, four enabling policy
+  tools can reduce the minimum required quantity of reserve balances without disrupting
+  monetary policy implementation: (1) Temporary Open Market Operations (TOMOs) to
+  sterilize unintended reserve shocks (TGA changes, FBO quarter-end window dressing);
+  (2) revising liquidity regulations to reduce GSIB aversion to using Fed facilities;
+  (3) adding a Liquidity Savings Mechanism (LSM) to Fedwire; and (4) tiering the IORB
+  rate so banks with excess reserves prefer to lend them rather than hoard. The UK
+  (BoE demand-driven approach) and Norway/New Zealand (IORB tiering) provide empirical
+  precedents.'
 source_refs:
 - path: 02_sources/books/duffie_bpea_payments_2026/Duffie_BPEA_Payments_Liquidity_2026.md
   pages: lines 50-805 (Sections I.D through VIII)
   weight: primary
+parent_node: null
 related:
 - node: '[[Fed Balance Sheet Floor Payment System Reserve Demand]]'
   relation: extends

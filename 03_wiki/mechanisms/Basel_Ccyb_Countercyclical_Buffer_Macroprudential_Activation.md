@@ -1,52 +1,56 @@
 ---
 node_id: basel_ccyb_countercyclical_buffer_macroprudential_activation_001
 type: mechanism
-title: "Basel CCyB: Countercyclical Capital Buffer — Macroprudential Activation and Reciprocity"
+title: 'Basel CCyB: Countercyclical Capital Buffer — Macroprudential Activation and
+  Reciprocity'
 aliases:
-  - CCyB Basel
-  - countercyclical capital buffer
-  - bộ đệm vốn nghịch chu kỳ
-  - CCyB activation
-  - credit-to-GDP buffer
+- CCyB Basel
+- countercyclical capital buffer
+- bộ đệm vốn nghịch chu kỳ
+- CCyB activation
+- credit-to-GDP buffer
 domain:
   primary: basel_risk
   secondary:
-    - monetary_policy
-    - macro_outlook
+  - monetary_policy
+  - macro_outlook
 tags:
-  - ccyb
-  - macroprudential
-  - countercyclical
-  - credit_cycle
-  - capital_buffer
-  - reciprocity
-  - cet1
-  - basel3
+- ccyb
+- macroprudential
+- countercyclical
+- credit_cycle
+- capital_buffer
+- reciprocity
+- cet1
+- basel3
 confidence: 3
 stability: stable
-thesis: >
-  The CCyB (0–2.5% of RWA, met with CET1) is a national macroprudential tool
+thesis: 'The CCyB (0–2.5% of RWA, met with CET1) is a national macroprudential tool
   activated when excess aggregate credit growth signals systemic risk accumulation;
-  increases take effect after a pre-announcement period of up to 12 months while
-  decreases are effective immediately, preventing the buffer from becoming
-  procyclical during downturns; internationally active banks compute a weighted
-  average across jurisdictions they lend into, and mandatory reciprocity among
-  Basel Committee members ensures consistent global application up to 2.5%.
+  increases take effect after a pre-announcement period of up to 12 months while decreases
+  are effective immediately, preventing the buffer from becoming procyclical during
+  downturns; internationally active banks compute a weighted average across jurisdictions
+  they lend into, and mandatory reciprocity among Basel Committee members ensures
+  consistent global application up to 2.5%.
+
+  '
 source_refs:
-  - path: 02_sources/regulator/bcbs/BaselFramework.md
-    pages: "RBC30.6-17 (countercyclical buffer mechanism, activation, bank-specific calculation, reciprocity)"
-    weight: primary
+- path: 02_sources/regulator/bcbs/BaselFramework.md
+  pages: RBC30.6-17 (countercyclical buffer mechanism, activation, bank-specific calculation,
+    reciprocity)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Basel_Iii_Capital_Stack_Cet1_Tier1_Total_Buffer_Architecture]]"
-    relation: macroprudential_extension
-  - node: "[[Basel_Gsib_Surcharge_Bucket_Methodology_Capital_Add_On]]"
-    relation: buffer_stack_peer
-  - node: "[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]"
-    relation: constraint_system_component
-  - node: "[[Imf_Flow_Of_Funds_4_Sector_Consistency_Framework]]"
-    relation: credit_cycle_macro_context
-date_created: "2026-05-26"
-date_updated: "2026-05-26"
+- node: '[[Basel_Iii_Capital_Stack_Cet1_Tier1_Total_Buffer_Architecture]]'
+  relation: macroprudential_extension
+- node: '[[Basel_Gsib_Surcharge_Bucket_Methodology_Capital_Add_On]]'
+  relation: buffer_stack_peer
+- node: '[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]'
+  relation: constraint_system_component
+- node: '[[Imf_Flow_Of_Funds_4_Sector_Consistency_Framework]]'
+  relation: credit_cycle_macro_context
+date_created: '2026-05-26'
+date_updated: '2026-05-26'
 ---
 
 ## Mechanism Overview

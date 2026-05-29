@@ -35,17 +35,18 @@ source_refs:
 - path: 02_sources/regulator/other/BC030306_OD_PPL_arm_FINAL (1).md
   pages: ''
   weight: primary
+parent_node: '[[Bank_Alm_Banking_Book_Risk_Management_Framework]]'
 related:
-  - node: "[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]"
-    relation: behavioral_mechanism
-  - node: "[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]"
-    relation: nmd_valuation
-  - node: "[[Bcbs_Irrbb_Nmd_Standardised_Framework]]"
-    relation: regulatory_requirement
-  - node: "[[Bcbs_Irrbb_Standards_D368_2016]]"
-    relation: parent_standard
-  - node: "[[Bank_Alm_Banking_Book_Risk_Management_Framework]]"
-    relation: parent_framework
+- node: '[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]'
+  relation: behavioral_mechanism
+- node: '[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]'
+  relation: nmd_valuation
+- node: '[[Bcbs_Irrbb_Nmd_Standardised_Framework]]'
+  relation: regulatory_requirement
+- node: '[[Bcbs_Irrbb_Standards_D368_2016]]'
+  relation: parent_standard
+- node: '[[Bank_Alm_Banking_Book_Risk_Management_Framework]]'
+  relation: parent_framework
 date_created: '2026-05-26'
 date_updated: '2026-05-26'
 ---

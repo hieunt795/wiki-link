@@ -3,69 +3,75 @@ node_id: ilaap_liquidity_adequacy_assessment_framework_001
 type: framework
 title: ILAAP — Internal Liquidity Adequacy Assessment Process Framework
 aliases:
-  - ILAAP framework
-  - Internal Liquidity Adequacy Assessment
-  - individual liquidity adequacy assessment
-  - liquidity adequacy process
-  - quy trình đánh giá đủ thanh khoản nội bộ
-  - ILAAP thanh khoản
+- ILAAP framework
+- Internal Liquidity Adequacy Assessment
+- individual liquidity adequacy assessment
+- liquidity adequacy process
+- quy trình đánh giá đủ thanh khoản nội bộ
+- ILAAP thanh khoản
 domain:
   primary: banking_regulation
   secondary: alm
 tags:
-  - ilaap
-  - liquidity_risk
-  - stress_testing
-  - cfp
-  - srep
-  - risk_appetite
-  - bcbs
-  - eba
-  - ecb
-  - supervisory_review
-  - governance
-  - survival_period
+- ilaap
+- liquidity_risk
+- stress_testing
+- cfp
+- srep
+- risk_appetite
+- bcbs
+- eba
+- ecb
+- supervisory_review
+- governance
+- survival_period
 confidence: 4
 stability: stable
-thesis: >
-  ILAAP is a bank's own comprehensive internal process for assessing its liquidity
-  adequacy — broader and more adaptive than LCR/NSFR because it encompasses
-  internal stress tests (producing survival periods and time-to-central-bank metrics),
-  risk appetite calibration, contingency planning, and a board-approved liquidity
-  adequacy statement. Introduced by EBA/DNB in 2012 based on BCBS bcbs144
-  Principles 10–12, formalised by ECB in November 2018 under SSM. The regulator
-  (L-SREP) challenges the ILAAP and issues Individual Liquidity Guidance that
-  extends beyond LCR requirements. The core value proposition: banks understand
-  their own business model, client behaviour, and market exposures better than
-  supervisors can through standardised metrics — the ILAAP forces banks to make
-  and justify those assumptions.
+thesis: 'ILAAP is a bank''s own comprehensive internal process for assessing its liquidity
+  adequacy — broader and more adaptive than LCR/NSFR because it encompasses internal
+  stress tests (producing survival periods and time-to-central-bank metrics), risk
+  appetite calibration, contingency planning, and a board-approved liquidity adequacy
+  statement. Introduced by EBA/DNB in 2012 based on BCBS bcbs144 Principles 10–12,
+  formalised by ECB in November 2018 under SSM. The regulator (L-SREP) challenges
+  the ILAAP and issues Individual Liquidity Guidance that extends beyond LCR requirements.
+  The core value proposition: banks understand their own business model, client behaviour,
+  and market exposures better than supervisors can through standardised metrics —
+  the ILAAP forces banks to make and justify those assumptions.
+
+  '
 source_refs:
-  - path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
-    pages: "lines 3853–3909 (Ch.13: ILAAP vs LCR/NSFR, supervisor rationale, Panel 13.3 board test, Panel 13.4 scenarios/metrics, Panel 13.5 best practice structure)"
-    weight: primary
-  - path: 02_sources/books/choudhry_banking_fixed_income/Choudhry_Principles_of_Banking.md
-    pages: "lines 11799–11981 (Ch.20: ILAAP definition, stress testing process, ILAAP drafting, L-SREP, Individual Liquidity Guidance, ILAAP ToC)"
-    weight: primary
-  - path: 02_sources/regulator/bcbs/bcbs144.md
-    pages: "para 94–127 (Principles 10–12: stress testing, CFP, HQLA cushion — conceptual foundation for ILAAP)"
-    weight: supporting
-  - path: 02_sources/regulator/bcbs/ssm.ilaap_guide_201811.en.md
-    pages: "full document — 7 ILAAP principles, dual economic/normative perspective, SSM expectations"
-    weight: primary
-  - path: 02_sources/regulator/bcbs/Final report on Guidelines on ICAAP ILAAP (EBA-GL-2016-10).md
-    pages: "full document — ILAAP-specific information requirements for SREP (Section 3, ILAAP categories)"
-    weight: supporting
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: 'lines 3853–3909 (Ch.13: ILAAP vs LCR/NSFR, supervisor rationale, Panel 13.3
+    board test, Panel 13.4 scenarios/metrics, Panel 13.5 best practice structure)'
+  weight: primary
+- path: 02_sources/books/choudhry_banking_fixed_income/Choudhry_Principles_of_Banking.md
+  pages: 'lines 11799–11981 (Ch.20: ILAAP definition, stress testing process, ILAAP
+    drafting, L-SREP, Individual Liquidity Guidance, ILAAP ToC)'
+  weight: primary
+- path: 02_sources/regulator/bcbs/bcbs144.md
+  pages: 'para 94–127 (Principles 10–12: stress testing, CFP, HQLA cushion — conceptual
+    foundation for ILAAP)'
+  weight: supporting
+- path: 02_sources/regulator/bcbs/ssm.ilaap_guide_201811.en.md
+  pages: full document — 7 ILAAP principles, dual economic/normative perspective,
+    SSM expectations
+  weight: primary
+- path: 02_sources/regulator/bcbs/Final report on Guidelines on ICAAP ILAAP (EBA-GL-2016-10).md
+  pages: full document — ILAAP-specific information requirements for SREP (Section
+    3, ILAAP categories)
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Bcbs_Liquidity_Stress_Testing_Principle_10]]"
-    relation: stress_test_is_ilaap_input
-  - node: "[[Bcbs_Liquidity_Contingency_Funding_Plan_Principle_11]]"
-    relation: cfp_is_ilaap_output
-  - node: "[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]"
-    relation: conceptual_foundation
-  - node: "[[Bcbs_Hqla_Liquidity_Cushion_Principle_12]]"
-    relation: hqla_buffer_from_ilaap_sizing
-date_created: "2026-05-27"
-date_updated: "2026-05-27"
+- node: '[[Bcbs_Liquidity_Stress_Testing_Principle_10]]'
+  relation: stress_test_is_ilaap_input
+- node: '[[Bcbs_Liquidity_Contingency_Funding_Plan_Principle_11]]'
+  relation: cfp_is_ilaap_output
+- node: '[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]'
+  relation: conceptual_foundation
+- node: '[[Bcbs_Hqla_Liquidity_Cushion_Principle_12]]'
+  relation: hqla_buffer_from_ilaap_sizing
+date_created: '2026-05-27'
+date_updated: '2026-05-27'
 ---
 
 ## Position in Liquidity Framework

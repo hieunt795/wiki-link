@@ -5,62 +5,69 @@ jurisdiction: international
 issuer: bcbs
 title: BCBS IRRBB Standards (d368) — 12-Principle Framework, April 2016
 aliases:
-  - BCBS d368 IRRBB 2016
-  - IRRBB 12 principles 2016
-  - BCBS IRRBB standards
-  - Interest Rate Risk Banking Book d368
-  - tiêu chuẩn rủi ro lãi suất sổ ngân hàng BCBS
-  - IRRBB 12 nguyên tắc 2016
+- BCBS d368 IRRBB 2016
+- IRRBB 12 principles 2016
+- BCBS IRRBB standards
+- Interest Rate Risk Banking Book d368
+- tiêu chuẩn rủi ro lãi suất sổ ngân hàng BCBS
+- IRRBB 12 nguyên tắc 2016
 domain:
   primary: banking_regulation
   secondary: interest_rate_risk
 tags:
-  - irrbb
-  - bcbs
-  - regulatory_standard
-  - eve
-  - nii
-  - pillar_2
-  - outlier_test
-  - six_shock_scenarios
-  - nmd
-  - csrbb
-  - d368
-  - basel
+- irrbb
+- bcbs
+- regulatory_standard
+- eve
+- nii
+- pillar_2
+- outlier_test
+- six_shock_scenarios
+- nmd
+- csrbb
+- d368
+- basel
 confidence: 4
 stability: stable
-thesis: >
-  BCBS d368 (April 2016) establishes the current IRRBB regulatory framework under
-  Pillar 2 (Supervisory Review Process), replacing the 2004 IRR Principles. The
-  framework defines three IRRBB sub-types (gap, basis, option risk) and requires
-  banks to measure and disclose ΔEVE and ΔNII under six prescribed interest rate
-  shock scenarios. Twelve principles cover: bank management of IRRBB (P1–P7),
-  disclosure (P8), capital adequacy in ICAAP (P9), supervisory assessment (P10–P12).
-  The outlier test — ΔEVE > 15% of Tier 1 capital under any prescribed scenario —
-  triggers supervisory review. A supervisory standardised framework (Section IV) may
-  be mandated for banks with inadequate internal measurement systems.
-source_refs:
-  - path: 02_sources/regulator/bcbs/d368.md
-    pages: "para 1–7 (executive summary), para 8–10 (IRRBB definition, CSRBB), para 11 (EVE vs NII), para 12–32 (P1 identification, P2 governance), para 33–43 (P4 EVE/NII measurement, shock scenarios), para 44–51 (P5 behavioural assumptions), para 52–65 (P6 model governance), para 66–68 (P7 reporting), para 69–71 (P8 disclosure), para 72–76 (P9 ICAAP capital), para 77–87 (P10–P11 supervisory), para 88–95 (P12 outlier test), para 96–98 (scope + timeline), para 99–115 (standardised framework: bucketing, NMDs Table 2), Table B (six shock scenarios)"
-    weight: primary
-related:
-  - node: "[[Irrbb_Eve_Nii_Dual_Metric_Framework]]"
-    relation: detailed_content_node
-  - node: "[[Bcbs_Irrbb_Nmd_Standardised_Framework]]"
-    relation: nmd_treatment_detail
-  - node: "[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]"
-    relation: nmd_valuation_connection
-  - node: "[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]"
-    relation: related_bcbs_standard
-  - node: "[[Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book]]"
-    relation: gap_analysis_mechanism
-  - node: "[[Bank_Alm_Banking_Book_Risk_Management_Framework]]"
-    relation: bank_implementation
-  - node: "[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]"
-    relation: behavioral_assumptions
+thesis: 'BCBS d368 (April 2016) establishes the current IRRBB regulatory framework
+  under Pillar 2 (Supervisory Review Process), replacing the 2004 IRR Principles.
+  The framework defines three IRRBB sub-types (gap, basis, option risk) and requires
+  banks to measure and disclose ΔEVE and ΔNII under six prescribed interest rate shock
+  scenarios. Twelve principles cover: bank management of IRRBB (P1–P7), disclosure
+  (P8), capital adequacy in ICAAP (P9), supervisory assessment (P10–P12). The outlier
+  test — ΔEVE > 15% of Tier 1 capital under any prescribed scenario — triggers supervisory
+  review. A supervisory standardised framework (Section IV) may be mandated for banks
+  with inadequate internal measurement systems.
 
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+  '
+source_refs:
+- path: 02_sources/regulator/bcbs/d368.md
+  pages: 'para 1–7 (executive summary), para 8–10 (IRRBB definition, CSRBB), para
+    11 (EVE vs NII), para 12–32 (P1 identification, P2 governance), para 33–43 (P4
+    EVE/NII measurement, shock scenarios), para 44–51 (P5 behavioural assumptions),
+    para 52–65 (P6 model governance), para 66–68 (P7 reporting), para 69–71 (P8 disclosure),
+    para 72–76 (P9 ICAAP capital), para 77–87 (P10–P11 supervisory), para 88–95 (P12
+    outlier test), para 96–98 (scope + timeline), para 99–115 (standardised framework:
+    bucketing, NMDs Table 2), Table B (six shock scenarios)'
+  weight: primary
+parent_node: null
+related:
+- node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
+  relation: detailed_content_node
+- node: '[[Bcbs_Irrbb_Nmd_Standardised_Framework]]'
+  relation: nmd_treatment_detail
+- node: '[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]'
+  relation: nmd_valuation_connection
+- node: '[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]'
+  relation: related_bcbs_standard
+- node: '[[Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book]]'
+  relation: gap_analysis_mechanism
+- node: '[[Bank_Alm_Banking_Book_Risk_Management_Framework]]'
+  relation: bank_implementation
+- node: '[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]'
+  relation: behavioral_assumptions
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Regulatory Architecture

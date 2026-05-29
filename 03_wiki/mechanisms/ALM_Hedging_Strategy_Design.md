@@ -1,54 +1,50 @@
 ---
 node_id: alm_hedging_strategy_design_001
 type: mechanism
-title: "ALM Macro Hedging Strategy Design"
+title: ALM Macro Hedging Strategy Design
 aliases:
-  - Macro hedging
-  - ALM hedge portfolio construction
-  - Banking book hedging
-  - Interest rate hedge strategy
-  - thiết kế chiến lược phòng ngừa rủi ro ALM
-  - phòng ngừa rủi ro lãi suất sổ ngân hàng
-
+- Macro hedging
+- ALM hedge portfolio construction
+- Banking book hedging
+- Interest rate hedge strategy
+- thiết kế chiến lược phòng ngừa rủi ro ALM
+- phòng ngừa rủi ro lãi suất sổ ngân hàng
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - hedging
-  - irrbb
-  - irs
-  - derivatives
-  - macro_hedge
-  - pv01
-  - gap_management
-
+- hedging
+- irrbb
+- irs
+- derivatives
+- macro_hedge
+- pv01
+- gap_management
 confidence: 1
 stability: stable
+thesis: '[LLM] ALM macro hedging selects and sizes derivative instruments (predominantly
+  interest rate swaps, cross-currency swaps, and options) to close or reduce the structural
+  interest rate and liquidity mismatches revealed by repricing gap analysis and PV01
+  bucket sensitivity, with the hedge portfolio constructed based on risk appetite
+  (target immunization vs. directional positioning), the cost of hedging, and the
+  dual constraint of managing both Δ NII and Δ EVE within ALCO-approved limits.
 
-thesis: >
-  [LLM] ALM macro hedging selects and sizes derivative instruments (predominantly interest rate
-  swaps, cross-currency swaps, and options) to close or reduce the structural interest rate and
-  liquidity mismatches revealed by repricing gap analysis and PV01 bucket sensitivity, with the
-  hedge portfolio constructed based on risk appetite (target immunization vs. directional
-  positioning), the cost of hedging, and the dual constraint of managing both Δ NII and Δ EVE
-  within ALCO-approved limits.
-
+  '
 source_refs:
-  - path: 02_sources/books/alm/A - Asset liability optimization.md
-    pages: "Ch 1 (ALM Role, FTP), Ch 2 (Maturity Gap, Repricing Gap, EVE, PV01)"
-    weight: primary
-
+- path: 02_sources/books/alm/A - Asset liability optimization.md
+  pages: Ch 1 (ALM Role, FTP), Ch 2 (Maturity Gap, Repricing Gap, EVE, PV01)
+  weight: primary
+parent_node: '[[ALM_Balance_Sheet_Optimization_Framework]]'
 related:
-  - node: "[[Income_Gap_vs_Economic_Value_Gap]]"
-    relation: implements
-  - node: "[[ALM_Balance_Sheet_Optimization_Framework]]"
-    relation: component_of
-  - node: "[[FTP_Methodology]]"
-    relation: related_to
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Income_Gap_vs_Economic_Value_Gap]]'
+  relation: implements
+- node: '[[ALM_Balance_Sheet_Optimization_Framework]]'
+  relation: component_of
+- node: '[[FTP_Methodology]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Hedging Objectives and Strategy Choice

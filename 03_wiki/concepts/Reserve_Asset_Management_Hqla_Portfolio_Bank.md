@@ -1,48 +1,50 @@
 ---
 node_id: reserve_asset_management_hqla_portfolio_bank_001
 type: concept
-title: "Reserve Asset Management: Bank HQLA Portfolio Strategy"
+title: 'Reserve Asset Management: Bank HQLA Portfolio Strategy'
 aliases:
-  - Liquidity reserve
-  - Liquid asset buffer
-  - Reserve asset portfolio
-  - Quản lý tài sản dự trữ thanh khoản
-  - Danh mục tài sản thanh khoản cao
-
+- Liquidity reserve
+- Liquid asset buffer
+- Reserve asset portfolio
+- Quản lý tài sản dự trữ thanh khoản
+- Danh mục tài sản thanh khoản cao
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - hqla
-  - liquidity_reserve
-  - reserve_assets
-  - lcr
-  - sovereign_bonds
-  - basis_risk
-  - credit_risk
-
+- hqla
+- liquidity_reserve
+- reserve_assets
+- lcr
+- sovereign_bonds
+- basis_risk
+- credit_risk
 confidence: 1
 stability: stable
+thesis: '[LLM] A bank''s liquidity reserve (HQLA portfolio) must be funded long-term
+  on the liability side despite holding short-to-medium-maturity sovereign bonds on
+  the asset side — creating an intentional negative maturity transformation whose
+  cost functions as an insurance premium. [LLM] Active management of this portfolio
+  involves navigating three embedded risks: basis risk (Euribor tenor mismatch), credit
+  spread risk (sovereign and non-sovereign spread movements), and the liquidity black-hole
+  risk that arises when all banks hold identical collateral and try to sell simultaneously.
 
-thesis: >
-  [LLM] A bank's liquidity reserve (HQLA portfolio) must be funded long-term on the liability side despite holding short-to-medium-maturity sovereign bonds on the asset side — creating an intentional negative maturity transformation whose cost functions as an insurance premium. [LLM] Active management of this portfolio involves navigating three embedded risks: basis risk (Euribor tenor mismatch), credit spread risk (sovereign and non-sovereign spread movements), and the liquidity black-hole risk that arises when all banks hold identical collateral and try to sell simultaneously.
-
+  '
 source_refs:
-  - path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
-    pages: "Ch 15 — Managing Reserve Assets (Commerzbank AG)"
-    weight: primary
-
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: Ch 15 — Managing Reserve Assets (Commerzbank AG)
+  weight: primary
+parent_node: '[[Bank_Alm_Structural_Liquidity_Management_Nsfr_Lcr_Framework]]'
 related:
-  - node: "[[Funding_Gap_Profile_And_Behavioural_Maturity_Calendar]]"
-    relation: related_to
-  - node: "[[Asset_Encumbrance_Management_Bank_Alm]]"
-    relation: related_to
-  - node: "[[Bank_Alm_Structural_Liquidity_Management_Nsfr_Lcr_Framework]]"
-    relation: component_of
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Funding_Gap_Profile_And_Behavioural_Maturity_Calendar]]'
+  relation: related_to
+- node: '[[Asset_Encumbrance_Management_Bank_Alm]]'
+  relation: related_to
+- node: '[[Bank_Alm_Structural_Liquidity_Management_Nsfr_Lcr_Framework]]'
+  relation: component_of
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Purpose and Core Concept

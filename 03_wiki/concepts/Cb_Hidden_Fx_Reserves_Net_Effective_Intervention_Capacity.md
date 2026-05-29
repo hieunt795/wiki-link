@@ -35,8 +35,9 @@ thesis: '[LLM] Gross FX reserves as officially reported overstate a central bank
   or negative due to hidden forward book.'
 source_refs:
 - path: 04_research/ma_fx_target_balance_sheet/findings/hidden_reserves_net_effective_position.md
-  pages: 'TRUE_GAP — pending ingest of BIS QR Sep 2022, IMF BPM6 Ch.6'
+  pages: TRUE_GAP — pending ingest of BIS QR Sep 2022, IMF BPM6 Ch.6
   weight: primary
+parent_node: null
 related:
 - node: '[[CB FX Swap Intervention Mechanics And Off Balance Sheet Exposure]]'
   relation: primary_source — swap far-leg book is main driver of hidden reserves
@@ -45,7 +46,8 @@ related:
 - node: '[[CB FX Options And Cancelable Forward Intervention Structures]]'
   relation: contributing_source — sold options create contingent claims on reserves
 - node: '[[CB FX Rate Target Balance Sheet Constraint And Sterilization]]'
-  relation: policy_context — net effective reserves determine how long FX target can hold
+  relation: policy_context — net effective reserves determine how long FX target can
+    hold
 - node: '[[IMF FX Regime Balance Sheet — Monetary Accounts Perspective (Chapter 5)]]'
   relation: accounting_framework — NFA in monetary accounts reflects only on-BS positions
 date_created: '2026-05-26'

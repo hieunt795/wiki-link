@@ -3,58 +3,62 @@ node_id: imf_real_interest_rate_fisher_equation_portfolio_choice_001
 type: mechanism
 title: IMF Real Interest Rate — Fisher Equation And Portfolio Choice
 aliases:
-  - Fisher equation
-  - real interest rate
-  - nominal vs real interest rate
-  - portfolio choice theory
-  - financial asset returns
-  - rate of return decomposition
-  - phương trình Fisher
-  - lãi suất thực và danh nghĩa
-  - lý thuyết lựa chọn danh mục tài sản
-  - chi phí cơ hội nắm giữ tiền
+- Fisher equation
+- real interest rate
+- nominal vs real interest rate
+- portfolio choice theory
+- financial asset returns
+- rate of return decomposition
+- phương trình Fisher
+- lãi suất thực và danh nghĩa
+- lý thuyết lựa chọn danh mục tài sản
+- chi phí cơ hội nắm giữ tiền
 domain:
   primary: monetary_policy
   secondary: financial_markets
 tags:
-  - fisher_equation
-  - real_interest_rate
-  - nominal_interest_rate
-  - inflation_expectation
-  - portfolio_choice
-  - opportunity_cost_of_money
-  - asset_substitution
-  - financial_repression
-  - imf_macro_accounting
-  - monetary_analysis
+- fisher_equation
+- real_interest_rate
+- nominal_interest_rate
+- inflation_expectation
+- portfolio_choice
+- opportunity_cost_of_money
+- asset_substitution
+- financial_repression
+- imf_macro_accounting
+- monetary_analysis
 confidence: 4
 stability: stable
-thesis: >
-  The Fisher equation decomposes the nominal interest rate into a real rate plus
-  expected inflation: Rr ≈ Rn − Pᵉ (approximate) or Rr = (Rn − Pᵉ)/(1 + Pᵉ)
-  (exact). Portfolio choice theory classifies assets into four types (money,
-  bonds/credit instruments, equities, real assets), with demand driven by expected
-  return, riskiness, and liquidity. In high-inflation environments where real returns
-  on financial assets are negative, rational agents substitute away from money and
-  domestic bonds toward real assets or foreign currency — the mechanism behind
-  dollarization and financial repression.
+thesis: 'The Fisher equation decomposes the nominal interest rate into a real rate
+  plus expected inflation: Rr ≈ Rn − Pᵉ (approximate) or Rr = (Rn − Pᵉ)/(1 + Pᵉ) (exact).
+  Portfolio choice theory classifies assets into four types (money, bonds/credit instruments,
+  equities, real assets), with demand driven by expected return, riskiness, and liquidity.
+  In high-inflation environments where real returns on financial assets are negative,
+  rational agents substitute away from money and domestic bonds toward real assets
+  or foreign currency — the mechanism behind dollarization and financial repression.
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 4798–4827 (Box 5.9: Interest Rates and Rates of Return — 4 asset types, rate of return decomposition, Fisher equation approximation and discrete form, negative real rates in transition, portfolio substitution to real assets)"
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: 'lines 4798–4827 (Box 5.9: Interest Rates and Rates of Return — 4 asset types,
+    rate of return decomposition, Fisher equation approximation and discrete form,
+    negative real rates in transition, portfolio substitution to real assets)'
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Imf_Monetary_Analysis_Quantity_Theory_Velocity_And_Exchange_Rate_Regimes]]"
-    relation: opportunity_cost_drives_money_demand
-  - node: "[[Currency_Substitution_Dollarization_Monetary_Control]]"
-    relation: negative_real_rates_trigger_dollarization
-  - node: "[[Financial_Repression_Via_Reserve_Creation]]"
-    relation: financial_repression_mechanism
-  - node: "[[Transition_Economy_Monetary_Special_Issues]]"
-    relation: negative_real_rates_common_in_transition
-  - node: "[[Monetary_Policy_Transmission_Mechanisms_Framework]]"
-    relation: rate_channel_foundation
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Imf_Monetary_Analysis_Quantity_Theory_Velocity_And_Exchange_Rate_Regimes]]'
+  relation: opportunity_cost_drives_money_demand
+- node: '[[Currency_Substitution_Dollarization_Monetary_Control]]'
+  relation: negative_real_rates_trigger_dollarization
+- node: '[[Financial_Repression_Via_Reserve_Creation]]'
+  relation: financial_repression_mechanism
+- node: '[[Transition_Economy_Monetary_Special_Issues]]'
+  relation: negative_real_rates_common_in_transition
+- node: '[[Monetary_Policy_Transmission_Mechanisms_Framework]]'
+  relation: rate_channel_foundation
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Four Asset Types: The Portfolio Choice Framework

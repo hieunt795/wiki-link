@@ -22,11 +22,16 @@ tags:
 - intervention
 confidence: 1
 stability: stable
-thesis: When Treasury market illiquidity escalates, the U.S. Treasury's first-line intervention (before full YCC) is secondary-market buybacks — repurchasing off-the-run bonds via primary dealers to compress the illiquidity premium, reduce interest expense, and break the illiquidity spiral (volatility → illiquidity → more volatility doom loop) without requiring Fed balance sheet expansion.
+thesis: When Treasury market illiquidity escalates, the U.S. Treasury's first-line
+  intervention (before full YCC) is secondary-market buybacks — repurchasing off-the-run
+  bonds via primary dealers to compress the illiquidity premium, reduce interest expense,
+  and break the illiquidity spiral (volatility → illiquidity → more volatility doom
+  loop) without requiring Fed balance sheet expansion.
 source_refs:
 - path: 02_sources/books/conks/Conks - Liquidity and Market Dynamics.md
   pages: batch 1 (chars ~0-9000)
   weight: primary
+parent_node: null
 related:
 - node: '[[Fed Ample Reserves Rate Control Framework]]'
   relation: complements

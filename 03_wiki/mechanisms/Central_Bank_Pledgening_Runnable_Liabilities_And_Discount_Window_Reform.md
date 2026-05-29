@@ -39,6 +39,7 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
   pages: The Central Bank Pledgening; The Fed's New Rescue Mechanism
   weight: primary
+parent_node: null
 related:
 - node: '[[BTFP_SVB_Crisis_And_Fed_Emergency_Lending_Evolution]]'
   relation: structural_predecessor

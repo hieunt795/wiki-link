@@ -35,6 +35,7 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Shadow Banking and Cash Markets.md
   pages: TGA, ON RRP, QT sections
   weight: supporting
+parent_node: null
 related:
 - node: '[[Collateral_Velocity_Rehypothecation]]'
   relation: depends_on

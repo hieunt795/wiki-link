@@ -3,46 +3,49 @@ node_id: stagflation_policy_response_tradeoff_frm_001
 type: framework
 title: Stagflation Policy Response Tradeoff Framework
 aliases:
-  - stagflation policy tradeoff
-  - look through vs tighten
-  - phan ung chinh sach voi dinh tram lam phat
+- stagflation policy tradeoff
+- look through vs tighten
+- phan ung chinh sach voi dinh tram lam phat
 domain:
   primary: monetary_policy
   secondary:
-    - macro_outlook
+  - macro_outlook
 tags:
-  - stagflation
-  - central_banks
-  - supply_shock
-  - credibility
-  - real_income
-  - policy_response
+- stagflation
+- central_banks
+- supply_shock
+- credibility
+- real_income
+- policy_response
 confidence: 3
 stability: evolving
-thesis: >
-  In a stagflation shock, the policy choice is state-contingent: central banks
-  can look through direct price effects only if inflation expectations remain
-  anchored and the shock does not become persistent through wages, contracts, or
-  production networks.
+thesis: 'In a stagflation shock, the policy choice is state-contingent: central banks
+  can look through direct price effects only if inflation expectations remain anchored
+  and the shock does not become persistent through wages, contracts, or production
+  networks.
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "Inflation; Incomes Policy"
-    weight: primary
-  - path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
-    pages: "Introduction; Policy assessment"
-    weight: supporting
-  - path: 02_sources/Clipping/Fed, ECB, and BoJ_ A Matter of Credibility.md
-    pages: "full document"
-    weight: supporting
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: Inflation; Incomes Policy
+  weight: primary
+- path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
+  pages: Introduction; Policy assessment
+  weight: supporting
+- path: 02_sources/Clipping/Fed, ECB, and BoJ_ A Matter of Credibility.md
+  pages: full document
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Supply Shock Policy Response Scenario Taxonomy]]"
-    relation: scenario_implementation
-  - node: "[[Central Bank Credibility Supply Shock Policy Space]]"
-    relation: credibility_condition
-  - node: "[[Cost Push Inflation Persistence Mechanism]]"
-    relation: persistence_trigger
-  - node: "[[Stagflation Regime Diagnostic Framework]]"
-    relation: diagnostic_parent
+- node: '[[Supply Shock Policy Response Scenario Taxonomy]]'
+  relation: scenario_implementation
+- node: '[[Central Bank Credibility Supply Shock Policy Space]]'
+  relation: credibility_condition
+- node: '[[Cost Push Inflation Persistence Mechanism]]'
+  relation: persistence_trigger
+- node: '[[Stagflation Regime Diagnostic Framework]]'
+  relation: diagnostic_parent
 date_created: 2026-05-24
 date_updated: 2026-05-24
 ---

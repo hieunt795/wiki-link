@@ -31,6 +31,7 @@ source_refs:
 - path: 02_sources/Clipping/A new Fed-Treasury Accord_.md
   pages: Full document
   weight: primary
+parent_node: null
 related:
 - node: '[[Monetary_Policy_Instruments_Operational_Framework]]'
   relation: redefines

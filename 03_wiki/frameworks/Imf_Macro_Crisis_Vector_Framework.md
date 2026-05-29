@@ -3,70 +3,79 @@ node_id: imf_macro_crisis_vector_framework_001
 type: framework
 title: IMF Macro Crisis Vector Framework — Fiscal, External, And Banking Transmission
 aliases:
-  - crisis vector IMF
-  - macro crisis transmission IMF
-  - fiscal crisis vector
-  - external crisis speculative attack
-  - banking crisis LOLR
-  - BOP crisis mechanism
-  - khủng hoảng kinh tế vĩ mô vector IMF
-  - cơ chế lây lan khủng hoảng
-  - tấn công đầu cơ tỷ giá
-  - dễ bị tổn thương tài chính IMF
-  - khủng hoảng ngân hàng người cho vay cuối cùng
+- crisis vector IMF
+- macro crisis transmission IMF
+- fiscal crisis vector
+- external crisis speculative attack
+- banking crisis LOLR
+- BOP crisis mechanism
+- khủng hoảng kinh tế vĩ mô vector IMF
+- cơ chế lây lan khủng hoảng
+- tấn công đầu cơ tỷ giá
+- dễ bị tổn thương tài chính IMF
+- khủng hoảng ngân hàng người cho vay cuối cùng
 domain:
   primary: monetary_policy
   secondary: fiscal_policy
 tags:
-  - crisis_transmission
-  - speculative_attack
-  - fiscal_crisis
-  - banking_crisis
-  - financial_vulnerability
-  - reserve_adequacy
-  - lolr
-  - current_account_sustainability
-  - lawson_doctrine
-  - imf_macro_accounting
-  - balance_of_payments
-  - krugman_model
+- crisis_transmission
+- speculative_attack
+- fiscal_crisis
+- banking_crisis
+- financial_vulnerability
+- reserve_adequacy
+- lolr
+- current_account_sustainability
+- lawson_doctrine
+- imf_macro_accounting
+- balance_of_payments
+- krugman_model
 confidence: 4
 stability: stable
-thesis: >
-  The IMF Macro Accounting framework identifies three distinct crisis vectors, each
-  with a specific balance-sheet transmission mechanism: (1) Fiscal vector — 4 modes
-  of deficit financing each generate a distinct macroeconomic imbalance (inflation,
+thesis: 'The IMF Macro Accounting framework identifies three distinct crisis vectors,
+  each with a specific balance-sheet transmission mechanism: (1) Fiscal vector — 4
+  modes of deficit financing each generate a distinct macroeconomic imbalance (inflation,
   exchange rate crisis, debt explosion, crowding out); (2) External vector — under
   a fixed peg, unsustainable current account deficits trigger rational speculative
   attacks before reserves are exhausted; reserve adequacy must be assessed against
   financial vulnerability indicators (M2/FX ratio, short-term FX liabilities) rather
-  than just the 3-month import rule; (3) Banking vector — the fractional reserve
-  system's maturity mismatch makes banks inherently illiquid; a single bank's
-  payment difficulty can freeze credit across the entire system through a confidence
-  contagion chain, requiring LOLR intervention. The 4-sector flow of funds matrix
-  (government, private, banking, external) is the accounting tool for tracing which
-  sector's imbalance is generating each crisis vector.
+  than just the 3-month import rule; (3) Banking vector — the fractional reserve system''s
+  maturity mismatch makes banks inherently illiquid; a single bank''s payment difficulty
+  can freeze credit across the entire system through a confidence contagion chain,
+  requiring LOLR intervention. The 4-sector flow of funds matrix (government, private,
+  banking, external) is the accounting tool for tracing which sector''s imbalance
+  is generating each crisis vector.
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 1941–1945 (4 financing modes → 4 crisis types); lines 3451–3459 (fixed peg + unsustainable CAD → speculative attack, Krugman 1979 reference); lines 3486–3498 (Box 4.6 current account sustainability/solvency; confidence-triggered crisis; Lawson doctrine critique); lines 3723–3749 (reserve adequacy: 3-month rule; financial vulnerability indicators — M2/FX, short-term FX liabilities; Mexico 1994; Poland 1991 credibility case); lines 4302 (banking crisis LOLR: illiquid credit system, contagion, CB isolation mechanism)"
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: 'lines 1941–1945 (4 financing modes → 4 crisis types); lines 3451–3459 (fixed
+    peg + unsustainable CAD → speculative attack, Krugman 1979 reference); lines 3486–3498
+    (Box 4.6 current account sustainability/solvency; confidence-triggered crisis;
+    Lawson doctrine critique); lines 3723–3749 (reserve adequacy: 3-month rule; financial
+    vulnerability indicators — M2/FX, short-term FX liabilities; Mexico 1994; Poland
+    1991 credibility case); lines 4302 (banking crisis LOLR: illiquid credit system,
+    contagion, CB isolation mechanism)'
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]"
-    relation: fiscal_vector_detail_including_debt_dynamics_and_seigniorage
-  - node: "[[Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis]]"
-    relation: external_sector_accounting_underlying_crisis_vectors
-  - node: "[[Imf_Flow_Of_Funds_4_Sector_Consistency_Framework]]"
-    relation: diagnostic_matrix_tracing_crisis_sector_of_origin
-  - node: "[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]"
-    relation: banking_sector_balance_sheet_underlying_lolr_vector
-  - node: "[[Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating]]"
-    relation: companion_from_lipschitz_schadler_micro_anatomy_of_fx_mismatch_crisis
-  - node: "[[Currency_Substitution_Dollarization_Monetary_Control]]"
-    relation: dollarization_as_crisis_response_and_amplifier
-  - node: "[[Imf_Exchange_Rate_Assessment_And_Crawling_Peg_Design]]"
-    relation: exchange_rate_regime_determines_external_crisis_vulnerability
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]'
+  relation: fiscal_vector_detail_including_debt_dynamics_and_seigniorage
+- node: '[[Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis]]'
+  relation: external_sector_accounting_underlying_crisis_vectors
+- node: '[[Imf_Flow_Of_Funds_4_Sector_Consistency_Framework]]'
+  relation: diagnostic_matrix_tracing_crisis_sector_of_origin
+- node: '[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]'
+  relation: banking_sector_balance_sheet_underlying_lolr_vector
+- node: '[[Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating]]'
+  relation: companion_from_lipschitz_schadler_micro_anatomy_of_fx_mismatch_crisis
+- node: '[[Currency_Substitution_Dollarization_Monetary_Control]]'
+  relation: dollarization_as_crisis_response_and_amplifier
+- node: '[[Imf_Exchange_Rate_Assessment_And_Crawling_Peg_Design]]'
+  relation: exchange_rate_regime_determines_external_crisis_vulnerability
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Overview: The Accounting Approach to Crisis Analysis

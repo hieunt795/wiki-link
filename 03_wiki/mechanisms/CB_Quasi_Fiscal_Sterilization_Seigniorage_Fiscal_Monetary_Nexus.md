@@ -1,73 +1,84 @@
 ---
 node_id: cb_quasi_fiscal_sterilization_seigniorage_001
 type: mechanism
-title: CB Quasi-Fiscal Mechanism — Sterilization Costs, Seigniorage, and the Fiscal-Monetary Nexus
+title: CB Quasi-Fiscal Mechanism — Sterilization Costs, Seigniorage, and the Fiscal-Monetary
+  Nexus
 aliases:
-  - quasi-fiscal CB operations
-  - sterilization quasi-fiscal cost
-  - seigniorage transfer channel
-  - fiscal dominance mechanism
-  - CB profit transfer to government
-  - cơ chế bán tài chính ngân hàng trung ương
-  - chi phí bán tài chính sterilization
-  - kênh seigniorage chuyển lợi nhuận cho chính phủ
-  - thống trị tài khóa
-  - tương tác chính sách tiền tệ và tài khóa
+- quasi-fiscal CB operations
+- sterilization quasi-fiscal cost
+- seigniorage transfer channel
+- fiscal dominance mechanism
+- CB profit transfer to government
+- cơ chế bán tài chính ngân hàng trung ương
+- chi phí bán tài chính sterilization
+- kênh seigniorage chuyển lợi nhuận cho chính phủ
+- thống trị tài khóa
+- tương tác chính sách tiền tệ và tài khóa
 domain:
   primary: monetary_policy
   secondary: fiscal_policy
 tags:
-  - quasi_fiscal
-  - seigniorage
-  - sterilization
-  - fiscal_dominance
-  - cb_independence
-  - ncg
-  - monetization
-  - cb_capital
-  - fiscal_monetary_nexus
-  - em_policy
-  - fx_intervention
+- quasi_fiscal
+- seigniorage
+- sterilization
+- fiscal_dominance
+- cb_independence
+- ncg
+- monetization
+- cb_capital
+- fiscal_monetary_nexus
+- em_policy
+- fx_intervention
 confidence: 4
 stability: stable
-thesis: >
-  The FX rate target creates a quasi-fiscal channel that runs in both directions:
-  (1) the normal seigniorage channel transfers CB profits to government as nontax revenue
-  when CB issues non-interest-bearing liabilities and earns on backing assets; (2) sterilization
-  of inflows inverts this channel — CB earns low-yield FX assets while paying high-yield
-  domestic assets, converting seigniorage transfers into calls on the government budget;
-  (3) NCG expansion to accommodate fiscal deficits looks neutral in the monetary survey
-  but functions as de facto deficit monetization, masking fiscal imbalances until NFA
-  depletion forces adjustment; (4) fiscal dominance — where government pressure prevents
-  policy correction — is the endpoint of sustained NCG accommodation combined with FX
-  target defense. The IMF GFS framework classifies CB sterilization losses, subsidized
-  lending, and FX guarantees as quasi-fiscal operations that must be added to the
-  conventional fiscal deficit to measure the true policy stance.
+thesis: 'The FX rate target creates a quasi-fiscal channel that runs in both directions:
+  (1) the normal seigniorage channel transfers CB profits to government as nontax
+  revenue when CB issues non-interest-bearing liabilities and earns on backing assets;
+  (2) sterilization of inflows inverts this channel — CB earns low-yield FX assets
+  while paying high-yield domestic assets, converting seigniorage transfers into calls
+  on the government budget; (3) NCG expansion to accommodate fiscal deficits looks
+  neutral in the monetary survey but functions as de facto deficit monetization, masking
+  fiscal imbalances until NFA depletion forces adjustment; (4) fiscal dominance —
+  where government pressure prevents policy correction — is the endpoint of sustained
+  NCG accommodation combined with FX target defense. The IMF GFS framework classifies
+  CB sterilization losses, subsidized lending, and FX guarantees as quasi-fiscal operations
+  that must be added to the conventional fiscal deficit to measure the true policy
+  stance.
+
+  '
 source_refs:
-  - path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
-    pages: "lines 2209–2239 (Box 4.1 seigniorage), lines 2641–2663 (Box 4.6 helicopter money and CB P&L), lines 2720–2728 (sterilization costs), lines 2730–2763 (fiscal accommodation and fiscal dominance), lines 2948, 2963–2969 (profit transfers as nontax revenue)"
-    weight: primary
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 2280–2292 (Box 3.7 Quasi-Fiscal Operations), lines 1846 (CB profits in GFS), lines 2467 (sterilization cost exercise)"
-    weight: primary
-  - path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-5.md
-    pages: "lines 863–882 (fiscal-monetary coordination, CB independence under crisis, government backstop of CB solvency)"
-    weight: secondary
+- path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
+  pages: lines 2209–2239 (Box 4.1 seigniorage), lines 2641–2663 (Box 4.6 helicopter
+    money and CB P&L), lines 2720–2728 (sterilization costs), lines 2730–2763 (fiscal
+    accommodation and fiscal dominance), lines 2948, 2963–2969 (profit transfers as
+    nontax revenue)
+  weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: lines 2280–2292 (Box 3.7 Quasi-Fiscal Operations), lines 1846 (CB profits
+    in GFS), lines 2467 (sterilization cost exercise)
+  weight: primary
+- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro -
+    Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-5.md
+  pages: lines 863–882 (fiscal-monetary coordination, CB independence under crisis,
+    government backstop of CB solvency)
+  weight: secondary
+parent_node: null
 related:
-  - node: "[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
-    relation: upstream_mechanism
-  - node: "[[CB_Seigniorage_Income_Capital_Loss_Policy_Independence]]"
-    relation: companion_concept
-  - node: "[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]"
-    relation: accounting_foundation
-  - node: "[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]"
-    relation: identity_foundation
-  - node: "[[Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating]]"
-    relation: crisis_endpoint
-  - node: "[[EM_Central_Bank_Policy_Mix_FIT_Framework]]"
-    relation: policy_response_framework
-date_created: "2026-05-24"
-date_updated: "2026-05-24"
+- node: '[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]'
+  relation: upstream_mechanism
+- node: '[[CB_Seigniorage_Income_Capital_Loss_Policy_Independence]]'
+  relation: companion_concept
+- node: '[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]'
+  relation: accounting_foundation
+- node: '[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]'
+  relation: identity_foundation
+- node: '[[Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating]]'
+  relation: crisis_endpoint
+- node: '[[EM_Central_Bank_Policy_Mix_FIT_Framework]]'
+  relation: policy_response_framework
+date_created: '2026-05-24'
+date_updated: '2026-05-24'
 ---
 
 ## The Fundamental Channel Architecture

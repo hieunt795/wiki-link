@@ -1,49 +1,52 @@
 ---
 node_id: basel_iv_output_floor_72pct_internal_model_constraint_001
 type: mechanism
-title: "Basel IV Output Floor: 72.5% SA-RWA Floor on Internal Models"
+title: 'Basel IV Output Floor: 72.5% SA-RWA Floor on Internal Models'
 aliases:
-  - output floor Basel IV
-  - 72.5% floor
-  - RWA floor
-  - sàn đầu ra Basel IV
-  - model floor IRB
-  - output floor standardised approach
+- output floor Basel IV
+- 72.5% floor
+- RWA floor
+- sàn đầu ra Basel IV
+- model floor IRB
+- output floor standardised approach
 domain:
   primary: basel_risk
 tags:
-  - output_floor
-  - rwa
-  - irb
-  - internal_models
-  - standardised_approach
-  - basel4
-  - capital_adequacy
-  - credit_risk
+- output_floor
+- rwa
+- irb
+- internal_models
+- standardised_approach
+- basel4
+- capital_adequacy
+- credit_risk
 confidence: 3
 stability: stable
-thesis: >
-  The output floor requires that a bank's total RWA (used for capital ratio
-  calculation) must not fall below 72.5% of the RWA computed using only
-  standardised approaches — constraining the capital reduction achievable through
-  internal models (IRB for credit risk, IMA for market risk, IMM for counterparty
-  credit risk) and eliminating incentives for excessive model optimisation,
-  particularly in specialised lending and low-risk mortgage portfolios.
+thesis: 'The output floor requires that a bank''s total RWA (used for capital ratio
+  calculation) must not fall below 72.5% of the RWA computed using only standardised
+  approaches — constraining the capital reduction achievable through internal models
+  (IRB for credit risk, IMA for market risk, IMM for counterparty credit risk) and
+  eliminating incentives for excessive model optimisation, particularly in specialised
+  lending and low-risk mortgage portfolios.
+
+  '
 source_refs:
-  - path: 02_sources/regulator/bcbs/BaselFramework.md
-    pages: "RBC20.4, RBC20.11-20.13 (output floor mechanics and calculation), RBC90 (phase-in 2023-2028)"
-    weight: primary
+- path: 02_sources/regulator/bcbs/BaselFramework.md
+  pages: RBC20.4, RBC20.11-20.13 (output floor mechanics and calculation), RBC90 (phase-in
+    2023-2028)
+  weight: primary
+parent_node: '[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]'
 related:
-  - node: "[[Basel_Iii_Capital_Stack_Cet1_Tier1_Total_Buffer_Architecture]]"
-    relation: rwa_denominator_constraint
-  - node: "[[Basel_Output_Floor_Specialized_Lending_Impact]]"
-    relation: credit_impact_application
-  - node: "[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]"
-    relation: component_of
-  - node: "[[Basel_Driven_Credit_Migration_To_Private_Markets]]"
-    relation: credit_migration_driver
-date_created: "2026-05-26"
-date_updated: "2026-05-26"
+- node: '[[Basel_Iii_Capital_Stack_Cet1_Tier1_Total_Buffer_Architecture]]'
+  relation: rwa_denominator_constraint
+- node: '[[Basel_Output_Floor_Specialized_Lending_Impact]]'
+  relation: credit_impact_application
+- node: '[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]'
+  relation: component_of
+- node: '[[Basel_Driven_Credit_Migration_To_Private_Markets]]'
+  relation: credit_migration_driver
+date_created: '2026-05-26'
+date_updated: '2026-05-26'
 ---
 
 ## Mechanism

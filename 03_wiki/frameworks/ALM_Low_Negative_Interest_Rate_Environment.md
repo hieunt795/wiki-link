@@ -3,58 +3,60 @@ node_id: alm_low_negative_interest_rate_environment_001
 type: framework
 title: ALM in a Low/Negative Interest Rate Environment
 aliases:
-  - low rate ALM
-  - negative rate ALM
-  - deposit beta ALM
-  - floor risk banking book
-  - margin compression low rates
-  - ALM lãi suất thấp âm
-  - rủi ro sàn tiền gửi
-  - beta tiền gửi lãi suất thấp
-  - nén biên lãi suất môi trường lãi thấp
+- low rate ALM
+- negative rate ALM
+- deposit beta ALM
+- floor risk banking book
+- margin compression low rates
+- ALM lãi suất thấp âm
+- rủi ro sàn tiền gửi
+- beta tiền gửi lãi suất thấp
+- nén biên lãi suất môi trường lãi thấp
 domain:
   primary: alm
   secondary: []
 tags:
-  - low-rate
-  - negative-rate
-  - deposit-beta
-  - floor-risk
-  - node: "[[NII]]"
-    relation: related_to
-  - node: "[[EVE]]"
-    relation: related_to
-  - margin-compression
-  - swaption
-  - interest-rate-floor
-  - node: "[[IRRBB]]"
-    relation: related_to
-  - node: "[[ALM]]"
-    relation: related_to
+- low-rate
+- negative-rate
+- deposit-beta
+- floor-risk
+- node: '[[NII]]'
+  relation: related_to
+- node: '[[EVE]]'
+  relation: related_to
+- margin-compression
+- swaption
+- interest-rate-floor
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[ALM]]'
+  relation: related_to
 confidence: 1
 stability: stable
-thesis: >
-  In a low/negative interest rate environment, ALM faces a structural dilemma because
-  deposit beta collapses near zero (breaking standard rate-sensitivity models), retail
-  deposits cannot be priced below zero creating a floor risk that produces nonlinear
-  NII losses in negative rate scenarios, and countermeasures — including receiver
-  swaptions, interest rate floors, fee introduction, and maturity extension — involve
-  explicit trade-offs between NII stability (balance sheet A) and EVE stability
+thesis: 'In a low/negative interest rate environment, ALM faces a structural dilemma
+  because deposit beta collapses near zero (breaking standard rate-sensitivity models),
+  retail deposits cannot be priced below zero creating a floor risk that produces
+  nonlinear NII losses in negative rate scenarios, and countermeasures — including
+  receiver swaptions, interest rate floors, fee introduction, and maturity extension
+  — involve explicit trade-offs between NII stability (balance sheet A) and EVE stability
   (balance sheet B). [LLM]
+
+  '
 source_refs:
-  - path: "02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md"
-    pages: "Chapter 10: ALM in a Low/Negative Interest Rate Environment"
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: 'Chapter 10: ALM in a Low/Negative Interest Rate Environment'
+parent_node: null
 related:
-  - node: "[[NMD_Stochastic_Three_Factor_Model]]"
-    relation: related_to
-  - node: "[[NMD_Decay_Model_Volume_Segmentation]]"
-    relation: related_to
-  - node: "[[IRRBB_Standardised_Versus_Internal_Model_Approach]]"
-    relation: related_to
-  - node: "[[ILAAP_Supervisory_Liquidity_Framework]]"
-    relation: related_to
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[NMD_Stochastic_Three_Factor_Model]]'
+  relation: related_to
+- node: '[[NMD_Decay_Model_Volume_Segmentation]]'
+  relation: related_to
+- node: '[[IRRBB_Standardised_Versus_Internal_Model_Approach]]'
+  relation: related_to
+- node: '[[ILAAP_Supervisory_Liquidity_Framework]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Thesis

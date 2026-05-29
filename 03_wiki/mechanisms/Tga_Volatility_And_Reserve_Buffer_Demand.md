@@ -3,36 +3,45 @@ node_id: tga_volatility_and_reserve_buffer_demand_mec_001
 type: mechanism
 title: TGA Volatility And Reserve Buffer Demand
 aliases:
-  - TGA volatility buffer
-  - reserve buffer demand
-  - bien dong TGA
-  - nhu cau dem du tru
+- TGA volatility buffer
+- reserve buffer demand
+- bien dong TGA
+- nhu cau dem du tru
 domain:
   primary: monetary_policy
-  secondary: [fiscal_policy]
-tags: [tga, reserves, volatility, buffer, rate_control, treasury]
+  secondary:
+  - fiscal_policy
+tags:
+- tga
+- reserves
+- volatility
+- buffer
+- rate_control
+- treasury
 confidence: 3
 stability: stable
-thesis: >
-  The Treasury General Account affects Fed rate control not only through its level
-  but through its volatility. When Treasury cash balances swing sharply, the Fed
-  must carry a larger reserve buffer to prevent sudden reserve scarcity or excess
+thesis: 'The Treasury General Account affects Fed rate control not only through its
+  level but through its volatility. When Treasury cash balances swing sharply, the
+  Fed must carry a larger reserve buffer to prevent sudden reserve scarcity or excess
   from pushing overnight rates out of its desired operating range.
+
+  '
 source_refs:
-  - path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
-    pages: "full document"
-    weight: primary
+- path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
+  pages: full document
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Treasury General Account TGA Reserve Swap]]"
-    relation: mechanistic_basis
-  - node: "[[Ample Reserves Buffer Sizing TGA Volatility]]"
-    relation: analytical_extension
-  - node: "[[Fed Ample Reserves Rate Control Framework]]"
-    relation: rate_control_context
-  - node: "[[TGA Reserve Inverse Relationship Fed Balance Sheet Growth]]"
-    relation: balance_sheet_effect
-  - node: "[[Fed Fiscal Agent Treasury Relationship]]"
-    relation: operational_context
+- node: '[[Treasury General Account TGA Reserve Swap]]'
+  relation: mechanistic_basis
+- node: '[[Ample Reserves Buffer Sizing TGA Volatility]]'
+  relation: analytical_extension
+- node: '[[Fed Ample Reserves Rate Control Framework]]'
+  relation: rate_control_context
+- node: '[[TGA Reserve Inverse Relationship Fed Balance Sheet Growth]]'
+  relation: balance_sheet_effect
+- node: '[[Fed Fiscal Agent Treasury Relationship]]'
+  relation: operational_context
 date_created: 2026-05-24
 date_updated: 2026-05-24
 ---

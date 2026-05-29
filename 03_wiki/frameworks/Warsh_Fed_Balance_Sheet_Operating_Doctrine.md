@@ -3,40 +3,51 @@ node_id: warsh_fed_balance_sheet_operating_doctrine_frm_001
 type: framework
 title: Warsh Fed Balance Sheet Operating Doctrine
 aliases:
-  - Warsh doctrine
-  - operating doctrine
-  - hoc thu nho bang can doi Fed cua Warsh
-  - chien luoc van hanh bang can doi Fed
+- Warsh doctrine
+- operating doctrine
+- hoc thu nho bang can doi Fed cua Warsh
+- chien luoc van hanh bang can doi Fed
 domain:
   primary: monetary_policy
-  secondary: [fiscal_policy, financial_markets]
-tags: [warsh, fed, treasury, balance_sheet, maturity, independence, credit_allocation]
+  secondary:
+  - fiscal_policy
+  - financial_markets
+tags:
+- warsh
+- fed
+- treasury
+- balance_sheet
+- maturity
+- independence
+- credit_allocation
 confidence: 3
 stability: evolving
-thesis: >
-  Warsh's balance-sheet doctrine is not just "QT for its own sake." It is a
-  broader operating model in which the Fed shrinks its market footprint, stops
-  allocating credit, keeps maturity-risk management with the Treasury, and uses
-  the balance sheet mainly for short-term reserve provision or collateralized
-  lending rather than for long-duration asset accumulation.
+thesis: 'Warsh''s balance-sheet doctrine is not just "QT for its own sake." It is
+  a broader operating model in which the Fed shrinks its market footprint, stops allocating
+  credit, keeps maturity-risk management with the Treasury, and uses the balance sheet
+  mainly for short-term reserve provision or collateralized lending rather than for
+  long-duration asset accumulation.
+
+  '
 source_refs:
-  - path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
-    pages: "full document"
-    weight: primary
-  - path: 02_sources/Clipping/A new Fed-Treasury Accord_.md
-    pages: "full document"
-    weight: supporting
+- path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
+  pages: full document
+  weight: primary
+- path: 02_sources/Clipping/A new Fed-Treasury Accord_.md
+  pages: full document
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Warsh Balance Sheet Stimulus Swap]]"
-    relation: ideological_parent
-  - node: "[[New Fed-Treasury Accord (2026 Proposal)]]"
-    relation: institutional_design
-  - node: "[[Fed Balance Sheet Size and Policy Rate Independence]]"
-    relation: contested_by
-  - node: "[[Fed Treasury Operational Choice Space]]"
-    relation: implementation_context
-  - node: "[[Fed Fiscal Agent Treasury Relationship]]"
-    relation: governance_context
+- node: '[[Warsh Balance Sheet Stimulus Swap]]'
+  relation: ideological_parent
+- node: '[[New Fed-Treasury Accord (2026 Proposal)]]'
+  relation: institutional_design
+- node: '[[Fed Balance Sheet Size and Policy Rate Independence]]'
+  relation: contested_by
+- node: '[[Fed Treasury Operational Choice Space]]'
+  relation: implementation_context
+- node: '[[Fed Fiscal Agent Treasury Relationship]]'
+  relation: governance_context
 date_created: 2026-05-24
 date_updated: 2026-05-24
 ---

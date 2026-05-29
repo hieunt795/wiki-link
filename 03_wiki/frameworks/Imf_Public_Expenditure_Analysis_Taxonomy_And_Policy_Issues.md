@@ -3,55 +3,59 @@ node_id: imf_public_expenditure_taxonomy_001
 type: framework
 title: IMF Public Expenditure Analysis — Taxonomy and Policy Issues
 aliases:
-  - public expenditure taxonomy
-  - government spending categories
-  - subsidy taxonomy
-  - expenditure policy framework
-  - phân loại chi tiêu công
-  - chi ngân sách
-  - trợ cấp ngân sách
-  - phân tích chi tiêu chính phủ
-  - phân loại trợ cấp
+- public expenditure taxonomy
+- government spending categories
+- subsidy taxonomy
+- expenditure policy framework
+- phân loại chi tiêu công
+- chi ngân sách
+- trợ cấp ngân sách
+- phân tích chi tiêu chính phủ
+- phân loại trợ cấp
 domain:
   primary: fiscal_policy
   secondary: monetary_policy
 tags:
-  - public_expenditure
-  - subsidies
-  - fiscal_policy
-  - budget
-  - social_safety_net
-  - sequestering
-  - imf_macro_accounting
-  - government_spending
-  - quasi_fiscal
+- public_expenditure
+- subsidies
+- fiscal_policy
+- budget
+- social_safety_net
+- sequestering
+- imf_macro_accounting
+- government_spending
+- quasi_fiscal
 confidence: 3
 stability: stable
-thesis: >
-  Public expenditure analysis addresses three fundamental problems: spending level
-  (aggregate fiscal stance), efficiency (value delivered per unit of spending), and
-  mix (allocation across types and programs). The IMF taxonomy disaggregates expenditure
-  into wages/salaries, goods and services, subsidies (7 forms), transfers, interest, and
-  capital. Subsidies are the most analytically complex category — spanning cash grants
-  to regulatory subsidies and exchange rate subsidies — and include large quasi-fiscal
+thesis: 'Public expenditure analysis addresses three fundamental problems: spending
+  level (aggregate fiscal stance), efficiency (value delivered per unit of spending),
+  and mix (allocation across types and programs). The IMF taxonomy disaggregates expenditure
+  into wages/salaries, goods and services, subsidies (7 forms), transfers, interest,
+  and capital. Subsidies are the most analytically complex category — spanning cash
+  grants to regulatory subsidies and exchange rate subsidies — and include large quasi-fiscal
   operations that do not appear in the budget. The primary macroeconomic concern is
-  controlling the wage bill and subsidy burden, which are the most politically rigid and
-  most inflationary components of government spending. [LLM]
+  controlling the wage bill and subsidy burden, which are the most politically rigid
+  and most inflationary components of government spending. [LLM]
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 2203–2316 (expenditure types, subsidy taxonomy, 5-element framework, level/efficiency/mix problems, Box 3.6 Social Safety Nets, Box 3.8 Sequestering)"
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: lines 2203–2316 (expenditure types, subsidy taxonomy, 5-element framework,
+    level/efficiency/mix problems, Box 3.6 Social Safety Nets, Box 3.8 Sequestering)
+  weight: primary
+parent_node: '[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]'
 related:
-  - node: "[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]"
-    relation: expenditure_is_core_component_of_deficit_analysis
-  - node: "[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]"
-    relation: exchange_rate_and_credit_subsidies_are_quasi_fiscal
-  - node: "[[Fiscal_Dominance_Monetary_Policy_Constraint]]"
-    relation: wage_bill_and_subsidies_drive_fiscal_dominance
-  - node: "[[Imf_Inflation_Tax_Seigniorage_Revenue]]"
-    relation: inflationary_spending_forces_seigniorage
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]'
+  relation: expenditure_is_core_component_of_deficit_analysis
+- node: '[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]'
+  relation: exchange_rate_and_credit_subsidies_are_quasi_fiscal
+- node: '[[Fiscal_Dominance_Monetary_Policy_Constraint]]'
+  relation: wage_bill_and_subsidies_drive_fiscal_dominance
+- node: '[[Imf_Inflation_Tax_Seigniorage_Revenue]]'
+  relation: inflationary_spending_forces_seigniorage
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Expenditure Taxonomy: Six Primary Categories

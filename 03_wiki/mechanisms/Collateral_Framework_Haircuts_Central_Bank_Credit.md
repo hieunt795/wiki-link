@@ -31,6 +31,7 @@ source_refs:
 - path: 02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md
   pages: Ch9, Bindseil 2014
   weight: primary
+parent_node: null
 related:
 - node: '[[Collateral Velocity And Pledged Collateral Market Mechanics]]'
   relation: shared_tag:collateral

@@ -32,6 +32,7 @@ source_refs:
 - path: 02_sources/Inbox/Why Is Currency a Liability of the Fed_.md
   pages: ''
   weight: primary
+parent_node: null
 related: []
 date_created: '2026-05-26'
 date_updated: '2026-05-26'

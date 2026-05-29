@@ -45,6 +45,7 @@ source_refs:
   pages: §IV (Banking System Response), §V (Credit Migration), §VI (Private Credit),
     §VII (System Outcome)
   weight: primary
+parent_node: null
 related:
 - node: '[[Basel_III_Endgame_Capital_Liquidity_Credit_Migration]]'
   relation: driven_by

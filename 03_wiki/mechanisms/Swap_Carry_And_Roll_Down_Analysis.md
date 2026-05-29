@@ -26,6 +26,7 @@ source_refs:
 - path: 02_sources/books/howard_corb_swaps/Howard_Corb_Interest_Rate_Swaps.md
   pages: Chapter 8
   weight: primary
+parent_node: null
 related:
 - node: '[[Asset Swap Mechanics And Spread]]'
   relation: shared_tag:swaps

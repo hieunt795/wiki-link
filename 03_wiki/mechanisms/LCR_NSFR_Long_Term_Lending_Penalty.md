@@ -23,36 +23,41 @@ tags:
 - private-credit-driver
 confidence: 3
 stability: stable
-thesis: >
-  LCR forces banks to hold HQLA ≥ 30-day stressed net cash outflows (including
-  assumed draw-down of 10% on committed credit lines to non-financial corporates
-  and 30-40% on committed liquidity/credit lines to financial entities per LCR40),
-  while NSFR requires stable funding covering 85% of notional for unrated performing
-  loans ≥1yr (NSF30.31); together these rules create a structural funding cost
-  penalty — HQLA opportunity cost on the LCR side, expensive long-term stable
-  funding premium on the NSFR side — that makes long-duration corporate and
-  specialized lending uneconomical relative to short-term or HQLA assets.
+thesis: 'LCR forces banks to hold HQLA ≥ 30-day stressed net cash outflows (including
+  assumed draw-down of 10% on committed credit lines to non-financial corporates and
+  30-40% on committed liquidity/credit lines to financial entities per LCR40), while
+  NSFR requires stable funding covering 85% of notional for unrated performing loans
+  ≥1yr (NSF30.31); together these rules create a structural funding cost penalty —
+  HQLA opportunity cost on the LCR side, expensive long-term stable funding premium
+  on the NSFR side — that makes long-duration corporate and specialized lending uneconomical
+  relative to short-term or HQLA assets.
+
+  '
 steps:
 - 'Step 1 (LCR): Bank extends €100M committed credit line to PE/corporate borrower'
 - 'Step 2 (LCR): LCR40 applies 10% drawdown rate for committed credit lines to non-financial
   corporates → bank must hold €10M HQLA (govts, CB reserves) against contingent outflow'
 - 'Step 3 (LCR): HQLA earns near-zero yield → opportunity cost = (lending spread −
   HQLA yield) × €10M for the undrawn portion'
-- 'Step 4 (NSFR): Bank makes €100M unrated corporate loan, residual maturity >1yr → RSF
-  factor = 85% per NSF30.31(2)'
-- 'Step 5 (NSFR): Must fund €85M with ASF sources: stable retail deposits (95% ASF) or
-  long-term wholesale bonds (100% ASF) — both carry tenor premium over short-term wholesale (0% ASF)'
-- 'Step 6: Combined LCR opportunity cost + NSFR stable-funding premium eliminates spread
-  advantage → bank exits long-term corporate lending'
+- 'Step 4 (NSFR): Bank makes €100M unrated corporate loan, residual maturity >1yr
+  → RSF factor = 85% per NSF30.31(2)'
+- 'Step 5 (NSFR): Must fund €85M with ASF sources: stable retail deposits (95% ASF)
+  or long-term wholesale bonds (100% ASF) — both carry tenor premium over short-term
+  wholesale (0% ASF)'
+- 'Step 6: Combined LCR opportunity cost + NSFR stable-funding premium eliminates
+  spread advantage → bank exits long-term corporate lending'
 transmission_lags: medium
 empirical_evidence: strong
 source_refs:
 - path: 02_sources/regulator/bcbs/BaselFramework.md
-  pages: "LCR20 (30-day stress scenario), LCR30 (HQLA definition), LCR40.40-42 (wholesale run-off rates), NSF30.31 (85% RSF for unrated performing loans ≥1yr), NSF99 (ASF/RSF summary tables)"
+  pages: LCR20 (30-day stress scenario), LCR30 (HQLA definition), LCR40.40-42 (wholesale
+    run-off rates), NSF30.31 (85% RSF for unrated performing loans ≥1yr), NSF99 (ASF/RSF
+    summary tables)
   weight: primary
 - path: 02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md
   pages: Section II.4 — Quy Tắc Thanh Khoản
   weight: supporting
+parent_node: null
 related:
 - node: '[[Basel_Output_Floor_Specialized_Lending_Impact]]'
   relation: works_in_conjunction_with

@@ -47,6 +47,7 @@ source_refs:
 - path: 02_sources/deep-research/Deep Dive_ Private Credit.md
   pages: 'Section: The Plumbing that Creates the Risk — PIK subsection'
   weight: primary
+parent_node: null
 related:
 - node: '[[Private_Credit_Reflexive_Loop]]'
   relation: masking_mechanism_within

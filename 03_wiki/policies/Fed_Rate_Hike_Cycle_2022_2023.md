@@ -1,70 +1,66 @@
 ---
 node_id: policy_fed_hike_cycle_2022_001
 type: policy
-title: "Fed Rate Hike Cycle 2022–2023"
+title: Fed Rate Hike Cycle 2022–2023
 aliases:
-  - Fed tightening cycle 2022
-  - FOMC rate hikes 2022-2023
-  - post-COVID tightening
-  - chu kỳ tăng lãi suất Fed 2022-2023
-
+- Fed tightening cycle 2022
+- FOMC rate hikes 2022-2023
+- post-COVID tightening
+- chu kỳ tăng lãi suất Fed 2022-2023
 domain:
   primary: monetary_policy
   secondary:
-    - financial_markets
+  - financial_markets
 tags:
-  - fed
-  - rate-hike
-  - tightening
-  - inflation
-  - unconventional-scale
-
+- fed
+- rate-hike
+- tightening
+- inflation
+- unconventional-scale
 confidence: 3
 stability: stable
-
 jurisdiction: US
-period: "2022–2023"
+period: 2022–2023
 policy_type: conventional_monetary
 instruments:
-  - "Federal funds rate increases (11 hikes: +525bps total, March 2022 – July 2023)"
-  - "Quantitative Tightening (QT): balance sheet runoff from June 2022"
-  - "Forward guidance: data-dependent, higher-for-longer signaling"
-outcome: >
-  EFFR raised from 0–0.25% (March 2022) to 5.25–5.50% (July 2023) — fastest tightening
-  cycle since the 1980s. Inflation (PCE) declined from 7%+ peak to ~2.5% by end-2024.
-  Rate cuts commenced September 2024; by April 2026, EFFR target at 3.50–3.75%.
+- 'Federal funds rate increases (11 hikes: +525bps total, March 2022 – July 2023)'
+- 'Quantitative Tightening (QT): balance sheet runoff from June 2022'
+- 'Forward guidance: data-dependent, higher-for-longer signaling'
+outcome: 'EFFR raised from 0–0.25% (March 2022) to 5.25–5.50% (July 2023) — fastest
+  tightening cycle since the 1980s. Inflation (PCE) declined from 7%+ peak to ~2.5%
+  by end-2024. Rate cuts commenced September 2024; by April 2026, EFFR target at 3.50–3.75%.
 
-thesis: >
-  The Fed's 2022–2023 tightening cycle — 525bps in 11 meetings — was the fastest since
-  Volcker, triggered by post-COVID supply shock inflation amplified by fiscal stimulus.
-  The simultaneous QT added a balance sheet tightening channel. The cycle strained
-  banking sector duration positions (SVB March 2023) and tested the ample reserves
-  framework's resilience to rapid reserve drainage.
+  '
+thesis: 'The Fed''s 2022–2023 tightening cycle — 525bps in 11 meetings — was the fastest
+  since Volcker, triggered by post-COVID supply shock inflation amplified by fiscal
+  stimulus. The simultaneous QT added a balance sheet tightening channel. The cycle
+  strained banking sector duration positions (SVB March 2023) and tested the ample
+  reserves framework''s resilience to rapid reserve drainage.
 
+  '
 source_refs:
-  - path: 02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md
-    weight: primary
-  - path: 02_sources/Clipping/Breaking Out of the Central Bank Balance Sheet Trilemma.md
-    weight: supporting
-  - path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
-    weight: supporting
-
+- path: 02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md
+  weight: primary
+- path: 02_sources/Clipping/Breaking Out of the Central Bank Balance Sheet Trilemma.md
+  weight: supporting
+- path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Fed_QT_2022_Balance_Sheet_Runoff_Policy]]"
-    relation: concurrent_with
-  - node: "[[Fed_Ample_Reserves_Range_Floor_Framework]]"
-    relation: stresses
-  - node: "[[Quantitative_Tightening_Qt_Balance_Sheet_Runoff]]"
-    relation: implements
-  - node: "[[Irrbb_Eve_Nii_Dual_Metric_Framework]]"
-    relation: exposed
-  - node: "[[Non_Linear_Inflation_Amplifier_Mechanics]]"
-    relation: response_to
-  - node: "[[Supply_Shock_Policy_Response_Scenario_Taxonomy]]"
-    relation: instance_of
-  - node: "[[Federal_Reserve]]"
-    relation: executed_by
-
+- node: '[[Fed_QT_2022_Balance_Sheet_Runoff_Policy]]'
+  relation: concurrent_with
+- node: '[[Fed_Ample_Reserves_Range_Floor_Framework]]'
+  relation: stresses
+- node: '[[Quantitative_Tightening_Qt_Balance_Sheet_Runoff]]'
+  relation: implements
+- node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
+  relation: exposed
+- node: '[[Non_Linear_Inflation_Amplifier_Mechanics]]'
+  relation: response_to
+- node: '[[Supply_Shock_Policy_Response_Scenario_Taxonomy]]'
+  relation: instance_of
+- node: '[[Federal_Reserve]]'
+  relation: executed_by
 date_created: 2026-05-23
 date_updated: 2026-05-23
 last_reviewed: 2026-05-23

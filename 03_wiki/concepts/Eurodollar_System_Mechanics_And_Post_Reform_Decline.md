@@ -29,6 +29,7 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Global Dollar and Eurodollar Systems.md
   pages: Full document
   weight: primary
+parent_node: null
 related:
 - node: '[[Global Dollar System Eurodollar Architecture]]'
   relation: shared_tag:eurodollar

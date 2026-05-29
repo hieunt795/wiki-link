@@ -24,26 +24,33 @@ tags:
 - ioer
 confidence: 5
 stability: stable
-thesis: "QE is a 'coiled spring' for collateral markets: by absorbing high-quality collateral (HQC) onto central bank balance sheets, it suppresses collateral velocity and financial lubrication. This 'siloing' effect creates collateral scarcity, driving repo rates down (often below the CB's floor). The subsequent withdrawal (QT) or 'Not-QE' interventions (like RMOs or BTFP) must manage the dual tension of releasing collateral back to the market while maintaining rate control, a process that can trigger a 'Scissors Effect' where rising supply meets falling CB support."
+thesis: 'QE is a ''coiled spring'' for collateral markets: by absorbing high-quality
+  collateral (HQC) onto central bank balance sheets, it suppresses collateral velocity
+  and financial lubrication. This ''siloing'' effect creates collateral scarcity,
+  driving repo rates down (often below the CB''s floor). The subsequent withdrawal
+  (QT) or ''Not-QE'' interventions (like RMOs or BTFP) must manage the dual tension
+  of releasing collateral back to the market while maintaining rate control, a process
+  that can trigger a ''Scissors Effect'' where rising supply meets falling CB support.'
 source_refs:
 - path: 02_sources/books/singh_collateral_plumbing/Singh_Collateral_Financial_Plumbing.md
-  pages: "Chapter 4: Collateral and Monetary Policy; Chapter 11: Transmission"
+  pages: 'Chapter 4: Collateral and Monetary Policy; Chapter 11: Transmission'
   weight: primary
 - path: 02_sources/books/conks/Conk - Repo.md
-  pages: "The QE Flood and RRP shock absorber"
+  pages: The QE Flood and RRP shock absorber
   weight: supporting
 - path: 02_sources/Clipping/Who Buys When the ECB Doesn't_.md
   pages: Full document
   weight: supporting
+parent_node: null
 related:
-- node: "[[Collateral_Velocity_And_Pledged_Collateral_Market_Mechanics]]"
+- node: '[[Collateral_Velocity_And_Pledged_Collateral_Market_Mechanics]]'
   relation: foundational_concept
-- node: "[[Scissors_Effect_Ecb_Qt_And_Sovereign_Supply]]"
+- node: '[[Scissors_Effect_Ecb_Qt_And_Sovereign_Supply]]'
   relation: consequence_of_unwinding_qe
-- node: "[[Fed_Overnight_Reverse_Repo_ON_RRP]]"
+- node: '[[Fed_Overnight_Reverse_Repo_ON_RRP]]'
   relation: accounting_drainage_mechanism
-date_created: "2026-05-23"
-date_updated: "2026-05-24"
+date_created: '2026-05-23'
+date_updated: '2026-05-24'
 ---
 
 ## Scope Boundary

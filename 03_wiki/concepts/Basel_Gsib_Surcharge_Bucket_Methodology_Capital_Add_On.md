@@ -1,50 +1,54 @@
 ---
 node_id: basel_gsib_surcharge_bucket_methodology_capital_add_on_001
 type: concept
-title: "Basel G-SIB Surcharge: 5-Category Score, Bucket Methodology, and CET1 Add-On"
+title: 'Basel G-SIB Surcharge: 5-Category Score, Bucket Methodology, and CET1 Add-On'
 aliases:
-  - G-SIB surcharge
-  - G-SIB higher loss absorbency
-  - systemic importance buffer
-  - phụ phí G-SIB
-  - ngân hàng tầm quan trọng hệ thống toàn cầu
-  - HLA G-SIB
+- G-SIB surcharge
+- G-SIB higher loss absorbency
+- systemic importance buffer
+- phụ phí G-SIB
+- ngân hàng tầm quan trọng hệ thống toàn cầu
+- HLA G-SIB
 domain:
   primary: basel_risk
 tags:
-  - gsib
-  - systemic_risk
-  - capital_surcharge
-  - indicator_based
-  - cet1
-  - higher_loss_absorbency
-  - bucket_methodology
-  - basel3
+- gsib
+- systemic_risk
+- capital_surcharge
+- indicator_based
+- cet1
+- higher_loss_absorbency
+- bucket_methodology
+- basel3
 confidence: 3
 stability: stable
-thesis: >
-  G-SIBs are identified annually via a 12-indicator scoring methodology across 5
-  equal-weighted categories (size, cross-jurisdictional activity, interconnectedness,
+thesis: 'G-SIBs are identified annually via a 12-indicator scoring methodology across
+  5 equal-weighted categories (size, cross-jurisdictional activity, interconnectedness,
   substitutability, complexity); banks scoring ≥130 bps are designated G-SIBs and
   allocated to Buckets 1–5 (1.0%–3.5% CET1 add-on), with an empty Bucket 5 (3.5%)
   serving as an anti-gaming deterrent — if populated, a new bucket at 4.5% is created;
-  the add-on extends the capital conservation buffer and triggers the same MDA
-  distribution restriction mechanism when breached.
+  the add-on extends the capital conservation buffer and triggers the same MDA distribution
+  restriction mechanism when breached.
+
+  '
 source_refs:
-  - path: 02_sources/regulator/bcbs/BaselFramework.md
-    pages: "SCO40 (indicator-based methodology, 5 categories, 12 indicators, bucketing approach SCO40.19-22), RBC40.1-5 (higher loss absorbency implementation, bucket table)"
-    weight: primary
+- path: 02_sources/regulator/bcbs/BaselFramework.md
+  pages: SCO40 (indicator-based methodology, 5 categories, 12 indicators, bucketing
+    approach SCO40.19-22), RBC40.1-5 (higher loss absorbency implementation, bucket
+    table)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Basel_Iii_Capital_Stack_Cet1_Tier1_Total_Buffer_Architecture]]"
-    relation: additional_buffer_layer
-  - node: "[[Basel_Ccyb_Countercyclical_Buffer_Macroprudential_Activation]]"
-    relation: buffer_stack_peer
-  - node: "[[Basel_Iii_Leverage_Ratio_Non_Rwa_Capital_Constraint]]"
-    relation: gsib_leverage_add_on
-  - node: "[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]"
-    relation: constraint_system_component
-date_created: "2026-05-26"
-date_updated: "2026-05-26"
+- node: '[[Basel_Iii_Capital_Stack_Cet1_Tier1_Total_Buffer_Architecture]]'
+  relation: additional_buffer_layer
+- node: '[[Basel_Ccyb_Countercyclical_Buffer_Macroprudential_Activation]]'
+  relation: buffer_stack_peer
+- node: '[[Basel_Iii_Leverage_Ratio_Non_Rwa_Capital_Constraint]]'
+  relation: gsib_leverage_add_on
+- node: '[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]'
+  relation: constraint_system_component
+date_created: '2026-05-26'
+date_updated: '2026-05-26'
 ---
 
 ## Overview

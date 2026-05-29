@@ -28,6 +28,7 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Global Dollar and Eurodollar Systems.md
   pages: The US Dollar Endgame, Demystifying the Eurodollar System
   weight: primary
+parent_node: null
 related:
 - node: '[[Eurodollar System Mechanics And Post-Reform Decline]]'
   relation: shared_tag:eurodollar

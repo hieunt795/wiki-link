@@ -3,59 +3,65 @@ node_id: fear_of_floating_stagflation_amplifier_001
 type: mechanism
 title: Fear-Of-Floating As Stagflation Amplifier — FX Exposure Lock-In
 aliases:
-  - fear of floating stagflation
-  - FX mismatch policy lock
-  - unhedged FX exposure policy trap
-  - stagflation amplifier FX regime
-  - sợ thả nổi và bẫy đình lạm
-  - khuếch đại đình lạm qua rủi ro tỷ giá
+- fear of floating stagflation
+- FX mismatch policy lock
+- unhedged FX exposure policy trap
+- stagflation amplifier FX regime
+- sợ thả nổi và bẫy đình lạm
+- khuếch đại đình lạm qua rủi ro tỷ giá
 domain:
   primary: monetary_policy
   secondary: financial_markets
 tags:
-  - fear_of_floating
-  - stagflation
-  - fx_mismatch
-  - balance_sheet_crisis
-  - em_policy
-  - fx_intervention
-  - monetary_autonomy
-  - policy_trap
+- fear_of_floating
+- stagflation
+- fx_mismatch
+- balance_sheet_crisis
+- em_policy
+- fx_intervention
+- monetary_autonomy
+- policy_trap
 confidence: 4
 stability: stable
-thesis: >
-  Fear of floating — the authorities' inability to allow exchange rate depreciation
+thesis: 'Fear of floating — the authorities'' inability to allow exchange rate depreciation
   because unhedged FX exposures in banking and nonbank sectors would trigger mass
   insolvencies — converts a standard BOP adjustment problem into a stagflation trap.
   The CB is locked: cannot depreciate (banking collapse), cannot raise rates freely
   (growth collapses), cannot cut rates (reserves bleed). Inflation persists because
   the FX channel is disabled as a shock absorber; growth stagnates because monetary
   and fiscal space is consumed by peg defense. The mechanism is self-reinforcing:
-  the longer the peg is defended, the larger the unhedged FX exposure buildup,
-  and the higher the eventual cost of adjustment.
+  the longer the peg is defended, the larger the unhedged FX exposure buildup, and
+  the higher the eventual cost of adjustment.
+
+  '
 source_refs:
-  - path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
-    pages: "lines 3693–3814 (Chapter 6 Section 3: Anatomy of an EM Balance Sheet Crisis — fear of floating, FX mismatch buildup, implicit guarantee, malign configuration)"
-    weight: primary
-  - path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
-    pages: "lines 2241–2244 (impossible trinity), lines 2371–2377 (Mundell-Fleming: monetary policy ineffective under fixed FX + open CA)"
-    weight: primary
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 3451–3459 (Krugman 1979: speculative attack mechanism), lines 878–927 (cost-push inflation persistence)"
-    weight: supporting
+- path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
+  pages: 'lines 3693–3814 (Chapter 6 Section 3: Anatomy of an EM Balance Sheet Crisis
+    — fear of floating, FX mismatch buildup, implicit guarantee, malign configuration)'
+  weight: primary
+- path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
+  pages: 'lines 2241–2244 (impossible trinity), lines 2371–2377 (Mundell-Fleming:
+    monetary policy ineffective under fixed FX + open CA)'
+  weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: 'lines 3451–3459 (Krugman 1979: speculative attack mechanism), lines 878–927
+    (cost-push inflation persistence)'
+  weight: supporting
+parent_node: '[[FX_Target_Quasi_Fiscal_Stagflation_Trap_Mechanism]]'
 related:
-  - node: "[[Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating]]"
-    relation: source_concept
-  - node: "[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
-    relation: constraint_mechanism
-  - node: "[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]"
-    relation: fiscal_cost_companion
-  - node: "[[Stagflation_Regime_Diagnostic_Framework]]"
-    relation: regime_outcome
-  - node: "[[FX_Target_Quasi_Fiscal_Stagflation_Trap_Mechanism]]"
-    relation: component_of
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating]]'
+  relation: source_concept
+- node: '[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]'
+  relation: constraint_mechanism
+- node: '[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]'
+  relation: fiscal_cost_companion
+- node: '[[Stagflation_Regime_Diagnostic_Framework]]'
+  relation: regime_outcome
+- node: '[[FX_Target_Quasi_Fiscal_Stagflation_Trap_Mechanism]]'
+  relation: component_of
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## The Lock-In Mechanism: From Peg Defense to Stagflation

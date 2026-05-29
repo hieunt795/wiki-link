@@ -21,20 +21,27 @@ tags:
 - misconception
 confidence: 4
 stability: stable
-thesis: "Two foundational misconceptions about commercial bank reserves: (1) individual banks appear to choose between reserves and other assets, but at the system level total reserves are entirely determined by the central bank's balance sheet identities — no individual bank action can reduce system-wide reserves; (2) banks do not require reserves to lend — the money multiplier (reserves → lending) has causality reversed; broad money expands with economic activity and narrow money is subsequently supplied by the CB to meet requirements."
+thesis: 'Two foundational misconceptions about commercial bank reserves: (1) individual
+  banks appear to choose between reserves and other assets, but at the system level
+  total reserves are entirely determined by the central bank''s balance sheet identities
+  — no individual bank action can reduce system-wide reserves; (2) banks do not require
+  reserves to lend — the money multiplier (reserves → lending) has causality reversed;
+  broad money expands with economic activity and narrow money is subsequently supplied
+  by the CB to meet requirements.'
 source_refs:
 - path: 02_sources/books/central_bank_balance_sheet/Central_Bank_Balance_Sheet.md
   pages: pp. 11-14 (Misconception 1 and Misconception 2 sections)
   weight: primary
+parent_node: null
 related:
-- node: "[[CB_Reserve_Requirements_Taxonomy_Surplus_Shortage_Liquidity]]"
+- node: '[[CB_Reserve_Requirements_Taxonomy_Surplus_Shortage_Liquidity]]'
   relation: companion
-- node: "[[Fed Balance Sheet Size And Policy Rate Independence]]"
+- node: '[[Fed Balance Sheet Size And Policy Rate Independence]]'
   relation: related_concept
-- node: "[[FHLB Foreign Bank EFFR IORB Arbitrage Fed Funds Market]]"
+- node: '[[FHLB Foreign Bank EFFR IORB Arbitrage Fed Funds Market]]'
   relation: related_mechanism
-date_created: "2026-05-23"
-date_updated: "2026-05-24"
+date_created: '2026-05-23'
+date_updated: '2026-05-24'
 ---
 
 ## Misconception 1 — Reserves as an Individual vs System Choice

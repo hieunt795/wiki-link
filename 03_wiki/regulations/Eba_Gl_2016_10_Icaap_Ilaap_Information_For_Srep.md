@@ -35,10 +35,11 @@ source_refs:
     (EBA-GL-2016-10).md
   pages: ''
   weight: primary
+parent_node: null
 related:
-  - Ilaap_Internal_Liquidity_Adequacy_Assessment_Framework
-  - Ecb_Ilaap_Guide_2018_Seven_Principles_Ssm
-  - Eba_Gl_2018_04_Institutions_Stress_Testing
+- Ilaap_Internal_Liquidity_Adequacy_Assessment_Framework
+- Ecb_Ilaap_Guide_2018_Seven_Principles_Ssm
+- Eba_Gl_2018_04_Institutions_Stress_Testing
 date_created: '2026-05-27'
 date_updated: '2026-05-27'
 ---

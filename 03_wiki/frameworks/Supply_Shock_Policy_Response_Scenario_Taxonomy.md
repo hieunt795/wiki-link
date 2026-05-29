@@ -3,32 +3,37 @@ node_id: supply_shock_scenario_taxonomy_frm_001
 type: framework
 title: Supply Shock Policy Response Scenario Taxonomy
 aliases:
-  - BoE 3-Scenario Framework
-  - State-Contingent Supply Shock Analysis
-  - Scenario A B C Taxonomy
-
+- BoE 3-Scenario Framework
+- State-Contingent Supply Shock Analysis
+- Scenario A B C Taxonomy
 domain:
   primary: monetary_policy
-  secondary: [macro_outlook]
-tags: [monetary_policy, supply_shock, forward_guidance, inflation_persistence, scenario_analysis]
-
+  secondary:
+  - macro_outlook
+tags:
+- monetary_policy
+- supply_shock
+- forward_guidance
+- inflation_persistence
+- scenario_analysis
 confidence: 3
 stability: stable
+thesis: 'A decision-making framework that partitions potential outcomes of a supply
+  shock into discrete scenarios based on shock persistence and the emergence of second-round
+  effects, allowing central banks to communicate state-contingent policy paths rather
+  than a single forecast. [LLM]
 
-thesis: >
-  A decision-making framework that partitions potential outcomes of a supply shock into discrete scenarios based on shock persistence and the emergence of second-round effects, allowing central banks to communicate state-contingent policy paths rather than a single forecast. [LLM]
-
+  '
 source_refs:
-  - path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
-    pages: "Bank of England (BoE) section"
-    weight: primary
-
+- path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
+  pages: Bank of England (BoE) section
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Monetary_Policy_Instruments_Operational_Framework]]"
-    relation: applied_in
-  - node: "[[Non_Linear_Inflation_Amplifier_Mechanics]]"
-    relation: uses_parameters_from
-
+- node: '[[Monetary_Policy_Instruments_Operational_Framework]]'
+  relation: applied_in
+- node: '[[Non_Linear_Inflation_Amplifier_Mechanics]]'
+  relation: uses_parameters_from
 date_created: 2026-05-22
 date_updated: 2026-05-22
 ---

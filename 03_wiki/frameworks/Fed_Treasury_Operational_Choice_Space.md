@@ -3,37 +3,47 @@ node_id: fed_treasury_operational_choice_space_frm_001
 type: framework
 title: Fed Treasury Operational Choice Space
 aliases:
-  - Fed-Treasury arrangement
-  - fiscal agent choice space
-  - khung lua chon van hanh Fed-Treasury
-  - khung lua chon van hanh kho bac-Fed
+- Fed-Treasury arrangement
+- fiscal agent choice space
+- khung lua chon van hanh Fed-Treasury
+- khung lua chon van hanh kho bac-Fed
 domain:
   primary: fiscal_policy
-  secondary: [monetary_policy, financial_markets]
-tags: [fed, treasury, tga, institutional_design, fiscal_agent, balance_sheet]
+  secondary:
+  - monetary_policy
+  - financial_markets
+tags:
+- fed
+- treasury
+- tga
+- institutional_design
+- fiscal_agent
+- balance_sheet
 confidence: 3
 stability: evolving
-thesis: >
-  The relationship between the Federal Reserve and the Treasury is an operational
+thesis: 'The relationship between the Federal Reserve and the Treasury is an operational
   design space, not a fixed natural law. The location of government cash, the size
-  of the Treasury's balance at the Fed, and the rules that govern interaction with
-  reserves can all be redesigned, which means part of the Fed's balance-sheet
-  footprint is a policy choice rather than a necessity.
+  of the Treasury''s balance at the Fed, and the rules that govern interaction with
+  reserves can all be redesigned, which means part of the Fed''s balance-sheet footprint
+  is a policy choice rather than a necessity.
+
+  '
 source_refs:
-  - path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
-    pages: "full document"
-    weight: primary
+- path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
+  pages: full document
+  weight: primary
+parent_node: '[[Fed Fiscal Agent Treasury Relationship]]'
 related:
-  - node: "[[Fed Fiscal Agent Treasury Relationship]]"
-    relation: parent_framework
-  - node: "[[US Treasury Department]]"
-    relation: principal_actor
-  - node: "[[Treasury General Account TGA Reserve Swap]]"
-    relation: operational_consequence
-  - node: "[[TGA Volatility And Reserve Buffer Demand]]"
-    relation: policy_implication
-  - node: "[[TGA Reform as Fed Balance Sheet Reduction Tool]]"
-    relation: reform_pathway
+- node: '[[Fed Fiscal Agent Treasury Relationship]]'
+  relation: parent_framework
+- node: '[[US Treasury Department]]'
+  relation: principal_actor
+- node: '[[Treasury General Account TGA Reserve Swap]]'
+  relation: operational_consequence
+- node: '[[TGA Volatility And Reserve Buffer Demand]]'
+  relation: policy_implication
+- node: '[[TGA Reform as Fed Balance Sheet Reduction Tool]]'
+  relation: reform_pathway
 date_created: 2026-05-24
 date_updated: 2026-05-24
 ---

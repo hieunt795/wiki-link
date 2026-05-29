@@ -58,6 +58,7 @@ source_refs:
 - path: 02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md
   pages: Section V — Dịch Chuyển Tín Dụng; Section VII — Interconnectedness
   weight: supporting
+parent_node: null
 related:
 - node: '[[Private_Credit_SRT_NAV_Loans_Bank_Partnerships]]'
   relation: detailed_mechanism_of

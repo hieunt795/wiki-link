@@ -3,52 +3,54 @@ node_id: nmd_stochastic_three_factor_model_001
 type: mechanism
 title: NMD Stochastic Three-Factor Model
 aliases:
-  - NMD stochastic model
-  - three-factor deposit model
-  - Vasicek deposit volume model
-  - NMD Cholesky Monte Carlo
-  - mô hình ba nhân tố ngẫu nhiên tiền gửi NMD
-  - Monte Carlo tiền gửi không kỳ hạn
-  - rủi ro nén biên lãi suất tiền gửi
+- NMD stochastic model
+- three-factor deposit model
+- Vasicek deposit volume model
+- NMD Cholesky Monte Carlo
+- mô hình ba nhân tố ngẫu nhiên tiền gửi NMD
+- Monte Carlo tiền gửi không kỳ hạn
+- rủi ro nén biên lãi suất tiền gửi
 domain:
   primary: alm
   secondary: []
 tags:
-  - node: "[[NMD]]"
-    relation: related_to
-  - stochastic-model
-  - node: "[[Vasicek]]"
-    relation: related_to
-  - credit-spread
-  - Monte-Carlo
-  - node: "[[Cholesky]]"
-    relation: related_to
-  - margin-compression
-  - floor-risk
-  - replicating-portfolio
-  - node: "[[IRRBB]]"
-    relation: related_to
+- node: '[[NMD]]'
+  relation: related_to
+- stochastic-model
+- node: '[[Vasicek]]'
+  relation: related_to
+- credit-spread
+- Monte-Carlo
+- node: '[[Cholesky]]'
+  relation: related_to
+- margin-compression
+- floor-risk
+- replicating-portfolio
+- node: '[[IRRBB]]'
+  relation: related_to
 confidence: 1
 stability: stable
-thesis: >
-  The Bohn stochastic three-factor NMD model drives deposit value via correlated
-  Vasicek short rate, mean-reverting credit spread, and lognormal deposit volume
-  processes; a Cholesky decomposition captures their correlations; and the risk
-  appetite confidence level φ defines the replicating portfolio as the interest-rate
-  hedge that covers deposit funding costs at the φ-percentile, with margin compression
-  risk requiring raised hedge ratios before rates fall through the client-rate floor. [LLM]
+thesis: 'The Bohn stochastic three-factor NMD model drives deposit value via correlated
+  Vasicek short rate, mean-reverting credit spread, and lognormal deposit volume processes;
+  a Cholesky decomposition captures their correlations; and the risk appetite confidence
+  level φ defines the replicating portfolio as the interest-rate hedge that covers
+  deposit funding costs at the φ-percentile, with margin compression risk requiring
+  raised hedge ratios before rates fall through the client-rate floor. [LLM]
+
+  '
 source_refs:
-  - path: "02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md"
-    pages: "Chapter 6: Non-Maturity Deposits — A Stochastic Model Approach (Bohn)"
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: 'Chapter 6: Non-Maturity Deposits — A Stochastic Model Approach (Bohn)'
+parent_node: null
 related:
-  - node: "[[NMD_Decay_Model_Volume_Segmentation]]"
-    relation: related_to
-  - node: "[[ALM_Low_Negative_Interest_Rate_Environment]]"
-    relation: related_to
-  - node: "[[IRRBB_Standardised_Versus_Internal_Model_Approach]]"
-    relation: related_to
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[NMD_Decay_Model_Volume_Segmentation]]'
+  relation: related_to
+- node: '[[ALM_Low_Negative_Interest_Rate_Environment]]'
+  relation: related_to
+- node: '[[IRRBB_Standardised_Versus_Internal_Model_Approach]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Thesis

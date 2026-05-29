@@ -29,9 +29,10 @@ source_refs:
 - path: 07_scripts/02_sources/regulator/bcbs/ssm.ilaap_guide_201811.en.md
   pages: ''
   weight: primary
+parent_node: null
 related:
-  - Ilaap_Internal_Liquidity_Adequacy_Assessment_Framework
-  - Ecb_Ilaap_Guide_2018_Seven_Principles_Ssm
+- Ilaap_Internal_Liquidity_Adequacy_Assessment_Framework
+- Ecb_Ilaap_Guide_2018_Seven_Principles_Ssm
 date_created: '2026-05-27'
 date_updated: '2026-05-27'
 ---

@@ -3,53 +3,55 @@ node_id: interest_rate_basis_risk_measurement_alm_001
 type: mechanism
 title: Interest Rate Basis Risk Measurement in ALM
 aliases:
-  - basis risk ALM
-  - multi-curve ALM framework
-  - EURIBOR OIS basis spread
-  - tenor basis swap ALM
-  - rủi ro cơ sở lãi suất ALM
-  - đa đường cong chiết khấu ALM
-  - chênh lệch EURIBOR OIS
+- basis risk ALM
+- multi-curve ALM framework
+- EURIBOR OIS basis spread
+- tenor basis swap ALM
+- rủi ro cơ sở lãi suất ALM
+- đa đường cong chiết khấu ALM
+- chênh lệch EURIBOR OIS
 domain:
   primary: alm
   secondary: []
 tags:
-  - basis-risk
-  - node: "[[IRRBB]]"
-    relation: related_to
-  - multi-curve
-  - node: "[[EURIBOR]]"
-    relation: related_to
-  - node: "[[OIS]]"
-    relation: related_to
-  - tenor-basis
-  - gap-analysis
-  - key-rate-duration
-  - node: "[[NII]]"
-    relation: related_to
-  - node: "[[PV01]]"
-    relation: related_to
+- basis-risk
+- node: '[[IRRBB]]'
+  relation: related_to
+- multi-curve
+- node: '[[EURIBOR]]'
+  relation: related_to
+- node: '[[OIS]]'
+  relation: related_to
+- tenor-basis
+- gap-analysis
+- key-rate-duration
+- node: '[[NII]]'
+  relation: related_to
+- node: '[[PV01]]'
+  relation: related_to
 confidence: 1
 stability: stable
-thesis: >
-  Post-2008, basis spreads between EURIBOR tenors and between IBOR and OIS became
-  material and persistent, requiring ALM to shift from a single-curve to a multi-curve
-  framework where OIS rates are used for discounting and separate forward curves are
-  constructed per tenor; gap-based NII sensitivity and key-rate duration arrays
-  (6–10 buckets) are then applied to manage non-parallel rate shocks and tenor-specific
+thesis: 'Post-2008, basis spreads between EURIBOR tenors and between IBOR and OIS
+  became material and persistent, requiring ALM to shift from a single-curve to a
+  multi-curve framework where OIS rates are used for discounting and separate forward
+  curves are constructed per tenor; gap-based NII sensitivity and key-rate duration
+  arrays (6–10 buckets) are then applied to manage non-parallel rate shocks and tenor-specific
   repricing mismatches. [LLM]
+
+  '
 source_refs:
-  - path: "02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md"
-    pages: "Chapter 4: Basis Risk and Key Rate Durations in ALM"
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: 'Chapter 4: Basis Risk and Key Rate Durations in ALM'
+parent_node: null
 related:
-  - node: "[[IRRBB_Standardised_Versus_Internal_Model_Approach]]"
-    relation: related_to
-  - node: "[[NMD_Decay_Model_Volume_Segmentation]]"
-    relation: related_to
-  - node: "[[Hedge_Accounting_IFRS9_ALM]]"
-    relation: related_to
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[IRRBB_Standardised_Versus_Internal_Model_Approach]]'
+  relation: related_to
+- node: '[[NMD_Decay_Model_Volume_Segmentation]]'
+  relation: related_to
+- node: '[[Hedge_Accounting_IFRS9_ALM]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Thesis

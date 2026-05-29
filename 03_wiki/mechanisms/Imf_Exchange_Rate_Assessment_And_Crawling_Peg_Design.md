@@ -3,34 +3,33 @@ node_id: imf_exchange_rate_assessment_crawling_peg_design_001
 type: mechanism
 title: IMF Exchange Rate Assessment And Crawling Peg Design
 aliases:
-  - exchange rate assessment framework
-  - crawling peg mechanics
-  - active vs passive crawl
-  - nominal anchor with crawling peg
-  - Box 4.8 IMF exchange rate indicators
-  - đánh giá tỷ giá hối đoái
-  - cơ chế neo tỷ giá bò (crawling peg)
-  - neo chủ động vs neo thụ động
-  - neo danh nghĩa và lạm phát
+- exchange rate assessment framework
+- crawling peg mechanics
+- active vs passive crawl
+- nominal anchor with crawling peg
+- Box 4.8 IMF exchange rate indicators
+- đánh giá tỷ giá hối đoái
+- cơ chế neo tỷ giá bò (crawling peg)
+- neo chủ động vs neo thụ động
+- neo danh nghĩa và lạm phát
 domain:
   primary: monetary_policy
   secondary: financial_markets
 tags:
-  - fx_regime
-  - crawling_peg
-  - exchange_rate_assessment
-  - real_exchange_rate
-  - competitiveness
-  - nominal_anchor
-  - peg_design
-  - inflation_differential
-  - band_management
-  - em_policy
-  - reserve_adequacy
+- fx_regime
+- crawling_peg
+- exchange_rate_assessment
+- real_exchange_rate
+- competitiveness
+- nominal_anchor
+- peg_design
+- inflation_differential
+- band_management
+- em_policy
+- reserve_adequacy
 confidence: 4
 stability: stable
-thesis: >
-  The IMF assesses exchange rate appropriateness using four complementary indicators
+thesis: 'The IMF assesses exchange rate appropriateness using four complementary indicators
   (real exchange rate, FX reserve trend, current account balance, parallel market
   premium), none of which is individually decisive. When a fixed peg becomes untenable
   because of persistent inflation differential, the crawling peg regime provides a
@@ -40,23 +39,29 @@ thesis: >
   crawl (depreciate less than inflation → accept some competitiveness loss to decelerate
   inflation). An active crawl sacrifices exports for disinflation; extending the band
   width accommodates capital inflows without requiring full sterilization.
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 3537–3560 (Box 4.8: Assessing the Exchange Rate — 4 indicators), lines 3780–3804 (Poland exchange rate policy: fixed → basket peg → crawling peg → managed float), lines 3723–3749 (reserve adequacy: import coverage, M2/reserves, Greenspan-Guidotti)"
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: 'lines 3537–3560 (Box 4.8: Assessing the Exchange Rate — 4 indicators), lines
+    3780–3804 (Poland exchange rate policy: fixed → basket peg → crawling peg → managed
+    float), lines 3723–3749 (reserve adequacy: import coverage, M2/reserves, Greenspan-Guidotti)'
+  weight: primary
+parent_node: null
 related:
-  - node: "[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
-    relation: constraint_mechanism
-  - node: "[[Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis]]"
-    relation: accounting_foundation
-  - node: "[[EM_Central_Bank_Policy_Mix_FIT_Framework]]"
-    relation: modern_equivalent
-  - node: "[[Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating]]"
-    relation: crisis_context
-  - node: "[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]"
-    relation: fiscal_cost_companion
-date_created: "2026-05-24"
-date_updated: "2026-05-24"
+- node: '[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]'
+  relation: constraint_mechanism
+- node: '[[Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis]]'
+  relation: accounting_foundation
+- node: '[[EM_Central_Bank_Policy_Mix_FIT_Framework]]'
+  relation: modern_equivalent
+- node: '[[Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating]]'
+  relation: crisis_context
+- node: '[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]'
+  relation: fiscal_cost_companion
+date_created: '2026-05-24'
+date_updated: '2026-05-24'
 ---
 
 ## Four Indicators for Assessing Exchange Rate Appropriateness

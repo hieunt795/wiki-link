@@ -27,6 +27,7 @@ source_refs:
 - path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
   pages: Section 3.1
   weight: primary
+parent_node: null
 related:
 - node: '[[Monetary_Policy_Instruments_Operational_Framework]]'
   relation: evolution_of

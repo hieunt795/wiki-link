@@ -1,51 +1,47 @@
 ---
 node_id: concept_fi_rv_001
 type: concept
-title: "Fixed Income Relative Value Framework"
+title: Fixed Income Relative Value Framework
 aliases:
-  - fixed income RV
-  - FIRV
-  - relative value analysis
-  - bond relative value
-  - phân tích giá trị tương đối thu nhập cố định
-
+- fixed income RV
+- FIRV
+- relative value analysis
+- bond relative value
+- phân tích giá trị tương đối thu nhập cố định
 domain:
   primary: financial_markets
 tags:
-  - fixed-income
-  - relative-value
-  - carry
-  - roll
-  - bond-pricing
-  - trading-framework
-
+- fixed-income
+- relative-value
+- carry
+- roll
+- bond-pricing
+- trading-framework
 confidence: 2
 stability: stable
+thesis: 'Fixed income relative value (RV) is the systematic identification and monetisation
+  of price discrepancies between economically similar instruments along four dimensions:
+  carry (income earned per unit of risk), roll-down (P&L from yield curve passage
+  of time), richness/cheapness (deviation from fitted curve), and duration-neutral
+  spread trades. RV positions are constructed to isolate a single mispricing while
+  hedging all other exposures.
 
-thesis: >
-  Fixed income relative value (RV) is the systematic identification and monetisation of
-  price discrepancies between economically similar instruments along four dimensions:
-  carry (income earned per unit of risk), roll-down (P&L from yield curve passage of
-  time), richness/cheapness (deviation from fitted curve), and duration-neutral spread
-  trades. RV positions are constructed to isolate a single mispricing while hedging
-  all other exposures.
-
+  '
 source_refs:
-  - path: 02_sources/books/huggins_schaller_relative_value/Huggins_Schaller_Fixed_Income_RV.md
-    weight: primary
-  - path: 02_sources/books/tuckman_serrat_fixed_income/Tuckman_Serrat_Fixed_Income_2022.md
-    weight: supporting
-
+- path: 02_sources/books/huggins_schaller_relative_value/Huggins_Schaller_Fixed_Income_RV.md
+  weight: primary
+- path: 02_sources/books/tuckman_serrat_fixed_income/Tuckman_Serrat_Fixed_Income_2022.md
+  weight: supporting
+parent_node: '[[Swap_Carry_And_Roll_Down_Analysis]]'
 related:
-  - node: "[[Swap_Carry_And_Roll_Down_Analysis]]"
-    relation: component_of
-  - node: "[[Asset_Swap_Mechanics_And_Spread]]"
-    relation: component_of
-  - node: "[[DV01_Duration_Convexity_Fixed_Income]]"
-    relation: uses
-  - node: "[[Interest_Rate_Swaps_OIS_Fixed_Floating]]"
-    relation: instrument_for
-
+- node: '[[Swap_Carry_And_Roll_Down_Analysis]]'
+  relation: component_of
+- node: '[[Asset_Swap_Mechanics_And_Spread]]'
+  relation: component_of
+- node: '[[DV01_Duration_Convexity_Fixed_Income]]'
+  relation: uses
+- node: '[[Interest_Rate_Swaps_OIS_Fixed_Floating]]'
+  relation: instrument_for
 date_created: 2026-05-23
 date_updated: 2026-05-23
 last_reviewed: 2026-05-23

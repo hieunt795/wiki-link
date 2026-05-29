@@ -20,11 +20,16 @@ tags:
 - fed
 confidence: 1
 stability: stable
-thesis: Central bank and fiscal authorities follow a graduated intervention ladder when sovereign bond markets destabilize — from Treasury buybacks (no monetary expansion) through SLR relief, Fed "soft ceiling" (temporary YCC), and full YCC — with each step representing a greater commitment and higher political cost, and full YCC reserved only when inflation is persistently subdued.
+thesis: Central bank and fiscal authorities follow a graduated intervention ladder
+  when sovereign bond markets destabilize — from Treasury buybacks (no monetary expansion)
+  through SLR relief, Fed "soft ceiling" (temporary YCC), and full YCC — with each
+  step representing a greater commitment and higher political cost, and full YCC reserved
+  only when inflation is persistently subdued.
 source_refs:
 - path: 02_sources/books/conks/Conks - Liquidity and Market Dynamics.md
   pages: batch 2 (chars ~9002-17892)
   weight: primary
+parent_node: null
 related:
 - node: '[[Treasury Buybacks Sovereign Debt Liquidity Intervention]]'
   relation: extends

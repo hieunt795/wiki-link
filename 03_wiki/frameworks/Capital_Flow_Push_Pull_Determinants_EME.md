@@ -3,53 +3,58 @@ node_id: capital_flow_push_pull_determinants_eme_001
 type: framework
 title: Capital Flow Push-Pull Determinants in EMEs
 aliases:
-  - push pull capital flows
-  - determinants of capital flows
-  - hot money drivers
-  - Lucas paradox capital flows
-  - push factors EME
-  - pull factors EME
-  - nhân tố đẩy kéo dòng vốn
-  - yếu tố quyết định dòng vốn nước ngoài vào EM
+- push pull capital flows
+- determinants of capital flows
+- hot money drivers
+- Lucas paradox capital flows
+- push factors EME
+- pull factors EME
+- nhân tố đẩy kéo dòng vốn
+- yếu tố quyết định dòng vốn nước ngoài vào EM
 domain:
   primary: monetary_policy
   secondary: financial_markets
 tags:
-  - capital_flows
-  - em_policy
-  - push_pull
-  - hot_money
-  - fdi
-  - portfolio_flows
-  - impossible_trinity
-  - lucas_paradox
+- capital_flows
+- em_policy
+- push_pull
+- hot_money
+- fdi
+- portfolio_flows
+- impossible_trinity
+- lucas_paradox
 confidence: 3
 stability: stable
-thesis: >
-  Capital flows to EMEs are jointly determined by global push factors (advanced-economy
+thesis: 'Capital flows to EMEs are jointly determined by global push factors (advanced-economy
   interest rates, VIX, global growth) and domestic pull factors (EME growth, yields,
   exchange rate stability, institutional quality). FDI is driven primarily by domestic
   fundamentals and governance; portfolio and banking flows are dominated by global
   push factors and respond faster and more reversibly. The composition of inflows
   determines the FX target + sterilization burden: PI and short-term bank flows require
   the most sterilization and generate the largest quasi-fiscal costs. [LLM]
+
+  '
 source_refs:
-  - path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
-    pages: "lines 66–122 (push-pull taxonomy, empirical evidence), lines 126–172 (Lucas paradox, productivity-capital mismatch), lines 172–230 (monetary stability effects, impossible trinity empirics)"
-    weight: primary
+- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro -
+    Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
+  pages: lines 66–122 (push-pull taxonomy, empirical evidence), lines 126–172 (Lucas
+    paradox, productivity-capital mismatch), lines 172–230 (monetary stability effects,
+    impossible trinity empirics)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[EM_Central_Bank_Policy_Mix_FIT_Framework]]"
-    relation: context_framework
-  - node: "[[Capital_Flow_Management_CFM_Taxonomy_Triggers_Instruments]]"
-    relation: policy_response
-  - node: "[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
-    relation: creates_sterilization_pressure
-  - node: "[[Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating]]"
-    relation: vulnerability_trigger
-  - node: "[[Sterilization_Offset_Coefficient_EME_Monetary_Autonomy]]"
-    relation: offset_driver
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[EM_Central_Bank_Policy_Mix_FIT_Framework]]'
+  relation: context_framework
+- node: '[[Capital_Flow_Management_CFM_Taxonomy_Triggers_Instruments]]'
+  relation: policy_response
+- node: '[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]'
+  relation: creates_sterilization_pressure
+- node: '[[Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating]]'
+  relation: vulnerability_trigger
+- node: '[[Sterilization_Offset_Coefficient_EME_Monetary_Autonomy]]'
+  relation: offset_driver
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## The Push-Pull Framework

@@ -30,6 +30,7 @@ source_refs:
 - path: 02_sources/deep-research/Deep Dive_ Private Credit.md
   pages: ''
   weight: primary
+parent_node: null
 related:
 - node: '[[Basel Driven Credit Migration To Private Markets]]'
   relation: shared_tag:private_credit

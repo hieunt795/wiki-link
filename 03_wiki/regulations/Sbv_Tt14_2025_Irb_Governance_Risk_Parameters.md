@@ -3,53 +3,50 @@ node_id: sbv_tt14_2025_irb_governance_risk_parameters_001
 type: regulation
 jurisdiction: vietnam
 issuer: sbv
-title: "SBV TT14 2025 IRB Governance and Risk Parameters"
+title: SBV TT14 2025 IRB Governance and Risk Parameters
 aliases:
-  - TT14/2025/TT-NHNN IRB
-  - Thông tư 14/2025 phương pháp xếp hạng nội bộ
-  - SBV IRB approach requirements
-  - IRB internal ratings-based Vietnam
-  - A-IRB F-IRB Vietnam
-
+- TT14/2025/TT-NHNN IRB
+- Thông tư 14/2025 phương pháp xếp hạng nội bộ
+- SBV IRB approach requirements
+- IRB internal ratings-based Vietnam
+- A-IRB F-IRB Vietnam
 domain:
   primary: basel_risk
 tags:
-  - irb
-  - internal-ratings
-  - pd
-  - lgd
-  - ead
-  - credit-risk
-  - sbv
-  - tt14-2025
-  - pillar-2
-  - capital-adequacy
-
+- irb
+- internal-ratings
+- pd
+- lgd
+- ead
+- credit-risk
+- sbv
+- tt14-2025
+- pillar-2
+- capital-adequacy
 confidence: 1
 stability: evolving
+thesis: '[LLM] TT14/2025/TT-NHNN (issued 30 June 2025) governs capital adequacy for
+  Vietnamese commercial banks, including IRB approach requirements aligned with Basel
+  III. Key governance requirements: Board must approve internal ratings design; a
+  dedicated Credit Risk Control unit (independent from lending) must operate and maintain
+  the IRB system; banks must use the IRB for at least 2 consecutive years before SBV
+  approval; PD must be estimated as the long-run average one-year default rate per
+  rating grade; LGD must reflect economic losses; a margin of conservatism must be
+  applied to all risk parameter estimates.
 
-thesis: >
-  [LLM] TT14/2025/TT-NHNN (issued 30 June 2025) governs capital adequacy for Vietnamese
-  commercial banks, including IRB approach requirements aligned with Basel III. Key governance
-  requirements: Board must approve internal ratings design; a dedicated Credit Risk Control
-  unit (independent from lending) must operate and maintain the IRB system; banks must use
-  the IRB for at least 2 consecutive years before SBV approval; PD must be estimated as
-  the long-run average one-year default rate per rating grade; LGD must reflect economic
-  losses; a margin of conservatism must be applied to all risk parameter estimates.
-
+  '
 source_refs:
-  - path: 02_sources/regulator/sbv/TT14_2.md
-    pages: "Điều 66 (governance), Điều 67 (use test), Điều 68 (risk parameter estimation)"
-    weight: primary
-
+- path: 02_sources/regulator/sbv/TT14_2.md
+  pages: Điều 66 (governance), Điều 67 (use test), Điều 68 (risk parameter estimation)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Sbv_Tt83_2025_Internal_Control_Three_Lines_Defense]]"
-    relation: cross_references
-  - node: "[[Basel_Iv_Output_Floor_72pct_2028]]"
-    relation: related_to
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Sbv_Tt83_2025_Internal_Control_Three_Lines_Defense]]'
+  relation: cross_references
+- node: '[[Basel_Iv_Output_Floor_72pct_2028]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 [LLM] Auto-generated stub from TT14/2025/TT-NHNN, Articles 66–68 (continuation section published in Công báo 1015+1016). Review against full circular text for complete coverage.

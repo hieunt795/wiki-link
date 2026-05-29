@@ -1,46 +1,46 @@
 ---
 node_id: duration_gap_analysis_banking_book_001
 type: mechanism
-title: "Duration Gap Analysis in the Banking Book"
+title: Duration Gap Analysis in the Banking Book
 aliases:
-  - duration gap
-  - funding gap
-  - maturity gap (duration-based)
-  - phân tích khoảng cách thời lượng
-  - khoảng cách thời lượng ngân hàng
-
+- duration gap
+- funding gap
+- maturity gap (duration-based)
+- phân tích khoảng cách thời lượng
+- khoảng cách thời lượng ngân hàng
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - duration
-  - EVE
-  - IRRBB
-  - modified_duration
-  - banking_book
-
+- duration
+- EVE
+- IRRBB
+- modified_duration
+- banking_book
 confidence: 1
 stability: stable
+thesis: '[LLM] The duration gap measures the net interest rate sensitivity of a bank''s
+  economic value by comparing the weighted-average modified duration of assets to
+  that of liabilities (scaled by the liability/asset ratio); a positive duration gap
+  means rising rates reduce EVE, and the estimated EVE loss equals duration_gap ×
+  total_assets × Δr.
 
-thesis: >
-  [LLM] The duration gap measures the net interest rate sensitivity of a bank's economic value by comparing the weighted-average modified duration of assets to that of liabilities (scaled by the liability/asset ratio); a positive duration gap means rising rates reduce EVE, and the estimated EVE loss equals duration_gap × total_assets × Δr.
-
+  '
 source_refs:
-  - path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
-    pages: "Ch 2, section 2.1.4; Ch 4, section 4.3.3; Ch 2, section 2.2.5"
-    weight: primary
-
+- path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
+  pages: Ch 2, section 2.1.4; Ch 4, section 4.3.3; Ch 2, section 2.2.5
+  weight: primary
+parent_node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
 related:
-  - node: "[[Eve_Calculation_Mechanics_Discount_And_Shock]]"
-    relation: related_to
-  - node: "[[Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book]]"
-    relation: related_to
-  - node: "[[Irrbb_Eve_Nii_Dual_Metric_Framework]]"
-    relation: component_of
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Eve_Calculation_Mechanics_Discount_And_Shock]]'
+  relation: related_to
+- node: '[[Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book]]'
+  relation: related_to
+- node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
+  relation: component_of
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Definition and Formula

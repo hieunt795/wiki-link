@@ -1,49 +1,50 @@
 ---
 node_id: option_risk_behavioral_optionality_banking_book_001
 type: mechanism
-title: "Option Risk and Behavioral Optionality in the Banking Book"
+title: Option Risk and Behavioral Optionality in the Banking Book
 aliases:
-  - option risk IRRBB
-  - behavioral optionality
-  - embedded options banking
-  - automatic options banking
-  - rủi ro quyền chọn trong sổ ngân hàng
-  - quyền chọn hành vi
-
+- option risk IRRBB
+- behavioral optionality
+- embedded options banking
+- automatic options banking
+- rủi ro quyền chọn trong sổ ngân hàng
+- quyền chọn hành vi
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - option_risk
-  - behavioral_options
-  - embedded_options
-  - prepayment
-  - NMD
-  - IRRBB
-  - interest_rate_risk
-
+- option_risk
+- behavioral_options
+- embedded_options
+- prepayment
+- NMD
+- IRRBB
+- interest_rate_risk
 confidence: 1
 stability: stable
+thesis: '[LLM] Option risk in the banking book arises from both explicit (automatic)
+  options with rule-based exercise and behavioral (embedded) options where customer
+  actions depend on economic and non-economic factors; both alter the timing and amount
+  of cashflows on bank instruments, creating EVE and NII exposures that cannot be
+  fully hedged with standard financial options.
 
-thesis: >
-  [LLM] Option risk in the banking book arises from both explicit (automatic) options with rule-based exercise and behavioral (embedded) options where customer actions depend on economic and non-economic factors; both alter the timing and amount of cashflows on bank instruments, creating EVE and NII exposures that cannot be fully hedged with standard financial options.
-
+  '
 source_refs:
-  - path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
-    pages: "Ch 1, section 1.2.2.3; Ch 2, sections 2.4.2–2.4.3; Ch 3, sections 3.3 and 3.6"
-    weight: primary
-
+- path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
+  pages: Ch 1, section 1.2.2.3; Ch 2, sections 2.4.2–2.4.3; Ch 3, sections 3.3 and
+    3.6
+  weight: primary
+parent_node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
 related:
-  - node: "[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]"
-    relation: related_to
-  - node: "[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]"
-    relation: related_to
-  - node: "[[Irrbb_Eve_Nii_Dual_Metric_Framework]]"
-    relation: component_of
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]'
+  relation: related_to
+- node: '[[Non_Maturity_Deposit_Fair_Margin_And_Replicating_Portfolio]]'
+  relation: related_to
+- node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
+  relation: component_of
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## EBA Definition

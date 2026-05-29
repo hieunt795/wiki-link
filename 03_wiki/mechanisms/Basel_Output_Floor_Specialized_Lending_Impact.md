@@ -22,16 +22,16 @@ tags:
 - private-credit-driver
 confidence: 3
 stability: evolving
-thesis: >
-  The Output Floor (72.5% of SA-RWA, fully phased-in Jan 2028 per RBC90) prevents
+thesis: 'The Output Floor (72.5% of SA-RWA, fully phased-in Jan 2028 per RBC90) prevents
   banks from using internal IRB models to reduce RWA below 72.5% of the Standardised
-  Approach calculation, eliminating the capital optimization advantage that made
-  specialized lending (project finance, CRE, unrated mid-market loans) viable on
-  bank balance sheets — regardless of actual historical default rates; unrated
-  specialized loans default to SA risk weights of 100–150%, making post-floor
-  capital costs prohibitive relative to earned spread. [LLM] This is the primary
-  driver of bank retreat from specialized corporate credit, creating the structural
-  gap that private credit fills.
+  Approach calculation, eliminating the capital optimization advantage that made specialized
+  lending (project finance, CRE, unrated mid-market loans) viable on bank balance
+  sheets — regardless of actual historical default rates; unrated specialized loans
+  default to SA risk weights of 100–150%, making post-floor capital costs prohibitive
+  relative to earned spread. [LLM] This is the primary driver of bank retreat from
+  specialized corporate credit, creating the structural gap that private credit fills.
+
+  '
 steps:
 - 'Step 1: Bank calculates RWA using internal IRB model (historically 30-50% lower
   than SA for specialized assets)'
@@ -48,7 +48,8 @@ transmission_lags: medium
 empirical_evidence: strong
 source_refs:
 - path: 02_sources/regulator/bcbs/BaselFramework.md
-  pages: "RBC20.4 (output floor definition), RBC20.11-20.13 (floor calculation, numerical example), RBC90 (phase-in 2023-2028)"
+  pages: RBC20.4 (output floor definition), RBC20.11-20.13 (floor calculation, numerical
+    example), RBC90 (phase-in 2023-2028)
   weight: primary
 - path: 02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md
   pages: Section II.2 — Sàn Đầu Ra
@@ -56,6 +57,7 @@ source_refs:
 - path: 02_sources/deep-research/Private Credit, Basel, and Regional Dynamics.md
   pages: Section 4 — Key Metrics
   weight: supporting
+parent_node: null
 related:
 - node: '[[Basel_III_Endgame_Capital_Liquidity_Credit_Migration]]'
   relation: component_mechanism_of

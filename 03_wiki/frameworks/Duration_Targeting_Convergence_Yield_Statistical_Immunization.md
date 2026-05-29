@@ -24,11 +24,20 @@ tags:
 - risk_management
 confidence: 4
 stability: stable
-thesis: "Duration-targeted (DT) bond portfolios — which maintain a stable duration through periodic rebalancing — exhibit a gravitational pull toward the initial yield over multi-year horizons, regardless of whether yields rise or fall; the key insight (Homer-Leibowitz 2013 edition): over a horizon equal to approximately 2×duration−1 years ('effective maturity'), cumulative accruals precisely offset cumulative price gains/losses, making annualized return converge to the initial yield for virtually any yield path; this creates 'statistical immunization' and simultaneously a 'yield trap' — you cannot escape the initial yield without changing the duration target."
+thesis: 'Duration-targeted (DT) bond portfolios — which maintain a stable duration
+  through periodic rebalancing — exhibit a gravitational pull toward the initial yield
+  over multi-year horizons, regardless of whether yields rise or fall; the key insight
+  (Homer-Leibowitz 2013 edition): over a horizon equal to approximately 2×duration−1
+  years (''effective maturity''), cumulative accruals precisely offset cumulative
+  price gains/losses, making annualized return converge to the initial yield for virtually
+  any yield path; this creates ''statistical immunization'' and simultaneously a ''yield
+  trap'' — you cannot escape the initial yield without changing the duration target.'
 source_refs:
 - path: 02_sources/books/homer_leibowitz_yield_book/Homer_Leibowitz_Inside_the_Yield_Book.md
-  pages: "lines 104-520 (Part I: Duration Targeting — Introduction, Chapter 1 Trendline Model)"
+  pages: 'lines 104-520 (Part I: Duration Targeting — Introduction, Chapter 1 Trendline
+    Model)'
   weight: primary
+parent_node: null
 related:
 - node: '[[Fixed Income Relative Value Framework]]'
   relation: related_concept

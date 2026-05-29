@@ -44,6 +44,12 @@ source_refs:                               # At least one required for confidenc
     pages: "ch4, pp.112-135"               # Section/page reference within the source
     weight: primary                        # primary | supporting | contradicting
 
+# ── HIERARCHY ─────────────────────────────────────────────────────────────────
+parent_node: null                          # Optional. Single primary parent. null if top-level.
+                                           # Priority: parent_framework > parent_mechanism
+                                           # > component_of > part_of
+                                           # Excludes extends/implements (peer-level).
+
 # ── RELATIONSHIP GRAPH ────────────────────────────────────────────────────────
 related:                                   # Optional. Use [[wikilink]] syntax.
   - node: "[[Other_Node_Title]]"

@@ -3,40 +3,43 @@ node_id: volcker_disinflation_sacrifice_ratio_channel_mec_001
 type: mechanism
 title: Volcker Disinflation Sacrifice Ratio Channel
 aliases:
-  - disinflation sacrifice ratio
-  - chi phi giam lam phat Volcker
-  - unemployment buffer disinflation
+- disinflation sacrifice ratio
+- chi phi giam lam phat Volcker
+- unemployment buffer disinflation
 domain:
   primary: monetary_policy
   secondary:
-    - macro_outlook
+  - macro_outlook
 tags:
-  - volcker
-  - disinflation
-  - sacrifice_ratio
-  - unemployment
-  - hysteresis
-  - output_gap
+- volcker
+- disinflation
+- sacrifice_ratio
+- unemployment
+- hysteresis
+- output_gap
 confidence: 3
 stability: stable
-thesis: >
-  Volcker-style disinflation works through a costly slack channel: tighter policy
-  raises unemployment and reduces output to break inflation persistence, with
+thesis: 'Volcker-style disinflation works through a costly slack channel: tighter
+  policy raises unemployment and reduces output to break inflation persistence, with
   the sacrifice ratio measuring the output loss per unit of disinflation.
+
+  '
 source_refs:
-  - path: 02_sources/books/watts_wray_mmt_macro/Watts_Wray_Macroeconomics.md
-    pages: "Ch.19, sacrifice ratio and disinflation"
-    weight: primary
-  - path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-4.md
-    pages: "Ch.7, Table 7.3"
-    weight: supporting
+- path: 02_sources/books/watts_wray_mmt_macro/Watts_Wray_Macroeconomics.md
+  pages: Ch.19, sacrifice ratio and disinflation
+  weight: primary
+- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro -
+    Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-4.md
+  pages: Ch.7, Table 7.3
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Volcker Fed Reaction Function Break]]"
-    relation: transmission_cost
-  - node: "[[US 1970s Stagflation And Policy Regime Shift]]"
-    relation: historical_context
-  - node: "[[Stagflation Policy Response Tradeoff Framework]]"
-    relation: tightening_tradeoff
+- node: '[[Volcker Fed Reaction Function Break]]'
+  relation: transmission_cost
+- node: '[[US 1970s Stagflation And Policy Regime Shift]]'
+  relation: historical_context
+- node: '[[Stagflation Policy Response Tradeoff Framework]]'
+  relation: tightening_tradeoff
 date_created: 2026-05-24
 date_updated: 2026-05-24
 ---

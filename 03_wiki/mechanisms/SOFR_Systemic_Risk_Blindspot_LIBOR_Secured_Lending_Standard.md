@@ -21,11 +21,17 @@ tags:
 - repo
 confidence: 1
 stability: stable
-thesis: SOFR's replacement of LIBOR resolved benchmark manipulation risk but introduced a new systemic blindspot — because SOFR is secured (repo-backed), it does not spike during bank funding stress the way LIBOR did, making it a poor early-warning signal of unsecured credit stress; meanwhile the global secured lending standard (RFRs replacing IBORs in derivatives, bonds, and loans) has tightened the linkage between private finance and sovereign balance sheets.
+thesis: SOFR's replacement of LIBOR resolved benchmark manipulation risk but introduced
+  a new systemic blindspot — because SOFR is secured (repo-backed), it does not spike
+  during bank funding stress the way LIBOR did, making it a poor early-warning signal
+  of unsecured credit stress; meanwhile the global secured lending standard (RFRs
+  replacing IBORs in derivatives, bonds, and loans) has tightened the linkage between
+  private finance and sovereign balance sheets.
 source_refs:
 - path: 02_sources/books/conks/Conks - Liquidity and Market Dynamics.md
   pages: batches 7-9 (chars ~45000-70000)
   weight: primary
+parent_node: null
 related:
 - node: '[[Collateral Velocity And Pledged Collateral Market Mechanics]]'
   relation: related_mechanism

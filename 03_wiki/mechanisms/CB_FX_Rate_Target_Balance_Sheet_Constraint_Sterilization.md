@@ -3,67 +3,73 @@ node_id: cb_fx_rate_target_balance_sheet_constraint_sterilization_001
 type: mechanism
 title: CB FX Rate Target Balance Sheet Constraint And Sterilization
 aliases:
-  - FX target balance sheet constraint
-  - sterilization mechanism
-  - NFA endogeneity under peg
-  - intervention and sterilization
-  - ràng buộc bảng cân đối khi target tỷ giá
-  - cơ chế sterilization
-  - can thiệp vô hiệu hóa
+- FX target balance sheet constraint
+- sterilization mechanism
+- NFA endogeneity under peg
+- intervention and sterilization
+- ràng buộc bảng cân đối khi target tỷ giá
+- cơ chế sterilization
+- can thiệp vô hiệu hóa
 domain:
   primary: monetary_policy
   secondary: financial_markets
 tags:
-  - fx_intervention
-  - sterilization
-  - nfa
-  - nda
-  - reserve_money
-  - impossible_trinity
-  - managed_float
-  - balance_sheet
-  - em_policy
-  - capital_flows
-  - reserve_adequacy
+- fx_intervention
+- sterilization
+- nfa
+- nda
+- reserve_money
+- impossible_trinity
+- managed_float
+- balance_sheet
+- em_policy
+- capital_flows
+- reserve_adequacy
 confidence: 4
 stability: stable
-thesis: >
-  When a central bank targets an exchange rate (fixed peg, crawling peg, or managed
-  band), NFA becomes an endogenous variable determined by BOP flows and intervention
+thesis: 'When a central bank targets an exchange rate (fixed peg, crawling peg, or
+  managed band), NFA becomes an endogenous variable determined by BOP flows and intervention
   — not a free policy instrument. The CB retains control only over NDA. Sterilization
-  (offsetting NFA changes via NDA) can preserve the monetary base target in the
-  short run, but faces two binding limits: (1) reserve depletion when defending
-  against depreciation, and (2) quasi-fiscal carrying costs when sterilizing
-  appreciation-driven inflows. Sustained sterilization against a persistent shock
-  is unsustainable and, if delayed, results in a larger eventual adjustment.
+  (offsetting NFA changes via NDA) can preserve the monetary base target in the short
+  run, but faces two binding limits: (1) reserve depletion when defending against
+  depreciation, and (2) quasi-fiscal carrying costs when sterilizing appreciation-driven
+  inflows. Sustained sterilization against a persistent shock is unsustainable and,
+  if delayed, results in a larger eventual adjustment.
+
+  '
 source_refs:
-  - path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
-    pages: "lines 2665–2730 (Section 4a: Monetary Policy and External Shocks; Box 4.7: Intervention and Sterilization; Table 4.8)"
-    weight: primary
-  - path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
-    pages: "lines 2241–2244, 2353–2360 (impossible trinity, IT framework and FX)"
-    weight: primary
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 3699–3715 (capital flows and sterilization), lines 3723–3749 (reserve adequacy), lines 2465–2467 (sterilization costs exercise)"
-    weight: primary
-  - path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
-    pages: "lines 216–220 (dual targets, FX intervention as second instrument)"
-    weight: secondary
+- path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
+  pages: 'lines 2665–2730 (Section 4a: Monetary Policy and External Shocks; Box 4.7:
+    Intervention and Sterilization; Table 4.8)'
+  weight: primary
+- path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
+  pages: lines 2241–2244, 2353–2360 (impossible trinity, IT framework and FX)
+  weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: lines 3699–3715 (capital flows and sterilization), lines 3723–3749 (reserve
+    adequacy), lines 2465–2467 (sterilization costs exercise)
+  weight: primary
+- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro -
+    Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
+  pages: lines 216–220 (dual targets, FX intervention as second instrument)
+  weight: secondary
+parent_node: null
 related:
-  - node: "[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]"
-    relation: identity_foundation
-  - node: "[[Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis]]"
-    relation: external_sector_link
-  - node: "[[Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating]]"
-    relation: crisis_endpoint
-  - node: "[[EM_Central_Bank_Policy_Mix_FIT_Framework]]"
-    relation: policy_response_framework
-  - node: "[[CB_Balance_Sheet_Trilemma]]"
-    relation: related_constraint
-  - node: "[[Policy_Trilemma_Efficiency_Frontier_Equivalence]]"
-    relation: theoretical_root
-date_created: "2026-05-24"
-date_updated: "2026-05-24"
+- node: '[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]'
+  relation: identity_foundation
+- node: '[[Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis]]'
+  relation: external_sector_link
+- node: '[[Em_Balance_Sheet_Crisis_Anatomy_Fear_Of_Floating]]'
+  relation: crisis_endpoint
+- node: '[[EM_Central_Bank_Policy_Mix_FIT_Framework]]'
+  relation: policy_response_framework
+- node: '[[CB_Balance_Sheet_Trilemma]]'
+  relation: related_constraint
+- node: '[[Policy_Trilemma_Efficiency_Frontier_Equivalence]]'
+  relation: theoretical_root
+date_created: '2026-05-24'
+date_updated: '2026-05-24'
 ---
 
 ## The Root Constraint: NFA Becomes Endogenous

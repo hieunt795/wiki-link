@@ -30,6 +30,7 @@ source_refs:
 - path: 02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md
   pages: Full document
   weight: primary
+parent_node: null
 related:
 - node: '[[Basel III Capital And Liquidity Constraint Mechanics]]'
   relation: shared_tag:private_credit

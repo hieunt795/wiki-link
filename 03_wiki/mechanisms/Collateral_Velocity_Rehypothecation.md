@@ -34,6 +34,7 @@ source_refs:
 - path: 02_sources/books/singh_collateral_plumbing/Singh_Collateral_Financial_Plumbing.md
   pages: Ch.1-2, pp.1-30
   weight: primary
+parent_node: '[[Shadow_Banking_Market_Based_Finance]]'
 related:
 - node: '[[Repo_Market_Mechanics_Triparty_Bilateral]]'
   relation: mechanism_of

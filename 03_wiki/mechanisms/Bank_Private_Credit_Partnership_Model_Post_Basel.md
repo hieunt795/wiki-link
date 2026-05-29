@@ -28,6 +28,7 @@ source_refs:
 - path: 02_sources/deep-research/Private Credit, Basel, and Regional Dynamics.md
   pages: ''
   weight: primary
+parent_node: null
 related:
 - node: '[[Private_Credit_SRT_NAV_Loans_Bank_Partnerships]]'
   relation: canonical_bank_pc_partnership_model

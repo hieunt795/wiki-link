@@ -25,11 +25,17 @@ tags:
 - sofr
 confidence: 1
 stability: stable
-thesis: The U.S. repo market is segmented into four clearing structures — triparty (uncleared GC via BNY Mellon, MMFs as cash lenders), GCF Repo (cleared interdealer GC via FICC), DVP Repo (cleared specific-collateral interdealer via FICC), and NCCBR (uncleared specific-collateral bilateral, dealers + hedge funds) — each producing a distinct overnight rate (TPR=TGCR, GCF index, DVP, NCCBR) used by the Fed to calibrate its rate corridor.
+thesis: The U.S. repo market is segmented into four clearing structures — triparty
+  (uncleared GC via BNY Mellon, MMFs as cash lenders), GCF Repo (cleared interdealer
+  GC via FICC), DVP Repo (cleared specific-collateral interdealer via FICC), and NCCBR
+  (uncleared specific-collateral bilateral, dealers + hedge funds) — each producing
+  a distinct overnight rate (TPR=TGCR, GCF index, DVP, NCCBR) used by the Fed to calibrate
+  its rate corridor.
 source_refs:
 - path: 02_sources/books/conks/Conks - Plumping note (Money market.md
   pages: batch 21 (chars ~173114-182157)
   weight: primary
+parent_node: null
 related:
 - node: '[[Standing Repo Facility SRF Fed Backstop]]'
   relation: context

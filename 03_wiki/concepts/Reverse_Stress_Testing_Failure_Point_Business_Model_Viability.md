@@ -30,10 +30,11 @@ source_refs:
     (EBA-GL-2018-04).md
   pages: ''
   weight: primary
+parent_node: null
 related:
-  - Eba_Gl_2018_04_Institutions_Stress_Testing
-  - Bcbs_Stress_Testing_Sound_Practices_21_Principles_2009
-  - Stress_Testing_Governance_Integration_Bank_Risk_Framework
+- Eba_Gl_2018_04_Institutions_Stress_Testing
+- Bcbs_Stress_Testing_Sound_Practices_21_Principles_2009
+- Stress_Testing_Governance_Integration_Bank_Risk_Framework
 date_created: '2026-05-27'
 date_updated: '2026-05-27'
 ---

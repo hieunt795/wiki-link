@@ -3,42 +3,43 @@ node_id: fed_balance_sheet_size_and_policy_rate_independence_con_001
 type: concept
 title: Fed Balance Sheet Size and Policy Rate Independence
 aliases:
-  - QT rate cut relationship
-  - balance sheet rate independence
-  - độc lập bảng cân đối Fed
-  - QT cắt giảm lãi suất
+- QT rate cut relationship
+- balance sheet rate independence
+- độc lập bảng cân đối Fed
+- QT cắt giảm lãi suất
 domain:
   primary: monetary_policy
 tags:
-  - fed
-  - qt
-  - balance_sheet
-  - ffr
-  - ample_reserves
-  - monetary_policy
-
+- fed
+- qt
+- balance_sheet
+- ffr
+- ample_reserves
+- monetary_policy
 confidence: 4
 stability: stable
+thesis: 'In an ample reserves regime, the Federal Reserve''s balance sheet size and
+  its policy rate (Federal Funds Rate) are independent instruments. The use of administered
+  rates (IORB and ON RRP) allows the Fed to control the price of money regardless
+  of the quantity of reserves, provided they remain above the system''s structural
+  demand floor.
 
-thesis: >
-  In an ample reserves regime, the Federal Reserve's balance sheet size and its policy rate (Federal Funds Rate) are independent instruments. The use of administered rates (IORB and ON RRP) allows the Fed to control the price of money regardless of the quantity of reserves, provided they remain above the system's structural demand floor.
-
+  '
 source_refs:
-  - path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
-    pages: "The Federal Reserve Endgame Is Not a Collapse, It's Global Domination"
-    weight: primary
-  - path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
-    pages: "full document"
-    weight: supporting
-
+- path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
+  pages: The Federal Reserve Endgame Is Not a Collapse, It's Global Domination
+  weight: primary
+- path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
+  pages: full document
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Fed_Ample_Reserves_Rate_Control_Framework]]"
-    relation: implementation_context
-  - node: "[[QT_Reserve_Drain_Effectiveness_And_Deposit_Funding_Condition]]"
-    relation: size_reduction_impact
-  - node: "[[Currency_as_A_Central_Bank_Liability]]"
-    relation: liability_structure
-
+- node: '[[Fed_Ample_Reserves_Rate_Control_Framework]]'
+  relation: implementation_context
+- node: '[[QT_Reserve_Drain_Effectiveness_And_Deposit_Funding_Condition]]'
+  relation: size_reduction_impact
+- node: '[[Currency_as_A_Central_Bank_Liability]]'
+  relation: liability_structure
 date_created: 2024-05-23
 date_updated: 2024-05-23
 ---

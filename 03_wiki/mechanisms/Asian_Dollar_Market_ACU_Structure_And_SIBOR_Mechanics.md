@@ -23,11 +23,17 @@ tags:
 - post_gfc_regulation
 confidence: 1
 stability: historical
-thesis: The Asian Dollar Market was a regional eurodollar system in which ACU (Asian Currency Unit) banks in Singapore issued SIBOR-linked dollar liabilities (CDs, time deposits, bonds) to offshore dollar holders, on-lent to regional borrowers at SIBOR+spread, and settled all dollar transfers through US correspondent accounts — a structure that thrived on Singapore's regulatory arbitrage before being structurally gutted by post-GFC reforms targeting unsecured lending.
+thesis: The Asian Dollar Market was a regional eurodollar system in which ACU (Asian
+  Currency Unit) banks in Singapore issued SIBOR-linked dollar liabilities (CDs, time
+  deposits, bonds) to offshore dollar holders, on-lent to regional borrowers at SIBOR+spread,
+  and settled all dollar transfers through US correspondent accounts — a structure
+  that thrived on Singapore's regulatory arbitrage before being structurally gutted
+  by post-GFC reforms targeting unsecured lending.
 source_refs:
 - path: 02_sources/books/conks/Conks - Global Dollar and Eurodollar Systems.md
   pages: batch 7 (chars ~49518-58585)
   weight: primary
+parent_node: null
 related:
 - node: '[[Eurodollar System Mechanics And Post-Reform Decline]]'
   relation: regional_variant

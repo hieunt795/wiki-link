@@ -1,70 +1,66 @@
 ---
 node_id: entity_federal_reserve_001
 type: entity
-title: "Federal Reserve (Fed)"
+title: Federal Reserve (Fed)
 aliases:
-  - Fed
-  - Federal Reserve System
-  - FOMC
-  - US central bank
-  - Cục Dự trữ Liên bang
-  - Ngân hàng Trung ương Mỹ
-
+- Fed
+- Federal Reserve System
+- FOMC
+- US central bank
+- Cục Dự trữ Liên bang
+- Ngân hàng Trung ương Mỹ
 domain:
   primary: monetary_policy
   secondary:
-    - financial_markets
-    - fiscal_policy
+  - financial_markets
+  - fiscal_policy
 tags:
-  - central-bank
-  - united-states
-  - monetary-policy
-  - balance-sheet
-  - lender-of-last-resort
-
+- central-bank
+- united-states
+- monetary-policy
+- balance-sheet
+- lender-of-last-resort
 confidence: 3
 stability: stable
-
 entity_type: central_bank
 jurisdiction: US
 established: 1913
-mandate: "Maximum employment, stable prices (2% inflation target), moderate long-term interest rates"
-
-thesis: >
-  The Federal Reserve is the central bank of the United States, operating as a
-  decentralized system of 12 Reserve Banks under a Board of Governors, with monetary
-  policy set by the FOMC. It controls the federal funds rate target, manages the Fed's
+mandate: Maximum employment, stable prices (2% inflation target), moderate long-term
+  interest rates
+thesis: 'The Federal Reserve is the central bank of the United States, operating as
+  a decentralized system of 12 Reserve Banks under a Board of Governors, with monetary
+  policy set by the FOMC. It controls the federal funds rate target, manages the Fed''s
   balance sheet (assets: Treasuries + MBS; liabilities: reserves + currency + TGA),
   and serves as fiscal agent for the US Treasury.
 
+  '
 source_refs:
-  - path: 02_sources/Clipping/Breaking Out of the Central Bank Balance Sheet Trilemma.md
-    weight: primary
-  - path: 02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md
-    weight: supporting
-  - path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
-    weight: supporting
-  - path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
-    weight: supporting
-  - path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
-    weight: supporting
-
+- path: 02_sources/Clipping/Breaking Out of the Central Bank Balance Sheet Trilemma.md
+  weight: primary
+- path: 02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md
+  weight: supporting
+- path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
+  weight: supporting
+- path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
+  weight: supporting
+- path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Fed_Ample_Reserves_Range_Floor_Framework]]"
-    relation: implements
-  - node: "[[Fed_Fiscal_Agent_Treasury_Relationship]]"
-    relation: participates_in
-  - node: "[[Fed_Overnight_Reverse_Repo_On_Rrp]]"
-    relation: operates
-  - node: "[[Central_Bank_Balance_Sheet_Structure_Liabilities_Assets]]"
-    relation: instance_of
-  - node: "[[EFFR_Effective_Federal_Funds_Rate]]"
-    relation: controls
-  - node: "[[IORB_Interest_on_Reserve_Balances]]"
-    relation: sets
-  - node: "[[US_Treasury_Department]]"
-    relation: fiscal_agent_for
-
+- node: '[[Fed_Ample_Reserves_Range_Floor_Framework]]'
+  relation: implements
+- node: '[[Fed_Fiscal_Agent_Treasury_Relationship]]'
+  relation: participates_in
+- node: '[[Fed_Overnight_Reverse_Repo_On_Rrp]]'
+  relation: operates
+- node: '[[Central_Bank_Balance_Sheet_Structure_Liabilities_Assets]]'
+  relation: instance_of
+- node: '[[EFFR_Effective_Federal_Funds_Rate]]'
+  relation: controls
+- node: '[[IORB_Interest_on_Reserve_Balances]]'
+  relation: sets
+- node: '[[US_Treasury_Department]]'
+  relation: fiscal_agent_for
 date_created: 2026-05-23
 date_updated: 2026-05-23
 last_reviewed: 2026-05-23

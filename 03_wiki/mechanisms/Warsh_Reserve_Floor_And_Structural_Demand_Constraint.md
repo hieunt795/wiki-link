@@ -3,40 +3,50 @@ node_id: warsh_reserve_floor_and_structural_demand_constraint_mec_001
 type: mechanism
 title: Warsh Reserve Floor And Structural Demand Constraint
 aliases:
-  - structural demand floor
-  - reserve floor constraint
-  - ranh buoc tang tru du
-  - tran cau cau truc cua du tru
+- structural demand floor
+- reserve floor constraint
+- ranh buoc tang tru du
+- tran cau cau truc cua du tru
 domain:
   primary: monetary_policy
-  secondary: [financial_markets]
-tags: [warsh, reserves, floor, structural_demand, qt, sofr, liquidity]
+  secondary:
+  - financial_markets
+tags:
+- warsh
+- reserves
+- floor
+- structural_demand
+- qt
+- sofr
+- liquidity
 confidence: 3
 stability: stable
-thesis: >
-  Warsh's balance-sheet shrinking program runs into a reserve-floor constraint:
-  the Fed cannot reduce reserves below the system's structural demand without
-  causing money-market dislocations. This makes the question not whether the
-  balance sheet can be smaller, but how far it can shrink before SOFR and related
-  rates lose their stable floor.
+thesis: 'Warsh''s balance-sheet shrinking program runs into a reserve-floor constraint:
+  the Fed cannot reduce reserves below the system''s structural demand without causing
+  money-market dislocations. This makes the question not whether the balance sheet
+  can be smaller, but how far it can shrink before SOFR and related rates lose their
+  stable floor.
+
+  '
 source_refs:
-  - path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
-    pages: "full document"
-    weight: primary
-  - path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
-    pages: "full document"
-    weight: supporting
+- path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
+  pages: full document
+  weight: primary
+- path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
+  pages: full document
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Warsh Balance Sheet Stimulus Swap]]"
-    relation: contested_by
-  - node: "[[Fed Balance Sheet Size and Policy Rate Independence]]"
-    relation: operating_context
-  - node: "[[Fed Ample Reserves Rate Control Framework]]"
-    relation: rate_control_context
-  - node: "[[TGA Volatility And Reserve Buffer Demand]]"
-    relation: related_constraint
-  - node: "[[Warsh Fed Balance Sheet Operating Doctrine]]"
-    relation: implementation_constraint
+- node: '[[Warsh Balance Sheet Stimulus Swap]]'
+  relation: contested_by
+- node: '[[Fed Balance Sheet Size and Policy Rate Independence]]'
+  relation: operating_context
+- node: '[[Fed Ample Reserves Rate Control Framework]]'
+  relation: rate_control_context
+- node: '[[TGA Volatility And Reserve Buffer Demand]]'
+  relation: related_constraint
+- node: '[[Warsh Fed Balance Sheet Operating Doctrine]]'
+  relation: implementation_constraint
 date_created: 2026-05-24
 date_updated: 2026-05-24
 ---

@@ -41,6 +41,7 @@ source_refs:
     Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-1.md
   pages: Table of contents, overview
   weight: supporting
+parent_node: null
 related:
 - node: '[[Monetary_Policy_Instruments_Operational_Framework]]'
   relation: complements

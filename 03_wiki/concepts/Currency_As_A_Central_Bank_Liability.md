@@ -28,6 +28,7 @@ source_refs:
 - path: 02_sources/Inbox/Why Is Currency a Liability of the Fed_.md
   pages: full document
   weight: primary
+parent_node: '[[Central_Bank_Balance_Sheet_Structure_Liabilities_Assets]]'
 related:
 - node: '[[Central_Bank_Balance_Sheet_Structure_Liabilities_Assets]]'
   relation: component_of

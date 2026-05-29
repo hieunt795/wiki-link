@@ -3,55 +3,57 @@ node_id: irrbb_standardised_versus_internal_model_approach_001
 type: framework
 title: IRRBB Standardised vs Internal Model Approach — Practitioner Perspective
 aliases:
-  - IRRBB SA vs IMA
-  - IRRBB Pillar 2 principles
-  - BCBS 12 principles IRRBB
-  - supervisory outlier test SOT
-  - tiêu chuẩn IRRBB Basel Pillar 2
-  - phương pháp nội bộ rủi ro lãi suất sổ ngân hàng
-  - kiểm tra ngoại lệ giám sát SOT
+- IRRBB SA vs IMA
+- IRRBB Pillar 2 principles
+- BCBS 12 principles IRRBB
+- supervisory outlier test SOT
+- tiêu chuẩn IRRBB Basel Pillar 2
+- phương pháp nội bộ rủi ro lãi suất sổ ngân hàng
+- kiểm tra ngoại lệ giám sát SOT
 domain:
   primary: alm
   secondary: []
 tags:
-  - node: "[[IRRBB]]"
-    relation: related_to
-  - node: "[[BCBS]]"
-    relation: related_to
-  - node: "[[Pillar2]]"
-    relation: related_to
-  - node: "[[EVE]]"
-    relation: related_to
-  - node: "[[NII]]"
-    relation: related_to
-  - node: "[[SOT]]"
-    relation: related_to
-  - supervisory-outlier-test
-  - standardised-approach
-  - internal-model
-  - regulatory-shocks
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[BCBS]]'
+  relation: related_to
+- node: '[[Pillar2]]'
+  relation: related_to
+- node: '[[EVE]]'
+  relation: related_to
+- node: '[[NII]]'
+  relation: related_to
+- node: '[[SOT]]'
+  relation: related_to
+- supervisory-outlier-test
+- standardised-approach
+- internal-model
+- regulatory-shocks
 confidence: 1
 stability: stable
-thesis: >
-  BCBS 2016 (d368) adopted a principles-based Pillar 2 framework rather than a
-  mandatory Pillar 1 standardised capital charge for IRRBB, structuring 12 principles
-  that require banks to measure both EVE and NII under six regulatory rate shocks and
-  apply a supervisory outlier test (SOT) that triggers enhanced scrutiny when the
-  worst-case ΔEVe exceeds 15% of Tier 1 capital. [LLM]
+thesis: 'BCBS 2016 (d368) adopted a principles-based Pillar 2 framework rather than
+  a mandatory Pillar 1 standardised capital charge for IRRBB, structuring 12 principles
+  that require banks to measure both EVE and NII under six regulatory rate shocks
+  and apply a supervisory outlier test (SOT) that triggers enhanced scrutiny when
+  the worst-case ΔEVe exceeds 15% of Tier 1 capital. [LLM]
+
+  '
 source_refs:
-  - path: "02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md"
-    pages: "Chapter 3: Interest Rate Risk Management — The Practitioner's Perspective"
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: 'Chapter 3: Interest Rate Risk Management — The Practitioner''s Perspective'
+parent_node: null
 related:
-  - node: "[[Bcbs_Irrbb_Standards_2016]]"
-    relation: related_to
-  - node: "[[ALM_Enterprise_Risk_Management_Framework]]"
-    relation: related_to
-  - node: "[[ILAAP_Supervisory_Liquidity_Framework]]"
-    relation: related_to
-  - node: "[[Interest_Rate_Basis_Risk_Measurement_ALM]]"
-    relation: related_to
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Bcbs_Irrbb_Standards_2016]]'
+  relation: related_to
+- node: '[[ALM_Enterprise_Risk_Management_Framework]]'
+  relation: related_to
+- node: '[[ILAAP_Supervisory_Liquidity_Framework]]'
+  relation: related_to
+- node: '[[Interest_Rate_Basis_Risk_Measurement_ALM]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Thesis

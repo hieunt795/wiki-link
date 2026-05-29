@@ -35,6 +35,7 @@ source_refs:
 - path: 02_sources/books/tuckman_serrat_fixed_income/Tuckman_Serrat_Fixed_Income_2022.md
   pages: Ch.4, Ch.5
   weight: primary
+parent_node: null
 related:
 - node: '[[Repo_Market_Mechanics_Triparty_Bilateral]]'
   relation: applied_in

@@ -25,11 +25,17 @@ tags:
 - repo
 confidence: 1
 stability: evolving
-thesis: Three forces extend the Fed's RMO requirement beyond initial estimates — Big Six banks front-running rate cuts by swapping reserves for USTs (structural reserve drain), GSE mandated MBS purchases (~$200B) funded via agency debt creating upward overnight rate pressure, and RV fund basis trade persistence driving structural repo demand — with XCCY basis emerging as the next battleground when onshore USD funding normalizes.
+thesis: Three forces extend the Fed's RMO requirement beyond initial estimates — Big
+  Six banks front-running rate cuts by swapping reserves for USTs (structural reserve
+  drain), GSE mandated MBS purchases (~$200B) funded via agency debt creating upward
+  overnight rate pressure, and RV fund basis trade persistence driving structural
+  repo demand — with XCCY basis emerging as the next battleground when onshore USD
+  funding normalizes.
 source_refs:
 - path: 02_sources/books/conks/Conks - Plumping note (Money market.md
   pages: batch 23 (chars ~189540-196957)
   weight: primary
+parent_node: null
 related:
 - node: '[[Fed RMO Reserve Management Operations Post QT Mechanics]]'
   relation: extends

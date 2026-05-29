@@ -31,6 +31,7 @@ source_refs:
 - path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
   pages: Section on BoJ
   weight: supporting
+parent_node: null
 related:
 - node: '[[Japan_Sovereign_Carry_Trade_Framework]]'
   relation: funding_source

@@ -3,38 +3,40 @@ node_id: fed_overnight_reverse_repo_on_rrp_mec_001
 type: mechanism
 title: Fed Overnight Reverse Repo ON RRP
 aliases:
-  - ON RRP
-  - reverse repo facility
-  - Fed RRP
-  - co so repo dao nguoc qua dem
+- ON RRP
+- reverse repo facility
+- Fed RRP
+- co so repo dao nguoc qua dem
 domain:
   primary: monetary_policy
 tags:
-  - rrp
-  - money_market
-  - fed_facilities
-  - reserves
-  - liquidity_sponge
-
+- rrp
+- money_market
+- fed_facilities
+- reserves
+- liquidity_sponge
 confidence: 4
 stability: stable
+thesis: 'The ON RRP facility serves as the Federal Reserve''s primary rate-floor mechanism
+  and "liquidity shock absorber." It accepts cash from non-bank entities (MMFs, GSEs,
+  Primary Dealers) overnight in exchange for Treasury collateral, effectively "neutralizing"
+  excess reserves and preventing money market rates from falling below the FOMC''s
+  target range.
 
-thesis: >
-  The ON RRP facility serves as the Federal Reserve's primary rate-floor mechanism and "liquidity shock absorber." It accepts cash from non-bank entities (MMFs, GSEs, Primary Dealers) overnight in exchange for Treasury collateral, effectively "neutralizing" excess reserves and preventing money market rates from falling below the FOMC's target range.
-
+  '
 source_refs:
-  - path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
-    pages: "The Federal Reserve Endgame Is Not a Collapse, It's Global Domination; The Fed's Plumbing Dilemma; The Fed's Reckoning"
-    weight: primary
-
+- path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
+  pages: The Federal Reserve Endgame Is Not a Collapse, It's Global Domination; The
+    Fed's Plumbing Dilemma; The Fed's Reckoning
+  weight: primary
+parent_node: '[[Fed_Ample_Reserves_Rate_Control_Framework]]'
 related:
-  - node: "[[Fed_Ample_Reserves_Rate_Control_Framework]]"
-    relation: component_of_floor_system
-  - node: "[[QT_Reserve_Drain_Effectiveness_And_Deposit_Funding_Condition]]"
-    relation: QT_buffer
-  - node: "[[TGA_Reserve_Swap_Mechanics_And_Debt_Ceiling_Dynamics]]"
-    relation: offsetting_liability_flow
-
+- node: '[[Fed_Ample_Reserves_Rate_Control_Framework]]'
+  relation: component_of_floor_system
+- node: '[[QT_Reserve_Drain_Effectiveness_And_Deposit_Funding_Condition]]'
+  relation: QT_buffer
+- node: '[[TGA_Reserve_Swap_Mechanics_And_Debt_Ceiling_Dynamics]]'
+  relation: offsetting_liability_flow
 date_created: 2024-05-20
 date_updated: 2024-05-20
 ---

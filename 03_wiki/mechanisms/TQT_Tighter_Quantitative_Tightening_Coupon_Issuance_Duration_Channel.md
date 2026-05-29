@@ -21,11 +21,17 @@ tags:
 - risk_assets
 confidence: 1
 stability: stable
-thesis: "TQT (Tighter Quantitative Tightening) — when the U.S. Treasury shifts issuance from short-term bills toward longer-duration coupon bonds (notes and bonds) — is more effective at tightening financial conditions than standard QT, because duration risk forces investors to reassess risk tolerance and sell riskier assets to offset the new duration exposure; the Treasury (not the Fed) controls this dimension of financial tightening."
+thesis: TQT (Tighter Quantitative Tightening) — when the U.S. Treasury shifts issuance
+  from short-term bills toward longer-duration coupon bonds (notes and bonds) — is
+  more effective at tightening financial conditions than standard QT, because duration
+  risk forces investors to reassess risk tolerance and sell riskier assets to offset
+  the new duration exposure; the Treasury (not the Fed) controls this dimension of
+  financial tightening.
 source_refs:
 - path: 02_sources/books/conks/Conks - Liquidity and Market Dynamics.md
   pages: batches 39-41 (chars ~225000-248000)
   weight: primary
+parent_node: null
 related:
 - node: '[[Treasury QE Duration Swap RRP Drain Mechanisms]]'
   relation: inverse_of

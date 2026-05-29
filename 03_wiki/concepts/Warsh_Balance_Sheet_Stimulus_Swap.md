@@ -30,6 +30,7 @@ source_refs:
 - path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
   pages: Full document
   weight: primary
+parent_node: null
 related:
 - node: '[[Quantitative_Tightening_QT_Balance_Sheet_Runoff]]'
   relation: ideological_driver

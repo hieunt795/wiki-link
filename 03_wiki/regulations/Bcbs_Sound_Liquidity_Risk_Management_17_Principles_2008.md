@@ -3,64 +3,73 @@ node_id: bcbs_sound_liquidity_risk_management_17_principles_001
 type: regulation
 jurisdiction: international
 issuer: bcbs
-title: BCBS Principles for Sound Liquidity Risk Management and Supervision (2008) — 17-Principle Framework
+title: BCBS Principles for Sound Liquidity Risk Management and Supervision (2008)
+  — 17-Principle Framework
 aliases:
-  - BCBS liquidity risk principles 2008
-  - bcbs144 liquidity framework
-  - Sound Practices for Managing Liquidity 2008
-  - 17 principles liquidity risk
-  - BCBS liquidity supervision principles
-  - nguyên tắc quản lý rủi ro thanh khoản BCBS
-  - khung 17 nguyên tắc thanh khoản
+- BCBS liquidity risk principles 2008
+- bcbs144 liquidity framework
+- Sound Practices for Managing Liquidity 2008
+- 17 principles liquidity risk
+- BCBS liquidity supervision principles
+- nguyên tắc quản lý rủi ro thanh khoản BCBS
+- khung 17 nguyên tắc thanh khoản
 domain:
   primary: banking_regulation
   secondary: financial_stability
 tags:
-  - bcbs
-  - liquidity_risk
-  - regulatory_standard
-  - banking_supervision
-  - lrm_framework
-  - hqla
-  - stress_testing
-  - cfp
-  - intraday_liquidity
-  - ftp
-  - basel
+- bcbs
+- liquidity_risk
+- regulatory_standard
+- banking_supervision
+- lrm_framework
+- hqla
+- stress_testing
+- cfp
+- intraday_liquidity
+- ftp
+- basel
 confidence: 4
 stability: stable
-thesis: >
-  BCBS 2008 (bcbs144) establishes 17 binding principles for liquidity risk management
-  and supervision, organized into five sections: (1) Fundamental principle — bank holds
-  an HQLA cushion to survive stress; (2) Governance — board sets risk tolerance, senior
-  management implements, internal pricing allocates liquidity costs to business lines;
-  (3) Measurement and management — cash flow projection, cross-entity control, funding
-  diversification, intraday management, collateral management, stress testing,
-  contingency funding plan, HQLA cushion; (4) Public disclosure; (5) Supervisory role.
-  The framework is the pre-Basel III standard that directly foreshadowed LCR (Principle 12),
-  NSFR (Principle 7), and ILAAP/ICAAP integration (Principles 10–11). All 17 principles
-  are applied proportionally based on bank size, complexity and systemic importance.
+thesis: 'BCBS 2008 (bcbs144) establishes 17 binding principles for liquidity risk
+  management and supervision, organized into five sections: (1) Fundamental principle
+  — bank holds an HQLA cushion to survive stress; (2) Governance — board sets risk
+  tolerance, senior management implements, internal pricing allocates liquidity costs
+  to business lines; (3) Measurement and management — cash flow projection, cross-entity
+  control, funding diversification, intraday management, collateral management, stress
+  testing, contingency funding plan, HQLA cushion; (4) Public disclosure; (5) Supervisory
+  role. The framework is the pre-Basel III standard that directly foreshadowed LCR
+  (Principle 12), NSFR (Principle 7), and ILAAP/ICAAP integration (Principles 10–11).
+  All 17 principles are applied proportionally based on bank size, complexity and
+  systemic importance.
+
+  '
 source_refs:
-  - path: 02_sources/regulator/bcbs/bcbs144.md
-    pages: "para 1–9 (introduction, scope), para 7 (17-principle list), para 10 (P2 risk tolerance), para 11–18 (P3 governance), para 19–21 (P4 internal pricing), para 22–57 (P5 measurement), para 58–64 (P6 cross-entity), para 65–76 (P7 funding diversification), para 77–87 (P8 intraday), para 88–93 (P9 collateral), para 94–109 (P10 stress testing), para 110–122 (P11 CFP), para 123–127 (P12 HQLA cushion), para 128–131 (P13 disclosure), para 132–147 (P14–P17 supervisory role)"
-    weight: primary
+- path: 02_sources/regulator/bcbs/bcbs144.md
+  pages: para 1–9 (introduction, scope), para 7 (17-principle list), para 10 (P2 risk
+    tolerance), para 11–18 (P3 governance), para 19–21 (P4 internal pricing), para
+    22–57 (P5 measurement), para 58–64 (P6 cross-entity), para 65–76 (P7 funding diversification),
+    para 77–87 (P8 intraday), para 88–93 (P9 collateral), para 94–109 (P10 stress
+    testing), para 110–122 (P11 CFP), para 123–127 (P12 HQLA cushion), para 128–131
+    (P13 disclosure), para 132–147 (P14–P17 supervisory role)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Bcbs_Hqla_Liquidity_Cushion_Principle_12]]"
-    relation: element_principle_12
-  - node: "[[Bcbs_Liquidity_Contingency_Funding_Plan_Principle_11]]"
-    relation: element_principle_11
-  - node: "[[Bcbs_Liquidity_Stress_Testing_Principle_10]]"
-    relation: element_principle_10
-  - node: "[[Bcbs_Liquidity_Internal_Pricing_Ftp_Principle_4]]"
-    relation: element_principle_4
-  - node: "[[Bcbs_Intraday_Liquidity_Management_Principle_8]]"
-    relation: element_principle_8
-  - node: "[[Irrbb_Eve_Nii_Dual_Metric_Framework]]"
-    relation: successor_standard_for_irrbb
-  - node: "[[LCR_NSFR_Long_Term_Lending_Penalty]]"
-    relation: successor_quantitative_standards
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Bcbs_Hqla_Liquidity_Cushion_Principle_12]]'
+  relation: element_principle_12
+- node: '[[Bcbs_Liquidity_Contingency_Funding_Plan_Principle_11]]'
+  relation: element_principle_11
+- node: '[[Bcbs_Liquidity_Stress_Testing_Principle_10]]'
+  relation: element_principle_10
+- node: '[[Bcbs_Liquidity_Internal_Pricing_Ftp_Principle_4]]'
+  relation: element_principle_4
+- node: '[[Bcbs_Intraday_Liquidity_Management_Principle_8]]'
+  relation: element_principle_8
+- node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
+  relation: successor_standard_for_irrbb
+- node: '[[LCR_NSFR_Long_Term_Lending_Penalty]]'
+  relation: successor_quantitative_standards
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Overview: Five Sections, 17 Principles

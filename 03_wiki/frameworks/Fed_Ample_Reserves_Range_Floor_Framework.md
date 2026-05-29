@@ -28,6 +28,7 @@ source_refs:
 - path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
   pages: Section 3.2
   weight: primary
+parent_node: '[[Fed_Overnight_Reverse_Repo_ON_RRP]]'
 related:
 - node: '[[Reserve_Floor_Payment_System_Demand]]'
   relation: driven_by

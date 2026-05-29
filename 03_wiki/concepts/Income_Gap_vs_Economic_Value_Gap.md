@@ -1,53 +1,50 @@
 ---
 node_id: income_gap_vs_economic_value_gap_001
 type: concept
-title: "Income Gap vs Economic Value Gap — Dual IRRBB Perspectives"
+title: Income Gap vs Economic Value Gap — Dual IRRBB Perspectives
 aliases:
-  - NII vs EVE dual view
-  - Earnings perspective vs economic value perspective
-  - Delta NII vs Delta EVE
-  - IRRBB dual metric
-  - góc nhìn kép IRRBB
-  - NII so với EVE trong quản lý IRRBB
-
+- NII vs EVE dual view
+- Earnings perspective vs economic value perspective
+- Delta NII vs Delta EVE
+- IRRBB dual metric
+- góc nhìn kép IRRBB
+- NII so với EVE trong quản lý IRRBB
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - irrbb
-  - nii
-  - eve
-  - gap_analysis
-  - interest_rate_risk
-  - dual_view
-  - hedging
-
+- irrbb
+- nii
+- eve
+- gap_analysis
+- interest_rate_risk
+- dual_view
+- hedging
 confidence: 1
 stability: stable
+thesis: '[LLM] The two IRRBB measurement perspectives — the earnings perspective (Δ
+  NII, focused on short-term NII impact over 1–2 years) and the economic value perspective
+  (Δ EVE, measuring the present value change in the entire banking book) — can produce
+  contradictory signals about a bank''s risk position and can incentivize offsetting
+  hedging decisions, making it essential to manage both simultaneously rather than
+  optimizing for only one metric.
 
-thesis: >
-  [LLM] The two IRRBB measurement perspectives — the earnings perspective (Δ NII, focused on
-  short-term NII impact over 1–2 years) and the economic value perspective (Δ EVE, measuring
-  the present value change in the entire banking book) — can produce contradictory signals about
-  a bank's risk position and can incentivize offsetting hedging decisions, making it essential
-  to manage both simultaneously rather than optimizing for only one metric.
-
+  '
 source_refs:
-  - path: 02_sources/books/alm/A - Asset liability optimization.md
-    pages: "Ch 1 (Overview of Financial Risks), Ch 2 (Maturity Gap Analysis, EVE section)"
-    weight: primary
-
+- path: 02_sources/books/alm/A - Asset liability optimization.md
+  pages: Ch 1 (Overview of Financial Risks), Ch 2 (Maturity Gap Analysis, EVE section)
+  weight: primary
+parent_node: '[[ALM_Balance_Sheet_Optimization_Framework]]'
 related:
-  - node: "[[ALM_Hedging_Strategy_Design]]"
-    relation: related_to
-  - node: "[[ALM_Balance_Sheet_Optimization_Framework]]"
-    relation: component_of
-  - node: "[[IRRBB_EVE_NII_Dual_Metric]]"
-    relation: related_to
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[ALM_Hedging_Strategy_Design]]'
+  relation: related_to
+- node: '[[ALM_Balance_Sheet_Optimization_Framework]]'
+  relation: component_of
+- node: '[[IRRBB_EVE_NII_Dual_Metric]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## The Dual View Requirement

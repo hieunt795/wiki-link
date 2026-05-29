@@ -3,53 +3,55 @@ node_id: alm_recovery_resolution_mrel_bail_in_001
 type: framework
 title: ALM in Recovery and Resolution — MREL, Bail-In, and BRRD
 aliases:
-  - ALM resolution planning
-  - MREL ALM
-  - bail-in tool
-  - BRRD resolution tools
-  - kế hoạch phục hồi và xử lý ngân hàng
-  - MREL ALM thanh lý
-  - công cụ bail-in xử lý ngân hàng
-  - BRRD kế hoạch xử lý
+- ALM resolution planning
+- MREL ALM
+- bail-in tool
+- BRRD resolution tools
+- kế hoạch phục hồi và xử lý ngân hàng
+- MREL ALM thanh lý
+- công cụ bail-in xử lý ngân hàng
+- BRRD kế hoạch xử lý
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - resolution
-  - MREL
-  - bail-in
-  - BRRD
-  - recovery-planning
-  - gone-concern
-  - node: "[[ALM]]"
-    relation: related_to
-  - node: "[[Basel_III]]"
-    relation: related_to
+- resolution
+- MREL
+- bail-in
+- BRRD
+- recovery-planning
+- gone-concern
+- node: '[[ALM]]'
+  relation: related_to
+- node: '[[Basel_III]]'
+  relation: related_to
 confidence: 1
 stability: stable
-thesis: >
-  Under the BRRD framework, a bank that exhausts recovery options enters resolution
-  via one of four tools (sale-of-business, bridge institution, asset separation,
-  bail-in); the bail-in tool absorbs losses by writing down or converting eligible
-  MREL liabilities into equity; ALM is responsible for MREL forecasting in the
-  funding plan, gone-concern ICAAP/ILAAP execution, and providing the resolution
-  authority with resolvability evidence on capital, liquidity, and operational
-  continuity. [LLM]
+thesis: 'Under the BRRD framework, a bank that exhausts recovery options enters resolution
+  via one of four tools (sale-of-business, bridge institution, asset separation, bail-in);
+  the bail-in tool absorbs losses by writing down or converting eligible MREL liabilities
+  into equity; ALM is responsible for MREL forecasting in the funding plan, gone-concern
+  ICAAP/ILAAP execution, and providing the resolution authority with resolvability
+  evidence on capital, liquidity, and operational continuity. [LLM]
+
+  '
 source_refs:
-  - path: "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md"
-    pages: "Box 14.1: Recovery and Resolution Planning; Chapter 15: ALM Role in Crisis"
+- path: 02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday,
+    Today and Tomorrow-De Gruyter (2021).md
+  pages: 'Box 14.1: Recovery and Resolution Planning; Chapter 15: ALM Role in Crisis'
+parent_node: null
 related:
-  - node: "[[Alm_Role_Srep_Pillar2_Capital_Liquidity]]"
-    relation: related_to
-  - node: "[[Integrated_Stress_Testing_Capital_Liquidity_Link]]"
-    relation: related_to
-  - node: "[[Optimal_Funding_Tenor_Cost_Risk_Tradeoff]]"
-    relation: related_to
-  - node: "[[Bank_Capital_Structure_And_Capital_Management_Alm]]"
-    relation: related_to
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Alm_Role_Srep_Pillar2_Capital_Liquidity]]'
+  relation: related_to
+- node: '[[Integrated_Stress_Testing_Capital_Liquidity_Link]]'
+  relation: related_to
+- node: '[[Optimal_Funding_Tenor_Cost_Risk_Tradeoff]]'
+  relation: related_to
+- node: '[[Bank_Capital_Structure_And_Capital_Management_Alm]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Thesis

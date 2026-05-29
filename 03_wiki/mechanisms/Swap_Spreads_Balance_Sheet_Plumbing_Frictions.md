@@ -47,6 +47,7 @@ source_refs:
 - path: 02_sources/books/tuckman_serrat_fixed_income/Tuckman_Serrat_Fixed_Income_2022.md
   pages: Ch.13 §13.6 (basis swaps), Ch.14 (asset swap spreads)
   weight: supporting
+parent_node: '[[Interest_Rate_Swaps_OIS_Fixed_Floating]]'
 related:
 - node: '[[SLR_LCR_Balance_Sheet_Constraints_Treasury_Market_Dealer]]'
   relation: primary_driver

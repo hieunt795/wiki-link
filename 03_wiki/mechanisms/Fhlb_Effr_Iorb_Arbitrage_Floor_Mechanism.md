@@ -29,6 +29,7 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Plumping note (Money market.md
   pages: ''
   weight: primary
+parent_node: null
 related:
 - node: '[[Central Bank Monetary Policy Operational Framework Typology]]'
   relation: shared_tag:fed

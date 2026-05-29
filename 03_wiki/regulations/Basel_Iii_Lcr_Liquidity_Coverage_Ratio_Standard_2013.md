@@ -33,11 +33,12 @@ source_refs:
 - path: 07_scripts/02_sources/regulator/bcbs/bcbs238.md
   pages: ''
   weight: primary
+parent_node: null
 related:
-  - Hqla_Classification_Level1_Level2a_Level2b
-  - Lcr_Monitoring_Tools_Maturity_Mismatch_Funding_Concentration
-  - Ilaap_Internal_Liquidity_Adequacy_Assessment_Framework
-  - Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008
+- Hqla_Classification_Level1_Level2a_Level2b
+- Lcr_Monitoring_Tools_Maturity_Mismatch_Funding_Concentration
+- Ilaap_Internal_Liquidity_Adequacy_Assessment_Framework
+- Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008
 date_created: '2026-05-27'
 date_updated: '2026-05-27'
 ---

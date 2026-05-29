@@ -3,45 +3,47 @@ node_id: fed_ample_reserves_rate_control_framework_con_001
 type: concept
 title: Fed Ample Reserves Rate Control Framework
 aliases:
-  - Ample Reserves Framework
-  - Fed Rate Control Post-GFC
-  - IORB ON RRP SRF Corridor
-  - Khung kiểm soát lãi suất dự trữ dồi dào
+- Ample Reserves Framework
+- Fed Rate Control Post-GFC
+- IORB ON RRP SRF Corridor
+- Khung kiểm soát lãi suất dự trữ dồi dào
 domain:
   primary: monetary_policy
 tags:
-  - fed
-  - iorb
-  - on_rrp
-  - srf
-  - ample_reserves
-  - rate_control
-  - qt
-
+- fed
+- iorb
+- on_rrp
+- srf
+- ample_reserves
+- rate_control
+- qt
 confidence: 4
 stability: stable
+thesis: 'Post-GFC, the Fed shifted from a scarce-reserve corridor to an ample-reserve
+  floor system where the Federal Funds Rate (FFR) is controlled via administered rates
+  (IORB and ON RRP) rather than daily open market operations (OMOs). This framework
+  relies on a "leaky floor" arbitrage mechanism and a standing backstop (SRF) to maintain
+  the policy rate within the FOMC''s target range.
 
-thesis: >
-  Post-GFC, the Fed shifted from a scarce-reserve corridor to an ample-reserve floor system where the Federal Funds Rate (FFR) is controlled via administered rates (IORB and ON RRP) rather than daily open market operations (OMOs). This framework relies on a "leaky floor" arbitrage mechanism and a standing backstop (SRF) to maintain the policy rate within the FOMC's target range.
-
+  '
 source_refs:
-  - path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
-    pages: "The Federal Reserve Endgame Is Not a Collapse, It's Global Domination; The Fed's Plumbing Dilemma"
-    weight: primary
-  - path: 03_wiki/concepts/Central_Bank_Monetary_Policy_Operational_Framework_Typology.md
-    pages: "full document"
-    weight: supporting
-
+- path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
+  pages: The Federal Reserve Endgame Is Not a Collapse, It's Global Domination; The
+    Fed's Plumbing Dilemma
+  weight: primary
+- path: 03_wiki/concepts/Central_Bank_Monetary_Policy_Operational_Framework_Typology.md
+  pages: full document
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Central_Bank_Monetary_Policy_Operational_Framework_Typology]]"
-    relation: archetype_implementation
-  - node: "[[Fed_Overnight_Reverse_Repo_ON_RRP]]"
-    relation: floor_mechanism
-  - node: "[[Standing_Repo_Facility_SRF_Fed_Backstop]]"
-    relation: ceiling_backstop
-  - node: "[[QT_Reserve_Drain_Effectiveness_And_Deposit_Funding_Condition]]"
-    relation: transmission_constraint
-
+- node: '[[Central_Bank_Monetary_Policy_Operational_Framework_Typology]]'
+  relation: archetype_implementation
+- node: '[[Fed_Overnight_Reverse_Repo_ON_RRP]]'
+  relation: floor_mechanism
+- node: '[[Standing_Repo_Facility_SRF_Fed_Backstop]]'
+  relation: ceiling_backstop
+- node: '[[QT_Reserve_Drain_Effectiveness_And_Deposit_Funding_Condition]]'
+  relation: transmission_constraint
 date_created: 2024-05-22
 date_updated: 2024-05-22
 ---

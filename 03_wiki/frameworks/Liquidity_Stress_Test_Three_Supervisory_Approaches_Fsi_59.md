@@ -30,11 +30,12 @@ source_refs:
 - path: 07_scripts/02_sources/regulator/bcbs/insights59.md
   pages: ''
   weight: primary
+parent_node: null
 related:
-  - Liquidity_Stress_Contagion_Second_Round_Effects_System_Wide
-  - Ilaap_Internal_Liquidity_Adequacy_Assessment_Framework
-  - Basel_Iii_Lcr_Liquidity_Coverage_Ratio_Standard_2013
-  - Eba_Gl_2018_04_Institutions_Stress_Testing
+- Liquidity_Stress_Contagion_Second_Round_Effects_System_Wide
+- Ilaap_Internal_Liquidity_Adequacy_Assessment_Framework
+- Basel_Iii_Lcr_Liquidity_Coverage_Ratio_Standard_2013
+- Eba_Gl_2018_04_Institutions_Stress_Testing
 date_created: '2026-05-27'
 date_updated: '2026-05-27'
 ---

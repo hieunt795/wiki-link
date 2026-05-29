@@ -1,47 +1,47 @@
 ---
 node_id: repricing_gap_analysis_nii_eve_impact_001
 type: mechanism
-title: "Repricing Gap Analysis: NII and EVE Impact Measurement"
+title: 'Repricing Gap Analysis: NII and EVE Impact Measurement'
 aliases:
-  - repricing gap
-  - income gap
-  - earning gap analysis
-  - phân tích khoảng cách tái định giá
-  - khoảng cách tái định giá
-
+- repricing gap
+- income gap
+- earning gap analysis
+- phân tích khoảng cách tái định giá
+- khoảng cách tái định giá
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - repricing
-  - gap_analysis
-  - NII
-  - EVE
-  - IRRBB
-  - time_bands
-
+- repricing
+- gap_analysis
+- NII
+- EVE
+- IRRBB
+- time_bands
 confidence: 1
 stability: stable
+thesis: '[LLM] Repricing gap analysis is a maturity-bucket technique that allocates
+  interest-rate-sensitive assets and liabilities into time bands by their next repricing
+  date; the net gap in each bucket reveals where mismatches create NII and EVE risk,
+  with the weighted sum of all gaps (scaled by modified duration) estimating the EVE
+  decline for a 1% rate shock.
 
-thesis: >
-  [LLM] Repricing gap analysis is a maturity-bucket technique that allocates interest-rate-sensitive assets and liabilities into time bands by their next repricing date; the net gap in each bucket reveals where mismatches create NII and EVE risk, with the weighted sum of all gaps (scaled by modified duration) estimating the EVE decline for a 1% rate shock.
-
+  '
 source_refs:
-  - path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
-    pages: "Ch 2, sections 2.1.3 and 2.2.3"
-    weight: primary
-
+- path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
+  pages: Ch 2, sections 2.1.3 and 2.2.3
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Duration_Gap_Analysis_Banking_Book]]"
-    relation: related_to
-  - node: "[[Nii_Sensitivity_Forecast_Static_Dynamic_Balance_Sheet]]"
-    relation: related_to
-  - node: "[[Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book]]"
-    relation: related_to
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Duration_Gap_Analysis_Banking_Book]]'
+  relation: related_to
+- node: '[[Nii_Sensitivity_Forecast_Static_Dynamic_Balance_Sheet]]'
+  relation: related_to
+- node: '[[Maturity_Gap_Analysis_Interest_Rate_Risk_Banking_Book]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Overview

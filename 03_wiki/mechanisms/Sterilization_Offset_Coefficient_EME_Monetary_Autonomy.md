@@ -3,51 +3,55 @@ node_id: sterilization_offset_coefficient_eme_001
 type: mechanism
 title: Sterilization Effectiveness — Offset and Sterilization Coefficients in EMEs
 aliases:
-  - offset coefficient
-  - sterilization coefficient
-  - Kouri-Porter framework
-  - monetary policy autonomy EME
-  - hệ số offset
-  - hệ số sterilization
-  - tính hiệu quả vô hiệu hóa ngoại tệ
-  - tự chủ chính sách tiền tệ EM
+- offset coefficient
+- sterilization coefficient
+- Kouri-Porter framework
+- monetary policy autonomy EME
+- hệ số offset
+- hệ số sterilization
+- tính hiệu quả vô hiệu hóa ngoại tệ
+- tự chủ chính sách tiền tệ EM
 domain:
   primary: monetary_policy
   secondary: financial_markets
 tags:
-  - sterilization
-  - fx_intervention
-  - capital_flows
-  - monetary_autonomy
-  - em_policy
-  - kouri_porter
-  - indonesia
-  - offset_coefficient
+- sterilization
+- fx_intervention
+- capital_flows
+- monetary_autonomy
+- em_policy
+- kouri_porter
+- indonesia
+- offset_coefficient
 confidence: 3
 stability: stable
-thesis: >
-  Under open capital accounts with an FX target, the effectiveness of CB sterilization
+thesis: 'Under open capital accounts with an FX target, the effectiveness of CB sterilization
   is constrained by two competing forces measured as coefficients: the offset coefficient
   (how much of CB tightening is neutralized by induced capital inflows) and the sterilization
   coefficient (how much of FX intervention liquidity is reabsorbed). When the offset
-  coefficient exceeds the sterilization coefficient, the CB's net control over money supply
-  is negative — tightening attracts more inflows than can be sterilized, undermining
+  coefficient exceeds the sterilization coefficient, the CB''s net control over money
+  supply is negative — tightening attracts more inflows than can be sterilized, undermining
   monetary autonomy. [LLM]
+
+  '
 source_refs:
-  - path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
-    pages: "lines 265–273 (offset/sterilization coefficients, Indonesia case); lines 289–293 (sterilization cost of reserve accumulation)"
-    weight: primary
+- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro -
+    Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
+  pages: lines 265–273 (offset/sterilization coefficients, Indonesia case); lines
+    289–293 (sterilization cost of reserve accumulation)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
-    relation: quantitative_extension
-  - node: "[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]"
-    relation: cost_mechanism
-  - node: "[[EM_Central_Bank_Policy_Mix_FIT_Framework]]"
-    relation: policy_context
-  - node: "[[Policy_Trilemma_Efficiency_Frontier_Equivalence]]"
-    relation: theoretical_root
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]'
+  relation: quantitative_extension
+- node: '[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]'
+  relation: cost_mechanism
+- node: '[[EM_Central_Bank_Policy_Mix_FIT_Framework]]'
+  relation: policy_context
+- node: '[[Policy_Trilemma_Efficiency_Frontier_Equivalence]]'
+  relation: theoretical_root
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Two Coefficients That Define CB Effectiveness

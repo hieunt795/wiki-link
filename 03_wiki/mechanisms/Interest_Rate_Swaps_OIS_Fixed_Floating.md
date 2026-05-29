@@ -43,6 +43,7 @@ source_refs:
 - path: 02_sources/books/tuckman_serrat_fixed_income/Tuckman_Serrat_Fixed_Income_2022.md
   pages: Ch.13 (pp.4993-5283), Ch.14 (asset swap spreads)
   weight: primary
+parent_node: null
 related:
 - node: '[[DV01_Duration_Convexity_Fixed_Income]]'
   relation: uses

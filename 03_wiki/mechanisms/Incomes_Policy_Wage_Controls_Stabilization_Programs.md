@@ -3,62 +3,68 @@ node_id: incomes_policy_wage_controls_stabilization_001
 type: mechanism
 title: Incomes Policy — Wage Controls In Stabilization Programs
 aliases:
-  - incomes policy
-  - wage controls stabilization
-  - tax-based incomes policy TIP
-  - excess wage tax
-  - popiwek Poland
-  - wage norm indexation
-  - social pact anti-inflation
-  - chính sách thu nhập
-  - kiểm soát tiền lương trong ổn định hóa
-  - thuế vượt mức lương
-  - chống lạm phát quán tính
+- incomes policy
+- wage controls stabilization
+- tax-based incomes policy TIP
+- excess wage tax
+- popiwek Poland
+- wage norm indexation
+- social pact anti-inflation
+- chính sách thu nhập
+- kiểm soát tiền lương trong ổn định hóa
+- thuế vượt mức lương
+- chống lạm phát quán tính
 domain:
   primary: fiscal_policy
   secondary: monetary_policy
 tags:
-  - incomes_policy
-  - wage_controls
-  - stabilization_program
-  - anti_inflation
-  - inertial_inflation
-  - transition_economy
-  - wage_norm
-  - indexation
-  - excess_wage_tax
-  - imf_macro_accounting
-  - heterodox_stabilization
+- incomes_policy
+- wage_controls
+- stabilization_program
+- anti_inflation
+- inertial_inflation
+- transition_economy
+- wage_norm
+- indexation
+- excess_wage_tax
+- imf_macro_accounting
+- heterodox_stabilization
 confidence: 4
 stability: stable
-thesis: >
-  Incomes policies — government interventions to restrain wage and price growth —
-  are used in stabilization programs primarily to break inertial inflation (perpetuated
-  through contracts and indexation) rather than to address excess demand. Three
-  institutional forms exist: guideline approach, social contract, and tax-incentive
-  policy (TIP). In transition economies, the four-step design challenge covers:
-  (1) norm selection (wage bill vs. average wage), (2) indexation (backward vs.
-  forward-looking), (3) coverage (public vs. also private enterprises), and
-  (4) enforcement (excess wage tax or social pact). Historical evidence shows
-  wage controls play a valuable but temporary role — effectiveness diminishes rapidly,
-  and they must be exited before structural distortions accumulate.
+thesis: 'Incomes policies — government interventions to restrain wage and price growth
+  — are used in stabilization programs primarily to break inertial inflation (perpetuated
+  through contracts and indexation) rather than to address excess demand. Three institutional
+  forms exist: guideline approach, social contract, and tax-incentive policy (TIP).
+  In transition economies, the four-step design challenge covers: (1) norm selection
+  (wage bill vs. average wage), (2) indexation (backward vs. forward-looking), (3)
+  coverage (public vs. also private enterprises), and (4) enforcement (excess wage
+  tax or social pact). Historical evidence shows wage controls play a valuable but
+  temporary role — effectiveness diminishes rapidly, and they must be exited before
+  structural distortions accumulate.
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 982–1015 (Incomes Policy: 3 alternative approaches — guidelines/social contract/TIP; 4-step design in transition — norm/indexation/coverage/enforcement; wage bill vs. average wage norm tradeoff; partial forward-looking indexation; excess wage tax; Poland popiwek; temporary nature of controls)"
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: 'lines 982–1015 (Incomes Policy: 3 alternative approaches — guidelines/social
+    contract/TIP; 4-step design in transition — norm/indexation/coverage/enforcement;
+    wage bill vs. average wage norm tradeoff; partial forward-looking indexation;
+    excess wage tax; Poland popiwek; temporary nature of controls)'
+  weight: primary
+parent_node: '[[Transition_Economy_Monetary_Special_Issues]]'
 related:
-  - node: "[[Imf_Inflation_Analysis_Cpi_Gdp_Deflator_Four_Types_Core]]"
-    relation: inertial_inflation_is_the_target
-  - node: "[[Imf_Sna_Real_Sector_Accounting_Gdp_Identities_And_Sectoral_Accounts]]"
-    relation: real_wage_links_to_gdp_identity
-  - node: "[[Transition_Economy_Monetary_Special_Issues]]"
-    relation: wage_controls_part_of_transition_stabilization_toolkit
-  - node: "[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]"
-    relation: wage_bill_is_largest_government_expenditure_component
-  - node: "[[Imf_Monetary_Analysis_Quantity_Theory_Velocity_And_Exchange_Rate_Regimes]]"
-    relation: exchange_rate_anchor_paired_with_incomes_policy_in_heterodox_programs
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Imf_Inflation_Analysis_Cpi_Gdp_Deflator_Four_Types_Core]]'
+  relation: inertial_inflation_is_the_target
+- node: '[[Imf_Sna_Real_Sector_Accounting_Gdp_Identities_And_Sectoral_Accounts]]'
+  relation: real_wage_links_to_gdp_identity
+- node: '[[Transition_Economy_Monetary_Special_Issues]]'
+  relation: wage_controls_part_of_transition_stabilization_toolkit
+- node: '[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]'
+  relation: wage_bill_is_largest_government_expenditure_component
+- node: '[[Imf_Monetary_Analysis_Quantity_Theory_Velocity_And_Exchange_Rate_Regimes]]'
+  relation: exchange_rate_anchor_paired_with_incomes_policy_in_heterodox_programs
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Context: What Incomes Policy Is and Is Not

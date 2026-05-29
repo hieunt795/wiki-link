@@ -30,6 +30,7 @@ source_refs:
 - path: 02_sources/books/conks/Conk - Repo.md
   pages: Full document
   weight: primary
+parent_node: null
 related:
 - node: '[[Collateral Velocity And Pledged Collateral Market Mechanics]]'
   relation: shared_tag:repo

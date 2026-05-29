@@ -30,6 +30,7 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Shadow Banking and Cash Markets.md
   pages: Full document
   weight: primary
+parent_node: null
 related:
 - node: '[[Basel Driven Credit Migration To Private Markets]]'
   relation: shared_tag:shadow_banking

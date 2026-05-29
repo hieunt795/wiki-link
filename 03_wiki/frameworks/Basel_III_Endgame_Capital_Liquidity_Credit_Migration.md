@@ -41,6 +41,7 @@ source_refs:
 - path: 02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md
   pages: §I-VIII (Core Framework through Ultimate Insight)
   weight: primary
+parent_node: null
 related:
 - node: '[[SLR_LCR_Balance_Sheet_Constraints_Treasury_Market_Dealer]]'
   relation: shares_regulatory_drivers

@@ -30,10 +30,11 @@ source_refs:
 - path: 07_scripts/02_sources/regulator/bcbs/bcbs155.md
   pages: ''
   weight: primary
+parent_node: null
 related:
-  - Eba_Gl_2018_04_Institutions_Stress_Testing
-  - Stress_Testing_Governance_Integration_Bank_Risk_Framework
-  - Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008
+- Eba_Gl_2018_04_Institutions_Stress_Testing
+- Stress_Testing_Governance_Integration_Bank_Risk_Framework
+- Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008
 date_created: '2026-05-27'
 date_updated: '2026-05-27'
 ---

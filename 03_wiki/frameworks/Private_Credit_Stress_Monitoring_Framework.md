@@ -47,6 +47,7 @@ source_refs:
 - path: 02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md
   pages: Section VII.3 — Interconnectedness and Correlated Drawdowns
   weight: supporting
+parent_node: null
 related:
 - node: '[[Private_Credit_Reflexive_Loop]]'
   relation: monitoring_framework_for

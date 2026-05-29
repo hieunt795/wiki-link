@@ -3,70 +3,79 @@ node_id: imf_fx_regime_monetary_accounts_balance_sheet_endogeneity_001
 type: mechanism
 title: IMF FX Regime Balance Sheet — Monetary Accounts Perspective (Chapter 5)
 aliases:
-  - IMF FX regime monetary accounts
-  - exchange rate regime balance sheet endogeneity
-  - fixed rate money supply endogenous
-  - capital inflows three regime analytics
-  - IMF Chapter 5 FX target balance sheet
-  - tỷ giá cố định và nội sinh cung tiền
-  - bảng cân đối tỷ giá theo IMF Chapter 5
-  - tính nội sinh tiền cơ sở dưới chế độ tỷ giá cố định
+- IMF FX regime monetary accounts
+- exchange rate regime balance sheet endogeneity
+- fixed rate money supply endogenous
+- capital inflows three regime analytics
+- IMF Chapter 5 FX target balance sheet
+- tỷ giá cố định và nội sinh cung tiền
+- bảng cân đối tỷ giá theo IMF Chapter 5
+- tính nội sinh tiền cơ sở dưới chế độ tỷ giá cố định
 domain:
   primary: monetary_policy
   secondary: financial_markets
 tags:
-  - fx_regime
-  - nfa_endogeneity
-  - reserve_money
-  - sterilization
-  - fixed_exchange_rate
-  - currency_board
-  - capital_flows
-  - monetary_survey
-  - imf_macro_accounting
-  - dollarization
-  - monetary_autonomy
-  - impossible_trinity
+- fx_regime
+- nfa_endogeneity
+- reserve_money
+- sterilization
+- fixed_exchange_rate
+- currency_board
+- capital_flows
+- monetary_survey
+- imf_macro_accounting
+- dollarization
+- monetary_autonomy
+- impossible_trinity
 confidence: 4
 stability: stable
-thesis: >
-  Under a fixed exchange rate regime, the central bank's monetary accounts identity
-  (RM = NFA + NCG + Cb + OIN) loses its normal causality: NFA becomes endogenous —
-  determined by BOP flows and the intervention obligation — and money supply adjusts
-  to clear the exchange market rather than serving as a policy instrument. This is the
-  IMF Chapter 5 formulation of the same constraint captured in the impossible trinity:
-  fixing the exchange rate surrenders monetary control. Sterilization can delay but not
-  sustain monetary independence because of two limits — the depth of the securities
-  market and the fiscal cost of the interest differential. The three real-world responses
-  to capital inflows (partial intervention, partial sterilization, some monetary expansion)
-  describe the middle ground between the pure fixed and pure float extremes.
+thesis: 'Under a fixed exchange rate regime, the central bank''s monetary accounts
+  identity (RM = NFA + NCG + Cb + OIN) loses its normal causality: NFA becomes endogenous
+  — determined by BOP flows and the intervention obligation — and money supply adjusts
+  to clear the exchange market rather than serving as a policy instrument. This is
+  the IMF Chapter 5 formulation of the same constraint captured in the impossible
+  trinity: fixing the exchange rate surrenders monetary control. Sterilization can
+  delay but not sustain monetary independence because of two limits — the depth of
+  the securities market and the fiscal cost of the interest differential. The three
+  real-world responses to capital inflows (partial intervention, partial sterilization,
+  some monetary expansion) describe the middle ground between the pure fixed and pure
+  float extremes.
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: >
-      lines 4382–4402 (Section: Interpretation of Balance Sheet Changes — five instruments
-      for controlling reserve money: FX intervention, OMO, deficit financing, discount window,
-      reserve requirements); lines 4794–4853 (Special Issues in Monetary Analysis — exchange
-      rate regimes and monetary analysis: fixed rate endogeneity, sterilization limits, currency
-      board, floating rate autonomy); lines 4854–4865 (Role of capital flows: perfect capital
-      mobility under fixed rate, three-component real world response, Figure 5.5)
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: 'lines 4382–4402 (Section: Interpretation of Balance Sheet Changes — five
+    instruments for controlling reserve money: FX intervention, OMO, deficit financing,
+    discount window, reserve requirements); lines 4794–4853 (Special Issues in Monetary
+    Analysis — exchange rate regimes and monetary analysis: fixed rate endogeneity,
+    sterilization limits, currency board, floating rate autonomy); lines 4854–4865
+    (Role of capital flows: perfect capital mobility under fixed rate, three-component
+    real world response, Figure 5.5)
+
+    '
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]"
-    relation: identity_foundation — this node explains what happens to that identity under FX target
-  - node: "[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
-    relation: companion_mechanism — Lipschitz formulation of the same constraint; richer on intervention T-accounts
-  - node: "[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]"
-    relation: fiscal_cost_mechanism — sterilization interest cost channel
-  - node: "[[Imf_Exchange_Rate_Assessment_And_Crawling_Peg_Design]]"
-    relation: regime_design — crawling peg as intermediate solution
-  - node: "[[Imf_Financial_Programming_NDA_Ceiling_And_BOP_Monetary_Approach]]"
-    relation: policy_application — NDA ceiling derived under fixed rate assumption
-  - node: "[[Sterilization_Offset_Coefficient_EME_Monetary_Autonomy]]"
-    relation: quantitative_measurement — offset and sterilization coefficients measure what this node describes
-  - node: "[[Policy_Trilemma_Efficiency_Frontier_Equivalence]]"
-    relation: theoretical_root
-date_created: "2026-05-26"
-date_updated: "2026-05-26"
+- node: '[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]'
+  relation: identity_foundation — this node explains what happens to that identity
+    under FX target
+- node: '[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]'
+  relation: companion_mechanism — Lipschitz formulation of the same constraint; richer
+    on intervention T-accounts
+- node: '[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]'
+  relation: fiscal_cost_mechanism — sterilization interest cost channel
+- node: '[[Imf_Exchange_Rate_Assessment_And_Crawling_Peg_Design]]'
+  relation: regime_design — crawling peg as intermediate solution
+- node: '[[Imf_Financial_Programming_NDA_Ceiling_And_BOP_Monetary_Approach]]'
+  relation: policy_application — NDA ceiling derived under fixed rate assumption
+- node: '[[Sterilization_Offset_Coefficient_EME_Monetary_Autonomy]]'
+  relation: quantitative_measurement — offset and sterilization coefficients measure
+    what this node describes
+- node: '[[Policy_Trilemma_Efficiency_Frontier_Equivalence]]'
+  relation: theoretical_root
+date_created: '2026-05-26'
+date_updated: '2026-05-26'
 ---
 
 ## The Core IMF Formulation: Balance Sheet Causality Reversal

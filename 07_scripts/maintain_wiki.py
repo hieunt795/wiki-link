@@ -140,9 +140,15 @@ def rebuild_graph(nodes):
             "date_updated": n["date_updated"]
         })
         
-        # 1. Frontmatter 'related' section
         text = n["path"].read_text(encoding="utf-8", errors="ignore")
         fm, body = split_frontmatter(text)
+
+        # 1. parent_node explicit hierarchy
+        parent_raw = fm.get("parent_node")
+        if parent_raw and isinstance(parent_raw, str):
+            add_edge(n["id"], parent_raw, "parent_node")
+
+        # 2. Frontmatter 'related' section
         related = fm.get("related", [])
         if isinstance(related, list):
             for rel in related:
@@ -151,7 +157,7 @@ def rebuild_graph(nodes):
                 elif isinstance(rel, str):
                     add_edge(n["id"], rel)
 
-        # 2. Body links
+        # 3. Body links
         links = WIKILINK_RE.findall(body)
         for link in links:
             add_edge(n["id"], link)

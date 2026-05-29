@@ -3,50 +3,54 @@ node_id: bcbs_hqla_liquidity_cushion_p12_001
 type: mechanism
 title: BCBS HQLA Liquidity Cushion — Principle 12 (2008 Pre-LCR Standard)
 aliases:
-  - BCBS HQLA cushion 2008
-  - Principle 12 liquidity buffer
-  - unencumbered high quality liquid assets buffer
-  - pre-LCR liquidity cushion standard
-  - đệm tài sản thanh khoản chất lượng cao
-  - nguyên tắc 12 BCBS đệm thanh khoản
+- BCBS HQLA cushion 2008
+- Principle 12 liquidity buffer
+- unencumbered high quality liquid assets buffer
+- pre-LCR liquidity cushion standard
+- đệm tài sản thanh khoản chất lượng cao
+- nguyên tắc 12 BCBS đệm thanh khoản
 domain:
   primary: banking_regulation
   secondary: financial_stability
 tags:
-  - hqla
-  - liquidity_cushion
-  - bcbs
-  - lrm_framework
-  - liq_buffer
-  - pre_lcr
-  - unencumbered_assets
-  - stress_insurance
-  - bcbs144
+- hqla
+- liquidity_cushion
+- bcbs
+- lrm_framework
+- liq_buffer
+- pre_lcr
+- unencumbered_assets
+- stress_insurance
+- bcbs144
 confidence: 4
 stability: stable
-thesis: >
-  BCBS Principle 12 (2008) requires banks to maintain a cushion of unencumbered,
+thesis: 'BCBS Principle 12 (2008) requires banks to maintain a cushion of unencumbered,
   high quality liquid assets as insurance against a range of liquidity stress scenarios,
   sized to cover contractual and non-contractual outflows including loss of unsecured
   and secured funding. No legal, regulatory or operational impediment may prevent
   using these assets to obtain funding. The principle establishes the qualitative
-  precursor to Basel III's LCR: the same concept of HQLA as a pre-positioned buffer,
-  but without a specific ratio or standardised run-off assumptions. The cushion's
+  precursor to Basel III''s LCR: the same concept of HQLA as a pre-positioned buffer,
+  but without a specific ratio or standardised run-off assumptions. The cushion''s
   core must be the most reliably liquid assets (cash, high-quality government bonds);
   the composition may widen for less severe but longer-duration stress.
+
+  '
 source_refs:
-  - path: 02_sources/regulator/bcbs/bcbs144.md
-    pages: "para 123–127 (Principle 12 full text), para 8 (P1: cushion in fundamental principle), para 94–95 (P10: stress test → cushion sizing link), para 52 (P5: cushion in limit framework)"
-    weight: primary
+- path: 02_sources/regulator/bcbs/bcbs144.md
+  pages: 'para 123–127 (Principle 12 full text), para 8 (P1: cushion in fundamental
+    principle), para 94–95 (P10: stress test → cushion sizing link), para 52 (P5:
+    cushion in limit framework)'
+  weight: primary
+parent_node: '[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]'
 related:
-  - node: "[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]"
-    relation: parent_framework
-  - node: "[[Bcbs_Liquidity_Stress_Testing_Principle_10]]"
-    relation: cushion_sizing_input
-  - node: "[[LCR_NSFR_Long_Term_Lending_Penalty]]"
-    relation: quantitative_successor_lcr
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Bcbs_Sound_Liquidity_Risk_Management_17_Principles_2008]]'
+  relation: parent_framework
+- node: '[[Bcbs_Liquidity_Stress_Testing_Principle_10]]'
+  relation: cushion_sizing_input
+- node: '[[LCR_NSFR_Long_Term_Lending_Penalty]]'
+  relation: quantitative_successor_lcr
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## The Core Requirement

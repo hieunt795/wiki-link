@@ -3,53 +3,57 @@ node_id: imf_money_multiplier_decomposition_001
 type: mechanism
 title: Money Multiplier — Ratio Decomposition and Three-Agent Determination
 aliases:
-  - money multiplier
-  - deposit multiplier
-  - credit multiplier
-  - bank money creation
-  - hệ số nhân tiền
-  - hệ số nhân tín dụng
-  - cơ số tiền
-  - số nhân tiền tệ
+- money multiplier
+- deposit multiplier
+- credit multiplier
+- bank money creation
+- hệ số nhân tiền
+- hệ số nhân tín dụng
+- cơ số tiền
+- số nhân tiền tệ
 domain:
   primary: monetary_policy
   secondary: fiscal_policy
 tags:
-  - money_multiplier
-  - monetary_base
-  - reserve_requirements
-  - currency_deposit_ratio
-  - monetary_survey
-  - m2
-  - banking_system
-  - imf_macro_accounting
+- money_multiplier
+- monetary_base
+- reserve_requirements
+- currency_deposit_ratio
+- monetary_survey
+- m2
+- banking_system
+- imf_macro_accounting
 confidence: 4
 stability: stable
-thesis: >
-  The money multiplier links reserve money (monetary base) to broad money (M2)
+thesis: 'The money multiplier links reserve money (monetary base) to broad money (M2)
   through the behavioral choices of three agents: the monetary authority (reserve
   requirements), commercial banks (excess reserve ratio), and the public (currency
-  and time deposit ratios). The simple multiplier mm=(1+c)/(c+r) extends to a
-  full decomposition across deposit types and reserve categories: mm=(1+c+b)/
-  (c+rd+rt·b+re·(1+b)). Rising c (currency flight) or re (precautionary excess
-  reserves) compresses the multiplier, as do financial innovation (shifts deposits
-  to non-bank instruments) and currency substitution (FX deposits exit the
-  multiplier chain).
+  and time deposit ratios). The simple multiplier mm=(1+c)/(c+r) extends to a full
+  decomposition across deposit types and reserve categories: mm=(1+c+b)/ (c+rd+rt·b+re·(1+b)).
+  Rising c (currency flight) or re (precautionary excess reserves) compresses the
+  multiplier, as do financial innovation (shifts deposits to non-bank instruments)
+  and currency substitution (FX deposits exit the multiplier chain).
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 4702–4758 (Box concept: fractional reserve basis of multiplier; simple mm derivation lines 4708–4726; extended mm with rd/rt/re lines 4728–4754; three-agent behavioral determination lines 4756–4758)"
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: 'lines 4702–4758 (Box concept: fractional reserve basis of multiplier; simple
+    mm derivation lines 4708–4726; extended mm with rd/rt/re lines 4728–4754; three-agent
+    behavioral determination lines 4756–4758)'
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Currency_Substitution_Dollarization_Monetary_Control]]"
-    relation: compresses_multiplier_via_c_increase
-  - node: "[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
-    relation: multiplier_determines_pass_through_of_reserve_money
-  - node: "[[Imf_Monetary_Survey_Money_Stock_Definitions]]"
-    relation: multiplier_links_base_to_aggregates
-  - node: "[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]"
-    relation: seigniorage_depends_on_multiplier_stability
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Currency_Substitution_Dollarization_Monetary_Control]]'
+  relation: compresses_multiplier_via_c_increase
+- node: '[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]'
+  relation: multiplier_determines_pass_through_of_reserve_money
+- node: '[[Imf_Monetary_Survey_Money_Stock_Definitions]]'
+  relation: multiplier_links_base_to_aggregates
+- node: '[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]'
+  relation: seigniorage_depends_on_multiplier_stability
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Conceptual Foundation

@@ -3,43 +3,46 @@ node_id: stagflation_regime_diagnostic_frm_001
 type: framework
 title: Stagflation Regime Diagnostic Framework
 aliases:
-  - stagflation
-  - dinh tram lam phat
-  - inflation-growth squeeze
+- stagflation
+- dinh tram lam phat
+- inflation-growth squeeze
 domain:
   primary: macro_outlook
   secondary:
-    - monetary_policy
-    - financial_markets
+  - monetary_policy
+  - financial_markets
 tags:
-  - stagflation
-  - inflation
-  - supply_shock
-  - unemployment
-  - output_gap
-  - policy_tradeoff
+- stagflation
+- inflation
+- supply_shock
+- unemployment
+- output_gap
+- policy_tradeoff
 confidence: 3
 stability: evolving
-thesis: >
-  Stagflation is best diagnosed as a regime in which inflation pressure is
-  supply-side or cost-side while real activity weakens, forcing policy makers to
-  choose between inflation stabilization and employment/output protection.
+thesis: 'Stagflation is best diagnosed as a regime in which inflation pressure is
+  supply-side or cost-side while real activity weakens, forcing policy makers to choose
+  between inflation stabilization and employment/output protection.
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "Inflation; Analyzing Inflation; Incomes and Employment"
-    weight: primary
-  - path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
-    pages: "Introduction; Federal Reserve"
-    weight: supporting
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: Inflation; Analyzing Inflation; Incomes and Employment
+  weight: primary
+- path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
+  pages: Introduction; Federal Reserve
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Cost Push Inflation Persistence Mechanism]]"
-    relation: inflation_channel
-  - node: "[[Supply Shock Policy Response Scenario Taxonomy]]"
-    relation: policy_taxonomy
-  - node: "[[Non-Linear Inflation Amplifier Mechanics]]"
-    relation: modern_supply_chain_channel
-  - node: "[[Central Bank Credibility Supply Shock Policy Space]]"
-    relation: credibility_constraint
+- node: '[[Cost Push Inflation Persistence Mechanism]]'
+  relation: inflation_channel
+- node: '[[Supply Shock Policy Response Scenario Taxonomy]]'
+  relation: policy_taxonomy
+- node: '[[Non-Linear Inflation Amplifier Mechanics]]'
+  relation: modern_supply_chain_channel
+- node: '[[Central Bank Credibility Supply Shock Policy Space]]'
+  relation: credibility_constraint
 date_created: 2026-05-24
 date_updated: 2026-05-24
 ---

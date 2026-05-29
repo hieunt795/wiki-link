@@ -1,49 +1,49 @@
 ---
 node_id: irrbb_interest_rate_risk_types_classification_001
 type: concept
-title: "IRRBB Interest Rate Risk Types Classification"
+title: IRRBB Interest Rate Risk Types Classification
 aliases:
-  - interest rate gap risk
-  - basis risk
-  - yield curve risk
-  - IRRBB risk types
-  - phân loại rủi ro lãi suất
-  - rủi ro tái định giá
-  - rủi ro cơ sở
-
+- interest rate gap risk
+- basis risk
+- yield curve risk
+- IRRBB risk types
+- phân loại rủi ro lãi suất
+- rủi ro tái định giá
+- rủi ro cơ sở
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - IRRBB
-  - gap_risk
-  - basis_risk
-  - option_risk
-  - CSRBB
-  - interest_rate_risk
-
+- IRRBB
+- gap_risk
+- basis_risk
+- option_risk
+- CSRBB
+- interest_rate_risk
 confidence: 1
 stability: stable
+thesis: '[LLM] IRRBB comprises three distinct sub-risks — gap (repricing) risk from
+  maturity mismatches, basis risk from different rate indices, and option risk from
+  explicit and behavioral optionality — each requiring separate identification and
+  quantification under EBA guidelines; credit spread risk (CSRBB) is closely related
+  but treated separately under EBA/GL/2022/14.
 
-thesis: >
-  [LLM] IRRBB comprises three distinct sub-risks — gap (repricing) risk from maturity mismatches, basis risk from different rate indices, and option risk from explicit and behavioral optionality — each requiring separate identification and quantification under EBA guidelines; credit spread risk (CSRBB) is closely related but treated separately under EBA/GL/2022/14.
-
+  '
 source_refs:
-  - path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
-    pages: "Ch 1, sections 1.2.2.1–1.2.2.5"
-    weight: primary
-
+- path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
+  pages: Ch 1, sections 1.2.2.1–1.2.2.5
+  weight: primary
+parent_node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
 related:
-  - node: "[[Repricing_Gap_Analysis_Nii_Eve_Impact]]"
-    relation: related_to
-  - node: "[[Option_Risk_Behavioral_Optionality_Banking_Book]]"
-    relation: related_to
-  - node: "[[Irrbb_Eve_Nii_Dual_Metric_Framework]]"
-    relation: component_of
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Repricing_Gap_Analysis_Nii_Eve_Impact]]'
+  relation: related_to
+- node: '[[Option_Risk_Behavioral_Optionality_Banking_Book]]'
+  relation: related_to
+- node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
+  relation: component_of
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## IRRBB Definition

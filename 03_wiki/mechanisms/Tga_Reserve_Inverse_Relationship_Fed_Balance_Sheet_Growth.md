@@ -28,6 +28,7 @@ source_refs:
 - path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
   pages: ''
   weight: primary
+parent_node: null
 related:
 - node: '[[Treasury_General_Account_Tga_Reserve_Swap]]'
   relation: canonical_accounting_node

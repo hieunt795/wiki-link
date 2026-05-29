@@ -3,46 +3,50 @@ node_id: us_1970s_stagflation_policy_regime_shift_frm_001
 type: framework
 title: US 1970s Stagflation And Policy Regime Shift
 aliases:
-  - US stagflation 1970s
-  - dinh tram lam phat My thap nien 1970
-  - Great Inflation regime shift
+- US stagflation 1970s
+- dinh tram lam phat My thap nien 1970
+- Great Inflation regime shift
 domain:
   primary: macro_outlook
   secondary:
-    - monetary_policy
+  - monetary_policy
 tags:
-  - stagflation
-  - great_inflation
-  - oil_shock
-  - fed
-  - phillips_curve
-  - volcker
+- stagflation
+- great_inflation
+- oil_shock
+- fed
+- phillips_curve
+- volcker
 confidence: 3
 stability: stable
-thesis: >
-  US stagflation in the 1970s reflected a regime break in which demand pressure,
-  oil shocks, distributional conflict, productivity slowdown, and weak monetary
-  credibility made the Phillips-curve tradeoff unstable and forced a shift toward
-  inflation-first central banking.
+thesis: 'US stagflation in the 1970s reflected a regime break in which demand pressure,
+  oil shocks, distributional conflict, productivity slowdown, and weak monetary credibility
+  made the Phillips-curve tradeoff unstable and forced a shift toward inflation-first
+  central banking.
+
+  '
 source_refs:
-  - path: 02_sources/books/watts_wray_mmt_macro/Watts_Wray_Macroeconomics.md
-    pages: "Ch.17-18; 1970s inflation, stagflation, Phillips curve"
-    weight: primary
-  - path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-2.md
-    pages: "Ch.2.2.2-2.2.3"
-    weight: supporting
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "Inflation; Analyzing Inflation"
-    weight: supporting
+- path: 02_sources/books/watts_wray_mmt_macro/Watts_Wray_Macroeconomics.md
+  pages: Ch.17-18; 1970s inflation, stagflation, Phillips curve
+  weight: primary
+- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro -
+    Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-2.md
+  pages: Ch.2.2.2-2.2.3
+  weight: supporting
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: Inflation; Analyzing Inflation
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Stagflation Regime Diagnostic Framework]]"
-    relation: historical_case
-  - node: "[[Cost Push Inflation Persistence Mechanism]]"
-    relation: inflation_channel
-  - node: "[[Volcker Fed Reaction Function Break]]"
-    relation: resolved_by_policy_shift
-  - node: "[[Stagflation Policy Response Tradeoff Framework]]"
-    relation: policy_response
+- node: '[[Stagflation Regime Diagnostic Framework]]'
+  relation: historical_case
+- node: '[[Cost Push Inflation Persistence Mechanism]]'
+  relation: inflation_channel
+- node: '[[Volcker Fed Reaction Function Break]]'
+  relation: resolved_by_policy_shift
+- node: '[[Stagflation Policy Response Tradeoff Framework]]'
+  relation: policy_response
 date_created: 2026-05-24
 date_updated: 2026-05-24
 ---

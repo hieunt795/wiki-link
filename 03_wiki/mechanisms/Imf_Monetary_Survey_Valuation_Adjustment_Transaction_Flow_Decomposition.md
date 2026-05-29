@@ -3,55 +3,60 @@ node_id: imf_monetary_survey_valuation_adjustment_001
 type: mechanism
 title: IMF Monetary Survey — Valuation Adjustment and Transaction Flow Decomposition
 aliases:
-  - valuation adjustment monetary survey
-  - VAj exchange rate revaluation
-  - transaction flow vs stock change
-  - NFA revaluation adjustment
-  - ΔNFA vs ΔRES reconciliation
-  - điều chỉnh định giá khảo sát tiền tệ
-  - phân tách giao dịch và định giá lại tỷ giá
-  - VAj tỷ giá
+- valuation adjustment monetary survey
+- VAj exchange rate revaluation
+- transaction flow vs stock change
+- NFA revaluation adjustment
+- ΔNFA vs ΔRES reconciliation
+- điều chỉnh định giá khảo sát tiền tệ
+- phân tách giao dịch và định giá lại tỷ giá
+- VAj tỷ giá
 domain:
   primary: monetary_policy
   secondary: fiscal_policy
 tags:
-  - valuation_adjustment
-  - monetary_survey
-  - nfa
-  - exchange_rate
-  - transaction_flow
-  - financial_programming
-  - imf_macro_accounting
-  - balance_of_payments
-  - reconciliation
+- valuation_adjustment
+- monetary_survey
+- nfa
+- exchange_rate
+- transaction_flow
+- financial_programming
+- imf_macro_accounting
+- balance_of_payments
+- reconciliation
 confidence: 4
 stability: stable
-thesis: >
-  Changes in monetary survey stock items (especially NFA) between two periods reflect
-  both actual transaction flows AND valuation effects from exchange rate changes.
-  Box 5.8 of the IMF Macro Accounting framework provides a formal decomposition:
-  the transaction component is converted at the period-average exchange rate, while
-  the valuation adjustment (VAj) captures the revaluation of the opening stock due
-  to exchange rate movement. Failing to separate these components causes ΔNFA in
-  the monetary survey (local currency) to diverge from ΔRES in the BOP (foreign
-  currency), invalidating monetary programming targets.
+thesis: 'Changes in monetary survey stock items (especially NFA) between two periods
+  reflect both actual transaction flows AND valuation effects from exchange rate changes.
+  Box 5.8 of the IMF Macro Accounting framework provides a formal decomposition: the
+  transaction component is converted at the period-average exchange rate, while the
+  valuation adjustment (VAj) captures the revaluation of the opening stock due to
+  exchange rate movement. Failing to separate these components causes ΔNFA in the
+  monetary survey (local currency) to diverge from ΔRES in the BOP (foreign currency),
+  invalidating monetary programming targets.
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 4609–4653 (Box 5.8 Valuation Adjustments: decomposition of stock changes into transaction flows and exchange rate revaluations; average period exchange rate for transaction conversion; VAj formula; OIN(net) treatment)"
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: 'lines 4609–4653 (Box 5.8 Valuation Adjustments: decomposition of stock changes
+    into transaction flows and exchange rate revaluations; average period exchange
+    rate for transaction conversion; VAj formula; OIN(net) treatment)'
+  weight: primary
+parent_node: '[[Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis]]'
 related:
-  - node: "[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]"
-    relation: valuation_adjustment_required_for_accurate_NFA_change_measurement
-  - node: "[[Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis]]"
-    relation: ΔRES_in_BOP_must_match_transaction_component_of_ΔNFA
-  - node: "[[Imf_Financial_Programming_NDA_Ceiling_And_BOP_Monetary_Approach]]"
-    relation: NDA_ceiling_requires_clean_ΔNFA_transaction_figure
-  - node: "[[Imf_Monetary_Analysis_Quantity_Theory_Velocity_And_Exchange_Rate_Regimes]]"
-    relation: exchange_rate_regime_determines_magnitude_of_valuation_adjustments
-  - node: "[[Cb_Fx_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
-    relation: FX_intervention_generates_ΔNFA_that_includes_valuation_component
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]'
+  relation: valuation_adjustment_required_for_accurate_NFA_change_measurement
+- node: '[[Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis]]'
+  relation: ΔRES_in_BOP_must_match_transaction_component_of_ΔNFA
+- node: '[[Imf_Financial_Programming_NDA_Ceiling_And_BOP_Monetary_Approach]]'
+  relation: NDA_ceiling_requires_clean_ΔNFA_transaction_figure
+- node: '[[Imf_Monetary_Analysis_Quantity_Theory_Velocity_And_Exchange_Rate_Regimes]]'
+  relation: exchange_rate_regime_determines_magnitude_of_valuation_adjustments
+- node: '[[Cb_Fx_Rate_Target_Balance_Sheet_Constraint_Sterilization]]'
+  relation: FX_intervention_generates_ΔNFA_that_includes_valuation_component
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## The Core Problem: Stock Changes ≠ Transaction Flows

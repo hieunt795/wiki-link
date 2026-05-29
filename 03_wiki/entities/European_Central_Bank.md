@@ -1,54 +1,50 @@
 ---
 node_id: entity_ecb_001
 type: entity
-title: "European Central Bank (ECB)"
+title: European Central Bank (ECB)
 aliases:
-  - ECB
-  - Eurosystem
-  - Ngân hàng Trung ương châu Âu
-
+- ECB
+- Eurosystem
+- Ngân hàng Trung ương châu Âu
 domain:
   primary: monetary_policy
   secondary:
-    - financial_markets
+  - financial_markets
 tags:
-  - central-bank
-  - eurozone
-  - monetary-policy
-  - balance-sheet
-  - operational-framework
-
+- central-bank
+- eurozone
+- monetary-policy
+- balance-sheet
+- operational-framework
 confidence: 3
 stability: stable
-
 entity_type: central_bank
 jurisdiction: EU
 established: 1998
-mandate: "Price stability (inflation below but close to 2% over medium term; revised to symmetric 2% target in 2021)"
+mandate: Price stability (inflation below but close to 2% over medium term; revised
+  to symmetric 2% target in 2021)
+thesis: 'The ECB sets monetary policy for the 20-member eurozone via the Governing
+  Council, operating through the Eurosystem of national central banks (NCBs). Its
+  2024 operational framework shift — from excess liquidity via TLTRO to structural
+  repo operations — marks the transition from an asset-purchase-driven floor system
+  back toward a demand-driven corridor.
 
-thesis: >
-  The ECB sets monetary policy for the 20-member eurozone via the Governing Council,
-  operating through the Eurosystem of national central banks (NCBs). Its 2024
-  operational framework shift — from excess liquidity via TLTRO to structural repo
-  operations — marks the transition from an asset-purchase-driven floor system back
-  toward a demand-driven corridor.
-
+  '
 source_refs:
-  - path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
-    weight: primary
-  - path: 02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md
-    weight: supporting
-
+- path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
+  weight: primary
+- path: 02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[ECB_New_Operational_Framework_2024]]"
-    relation: implements
-  - node: "[[Interest_Rate_Corridor_Floor_System_Standing_Facilities]]"
-    relation: instance_of
-  - node: "[[Central_Bank_Balance_Sheet_Structure_Liabilities_Assets]]"
-    relation: instance_of
-  - node: "[[Inflation_Targeting_Framework_Central_Bank]]"
-    relation: implements
-
+- node: '[[ECB_New_Operational_Framework_2024]]'
+  relation: implements
+- node: '[[Interest_Rate_Corridor_Floor_System_Standing_Facilities]]'
+  relation: instance_of
+- node: '[[Central_Bank_Balance_Sheet_Structure_Liabilities_Assets]]'
+  relation: instance_of
+- node: '[[Inflation_Targeting_Framework_Central_Bank]]'
+  relation: implements
 date_created: 2026-05-23
 date_updated: 2026-05-23
 last_reviewed: 2026-05-23

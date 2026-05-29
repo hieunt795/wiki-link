@@ -1,43 +1,45 @@
 ---
 node_id: funding_gap_profile_behavioural_maturity_calendar_001
 type: mechanism
-title: "Funding Gap Profile and Behavioural Maturity Calendar in ALM"
+title: Funding Gap Profile and Behavioural Maturity Calendar in ALM
 aliases:
-  - Liquidity gap profile
-  - Behavioural maturity calendar
-  - Contractual maturity calendar
-  - Funding mismatch profile
-  - Hồ sơ khoảng cách thanh khoản
-  - Lịch đáo hạn hành vi
-
+- Liquidity gap profile
+- Behavioural maturity calendar
+- Contractual maturity calendar
+- Funding mismatch profile
+- Hồ sơ khoảng cách thanh khoản
+- Lịch đáo hạn hành vi
 domain:
   primary: alm
 tags:
-  - liquidity_risk
-  - maturity_transformation
-  - behavioural_modelling
-  - funding_gap
-  - alm
-
+- liquidity_risk
+- maturity_transformation
+- behavioural_modelling
+- funding_gap
+- alm
 confidence: 1
 stability: stable
+thesis: '[LLM] A bank''s true liquidity risk cannot be read from contractual maturities
+  alone; the behavioural maturity calendar — which incorporates modelled client behaviour
+  for deposits, mortgages, and credit lines — reveals the actual cumulative funding
+  gap that ALM must manage. [LLM] Short-term and structural liquidity management are
+  distinct layers: the former handles daily cash positions and intraday collateral,
+  while the latter uses the behavioural calendar to drive long-term wholesale funding
+  decisions.
 
-thesis: >
-  [LLM] A bank's true liquidity risk cannot be read from contractual maturities alone; the behavioural maturity calendar — which incorporates modelled client behaviour for deposits, mortgages, and credit lines — reveals the actual cumulative funding gap that ALM must manage. [LLM] Short-term and structural liquidity management are distinct layers: the former handles daily cash positions and intraday collateral, while the latter uses the behavioural calendar to drive long-term wholesale funding decisions.
-
+  '
 source_refs:
-  - path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
-    pages: "Ch 14 — Measuring and Managing Liquidity and Funding Risk (ABN AMRO)"
-    weight: primary
-
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: Ch 14 — Measuring and Managing Liquidity and Funding Risk (ABN AMRO)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Bank_Alm_Structural_Liquidity_Management_Nsfr_Lcr_Framework]]"
-    relation: mechanism_of
-  - node: "[[Reserve_Asset_Management_Hqla_Portfolio_Bank]]"
-    relation: related_to
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Bank_Alm_Structural_Liquidity_Management_Nsfr_Lcr_Framework]]'
+  relation: mechanism_of
+- node: '[[Reserve_Asset_Management_Hqla_Portfolio_Bank]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Core Mechanism

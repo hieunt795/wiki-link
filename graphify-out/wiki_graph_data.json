@@ -1,6 +1,62 @@
 {
   "nodes": [
     {
+      "id": "alm_evolution_historical_to_modern_001",
+      "title": "ALM Evolution — Historical to Modern",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "alm",
+        "history",
+        "regulation",
+        "basel",
+        "off_balance_sheet",
+        "irrbb"
+      ],
+      "thesis": "[LLM] ALM has evolved through six distinct conceptual eras from the 1950s to the present, driven by successive waves of regulatory change, financial innovation, and crisis response: from the minimal-intervention model of regulated interest rate environments, through the emergence of gap analysis and duration immunization in the 1970s–80s, the adoption of off-balance-sheet derivative hedging in the 1980s–90s, Basel-driven balance sheet restrictions in the 1990s–2000s, the low-margin compression era of the 2010s, and finally the current integrated optimization model that simultaneously manages IRR, liquidity, capital, and funding cost under multi-dimensional regulatory constraints.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
+      "id": "alm_structural_liquidity_gap_001",
+      "title": "ALM Structural Liquidity Gap — Medium-Long Term Liquidity Management",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "liquidity",
+        "nsfr",
+        "structural_liquidity",
+        "maturity_ladder",
+        "funding",
+        "behavioural_models"
+      ],
+      "thesis": "[LLM] Structural liquidity management governs the medium-to-long term balance between assets and liabilities beyond the 1-year short-term horizon (the LCR window), using gap ratios at 1Y, 3Y, and 5Y horizons to limit excessive maturity transformation; the NSFR operationalizes the regulatory dimension of this management by requiring that available stable funding (ASF) exceeds required stable funding (RSF) on a one-year horizon, while internal structural limits add further buffers and behavioral modeling assumptions determine the effective funding profile of behavioural items.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
+      "id": "asset_encumbrance_management_bank_alm_001",
+      "title": "Asset Encumbrance Management in Bank ALM",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "asset_encumbrance",
+        "secured_funding",
+        "lcr",
+        "nsfr",
+        "crr",
+        "eba_reporting",
+        "collateral_management",
+        "contingent_encumbrance"
+      ],
+      "thesis": "[LLM] Asset encumbrance — the pledging of bank assets as collateral for secured funding — is a structural consequence of the post-2008 shift to secured wholesale markets, and creates a risk cascade: it subordinates unsecured creditors, reduces the pool of assets available for central bank operations, increases procyclical margin calls, and constrains future funding flexibility. [LLM] Under EU regulation (CRR Article 100, EBA ITS), banks must disclose the asset encumbrance ratio (encumbered assets / total assets) quarterly and set internal limits that preserve sufficient unencumbered \"encumberable\" capacity to survive stressed outflows.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
       "id": "bank_alm_structural_liquidity_management_nsfr_lcr_framework_001",
       "title": "Bank ALM Structural Liquidity Management NSFR LCR Framework",
       "type": "concept",
@@ -178,6 +234,46 @@
       "thesis": "China's shadow banking system emerged ~2000 as banks invented off-balance-sheet instruments (WMPs, entrusted loans, trust loans) to bypass a 75% loan-to-deposit ratio cap and fund credit-starved private firms ignored by the state-owned Big Four. Shadow assets peaked at ~90% of GDP in 2016, then declined to ~39% by Q2 2023 after regulators systematically penalized shadow instruments. Unlike the complex multi-layer US shadow system (CDOs, SIVs), China's was simpler — mainly trust companies and securities firms repackaging bank deposits as \"investment receivables\" — but equally capable of obscuring systemic risk.",
       "stability": "stable",
       "date_updated": "2026-05-23"
+    },
+    {
+      "id": "credit_spread_risk_banking_book_csrbb_001",
+      "title": "Credit Spread Risk in the Banking Book (CSRBB)",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        {
+          "node": "[[CSRBB]]",
+          "relation": "related_to"
+        },
+        "credit-spread",
+        "hazard-rate",
+        "reduced-form",
+        {
+          "node": "[[OAS]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[IRRBB]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[IFRS9]]",
+          "relation": "related_to"
+        },
+        "duration",
+        {
+          "node": "[[LGD]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[ALM]]",
+          "relation": "related_to"
+        }
+      ],
+      "thesis": "CSRBB is the sensitivity of banking book economic value to changes in credit spreads independent of default events, measured via three modelling approaches (cashflow/hazard rate, credit-spread-adjusted discount, and OAS) that each imply different effective durations; the cashflow model most accurately captures duration shortening from default-contingent early termination, while the OAS model overstates duration by ignoring it. [LLM]",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
     },
     {
       "id": "currency_substitution_dollarization_001",
@@ -372,6 +468,24 @@
       "date_updated": "2026-05-27"
     },
     {
+      "id": "irrbb_interest_rate_risk_types_classification_001",
+      "title": "IRRBB Interest Rate Risk Types Classification",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "IRRBB",
+        "gap_risk",
+        "basis_risk",
+        "option_risk",
+        "CSRBB",
+        "interest_rate_risk"
+      ],
+      "thesis": "[LLM] IRRBB comprises three distinct sub-risks — gap (repricing) risk from maturity mismatches, basis risk from different rate indices, and option risk from explicit and behavioral optionality — each requiring separate identification and quantification under EBA guidelines; credit spread risk (CSRBB) is closely related but treated separately under EBA/GL/2022/14.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
       "id": "icaap_ilaap_srep_information_four_category_framework_001",
       "title": "Icaap Ilaap Srep Information Four Category Framework",
       "type": "concept",
@@ -479,6 +593,25 @@
       "thesis": "[LLM] The normative perspective in the ILAAP is a multi-year forward-looking assessment of the bank's ability to comply with all liquidity regulatory and supervisory requirements (LCR, NSFR, Individual Liquidity Guidance) under both baseline and adverse scenarios. Unlike the economic perspective (internal risk view), the normative perspective is structured around externally imposed ratios. Critical: the normative perspective does NOT require LCR ≥ 100% under severe stress — it requires a credible plan to remain viable and return to compliance, with the LCR path monitored and linked to the risk appetite statement, LCP, and recovery plan.",
       "stability": "evolving",
       "date_updated": "2026-05-27"
+    },
+    {
+      "id": "income_gap_vs_economic_value_gap_001",
+      "title": "Income Gap vs Economic Value Gap — Dual IRRBB Perspectives",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "irrbb",
+        "nii",
+        "eve",
+        "gap_analysis",
+        "interest_rate_risk",
+        "dual_view",
+        "hedging"
+      ],
+      "thesis": "[LLM] The two IRRBB measurement perspectives — the earnings perspective (Δ NII, focused on short-term NII impact over 1–2 years) and the economic value perspective (Δ EVE, measuring the present value change in the entire banking book) — can produce contradictory signals about a bank's risk position and can incentivize offsetting hedging decisions, making it essential to manage both simultaneously rather than optimizing for only one metric.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
     },
     {
       "id": "insurance_pension_private_credit_structural_investor_role_001",
@@ -795,6 +928,25 @@
       "date_updated": "2026-05-23"
     },
     {
+      "id": "reserve_asset_management_hqla_portfolio_bank_001",
+      "title": "Reserve Asset Management: Bank HQLA Portfolio Strategy",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "hqla",
+        "liquidity_reserve",
+        "reserve_assets",
+        "lcr",
+        "sovereign_bonds",
+        "basis_risk",
+        "credit_risk"
+      ],
+      "thesis": "[LLM] A bank's liquidity reserve (HQLA portfolio) must be funded long-term on the liability side despite holding short-to-medium-maturity sovereign bonds on the asset side — creating an intentional negative maturity transformation whose cost functions as an insurance premium. [LLM] Active management of this portfolio involves navigating three embedded risks: basis risk (Euribor tenor mismatch), credit spread risk (sovereign and non-sovereign spread movements), and the liquidity black-hole risk that arises when all banks hold identical collateral and try to sell simultaneously.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
       "id": "reverse_stress_testing_failure_point_business_model_viability_001",
       "title": "Reverse Stress Testing Failure Point Business Model Viability",
       "type": "concept",
@@ -810,6 +962,35 @@
       "thesis": "[LLM] Reverse stress testing (RST) inverts the stress test logic: instead of applying a scenario and measuring impact, it starts from a defined failure outcome (e.g. business model failure, liquidity exhaustion, capital breach) and works backward to identify scenarios that would cause it. RST is required under EBA GL/2018/04 for both regular stress testing and recovery planning purposes; it exposes tail risks and hidden vulnerabilities in business model assumptions that forward-looking scenario analysis may miss.",
       "stability": "evolving",
       "date_updated": "2026-05-27"
+    },
+    {
+      "id": "svb_2023_failure_alm_lessons_001",
+      "title": "SVB 2023 Failure — ALM Lessons",
+      "type": "concept",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "SVB",
+        "duration-mismatch",
+        "HTM-portfolio",
+        "concentration-risk",
+        "governance-failure",
+        {
+          "node": "[[IRRBB]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[ALM]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[NMD]]",
+          "relation": "related_to"
+        }
+      ],
+      "thesis": "The SVB failure in March 2023 exemplifies how unhedged duration mismatch in a held-to-maturity bond portfolio, combined with a concentrated correlated depositor base and governance failures (vacant CRO, model manipulation), can convert a mark-to-model paper loss into a catastrophic liquidity run: a $15.2bn realized loss triggered a 60% deposit outflow in 48 hours, rendering the bank insolvent. [LLM]",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
     },
     {
       "id": "shadow_banking_market_based_finance_001",
@@ -1247,6 +1428,181 @@
       "date_updated": "2026-05-23"
     },
     {
+      "id": "alm_balance_sheet_optimization_framework_001",
+      "title": "ALM Balance Sheet Optimization Framework",
+      "type": "framework",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "alm",
+        "optimization",
+        "balance_sheet",
+        "nii",
+        "eve",
+        "liquidity",
+        "irrbb",
+        "funding"
+      ],
+      "thesis": "[LLM] ALM balance sheet optimization is a formal process that defines the target composition of assets and liabilities by simultaneously maximizing asset profitability and minimizing funding costs, subject to constraints on interest rate risk (NII volatility, EVE), liquidity ratios (LCR, NSFR, structural gaps), capital absorption, and funding concentration — replacing reactive balance sheet management with a proactive, mathematically grounded approach. [LLM] The optimization output is a target profile for the banking book that maximizes profitability within regulatory and internal risk limits, integrating IRR and liquidity risk under a single framework rather than managing them in silos.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
+      "id": "alm_operating_model_front_middle_office_001",
+      "title": "ALM Operating Model — Front Office vs Middle Office",
+      "type": "framework",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "ALM-operating-model",
+        "front-office",
+        "middle-office",
+        "ALCO",
+        "conflicts-of-interest",
+        "lines-of-defense",
+        "FTP",
+        {
+          "node": "[[ALM]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[ALCO]]",
+          "relation": "related_to"
+        }
+      ],
+      "thesis": "Banks organize ALM/Treasury in two contrasted operating models — front office (executes deals, profit center, has full operational mandate) vs middle office (analytical and strategic, no direct deal execution) — to prevent conflicts of interest; ALM cannot be merged into Risk, Trading Desk, or Finance because each pairing creates disqualifying conflicts; ALCO is the de-escalation mechanism that ensures cross-functional representation in balance sheet decisions. [LLM]",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
+      "id": "alm_role_srep_pillar2_capital_liquidity_001",
+      "title": "ALM Role in SREP and Pillar 2 Capital/Liquidity Requirements",
+      "type": "framework",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "SREP",
+        "Pillar2",
+        "P2R",
+        "P2G",
+        "TSCR",
+        "ICAAP",
+        "ILAAP",
+        {
+          "node": "[[ALM]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[IRRBB]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[Basel_III]]",
+          "relation": "related_to"
+        }
+      ],
+      "thesis": "The Supervisory Review and Evaluation Process (SREP) evaluates banks across four areas (business model, governance, capital risks, liquidity risks) and imposes a Pillar 2 Requirement (P2R) as an individual add-on above Pillar 1; together they form the TSCR = P1 + P2R, which must be met at all times including stress; Pillar 2 Guidance (P2G) is then added based on stress test results as a soft buffer above OCR; ALM's primary SREP exposure is IRRBB (capital), ILAAP (liquidity), and funding plan credibility. [LLM]",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
+      "id": "alm_recovery_resolution_mrel_bail_in_001",
+      "title": "ALM in Recovery and Resolution — MREL, Bail-In, and BRRD",
+      "type": "framework",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "resolution",
+        "MREL",
+        "bail-in",
+        "BRRD",
+        "recovery-planning",
+        "gone-concern",
+        {
+          "node": "[[ALM]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[Basel_III]]",
+          "relation": "related_to"
+        }
+      ],
+      "thesis": "Under the BRRD framework, a bank that exhausts recovery options enters resolution via one of four tools (sale-of-business, bridge institution, asset separation, bail-in); the bail-in tool absorbs losses by writing down or converting eligible MREL liabilities into equity; ALM is responsible for MREL forecasting in the funding plan, gone-concern ICAAP/ILAAP execution, and providing the resolution authority with resolvability evidence on capital, liquidity, and operational continuity. [LLM]",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
+      "id": "alm_low_negative_interest_rate_environment_001",
+      "title": "ALM in a Low/Negative Interest Rate Environment",
+      "type": "framework",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "low-rate",
+        "negative-rate",
+        "deposit-beta",
+        "floor-risk",
+        {
+          "node": "[[NII]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[EVE]]",
+          "relation": "related_to"
+        },
+        "margin-compression",
+        "swaption",
+        "interest-rate-floor",
+        {
+          "node": "[[IRRBB]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[ALM]]",
+          "relation": "related_to"
+        }
+      ],
+      "thesis": "In a low/negative interest rate environment, ALM faces a structural dilemma because deposit beta collapses near zero (breaking standard rate-sensitivity models), retail deposits cannot be priced below zero creating a floor risk that produces nonlinear NII losses in negative rate scenarios, and countermeasures — including receiver swaptions, interest rate floors, fee introduction, and maturity extension — involve explicit trade-offs between NII stability (balance sheet A) and EVE stability (balance sheet B). [LLM]",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
+      "id": "alm_enterprise_risk_management_framework_001",
+      "title": "ALM in the Enterprise Risk Management Framework",
+      "type": "framework",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        {
+          "node": "[[ALM]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[ERM]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[ALCO]]",
+          "relation": "related_to"
+        },
+        "risk appetite",
+        {
+          "node": "[[CET1]]",
+          "relation": "related_to"
+        },
+        "earnings-at-risk",
+        "revaluation-reserve",
+        {
+          "node": "[[RWA]]",
+          "relation": "related_to"
+        },
+        "governance"
+      ],
+      "thesis": "ALM operates within the enterprise risk management (ERM) cycle as the governance mechanism that translates board-level risk appetite statements into balance sheet constraints on interest rate, liquidity, and capital risk; the five-step ERM cycle (identify → select controls → implement → monitor → report) and the ALCO committee structure jointly ensure that structural risks are hedged or capitalized within approved tolerances. [LLM]",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
       "id": "bank_alm_banking_book_risk_management_framework_001",
       "title": "Bank ALM Banking Book Risk Management Framework",
       "type": "framework",
@@ -1265,6 +1621,28 @@
       "thesis": "[LLM] Asset-Liability Management (ALM) in commercial banks centrally manages the three core banking book risks — Interest Rate Risk in the Banking Book (IRRBB), liquidity risk, and structural currency risk — by controlling the balance sheet composition through Funds Transfer Pricing (FTP), gap analysis, and behavioral modeling of non-maturity deposits. ALM separates business unit pricing risk from structural balance sheet risk: business units book matched-maturity FTP rates and earn only customer margin, while the ALM desk absorbs all repricing, maturity transformation, and behavioral option risk.",
       "stability": "evolving",
       "date_updated": "2026-05-26"
+    },
+    {
+      "id": "bank_capital_structure_capital_management_alm_001",
+      "title": "Bank Capital Structure and Capital Management in ALM",
+      "type": "framework",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "capital_management",
+        "cet1",
+        "at1",
+        "tier2",
+        "tlac",
+        "mrel",
+        "srep",
+        "rwa",
+        "leverage_ratio",
+        "capital_buffers"
+      ],
+      "thesis": "[LLM] Bank capital management is the continuous balancing of capital supply (the quality stack from CET1 through AT1, Tier 2, and TLAC/MREL liabilities) against capital demand (RWA- and leverage-based requirements plus buffers) under evolving regulatory standards; capital instruments are simultaneously a source of long-term funding for ALM and a critical input to the SREP process that determines the binding constraint on distributions. [LLM] The ALM linkage runs in both directions: capital bucketing transfers proceeds of capital issuance at floating rates to the business, while FVOCI accounting for HQLA bonds creates mark-to-market CET1 volatility when rates move.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
     },
     {
       "id": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
@@ -2042,6 +2420,46 @@
       "date_updated": "2026-05-25"
     },
     {
+      "id": "irrbb_standardised_versus_internal_model_approach_001",
+      "title": "IRRBB Standardised vs Internal Model Approach — Practitioner Perspective",
+      "type": "framework",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        {
+          "node": "[[IRRBB]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[BCBS]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[Pillar2]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[EVE]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[NII]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[SOT]]",
+          "relation": "related_to"
+        },
+        "supervisory-outlier-test",
+        "standardised-approach",
+        "internal-model",
+        "regulatory-shocks"
+      ],
+      "thesis": "BCBS 2016 (d368) adopted a principles-based Pillar 2 framework rather than a mandatory Pillar 1 standardised capital charge for IRRBB, structuring 12 principles that require banks to measure both EVE and NII under six regulatory rate shocks and apply a supervisory outlier test (SOT) that triggers enhanced scrutiny when the worst-case ΔEVe exceeds 15% of Tier 1 capital. [LLM]",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
       "id": "inflation_targeting_001",
       "title": "Inflation Targeting Framework (ITF) and Post-GFC Policy Mix",
       "type": "framework",
@@ -2059,6 +2477,27 @@
       "thesis": "The Inflation Targeting Framework (ITF), pioneered by New Zealand (1988), achieved price stability through four pillars: a published inflation target, interest-rate consistency (Taylor rule), CB independence, and transparency. While successful pre-GFC, the framework proved insufficient alone — the post-GFC paradigm adds macroprudential policy, FX market intervention, and capital flow management to achieve the dual mandate of price stability AND financial system stability.",
       "stability": "stable",
       "date_updated": "2026-05-20"
+    },
+    {
+      "id": "integrated_stress_testing_capital_liquidity_link_001",
+      "title": "Integrated Stress Testing: Linking Capital, Liquidity, IRRBB, and Credit Risk",
+      "type": "framework",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "stress_testing",
+        "ccar",
+        "eba_stress_test",
+        "irrbb",
+        "capital_planning",
+        "integrated_balance_sheet",
+        "ppnr",
+        "rwa_stress",
+        "liquidity_stress"
+      ],
+      "thesis": "[LLM] Integrated stress testing links macro scenarios simultaneously to credit losses, NII changes, RWA migration, LCR impacts, and capital ratios across a multi-quarter horizon; the 2007–9 crisis revealed that solvency-only stress tests were insufficient because liquidity failures can precede capital insolvency. [LLM] The US CCAR framework (dynamic balance sheet, internal scenarios, 9-quarter horizon) and the EU EBA framework (static balance sheet, external scenarios only, 3-year adverse scenario) represent different regulatory philosophies, but both now require integration with IRRBB stress metrics (EVE and NII) under BCBS 368.",
+      "stability": "evolving",
+      "date_updated": "2026-05-28"
     },
     {
       "id": "japan_sovereign_carry_trade_frm_001",
@@ -2174,6 +2613,25 @@
       "date_updated": "2026-05-20"
     },
     {
+      "id": "optimal_funding_tenor_cost_risk_tradeoff_001",
+      "title": "Optimal Funding Tenors: Cost-Risk Tradeoff for Uncollateralised Derivatives and ALM",
+      "type": "framework",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "funding_tenor",
+        "fva",
+        "liquidity_risk",
+        "cost_of_funds",
+        "regulatory_liquidity_cost",
+        "wholesale_funding",
+        "alm"
+      ],
+      "thesis": "[LLM] The choice of wholesale funding tenor involves a fundamental tradeoff: short-term funding benefits from the normally upward-sloping funding spread curve (lower cost of funds) but creates rollover and repricing risk; long-term funding eliminates liquidity risk but introduces overborrowing inefficiencies (high bid-offer costs) and pays a larger term premium. [LLM] Regulatory requirements (LCR's short-term liquidity charge, NSFR's stable funding cost) create additional non-linear tenor costs that shift the optimal tenor toward longer funding than pure carry optimisation would suggest.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
       "id": "pbc_dual_track_monetary_policy_framework_001",
       "title": "PBC Dual-Track Monetary Policy Framework",
       "type": "framework",
@@ -2231,6 +2689,25 @@
       "thesis": "[LLM] Since private credit fund NAVs are model-based and not continuously observable, stress monitoring must rely on four observable proxy layers: (1) BDC discount to NAV as the public-market window into opaque portfolios, (2) credit secondary market clearing prices vs. reported NAV, (3) repurchase cap breaches in semi-liquid funds, and (4) bank credit line utilization to PC vehicles. These four signals form a real-time transmission chain that can detect the inversion of the [[Private_Credit_Reflexive_Loop]] without depending on manager marks.",
       "stability": "evolving",
       "date_updated": "2026-05-21"
+    },
+    {
+      "id": "reverse_stress_testing_alm_framework_001",
+      "title": "Reverse Stress Testing: Process-Oriented Framework for ALM",
+      "type": "framework",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "reverse_stress_testing",
+        "rst",
+        "liquidity_risk",
+        "capital_risk",
+        "business_model_viability",
+        "scenario_design",
+        "alm"
+      ],
+      "thesis": "[LLM] Reverse stress testing (RST) differs from conventional stress testing by starting from an outcome — business model failure — and reverse-engineering the scenarios that could produce it; this methodology is especially powerful for ALM because it forces explicit identification of capital-induced liquidity failures (where solvency deterioration triggers funding withdrawal) and liquidity-induced capital failures (where funding constraints prevent necessary hedges). [LLM] The practical value lies not in the scenarios themselves but in the process of cross-functional thinking about vulnerabilities, failure sequences, and management actions before a crisis materialises.",
+      "stability": "evolving",
+      "date_updated": "2026-05-28"
     },
     {
       "id": "sovereign_debt_intervention_ladder_001",
@@ -2508,6 +2985,44 @@
       "thesis": "The SOFR–EFFR basis measures the spread between the overnight secured repo rate and the overnight unsecured interbank rate. In the ample reserves floor system, this basis should be small and slightly negative. Persistent or spiking positive basis indicates dealer balance sheet stress, collateral shortage, or funding market dislocations — the key plumbing friction indicator in Conks' money market framework.",
       "stability": "evolving",
       "date_updated": "2026-05-23"
+    },
+    {
+      "id": "alm_balance_sheet_remodeling_under_rate_stress_001",
+      "title": "ALM Balance Sheet Remodeling Under Rate Stress",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "stress_testing",
+        "nii",
+        "eve",
+        "irrbb",
+        "margin_at_risk",
+        "negative_rates",
+        "rate_shock"
+      ],
+      "thesis": "[LLM] When interest rates move, the banking book P&L is affected through three channels simultaneously: (1) the change in NII from repricing of floating positions and the rollover of maturing fixed positions (measured by Δ NII); (2) the change in economic value of all outstanding fixed-rate positions (measured by Δ EVE); and (3) the change in value of embedded automatic options (zero floors, prepayment options, caps) captured in the option add-on (KAO) — and the relative magnitude of these channels depends critically on the duration gap and behavioral assumptions embedded in the balance sheet.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
+      "id": "alm_hedging_strategy_design_001",
+      "title": "ALM Macro Hedging Strategy Design",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "hedging",
+        "irrbb",
+        "irs",
+        "derivatives",
+        "macro_hedge",
+        "pv01",
+        "gap_management"
+      ],
+      "thesis": "[LLM] ALM macro hedging selects and sizes derivative instruments (predominantly interest rate swaps, cross-currency swaps, and options) to close or reduce the structural interest rate and liquidity mismatches revealed by repricing gap analysis and PV01 bucket sensitivity, with the hedge portfolio constructed based on risk appetite (target immunization vs. directional positioning), the cost of hedging, and the dual constraint of managing both Δ NII and Δ EVE within ALCO-approved limits.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
     },
     {
       "id": "ample_reserves_buffer_sizing_tga_volatility_001",
@@ -3373,6 +3888,23 @@
       "date_updated": "2026-05-23"
     },
     {
+      "id": "duration_gap_analysis_banking_book_001",
+      "title": "Duration Gap Analysis in the Banking Book",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "duration",
+        "EVE",
+        "IRRBB",
+        "modified_duration",
+        "banking_book"
+      ],
+      "thesis": "[LLM] The duration gap measures the net interest rate sensitivity of a bank's economic value by comparing the weighted-average modified duration of assets to that of liabilities (scaled by the liability/asset ratio); a positive duration gap means rising rates reduce EVE, and the estimated EVE loss equals duration_gap × total_assets × Δr.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
       "id": "duration_targeting_convergence_and_yield_trap_001",
       "title": "Duration Targeting Convergence And Yield Trap",
       "type": "mechanism",
@@ -3426,6 +3958,23 @@
       "thesis": "The ECB quantitative tightening cycle has structurally increased realized volatility of European sovereign yields by removing the most price-insensitive buyer from the market; events like the March 2025 single-day 30bp Bund move (largest since 1990) demonstrate that without the ECB backstop, idiosyncratic fiscal news can trigger dislocations that would previously have been absorbed by central bank intervention. [LLM]",
       "stability": "evolving",
       "date_updated": "2026-05-23"
+    },
+    {
+      "id": "eve_calculation_mechanics_discount_and_shock_001",
+      "title": "EVE Calculation Mechanics: Discounting Cashflows and Rate Shock",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "EVE",
+        "economic_value",
+        "discounted_cashflow",
+        "interest_rate_shock",
+        "IRRBB"
+      ],
+      "thesis": "[LLM] EVE is calculated as the present value of all asset cashflows minus the present value of all liability cashflows (plus off-balance-sheet items), discounted at the current risk-free yield curve; a rate shock scenario repeats the calculation with a shifted curve, and the change in EVE (ΔEVE) measures the bank's economic capital sensitivity to that shock.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
     },
     {
       "id": "endogenous_bank_money_loans_create_deposits_001",
@@ -3586,6 +4135,25 @@
       "thesis": "[LLM] FTP functions as a unified control mechanism: ALM adjusts the FTP curve by tenor to create behavioral incentives for business units — raising Liquidity Spread on short tenors when LCR is below target causes Liability Centers to push short-term deposit gathering (improving HQLA) and Asset Centers to reduce short-tenor lending; raising Liquidity Spread on long tenors when NSFR is deficient incentivizes stable long-term funding. The FTP mechanism automatically separates pricing risk (stays with business unit as fixed margin) from structural risk (transferred to ALM), creating clear risk ownership across the bank.",
       "stability": "evolving",
       "date_updated": "2026-05-26"
+    },
+    {
+      "id": "ftp_transfer_price_curve_and_structural_contribution_001",
+      "title": "FTP Transfer Price Curve and Structural Contribution",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "FTP",
+        "transfer_pricing",
+        "NIM",
+        "liquidity_risk",
+        "interest_rate_risk",
+        "IRRBB",
+        "treasury"
+      ],
+      "thesis": "[LLM] Funds Transfer Pricing (FTP) is an internal bank process that assigns a maturity-matched funding rate to each asset and an earning rate to each liability, using the transfer price curve; FTP decomposes net interest margin into business-unit contributions and centralizes interest rate and liquidity risk in treasury, which earns the \"structural contribution\" — the spread between the liability FTP rate and the asset FTP rate reflecting the term premium and liquidity premium.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
     },
     {
       "id": "fx_target_quasi_fiscal_stagflation_trap_001",
@@ -3965,6 +4533,23 @@
       "date_updated": "2026-05-23"
     },
     {
+      "id": "funding_gap_profile_behavioural_maturity_calendar_001",
+      "title": "Funding Gap Profile and Behavioural Maturity Calendar in ALM",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "liquidity_risk",
+        "maturity_transformation",
+        "behavioural_modelling",
+        "funding_gap",
+        "alm"
+      ],
+      "thesis": "[LLM] A bank's true liquidity risk cannot be read from contractual maturities alone; the behavioural maturity calendar — which incorporates modelled client behaviour for deposits, mortgages, and credit lines — reveals the actual cumulative funding gap that ALM must manage. [LLM] Short-term and structural liquidity management are distinct layers: the former handles daily cash positions and intraday collateral, while the latter uses the behavioural calendar to drive long-term wholesale funding decisions.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
       "id": "gilt_treasury_spread_monetary_policy_expectations_driver_001",
       "title": "Gilt-Treasury Spread Monetary Policy Expectations Driver",
       "type": "mechanism",
@@ -4004,6 +4589,32 @@
       "thesis": "Three forces extend the Fed's RMO requirement beyond initial estimates — Big Six banks front-running rate cuts by swapping reserves for USTs (structural reserve drain), GSE mandated MBS purchases (~$200B) funded via agency debt creating upward overnight rate pressure, and RV fund basis trade persistence driving structural repo demand — with XCCY basis emerging as the next battleground when onshore USD funding normalizes.",
       "stability": "evolving",
       "date_updated": "2026-05-23"
+    },
+    {
+      "id": "hedge_accounting_ifrs9_alm_banking_book_001",
+      "title": "Hedge Accounting IFRS 9 for ALM Banking Book",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "IFRS9",
+        "hedge-accounting",
+        "IAS39",
+        "fair-value-hedge",
+        "cash-flow-hedge",
+        "OCI",
+        {
+          "node": "[[IRRBB]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[ALM]]",
+          "relation": "related_to"
+        }
+      ],
+      "thesis": "IFRS 9 replaced IAS 39 hedge accounting by eliminating the ex-post effectiveness test requirement (the 80–125% range) and aligning hedge designation with the bank's actual risk management strategy; four asset classification categories determine P&L vs OCI treatment; basis risk can be designated as a separate hedged component; but portfolio macro hedging remains under IAS 39 pending IASB completion of its portfolio hedging project. [LLM]",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
     },
     {
       "id": "imf_exchange_rate_assessment_crawling_peg_design_001",
@@ -4168,6 +4779,43 @@
       "thesis": "Incomes policies — government interventions to restrain wage and price growth — are used in stabilization programs primarily to break inertial inflation (perpetuated through contracts and indexation) rather than to address excess demand. Three institutional forms exist: guideline approach, social contract, and tax-incentive policy (TIP). In transition economies, the four-step design challenge covers: (1) norm selection (wage bill vs. average wage), (2) indexation (backward vs. forward-looking), (3) coverage (public vs. also private enterprises), and (4) enforcement (excess wage tax or social pact). Historical evidence shows wage controls play a valuable but temporary role — effectiveness diminishes rapidly, and they must be exited before structural distortions accumulate.",
       "stability": "stable",
       "date_updated": "2026-05-25"
+    },
+    {
+      "id": "interest_rate_basis_risk_measurement_alm_001",
+      "title": "Interest Rate Basis Risk Measurement in ALM",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "basis-risk",
+        {
+          "node": "[[IRRBB]]",
+          "relation": "related_to"
+        },
+        "multi-curve",
+        {
+          "node": "[[EURIBOR]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[OIS]]",
+          "relation": "related_to"
+        },
+        "tenor-basis",
+        "gap-analysis",
+        "key-rate-duration",
+        {
+          "node": "[[NII]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[PV01]]",
+          "relation": "related_to"
+        }
+      ],
+      "thesis": "Post-2008, basis spreads between EURIBOR tenors and between IBOR and OIS became material and persistent, requiring ALM to shift from a single-curve to a multi-curve framework where OIS rates are used for discounting and separate forward curves are constructed per tenor; gap-based NII sensitivity and key-rate duration arrays (6–10 buckets) are then applied to manage non-parallel rate shocks and tenor-specific repricing mismatches. [LLM]",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
     },
     {
       "id": "interest_rate_corridor_floor_system_standing_facilities_001",
@@ -4377,6 +5025,47 @@
       "date_updated": "2026-05-25"
     },
     {
+      "id": "mortgage_prepayment_risk_alm_management_001",
+      "title": "Mortgage Prepayment Risk and ALM Management",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "mortgage",
+        "prepayment",
+        {
+          "node": "[[MBS]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[CPR]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[OAS]]",
+          "relation": "related_to"
+        },
+        "negative-convexity",
+        {
+          "node": "[[MSR]]",
+          "relation": "related_to"
+        },
+        "S-curve",
+        {
+          "node": "[[IRRBB]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[ALM]]",
+          "relation": "related_to"
+        },
+        "stochastic-EaR"
+      ],
+      "thesis": "Mortgage prepayment risk arises from four distinct borrower behaviors (turnover, rate-driven refinancing, cash-out refinancing, and default) that produce negative convexity in mortgage cash flows; the aggregate prepayment speed (CPR) drives MBS valuation via OAS pricing, and ALM must use stochastic earnings-at-risk rather than static gap analysis because hedge rebalancing costs materialize as rate volatility increases. [LLM]",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
       "id": "nbfi_sovereign_bond_absorption_post_ecb_qt_001",
       "title": "NBFI Sovereign Bond Absorption Post-ECB-QT",
       "type": "mechanism",
@@ -4393,6 +5082,88 @@
       "thesis": "As the ECB systematically withdraws under quantitative tightening, non-bank financial intermediaries (investment funds, insurance companies, pension funds) have absorbed the majority of European sovereign bond supply, but these buyers are structurally less stable than the central bank: they are leverage-sensitive, redemption-prone, and pro-cyclical, making periodic dislocation events structurally more likely. [LLM]",
       "stability": "evolving",
       "date_updated": "2026-05-23"
+    },
+    {
+      "id": "nii_sensitivity_forecast_static_dynamic_balance_sheet_001",
+      "title": "NII Sensitivity and Forecasting: Static vs Dynamic Balance Sheet Assumptions",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "NII",
+        "interest_income",
+        "balance_sheet_assumptions",
+        "rate_shock",
+        "IRRBB",
+        "repricing"
+      ],
+      "thesis": "[LLM] NII sensitivity measures the change in a bank's net interest income for a given interest rate shock relative to a baseline forecast; its magnitude depends critically on the balance sheet assumption chosen (run-off, static, or dynamic) and on the timing of repricing events across asset and liability products.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
+      "id": "nmd_decay_model_volume_segmentation_001",
+      "title": "NMD Decay Model and Volume Segmentation",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        {
+          "node": "[[NMD]]",
+          "relation": "related_to"
+        },
+        "non-maturity-deposits",
+        "decay-model",
+        "behavioralization",
+        "deposit-segmentation",
+        "average-life",
+        "logistic-regression",
+        {
+          "node": "[[IRRBB]]",
+          "relation": "related_to"
+        },
+        {
+          "node": "[[ALM]]",
+          "relation": "related_to"
+        }
+      ],
+      "thesis": "Deposit decay modeling estimates the expected outflow rate of non-maturity deposits (NMDs) by defining \"end of life\" via logistic regression on threshold-breach variables, computing average life via midpoint or monthly granular techniques, and segmenting the portfolio to maximize cross-segment behavioral variance so that each segment can be independently modeled and replicated. [LLM]",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
+      "id": "nmd_stochastic_three_factor_model_001",
+      "title": "NMD Stochastic Three-Factor Model",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        {
+          "node": "[[NMD]]",
+          "relation": "related_to"
+        },
+        "stochastic-model",
+        {
+          "node": "[[Vasicek]]",
+          "relation": "related_to"
+        },
+        "credit-spread",
+        "Monte-Carlo",
+        {
+          "node": "[[Cholesky]]",
+          "relation": "related_to"
+        },
+        "margin-compression",
+        "floor-risk",
+        "replicating-portfolio",
+        {
+          "node": "[[IRRBB]]",
+          "relation": "related_to"
+        }
+      ],
+      "thesis": "The Bohn stochastic three-factor NMD model drives deposit value via correlated Vasicek short rate, mean-reverting credit spread, and lognormal deposit volume processes; a Cholesky decomposition captures their correlations; and the risk appetite confidence level φ defines the replicating portfolio as the interest-rate hedge that covers deposit funding costs at the φ-percentile, with margin compression risk requiring raised hedge ratios before rates fall through the client-rate floor. [LLM]",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
     },
     {
       "id": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
@@ -4428,6 +5199,25 @@
       "thesis": "Inflation propagation in response to supply shocks occurs through two distinct amplifiers: the structural amplifier (automatic input-output cascades through production networks) and the behavioral amplifier (changes in wage- and price-setting behavior driven by expectations). [LLM]",
       "stability": "stable",
       "date_updated": "2026-05-22"
+    },
+    {
+      "id": "option_risk_behavioral_optionality_banking_book_001",
+      "title": "Option Risk and Behavioral Optionality in the Banking Book",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "option_risk",
+        "behavioral_options",
+        "embedded_options",
+        "prepayment",
+        "NMD",
+        "IRRBB",
+        "interest_rate_risk"
+      ],
+      "thesis": "[LLM] Option risk in the banking book arises from both explicit (automatic) options with rule-based exercise and behavioral (embedded) options where customer actions depend on economic and non-economic factors; both alter the timing and amount of cashflows on bank instruments, creating EVE and NII exposures that cannot be fully hedged with standard financial options.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
     },
     {
       "id": "overdraft_behavioral_model_utilization_rate_and_drawdown_alm_cashflow_001",
@@ -4880,6 +5670,24 @@
       "date_updated": "2026-05-24"
     },
     {
+      "id": "repricing_gap_analysis_nii_eve_impact_001",
+      "title": "Repricing Gap Analysis: NII and EVE Impact Measurement",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "repricing",
+        "gap_analysis",
+        "NII",
+        "EVE",
+        "IRRBB",
+        "time_bands"
+      ],
+      "thesis": "[LLM] Repricing gap analysis is a maturity-bucket technique that allocates interest-rate-sensitive assets and liabilities into time bands by their next repricing date; the net gap in each bucket reveals where mismatches create NII and EVE risk, with the weighted sum of all gaps (scaled by modified duration) estimating the EVE decline for a 1% rate shock.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
       "id": "reserve_floor_payment_001",
       "title": "Reserve Floor — Payment System Demand and the Minimum Ample Level",
       "type": "mechanism",
@@ -5012,6 +5820,26 @@
       "thesis": "The 'scissors effect' occurs when a central bank simultaneously withdraws from the sovereign bond market through quantitative tightening (QT) while government issuance (net borrowing) is rising. This creates a dual pressure on the market, as the residual buyer must absorb both the new issuance and the maturing bonds being rolled off the central bank's balance sheet.",
       "stability": "stable",
       "date_updated": "2026-05-24"
+    },
+    {
+      "id": "secured_funding_instruments_repo_covered_bond_abs_001",
+      "title": "Secured Funding Instruments in Bank ALM: Repo, Covered Bonds, and ABS",
+      "type": "mechanism",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "repo",
+        "covered_bonds",
+        "abs",
+        "secured_funding",
+        "lcr",
+        "nsfr",
+        "asset_encumbrance",
+        "collateral"
+      ],
+      "thesis": "[LLM] Secured funding instruments (repo, covered bonds, ABS) shifted from peripheral tools to the structural backbone of bank wholesale funding after the 2007–9 crisis, driven by counterparty risk aversion in unsecured markets; each instrument creates asset encumbrance with distinct LCR/NSFR implications and a tradeoff between funding cost and unsecured creditor subordination. [LLM] Covered bonds dominate European medium-term secured funding (€2.5 trillion outstanding in 2016) while repo dominates short-term (€5.6 trillion European market in 2016); ABS provides capital relief but is structurally more complex and carries higher reputational risk post-crisis.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
     },
     {
       "id": "standing_repo_facility_srf_mec_001",
@@ -5664,6 +6492,26 @@
       "date_updated": "2026-05-27"
     },
     {
+      "id": "eba_irrbb_guidelines_2022_gl_2022_14_001",
+      "title": "EBA IRRBB Guidelines 2022 (EBA/GL/2022/14) and Supervisory Outlier Tests",
+      "type": "regulation",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "EBA",
+        "IRRBB",
+        "SOT",
+        "EVE",
+        "NII",
+        "CSRBB",
+        "regulation",
+        "supervisory_outlier_test"
+      ],
+      "thesis": "[LLM] EBA/GL/2022/14 (October 2022) updated the EU IRRBB regulatory framework by adding the first NII supervisory outlier test (SOT), introducing CSRBB as an explicit risk category, tightening NMD behavioral caps, and mandating standardized and simplified standardized approaches; the two SOTs — EVE (>15% of Tier 1 capital) and NII (>5% of Tier 1 capital) — create a simultaneous compliance constraint that banks must optimize jointly.",
+      "stability": "stable",
+      "date_updated": "2026-05-28"
+    },
+    {
       "id": "eba_gl_2016_10_icaap_ilaap_information_for_srep_001",
       "title": "Eba Gl 2016 10 Icaap Ilaap Information For Srep",
       "type": "regulation",
@@ -5722,6 +6570,90 @@
       "date_updated": "2026-05-27"
     },
     {
+      "id": "sbv_draft_2026_prudential_safety_ratios_banks_001",
+      "title": "SBV Draft 2026 Prudential Safety Ratios Banks",
+      "type": "regulation",
+      "domain": "basel_risk",
+      "confidence": 1,
+      "tags": [
+        "sbv",
+        "prudential",
+        "vietnam-banking",
+        "lcr",
+        "nsfr",
+        "leverage-ratio",
+        "loan-to-deposit",
+        "credit-concentration",
+        "draft-regulation"
+      ],
+      "thesis": "[LLM] The SBV's 2026 draft circular (replacing TT22/2019/TT-NHNN) introduces a comprehensive prudential framework for Vietnamese banks covering seven mandatory safety ratios: (a) credit concentration limits, (b) LCR (tỷ lệ khả năng chi trả), (c) NSFR (tỷ lệ nguồn vốn ổn định ròng), (d) government bond holding limits, (e) equity investment limits, (f) LDR ≤ 85%, and (g) leverage ratio ≥ 3%. This framework aligns Vietnamese banking regulation with Basel III liquidity and leverage standards while setting domestic phase-in schedules.",
+      "stability": "evolving",
+      "date_updated": "2026-05-28"
+    },
+    {
+      "id": "sbv_lcr_nsfr_vietnam_phase_in_2028_2031_001",
+      "title": "SBV LCR NSFR Vietnam Phase-In 2028–2031",
+      "type": "regulation",
+      "domain": "alm",
+      "confidence": 1,
+      "tags": [
+        "lcr",
+        "nsfr",
+        "hqla",
+        "liquidity-risk",
+        "sbv",
+        "vietnam-banking",
+        "phase-in",
+        "basel-iii"
+      ],
+      "thesis": "[LLM] Under the SBV's 2026 draft prudential circular, Vietnamese banks must phase in Basel III LCR from 2028 (70%) through 2031+ (100%), calculated in two dimensions — VND-equivalent LCR and standalone VND LCR. NSFR = 100% applies from 2028 (or earlier upon voluntary early adoption with SBV approval). Banks may opt into the LCR/NSFR regime before 2028 mandatory date by notifying SBV and providing independent auditor confirmation of compliance at the last fiscal year-end.",
+      "stability": "evolving",
+      "date_updated": "2026-05-28"
+    },
+    {
+      "id": "sbv_tt14_2025_irb_governance_risk_parameters_001",
+      "title": "SBV TT14 2025 IRB Governance and Risk Parameters",
+      "type": "regulation",
+      "domain": "basel_risk",
+      "confidence": 1,
+      "tags": [
+        "irb",
+        "internal-ratings",
+        "pd",
+        "lgd",
+        "ead",
+        "credit-risk",
+        "sbv",
+        "tt14-2025",
+        "pillar-2",
+        "capital-adequacy"
+      ],
+      "thesis": "[LLM] TT14/2025/TT-NHNN (issued 30 June 2025) governs capital adequacy for Vietnamese commercial banks, including IRB approach requirements aligned with Basel III. Key governance requirements: Board must approve internal ratings design; a dedicated Credit Risk Control unit (independent from lending) must operate and maintain the IRB system; banks must use the IRB for at least 2 consecutive years before SBV approval; PD must be estimated as the long-run average one-year default rate per rating grade; LGD must reflect economic losses; a margin of conservatism must be applied to all risk parameter estimates.",
+      "stability": "evolving",
+      "date_updated": "2026-05-28"
+    },
+    {
+      "id": "sbv_tt83_2025_internal_control_three_lines_defense_001",
+      "title": "SBV TT83 2025 Internal Control System Three Lines of Defense",
+      "type": "regulation",
+      "domain": "basel_risk",
+      "confidence": 1,
+      "tags": [
+        "internal-control",
+        "three-lines-defense",
+        "sbv",
+        "tt83-2025",
+        "risk-governance",
+        "operational-risk",
+        "icaap",
+        "stress-testing",
+        "vietnam-banking"
+      ],
+      "thesis": "[LLM] TT83/2025/TT-NHNN (issued 31 December 2025) mandates a three-line-of-defense internal control structure for Vietnamese commercial banks and foreign bank branches. Line 1: risk-generating business units; Line 2: Compliance and Risk Management functions; Line 3: Internal Audit. The circular also requires banks to establish a Risk Council, ALCO, and Capital Management Council at CEO level, and to maintain an internal capital adequacy assessment process (ICAAP / đánh giá nội bộ về mức đủ vốn) covering all material risks including IRRBB and model risk.",
+      "stability": "evolving",
+      "date_updated": "2026-05-28"
+    },
+    {
       "id": "us_macro_constraint_stack_fed_treasury_curve_inflation_external_sector_syn_001",
       "title": "US Macro Constraint Stack Fed Treasury Curve Inflation External Sector",
       "type": "synthesis",
@@ -5744,9 +6676,39 @@
   ],
   "edges": [
     {
+      "source": "alm_evolution_historical_to_modern_001",
+      "target": "alm_balance_sheet_optimization_framework_001",
+      "relation": "historical_context_for"
+    },
+    {
+      "source": "alm_structural_liquidity_gap_001",
+      "target": "alm_balance_sheet_optimization_framework_001",
+      "relation": "parent_node"
+    },
+    {
+      "source": "alm_structural_liquidity_gap_001",
+      "target": "alm_hedging_strategy_design_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "asset_encumbrance_management_bank_alm_001",
+      "target": "secured_funding_instruments_repo_covered_bond_abs_001",
+      "relation": "mechanism_of"
+    },
+    {
+      "source": "asset_encumbrance_management_bank_alm_001",
+      "target": "funding_gap_profile_behavioural_maturity_calendar_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "asset_encumbrance_management_bank_alm_001",
+      "target": "reserve_asset_management_hqla_portfolio_bank_001",
+      "relation": "related_to"
+    },
+    {
       "source": "bank_alm_structural_liquidity_management_nsfr_lcr_framework_001",
       "target": "bank_alm_banking_book_risk_management_framework_001",
-      "relation": "parent_framework"
+      "relation": "parent_node"
     },
     {
       "source": "bank_alm_structural_liquidity_management_nsfr_lcr_framework_001",
@@ -5780,6 +6742,11 @@
     },
     {
       "source": "basel_iii_leverage_ratio_non_rwa_capital_constraint_001",
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "parent_node"
+    },
+    {
+      "source": "basel_iii_leverage_ratio_non_rwa_capital_constraint_001",
       "target": "basel_iii_capital_stack_cet1_tier1_total_buffer_architecture_001",
       "relation": "complementary_constraint"
     },
@@ -5787,11 +6754,6 @@
       "source": "basel_iii_leverage_ratio_non_rwa_capital_constraint_001",
       "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
       "relation": "us_implementation_context"
-    },
-    {
-      "source": "basel_iii_leverage_ratio_non_rwa_capital_constraint_001",
-      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
-      "relation": "part_of_four_constraints"
     },
     {
       "source": "cb_hidden_fx_reserves_net_effective_intervention_capacity_001",
@@ -5874,6 +6836,16 @@
       "relation": "PBOC_as_regulator_of_context"
     },
     {
+      "source": "credit_spread_risk_banking_book_csrbb_001",
+      "target": "irrbb_standardised_versus_internal_model_approach_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "credit_spread_risk_banking_book_csrbb_001",
+      "target": "interest_rate_basis_risk_measurement_alm_001",
+      "relation": "related_to"
+    },
+    {
       "source": "currency_substitution_dollarization_001",
       "target": "imf_money_multiplier_decomposition_001",
       "relation": "dollarization_compresses_domestic_multiplier"
@@ -5896,7 +6868,7 @@
     {
       "source": "currency_fed_liability_con_001",
       "target": "central_bank_balance_sheet_structure_liabilities_assets_001",
-      "relation": "component_of"
+      "relation": "parent_node"
     },
     {
       "source": "currency_fed_liability_con_001",
@@ -6011,7 +6983,7 @@
     {
       "source": "concept_fi_rv_001",
       "target": "swap_carry_and_roll_down_analysis_001",
-      "relation": "component_of"
+      "relation": "parent_node"
     },
     {
       "source": "concept_fi_rv_001",
@@ -6049,6 +7021,21 @@
       "relation": "regulatory_basis"
     },
     {
+      "source": "irrbb_interest_rate_risk_types_classification_001",
+      "target": "irrbb_eve_nii_dual_metric_framework_001",
+      "relation": "parent_node"
+    },
+    {
+      "source": "irrbb_interest_rate_risk_types_classification_001",
+      "target": "repricing_gap_analysis_nii_eve_impact_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "irrbb_interest_rate_risk_types_classification_001",
+      "target": "option_risk_behavioral_optionality_banking_book_001",
+      "relation": "related_to"
+    },
+    {
       "source": "ilaap_economic_and_normative_perspective_dual_pillar_001",
       "target": "ilaap_liquidity_adequacy_assessment_framework_001",
       "relation": "related"
@@ -6057,6 +7044,21 @@
       "source": "ilaap_economic_and_normative_perspective_dual_pillar_001",
       "target": "ecb_ilaap_guide_2018_seven_principles_ssm_001",
       "relation": "related"
+    },
+    {
+      "source": "income_gap_vs_economic_value_gap_001",
+      "target": "alm_balance_sheet_optimization_framework_001",
+      "relation": "parent_node"
+    },
+    {
+      "source": "income_gap_vs_economic_value_gap_001",
+      "target": "alm_hedging_strategy_design_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "ma_balance_sheet_oin_other_items_net_absorber_mechanics_001",
+      "target": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
+      "relation": "parent_node"
     },
     {
       "source": "ma_balance_sheet_oin_other_items_net_absorber_mechanics_001",
@@ -6080,11 +7082,6 @@
     },
     {
       "source": "ma_balance_sheet_oin_other_items_net_absorber_mechanics_001",
-      "target": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
-      "relation": "parent_mechanism — sterilization is the primary driver of OINm decline under FX target"
-    },
-    {
-      "source": "ma_balance_sheet_oin_other_items_net_absorber_mechanics_001",
       "target": "imf_fx_regime_monetary_accounts_balance_sheet_endogeneity_001",
       "relation": "regime_context — under FX target, OIN is the only NDA component freely adjustable"
     },
@@ -6097,6 +7094,11 @@
       "source": "nbfi_sovereign_market_supervisory_gap_001",
       "target": "sovereign_basis_trade_repo_leverage_001",
       "relation": "related_mechanism"
+    },
+    {
+      "source": "non_maturity_deposit_and_revolving_facility_behavioral_assumptions_alco_governance_001",
+      "target": "bank_alm_banking_book_risk_management_framework_001",
+      "relation": "parent_node"
     },
     {
       "source": "non_maturity_deposit_and_revolving_facility_behavioral_assumptions_alco_governance_001",
@@ -6119,14 +7121,9 @@
       "relation": "parent_standard"
     },
     {
-      "source": "non_maturity_deposit_and_revolving_facility_behavioral_assumptions_alco_governance_001",
-      "target": "bank_alm_banking_book_risk_management_framework_001",
-      "relation": "parent_framework"
-    },
-    {
       "source": "overdraft_behavioral_model_ppl_pts_policy_specification_001",
       "target": "overdraft_behavioral_model_utilization_rate_and_drawdown_alm_cashflow_001",
-      "relation": "parent_mechanism"
+      "relation": "parent_node"
     },
     {
       "source": "overdraft_behavioral_model_ppl_pts_policy_specification_001",
@@ -6141,12 +7138,22 @@
     {
       "source": "overdraft_behavioral_model_pts_variant_parameter_specification_001",
       "target": "overdraft_behavioral_model_utilization_rate_and_drawdown_alm_cashflow_001",
-      "relation": "parent_mechanism"
+      "relation": "parent_node"
     },
     {
       "source": "overdraft_behavioral_model_pts_variant_parameter_specification_001",
       "target": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
       "relation": "behavioral_context"
+    },
+    {
+      "source": "reserve_asset_management_hqla_portfolio_bank_001",
+      "target": "bank_alm_structural_liquidity_management_nsfr_lcr_framework_001",
+      "relation": "parent_node"
+    },
+    {
+      "source": "reserve_asset_management_hqla_portfolio_bank_001",
+      "target": "funding_gap_profile_behavioural_maturity_calendar_001",
+      "relation": "related_to"
     },
     {
       "source": "reverse_stress_testing_failure_point_business_model_viability_001",
@@ -6162,6 +7169,26 @@
       "source": "reverse_stress_testing_failure_point_business_model_viability_001",
       "target": "stress_testing_governance_integration_bank_risk_framework_001",
       "relation": "related"
+    },
+    {
+      "source": "svb_2023_failure_alm_lessons_001",
+      "target": "eve_calculation_mechanics_discount_and_shock_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "svb_2023_failure_alm_lessons_001",
+      "target": "nmd_stochastic_three_factor_model_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "svb_2023_failure_alm_lessons_001",
+      "target": "integrated_stress_testing_capital_liquidity_link_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "svb_2023_failure_alm_lessons_001",
+      "target": "alm_enterprise_risk_management_framework_001",
+      "relation": "related_to"
     },
     {
       "source": "shadow_banking_market_based_finance_001",
@@ -6231,7 +7258,7 @@
     {
       "source": "term_deposit_behavioral_model_ppl_pts_policy_specification_001",
       "target": "term_deposit_behavioral_model_renewal_probability_and_early_withdrawal_alm_001",
-      "relation": "parent_mechanism"
+      "relation": "parent_node"
     },
     {
       "source": "term_deposit_behavioral_model_ppl_pts_policy_specification_001",
@@ -6241,7 +7268,7 @@
     {
       "source": "term_deposit_behavioral_model_pts_variant_parameter_specification_001",
       "target": "term_deposit_behavioral_model_renewal_probability_and_early_withdrawal_alm_001",
-      "relation": "parent_mechanism"
+      "relation": "parent_node"
     },
     {
       "source": "tga_reserve_swap_mechanics_and_debt_ceiling_dynamics_con_001",
@@ -6489,6 +7516,71 @@
       "relation": "counterparty_in"
     },
     {
+      "source": "alm_operating_model_front_middle_office_001",
+      "target": "alm_enterprise_risk_management_framework_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "alm_operating_model_front_middle_office_001",
+      "target": "ftp_transfer_price_curve_and_structural_contribution_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "alm_operating_model_front_middle_office_001",
+      "target": "alm_role_srep_pillar2_capital_liquidity_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "alm_role_srep_pillar2_capital_liquidity_001",
+      "target": "alm_enterprise_risk_management_framework_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "alm_role_srep_pillar2_capital_liquidity_001",
+      "target": "integrated_stress_testing_capital_liquidity_link_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "alm_recovery_resolution_mrel_bail_in_001",
+      "target": "alm_role_srep_pillar2_capital_liquidity_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "alm_recovery_resolution_mrel_bail_in_001",
+      "target": "integrated_stress_testing_capital_liquidity_link_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "alm_recovery_resolution_mrel_bail_in_001",
+      "target": "optimal_funding_tenor_cost_risk_tradeoff_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "alm_recovery_resolution_mrel_bail_in_001",
+      "target": "bank_capital_structure_capital_management_alm_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "alm_low_negative_interest_rate_environment_001",
+      "target": "nmd_stochastic_three_factor_model_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "alm_low_negative_interest_rate_environment_001",
+      "target": "nmd_decay_model_volume_segmentation_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "alm_low_negative_interest_rate_environment_001",
+      "target": "irrbb_standardised_versus_internal_model_approach_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "alm_enterprise_risk_management_framework_001",
+      "target": "irrbb_standardised_versus_internal_model_approach_001",
+      "relation": "related_to"
+    },
+    {
       "source": "bank_alm_banking_book_risk_management_framework_001",
       "target": "bcbs_irrbb_standards_d368_2016_001",
       "relation": "regulatory_basis"
@@ -6507,6 +7599,21 @@
       "source": "bank_alm_banking_book_risk_management_framework_001",
       "target": "ftp_as_unified_balance_sheet_control_mechanism_transmission_to_risk_factors_001",
       "relation": "ftp_control"
+    },
+    {
+      "source": "bank_capital_structure_capital_management_alm_001",
+      "target": "bank_alm_structural_liquidity_management_nsfr_lcr_framework_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "bank_capital_structure_capital_management_alm_001",
+      "target": "asset_encumbrance_management_bank_alm_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "bank_capital_structure_capital_management_alm_001",
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "implements"
     },
     {
       "source": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
@@ -6815,13 +7922,13 @@
     },
     {
       "source": "fed_ample_reserves_range_floor_frm_001",
-      "target": "reserve_floor_payment_001",
-      "relation": "driven_by"
+      "target": "fed_overnight_reverse_repo_on_rrp_mec_001",
+      "relation": "parent_node"
     },
     {
       "source": "fed_ample_reserves_range_floor_frm_001",
-      "target": "fed_overnight_reverse_repo_on_rrp_mec_001",
-      "relation": "component_of"
+      "target": "reserve_floor_payment_001",
+      "relation": "driven_by"
     },
     {
       "source": "fed_ample_reserves_range_floor_frm_001",
@@ -6896,7 +8003,7 @@
     {
       "source": "fed_treasury_operational_choice_space_frm_001",
       "target": "fed_fiscal_agent_treasury_relationship_frm_001",
-      "relation": "parent_framework"
+      "relation": "parent_node"
     },
     {
       "source": "fed_treasury_operational_choice_space_frm_001",
@@ -7191,7 +8298,7 @@
     {
       "source": "imf_public_expenditure_taxonomy_001",
       "target": "imf_gfs_fiscal_accounting_framework_deficit_measurement_and_sustainability_001",
-      "relation": "expenditure_is_core_component_of_deficit_analysis"
+      "relation": "parent_node"
     },
     {
       "source": "imf_public_expenditure_taxonomy_001",
@@ -7239,6 +8346,11 @@
       "relation": "nmd_valuation_complement"
     },
     {
+      "source": "irrbb_standardised_versus_internal_model_approach_001",
+      "target": "interest_rate_basis_risk_measurement_alm_001",
+      "relation": "related_to"
+    },
+    {
       "source": "inflation_targeting_001",
       "target": "monetary_policy_instruments_operational_framework_001",
       "relation": "complements"
@@ -7257,6 +8369,21 @@
       "source": "inflation_targeting_001",
       "target": "collateral_framework_haircuts_central_bank_credit_001",
       "relation": "shared_tag:central-bank"
+    },
+    {
+      "source": "integrated_stress_testing_capital_liquidity_link_001",
+      "target": "bank_capital_structure_capital_management_alm_001",
+      "relation": "parent_node"
+    },
+    {
+      "source": "integrated_stress_testing_capital_liquidity_link_001",
+      "target": "funding_gap_profile_behavioural_maturity_calendar_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "integrated_stress_testing_capital_liquidity_link_001",
+      "target": "reserve_asset_management_hqla_portfolio_bank_001",
+      "relation": "related_to"
     },
     {
       "source": "japan_sovereign_carry_trade_frm_001",
@@ -7291,7 +8418,7 @@
     {
       "source": "labor_market_unemployment_taxonomy_nairu_001",
       "target": "imf_sna_real_sector_accounting_gdp_identities_and_sectoral_accounts_001",
-      "relation": "labor_income_component_of_gdp_identity"
+      "relation": "parent_node"
     },
     {
       "source": "labor_market_unemployment_taxonomy_nairu_001",
@@ -7404,6 +8531,21 @@
       "relation": "shared_tag:fed"
     },
     {
+      "source": "optimal_funding_tenor_cost_risk_tradeoff_001",
+      "target": "funding_gap_profile_behavioural_maturity_calendar_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "optimal_funding_tenor_cost_risk_tradeoff_001",
+      "target": "secured_funding_instruments_repo_covered_bond_abs_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "optimal_funding_tenor_cost_risk_tradeoff_001",
+      "target": "bank_capital_structure_capital_management_alm_001",
+      "relation": "related_to"
+    },
+    {
       "source": "pboc_monetary_policy_framework_and_interest_rate_transmission_001",
       "target": "pboc_rmb_fix_counter_cyclical_factor_and_fx_management_001",
       "relation": "shared_tag:pboc"
@@ -7432,6 +8574,21 @@
       "source": "private_credit_stress_monitoring_001",
       "target": "basel_iii_endgame_001",
       "relation": "shared_tag:private-credit"
+    },
+    {
+      "source": "reverse_stress_testing_alm_framework_001",
+      "target": "integrated_stress_testing_capital_liquidity_link_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "reverse_stress_testing_alm_framework_001",
+      "target": "bank_capital_structure_capital_management_alm_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "reverse_stress_testing_alm_framework_001",
+      "target": "funding_gap_profile_behavioural_maturity_calendar_001",
+      "relation": "related_to"
     },
     {
       "source": "sovereign_debt_intervention_ladder_001",
@@ -7590,13 +8747,13 @@
     },
     {
       "source": "indicator_effr_001",
-      "target": "indicator_iorb_001",
-      "relation": "bounded_by"
+      "target": "indicator_sofr_effr_basis_001",
+      "relation": "parent_node"
     },
     {
       "source": "indicator_effr_001",
-      "target": "indicator_sofr_effr_basis_001",
-      "relation": "component_of"
+      "target": "indicator_iorb_001",
+      "relation": "bounded_by"
     },
     {
       "source": "indicator_effr_001",
@@ -7670,13 +8827,13 @@
     },
     {
       "source": "indicator_sofr_001",
-      "target": "indicator_effr_001",
-      "relation": "compared_with"
+      "target": "indicator_sofr_effr_basis_001",
+      "relation": "parent_node"
     },
     {
       "source": "indicator_sofr_001",
-      "target": "indicator_sofr_effr_basis_001",
-      "relation": "component_of"
+      "target": "indicator_effr_001",
+      "relation": "compared_with"
     },
     {
       "source": "indicator_sofr_001",
@@ -7737,6 +8894,26 @@
       "source": "indicator_sofr_effr_basis_001",
       "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
       "relation": "driven_by"
+    },
+    {
+      "source": "alm_balance_sheet_remodeling_under_rate_stress_001",
+      "target": "alm_balance_sheet_optimization_framework_001",
+      "relation": "parent_node"
+    },
+    {
+      "source": "alm_balance_sheet_remodeling_under_rate_stress_001",
+      "target": "income_gap_vs_economic_value_gap_001",
+      "relation": "mechanism_of"
+    },
+    {
+      "source": "alm_balance_sheet_remodeling_under_rate_stress_001",
+      "target": "alm_hedging_strategy_design_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "alm_hedging_strategy_design_001",
+      "target": "alm_balance_sheet_optimization_framework_001",
+      "relation": "parent_node"
     },
     {
       "source": "ample_reserves_buffer_sizing_tga_volatility_001",
@@ -7811,7 +8988,7 @@
     {
       "source": "bcbs_liquidity_contingency_funding_plan_p11_001",
       "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
-      "relation": "parent_framework"
+      "relation": "parent_node"
     },
     {
       "source": "bcbs_liquidity_contingency_funding_plan_p11_001",
@@ -7826,7 +9003,7 @@
     {
       "source": "bcbs_hqla_liquidity_cushion_p12_001",
       "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
-      "relation": "parent_framework"
+      "relation": "parent_node"
     },
     {
       "source": "bcbs_hqla_liquidity_cushion_p12_001",
@@ -7861,7 +9038,7 @@
     {
       "source": "bcbs_intraday_liquidity_management_p8_001",
       "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
-      "relation": "parent_framework"
+      "relation": "parent_node"
     },
     {
       "source": "bcbs_intraday_liquidity_management_p8_001",
@@ -7876,7 +9053,7 @@
     {
       "source": "bcbs_liquidity_internal_pricing_ftp_p4_001",
       "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
-      "relation": "parent_framework"
+      "relation": "parent_node"
     },
     {
       "source": "bcbs_liquidity_internal_pricing_ftp_p4_001",
@@ -7896,7 +9073,7 @@
     {
       "source": "bcbs_liquidity_stress_testing_p10_001",
       "target": "bcbs_sound_liquidity_risk_management_17_principles_001",
-      "relation": "parent_framework"
+      "relation": "parent_node"
     },
     {
       "source": "btfp_svb_crisis_emergency_lending_001",
@@ -8030,13 +9207,13 @@
     },
     {
       "source": "basel_iii_lcr_hqla_cashflow_mechanics_001",
-      "target": "basel_iii_nsfr_available_required_stable_funding_001",
-      "relation": "complementary_liquidity_standard"
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "parent_node"
     },
     {
       "source": "basel_iii_lcr_hqla_cashflow_mechanics_001",
-      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
-      "relation": "part_of_four_constraints"
+      "target": "basel_iii_nsfr_available_required_stable_funding_001",
+      "relation": "complementary_liquidity_standard"
     },
     {
       "source": "basel_iii_lcr_hqla_cashflow_mechanics_001",
@@ -8056,7 +9233,7 @@
     {
       "source": "basel_iii_nsfr_available_required_stable_funding_001",
       "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
-      "relation": "part_of_four_constraints"
+      "relation": "parent_node"
     },
     {
       "source": "basel_iii_nsfr_available_required_stable_funding_001",
@@ -8075,13 +9252,13 @@
     },
     {
       "source": "basel_iv_output_floor_72pct_internal_model_constraint_001",
-      "target": "basel_output_floor_specialized_lending_001",
-      "relation": "credit_impact_application"
+      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
+      "relation": "parent_node"
     },
     {
       "source": "basel_iv_output_floor_72pct_internal_model_constraint_001",
-      "target": "basel_iii_capital_and_liquidity_constraint_mechanics_001",
-      "relation": "component_of"
+      "target": "basel_output_floor_specialized_lending_001",
+      "relation": "credit_impact_application"
     },
     {
       "source": "basel_iv_output_floor_72pct_internal_model_constraint_001",
@@ -8135,6 +9312,11 @@
     },
     {
       "source": "cb_fx_forward_and_ndf_intervention_delivery_versus_cash_settlement_001",
+      "target": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
+      "relation": "parent_node"
+    },
+    {
+      "source": "cb_fx_forward_and_ndf_intervention_delivery_versus_cash_settlement_001",
       "target": "cb_fx_swap_intervention_mechanics_and_off_balance_sheet_exposure_001",
       "relation": "sibling_instrument — swap adds near leg; forward is single future delivery"
     },
@@ -8144,19 +9326,14 @@
       "relation": "sibling_instrument — cancelable forward = forward + embedded option"
     },
     {
-      "source": "cb_fx_forward_and_ndf_intervention_delivery_versus_cash_settlement_001",
+      "source": "cb_fx_options_and_cancelable_forward_intervention_structures_001",
       "target": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
-      "relation": "parent_mechanism — forward is off-BS implementation of FX target defense"
+      "relation": "parent_node"
     },
     {
       "source": "cb_fx_options_and_cancelable_forward_intervention_structures_001",
       "target": "cb_fx_swap_intervention_mechanics_and_off_balance_sheet_exposure_001",
       "relation": "sibling_instrument — swap obligates two legs; option preserves CB choice"
-    },
-    {
-      "source": "cb_fx_options_and_cancelable_forward_intervention_structures_001",
-      "target": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
-      "relation": "parent_mechanism — options implement discretionary defense of FX target"
     },
     {
       "source": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
@@ -8191,7 +9368,7 @@
     {
       "source": "cb_fx_swap_intervention_mechanics_and_off_balance_sheet_exposure_001",
       "target": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
-      "relation": "parent_mechanism — swap is one implementation of sterilized intervention"
+      "relation": "parent_node"
     },
     {
       "source": "cb_fx_swap_intervention_mechanics_and_off_balance_sheet_exposure_001",
@@ -8256,7 +9433,7 @@
     {
       "source": "capital_flow_management_cfm_taxonomy_001",
       "target": "em_cb_policy_mix_fit_framework_001",
-      "relation": "component_of"
+      "relation": "parent_node"
     },
     {
       "source": "capital_flow_management_cfm_taxonomy_001",
@@ -8305,23 +9482,23 @@
     },
     {
       "source": "china_lpr_mlf_decoupling_2024_001",
+      "target": "pboc_monetary_policy_framework_and_interest_rate_transmission_001",
+      "relation": "parent_node"
+    },
+    {
+      "source": "china_lpr_mlf_decoupling_2024_001",
       "target": "china_lpr_quoting_mechanism_credit_channel_001",
       "relation": "reforms"
     },
     {
-      "source": "china_lpr_mlf_decoupling_2024_001",
+      "source": "china_lpr_quoting_mechanism_credit_channel_001",
       "target": "pboc_monetary_policy_framework_and_interest_rate_transmission_001",
-      "relation": "component_of"
+      "relation": "parent_node"
     },
     {
       "source": "china_lpr_quoting_mechanism_credit_channel_001",
       "target": "pbc_interest_rate_transmission_dr007_to_lpr_001",
       "relation": "extends"
-    },
-    {
-      "source": "china_lpr_quoting_mechanism_credit_channel_001",
-      "target": "pboc_monetary_policy_framework_and_interest_rate_transmission_001",
-      "relation": "component_of"
     },
     {
       "source": "china_lpr_quoting_mechanism_credit_channel_001",
@@ -8351,7 +9528,7 @@
     {
       "source": "mechanism_collateral_transformation_001",
       "target": "collateral_velocity_001",
-      "relation": "component_of"
+      "relation": "parent_node"
     },
     {
       "source": "mechanism_collateral_transformation_001",
@@ -8519,6 +9696,21 @@
       "relation": "shared_tag:treasury"
     },
     {
+      "source": "duration_gap_analysis_banking_book_001",
+      "target": "irrbb_eve_nii_dual_metric_framework_001",
+      "relation": "parent_node"
+    },
+    {
+      "source": "duration_gap_analysis_banking_book_001",
+      "target": "eve_calculation_mechanics_discount_and_shock_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "duration_gap_analysis_banking_book_001",
+      "target": "maturity_gap_analysis_interest_rate_risk_banking_book_001",
+      "relation": "related_to"
+    },
+    {
       "source": "duration_targeting_convergence_and_yield_trap_001",
       "target": "financial_repression_distributional_welfare_effects_001",
       "relation": "shared_tag:duration"
@@ -8527,6 +9719,16 @@
       "source": "duration_targeting_convergence_and_yield_trap_001",
       "target": "qe_duration_extraction_from_private_sector_001",
       "relation": "shared_tag:duration"
+    },
+    {
+      "source": "eve_calculation_mechanics_discount_and_shock_001",
+      "target": "irrbb_eve_nii_dual_metric_framework_001",
+      "relation": "parent_node"
+    },
+    {
+      "source": "eve_calculation_mechanics_discount_and_shock_001",
+      "target": "maturity_gap_analysis_interest_rate_risk_banking_book_001",
+      "relation": "related_to"
     },
     {
       "source": "endogenous_bank_money_loans_create_deposits_001",
@@ -8639,6 +9841,21 @@
       "relation": "upstream_regulatory_driver_of_resolution_requirements"
     },
     {
+      "source": "ftp_transfer_price_curve_and_structural_contribution_001",
+      "target": "bank_alm_banking_book_risk_management_framework_001",
+      "relation": "parent_node"
+    },
+    {
+      "source": "ftp_transfer_price_curve_and_structural_contribution_001",
+      "target": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "ftp_transfer_price_curve_and_structural_contribution_001",
+      "target": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
+      "relation": "related_to"
+    },
+    {
       "source": "fx_target_quasi_fiscal_stagflation_trap_001",
       "target": "cb_fx_rate_target_balance_sheet_constraint_sterilization_001",
       "relation": "upstream_mechanism"
@@ -8671,7 +9888,7 @@
     {
       "source": "fx_settlement_risk_cls_ptf_001",
       "target": "global_dollar_system_eurodollar_architecture_001",
-      "relation": "component_of"
+      "relation": "parent_node"
     },
     {
       "source": "fx_settlement_risk_cls_ptf_001",
@@ -8889,6 +10106,11 @@
       "relation": "shared_tag:japan"
     },
     {
+      "source": "funding_gap_profile_behavioural_maturity_calendar_001",
+      "target": "bank_alm_structural_liquidity_management_nsfr_lcr_framework_001",
+      "relation": "mechanism_of"
+    },
+    {
       "source": "global_compression_rv_gse_xccy_001",
       "target": "fed_rmo_reserve_management_operations_001",
       "relation": "extends"
@@ -8902,6 +10124,21 @@
       "source": "global_compression_rv_gse_xccy_001",
       "target": "slr_lcr_balance_sheet_constraints_treasury_market_dealer_001",
       "relation": "context"
+    },
+    {
+      "source": "hedge_accounting_ifrs9_alm_banking_book_001",
+      "target": "eve_calculation_mechanics_discount_and_shock_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "hedge_accounting_ifrs9_alm_banking_book_001",
+      "target": "irrbb_eve_nii_dual_metric_framework_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "hedge_accounting_ifrs9_alm_banking_book_001",
+      "target": "alm_hedging_strategy_design_001",
+      "relation": "related_to"
     },
     {
       "source": "imf_exchange_rate_assessment_crawling_peg_design_001",
@@ -9015,6 +10252,11 @@
     },
     {
       "source": "incomes_policy_wage_controls_stabilization_001",
+      "target": "transition_economy_monetary_issues_001",
+      "relation": "parent_node"
+    },
+    {
+      "source": "incomes_policy_wage_controls_stabilization_001",
       "target": "imf_inflation_analysis_cpi_gdp_deflator_four_types_core_001",
       "relation": "inertial_inflation_is_the_target"
     },
@@ -9025,11 +10267,6 @@
     },
     {
       "source": "incomes_policy_wage_controls_stabilization_001",
-      "target": "transition_economy_monetary_issues_001",
-      "relation": "wage_controls_part_of_transition_stabilization_toolkit"
-    },
-    {
-      "source": "incomes_policy_wage_controls_stabilization_001",
       "target": "imf_gfs_fiscal_accounting_framework_deficit_measurement_and_sustainability_001",
       "relation": "wage_bill_is_largest_government_expenditure_component"
     },
@@ -9037,6 +10274,11 @@
       "source": "incomes_policy_wage_controls_stabilization_001",
       "target": "imf_monetary_analysis_quantity_theory_velocity_and_exchange_rate_regimes_001",
       "relation": "exchange_rate_anchor_paired_with_incomes_policy_in_heterodox_programs"
+    },
+    {
+      "source": "interest_rate_basis_risk_measurement_alm_001",
+      "target": "nmd_decay_model_volume_segmentation_001",
+      "relation": "related_to"
     },
     {
       "source": "interest_rate_corridor_floor_system_standing_facilities_001",
@@ -9169,6 +10411,46 @@
       "relation": "seigniorage_depends_on_multiplier_stability"
     },
     {
+      "source": "mortgage_prepayment_risk_alm_management_001",
+      "target": "nmd_stochastic_three_factor_model_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "mortgage_prepayment_risk_alm_management_001",
+      "target": "interest_rate_basis_risk_measurement_alm_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "mortgage_prepayment_risk_alm_management_001",
+      "target": "irrbb_standardised_versus_internal_model_approach_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "nii_sensitivity_forecast_static_dynamic_balance_sheet_001",
+      "target": "irrbb_eve_nii_dual_metric_framework_001",
+      "relation": "parent_node"
+    },
+    {
+      "source": "nii_sensitivity_forecast_static_dynamic_balance_sheet_001",
+      "target": "maturity_gap_analysis_interest_rate_risk_banking_book_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "nmd_decay_model_volume_segmentation_001",
+      "target": "nmd_stochastic_three_factor_model_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "nmd_decay_model_volume_segmentation_001",
+      "target": "irrbb_standardised_versus_internal_model_approach_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "nmd_stochastic_three_factor_model_001",
+      "target": "irrbb_standardised_versus_internal_model_approach_001",
+      "relation": "related_to"
+    },
+    {
       "source": "nonlinear_inflation_amplifiers_mec_001",
       "target": "mptm_framework_001",
       "relation": "extension_of"
@@ -9177,6 +10459,21 @@
       "source": "nonlinear_inflation_amplifiers_mec_001",
       "target": "inflation_targeting_001",
       "relation": "constraint_on"
+    },
+    {
+      "source": "option_risk_behavioral_optionality_banking_book_001",
+      "target": "irrbb_eve_nii_dual_metric_framework_001",
+      "relation": "parent_node"
+    },
+    {
+      "source": "option_risk_behavioral_optionality_banking_book_001",
+      "target": "behavioralization_non_maturity_deposit_alm_prepayment_early_withdrawal_modeling_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "option_risk_behavioral_optionality_banking_book_001",
+      "target": "non_maturity_deposit_fair_margin_and_replicating_portfolio_001",
+      "relation": "related_to"
     },
     {
       "source": "overdraft_behavioral_model_utilization_rate_and_drawdown_alm_cashflow_001",
@@ -9429,6 +10726,21 @@
       "relation": "repo_rate_spikes_signal_reserve_scarcity"
     },
     {
+      "source": "repricing_gap_analysis_nii_eve_impact_001",
+      "target": "duration_gap_analysis_banking_book_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "repricing_gap_analysis_nii_eve_impact_001",
+      "target": "nii_sensitivity_forecast_static_dynamic_balance_sheet_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "repricing_gap_analysis_nii_eve_impact_001",
+      "target": "maturity_gap_analysis_interest_rate_risk_banking_book_001",
+      "relation": "related_to"
+    },
+    {
       "source": "reserve_floor_payment_001",
       "target": "interest_rate_corridor_floor_system_standing_facilities_001",
       "relation": "mechanism_of"
@@ -9509,6 +10821,16 @@
       "relation": "related_mechanism"
     },
     {
+      "source": "secured_funding_instruments_repo_covered_bond_abs_001",
+      "target": "reserve_asset_management_hqla_portfolio_bank_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "secured_funding_instruments_repo_covered_bond_abs_001",
+      "target": "funding_gap_profile_behavioural_maturity_calendar_001",
+      "relation": "mechanism_of"
+    },
+    {
       "source": "standing_repo_facility_srf_mec_001",
       "target": "fed_overnight_reverse_repo_on_rrp_mec_001",
       "relation": "floor_counterpart"
@@ -9545,13 +10867,13 @@
     },
     {
       "source": "swap_spreads_001",
-      "target": "repo_market_mechanics_triparty_bilateral_001",
-      "relation": "transmission_path"
+      "target": "irs_ois_fixed_floating_001",
+      "relation": "parent_node"
     },
     {
       "source": "swap_spreads_001",
-      "target": "irs_ois_fixed_floating_001",
-      "relation": "component_of"
+      "target": "repo_market_mechanics_triparty_bilateral_001",
+      "relation": "transmission_path"
     },
     {
       "source": "swap_spreads_001",
@@ -9999,6 +11321,21 @@
       "relation": "related"
     },
     {
+      "source": "eba_irrbb_guidelines_2022_gl_2022_14_001",
+      "target": "irrbb_eve_nii_dual_metric_framework_001",
+      "relation": "implements"
+    },
+    {
+      "source": "eba_irrbb_guidelines_2022_gl_2022_14_001",
+      "target": "eve_calculation_mechanics_discount_and_shock_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "eba_irrbb_guidelines_2022_gl_2022_14_001",
+      "target": "nii_sensitivity_forecast_static_dynamic_balance_sheet_001",
+      "relation": "related_to"
+    },
+    {
       "source": "eba_gl_2016_10_icaap_ilaap_information_for_srep_001",
       "target": "ilaap_liquidity_adequacy_assessment_framework_001",
       "relation": "related"
@@ -10027,6 +11364,36 @@
       "source": "ecb_ilaap_guide_2018_seven_principles_ssm_001",
       "target": "eba_gl_2018_04_institutions_stress_testing_001",
       "relation": "related"
+    },
+    {
+      "source": "sbv_draft_2026_prudential_safety_ratios_banks_001",
+      "target": "sbv_lcr_nsfr_vietnam_phase_in_2028_2031_001",
+      "relation": "parent_node"
+    },
+    {
+      "source": "sbv_draft_2026_prudential_safety_ratios_banks_001",
+      "target": "basel_iii_lcr_liquidity_coverage_ratio_standard_2013_001",
+      "relation": "implements"
+    },
+    {
+      "source": "sbv_lcr_nsfr_vietnam_phase_in_2028_2031_001",
+      "target": "basel_iii_lcr_liquidity_coverage_ratio_standard_2013_001",
+      "relation": "implements"
+    },
+    {
+      "source": "sbv_tt14_2025_irb_governance_risk_parameters_001",
+      "target": "sbv_tt83_2025_internal_control_three_lines_defense_001",
+      "relation": "cross_references"
+    },
+    {
+      "source": "sbv_tt83_2025_internal_control_three_lines_defense_001",
+      "target": "ecb_ilaap_guide_2018_seven_principles_ssm_001",
+      "relation": "related_to"
+    },
+    {
+      "source": "sbv_tt83_2025_internal_control_three_lines_defense_001",
+      "target": "eba_gl_2016_10_icaap_ilaap_information_for_srep_001",
+      "relation": "related_to"
     },
     {
       "source": "us_macro_constraint_stack_fed_treasury_curve_inflation_external_sector_syn_001",

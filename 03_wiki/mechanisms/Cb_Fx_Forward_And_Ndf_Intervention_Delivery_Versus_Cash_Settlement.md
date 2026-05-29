@@ -34,8 +34,10 @@ thesis: '[LLM] Outright forwards commit the CB to deliver actual FX at a future 
   in reserve reports, creating opacity around the true cost of intervention.'
 source_refs:
 - path: 04_research/ma_fx_target_balance_sheet/findings/forward_ndf_intervention.md
-  pages: 'TRUE_GAP — pending ingest of BIS WP 119, IMF BPM6 Ch.6, Cantú et al. IMF WP'
+  pages: TRUE_GAP — pending ingest of BIS WP 119, IMF BPM6 Ch.6, Cantú et al. IMF
+    WP
   weight: primary
+parent_node: '[[CB FX Rate Target Balance Sheet Constraint And Sterilization]]'
 related:
 - node: '[[CB FX Swap Intervention Mechanics And Off Balance Sheet Exposure]]'
   relation: sibling_instrument — swap adds near leg; forward is single future delivery

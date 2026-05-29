@@ -3,50 +3,53 @@ node_id: alm_operating_model_front_middle_office_001
 type: framework
 title: ALM Operating Model — Front Office vs Middle Office
 aliases:
-  - ALM operating model
-  - front office Treasury
-  - middle office ALM
-  - ALM organizational model
-  - mô hình hoạt động ALM
-  - ALM văn phòng giao dịch
-  - ALM văn phòng giám sát
-  - xung đột lợi ích ALM
+- ALM operating model
+- front office Treasury
+- middle office ALM
+- ALM organizational model
+- mô hình hoạt động ALM
+- ALM văn phòng giao dịch
+- ALM văn phòng giám sát
+- xung đột lợi ích ALM
 domain:
   primary: alm
   secondary: []
 tags:
-  - ALM-operating-model
-  - front-office
-  - middle-office
-  - ALCO
-  - conflicts-of-interest
-  - lines-of-defense
-  - FTP
-  - node: "[[ALM]]"
-    relation: related_to
-  - node: "[[ALCO]]"
-    relation: related_to
+- ALM-operating-model
+- front-office
+- middle-office
+- ALCO
+- conflicts-of-interest
+- lines-of-defense
+- FTP
+- node: '[[ALM]]'
+  relation: related_to
+- node: '[[ALCO]]'
+  relation: related_to
 confidence: 1
 stability: stable
-thesis: >
-  Banks organize ALM/Treasury in two contrasted operating models — front office
-  (executes deals, profit center, has full operational mandate) vs middle office
-  (analytical and strategic, no direct deal execution) — to prevent conflicts of
-  interest; ALM cannot be merged into Risk, Trading Desk, or Finance because each
-  pairing creates disqualifying conflicts; ALCO is the de-escalation mechanism that
-  ensures cross-functional representation in balance sheet decisions. [LLM]
+thesis: 'Banks organize ALM/Treasury in two contrasted operating models — front office
+  (executes deals, profit center, has full operational mandate) vs middle office (analytical
+  and strategic, no direct deal execution) — to prevent conflicts of interest; ALM
+  cannot be merged into Risk, Trading Desk, or Finance because each pairing creates
+  disqualifying conflicts; ALCO is the de-escalation mechanism that ensures cross-functional
+  representation in balance sheet decisions. [LLM]
+
+  '
 source_refs:
-  - path: "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md"
-    pages: "Chapters 10–11: ALM Operating Model; ALM Inside a Risk Management Triangle"
+- path: 02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday,
+    Today and Tomorrow-De Gruyter (2021).md
+  pages: 'Chapters 10–11: ALM Operating Model; ALM Inside a Risk Management Triangle'
+parent_node: null
 related:
-  - node: "[[ALM_Enterprise_Risk_Management_Framework]]"
-    relation: related_to
-  - node: "[[Ftp_Transfer_Price_Curve_And_Structural_Contribution]]"
-    relation: related_to
-  - node: "[[Alm_Role_Srep_Pillar2_Capital_Liquidity]]"
-    relation: related_to
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[ALM_Enterprise_Risk_Management_Framework]]'
+  relation: related_to
+- node: '[[Ftp_Transfer_Price_Curve_And_Structural_Contribution]]'
+  relation: related_to
+- node: '[[Alm_Role_Srep_Pillar2_Capital_Liquidity]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Thesis

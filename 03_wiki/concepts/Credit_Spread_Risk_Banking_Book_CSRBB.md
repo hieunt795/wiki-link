@@ -3,56 +3,58 @@ node_id: credit_spread_risk_banking_book_csrbb_001
 type: concept
 title: Credit Spread Risk in the Banking Book (CSRBB)
 aliases:
-  - node: "[[CSRBB]]"
-    relation: related_to
-  - credit spread risk banking book
-  - hazard rate model CSRBB
-  - OAS banking book
-  - reduced-form credit model ALM
-  - rủi ro chênh lệch tín dụng sổ ngân hàng
-  - CSRBB mô hình tỷ lệ rủi ro
-  - OAS sổ ngân hàng
+- node: '[[CSRBB]]'
+  relation: related_to
+- credit spread risk banking book
+- hazard rate model CSRBB
+- OAS banking book
+- reduced-form credit model ALM
+- rủi ro chênh lệch tín dụng sổ ngân hàng
+- CSRBB mô hình tỷ lệ rủi ro
+- OAS sổ ngân hàng
 domain:
   primary: alm
   secondary: []
 tags:
-  - node: "[[CSRBB]]"
-    relation: related_to
-  - credit-spread
-  - hazard-rate
-  - reduced-form
-  - node: "[[OAS]]"
-    relation: related_to
-  - node: "[[IRRBB]]"
-    relation: related_to
-  - node: "[[IFRS9]]"
-    relation: related_to
-  - duration
-  - node: "[[LGD]]"
-    relation: related_to
-  - node: "[[ALM]]"
-    relation: related_to
+- node: '[[CSRBB]]'
+  relation: related_to
+- credit-spread
+- hazard-rate
+- reduced-form
+- node: '[[OAS]]'
+  relation: related_to
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[IFRS9]]'
+  relation: related_to
+- duration
+- node: '[[LGD]]'
+  relation: related_to
+- node: '[[ALM]]'
+  relation: related_to
 confidence: 1
 stability: stable
-thesis: >
-  CSRBB is the sensitivity of banking book economic value to changes in credit
-  spreads independent of default events, measured via three modelling approaches
-  (cashflow/hazard rate, credit-spread-adjusted discount, and OAS) that each imply
-  different effective durations; the cashflow model most accurately captures duration
-  shortening from default-contingent early termination, while the OAS model
-  overstates duration by ignoring it. [LLM]
+thesis: 'CSRBB is the sensitivity of banking book economic value to changes in credit
+  spreads independent of default events, measured via three modelling approaches (cashflow/hazard
+  rate, credit-spread-adjusted discount, and OAS) that each imply different effective
+  durations; the cashflow model most accurately captures duration shortening from
+  default-contingent early termination, while the OAS model overstates duration by
+  ignoring it. [LLM]
+
+  '
 source_refs:
-  - path: "02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md"
-    pages: "Chapter 11: Credit Spread Risk in the Banking Book"
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: 'Chapter 11: Credit Spread Risk in the Banking Book'
+parent_node: null
 related:
-  - node: "[[IRRBB_Standardised_Versus_Internal_Model_Approach]]"
-    relation: related_to
-  - node: "[[Hedge_Accounting_IFRS9_ALM]]"
-    relation: related_to
-  - node: "[[Interest_Rate_Basis_Risk_Measurement_ALM]]"
-    relation: related_to
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[IRRBB_Standardised_Versus_Internal_Model_Approach]]'
+  relation: related_to
+- node: '[[Hedge_Accounting_IFRS9_ALM]]'
+  relation: related_to
+- node: '[[Interest_Rate_Basis_Risk_Measurement_ALM]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Thesis

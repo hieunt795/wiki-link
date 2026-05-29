@@ -31,6 +31,7 @@ source_refs:
 - path: 02_sources/deep-research/Basel, Ngân hàng, Tín dụng Tư nhân.md
   pages: Full document
   weight: primary
+parent_node: null
 related:
 - node: '[[Basel Driven Credit Migration To Private Markets]]'
   relation: shared_tag:basel

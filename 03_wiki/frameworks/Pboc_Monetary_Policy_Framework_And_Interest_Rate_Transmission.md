@@ -35,6 +35,7 @@ source_refs:
     Transmission _ Bulletin.md
   pages: Full document
   weight: secondary
+parent_node: null
 related:
 - node: '[[PBOC RMB Fix Counter Cyclical Factor And FX Management]]'
   relation: shared_tag:pboc

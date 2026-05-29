@@ -1,55 +1,53 @@
 ---
 node_id: alm_balance_sheet_remodeling_under_rate_stress_001
 type: mechanism
-title: "ALM Balance Sheet Remodeling Under Rate Stress"
+title: ALM Balance Sheet Remodeling Under Rate Stress
 aliases:
-  - Banking book P&L under rate stress
-  - NII attribution under rate shocks
-  - Balance sheet remodeling
-  - Rate stress impact on NII and EVE
-  - tác động của cú sốc lãi suất lên NII và EVE
-  - tái cơ cấu bảng cân đối dưới áp lực lãi suất
-
+- Banking book P&L under rate stress
+- NII attribution under rate shocks
+- Balance sheet remodeling
+- Rate stress impact on NII and EVE
+- tác động của cú sốc lãi suất lên NII và EVE
+- tái cơ cấu bảng cân đối dưới áp lực lãi suất
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - stress_testing
-  - nii
-  - eve
-  - irrbb
-  - margin_at_risk
-  - negative_rates
-  - rate_shock
-
+- stress_testing
+- nii
+- eve
+- irrbb
+- margin_at_risk
+- negative_rates
+- rate_shock
 confidence: 1
 stability: stable
+thesis: '[LLM] When interest rates move, the banking book P&L is affected through
+  three channels simultaneously: (1) the change in NII from repricing of floating
+  positions and the rollover of maturing fixed positions (measured by Δ NII); (2)
+  the change in economic value of all outstanding fixed-rate positions (measured by
+  Δ EVE); and (3) the change in value of embedded automatic options (zero floors,
+  prepayment options, caps) captured in the option add-on (KAO) — and the relative
+  magnitude of these channels depends critically on the duration gap and behavioral
+  assumptions embedded in the balance sheet.
 
-thesis: >
-  [LLM] When interest rates move, the banking book P&L is affected through three channels
-  simultaneously: (1) the change in NII from repricing of floating positions and the rollover
-  of maturing fixed positions (measured by Δ NII); (2) the change in economic value of all
-  outstanding fixed-rate positions (measured by Δ EVE); and (3) the change in value of
-  embedded automatic options (zero floors, prepayment options, caps) captured in the option
-  add-on (KAO) — and the relative magnitude of these channels depends critically on the
-  duration gap and behavioral assumptions embedded in the balance sheet.
-
+  '
 source_refs:
-  - path: 02_sources/books/alm/A - Asset liability optimization.md
-    pages: "Introduction (margin locked-in, margin at risk), Ch 1 (negative rates), Ch 2 (NII, EVE, ICAAP)"
-    weight: primary
-
+- path: 02_sources/books/alm/A - Asset liability optimization.md
+  pages: Introduction (margin locked-in, margin at risk), Ch 1 (negative rates), Ch
+    2 (NII, EVE, ICAAP)
+  weight: primary
+parent_node: '[[ALM_Balance_Sheet_Optimization_Framework]]'
 related:
-  - node: "[[Income_Gap_vs_Economic_Value_Gap]]"
-    relation: mechanism_of
-  - node: "[[ALM_Hedging_Strategy_Design]]"
-    relation: related_to
-  - node: "[[ALM_Balance_Sheet_Optimization_Framework]]"
-    relation: component_of
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Income_Gap_vs_Economic_Value_Gap]]'
+  relation: mechanism_of
+- node: '[[ALM_Hedging_Strategy_Design]]'
+  relation: related_to
+- node: '[[ALM_Balance_Sheet_Optimization_Framework]]'
+  relation: component_of
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## The Two P&L Components: Locked-In vs. At-Risk

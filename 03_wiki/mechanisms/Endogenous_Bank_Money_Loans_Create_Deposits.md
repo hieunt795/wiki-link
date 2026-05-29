@@ -24,11 +24,19 @@ tags:
 - money_multiplier
 confidence: 4
 stability: stable
-thesis: "Banks create money endogenously by making loans: when a creditworthy borrower receives a loan, the bank simultaneously creates a new asset (the loan IOU) and a new liability (a deposit) ex nihilo — no prior deposit or reserve is needed. The central bank then provides whatever reserves are required for interbank settlement at the target policy rate. The money supply is therefore demand-driven (endogenous), not supply-constrained by the monetary base as the neoclassical money multiplier implies. The CB sets the price of money (short-term interest rate), not its quantity."
+thesis: 'Banks create money endogenously by making loans: when a creditworthy borrower
+  receives a loan, the bank simultaneously creates a new asset (the loan IOU) and
+  a new liability (a deposit) ex nihilo — no prior deposit or reserve is needed. The
+  central bank then provides whatever reserves are required for interbank settlement
+  at the target policy rate. The money supply is therefore demand-driven (endogenous),
+  not supply-constrained by the monetary base as the neoclassical money multiplier
+  implies. The CB sets the price of money (short-term interest rate), not its quantity.'
 source_refs:
 - path: 02_sources/books/watts_wray_mmt_macro/Watts_Wray_Macroeconomics.md
-  pages: "lines 4948-5084 (Chapter 10.4: What Do Banks Do? — MMT credit creation, loans create deposits, endogenous money)"
+  pages: 'lines 4948-5084 (Chapter 10.4: What Do Banks Do? — MMT credit creation,
+    loans create deposits, endogenous money)'
   weight: primary
+parent_node: null
 related:
 - node: '[[Currency As A Central Bank Liability]]'
   relation: related_concept

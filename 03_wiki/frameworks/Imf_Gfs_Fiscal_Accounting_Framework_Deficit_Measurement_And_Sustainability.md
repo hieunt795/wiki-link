@@ -32,8 +32,14 @@ thesis: The IMF Government Finance Statistics framework measures the fiscal defi
 source_refs:
 - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
     IMF.md
-  pages: "lines 1891–1966 (deficit concepts: primary, operational, PSBR, current; 4-method financing matrix; seigniorage Laffer curve with 1-2% and 5-10% GDP maxima), lines 2036–2103 (fiscal sustainability: debt accumulation equation, solvency, PDV intertemporal constraint, Box 3.4 primary gap/net worth/tax gap indicators), lines 2074–2082 (Box 3.3 expenditure arrears), lines 2280–2292 (Box 3.7 quasi-fiscal operations), lines 1846 (CB profit transfers as GFS revenue)"
+  pages: 'lines 1891–1966 (deficit concepts: primary, operational, PSBR, current;
+    4-method financing matrix; seigniorage Laffer curve with 1-2% and 5-10% GDP maxima),
+    lines 2036–2103 (fiscal sustainability: debt accumulation equation, solvency,
+    PDV intertemporal constraint, Box 3.4 primary gap/net worth/tax gap indicators),
+    lines 2074–2082 (Box 3.3 expenditure arrears), lines 2280–2292 (Box 3.7 quasi-fiscal
+    operations), lines 1846 (CB profit transfers as GFS revenue)'
   weight: primary
+parent_node: null
 related:
 - node: '[[IMF Balance of Payments Framework and External Account Analysis]]'
   relation: shared_tag:imf

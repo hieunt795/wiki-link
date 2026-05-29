@@ -39,6 +39,7 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
   pages: The Fed's New Rescue Mechanism; The Central Bank Pledgening
   weight: primary
+parent_node: null
 related:
 - node: '[[Standing_Repo_Facility_SRF_Fed_Backstop]]'
   relation: sibling_emergency_facility

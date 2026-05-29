@@ -1,49 +1,52 @@
 ---
 node_id: asset_encumbrance_management_bank_alm_001
 type: concept
-title: "Asset Encumbrance Management in Bank ALM"
+title: Asset Encumbrance Management in Bank ALM
 aliases:
-  - Asset encumbrance ratio
-  - AE ratio
-  - Tỷ lệ tài sản bị cầm cố
-  - Quản lý tài sản bị phong tỏa
-  - Encumbrance ratio
-
+- Asset encumbrance ratio
+- AE ratio
+- Tỷ lệ tài sản bị cầm cố
+- Quản lý tài sản bị phong tỏa
+- Encumbrance ratio
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - asset_encumbrance
-  - secured_funding
-  - lcr
-  - nsfr
-  - crr
-  - eba_reporting
-  - collateral_management
-  - contingent_encumbrance
-
+- asset_encumbrance
+- secured_funding
+- lcr
+- nsfr
+- crr
+- eba_reporting
+- collateral_management
+- contingent_encumbrance
 confidence: 1
 stability: stable
+thesis: '[LLM] Asset encumbrance — the pledging of bank assets as collateral for secured
+  funding — is a structural consequence of the post-2008 shift to secured wholesale
+  markets, and creates a risk cascade: it subordinates unsecured creditors, reduces
+  the pool of assets available for central bank operations, increases procyclical
+  margin calls, and constrains future funding flexibility. [LLM] Under EU regulation
+  (CRR Article 100, EBA ITS), banks must disclose the asset encumbrance ratio (encumbered
+  assets / total assets) quarterly and set internal limits that preserve sufficient
+  unencumbered "encumberable" capacity to survive stressed outflows.
 
-thesis: >
-  [LLM] Asset encumbrance — the pledging of bank assets as collateral for secured funding — is a structural consequence of the post-2008 shift to secured wholesale markets, and creates a risk cascade: it subordinates unsecured creditors, reduces the pool of assets available for central bank operations, increases procyclical margin calls, and constrains future funding flexibility. [LLM] Under EU regulation (CRR Article 100, EBA ITS), banks must disclose the asset encumbrance ratio (encumbered assets / total assets) quarterly and set internal limits that preserve sufficient unencumbered "encumberable" capacity to survive stressed outflows.
-
+  '
 source_refs:
-  - path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
-    pages: "Ch 17 — Asset Encumbrance (Intesa Sanpaolo)"
-    weight: primary
-
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: Ch 17 — Asset Encumbrance (Intesa Sanpaolo)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Secured_Funding_Instruments_Repo_Covered_Bond_Abs]]"
-    relation: mechanism_of
-  - node: "[[Funding_Gap_Profile_And_Behavioural_Maturity_Calendar]]"
-    relation: related_to
-  - node: "[[Reserve_Asset_Management_Hqla_Portfolio_Bank]]"
-    relation: related_to
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Secured_Funding_Instruments_Repo_Covered_Bond_Abs]]'
+  relation: mechanism_of
+- node: '[[Funding_Gap_Profile_And_Behavioural_Maturity_Calendar]]'
+  relation: related_to
+- node: '[[Reserve_Asset_Management_Hqla_Portfolio_Bank]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Definition

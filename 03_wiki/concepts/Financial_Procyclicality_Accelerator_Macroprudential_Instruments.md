@@ -23,11 +23,19 @@ tags:
 - leverage
 confidence: 1
 stability: stable
-thesis: "Financial procyclicality is the dynamic interaction where the financial cycle amplifies the economic cycle: during booms, rising asset prices boost collateral values → more credit → higher asset prices → more leverage → bigger crash; three mechanisms drive this — the financial accelerator (net worth/external finance premium), collateral constraints (Kiyotaki-Moore), and risk-taking cycles; macroprudential instruments (LTV, CCyB, sectoral capital requirements) exist to dampen these self-reinforcing loops by imposing countercyclical buffers."
+thesis: 'Financial procyclicality is the dynamic interaction where the financial cycle
+  amplifies the economic cycle: during booms, rising asset prices boost collateral
+  values → more credit → higher asset prices → more leverage → bigger crash; three
+  mechanisms drive this — the financial accelerator (net worth/external finance premium),
+  collateral constraints (Kiyotaki-Moore), and risk-taking cycles; macroprudential
+  instruments (LTV, CCyB, sectoral capital requirements) exist to dampen these self-reinforcing
+  loops by imposing countercyclical buffers.'
 source_refs:
-- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
-  pages: "lines 400-700 (Chapter 14: Macroprudential Policy)"
+- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro -
+    Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
+  pages: 'lines 400-700 (Chapter 14: Macroprudential Policy)'
   weight: primary
+parent_node: null
 related:
 - node: '[[EM_Central_Bank_Policy_Mix_FIT_Framework]]'
   relation: companion

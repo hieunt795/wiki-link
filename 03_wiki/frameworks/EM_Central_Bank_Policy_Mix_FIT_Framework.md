@@ -23,14 +23,24 @@ tags:
 - perry_warjiyo
 confidence: 1
 stability: stable
-thesis: "Perry & Juhro's post-GFC paradigm for emerging market central banking: the 'policy mix' combines (1) flexible inflation targeting (FIT) with an explicit exchange rate stabilization role; (2) macroprudential policy to manage financial procyclicality and systemic risk; (3) capital flow management (CFM) to navigate the impossible trinity; and (4) payment system policy — these four pillars form a coordinated dual mandate (price stability + financial system stability) replacing the pre-GFC single-instrument ITF focused solely on price stability."
+thesis: 'Perry & Juhro''s post-GFC paradigm for emerging market central banking: the
+  ''policy mix'' combines (1) flexible inflation targeting (FIT) with an explicit
+  exchange rate stabilization role; (2) macroprudential policy to manage financial
+  procyclicality and systemic risk; (3) capital flow management (CFM) to navigate
+  the impossible trinity; and (4) payment system policy — these four pillars form
+  a coordinated dual mandate (price stability + financial system stability) replacing
+  the pre-GFC single-instrument ITF focused solely on price stability.'
 source_refs:
-- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
-  pages: "lines 1-200 (Chapter 13: CFM), lines 400-600 (Chapter 14: Macroprudential), lines 800-1100 (Chapter 15: Policy Mix)"
+- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro -
+    Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
+  pages: 'lines 1-200 (Chapter 13: CFM), lines 400-600 (Chapter 14: Macroprudential),
+    lines 800-1100 (Chapter 15: Policy Mix)'
   weight: primary
-- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-4.md
-  pages: "lines 1-100 (Chapter 6-7: ITF strategic framework)"
+- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro -
+    Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-4.md
+  pages: 'lines 1-100 (Chapter 6-7: ITF strategic framework)'
   weight: secondary
+parent_node: null
 related:
 - node: '[[Central Bank Credibility Supply Shock Policy Space]]'
   relation: related_concept

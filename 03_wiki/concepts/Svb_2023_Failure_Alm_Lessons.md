@@ -3,51 +3,53 @@ node_id: svb_2023_failure_alm_lessons_001
 type: concept
 title: SVB 2023 Failure — ALM Lessons
 aliases:
-  - SVB failure
-  - Silicon Valley Bank 2023
-  - SVB duration mismatch
-  - SVB HTM portfolio failure
-  - sự sụp đổ SVB 2023
-  - bài học quản lý ALM từ SVB
-  - rủi ro thời hạn danh mục HTM
+- SVB failure
+- Silicon Valley Bank 2023
+- SVB duration mismatch
+- SVB HTM portfolio failure
+- sự sụp đổ SVB 2023
+- bài học quản lý ALM từ SVB
+- rủi ro thời hạn danh mục HTM
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - SVB
-  - duration-mismatch
-  - HTM-portfolio
-  - concentration-risk
-  - governance-failure
-  - node: "[[IRRBB]]"
-    relation: related_to
-  - node: "[[ALM]]"
-    relation: related_to
-  - node: "[[NMD]]"
-    relation: related_to
+- SVB
+- duration-mismatch
+- HTM-portfolio
+- concentration-risk
+- governance-failure
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[ALM]]'
+  relation: related_to
+- node: '[[NMD]]'
+  relation: related_to
 confidence: 1
 stability: stable
-thesis: >
-  The SVB failure in March 2023 exemplifies how unhedged duration mismatch in a
-  held-to-maturity bond portfolio, combined with a concentrated correlated depositor
-  base and governance failures (vacant CRO, model manipulation), can convert a
-  mark-to-model paper loss into a catastrophic liquidity run: a $15.2bn realized
-  loss triggered a 60% deposit outflow in 48 hours, rendering the bank insolvent. [LLM]
+thesis: 'The SVB failure in March 2023 exemplifies how unhedged duration mismatch
+  in a held-to-maturity bond portfolio, combined with a concentrated correlated depositor
+  base and governance failures (vacant CRO, model manipulation), can convert a mark-to-model
+  paper loss into a catastrophic liquidity run: a $15.2bn realized loss triggered
+  a 60% deposit outflow in 48 hours, rendering the bank insolvent. [LLM]
+
+  '
 source_refs:
-  - path: "02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md"
-    pages: "Ch4, SVB Case Study (lines 2557–2675)"
+- path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
+  pages: Ch4, SVB Case Study (lines 2557–2675)
+parent_node: null
 related:
-  - node: "[[Eve_Calculation_Mechanics_Discount_And_Shock]]"
-    relation: related_to
-  - node: "[[NMD_Stochastic_Three_Factor_Model]]"
-    relation: related_to
-  - node: "[[Integrated_Stress_Testing_Capital_Liquidity_Link]]"
-    relation: related_to
-  - node: "[[ALM_Enterprise_Risk_Management_Framework]]"
-    relation: related_to
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Eve_Calculation_Mechanics_Discount_And_Shock]]'
+  relation: related_to
+- node: '[[NMD_Stochastic_Three_Factor_Model]]'
+  relation: related_to
+- node: '[[Integrated_Stress_Testing_Capital_Liquidity_Link]]'
+  relation: related_to
+- node: '[[ALM_Enterprise_Risk_Management_Framework]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Thesis

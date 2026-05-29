@@ -3,50 +3,51 @@ node_id: eba_irrbb_guidelines_2022_gl_2022_14_001
 type: regulation
 jurisdiction: international
 issuer: eba
-title: "EBA IRRBB Guidelines 2022 (EBA/GL/2022/14) and Supervisory Outlier Tests"
+title: EBA IRRBB Guidelines 2022 (EBA/GL/2022/14) and Supervisory Outlier Tests
 aliases:
-  - EBA GL 2022/14
-  - EBA IRRBB guidelines 2022
-  - SOT EVE
-  - SOT NII
-  - hướng dẫn EBA về rủi ro lãi suất 2022
-  - kiểm tra ngoại lệ giám sát EVE NII
-
+- EBA GL 2022/14
+- EBA IRRBB guidelines 2022
+- SOT EVE
+- SOT NII
+- hướng dẫn EBA về rủi ro lãi suất 2022
+- kiểm tra ngoại lệ giám sát EVE NII
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - EBA
-  - IRRBB
-  - SOT
-  - EVE
-  - NII
-  - CSRBB
-  - regulation
-  - supervisory_outlier_test
-
+- EBA
+- IRRBB
+- SOT
+- EVE
+- NII
+- CSRBB
+- regulation
+- supervisory_outlier_test
 confidence: 1
 stability: stable
+thesis: '[LLM] EBA/GL/2022/14 (October 2022) updated the EU IRRBB regulatory framework
+  by adding the first NII supervisory outlier test (SOT), introducing CSRBB as an
+  explicit risk category, tightening NMD behavioral caps, and mandating standardized
+  and simplified standardized approaches; the two SOTs — EVE (>15% of Tier 1 capital)
+  and NII (>5% of Tier 1 capital) — create a simultaneous compliance constraint that
+  banks must optimize jointly.
 
-thesis: >
-  [LLM] EBA/GL/2022/14 (October 2022) updated the EU IRRBB regulatory framework by adding the first NII supervisory outlier test (SOT), introducing CSRBB as an explicit risk category, tightening NMD behavioral caps, and mandating standardized and simplified standardized approaches; the two SOTs — EVE (>15% of Tier 1 capital) and NII (>5% of Tier 1 capital) — create a simultaneous compliance constraint that banks must optimize jointly.
-
+  '
 source_refs:
-  - path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
-    pages: "Ch 5, sections 5.1.3, 5.2, 5.3, 5.4, 5.5"
-    weight: primary
-
+- path: 02_sources/books/tata_bank_alm/Tata_Bank_ALM_2025.md
+  pages: Ch 5, sections 5.1.3, 5.2, 5.3, 5.4, 5.5
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Irrbb_Eve_Nii_Dual_Metric_Framework]]"
-    relation: implements
-  - node: "[[Eve_Calculation_Mechanics_Discount_And_Shock]]"
-    relation: related_to
-  - node: "[[Nii_Sensitivity_Forecast_Static_Dynamic_Balance_Sheet]]"
-    relation: related_to
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
+  relation: implements
+- node: '[[Eve_Calculation_Mechanics_Discount_And_Shock]]'
+  relation: related_to
+- node: '[[Nii_Sensitivity_Forecast_Static_Dynamic_Balance_Sheet]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Regulatory Context

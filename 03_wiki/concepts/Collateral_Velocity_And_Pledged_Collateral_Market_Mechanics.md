@@ -29,6 +29,7 @@ source_refs:
 - path: 02_sources/books/singh_collateral_plumbing/Singh_Collateral_Financial_Plumbing.md
   pages: Ch. 1-2
   weight: primary
+parent_node: null
 related:
 - node: '[[Collateral Framework Haircuts Central Bank Credit]]'
   relation: shared_tag:collateral

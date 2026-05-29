@@ -27,15 +27,16 @@ source_refs:
 - path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
   pages: Chapter 7
   weight: primary
+parent_node: null
 related:
-  - node: "[[Irrbb_Eve_Nii_Dual_Metric_Framework]]"
-    relation: eve_measurement_context
-  - node: "[[Bcbs_Irrbb_Nmd_Standardised_Framework]]"
-    relation: regulatory_framework
-  - node: "[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]"
-    relation: behavioral_input
-  - node: "[[Non_Maturity_Deposit_And_Revolving_Facility_Behavioral_Assumptions_Alco_Governance]]"
-    relation: governance_link
+- node: '[[Irrbb_Eve_Nii_Dual_Metric_Framework]]'
+  relation: eve_measurement_context
+- node: '[[Bcbs_Irrbb_Nmd_Standardised_Framework]]'
+  relation: regulatory_framework
+- node: '[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]'
+  relation: behavioral_input
+- node: '[[Non_Maturity_Deposit_And_Revolving_Facility_Behavioral_Assumptions_Alco_Governance]]'
+  relation: governance_link
 date_created: '2026-05-22'
 date_updated: '2026-05-22'
 ---

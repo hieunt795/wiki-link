@@ -1,60 +1,65 @@
 ---
 node_id: imf_inflation_analysis_cpi_gdp_deflator_four_types_core_001
 type: framework
-title: IMF Inflation Analysis — CPI vs GDP Deflator, Four Inflation Types, Core vs Underlying
+title: IMF Inflation Analysis — CPI vs GDP Deflator, Four Inflation Types, Core vs
+  Underlying
 aliases:
-  - inflation taxonomy IMF
-  - CPI versus GDP deflator
-  - four types of inflation
-  - core inflation underlying inflation
-  - policy-induced inflation
-  - inertial inflation NAIRU
-  - phân tích lạm phát IMF
-  - lạm phát cơ bản vs lạm phát đo lường
-  - bốn loại lạm phát
-  - chỉ số CPI vs deflator GDP
-  - lạm phát quán tính NAIRU
+- inflation taxonomy IMF
+- CPI versus GDP deflator
+- four types of inflation
+- core inflation underlying inflation
+- policy-induced inflation
+- inertial inflation NAIRU
+- phân tích lạm phát IMF
+- lạm phát cơ bản vs lạm phát đo lường
+- bốn loại lạm phát
+- chỉ số CPI vs deflator GDP
+- lạm phát quán tính NAIRU
 domain:
   primary: monetary_policy
   secondary: fiscal_policy
 tags:
-  - inflation
-  - cpi
-  - gdp_deflator
-  - core_inflation
-  - nairu
-  - cost_push
-  - demand_pull
-  - inertial_inflation
-  - price_measurement
-  - monetary_policy_framework
-  - em_policy
+- inflation
+- cpi
+- gdp_deflator
+- core_inflation
+- nairu
+- cost_push
+- demand_pull
+- inertial_inflation
+- price_measurement
+- monetary_policy_framework
+- em_policy
 confidence: 4
 stability: stable
-thesis: >
-  The IMF inflation analysis framework distinguishes four causal types (policy-induced,
+thesis: 'The IMF inflation analysis framework distinguishes four causal types (policy-induced,
   cost-push, demand-pull, inertial) and two measurement dimensions (one-time price-level
-  shift vs. sustained inflation rate; measured vs. core/underlying inflation). The CPI
-  and GDP deflator measure different things: coverage (consumer vs. all production),
-  treatment of imports (included in CPI, excluded from deflator), and aggregation method
-  (Laspeyres fixed-basket vs. Paasche current-basket). Core/underlying inflation —
-  abstracting from discrete one-off shocks — is the policy-relevant variable, especially
+  shift vs. sustained inflation rate; measured vs. core/underlying inflation). The
+  CPI and GDP deflator measure different things: coverage (consumer vs. all production),
+  treatment of imports (included in CPI, excluded from deflator), and aggregation
+  method (Laspeyres fixed-basket vs. Paasche current-basket). Core/underlying inflation
+  — abstracting from discrete one-off shocks — is the policy-relevant variable, especially
   in transition and EM economies with frequent administered-price adjustments.
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 878–927 (inflation measurement and types: CPI vs GDP deflator, 4 inflation categories, core/underlying, Japan non-accommodation, NAIRU)"
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: 'lines 878–927 (inflation measurement and types: CPI vs GDP deflator, 4 inflation
+    categories, core/underlying, Japan non-accommodation, NAIRU)'
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]"
-    relation: fiscal_inflation_nexus
-  - node: "[[Imf_Financial_Programming_NDA_Ceiling_And_BOP_Monetary_Approach]]"
-    relation: monetary_program_context
-  - node: "[[Central_Bank_Credibility_Supply_Shock_Policy_Space]]"
-    relation: policy_response_framework
-  - node: "[[EM_Central_Bank_Policy_Mix_FIT_Framework]]"
-    relation: modern_equivalent
-date_created: "2026-05-24"
-date_updated: "2026-05-24"
+- node: '[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]'
+  relation: fiscal_inflation_nexus
+- node: '[[Imf_Financial_Programming_NDA_Ceiling_And_BOP_Monetary_Approach]]'
+  relation: monetary_program_context
+- node: '[[Central_Bank_Credibility_Supply_Shock_Policy_Space]]'
+  relation: policy_response_framework
+- node: '[[EM_Central_Bank_Policy_Mix_FIT_Framework]]'
+  relation: modern_equivalent
+date_created: '2026-05-24'
+date_updated: '2026-05-24'
 ---
 
 ## Core Distinction: One-Time Price Level vs. Sustained Inflation

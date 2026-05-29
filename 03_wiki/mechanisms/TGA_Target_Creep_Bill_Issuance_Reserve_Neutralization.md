@@ -20,11 +20,16 @@ tags:
 - rmo
 confidence: 1
 stability: evolving
-thesis: As Treasury shifts debt issuance toward shorter-maturity bills, the frequency of maturities and redemptions rises, requiring a larger cash buffer in the TGA — structurally pushing Treasury to ratchet up its TGA target (e.g. $850B → $900B+), which permanently neutralizes additional reserves in the government's account and must be offset by Fed RMOs.
+thesis: As Treasury shifts debt issuance toward shorter-maturity bills, the frequency
+  of maturities and redemptions rises, requiring a larger cash buffer in the TGA —
+  structurally pushing Treasury to ratchet up its TGA target (e.g. $850B → $900B+),
+  which permanently neutralizes additional reserves in the government's account and
+  must be offset by Fed RMOs.
 source_refs:
 - path: 02_sources/books/conks/Conks - Plumping note (Money market.md
   pages: batch 10 (chars ~78506-88020)
   weight: primary
+parent_node: null
 related:
 - node: '[[TGA Reserve Swap Mechanics And Debt Ceiling Dynamics]]'
   relation: extends

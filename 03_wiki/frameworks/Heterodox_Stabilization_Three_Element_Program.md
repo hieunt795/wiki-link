@@ -1,62 +1,71 @@
 ---
 node_id: heterodox_stabilization_three_element_program_001
 type: framework
-title: Heterodox Stabilization — Three-Element Program (FX Anchor + Fiscal + Incomes Policy)
+title: Heterodox Stabilization — Three-Element Program (FX Anchor + Fiscal + Incomes
+  Policy)
 aliases:
-  - heterodox stabilization program
-  - three-element stabilization
-  - Poland 1990 stabilization model
-  - FX anchor plus incomes policy
-  - chương trình ổn định hóa dị thường
-  - ba yếu tố ổn định hóa
-  - neo tỷ giá kết hợp chính sách tài khóa và thu nhập
+- heterodox stabilization program
+- three-element stabilization
+- Poland 1990 stabilization model
+- FX anchor plus incomes policy
+- chương trình ổn định hóa dị thường
+- ba yếu tố ổn định hóa
+- neo tỷ giá kết hợp chính sách tài khóa và thu nhập
 domain:
   primary: monetary_policy
   secondary: fiscal_policy
 tags:
-  - stabilization_program
-  - heterodox
-  - fx_anchor
-  - incomes_policy
-  - fiscal_consolidation
-  - inertial_inflation
-  - transition_economy
-  - poland
-  - anti_inflation
-  - wage_controls
+- stabilization_program
+- heterodox
+- fx_anchor
+- incomes_policy
+- fiscal_consolidation
+- inertial_inflation
+- transition_economy
+- poland
+- anti_inflation
+- wage_controls
 confidence: 4
 stability: stable
-thesis: >
-  Heterodox stabilization — as exemplified by Poland 1990 — combines three mutually
-  reinforcing elements: (1) FX rate anchor as nominal expectations anchor; (2) tight
-  fiscal/monetary policy to remove excess demand; (3) incomes policy (wage controls)
-  to break inertial inflation embedded in wage contracts and indexation. All three
-  must operate simultaneously: the FX anchor without fiscal tightening depletes
+thesis: 'Heterodox stabilization — as exemplified by Poland 1990 — combines three
+  mutually reinforcing elements: (1) FX rate anchor as nominal expectations anchor;
+  (2) tight fiscal/monetary policy to remove excess demand; (3) incomes policy (wage
+  controls) to break inertial inflation embedded in wage contracts and indexation.
+  All three must operate simultaneously: the FX anchor without fiscal tightening depletes
   reserves; fiscal tightening without the FX anchor loses the expectations anchor;
   incomes policy without demand restraint creates shortages. Each element addresses
-  a distinct inflation component — expectations, demand, and inertia — that the
-  others cannot reach. Omitting any one raises the sacrifice ratio (output/employment
-  cost per point of disinflation) substantially.
+  a distinct inflation component — expectations, demand, and inertia — that the others
+  cannot reach. Omitting any one raises the sacrifice ratio (output/employment cost
+  per point of disinflation) substantially.
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 982–1015 (incomes policy: three approaches, four-step design, popiwek excess wage tax, temporary nature); lines 1021, 1052 (Poland popiwek results: monthly inflation 55% Oct 1989 → ~5% end-1990); lines 3780–3804 (Poland exchange rate policy: fixed → basket peg → crawling peg → managed float, active crawl design, discrete devaluations)"
-    weight: primary
-  - path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
-    pages: "lines 2730–2763 (fiscal accommodation and fiscal dominance), lines 2720–2728 (sterilization costs as quasi-fiscal constraint on FX anchor sustainability)"
-    weight: supporting
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: 'lines 982–1015 (incomes policy: three approaches, four-step design, popiwek
+    excess wage tax, temporary nature); lines 1021, 1052 (Poland popiwek results:
+    monthly inflation 55% Oct 1989 → ~5% end-1990); lines 3780–3804 (Poland exchange
+    rate policy: fixed → basket peg → crawling peg → managed float, active crawl design,
+    discrete devaluations)'
+  weight: primary
+- path: 02_sources/books/lipschitz_schadler_macro/Lipschitz_Schadler_Macroeconomics.md
+  pages: lines 2730–2763 (fiscal accommodation and fiscal dominance), lines 2720–2728
+    (sterilization costs as quasi-fiscal constraint on FX anchor sustainability)
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Incomes_Policy_Wage_Controls_Stabilization_Programs]]"
-    relation: element_3_detail
-  - node: "[[Imf_Exchange_Rate_Assessment_And_Crawling_Peg_Design]]"
-    relation: element_1_detail
-  - node: "[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]"
-    relation: element_2_detail
-  - node: "[[FX_Target_Quasi_Fiscal_Stagflation_Trap_Mechanism]]"
-    relation: exit_path_from
-  - node: "[[Stagflation_Policy_Response_Tradeoff_Framework]]"
-    relation: policy_response_context
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Incomes_Policy_Wage_Controls_Stabilization_Programs]]'
+  relation: element_3_detail
+- node: '[[Imf_Exchange_Rate_Assessment_And_Crawling_Peg_Design]]'
+  relation: element_1_detail
+- node: '[[Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability]]'
+  relation: element_2_detail
+- node: '[[FX_Target_Quasi_Fiscal_Stagflation_Trap_Mechanism]]'
+  relation: exit_path_from
+- node: '[[Stagflation_Policy_Response_Tradeoff_Framework]]'
+  relation: policy_response_context
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## The Three-Element Architecture

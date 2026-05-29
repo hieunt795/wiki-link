@@ -30,16 +30,25 @@ tags:
 - QE
 confidence: 4
 stability: stable
-thesis: 'The Fed has assembled a four-layer "global jaws" architecture to control dollar rates for all market participants, operating as a "range floor system" (or "soft floor") rather than a single fixed rate. This architecture consists of: (1) private floor = ON RRP (banks/MMFs/GSEs), (2) public floor = Foreign Repo Pool/FRP (foreign official institutions), (3) private ceiling = Fed swap lines (allied central banks), and (4) public ceiling = FIMA repo facility (all foreign official institutions). The system ensures that both private and public dollar rates (unsecured and secured) evolve within a narrow range (typically 10-15 basis points), preventing forced asset firesales by foreign governments while structurally reinforcing dollar hegemony.
+thesis: 'The Fed has assembled a four-layer "global jaws" architecture to control
+  dollar rates for all market participants, operating as a "range floor system" (or
+  "soft floor") rather than a single fixed rate. This architecture consists of: (1)
+  private floor = ON RRP (banks/MMFs/GSEs), (2) public floor = Foreign Repo Pool/FRP
+  (foreign official institutions), (3) private ceiling = Fed swap lines (allied central
+  banks), and (4) public ceiling = FIMA repo facility (all foreign official institutions).
+  The system ensures that both private and public dollar rates (unsecured and secured)
+  evolve within a narrow range (typically 10-15 basis points), preventing forced asset
+  firesales by foreign governments while structurally reinforcing dollar hegemony.
 
-'
+  '
 source_refs:
 - path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
-  pages: "1, 10-12"
+  pages: 1, 10-12
   weight: primary
 - path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
   pages: The Fed's Final Frontier; The Fed's Global Put Part I
   weight: supporting
+parent_node: null
 related:
 - node: '[[Fed_Dollar_Swap_Lines_Crisis_Hierarchy_And_Swapper_Of_Last_Resort]]'
   relation: private_global_ceiling_component

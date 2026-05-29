@@ -3,37 +3,47 @@ node_id: warsh_credit_allocation_exit_frm_001
 type: framework
 title: Warsh Credit Allocation Exit Framework
 aliases:
-  - exit from credit allocation
-  - Fed no-credit-allocation rule
-  - thoat khoi phan bo tin dung
-  - khung thoat phan bo tin dung
+- exit from credit allocation
+- Fed no-credit-allocation rule
+- thoat khoi phan bo tin dung
+- khung thoat phan bo tin dung
 domain:
   primary: monetary_policy
-  secondary: [fiscal_policy, financial_markets]
-tags: [warsh, fed, credit_allocation, mbs, independence, fiscal_policy]
+  secondary:
+  - fiscal_policy
+  - financial_markets
+tags:
+- warsh
+- fed
+- credit_allocation
+- mbs
+- independence
+- fiscal_policy
 confidence: 3
 stability: evolving
-thesis: >
-  Warsh's credit-allocation doctrine argues that the Fed should stop steering
-  credit toward particular sectors through asset purchases such as MBS. If the
-  state wants sectoral subsidy or emergency support, that choice should be made
-  by the Treasury or Congress, where political accountability belongs.
+thesis: 'Warsh''s credit-allocation doctrine argues that the Fed should stop steering
+  credit toward particular sectors through asset purchases such as MBS. If the state
+  wants sectoral subsidy or emergency support, that choice should be made by the Treasury
+  or Congress, where political accountability belongs.
+
+  '
 source_refs:
-  - path: 02_sources/Clipping/A new Fed-Treasury Accord_.md
-    pages: "full document"
-    weight: primary
-  - path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
-    pages: "full document"
-    weight: supporting
+- path: 02_sources/Clipping/A new Fed-Treasury Accord_.md
+  pages: full document
+  weight: primary
+- path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
+  pages: full document
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Warsh Fed Balance Sheet Operating Doctrine]]"
-    relation: component_framework
-  - node: "[[New Fed-Treasury Accord (2026 Proposal)]]"
-    relation: institutional_foundation
-  - node: "[[Fed Balance Sheet Size and Policy Rate Independence]]"
-    relation: contested_by
-  - node: "[[Warsh Balance Sheet Stimulus Swap Vs Structural Demand Neutrality]]"
-    relation: critique_link
+- node: '[[Warsh Fed Balance Sheet Operating Doctrine]]'
+  relation: component_framework
+- node: '[[New Fed-Treasury Accord (2026 Proposal)]]'
+  relation: institutional_foundation
+- node: '[[Fed Balance Sheet Size and Policy Rate Independence]]'
+  relation: contested_by
+- node: '[[Warsh Balance Sheet Stimulus Swap Vs Structural Demand Neutrality]]'
+  relation: critique_link
 date_created: 2026-05-24
 date_updated: 2026-05-24
 ---

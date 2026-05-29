@@ -34,15 +34,17 @@ thesis: '[LLM] Central banks use FX options primarily as buyers (purchasing the 
   discretionary intervention into a semi-automatic rule.'
 source_refs:
 - path: 04_research/ma_fx_target_balance_sheet/findings/fx_options_cancelable_intervention.md
-  pages: 'TRUE_GAP — pending ingest of BIS Triennial FX Survey, ISDA option structures'
+  pages: TRUE_GAP — pending ingest of BIS Triennial FX Survey, ISDA option structures
   weight: primary
+parent_node: '[[CB FX Rate Target Balance Sheet Constraint And Sterilization]]'
 related:
 - node: '[[CB FX Forward And NDF Intervention Delivery Versus Cash Settlement]]'
   relation: parent_structure — cancelable forward is forward + embedded put/call
 - node: '[[CB FX Swap Intervention Mechanics And Off Balance Sheet Exposure]]'
   relation: sibling_instrument — swap obligates two legs; option preserves CB choice
 - node: '[[CB Hidden FX Reserves Net Effective Intervention Capacity]]'
-  relation: consequence — sold options create contingent reserve drain, not in gross reserves
+  relation: consequence — sold options create contingent reserve drain, not in gross
+    reserves
 - node: '[[CB FX Rate Target Balance Sheet Constraint And Sterilization]]'
   relation: parent_mechanism — options implement discretionary defense of FX target
 date_created: '2026-05-26'

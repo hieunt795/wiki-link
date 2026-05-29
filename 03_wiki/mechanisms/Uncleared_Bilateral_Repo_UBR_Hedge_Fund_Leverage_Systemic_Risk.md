@@ -21,11 +21,17 @@ tags:
 - nccbr
 confidence: 1
 stability: stable
-thesis: Uncleared bilateral repo (UBR) is the most opaque segment of the U.S. repo market — where hedge funds borrow at 50:1+ leverage from dealer counterparties without central clearing or custody — executing basis trades and relative-value strategies; its $2T+ in outstanding transactions remained invisible to regulators until 2023, echoing the LTCM precedent (1998) where uncleared repo counterparty exposures nearly triggered a systemic meltdown.
+thesis: Uncleared bilateral repo (UBR) is the most opaque segment of the U.S. repo
+  market — where hedge funds borrow at 50:1+ leverage from dealer counterparties without
+  central clearing or custody — executing basis trades and relative-value strategies;
+  its $2T+ in outstanding transactions remained invisible to regulators until 2023,
+  echoing the LTCM precedent (1998) where uncleared repo counterparty exposures nearly
+  triggered a systemic meltdown.
 source_refs:
 - path: 02_sources/books/conks/Conks - Liquidity and Market Dynamics.md
   pages: batches 13-14 (chars ~100000-118000)
   weight: primary
+parent_node: null
 related:
 - node: '[[Repo Market Clearing Segments FICC Triparty GCF DVP NCCBR]]'
   relation: extends

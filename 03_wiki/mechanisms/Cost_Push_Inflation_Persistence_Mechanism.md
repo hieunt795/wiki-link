@@ -3,37 +3,40 @@ node_id: cost_push_inflation_persistence_mec_001
 type: mechanism
 title: Cost Push Inflation Persistence Mechanism
 aliases:
-  - cost-push inflation
-  - lam phat do chi phi day
-  - wage price cost spiral
+- cost-push inflation
+- lam phat do chi phi day
+- wage price cost spiral
 domain:
   primary: macro_outlook
   secondary:
-    - monetary_policy
+  - monetary_policy
 tags:
-  - inflation
-  - cost_push
-  - wages
-  - productivity
-  - energy_prices
-  - monetary_accommodation
+- inflation
+- cost_push
+- wages
+- productivity
+- energy_prices
+- monetary_accommodation
 confidence: 4
 stability: stable
-thesis: >
-  Cost-push inflation becomes persistent when a relative-price shock, wage shock,
-  or productivity-cost mismatch is accommodated by monetary policy or embedded
+thesis: 'Cost-push inflation becomes persistent when a relative-price shock, wage
+  shock, or productivity-cost mismatch is accommodated by monetary policy or embedded
   in contracts and expectations.
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "Inflation; Analyzing Inflation; Incomes Policy"
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: Inflation; Analyzing Inflation; Incomes Policy
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Stagflation Regime Diagnostic Framework]]"
-    relation: core_inflation_mechanism
-  - node: "[[Non-Linear Inflation Amplifier Mechanics]]"
-    relation: modern_amplifier
-  - node: "[[Central Bank Credibility Supply Shock Policy Space]]"
-    relation: expectation_anchor
+- node: '[[Stagflation Regime Diagnostic Framework]]'
+  relation: core_inflation_mechanism
+- node: '[[Non-Linear Inflation Amplifier Mechanics]]'
+  relation: modern_amplifier
+- node: '[[Central Bank Credibility Supply Shock Policy Space]]'
+  relation: expectation_anchor
 date_created: 2026-05-24
 date_updated: 2026-05-24
 ---

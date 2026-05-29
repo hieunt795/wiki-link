@@ -1,59 +1,66 @@
 ---
 node_id: imf_monetary_aggregate_targeting_innovation_controllability_001
 type: framework
-title: IMF Monetary Aggregate Targeting — Financial Innovation, Broader Aggregates, and the Controllability-Relevance Dilemma
+title: IMF Monetary Aggregate Targeting — Financial Innovation, Broader Aggregates,
+  and the Controllability-Relevance Dilemma
 aliases:
-  - monetary aggregate targeting
-  - M3 M4 L aggregates
-  - financial innovation velocity
-  - controllability vs relevance
-  - eclectic monetary indicators
-  - near-money assets
-  - mục tiêu tổng tiền tệ
-  - đổi mới tài chính và tốc độ lưu thông tiền tệ
-  - tính kiểm soát so với tính liên quan
+- monetary aggregate targeting
+- M3 M4 L aggregates
+- financial innovation velocity
+- controllability vs relevance
+- eclectic monetary indicators
+- near-money assets
+- mục tiêu tổng tiền tệ
+- đổi mới tài chính và tốc độ lưu thông tiền tệ
+- tính kiểm soát so với tính liên quan
 domain:
   primary: monetary_policy
 tags:
-  - monetary_aggregate
-  - financial_innovation
-  - velocity
-  - m3_m4
-  - controllability
-  - relevance
-  - near_money
-  - intermediate_target
-  - monetary_policy_indicators
-  - imf_macro_accounting
-  - money_demand
+- monetary_aggregate
+- financial_innovation
+- velocity
+- m3_m4
+- controllability
+- relevance
+- near_money
+- intermediate_target
+- monetary_policy_indicators
+- imf_macro_accounting
+- money_demand
 confidence: 4
 stability: stable
-thesis: >
-  Financial innovation blurs the boundary between money and near-money assets (demand
-  deposits earning interest, liquid mutual funds), making M1 and M2 velocity unstable
-  and potentially unreliable as intermediate monetary policy targets. Broader aggregates
-  M3/M4/L are more "relevant" (better linked to aggregate demand) but less "controllable"
-  (no reserve requirements, issued by non-bank institutions). This creates a fundamental
-  dilemma: the aggregate most relevant to aggregate demand is the least controllable.
-  The IMF solution is an eclectic multi-indicator approach — use monetary aggregates
-  alongside interest rates, the yield curve, and the exchange rate.
+thesis: 'Financial innovation blurs the boundary between money and near-money assets
+  (demand deposits earning interest, liquid mutual funds), making M1 and M2 velocity
+  unstable and potentially unreliable as intermediate monetary policy targets. Broader
+  aggregates M3/M4/L are more "relevant" (better linked to aggregate demand) but less
+  "controllable" (no reserve requirements, issued by non-bank institutions). This
+  creates a fundamental dilemma: the aggregate most relevant to aggregate demand is
+  the least controllable. The IMF solution is an eclectic multi-indicator approach
+  — use monetary aggregates alongside interest rates, the yield curve, and the exchange
+  rate.
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 4764–4776 (financial innovation, velocity instability, controllability-relevance dilemma, eclectic approach), lines 4570–4579 (M3/M4/L aggregate definitions, broader money spectrum)"
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: lines 4764–4776 (financial innovation, velocity instability, controllability-relevance
+    dilemma, eclectic approach), lines 4570–4579 (M3/M4/L aggregate definitions, broader
+    money spectrum)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Imf_Monetary_Analysis_Quantity_Theory_Velocity_And_Exchange_Rate_Regimes]]"
-    relation: velocity_instability_from_innovation_modifies_quantity_theory
-  - node: "[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]"
-    relation: M2_is_core_of_monetary_survey_but_innovation_pushes_toward_M3_M4
-  - node: "[[Imf_Money_Multiplier_Ratio_Decomposition_Three_Agent]]"
-    relation: near_money_outside_banking_system_breaks_multiplier_relationship
-  - node: "[[Imf_Financial_Programming_NDA_Ceiling_And_BOP_Monetary_Approach]]"
-    relation: NDA_ceiling_targets_M2_but_innovation_complicates_targeting
-  - node: "[[Imf_Real_Interest_Rate_Fisher_Equation_And_Portfolio_Choice]]"
-    relation: portfolio_shifts_driven_by_near_money_returns_explain_velocity_instability
-date_created: "2026-05-26"
-date_updated: "2026-05-26"
+- node: '[[Imf_Monetary_Analysis_Quantity_Theory_Velocity_And_Exchange_Rate_Regimes]]'
+  relation: velocity_instability_from_innovation_modifies_quantity_theory
+- node: '[[Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework]]'
+  relation: M2_is_core_of_monetary_survey_but_innovation_pushes_toward_M3_M4
+- node: '[[Imf_Money_Multiplier_Ratio_Decomposition_Three_Agent]]'
+  relation: near_money_outside_banking_system_breaks_multiplier_relationship
+- node: '[[Imf_Financial_Programming_NDA_Ceiling_And_BOP_Monetary_Approach]]'
+  relation: NDA_ceiling_targets_M2_but_innovation_complicates_targeting
+- node: '[[Imf_Real_Interest_Rate_Fisher_Equation_And_Portfolio_Choice]]'
+  relation: portfolio_shifts_driven_by_near_money_returns_explain_velocity_instability
+date_created: '2026-05-26'
+date_updated: '2026-05-26'
 ---
 
 ## The Problem: Financial Innovation Blurs the Money Boundary

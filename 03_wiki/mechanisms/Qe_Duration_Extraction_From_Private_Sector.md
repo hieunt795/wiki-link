@@ -18,7 +18,12 @@ tags:
 - household_balance_sheet
 confidence: 4
 stability: stable
-thesis: "Quantitative easing (QE) functions as a structural duration-for-liquidity swap. By purchasing long-duration government bonds and issuing near-zero-duration bank reserves, central banks systematically extract interest rate risk from the private sector. This forces private investors into a 'portfolio rebalancing' process—seeking higher-yielding, longer-duration risky assets to replace the duration lost to the central bank, thereby easing financial conditions across the broader economy."
+thesis: Quantitative easing (QE) functions as a structural duration-for-liquidity
+  swap. By purchasing long-duration government bonds and issuing near-zero-duration
+  bank reserves, central banks systematically extract interest rate risk from the
+  private sector. This forces private investors into a 'portfolio rebalancing' process—seeking
+  higher-yielding, longer-duration risky assets to replace the duration lost to the
+  central bank, thereby easing financial conditions across the broader economy.
 source_refs:
 - path: 02_sources/Clipping/What about Japan_ (Part II).md
   pages: Full document
@@ -26,15 +31,16 @@ source_refs:
 - path: 02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md
   pages: Section 13.3, Joyce et al (2011) reference
   weight: primary
+parent_node: null
 related:
-- node: "[[Monetary_Policy_Transmission_Short_Long_Rate_Frictions]]"
+- node: '[[Monetary_Policy_Transmission_Short_Long_Rate_Frictions]]'
   relation: mechanism_for_flattening_yield_curve
-- node: "[[QE_Collateral_Velocity_Monetary_Policy_Transmission]]"
+- node: '[[QE_Collateral_Velocity_Monetary_Policy_Transmission]]'
   relation: related_qe_impact
-- node: "[[Financial_Repression_Distributional_Welfare_Effects]]"
+- node: '[[Financial_Repression_Distributional_Welfare_Effects]]'
   relation: consequence_of_duration_extraction
-date_created: "2026-05-22"
-date_updated: "2026-05-24"
+date_created: '2026-05-22'
+date_updated: '2026-05-24'
 ---
 
 ## The Duration-for-Liquidity Swap

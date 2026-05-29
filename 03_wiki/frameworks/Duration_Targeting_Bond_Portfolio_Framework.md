@@ -24,6 +24,7 @@ source_refs:
 - path: 02_sources/books/homer_leibowitz_yield_book/Homer_Leibowitz_Inside_the_Yield_Book.md
   pages: Introduction, Chapter 1
   weight: primary
+parent_node: null
 related:
 - node: '[[Bond Accrual Price Effect Interaction]]'
   relation: shared_tag:duration

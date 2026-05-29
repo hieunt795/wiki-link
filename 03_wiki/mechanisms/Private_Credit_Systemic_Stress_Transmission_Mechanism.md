@@ -30,6 +30,7 @@ source_refs:
 - path: 02_sources/deep-research/Deep Dive_ Private Credit.md
   pages: ''
   weight: primary
+parent_node: null
 related:
 - node: '[[Bank_NBFI_Leverage_Loop]]'
   relation: bank_liquidity_transmission_channel

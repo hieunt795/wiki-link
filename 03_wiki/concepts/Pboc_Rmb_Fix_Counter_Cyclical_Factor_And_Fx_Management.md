@@ -42,6 +42,7 @@ source_refs:
     selling in March.md
   pages: Full document
   weight: contextual
+parent_node: null
 related:
 - node: '[[PBOC Monetary Policy Framework And Interest Rate Transmission]]'
   relation: shared_tag:pboc

@@ -37,6 +37,7 @@ source_refs:
   pages: 'Chapter 5: Monetary Accounts and Analysis — sections on Monetary Analysis,
     Money Market Equilibrium, Special Issues'
   weight: primary
+parent_node: null
 related:
 - node: '[[IMF Balance of Payments Framework and External Account Analysis]]'
   relation: shared_tag:imf

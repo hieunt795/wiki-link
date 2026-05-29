@@ -29,6 +29,7 @@ source_refs:
 - path: 02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md
   pages: Ch2, Bindseil 2014
   weight: primary
+parent_node: null
 related:
 - node: '[[Central Bank Balance Sheet Structure Liabilities Assets]]'
   relation: shared_tag:central-bank

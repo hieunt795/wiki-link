@@ -3,57 +3,60 @@ node_id: alm_role_srep_pillar2_capital_liquidity_001
 type: framework
 title: ALM Role in SREP and Pillar 2 Capital/Liquidity Requirements
 aliases:
-  - ALM in SREP
-  - SREP Pillar 2 ALM
-  - P2R P2G determination
-  - TSCR total SREP capital requirement
-  - vai trò ALM trong SREP
-  - yêu cầu Trụ cột 2 vốn và thanh khoản
-  - P2R P2G xác định vốn SREP
+- ALM in SREP
+- SREP Pillar 2 ALM
+- P2R P2G determination
+- TSCR total SREP capital requirement
+- vai trò ALM trong SREP
+- yêu cầu Trụ cột 2 vốn và thanh khoản
+- P2R P2G xác định vốn SREP
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - SREP
-  - Pillar2
-  - P2R
-  - P2G
-  - TSCR
-  - ICAAP
-  - ILAAP
-  - node: "[[ALM]]"
-    relation: related_to
-  - node: "[[IRRBB]]"
-    relation: related_to
-  - node: "[[Basel_III]]"
-    relation: related_to
+- SREP
+- Pillar2
+- P2R
+- P2G
+- TSCR
+- ICAAP
+- ILAAP
+- node: '[[ALM]]'
+  relation: related_to
+- node: '[[IRRBB]]'
+  relation: related_to
+- node: '[[Basel_III]]'
+  relation: related_to
 confidence: 1
 stability: stable
-thesis: >
-  The Supervisory Review and Evaluation Process (SREP) evaluates banks across four
-  areas (business model, governance, capital risks, liquidity risks) and imposes
-  a Pillar 2 Requirement (P2R) as an individual add-on above Pillar 1; together
-  they form the TSCR = P1 + P2R, which must be met at all times including stress;
-  Pillar 2 Guidance (P2G) is then added based on stress test results as a soft
-  buffer above OCR; ALM's primary SREP exposure is IRRBB (capital), ILAAP
-  (liquidity), and funding plan credibility. [LLM]
+thesis: 'The Supervisory Review and Evaluation Process (SREP) evaluates banks across
+  four areas (business model, governance, capital risks, liquidity risks) and imposes
+  a Pillar 2 Requirement (P2R) as an individual add-on above Pillar 1; together they
+  form the TSCR = P1 + P2R, which must be met at all times including stress; Pillar
+  2 Guidance (P2G) is then added based on stress test results as a soft buffer above
+  OCR; ALM''s primary SREP exposure is IRRBB (capital), ILAAP (liquidity), and funding
+  plan credibility. [LLM]
+
+  '
 source_refs:
-  - path: "02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md"
-    pages: "Chapter 13: ALM Role in SREP; Box 12.1; Box 13.2"
+- path: 02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday,
+    Today and Tomorrow-De Gruyter (2021).md
+  pages: 'Chapter 13: ALM Role in SREP; Box 12.1; Box 13.2'
+parent_node: null
 related:
-  - node: "[[ALM_Enterprise_Risk_Management_Framework]]"
-    relation: related_to
-  - node: "[[Integrated_Stress_Testing_Capital_Liquidity_Link]]"
-    relation: related_to
-  - node: "[[ILAAP_Supervisory_Liquidity_Framework]]"
-    relation: related_to
-  - node: "[[Bcbs_Irrbb_Standards_2016]]"
-    relation: related_to
-  - node: "[[Alm_Operating_Model_Front_Middle_Office]]"
-    relation: related_to
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[ALM_Enterprise_Risk_Management_Framework]]'
+  relation: related_to
+- node: '[[Integrated_Stress_Testing_Capital_Liquidity_Link]]'
+  relation: related_to
+- node: '[[ILAAP_Supervisory_Liquidity_Framework]]'
+  relation: related_to
+- node: '[[Bcbs_Irrbb_Standards_2016]]'
+  relation: related_to
+- node: '[[Alm_Operating_Model_Front_Middle_Office]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Thesis

@@ -3,47 +3,48 @@ node_id: tga_reserve_swap_mechanics_and_debt_ceiling_dynamics_con_001
 type: concept
 title: Tga Reserve Swap Mechanics And Debt Ceiling Dynamics
 aliases:
-  - TGA Reserve Swap
-  - Treasury General Account Volatility
-  - Debt Ceiling Reserve Injection
-  - Cơ chế hoán đổi dự trữ TGA
+- TGA Reserve Swap
+- Treasury General Account Volatility
+- Debt Ceiling Reserve Injection
+- Cơ chế hoán đổi dự trữ TGA
 domain:
   primary: monetary_policy
 tags:
-  - tga
-  - reserves
-  - debt_ceiling
-  - fed_balance_sheet
-  - treasury
-  - liquidity_drain
-
+- tga
+- reserves
+- debt_ceiling
+- fed_balance_sheet
+- treasury
+- liquidity_drain
 confidence: 4
 stability: stable
+thesis: 'The Treasury General Account (TGA) and bank reserves are offsetting liabilities
+  on the Federal Reserve''s balance sheet; every dollar the Treasury collects or issues
+  as debt drains a dollar of reserves, while every dollar spent injects reserves,
+  making TGA management a primary driver of systemic liquidity volatility, especially
+  during debt ceiling episodes.
 
-thesis: >
-  The Treasury General Account (TGA) and bank reserves are offsetting liabilities on the Federal Reserve's balance sheet; every dollar the Treasury collects or issues as debt drains a dollar of reserves, while every dollar spent injects reserves, making TGA management a primary driver of systemic liquidity volatility, especially during debt ceiling episodes.
-
+  '
 source_refs:
-  - path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
-    pages: "Full document"
-    weight: primary
-  - path: 02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md
-    pages: "Full document"
-    weight: supporting
-  - path: 02_sources/Clipping/Debt Ceiling Extraordinary Measures Treasury.md
-    pages: "Full document"
-    weight: supporting
-
+- path: 02_sources/Clipping/The Checking Account of the U.S. Federal Government....md
+  pages: Full document
+  weight: primary
+- path: 02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md
+  pages: Full document
+  weight: supporting
+- path: 02_sources/Clipping/Debt Ceiling Extraordinary Measures Treasury.md
+  pages: Full document
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Treasury General Account TGA Reserve Swap]]"
-    relation: core_mechanism
-  - node: "[[Fed Ample Reserves Rate Control Framework]]"
-    relation: liquidity_impact
-  - node: "[[QT Reserve Drain Effectiveness And Deposit Funding Condition]]"
-    relation: balance_sheet_interaction
-  - node: "[[Ample Reserves Buffer Sizing TGA Volatility]]"
-    relation: buffer_calibration
-
+- node: '[[Treasury General Account TGA Reserve Swap]]'
+  relation: core_mechanism
+- node: '[[Fed Ample Reserves Rate Control Framework]]'
+  relation: liquidity_impact
+- node: '[[QT Reserve Drain Effectiveness And Deposit Funding Condition]]'
+  relation: balance_sheet_interaction
+- node: '[[Ample Reserves Buffer Sizing TGA Volatility]]'
+  relation: buffer_calibration
 date_created: 2026-05-22
 date_updated: 2026-05-25
 ---

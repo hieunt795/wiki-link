@@ -1,50 +1,54 @@
 ---
 node_id: secured_funding_instruments_repo_covered_bond_abs_001
 type: mechanism
-title: "Secured Funding Instruments in Bank ALM: Repo, Covered Bonds, and ABS"
+title: 'Secured Funding Instruments in Bank ALM: Repo, Covered Bonds, and ABS'
 aliases:
-  - Repo mechanism
-  - Covered bond funding
-  - ABS securitisation funding
-  - Công cụ tài trợ có bảo đảm
-  - Repo ngân hàng
-  - Trái phiếu bảo đảm
-
+- Repo mechanism
+- Covered bond funding
+- ABS securitisation funding
+- Công cụ tài trợ có bảo đảm
+- Repo ngân hàng
+- Trái phiếu bảo đảm
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - repo
-  - covered_bonds
-  - abs
-  - secured_funding
-  - lcr
-  - nsfr
-  - asset_encumbrance
-  - collateral
-
+- repo
+- covered_bonds
+- abs
+- secured_funding
+- lcr
+- nsfr
+- asset_encumbrance
+- collateral
 confidence: 1
 stability: stable
+thesis: '[LLM] Secured funding instruments (repo, covered bonds, ABS) shifted from
+  peripheral tools to the structural backbone of bank wholesale funding after the
+  2007–9 crisis, driven by counterparty risk aversion in unsecured markets; each instrument
+  creates asset encumbrance with distinct LCR/NSFR implications and a tradeoff between
+  funding cost and unsecured creditor subordination. [LLM] Covered bonds dominate
+  European medium-term secured funding (€2.5 trillion outstanding in 2016) while repo
+  dominates short-term (€5.6 trillion European market in 2016); ABS provides capital
+  relief but is structurally more complex and carries higher reputational risk post-crisis.
 
-thesis: >
-  [LLM] Secured funding instruments (repo, covered bonds, ABS) shifted from peripheral tools to the structural backbone of bank wholesale funding after the 2007–9 crisis, driven by counterparty risk aversion in unsecured markets; each instrument creates asset encumbrance with distinct LCR/NSFR implications and a tradeoff between funding cost and unsecured creditor subordination. [LLM] Covered bonds dominate European medium-term secured funding (€2.5 trillion outstanding in 2016) while repo dominates short-term (€5.6 trillion European market in 2016); ABS provides capital relief but is structurally more complex and carries higher reputational risk post-crisis.
-
+  '
 source_refs:
-  - path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
-    pages: "Ch 16 — Instruments for Secured Funding (Inter-American Development Bank; European Investment Bank)"
-    weight: primary
-
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: Ch 16 — Instruments for Secured Funding (Inter-American Development Bank;
+    European Investment Bank)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Asset_Encumbrance_Management_Bank_Alm]]"
-    relation: related_to
-  - node: "[[Reserve_Asset_Management_Hqla_Portfolio_Bank]]"
-    relation: related_to
-  - node: "[[Funding_Gap_Profile_And_Behavioural_Maturity_Calendar]]"
-    relation: mechanism_of
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Asset_Encumbrance_Management_Bank_Alm]]'
+  relation: related_to
+- node: '[[Reserve_Asset_Management_Hqla_Portfolio_Bank]]'
+  relation: related_to
+- node: '[[Funding_Gap_Profile_And_Behavioural_Maturity_Calendar]]'
+  relation: mechanism_of
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## 1. Repo (Repurchase Agreement)

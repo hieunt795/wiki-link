@@ -1,61 +1,56 @@
 ---
 node_id: entity_boj_001
 type: entity
-title: "Bank of Japan (BoJ)"
+title: Bank of Japan (BoJ)
 aliases:
-  - BoJ
-  - BOJ
-  - 日本銀行
-  - Ngân hàng Trung ương Nhật Bản
-
+- BoJ
+- BOJ
+- 日本銀行
+- Ngân hàng Trung ương Nhật Bản
 domain:
   primary: monetary_policy
   secondary:
-    - financial_markets
-    - fiscal_policy
+  - financial_markets
+  - fiscal_policy
 tags:
-  - central-bank
-  - japan
-  - ycc
-  - qe
-  - unconventional-policy
-
+- central-bank
+- japan
+- ycc
+- qe
+- unconventional-policy
 confidence: 3
 stability: evolving
-
 entity_type: central_bank
 jurisdiction: JP
 established: 1882
-mandate: "Price stability (2% inflation target) and financial system stability"
-
-thesis: >
-  The Bank of Japan is notable for operating the world's most extensive unconventional
+mandate: Price stability (2% inflation target) and financial system stability
+thesis: 'The Bank of Japan is notable for operating the world''s most extensive unconventional
   monetary policy regime: Quantitative and Qualitative Easing (QQE) from 2013, Yield
   Curve Control (YCC) from 2016, culminating in a 2024 exit from negative rates and
-  YCC cap removal. Its decade-long zero-rate policy enabled Japan's consolidated public
-  sector to operate a sovereign carry trade at 91% of GDP in bank reserves, compressing
-  household duration and engineering implicit financial repression.
+  YCC cap removal. Its decade-long zero-rate policy enabled Japan''s consolidated
+  public sector to operate a sovereign carry trade at 91% of GDP in bank reserves,
+  compressing household duration and engineering implicit financial repression.
 
+  '
 source_refs:
-  - path: 02_sources/Clipping/What about Japan_ (Part I).md
-    weight: primary
-  - path: 02_sources/Clipping/What about Japan_ (Part II).md
-    weight: primary
-  - path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
-    weight: supporting
-
+- path: 02_sources/Clipping/What about Japan_ (Part I).md
+  weight: primary
+- path: 02_sources/Clipping/What about Japan_ (Part II).md
+  weight: primary
+- path: 02_sources/Inbox/Central Bank Commentary (April 2026)_ Fed, BoJ, and BoE..md
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Japan_Sovereign_Carry_Trade_Framework]]"
-    relation: implements
-  - node: "[[Japan_Filp_To_Qe_Structural_Succession]]"
-    relation: implements
-  - node: "[[BOJ_QQE_YCC_Policy_2013_2024]]"
-    relation: executed
-  - node: "[[Duration_Targeting_Convergence_And_Yield_Trap]]"
-    relation: related_to
-  - node: "[[Financial_Repression_Via_Reserve_Creation]]"
-    relation: implements
-
+- node: '[[Japan_Sovereign_Carry_Trade_Framework]]'
+  relation: implements
+- node: '[[Japan_Filp_To_Qe_Structural_Succession]]'
+  relation: implements
+- node: '[[BOJ_QQE_YCC_Policy_2013_2024]]'
+  relation: executed
+- node: '[[Duration_Targeting_Convergence_And_Yield_Trap]]'
+  relation: related_to
+- node: '[[Financial_Repression_Via_Reserve_Creation]]'
+  relation: implements
 date_created: 2026-05-23
 date_updated: 2026-05-23
 last_reviewed: 2026-05-23

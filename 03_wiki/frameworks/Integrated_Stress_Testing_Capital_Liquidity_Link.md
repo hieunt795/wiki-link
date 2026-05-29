@@ -1,50 +1,53 @@
 ---
 node_id: integrated_stress_testing_capital_liquidity_link_001
 type: framework
-title: "Integrated Stress Testing: Linking Capital, Liquidity, IRRBB, and Credit Risk"
+title: 'Integrated Stress Testing: Linking Capital, Liquidity, IRRBB, and Credit Risk'
 aliases:
-  - CCAR stress testing framework
-  - EBA stress test methodology
-  - Integrated balance-sheet steering
-  - Kiểm tra stress tích hợp vốn và thanh khoản
-  - Stress test toàn diện
-
+- CCAR stress testing framework
+- EBA stress test methodology
+- Integrated balance-sheet steering
+- Kiểm tra stress tích hợp vốn và thanh khoản
+- Stress test toàn diện
 domain:
   primary: alm
   secondary:
-    - basel_risk
+  - basel_risk
 tags:
-  - stress_testing
-  - ccar
-  - eba_stress_test
-  - irrbb
-  - capital_planning
-  - integrated_balance_sheet
-  - ppnr
-  - rwa_stress
-  - liquidity_stress
-
+- stress_testing
+- ccar
+- eba_stress_test
+- irrbb
+- capital_planning
+- integrated_balance_sheet
+- ppnr
+- rwa_stress
+- liquidity_stress
 confidence: 1
 stability: evolving
+thesis: '[LLM] Integrated stress testing links macro scenarios simultaneously to credit
+  losses, NII changes, RWA migration, LCR impacts, and capital ratios across a multi-quarter
+  horizon; the 2007–9 crisis revealed that solvency-only stress tests were insufficient
+  because liquidity failures can precede capital insolvency. [LLM] The US CCAR framework
+  (dynamic balance sheet, internal scenarios, 9-quarter horizon) and the EU EBA framework
+  (static balance sheet, external scenarios only, 3-year adverse scenario) represent
+  different regulatory philosophies, but both now require integration with IRRBB stress
+  metrics (EVE and NII) under BCBS 368.
 
-thesis: >
-  [LLM] Integrated stress testing links macro scenarios simultaneously to credit losses, NII changes, RWA migration, LCR impacts, and capital ratios across a multi-quarter horizon; the 2007–9 crisis revealed that solvency-only stress tests were insufficient because liquidity failures can precede capital insolvency. [LLM] The US CCAR framework (dynamic balance sheet, internal scenarios, 9-quarter horizon) and the EU EBA framework (static balance sheet, external scenarios only, 3-year adverse scenario) represent different regulatory philosophies, but both now require integration with IRRBB stress metrics (EVE and NII) under BCBS 368.
-
+  '
 source_refs:
-  - path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
-    pages: "Ch 19 — A Global Perspective on Stress Testing (Boston Consulting Group)"
-    weight: primary
-
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: Ch 19 — A Global Perspective on Stress Testing (Boston Consulting Group)
+  weight: primary
+parent_node: '[[Bank_Capital_Structure_And_Capital_Management_Alm]]'
 related:
-  - node: "[[Bank_Capital_Structure_And_Capital_Management_Alm]]"
-    relation: component_of
-  - node: "[[Funding_Gap_Profile_And_Behavioural_Maturity_Calendar]]"
-    relation: related_to
-  - node: "[[Reserve_Asset_Management_Hqla_Portfolio_Bank]]"
-    relation: related_to
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Bank_Capital_Structure_And_Capital_Management_Alm]]'
+  relation: component_of
+- node: '[[Funding_Gap_Profile_And_Behavioural_Maturity_Calendar]]'
+  relation: related_to
+- node: '[[Reserve_Asset_Management_Hqla_Portfolio_Bank]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Historical Context

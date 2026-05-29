@@ -3,35 +3,44 @@ node_id: warsh_balance_sheet_stimulus_swap_vs_structural_demand_neutrality_con_0
 type: contradiction
 title: Warsh Balance Sheet Stimulus Swap Vs Structural Demand Neutrality
 aliases:
-  - Warsh critique
-  - structural demand rebuttal
-  - phan bien Warsh
-  - phan ung nhu cau cau truc
+- Warsh critique
+- structural demand rebuttal
+- phan bien Warsh
+- phan ung nhu cau cau truc
 domain:
   primary: monetary_policy
-  secondary: [financial_markets]
-tags: [warsh, qt, reserves, structural_demand, balance_sheet, contradiction]
+  secondary:
+  - financial_markets
+tags:
+- warsh
+- qt
+- reserves
+- structural_demand
+- balance_sheet
+- contradiction
 confidence: 3
 stability: contested
-thesis: >
-  The Warsh argument treats balance-sheet reduction as a way to "redeploy" stimulus
-  into lower policy rates, but the clipping argues that this is a category error
-  when the Fed is merely meeting structural reserve demand. In that critique,
-  shrinking the balance sheet because structural reserve demand has fallen does
-  not create spare stimulus to spend on rate cuts.
+thesis: 'The Warsh argument treats balance-sheet reduction as a way to "redeploy"
+  stimulus into lower policy rates, but the clipping argues that this is a category
+  error when the Fed is merely meeting structural reserve demand. In that critique,
+  shrinking the balance sheet because structural reserve demand has fallen does not
+  create spare stimulus to spend on rate cuts.
+
+  '
 source_refs:
-  - path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
-    pages: "full document"
-    weight: primary
+- path: 02_sources/Clipping/Warsh and the Fed's Balance Sheet.md
+  pages: full document
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Warsh Balance Sheet Stimulus Swap]]"
-    relation: contradicts
-  - node: "[[Fed Balance Sheet Size and Policy Rate Independence]]"
-    relation: qualifies
-  - node: "[[Fed Ample Reserves Rate Control Framework]]"
-    relation: operating_context
-  - node: "[[Reserve Floor Payment System Demand]]"
-    relation: structural_anchor
+- node: '[[Warsh Balance Sheet Stimulus Swap]]'
+  relation: contradicts
+- node: '[[Fed Balance Sheet Size and Policy Rate Independence]]'
+  relation: qualifies
+- node: '[[Fed Ample Reserves Rate Control Framework]]'
+  relation: operating_context
+- node: '[[Reserve Floor Payment System Demand]]'
+  relation: structural_anchor
 date_created: 2026-05-24
 date_updated: 2026-05-24
 ---

@@ -343,6 +343,7 @@ def create_wiki_node(
     body: str = "",
     confidence: int = 1,
     pages: str = "",
+    parent_node: str | None = None,
 ) -> Path:
     """Write a single wiki node file with proper frontmatter.
 
@@ -377,6 +378,7 @@ def create_wiki_node(
         "source_refs": [
             {"path": _repo_relative_path(source_path), "pages": pages or "", "weight": "primary"}
         ],
+        "parent_node": parent_node,
         "related":    [],
         "date_created": TODAY,
         "date_updated": TODAY,

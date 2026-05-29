@@ -1,46 +1,51 @@
 ---
 node_id: reverse_stress_testing_alm_framework_001
 type: framework
-title: "Reverse Stress Testing: Process-Oriented Framework for ALM"
+title: 'Reverse Stress Testing: Process-Oriented Framework for ALM'
 aliases:
-  - RST framework
-  - Reverse stress test
-  - Business model failure scenarios
-  - Stress test ngược
-  - Kiểm tra khả năng chịu đựng ngược
-
+- RST framework
+- Reverse stress test
+- Business model failure scenarios
+- Stress test ngược
+- Kiểm tra khả năng chịu đựng ngược
 domain:
   primary: alm
 tags:
-  - reverse_stress_testing
-  - rst
-  - liquidity_risk
-  - capital_risk
-  - business_model_viability
-  - scenario_design
-  - alm
-
+- reverse_stress_testing
+- rst
+- liquidity_risk
+- capital_risk
+- business_model_viability
+- scenario_design
+- alm
 confidence: 1
 stability: evolving
+thesis: '[LLM] Reverse stress testing (RST) differs from conventional stress testing
+  by starting from an outcome — business model failure — and reverse-engineering the
+  scenarios that could produce it; this methodology is especially powerful for ALM
+  because it forces explicit identification of capital-induced liquidity failures
+  (where solvency deterioration triggers funding withdrawal) and liquidity-induced
+  capital failures (where funding constraints prevent necessary hedges). [LLM] The
+  practical value lies not in the scenarios themselves but in the process of cross-functional
+  thinking about vulnerabilities, failure sequences, and management actions before
+  a crisis materialises.
 
-thesis: >
-  [LLM] Reverse stress testing (RST) differs from conventional stress testing by starting from an outcome — business model failure — and reverse-engineering the scenarios that could produce it; this methodology is especially powerful for ALM because it forces explicit identification of capital-induced liquidity failures (where solvency deterioration triggers funding withdrawal) and liquidity-induced capital failures (where funding constraints prevent necessary hedges). [LLM] The practical value lies not in the scenarios themselves but in the process of cross-functional thinking about vulnerabilities, failure sequences, and management actions before a crisis materialises.
-
+  '
 source_refs:
-  - path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
-    pages: "Ch 20 — Reverse Stress Testing: Linking Risks, Earnings, Capital and Liquidity (Harz University; University of Basel)"
-    weight: primary
-
+- path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
+  pages: 'Ch 20 — Reverse Stress Testing: Linking Risks, Earnings, Capital and Liquidity
+    (Harz University; University of Basel)'
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Integrated_Stress_Testing_Capital_Liquidity_Link]]"
-    relation: related_to
-  - node: "[[Bank_Capital_Structure_And_Capital_Management_Alm]]"
-    relation: related_to
-  - node: "[[Funding_Gap_Profile_And_Behavioural_Maturity_Calendar]]"
-    relation: related_to
-
-date_created: "2026-05-28"
-date_updated: "2026-05-28"
+- node: '[[Integrated_Stress_Testing_Capital_Liquidity_Link]]'
+  relation: related_to
+- node: '[[Bank_Capital_Structure_And_Capital_Management_Alm]]'
+  relation: related_to
+- node: '[[Funding_Gap_Profile_And_Behavioural_Maturity_Calendar]]'
+  relation: related_to
+date_created: '2026-05-28'
+date_updated: '2026-05-28'
 ---
 
 ## Core Distinction: RST vs Conventional Stress Testing

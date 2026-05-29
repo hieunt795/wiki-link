@@ -26,6 +26,7 @@ source_refs:
 - path: 02_sources/books/conks/Conks - Shadow Banking and Cash Markets.md
   pages: Money Market Blindspot I and II
   weight: primary
+parent_node: null
 related:
 - node: '[[TGA Reserve Swap Mechanics And Debt Ceiling Dynamics]]'
   relation: shared_tag:tga

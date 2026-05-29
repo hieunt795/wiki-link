@@ -32,6 +32,7 @@ source_refs:
 - path: 02_sources/deep-research/Deep Dive_ Private Credit.md
   pages: ''
   weight: primary
+parent_node: null
 related:
 - node: '[[PIK_Payment_In_Kind_Credit_Masking]]'
   relation: canonical_detail_for_pik_channel

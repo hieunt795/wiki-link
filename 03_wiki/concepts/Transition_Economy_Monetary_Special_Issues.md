@@ -3,55 +3,59 @@ node_id: transition_economy_monetary_issues_001
 type: concept
 title: Transition Economy Monetary Special Issues
 aliases:
-  - transition economy monetary policy
-  - post-communist monetary reform
-  - velocity jumps transition
-  - monobank legacy
-  - interenterprise arrears
-  - kinh tế chuyển đổi tiền tệ
-  - chính sách tiền tệ kinh tế chuyển đổi
-  - nợ liên doanh nghiệp
+- transition economy monetary policy
+- post-communist monetary reform
+- velocity jumps transition
+- monobank legacy
+- interenterprise arrears
+- kinh tế chuyển đổi tiền tệ
+- chính sách tiền tệ kinh tế chuyển đổi
+- nợ liên doanh nghiệp
 domain:
   primary: monetary_policy
   secondary: fiscal_policy
 tags:
-  - transition_economy
-  - monetary_policy
-  - velocity
-  - dollarization
-  - banking_system
-  - fiscal_dominance
-  - hyperinflation
-  - imf_macro_accounting
-  - monobank
+- transition_economy
+- monetary_policy
+- velocity
+- dollarization
+- banking_system
+- fiscal_dominance
+- hyperinflation
+- imf_macro_accounting
+- monobank
 confidence: 3
 stability: stable
-thesis: >
-  Monetary analysis in transition economies (post-communist reform) faces five
-  structural distortions absent from standard frameworks: (1) rapid, discrete
-  velocity jumps (up to 3-fold in one quarter, Armenia/Georgia 1993); (2) banking
-  systems that do not behave as profit maximizers (monobank legacy); (3)
-  interenterprise arrears that substitute for bank credit when credit is tightened;
-  (4) interest rates that may perversely amplify inflation via enterprise borrowing to
-  service debt; (5) very wide lending-deposit spreads due to NPL burden, preferential
-  credit legacy, and non-interest reserve requirements. Hyperinflation episodes
-  (Cagan: ≥50% monthly) show real money demand can collapse to 1/30th of pre-
-  inflation levels, with recovery taking years even after stabilization. [LLM]
+thesis: 'Monetary analysis in transition economies (post-communist reform) faces five
+  structural distortions absent from standard frameworks: (1) rapid, discrete velocity
+  jumps (up to 3-fold in one quarter, Armenia/Georgia 1993); (2) banking systems that
+  do not behave as profit maximizers (monobank legacy); (3) interenterprise arrears
+  that substitute for bank credit when credit is tightened; (4) interest rates that
+  may perversely amplify inflation via enterprise borrowing to service debt; (5) very
+  wide lending-deposit spreads due to NPL burden, preferential credit legacy, and
+  non-interest reserve requirements. Hyperinflation episodes (Cagan: ≥50% monthly)
+  show real money demand can collapse to 1/30th of pre- inflation levels, with recovery
+  taking years even after stabilization. [LLM]
+
+  '
 source_refs:
-  - path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md
-    pages: "lines 4870–4919 (transition economy special issues, velocity jumps, monobank legacy, interenterprise arrears, interest rate problems, spreads, Box 5.10 Hyperinflation)"
-    weight: primary
+- path: 02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis
+    IMF.md
+  pages: lines 4870–4919 (transition economy special issues, velocity jumps, monobank
+    legacy, interenterprise arrears, interest rate problems, spreads, Box 5.10 Hyperinflation)
+  weight: primary
+parent_node: null
 related:
-  - node: "[[Currency_Substitution_Dollarization_Monetary_Control]]"
-    relation: dollarization_is_dominant_transition_economy_symptom
-  - node: "[[Imf_Money_Multiplier_Ratio_Decomposition_Three_Agent]]"
-    relation: multiplier_breaks_down_under_transition_conditions
-  - node: "[[Hyperinflation_Dynamics_Cagan_Real_Money_Collapse]]"
-    relation: describes_endpoint_of_transition_monetary_failure
-  - node: "[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]"
-    relation: transition_government_financing_generates_seigniorage_pressure
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[Currency_Substitution_Dollarization_Monetary_Control]]'
+  relation: dollarization_is_dominant_transition_economy_symptom
+- node: '[[Imf_Money_Multiplier_Ratio_Decomposition_Three_Agent]]'
+  relation: multiplier_breaks_down_under_transition_conditions
+- node: '[[Hyperinflation_Dynamics_Cagan_Real_Money_Collapse]]'
+  relation: describes_endpoint_of_transition_monetary_failure
+- node: '[[CB_Quasi_Fiscal_Sterilization_Seigniorage_Fiscal_Monetary_Nexus]]'
+  relation: transition_government_financing_generates_seigniorage_pressure
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Context: The Monobank Legacy

@@ -3,54 +3,60 @@ node_id: enhanced_taylor_rule_eme_fx_augmented_001
 type: mechanism
 title: Enhanced Taylor Rule for EME — FX Deviation Augmentation
 aliases:
-  - augmented Taylor rule EME
-  - FX-augmented Taylor rule
-  - exchange rate in monetary policy rule
-  - enhanced rule open economy
-  - Taylor rule exchange rate pass-through
-  - quy tắc Taylor mở rộng cho EM
-  - quy tắc lãi suất có tỷ giá
+- augmented Taylor rule EME
+- FX-augmented Taylor rule
+- exchange rate in monetary policy rule
+- enhanced rule open economy
+- Taylor rule exchange rate pass-through
+- quy tắc Taylor mở rộng cho EM
+- quy tắc lãi suất có tỷ giá
 domain:
   primary: monetary_policy
   secondary: financial_markets
 tags:
-  - taylor_rule
-  - fx_intervention
-  - monetary_policy_rule
-  - open_economy
-  - exchange_rate_passthrough
-  - em_policy
-  - inflation_targeting
-  - interest_rate
+- taylor_rule
+- fx_intervention
+- monetary_policy_rule
+- open_economy
+- exchange_rate_passthrough
+- em_policy
+- inflation_targeting
+- interest_rate
 confidence: 3
 stability: stable
-thesis: >
-  Standard Taylor rules (inflation deviation + output gap → interest rate) are incomplete
-  for EMEs with significant exchange rate pass-through to inflation. An FX-augmented
-  ("enhanced") Taylor rule adds real exchange rate deviation from equilibrium as a
-  third driver of the policy rate. Empirical estimates show this coefficient ranges from
-  0 (pure IT countries like Chile) to 0.8 (Mexico) with Indonesia at 0.3, reflecting
-  how directly the exchange rate feeds into the CB's reaction function. The enhanced
-  rule produces better R-squared fit and more optimal countercyclical response than
-  the standard rule in high-pass-through EMEs. [LLM]
+thesis: 'Standard Taylor rules (inflation deviation + output gap → interest rate)
+  are incomplete for EMEs with significant exchange rate pass-through to inflation.
+  An FX-augmented ("enhanced") Taylor rule adds real exchange rate deviation from
+  equilibrium as a third driver of the policy rate. Empirical estimates show this
+  coefficient ranges from 0 (pure IT countries like Chile) to 0.8 (Mexico) with Indonesia
+  at 0.3, reflecting how directly the exchange rate feeds into the CB''s reaction
+  function. The enhanced rule produces better R-squared fit and more optimal countercyclical
+  response than the standard rule in high-pass-through EMEs. [LLM]
+
+  '
 source_refs:
-  - path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
-    pages: "lines 273–285 (Enhanced Taylor rule specification, Indonesia/Chile/Mexico coefficients)"
-    weight: primary
-  - path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro - Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-4.md
-    pages: "lines 516–524 (Taylor rule open economy extension, Ball 1997; Svensson 1997a); lines 574–575 (exchange rate as operational target: Singapore, Hong Kong)"
-    weight: secondary
+- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro -
+    Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-6.md
+  pages: lines 273–285 (Enhanced Taylor rule specification, Indonesia/Chile/Mexico
+    coefficients)
+  weight: primary
+- path: 02_sources/books/central_policy_Perry/Perry Warjiyo and Solikin M. Juhro -
+    Central Bank Policy_ Theory and Practice-Emerald Publishing (2019)-trang-4.md
+  pages: 'lines 516–524 (Taylor rule open economy extension, Ball 1997; Svensson 1997a);
+    lines 574–575 (exchange rate as operational target: Singapore, Hong Kong)'
+  weight: secondary
+parent_node: null
 related:
-  - node: "[[EM_Central_Bank_Policy_Mix_FIT_Framework]]"
-    relation: operational_implementation
-  - node: "[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]"
-    relation: monetizes_fx_target_into_rate_rule
-  - node: "[[Sterilization_Offset_Coefficient_EME_Monetary_Autonomy]]"
-    relation: interaction_through_capital_flows
-  - node: "[[Inflation_Targeting_Framework_Central_Bank]]"
-    relation: open_economy_extension
-date_created: "2026-05-25"
-date_updated: "2026-05-25"
+- node: '[[EM_Central_Bank_Policy_Mix_FIT_Framework]]'
+  relation: operational_implementation
+- node: '[[CB_FX_Rate_Target_Balance_Sheet_Constraint_Sterilization]]'
+  relation: monetizes_fx_target_into_rate_rule
+- node: '[[Sterilization_Offset_Coefficient_EME_Monetary_Autonomy]]'
+  relation: interaction_through_capital_flows
+- node: '[[Inflation_Targeting_Framework_Central_Bank]]'
+  relation: open_economy_extension
+date_created: '2026-05-25'
+date_updated: '2026-05-25'
 ---
 
 ## Standard vs Enhanced Taylor Rule

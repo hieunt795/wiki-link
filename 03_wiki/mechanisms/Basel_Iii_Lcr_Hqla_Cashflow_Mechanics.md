@@ -1,55 +1,57 @@
 ---
 node_id: basel_iii_lcr_hqla_cashflow_mechanics_001
 type: mechanism
-title: "Basel III LCR: HQLA Stock and 30-Day Net Cash Outflow Mechanics"
+title: 'Basel III LCR: HQLA Stock and 30-Day Net Cash Outflow Mechanics'
 aliases:
-  - LCR Basel III
-  - Liquidity Coverage Ratio
-  - HQLA classification
-  - tỷ lệ bao phủ thanh khoản
-  - LCR HQLA
-  - run-off rates LCR
+- LCR Basel III
+- Liquidity Coverage Ratio
+- HQLA classification
+- tỷ lệ bao phủ thanh khoản
+- LCR HQLA
+- run-off rates LCR
 domain:
   primary: basel_risk
   secondary:
-    - financial_markets
+  - financial_markets
 tags:
-  - lcr
-  - hqla
-  - liquidity
-  - run_off_rates
-  - stress_scenario
-  - level1_level2
-  - 30day_horizon
-  - basel3
+- lcr
+- hqla
+- liquidity
+- run_off_rates
+- stress_scenario
+- level1_level2
+- 30day_horizon
+- basel3
 confidence: 3
 stability: stable
-thesis: >
-  The LCR requires banks to hold a stock of unencumbered HQLA ≥ 100% of total
-  net cash outflows over a 30-day combined idiosyncratic and market-wide stress
-  scenario; HQLA is tiered into Level 1 (no limit, no haircut), Level 2A (≤40%
-  of stock; 15% haircut), and Level 2B (≤15% of stock; 25–50% haircuts), while
-  the outflow denominator applies product-specific run-off rates (retail stable
-  3–5%, less stable ≥10%; wholesale operational 25%; non-financial corporate 40%;
-  financial institution 100%) capped such that net inflows cannot reduce required
-  outflows by more than 75%.
+thesis: 'The LCR requires banks to hold a stock of unencumbered HQLA ≥ 100% of total
+  net cash outflows over a 30-day combined idiosyncratic and market-wide stress scenario;
+  HQLA is tiered into Level 1 (no limit, no haircut), Level 2A (≤40% of stock; 15%
+  haircut), and Level 2B (≤15% of stock; 25–50% haircuts), while the outflow denominator
+  applies product-specific run-off rates (retail stable 3–5%, less stable ≥10%; wholesale
+  operational 25%; non-financial corporate 40%; financial institution 100%) capped
+  such that net inflows cannot reduce required outflows by more than 75%.
+
+  '
 source_refs:
-  - path: 02_sources/regulator/bcbs/BaselFramework.md
-    pages: "LCR20 (stress scenario, 100% minimum, reporting), LCR30 (HQLA definition and levels), LCR40 (cash outflows and inflows)"
-    weight: primary
+- path: 02_sources/regulator/bcbs/BaselFramework.md
+  pages: LCR20 (stress scenario, 100% minimum, reporting), LCR30 (HQLA definition
+    and levels), LCR40 (cash outflows and inflows)
+  weight: primary
+parent_node: '[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]'
 related:
-  - node: "[[Basel_Iii_Nsfr_Available_Required_Stable_Funding]]"
-    relation: complementary_liquidity_standard
-  - node: "[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]"
-    relation: part_of_four_constraints
-  - node: "[[Basel_Iii_Leverage_Ratio_Non_Rwa_Capital_Constraint]]"
-    relation: balance_sheet_constraint_peer
-  - node: "[[Slr_Lcr_Balance_Sheet_Constraints_Treasury_Market_Dealer]]"
-    relation: us_dealer_transmission
-  - node: "[[Bank_Alm_Structural_Liquidity_Management_Nsfr_Lcr_Framework]]"
-    relation: alm_implementation_context
-date_created: "2026-05-26"
-date_updated: "2026-05-26"
+- node: '[[Basel_Iii_Nsfr_Available_Required_Stable_Funding]]'
+  relation: complementary_liquidity_standard
+- node: '[[Basel_Iii_Capital_And_Liquidity_Constraint_Mechanics]]'
+  relation: part_of_four_constraints
+- node: '[[Basel_Iii_Leverage_Ratio_Non_Rwa_Capital_Constraint]]'
+  relation: balance_sheet_constraint_peer
+- node: '[[Slr_Lcr_Balance_Sheet_Constraints_Treasury_Market_Dealer]]'
+  relation: us_dealer_transmission
+- node: '[[Bank_Alm_Structural_Liquidity_Management_Nsfr_Lcr_Framework]]'
+  relation: alm_implementation_context
+date_created: '2026-05-26'
+date_updated: '2026-05-26'
 ---
 
 ## Overview

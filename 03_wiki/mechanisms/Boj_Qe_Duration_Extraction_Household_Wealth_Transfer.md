@@ -30,6 +30,7 @@ source_refs:
 - path: 02_sources/Clipping/What about Japan_ (Part II).md
   pages: ''
   weight: primary
+parent_node: null
 related: []
 date_created: '2026-05-23'
 date_updated: '2026-05-23'

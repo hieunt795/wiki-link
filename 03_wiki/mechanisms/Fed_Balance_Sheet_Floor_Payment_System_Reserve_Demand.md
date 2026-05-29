@@ -24,11 +24,19 @@ tags:
 - repo
 confidence: 1
 stability: stable
-thesis: "The U.S. payment system (Fedwire ~$7.3T/day) creates a structural floor on the size of the Fed's balance sheet: large banks (GSIBs) are unwilling to use Fed liquidity facilities (daylight overdrafts, Discount Window, Standing Repo) due to regulatory stigma and post-GFC liquidity regulation self-sufficiency requirements, so they pre-load opening reserve balances instead; when QT reduces reserves below this floor, banks throttle outgoing payments, creating a self-fulfilling liquidity crunch with repo rates spiking far above IORB — as on September 17, 2019, when SOFR spiked 315bps above IORB."
+thesis: 'The U.S. payment system (Fedwire ~$7.3T/day) creates a structural floor on
+  the size of the Fed''s balance sheet: large banks (GSIBs) are unwilling to use Fed
+  liquidity facilities (daylight overdrafts, Discount Window, Standing Repo) due to
+  regulatory stigma and post-GFC liquidity regulation self-sufficiency requirements,
+  so they pre-load opening reserve balances instead; when QT reduces reserves below
+  this floor, banks throttle outgoing payments, creating a self-fulfilling liquidity
+  crunch with repo rates spiking far above IORB — as on September 17, 2019, when SOFR
+  spiked 315bps above IORB.'
 source_refs:
 - path: 02_sources/books/duffie_bpea_payments_2026/Duffie_BPEA_Payments_Liquidity_2026.md
   pages: lines 1-320 (Sections I, II, III — Abstract through Searching for Ampleness)
   weight: primary
+parent_node: null
 related:
 - node: '[[Fed Policy Rate Shift EFFR To Secured Rate TGCR]]'
   relation: extends

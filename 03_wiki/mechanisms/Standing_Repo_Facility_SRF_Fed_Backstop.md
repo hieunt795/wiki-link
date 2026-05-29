@@ -3,49 +3,48 @@ node_id: standing_repo_facility_srf_mec_001
 type: mechanism
 title: Standing Repo Facility (SRF) Fed Backstop
 aliases:
-  - SRF
-  - Standing Repo
-  - Fed Repo Backstop
-  - Dealer of Last Resort
-  - Trần lãi suất Repo (SRF)
+- SRF
+- Standing Repo
+- Fed Repo Backstop
+- Dealer of Last Resort
+- Trần lãi suất Repo (SRF)
 domain:
   primary: monetary_policy
 tags:
-  - fed
-  - repo
-  - srf
-  - liquidity
-  - backstop
-  - sofr
-  - primary_dealer
-
+- fed
+- repo
+- srf
+- liquidity
+- backstop
+- sofr
+- primary_dealer
 confidence: 4
 stability: stable
+thesis: 'The Standing Repo Facility (SRF) is the Federal Reserve''s "upper jaw" in
+  its interest rate corridor, designed to cap secured overnight rates (SOFR) and serve
+  as a "dealer of last resort" for primary dealers and banks during liquidity stress.
 
-thesis: >
-  The Standing Repo Facility (SRF) is the Federal Reserve's "upper jaw" in its interest rate corridor, designed to cap secured overnight rates (SOFR) and serve as a "dealer of last resort" for primary dealers and banks during liquidity stress.
-
+  '
 source_refs:
-  - path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
-    pages: "169-175, 481-489"
-    weight: primary
-  - path: 02_sources/books/conks/Conk - Repo.md
-    pages: "227-243, 324, 1073-1252"
-    weight: primary
-  - path: 02_sources/books/conks/Conks - Plumping note (Money market.md
-    pages: "902-940"
-    weight: supporting
-
+- path: 02_sources/books/conks/Conks - Fed's Policies and Facilities.md
+  pages: 169-175, 481-489
+  weight: primary
+- path: 02_sources/books/conks/Conk - Repo.md
+  pages: 227-243, 324, 1073-1252
+  weight: primary
+- path: 02_sources/books/conks/Conks - Plumping note (Money market.md
+  pages: 902-940
+  weight: supporting
+parent_node: null
 related:
-  - node: "[[Fed Ample Reserves Rate Control Framework]]"
-    relation: operational_framework
-  - node: "[[Fed Overnight Reverse Repo ON RRP]]"
-    relation: floor_counterpart
-  - node: "[[SOFR — Secured Overnight Financing Rate]]"
-    relation: target_benchmark
-  - node: "[[BTFP SVB Crisis and Fed Emergency Lending Evolution]]"
-    relation: emergency_lending_context
-
+- node: '[[Fed Ample Reserves Rate Control Framework]]'
+  relation: operational_framework
+- node: '[[Fed Overnight Reverse Repo ON RRP]]'
+  relation: floor_counterpart
+- node: '[[SOFR — Secured Overnight Financing Rate]]'
+  relation: target_benchmark
+- node: '[[BTFP SVB Crisis and Fed Emergency Lending Evolution]]'
+  relation: emergency_lending_context
 date_created: 2026-05-22
 date_updated: 2026-05-24
 ---
