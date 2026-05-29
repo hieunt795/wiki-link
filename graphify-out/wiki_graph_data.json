@@ -5,7 +5,7 @@
       "title": "ALM Evolution — Historical to Modern",
       "type": "concept",
       "domain": "alm",
-      "confidence": 1,
+      "confidence": 3,
       "tags": [
         "alm",
         "history",
@@ -14,7 +14,7 @@
         "off_balance_sheet",
         "irrbb"
       ],
-      "thesis": "[LLM] ALM has evolved through six distinct conceptual eras from the 1950s to the present, driven by successive waves of regulatory change, financial innovation, and crisis response: from the minimal-intervention model of regulated interest rate environments, through the emergence of gap analysis and duration immunization in the 1970s–80s, the adoption of off-balance-sheet derivative hedging in the 1980s–90s, Basel-driven balance sheet restrictions in the 1990s–2000s, the low-margin compression era of the 2010s, and finally the current integrated optimization model that simultaneously manages IRR, liquidity, capital, and funding cost under multi-dimensional regulatory constraints.",
+      "thesis": "ALM has evolved through six distinct conceptual eras from the 1950s to the present, driven by successive waves of regulatory change, financial innovation, and crisis response: from the minimal-intervention model of regulated interest rate environments, through the emergence of gap analysis and duration immunization in the 1970s–80s, the adoption of off-balance-sheet derivative hedging in the 1980s–90s, Basel-driven balance sheet restrictions in the 1990s–2000s, the low-margin compression era of the 2010s, and finally the current integrated optimization model that simultaneously manages IRR, liquidity, capital, and funding cost under multi-dimensional regulatory constraints.",
       "stability": "stable",
       "date_updated": "2026-05-28"
     },
@@ -240,14 +240,14 @@
       "title": "Credit Spread Risk in the Banking Book (CSRBB)",
       "type": "concept",
       "domain": "alm",
-      "confidence": 1,
+      "confidence": 3,
       "tags": [
         "credit-spread",
         "hazard-rate",
         "reduced-form",
         "duration"
       ],
-      "thesis": "CSRBB is the sensitivity of banking book economic value to changes in credit spreads independent of default events, measured via three modelling approaches (cashflow/hazard rate, credit-spread-adjusted discount, and OAS) that each imply different effective durations; the cashflow model most accurately captures duration shortening from default-contingent early termination, while the OAS model overstates duration by ignoring it. [LLM]",
+      "thesis": "CSRBB is the sensitivity of banking book economic value to changes in credit spreads, included for the first time in BCBS IRRBB standards (2016). Three modelling approaches each imply different effective durations: the cashflow/hazard rate model captures duration shortening from default-contingent early termination; the credit-spread-adjusted discount model overstates duration by ignoring reduced asset lifetime; the OAS model produces the longest (most overstated) duration. Preferred method depends on data availability and portfolio default risk profile.",
       "stability": "stable",
       "date_updated": "2026-05-28"
     },
@@ -944,7 +944,7 @@
       "title": "SVB 2023 Failure — ALM Lessons",
       "type": "concept",
       "domain": "alm",
-      "confidence": 1,
+      "confidence": 3,
       "tags": [
         "SVB",
         "duration-mismatch",
@@ -952,7 +952,7 @@
         "concentration-risk",
         "governance-failure"
       ],
-      "thesis": "The SVB failure in March 2023 exemplifies how unhedged duration mismatch in a held-to-maturity bond portfolio, combined with a concentrated correlated depositor base and governance failures (vacant CRO, model manipulation), can convert a mark-to-model paper loss into a catastrophic liquidity run: a $15.2bn realized loss triggered a 60% deposit outflow in 48 hours, rendering the bank insolvent. [LLM]",
+      "thesis": "\"Silicon Valley Bank failed because of a textbook case of mismanagement by the bank. Its senior leadership failed to manage basic interest rate and liquidity risk. Its board of directors failed to oversee senior leadership and hold them accountable. And Federal Reserve supervisors failed to take forceful enough action.\" (Michael S. Barr, Vice Chair for Supervision, Federal Reserve). Hidden USD 15.2bn unrealized loss in USD 95bn HTM portfolio; duration gap ~3 years; >88% uninsured concentrated depositor base; 8 months without a CRO.",
       "stability": "stable",
       "date_updated": "2026-05-28"
     },
@@ -1416,7 +1416,7 @@
       "title": "ALM Operating Model — Front Office vs Middle Office",
       "type": "framework",
       "domain": "alm",
-      "confidence": 1,
+      "confidence": 3,
       "tags": [
         "ALM-operating-model",
         "front-office",
@@ -1426,7 +1426,7 @@
         "lines-of-defense",
         "FTP"
       ],
-      "thesis": "Banks organize ALM/Treasury in two contrasted operating models — front office (executes deals, profit center, has full operational mandate) vs middle office (analytical and strategic, no direct deal execution) — to prevent conflicts of interest; ALM cannot be merged into Risk, Trading Desk, or Finance because each pairing creates disqualifying conflicts; ALCO is the de-escalation mechanism that ensures cross-functional representation in balance sheet decisions. [LLM]",
+      "thesis": "Banks organize ALM/Treasury in two contrasted operating models — front office (executes deals, profit center with KPIs on trading operations) vs middle office (analytical and strategic, no direct deal execution) — because one department cannot set limits on positions AND execute deals for those positions, construct an internal yield curve AND make deals with margin to that curve simultaneously without conflict of interest.",
       "stability": "stable",
       "date_updated": "2026-05-28"
     },
@@ -1435,7 +1435,7 @@
       "title": "ALM Role in SREP and Pillar 2 Capital/Liquidity Requirements",
       "type": "framework",
       "domain": "alm",
-      "confidence": 1,
+      "confidence": 3,
       "tags": [
         "SREP",
         "Pillar2",
@@ -1445,7 +1445,7 @@
         "ICAAP",
         "ILAAP"
       ],
-      "thesis": "The Supervisory Review and Evaluation Process (SREP) evaluates banks across four areas (business model, governance, capital risks, liquidity risks) and imposes a Pillar 2 Requirement (P2R) as an individual add-on above Pillar 1; together they form the TSCR = P1 + P2R, which must be met at all times including stress; Pillar 2 Guidance (P2G) is then added based on stress test results as a soft buffer above OCR; ALM's primary SREP exposure is IRRBB (capital), ILAAP (liquidity), and funding plan credibility. [LLM]",
+      "thesis": "SREP is a mechanism in Pillar II of Basel III to ensure banks have sufficient capital for all associated risks; it evaluates banks across four areas (business model, governance, risks to capital, risks to liquidity) and imposes a Pillar 2 Requirement (P2R) as an individual capital add-on. ALM participates in all four areas, with primary responsibility for IRRBB (risks to capital), ILAAP (risks to liquidity), and funding/capital planning (business model analysis).",
       "stability": "stable",
       "date_updated": "2026-05-28"
     },
@@ -1454,7 +1454,7 @@
       "title": "ALM in Recovery and Resolution — MREL, Bail-In, and BRRD",
       "type": "framework",
       "domain": "alm",
-      "confidence": 1,
+      "confidence": 3,
       "tags": [
         "resolution",
         "MREL",
@@ -1463,7 +1463,7 @@
         "recovery-planning",
         "gone-concern"
       ],
-      "thesis": "Under the BRRD framework, a bank that exhausts recovery options enters resolution via one of four tools (sale-of-business, bridge institution, asset separation, bail-in); the bail-in tool absorbs losses by writing down or converting eligible MREL liabilities into equity; ALM is responsible for MREL forecasting in the funding plan, gone-concern ICAAP/ILAAP execution, and providing the resolution authority with resolvability evidence on capital, liquidity, and operational continuity. [LLM]",
+      "thesis": "Local regulatory (resolution) authorities decide on resolution strategy; banks receive an MREL target as a result. MREL target = LAA + RCA + MCC (per updated 2020 SRB logic). ALM is responsible for raising and maintaining MREL-eligible funding, MREL forecasting in the funding plan, and gone-concern ICAAP/ILAAP execution. If no systemic importance is found, the bank may go under common liquidation with no MREL add-on.",
       "stability": "stable",
       "date_updated": "2026-05-28"
     },
@@ -1472,7 +1472,7 @@
       "title": "ALM in a Low/Negative Interest Rate Environment",
       "type": "framework",
       "domain": "alm",
-      "confidence": 1,
+      "confidence": 3,
       "tags": [
         "low-rate",
         "negative-rate",
@@ -1482,7 +1482,7 @@
         "swaption",
         "interest-rate-floor"
       ],
-      "thesis": "In a low/negative interest rate environment, ALM faces a structural dilemma because deposit beta collapses near zero (breaking standard rate-sensitivity models), retail deposits cannot be priced below zero creating a floor risk that produces nonlinear NII losses in negative rate scenarios, and countermeasures — including receiver swaptions, interest rate floors, fee introduction, and maturity extension — involve explicit trade-offs between NII stability (balance sheet A) and EVE stability (balance sheet B). [LLM]",
+      "thesis": "In a low/negative interest rate environment, ALM functions face new challenges: customers may behave differently (challenging product modelling assumptions), certain products reveal inherent optionalities, and the objective of stabilising NII becomes difficult to achieve. A bank cannot easily protect against ΔEVe impact and simultaneously stabilise NII — the composition that reduces NII volatility in a normal environment does not work in zero/negative rate environments.",
       "stability": "stable",
       "date_updated": "2026-05-28"
     },
@@ -1491,14 +1491,14 @@
       "title": "ALM in the Enterprise Risk Management Framework",
       "type": "framework",
       "domain": "alm",
-      "confidence": 1,
+      "confidence": 3,
       "tags": [
         "risk appetite",
         "earnings-at-risk",
         "revaluation-reserve",
         "governance"
       ],
-      "thesis": "ALM operates within the enterprise risk management (ERM) cycle as the governance mechanism that translates board-level risk appetite statements into balance sheet constraints on interest rate, liquidity, and capital risk; the five-step ERM cycle (identify → select controls → implement → monitor → report) and the ALCO committee structure jointly ensure that structural risks are hedged or capitalized within approved tolerances. [LLM]",
+      "thesis": "One of the key lessons from the 2008–9 financial crisis was that banks need a comprehensive risk appetite framework based on the principle that banks should be able to restore their capital and liquidity positions following a stress situation. ALM operates within a five-step annual risk management cycle (identify → select → control → monitor → report) governed through ALCO or risk committee structures with board representation, targeting a CET1 ratio that does not drop below set thresholds under stress.",
       "stability": "stable",
       "date_updated": "2026-05-28"
     },
@@ -2324,14 +2324,14 @@
       "title": "IRRBB Standardised vs Internal Model Approach — Practitioner Perspective",
       "type": "framework",
       "domain": "alm",
-      "confidence": 1,
+      "confidence": 3,
       "tags": [
         "supervisory-outlier-test",
         "standardised-approach",
         "internal-model",
         "regulatory-shocks"
       ],
-      "thesis": "BCBS 2016 (d368) adopted a principles-based Pillar 2 framework rather than a mandatory Pillar 1 standardised capital charge for IRRBB, structuring 12 principles that require banks to measure both EVE and NII under six regulatory rate shocks and apply a supervisory outlier test (SOT) that triggers enhanced scrutiny when the worst-case ΔEVe exceeds 15% of Tier 1 capital. [LLM]",
+      "thesis": "BCBS 2016 (d368) adopted a principles-based Pillar 2 framework rather than a mandatory Pillar 1 standardised capital charge for IRRBB — regulators and practitioners largely agreed this was the appropriate approach given the complexity and heterogeneity of banking business models. The framework structures 12 principles requiring measurement of both EVE and NII, and introduces a supervisory outlier test (SOT) where EVE decline exceeding 15% of Tier 1 capital triggers supervisory review.",
       "stability": "stable",
       "date_updated": "2026-05-28"
     },
@@ -4471,7 +4471,7 @@
       "title": "Hedge Accounting IFRS 9 for ALM Banking Book",
       "type": "mechanism",
       "domain": "alm",
-      "confidence": 1,
+      "confidence": 3,
       "tags": [
         "IFRS9",
         "hedge-accounting",
@@ -4480,7 +4480,7 @@
         "cash-flow-hedge",
         "OCI"
       ],
-      "thesis": "IFRS 9 replaced IAS 39 hedge accounting by eliminating the ex-post effectiveness test requirement (the 80–125% range) and aligning hedge designation with the bank's actual risk management strategy; four asset classification categories determine P&L vs OCI treatment; basis risk can be designated as a separate hedged component; but portfolio macro hedging remains under IAS 39 pending IASB completion of its portfolio hedging project. [LLM]",
+      "thesis": "IFRS 9 replaced IAS 39 hedge accounting (final rules published July 24, 2014; EU endorsed November 29, 2016) by eliminating the ex-post 80–120% effectiveness test, extending hedged items to include derivatives in documented hedge groups, and aligning hedge designation with actual risk management strategy. Four asset classification categories determine P&L vs OCI treatment. Portfolio macro hedging remains under IAS 39 pending IASB portfolio hedging project completion.",
       "stability": "stable",
       "date_updated": "2026-05-28"
     },
@@ -4653,7 +4653,7 @@
       "title": "Interest Rate Basis Risk Measurement in ALM",
       "type": "mechanism",
       "domain": "alm",
-      "confidence": 1,
+      "confidence": 3,
       "tags": [
         "basis-risk",
         "multi-curve",
@@ -4661,7 +4661,7 @@
         "gap-analysis",
         "key-rate-duration"
       ],
-      "thesis": "Post-2008, basis spreads between EURIBOR tenors and between IBOR and OIS became material and persistent, requiring ALM to shift from a single-curve to a multi-curve framework where OIS rates are used for discounting and separate forward curves are constructed per tenor; gap-based NII sensitivity and key-rate duration arrays (6–10 buckets) are then applied to manage non-parallel rate shocks and tenor-specific repricing mismatches. [LLM]",
+      "thesis": "Interest rate basis risk derives from imperfect correlation between rates to which different instruments are indexed; the global financial crisis dramatically increased the volatility of quoted basis spreads, which were previously essentially stable. Gap analysis measures NII sensitivity over 1–2 year horizons; the economic value approach captures long-term effects of rate changes via present value of all cashflows. BCBS IRRBB 2016 requires both earnings and economic value perspectives.",
       "stability": "stable",
       "date_updated": "2026-05-28"
     },
@@ -4877,7 +4877,7 @@
       "title": "Mortgage Prepayment Risk and ALM Management",
       "type": "mechanism",
       "domain": "alm",
-      "confidence": 1,
+      "confidence": 3,
       "tags": [
         "mortgage",
         "prepayment",
@@ -4885,7 +4885,7 @@
         "S-curve",
         "stochastic-EaR"
       ],
-      "thesis": "Mortgage prepayment risk arises from four distinct borrower behaviors (turnover, rate-driven refinancing, cash-out refinancing, and default) that produce negative convexity in mortgage cash flows; the aggregate prepayment speed (CPR) drives MBS valuation via OAS pricing, and ALM must use stochastic earnings-at-risk rather than static gap analysis because hedge rebalancing costs materialize as rate volatility increases. [LLM]",
+      "thesis": "Mortgage prepayment risk arises from four distinct borrower behaviors (turnover, rate-driven refinancing, cash-out refinancing, and default) that produce negative convexity in mortgage cash flows; the aggregate prepayment speed (CPR) drives MBS valuation via OAS pricing, and ALM must use stochastic earnings-at-risk rather than static gap analysis because hedge rebalancing costs from dynamic delta hedging materialize as rate volatility increases.",
       "stability": "stable",
       "date_updated": "2026-05-28"
     },
@@ -4930,7 +4930,7 @@
       "title": "NMD Decay Model and Volume Segmentation",
       "type": "mechanism",
       "domain": "alm",
-      "confidence": 1,
+      "confidence": 3,
       "tags": [
         "non-maturity-deposits",
         "decay-model",
@@ -4939,7 +4939,7 @@
         "average-life",
         "logistic-regression"
       ],
-      "thesis": "Deposit decay modeling estimates the expected outflow rate of non-maturity deposits (NMDs) by defining \"end of life\" via logistic regression on threshold-breach variables, computing average life via midpoint or monthly granular techniques, and segmenting the portfolio to maximize cross-segment behavioral variance so that each segment can be independently modeled and replicated. [LLM]",
+      "thesis": "Deposit decay modeling estimates the expected remaining life of non-maturity deposits (NMDs) by defining \"end of life\" via logistic regression on threshold-breach variables, computing average life via annual midpoint or monthly granular techniques, and segmenting the portfolio so that within-segment behavior is homogeneous while cross-segment behavioral variance is maximized, enabling each segment to be independently modeled and replicated.",
       "stability": "stable",
       "date_updated": "2026-05-28"
     },
@@ -4948,7 +4948,7 @@
       "title": "NMD Stochastic Three-Factor Model",
       "type": "mechanism",
       "domain": "alm",
-      "confidence": 1,
+      "confidence": 3,
       "tags": [
         "stochastic-model",
         "credit-spread",
@@ -4957,7 +4957,7 @@
         "floor-risk",
         "replicating-portfolio"
       ],
-      "thesis": "The Bohn stochastic three-factor NMD model drives deposit value via correlated Vasicek short rate, mean-reverting credit spread, and lognormal deposit volume processes; a Cholesky decomposition captures their correlations; and the risk appetite confidence level φ defines the replicating portfolio as the interest-rate hedge that covers deposit funding costs at the φ-percentile, with margin compression risk requiring raised hedge ratios before rates fall through the client-rate floor. [LLM]",
+      "thesis": "The Bohn stochastic three-factor NMD model drives deposit value via correlated short rate, credit spread, and deposit volume processes; a Cholesky decomposition of the correlation matrix captures interdependencies; the risk appetite confidence level φ defines the replicating portfolio as the interest-rate hedge covering deposit funding costs at the φ-percentile; margin compression risk — from market rates falling to the client-rate floor — requires raising hedge ratios before rates breach zero.",
       "stability": "stable",
       "date_updated": "2026-05-28"
     },
