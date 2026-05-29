@@ -233,15 +233,7 @@
       "ALCO",
       "conflicts-of-interest",
       "lines-of-defense",
-      "FTP",
-      {
-        "node": "[[ALM]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[ALCO]]",
-        "relation": "related_to"
-      }
+      "FTP"
     ],
     "domain": "alm"
   },
@@ -357,30 +349,6 @@
     "confidence": 1,
     "thesis": "BCBS 2016 (d368) adopted a principles-based Pillar 2 framework rather than a mandatory Pillar 1 standardised capital charge for IRRBB, structuring 12 principles that require banks to measure both EVE and NII under six regulatory rate shocks and apply a supervisory outlier test (SOT) that triggers enhanced scrutiny when the worst-case ΔEVe exceeds 15% of Tier 1 capital. [LLM]\n",
     "tags": [
-      {
-        "node": "[[IRRBB]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[BCBS]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[Pillar2]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[EVE]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[NII]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[SOT]]",
-        "relation": "related_to"
-      },
       "supervisory-outlier-test",
       "standardised-approach",
       "internal-model",
@@ -460,19 +428,7 @@
       "P2G",
       "TSCR",
       "ICAAP",
-      "ILAAP",
-      {
-        "node": "[[ALM]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[IRRBB]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[Basel_III]]",
-        "relation": "related_to"
-      }
+      "ILAAP"
     ],
     "domain": "alm"
   },
@@ -905,25 +861,9 @@
       "negative-rate",
       "deposit-beta",
       "floor-risk",
-      {
-        "node": "[[NII]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[EVE]]",
-        "relation": "related_to"
-      },
       "margin-compression",
       "swaption",
-      "interest-rate-floor",
-      {
-        "node": "[[IRRBB]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[ALM]]",
-        "relation": "related_to"
-      }
+      "interest-rate-floor"
     ],
     "domain": "alm"
   },
@@ -964,15 +904,7 @@
       "bail-in",
       "BRRD",
       "recovery-planning",
-      "gone-concern",
-      {
-        "node": "[[ALM]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[Basel_III]]",
-        "relation": "related_to"
-      }
+      "gone-concern"
     ],
     "domain": "alm"
   },
@@ -1308,29 +1240,9 @@
     "confidence": 1,
     "thesis": "ALM operates within the enterprise risk management (ERM) cycle as the governance mechanism that translates board-level risk appetite statements into balance sheet constraints on interest rate, liquidity, and capital risk; the five-step ERM cycle (identify → select controls → implement → monitor → report) and the ALCO committee structure jointly ensure that structural risks are hedged or capitalized within approved tolerances. [LLM]\n",
     "tags": [
-      {
-        "node": "[[ALM]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[ERM]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[ALCO]]",
-        "relation": "related_to"
-      },
       "risk appetite",
-      {
-        "node": "[[CET1]]",
-        "relation": "related_to"
-      },
       "earnings-at-risk",
       "revaluation-reserve",
-      {
-        "node": "[[RWA]]",
-        "relation": "related_to"
-      },
       "governance"
     ],
     "domain": "alm"
@@ -2390,34 +2302,10 @@
     "confidence": 1,
     "thesis": "CSRBB is the sensitivity of banking book economic value to changes in credit spreads independent of default events, measured via three modelling approaches (cashflow/hazard rate, credit-spread-adjusted discount, and OAS) that each imply different effective durations; the cashflow model most accurately captures duration shortening from default-contingent early termination, while the OAS model overstates duration by ignoring it. [LLM]\n",
     "tags": [
-      {
-        "node": "[[CSRBB]]",
-        "relation": "related_to"
-      },
       "credit-spread",
       "hazard-rate",
       "reduced-form",
-      {
-        "node": "[[OAS]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[IRRBB]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[IFRS9]]",
-        "relation": "related_to"
-      },
-      "duration",
-      {
-        "node": "[[LGD]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[ALM]]",
-        "relation": "related_to"
-      }
+      "duration"
     ],
     "domain": "alm"
   },
@@ -2550,19 +2438,7 @@
       "duration-mismatch",
       "HTM-portfolio",
       "concentration-risk",
-      "governance-failure",
-      {
-        "node": "[[IRRBB]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[ALM]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[NMD]]",
-        "relation": "related_to"
-      }
+      "governance-failure"
     ],
     "domain": "alm"
   },
@@ -3899,32 +3775,8 @@
     "tags": [
       "mortgage",
       "prepayment",
-      {
-        "node": "[[MBS]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[CPR]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[OAS]]",
-        "relation": "related_to"
-      },
       "negative-convexity",
-      {
-        "node": "[[MSR]]",
-        "relation": "related_to"
-      },
       "S-curve",
-      {
-        "node": "[[IRRBB]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[ALM]]",
-        "relation": "related_to"
-      },
       "stochastic-EaR"
     ],
     "domain": "alm"
@@ -4578,15 +4430,7 @@
       "IAS39",
       "fair-value-hedge",
       "cash-flow-hedge",
-      "OCI",
-      {
-        "node": "[[IRRBB]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[ALM]]",
-        "relation": "related_to"
-      }
+      "OCI"
     ],
     "domain": "alm"
   },
@@ -4851,24 +4695,12 @@
     "confidence": 1,
     "thesis": "Deposit decay modeling estimates the expected outflow rate of non-maturity deposits (NMDs) by defining \"end of life\" via logistic regression on threshold-breach variables, computing average life via midpoint or monthly granular techniques, and segmenting the portfolio to maximize cross-segment behavioral variance so that each segment can be independently modeled and replicated. [LLM]\n",
     "tags": [
-      {
-        "node": "[[NMD]]",
-        "relation": "related_to"
-      },
       "non-maturity-deposits",
       "decay-model",
       "behavioralization",
       "deposit-segmentation",
       "average-life",
-      "logistic-regression",
-      {
-        "node": "[[IRRBB]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[ALM]]",
-        "relation": "related_to"
-      }
+      "logistic-regression"
     ],
     "domain": "alm"
   },
@@ -5739,28 +5571,12 @@
     "confidence": 1,
     "thesis": "The Bohn stochastic three-factor NMD model drives deposit value via correlated Vasicek short rate, mean-reverting credit spread, and lognormal deposit volume processes; a Cholesky decomposition captures their correlations; and the risk appetite confidence level φ defines the replicating portfolio as the interest-rate hedge that covers deposit funding costs at the φ-percentile, with margin compression risk requiring raised hedge ratios before rates fall through the client-rate floor. [LLM]\n",
     "tags": [
-      {
-        "node": "[[NMD]]",
-        "relation": "related_to"
-      },
       "stochastic-model",
-      {
-        "node": "[[Vasicek]]",
-        "relation": "related_to"
-      },
       "credit-spread",
       "Monte-Carlo",
-      {
-        "node": "[[Cholesky]]",
-        "relation": "related_to"
-      },
       "margin-compression",
       "floor-risk",
-      "replicating-portfolio",
-      {
-        "node": "[[IRRBB]]",
-        "relation": "related_to"
-      }
+      "replicating-portfolio"
     ],
     "domain": "alm"
   },
@@ -5886,30 +5702,10 @@
     "thesis": "Post-2008, basis spreads between EURIBOR tenors and between IBOR and OIS became material and persistent, requiring ALM to shift from a single-curve to a multi-curve framework where OIS rates are used for discounting and separate forward curves are constructed per tenor; gap-based NII sensitivity and key-rate duration arrays (6–10 buckets) are then applied to manage non-parallel rate shocks and tenor-specific repricing mismatches. [LLM]\n",
     "tags": [
       "basis-risk",
-      {
-        "node": "[[IRRBB]]",
-        "relation": "related_to"
-      },
       "multi-curve",
-      {
-        "node": "[[EURIBOR]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[OIS]]",
-        "relation": "related_to"
-      },
       "tenor-basis",
       "gap-analysis",
-      "key-rate-duration",
-      {
-        "node": "[[NII]]",
-        "relation": "related_to"
-      },
-      {
-        "node": "[[PV01]]",
-        "relation": "related_to"
-      }
+      "key-rate-duration"
     ],
     "domain": "alm"
   },
