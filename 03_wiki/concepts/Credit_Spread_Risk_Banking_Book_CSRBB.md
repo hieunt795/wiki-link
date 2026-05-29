@@ -3,8 +3,7 @@ node_id: credit_spread_risk_banking_book_csrbb_001
 type: concept
 title: Credit Spread Risk in the Banking Book (CSRBB)
 aliases:
-- node: '[[CSRBB]]'
-  relation: related_to
+- CSRBB
 - credit spread risk banking book
 - hazard rate model CSRBB
 - OAS banking book
@@ -20,14 +19,15 @@ tags:
 - hazard-rate
 - reduced-form
 - duration
-confidence: 1
+confidence: 3
 stability: stable
 thesis: 'CSRBB is the sensitivity of banking book economic value to changes in credit
-  spreads independent of default events, measured via three modelling approaches (cashflow/hazard
-  rate, credit-spread-adjusted discount, and OAS) that each imply different effective
-  durations; the cashflow model most accurately captures duration shortening from
-  default-contingent early termination, while the OAS model overstates duration by
-  ignoring it. [LLM]
+  spreads, included for the first time in BCBS IRRBB standards (2016). Three modelling
+  approaches each imply different effective durations: the cashflow/hazard rate model
+  captures duration shortening from default-contingent early termination; the credit-spread-adjusted
+  discount model overstates duration by ignoring reduced asset lifetime; the OAS model
+  produces the longest (most overstated) duration. Preferred method depends on data
+  availability and portfolio default risk profile.
 
   '
 source_refs:
@@ -57,89 +57,56 @@ date_created: '2026-05-28'
 date_updated: '2026-05-28'
 ---
 
-## Thesis
+## Overview
 
-CSRBB is the sensitivity of banking book economic value to changes in credit spreads independent of default events. [LLM] Three modelling approaches each imply different effective durations: the cashflow/hazard rate model is most accurate as it captures duration shortening from default-contingent early termination; the OAS model overstates duration by ignoring this effect. [LLM]
+ALM risk management has traditionally focused on interest rate risk, but BCBS IRRBB standards published in 2016 include credit spread risk as an additional component, as changes in credit spreads could amplify the risk arising from IRRBB. [RAW-Elkenbracht-Huizing ch.11 p.1]
 
-## Definition and Scope
-
-**CSRBB** = the risk that the market value of a banking book instrument changes due to a widening or tightening of credit spreads, even in the absence of an actual default. [LLM]
-
-BCBS IRRBB Principle 2 requires that CSRBB be monitored and managed separately from IRRBB proper (interest rate risk from risk-free rate movements). [LLM] Key distinctions: [LLM]
-
-- **IRRBB** = sensitivity to risk-free interest rate changes (OIS/government curve). [LLM]
-- **CSRBB** = sensitivity to issuer/sector credit spread changes (corporate spread, covered bond spread, sovereign spread above risk-free). [LLM]
-- **Credit risk** = probability of default and expected loss → captured separately in ECL (IFRS 9) and credit RWA. [LLM]
+BCBS standards define CSRBB scope as: only market credit risk and liquidity risk are included; idiosyncratic credit risk and duration risk are excluded. Creating a credit spread free of other components is a challenge because it is usually impossible to distinguish these elements in market prices. [RAW-Elkenbracht-Huizing ch.11 p.1]
 
 ## Reduced-Form Valuation Framework
 
-In the reduced-form approach, the yield on a defaultable instrument is decomposed as: [LLM]
+Under the reduced-form approach (Jarrow and Turnbull 1995; Duffie and Singleton 1999), the price of a claim with default risk is expressed as the present value of the promised payoff discounted at the **default-adjusted short rate**: [RAW-Elkenbracht-Huizing ch.11 p.2]
 
-> **R(t) ≈ r(t) + λ(t) × L(t)** [LLM]
+> **R_t ≈ r_t + λ_t × L_t**
 
-Where: [LLM]
-- r(t) = risk-free short rate (OIS) [LLM]
-- λ(t) = hazard rate (instantaneous default probability per unit time) [LLM]
-- L(t) = Loss Given Default (LGD), fraction of notional lost on default [LLM]
-- λ(t) × L(t) = default-adjusted credit spread [LLM]
+Where λ_t is the hazard rate (conditional default probability at time t) and L_t is the LGD. The credit spread equals λ_t × L_t — the expected loss rate per period. A high recovery rate (low LGD) produces a reduced equivalent credit spread. [RAW-Elkenbracht-Huizing ch.11 p.2]
 
-The default-adjusted discount rate thus equals the risk-free rate plus the expected loss rate per period. [LLM]
+## Three Modelling Approaches and Duration Effects
 
-## Three CSRBB Modelling Approaches
+The impact of credit spreads on Market Value of Equity (MVE) can be modelled via three approaches that are equivalent in market value but **differ in duration sensitivity**: [RAW-Elkenbracht-Huizing ch.11 p.3]
 
-### Approach 1: Cashflow / Hazard Rate Model
+### 1. Cashflow / Hazard Rate Model
 
-- Cash flows are probability-weighted by survival probability: CF_k × Π(1 − λ_m dt) for m up to k. [LLM]
-- On default (probability λ dt per period), the cashflow terminates early and recovers R × notional at that point. [LLM]
-- **Duration effect:** early termination on default reduces the effective duration below that of a comparable risk-free bond. [LLM]
-- High recovery rate → shorter expected duration (more recovery cashflows arrive early on default). [LLM]
-- This is the most theoretically correct approach: it integrates credit risk directly into the cash flow timing model. [LLM]
+Adjusts cashflows by defaults and recovery — a default results in early termination of the asset, reducing the outstanding balance and resulting in a **shorter duration**. For products with a high default risk, this is the most suitable approach as the tolerance for variation is smallest. High recovery rate produces a shorter duration, as a greater proportion of the asset's value is paid off earlier. [RAW-Elkenbracht-Huizing ch.11 p.3]
 
-### Approach 2: Credit-Spread-Adjusted Discount Model
+### 2. Credit-Spread-Adjusted Discount Model
 
-- Cash flows are discounted at r(t) + credit_spread without adjusting the timing or probability of cash flows. [LLM]
-- A wider spread → higher discount rate → lower PV, giving a credit spread sensitivity. [LLM]
-- **Duration error:** this approach ignores the truncation of cash flows on default, so it **overstates effective duration** relative to the cashflow model, particularly at high recovery rates. [LLM]
-- Simple to implement but systematically biases CSRBB sensitivity upward. [LLM]
+Incorporates recovery as a reduced spread, but **fails to capture the reduced lifetime of the asset** (ignores lost interest). This omission causes the model to **overstate duration** — duration grows as recovery increases, because the method does not distinguish the reduced lifetime. [RAW-Elkenbracht-Huizing ch.11 p.3]
 
-### Approach 3: OAS (Option-Adjusted Spread) Model
+### 3. OAS Model
 
-- The OAS is calibrated so that the model price = market price after stripping out embedded optionality (calls, prepayment). [LLM]
-- Sensitivity to a shift in OAS gives the CSRBB measure. [LLM]
-- **Duration effect:** the OAS approach implicitly treats the instrument as having the full duration of the contractual cash flows, ignoring default-contingent termination. [LLM]
-- This produces the **longest effective duration** of the three approaches, and therefore overstates CSRBB sensitivity the most. [LLM]
-- Appropriate for instruments where optionality (not credit) is the primary concern; less accurate for pure credit spread risk. [LLM]
+Incorporates credit and prepayment aspects only via adjustment to the discount rate on contractual cashflows. As the OAS model only reflects the forfeited income or P&L consequence of a default, it is **not sensitive to the reduction in lifetime** from prepayments or defaults. This produces a **substantially longer duration** than the other approaches. Best applied for products with clear market prices. [RAW-Elkenbracht-Huizing ch.11 p.3]
 
-## Duration Comparison Across Approaches
+## Macroeconomic Drivers of Default
 
-For a hypothetical corporate bond with moderate recovery rate (LGD = 40%): [LLM]
+Key macroeconomic variables in credit default models: [RAW-Elkenbracht-Huizing ch.11 p.3]
 
-| Approach | Relative Duration | Recovery Rate Effect |
-|----------|------------------|----------------------|
-| Cashflow / hazard rate | Shortest (most accurate) | High recovery → shorter duration |
-| Credit-spread-adjusted discount | Medium | Recovery rate ignored |
-| OAS model | Longest (overstates sensitivity) | Recovery rate ignored |
+- **Unemployment rates** — higher unemployment → higher default probability
+- **House prices / LTV** — price falls reduce borrower's disincentive to default and reduce creditor recovery
+- **GDP growth** — contraction in economy drives adverse changes in unemployment and credit quality
 
-[LLM]
+The value of factoring in the interest rate–credit correlation for MVE sensitivity is "questionable" due to lagging effects, but is more important for stress testing and capital requirements. [RAW-Elkenbracht-Huizing ch.11 p.3]
 
-## Interaction with Interest Rate Risk
+## IFRS 9 and Double-Counting
 
-The relationship between credit spreads and interest rates is generally second-order for IRRBB measurement purposes but becomes important in stress scenarios: [LLM]
+IFRS 9 raises the question of consistency between behavioural assumptions for IRRBB and forward-looking provisions. If MVE results have already been adjusted for credit quality, the IFRS 9 provision is effectively already incorporated. Hedging both IFRS 9 provisions AND credit-spread-adjusted MVE figures would result in **increased valuation volatility rather than a reduction**, due to double counting. Any hedging should reflect one or the other, not both. [RAW-Elkenbracht-Huizing ch.11 p.2]
 
-- **Macro linkage:** in recession scenarios, credit spreads widen simultaneously with central bank rate cuts (flight to quality). [LLM]
-- **Unemployment → default intensity:** rising unemployment increases hazard rates λ(t). [LLM]
-- **LTV → recovery rates:** falling collateral values reduce L in real estate portfolios. [LLM]
-- **GDP growth:** declining growth widens corporate credit spreads across the board. [LLM]
+Care must be taken to avoid double counting with existing credit capital requirements on any assets introduced into the capital framework. [RAW-Elkenbracht-Huizing ch.11 p.4]
 
-These correlations mean that CSRBB stress scenarios must be consistent with the macro scenario driving the IRRBB stress, particularly in ICAAP and ILAAP stress testing. [LLM]
+## Implementation Guidance
 
-## IFRS 9 Double-Counting Avoidance
+- For products **with clear market prices**: OAS approach preferred.
+- For products **without market prices**: credit spread curves by sector, rating, or geography.
+- For portfolios with **high default risk**: cashflow estimation method most suitable (lower tolerance for variation). [RAW-Elkenbracht-Huizing ch.11 p.4]
 
-IFRS 9 Expected Credit Loss (ECL) provisions reduce the carrying value of financial assets for credit deterioration. [LLM] When measuring CSRBB-driven changes in economic value of equity (EVE), the credit-spread-driven revaluation must not double-count provisions already recognized in the P&L: [LLM]
-
-- For assets on amortised cost: the credit risk is captured in ECL, not in fair value; CSRBB is largely not applicable (unless the bank also computes a "shadow" economic value). [LLM]
-- For FVOCI instruments: credit-spread changes are recognized in OCI; CSRBB and IFRS 9 ECL interact in the regulatory capital calculation (unrealized OCI gains/losses flow through CET1). [LLM]
-- ALM must ensure that the CSRBB EVE calculation and IFRS 9 ECL provisions are not summed as independent risks for capital purposes. [LLM]
-
----
-*Source: Chapter 11 of Elkenbracht-Huizing, "The Handbook of ALM in Banking" (2nd ed., Risk Books 2017). All body sentences tagged [LLM] are synthesized from source material. Confidence: 1.*
+Calibrating the spread without market prices: use historical PD and recovery, or prevailing lending rates as a proxy adjusted by appropriate issuer spread. [RAW-Elkenbracht-Huizing ch.11 p.4]

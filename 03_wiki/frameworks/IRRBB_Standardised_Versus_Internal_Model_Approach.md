@@ -18,13 +18,14 @@ tags:
 - standardised-approach
 - internal-model
 - regulatory-shocks
-confidence: 1
+confidence: 3
 stability: stable
 thesis: 'BCBS 2016 (d368) adopted a principles-based Pillar 2 framework rather than
-  a mandatory Pillar 1 standardised capital charge for IRRBB, structuring 12 principles
-  that require banks to measure both EVE and NII under six regulatory rate shocks
-  and apply a supervisory outlier test (SOT) that triggers enhanced scrutiny when
-  the worst-case ΔEVe exceeds 15% of Tier 1 capital. [LLM]
+  a mandatory Pillar 1 standardised capital charge for IRRBB — regulators and practitioners
+  largely agreed this was the appropriate approach given the complexity and heterogeneity
+  of banking business models. The framework structures 12 principles requiring measurement
+  of both EVE and NII, and introduces a supervisory outlier test (SOT) where EVE
+  decline exceeding 15% of Tier 1 capital triggers supervisory review.
 
   '
 source_refs:
@@ -56,73 +57,44 @@ date_created: '2026-05-28'
 date_updated: '2026-05-28'
 ---
 
-## Thesis
+## Pillar 1 vs Pillar 2 — How the Debate Resolved
 
-BCBS 2016 (d368) adopted a principles-based Pillar 2 framework rather than a mandatory Pillar 1 standardised capital charge for IRRBB, structuring 12 principles that require banks to measure both EVE and NII under six regulatory rate shocks and apply a supervisory outlier test (SOT) that triggers enhanced scrutiny when the worst-case ΔEVe exceeds 15% of Tier 1 capital. [LLM]
+The BCBS proposed two approaches for industry consultation: a standardised Pillar 1 (simplified and conservative) method versus a principles-based Pillar 2 approach. The standardised Pillar 1 methodology was designed to protect banks from an interest rate hike scenario. However, given the **complexity and heterogeneity of banking business models and IRRBB**, any standardised methodology would have resulted in punitive requirements while still failing to address all potential risks. [RAW-Elkenbracht-Huizing ch.3 p.1]
 
-## Why Pillar 2 Rather Than Pillar 1
+After thorough analysis during the consultation period, regulators and practitioners largely agreed that IRRBB best practice should take the form of a **principles-based approach**. BCBS issued the revised IRRBB principles (BCBS 368) in April 2016. [RAW-Elkenbracht-Huizing ch.3 p.1]
 
-The BCBS considered but rejected a mandatory standardised Pillar 1 capital charge for IRRBB for several reasons: [LLM]
+The principles-based Pillar 2 methodology enhanced the original principles set out in 2004 (Basel Committee on Banking Supervision 2004) and focused on: implementing additional governance requirements to derive proprietary models and assumptions; setting out compulsory standardised disclosures and regulatory oversight. [RAW-Elkenbracht-Huizing ch.3 p.1]
 
-- Banking book risk profiles are highly heterogeneous across jurisdictions and business models, making a single standardised formula prone to both over- and under-capitalization. [LLM]
-- The dual nature of IRRBB (EVE = economic value impact; NII = short-run earnings impact) does not reduce to a single capital number without losing critical information. [LLM]
-- Supervisors already had Pillar 2 tools to address residual risk; a new Pillar 1 charge would double-count risk already captured under credit RWA for some instruments. [LLM]
+## IRRBB Definition and Behavioral Assumptions
 
-The chosen Pillar 2 principles-based approach preserves supervisory judgment while establishing minimum standards for internal measurement. [LLM]
+IRRBB is defined as "the current or prospective risk to the bank's capital and earnings arising from adverse movements in interest rates that affect the bank's banking book positions." [RAW-Elkenbracht-Huizing ch.3 p.1]
+
+IRRBB measurement is **highly dependent on assumptions about client behaviours**. Key balance-sheet items requiring behavioral assumptions: [RAW-Elkenbracht-Huizing ch.3 p.2]
+
+- **Current accounts and savings deposits:** when client rates do not move with market rates, rate changes affect future margin on the deposit portfolio.
+- **Fixed-rate loans and mortgages:** client's option to prepay reduces the duration of the fixed income stream.
+- **Credit card receivables and overdrafts:** ability to raise client rates may be limited at very high market rates; retail vs. corporate overdrafts priced differently.
+- **Fixed-rate loan commitments:** client's ability to draw on commitments at fixed rates reduces net interest margin when rates rise (also applies to pipeline/launch risk).
+- **Capital:** different interest rate tenors assumed for capital depending on business model and balance-sheet structure.
+
+The key focus shifted from the traditional emphasis on control of exposures towards the management of **structural risks under uncertainty** by understanding the impact of assumption risk (Principle 5). [RAW-Elkenbracht-Huizing ch.3 p.2]
 
 ## The 12 BCBS Principles — Structural Grouping
 
-### Risk Identification (Principles 1–3)
+BCBS 368 articulated the updated framework in **twelve principles** (Figure 3.1). The technical challenges in prescribing standardised methodologies resulted in the inclusion of Principles 5, 8 and 12. The other nine principles were broadly a new representation of the previous 2004 principles. [RAW-Elkenbracht-Huizing ch.3 p.3]
 
-- **P1** — Identify all material IRRBB sub-types: repricing/gap risk, yield curve risk, basis risk, option risk. [LLM]
-- **P2** — Monitor CSRBB (credit spread risk in the banking book) separately; it must not be conflated with IRRBB in the measurement framework. [LLM]
-- **P3** — Capture automatic and behavioural optionality (prepayment, NMD decay, rate floors). [LLM]
+**Risk identification (Principles 1–3):**
+- P1: Identify, measure, monitor and control IRRBB — including gap risk (repricing mismatches), basis risk (different rate indexes), and option risk (customer alteration of cashflow profiles). CSRBB must also be monitored and assessed.
+- P2: Board responsibility for IRRBB oversight; board must have at least one member/advisor with IRRBB understanding; independent audit review.
+- P3: Risk appetite articulated in terms of both economic value AND earnings metrics.
 
-### Measurement (Principles 4–6)
+**Measuring methodology (Principles 4–6):**
+- **EVE** = present value of assets minus present value of liabilities. Assumes no ongoing business activity — a simplified gone-concern equity valuation. Change in EVE due to rate movement = EVE sensitivity.
+- **NII** = projected revenue driven by interest rate margin. Incorporates new business origination. Change in NII projections = NII sensitivity.
+- P5: Governance of modelling assumptions — the key focus moved to managing structural risks under uncertainty through assumption risk understanding.
 
-- **P4** — Measure both EVE and NII; neither metric alone is sufficient. [LLM]
-- **P5** — Apply all six regulatory shock scenarios: parallel up, parallel down, steepener, flattener, short-rate up, short-rate down. [LLM]
-- **P6** — Use conservative behavioural assumptions for NMDs and options; document assumptions; validate regularly. [LLM]
+**Reporting and regulatory requirements (Principles 7–12)** — including compulsory standardised disclosures (P8) and capitalisation requirements (P9). [RAW-Elkenbracht-Huizing ch.3 p.3]
 
-### Reporting and Governance (Principles 7–8)
+## Enterprise-Wide Stress Testing as an Alternative
 
-- **P7** — ALCO receives structural hedging reports; the board approves risk appetite for IRRBB. [LLM]
-- **P8** — Pillar 3 public disclosures of EVE and NII sensitivities under the six shocks, enabling market discipline. [LLM]
-
-### Capital (Principle 9)
-
-- **P9** — EVE sensitivity feeds into ICAAP capital allocation; NII sensitivity feeds into earnings buffers and business planning stress tests. [LLM]
-
-### Supervisory Review (Principles 10–12)
-
-- **P10** — Supervisors assess IRRBB risk profile and management quality as part of SREP. [LLM]
-- **P11** — Supervisors may apply additional Pillar 2 capital add-ons for residual IRRBB after internal hedging. [LLM]
-- **P12** — SOT (Supervisory Outlier Test): if the worst-case ΔEVe across all six shocks exceeds 15% of Tier 1 capital, the bank is classified as an "outlier" and must engage with supervisors on remediation. [LLM]
-
-## Supervisory Outlier Test (SOT) Mechanics
-
-The SOT threshold is: [LLM]
-
-> **ΔEVe_worst / Tier_1_capital > 15%** → triggers supervisory escalation [LLM]
-
-Key points on SOT application: [LLM]
-
-- "Worst case" is defined as the maximum EVE decline across all six prescribed shock scenarios, floored at zero (gains do not offset losses from other scenarios). [LLM]
-- The SOT is a trigger for enhanced dialogue, not an automatic capital charge; supervisors may still impose add-ons under Pillar 2 after review. [LLM]
-- Banks must disclose whether they pass or fail the SOT in Pillar 3 disclosures. [LLM]
-
-## Structural vs Transferable Risk — Governance Split
-
-From a practitioner perspective, the 12 principles operationally divide IRRBB risk management into two governance domains: [LLM]
-
-| Domain | Owner | Instruments |
-|--------|-------|-------------|
-| **Structural risk** | ALCO | NMD modeling, fixed-rate asset hedging, basis risk management, capital allocation for residual EVE |
-| **Transferable risk** | Treasury (via FTP) | Customer derivative execution, short-term rate hedging, interbank funding |
-
-[LLM]
-
-This split ensures that ALCO retains accountability for hard-to-model behavioral risks while treasury manages measurable market risks within approved limits. [LLM]
-
----
-*Source: Chapter 3 of Elkenbracht-Huizing, "The Handbook of ALM in Banking" (2nd ed., Risk Books 2017). Distinct from the existing regulation node on BCBS d368, which covers the document content; this node covers the practitioner governance framework. All body sentences tagged [LLM] are synthesized. Confidence: 1.*
+Enterprise-wide stress testing (EWST) emerged as an alternative to address IRRBB complexities by conducting earnings simulation across inter-risk type relationships. US Comprehensive Capital Analysis and Review (CCAR) was first introduced in Dodd-Frank regulation in 2010, using EWST to analyse capital origination adequacy. [RAW-Elkenbracht-Huizing ch.3 p.2]

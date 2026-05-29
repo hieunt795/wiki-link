@@ -19,14 +19,14 @@ tags:
 - tenor-basis
 - gap-analysis
 - key-rate-duration
-confidence: 1
+confidence: 3
 stability: stable
-thesis: 'Post-2008, basis spreads between EURIBOR tenors and between IBOR and OIS
-  became material and persistent, requiring ALM to shift from a single-curve to a
-  multi-curve framework where OIS rates are used for discounting and separate forward
-  curves are constructed per tenor; gap-based NII sensitivity and key-rate duration
-  arrays (6–10 buckets) are then applied to manage non-parallel rate shocks and tenor-specific
-  repricing mismatches. [LLM]
+thesis: 'Interest rate basis risk derives from imperfect correlation between rates
+  to which different instruments are indexed; the global financial crisis dramatically
+  increased the volatility of quoted basis spreads, which were previously essentially
+  stable. Gap analysis measures NII sensitivity over 1–2 year horizons; the economic
+  value approach captures long-term effects of rate changes via present value of all
+  cashflows. BCBS IRRBB 2016 requires both earnings and economic value perspectives.
 
   '
 source_refs:
@@ -54,65 +54,49 @@ date_created: '2026-05-28'
 date_updated: '2026-05-28'
 ---
 
-## Thesis
+## Two Perspectives on Interest Rate Risk
 
-Post-2008, basis spreads between EURIBOR tenors and between IBOR and OIS became material and persistent, requiring ALM to shift from a single-curve to a multi-curve framework. [LLM] OIS rates serve as the risk-free discounting curve while separate forward curves are constructed per IBOR tenor; gap-based NII sensitivity and key-rate duration arrays capture non-parallel rate shocks and tenor-specific repricing mismatches. [LLM]
+Two possible perspectives for measuring and managing interest rate risk: [RAW-Elkenbracht-Huizing ch.4 p.1]
 
-## Why Basis Spreads Became Material Post-2008
+**Earnings perspective (NII):** concentrates on the effects of interest rate movements on NII over short time horizons (1–2 years). Simple to implement via gap analysis; directly targets the income statement. Weakness: may fail to indicate long-term impacts — mismatches can be hidden beyond the analysis horizon.
 
-Before the 2008 financial crisis, EURIBOR and OIS rates tracked each other closely, and the basis between 3M and 6M EURIBOR was negligible. [LLM] The crisis revealed counterparty credit risk embedded in interbank lending rates: [LLM]
+**Economic value perspective (EVE):** based on the present value of all cashflows; addresses long-term effects of rate changes. Can serve as a lead indicator for prospective earnings impact. Weakness: does not focus on time distribution of cashflows — effects are condensed into a single present-valued figure.
 
-- **IBOR vs OIS spread:** EURIBOR/LIBOR reflect unsecured lending risk; OIS reflects nearly risk-free overnight rates. During stress, the IBOR-OIS spread widened to hundreds of basis points, becoming a permanent feature of the curve. [LLM]
-- **Tenor basis:** 6M EURIBOR vs 3M EURIBOR: the 6M rate commands a term premium for unsecured lending, creating a non-zero tenor basis that varies with credit market conditions. [LLM]
-- **Consequence for ALM:** Loans priced off 6M EURIBOR funded by liabilities repricing at 3M or OIS introduced basis risk that was previously unmodeled. [LLM]
+Many banks (especially smaller) prioritize earnings over economic value. Optimal management combines both perspectives. [RAW-Elkenbracht-Huizing ch.4 p.1]
 
-## Multi-Curve Construction
+## Regulatory Treatment (BCBS IRRBB 2016)
 
-The post-2008 multi-curve framework separates discounting from forward-rate projection: [LLM]
+Banking book positions are subject to IRRBB under Pillar 2 (not Pillar 1 minimum capital). BCBS IRRBB 2016 requires: [RAW-Elkenbracht-Huizing ch.4 p.2]
 
-| Curve | Purpose | Instruments used |
-|-------|---------|-----------------|
-| **OIS curve** | Risk-free discounting (all cashflows) | OIS swaps, central bank rate expectations |
-| **3M forward curve** | Project 3M IBOR-linked cashflows | 3M IBOR FRAs, 3M IBOR swaps vs OIS |
-| **6M forward curve** | Project 6M IBOR-linked cashflows | 6M IBOR swaps vs OIS, tenor basis swaps |
+- Risk systems must address IRRBB for **all assets, liabilities, and off-balance-sheet positions**.
+- Measurement using **both earnings and economic value** approaches under wide and appropriate range of interest rate shocks and stress scenarios.
+- IRRBB included in ICAAP — banks self-assess capital sufficiency.
+- **Outlier test:** theoretical decline of EVE by more than **15% of Tier 1 capital** under 6 regulator-prescribed interest rate shocks triggers supervisory review; additional capital and mitigation can be required.
 
-[LLM]
+## Basis Risk — Definition and Sources
 
-Each forward curve is built separately then used to project cashflows, which are discounted on the OIS curve. [LLM] This eliminates the pre-crisis assumption that all IBOR tenors share a single curve. [LLM]
+Basis risk derives from **imperfect correlation between the rates to which different instruments are indexed**, even if their coupon structure is similar or identical. If rates do not move in sync, a mismatch arises. [RAW-Elkenbracht-Huizing ch.4 p.2]
 
-## Gap Analysis and NII Sensitivity Formula
+Sources of basis risk: [RAW-Elkenbracht-Huizing ch.4 p.2]
 
-The standard repricing gap formula for NII sensitivity remains: [LLM]
+1. **Different rate types:** e.g., a loan priced on the prime rate funded by a EURIBOR/LIBOR liability. The prime rate adjusts only by discrete amounts (e.g., 50bp) and its differential with money market rates can drift substantially.
+2. **Adjustable rate loans indexed to average cost of funding:** the funding cost index cannot be recalculated daily, creating a lag versus market rates.
+3. **Retail deposit rates:** typically lower than market rates; FTP systems represent these as portfolios of market rates that replicate actual exposures based on historical correlations — the true repricing characteristics should not be hidden by the measurement system.
+4. **Spreads between floating rates with different repricing schedules or currencies:** e.g., 3M vs 6M EURIBOR tenor basis, or cross-currency basis swaps.
 
-> **ΔNII = GAPᵢ × T × Δr**
+The **global financial crisis dramatically increased the volatility of quoted basis spreads** which were previously essentially stable. Since mid-2007, basis spreads became a fundamental variable and a top priority for banking book risk management. [RAW-Elkenbracht-Huizing ch.4 p.2]
 
-Where: [LLM]
-- GAPᵢ = rate-sensitive assets minus rate-sensitive liabilities in time bucket i [LLM]
-- T = fraction of year remaining in bucket i [LLM]
-- Δr = parallel rate shift (e.g., +100bp) [LLM]
+## Gap Analysis
 
-In a multi-curve environment, separate gap reports are maintained per repricing index (3M EURIBOR gap, 6M EURIBOR gap, OIS gap, fixed-rate gap), enabling basis-specific NII sensitivity analysis. [LLM]
+Gap analysis measures the effect of a yield curve shift on NII over a short-term horizon. Despite a move towards simulation techniques, it is still widely used — especially in small to medium-sized banks. [RAW-Elkenbracht-Huizing ch.4 p.3]
 
-## Basis Swap Sensitivity Array
+A **gap** = the difference in one time bucket between interest rate sensitive assets, liabilities, and off-balance-sheet items. An item is "interest rate sensitive" if it matures, amortises, or its coupon can change during the bucket.
 
-To hedge or measure basis exposure, ALM constructs a **basis swap sensitivity array**: [LLM]
+- **Positive gap** (asset-sensitive): more assets than liabilities reprice at higher rates → NII benefits from rate increases.
+- **Negative gap** (liability-sensitive): opposite effect.
 
-- For each maturity bucket (e.g., 1Y, 2Y, 3Y, 5Y, 7Y, 10Y), compute the PV01 of the basis position (6M vs 3M basis swap notional at that maturity). [LLM]
-- The array shows where the bank is long or short basis across the yield curve. [LLM]
-- Hedging uses tenor basis swaps: pay 6M EURIBOR, receive 3M EURIBOR plus basis spread. [LLM]
+Standard time bucketing: O/N, O/N–1M, 1M–3M, 3M–6M, 6M–12M, above 1Y. [RAW-Elkenbracht-Huizing ch.4 p.3]
 
-## Key-Rate Duration Framework
+## Economic Value of Equity (EVE) and Duration
 
-Parallel rate shock analysis (single ΔNII or ΔEVE) is insufficient for basis risk and non-parallel yield curve scenarios. [LLM] Key-rate durations (KRD) provide a more granular view: [LLM]
-
-- The yield curve is divided into **6–10 maturity buckets** (e.g., 3M, 6M, 1Y, 2Y, 3Y, 5Y, 7Y, 10Y, 15Y, 20Y+). [LLM]
-- For each bucket, compute the EVE sensitivity to a 1bp shift in that bucket's rate holding all others constant (partial PV01). [LLM]
-- The KRD array captures steepener/flattener risk (P5 regulatory shock) that a single duration number cannot detect. [LLM]
-- ALCO reviews the KRD array to identify concentrated exposures in specific maturity segments and to guide macro hedge allocation. [LLM]
-
-## Interaction with BCBS IRRBB Regulatory Shocks
-
-The six BCBS regulatory shocks (parallel up/down, steepener, flattener, short-rate up, short-rate down) all generate different KRD-weighted impacts. [LLM] A bank that passes the parallel-shock SOT may still fail if it has a concentrated steepener exposure. [LLM] Key-rate analysis is therefore essential for full compliance with the spirit of BCBS Principles 4–6. [LLM]
-
----
-*Source: Chapter 4 of Elkenbracht-Huizing, "The Handbook of ALM in Banking" (2nd ed., Risk Books 2017). All body sentences tagged [LLM] are synthesized from source material. Confidence: 1.*
+The chapter covers EVE sensitivity and duration, key rate duration, convexity, option-adjusted value and duration, and term structure of interest rates (single-curve and multi-curve approaches) including the yield curve construction evolution post-crisis (OIS discounting and tenor basis). [RAW-Elkenbracht-Huizing ch.4 p.1]

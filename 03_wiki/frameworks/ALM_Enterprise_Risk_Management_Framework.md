@@ -17,14 +17,15 @@ tags:
 - earnings-at-risk
 - revaluation-reserve
 - governance
-confidence: 1
+confidence: 3
 stability: stable
-thesis: 'ALM operates within the enterprise risk management (ERM) cycle as the governance
-  mechanism that translates board-level risk appetite statements into balance sheet
-  constraints on interest rate, liquidity, and capital risk; the five-step ERM cycle
-  (identify → select controls → implement → monitor → report) and the ALCO committee
-  structure jointly ensure that structural risks are hedged or capitalized within
-  approved tolerances. [LLM]
+thesis: 'One of the key lessons from the 2008–9 financial crisis was that banks need
+  a comprehensive risk appetite framework based on the principle that banks should
+  be able to restore their capital and liquidity positions following a stress situation.
+  ALM operates within a five-step annual risk management cycle (identify → select
+  → control → monitor → report) governed through ALCO or risk committee structures
+  with board representation, targeting a CET1 ratio that does not drop below set
+  thresholds under stress.
 
   '
 source_refs:
@@ -52,55 +53,49 @@ date_created: '2026-05-28'
 date_updated: '2026-05-28'
 ---
 
-## Thesis
+## Context: Post-Crisis Risk Appetite Requirements
 
-ALM operates within the enterprise risk management (ERM) cycle as the governance mechanism that translates board-level risk appetite statements into balance sheet constraints on interest rate, liquidity, and capital risk. [LLM]
+One of the lessons learned from the 2008–9 financial crisis was that banks need a comprehensive risk appetite framework based on the principle that banks should be able to restore their capital and liquidity positions following a stress situation, as it may take years before full access to capital and funding markets is reestablished. Regulators responded by implementing CRR/CRD IV with stricter capital and liquidity requirements; national competent authorities and the ECB raised the bar significantly on required quality of banks' risk appetite frameworks. [RAW-Elkenbracht-Huizing ch.2 p.1]
 
-## Five-Step ERM Cycle
+## Five-Step Annual Risk Management Cycle
 
-The risk management process follows a five-step cycle applied to all banking-book risks: [LLM]
+Banks use a step-by-step risk management approach to identify, monitor, mitigate and manage financial and non-financial risks. The cycle consists of five recurrent activities: [RAW-Elkenbracht-Huizing ch.2 p.2]
 
-1. **Identify** — catalogue sources of structural risk (repricing gaps, optionality, basis, credit spread, liquidity mismatch). [LLM]
-2. **Select controls** — choose whether to retain, transfer, or hedge each risk source within the board-approved risk appetite. [LLM]
-3. **Implement** — execute hedging programs and FTP pricing rules; structural risks are managed by ALCO, transferable risks are passed to treasury via internal transfer pricing. [LLM]
-4. **Monitor** — track limit utilization for each risk metric against appetite thresholds; escalate breaches. [LLM]
-5. **Report** — produce ALCO packs covering all four structural-risk dimensions (earnings, valuation, capital, commercial). [LLM]
+1. Determine potential risks (e.g., interviews with senior employees, review of external risk assessments).
+2. Select the risks that could have a significant impact on capital or liquidity position.
+3. Control: ensure relevant risks are incorporated into the risk appetite framework; base scenario selection for stress testing on risk identification.
+4. Monitor the actual risk profile against risk appetite.
+5. Report main risk developments to senior management for timely action.
 
-## Risk Appetite Statement — Capital Lens
+The cycle recurs in two ways: (i) periodic identification/assessment with updated mitigants; (ii) monitoring findings that trigger renewed risk identification. Board involvement in each step is of paramount importance — the board should contribute to, agree with, and approve changes to the risk appetite framework. [RAW-Elkenbracht-Huizing ch.2 p.2]
 
-A well-formed CET1 risk appetite statement takes the form: [LLM]
+## Governance: Committee Structure
 
-> "In a 1-in-X years stress scenario, the CET1 ratio must not fall below A%, and must recover to A+B% within the planning horizon using retained earnings alone." [LLM]
+Main committee structures for risk management include: a dedicated risk committee, a combined finance and risk committee, or an ALCO. In any case, **board members are represented in these committees**. [RAW-Elkenbracht-Huizing ch.2 p.2]
 
-This structure forces calibration of both the floor (A%) and the recovery buffer (B%), ensuring resilience and regenerative capacity are addressed simultaneously. [LLM]
+## Business Model of a Typical Large Bank
 
-## Four Structural-Risk Metrics
+A typical large bank's main activity is providing loans to customers, funded by retail deposits or professional funding markets. This creates a **positive interest margin** — the most important source of income for most banks. [RAW-Elkenbracht-Huizing ch.2 p.3]
 
-ALM governance tracks four complementary metrics to span the ERM risk appetite: [LLM]
+Annual P&L = (1 − tax%) × (income − expenses − risk costs). Key performance indicator: **Return on Equity (RoE)** = net results / capital. Banks need to achieve approximately **10% RoE** to remain attractive for investors. [RAW-Elkenbracht-Huizing ch.2 p.3]
 
-| Metric | What it measures | Risk appetite lens |
-|--------|------------------|--------------------|
-| **Earnings-at-Risk (EaR)** | NII sensitivity to rate shocks over 1–2 year horizon | P&L / dividend stability |
-| **Revaluation-reserve-at-risk** | OCI volatility from AFS portfolio mark-to-market | Regulatory capital volatility |
-| **RWA-at-risk** | Capital consumption under stress (credit migration, market risk) | CET1 adequacy |
-| **Commercial result buffer** | Cushion from customer margin income before structural losses erode capital | Business model sustainability |
+**CET1 ratio** = available CET1 capital / RWA. Regulators require banks to hold a certain percentage of RWA as capital. [RAW-Elkenbracht-Huizing ch.2 p.3]
 
-[LLM]
+## Main Risks for a Typical Large Bank
 
-## ALCO Governance Structure
+**Net interest income risks:** [RAW-Elkenbracht-Huizing ch.2 p.3]
+- Low interest rates: maturing assets with higher historical yields replaced at lower yields; offsetting via deposit rate reductions may be limited (if retail rates go negative, significant deposits would be withdrawn).
+- Prepayable assets (e.g., residential mortgages): higher than expected prepayments in low rate environments erode net interest margin if funding is not also prepayable.
+- Rate increases: banks may need to pass these on to depositors to avoid losing deposits to competitors or term deposit products.
 
-The Asset-Liability Committee (ALCO) sits between the Board risk appetite and the treasury execution function: [LLM]
+**Credit risk:** Default rates increase in economic downturns; higher unemployment → higher mortgage default rates; slower growth → higher business loan defaults. Under IFRS 9 (implemented January 2018): for clients with significantly deteriorated credit profiles, loan loss provisions must be based on **lifetime expected loss** instead of one-year expected loss. [RAW-Elkenbracht-Huizing ch.2 p.3]
 
-- **Board / Risk Committee** — sets the overall risk appetite (CET1 floor, NII tolerance, liquidity survival horizon). [LLM]
-- **ALCO** — translates appetite into limits; approves hedging programs; reviews FTP methodology; monitors EVE, NII, LCR, NSFR versus limits. [LLM]
-- **ALM / Treasury desk** — executes approved hedges; manages day-to-day balance sheet positioning within ALCO limits. [LLM]
-- **Risk / Finance** — independent measurement, model validation, and reporting back to ALCO. [LLM]
+**RWA risk:** Credit-risk-weighted assets increase in economic stress (deteriorating client creditworthiness → higher risk weights → greater RWA). Regulatory risk from reduced confidence in internal models since mid-2010s → proposals for more standardised approaches. [RAW-Elkenbracht-Huizing ch.2 p.3]
 
-Structural risks (IRRBB, CSRBB, structural FX, structural liquidity) remain on ALCO's mandate. Transferable market risks (trading book, customer derivatives) are transferred to treasury via FTP and managed under separate VaR limits. [LLM]
+**Expense risk:** Primarily non-financial risk events — mis-selling, non-compliance fines, compensation of clients. Mitigated by strong compliance function and culture. [RAW-Elkenbracht-Huizing ch.2 p.3]
 
-## Integration with Pillar 2 Capital
+## High-Level Solvency Risk Appetite Framework
 
-Under BCBS IRRBB Principle 9, a material EVE sensitivity must translate into an ICAAP capital allocation. [LLM] The ERM framework links ALCO-monitored EVE positions to the ICAAP capital stack, ensuring that residual IRRBB after hedging is capitalized at the approved internal stress confidence level. [LLM]
+The CET1 ratio should not drop below certain levels in either normal situations or in a standardised stress scenario. Evidence from past crises shows banks often cannot obtain new equity from capital markets in crisis situations and must rely on retained earnings for capital restoration. A high-level risk appetite statement for solvency risk: [RAW-Elkenbracht-Huizing ch.2 p.4]
 
----
-*Source: Chapter 2 of Elkenbracht-Huizing, "The Handbook of ALM in Banking" (2nd ed., Risk Books 2017). All body sentences tagged [LLM] are synthesized from source material and have not been independently verified. Confidence: 1.*
+> "The CET1 ratio should not drop below [floor%] in a stress scenario, and should be restorable to [target%] within [horizon] using retained earnings alone."

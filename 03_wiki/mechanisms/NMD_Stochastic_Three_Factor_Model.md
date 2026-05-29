@@ -20,14 +20,15 @@ tags:
 - margin-compression
 - floor-risk
 - replicating-portfolio
-confidence: 1
+confidence: 3
 stability: stable
 thesis: 'The Bohn stochastic three-factor NMD model drives deposit value via correlated
-  Vasicek short rate, mean-reverting credit spread, and lognormal deposit volume processes;
-  a Cholesky decomposition captures their correlations; and the risk appetite confidence
-  level φ defines the replicating portfolio as the interest-rate hedge that covers
-  deposit funding costs at the φ-percentile, with margin compression risk requiring
-  raised hedge ratios before rates fall through the client-rate floor. [LLM]
+  short rate, credit spread, and deposit volume processes; a Cholesky decomposition
+  of the correlation matrix captures interdependencies; the risk appetite confidence
+  level φ defines the replicating portfolio as the interest-rate hedge covering deposit
+  funding costs at the φ-percentile; margin compression risk — from market rates
+  falling to the client-rate floor — requires raising hedge ratios before rates breach
+  zero.
 
   '
 source_refs:
@@ -53,81 +54,41 @@ date_created: '2026-05-28'
 date_updated: '2026-05-28'
 ---
 
-## Thesis
+## Overview
 
-The Bohn stochastic three-factor NMD model drives deposit value via correlated Vasicek short rate, mean-reverting credit spread, and lognormal deposit volume processes. [LLM] A Cholesky decomposition captures inter-factor correlations, and the risk appetite confidence level φ defines the replicating portfolio as the hedge covering deposit funding costs at the φ-percentile. [LLM] Margin compression risk requires raising hedge ratios before client rates breach the zero floor. [LLM]
+This chapter (Bohn, BCG) introduces an approach to hedging non-maturing deposits under stochastic deposit volumes, interest rates and credit spreads. The method captures: (1) outflows from unexpected weakening of a financial institution's creditworthiness; (2) **negative convexity from margin compression risk** — the risk of market rates falling close to or below a floor for interest rates paid to clients. The approach manages the **economic value** of client deposit portfolios. [RAW-Elkenbracht-Huizing ch.6 p.1]
 
 ## Three Stochastic Factors
 
-The model state is driven by three correlated stochastic processes: [LLM]
+The economy is modelled with three stochastic factors: the short-term interest rate, the credit spread of the deposit-taking institution, and the deposit volume. Their **interdependencies** are captured in a correlation matrix CORR with three cross-correlations: [RAW-Elkenbracht-Huizing ch.6 p.3]
 
-### Factor 1: Short Rate — Vasicek Process
+- ρ_{r,c}: correlation between changes in interest rates and credit spreads
+- ρ_{r,D}: correlation between changes in interest rates and deposit volumes
+- ρ_{c,D}: correlation between changes in credit spreads and deposit volumes
 
-> **dr(t) = κᵣ(θᵣ − r(t)) dt + σᵣ dWᵣ(t)** [LLM]
+As these correlation parameters cannot be derived from market prices, they are best estimated from historical time series. A **Cholesky decomposition** of CORR yields matrix G such that GG^T = CORR; its elements specify the stochastic processes for each factor. [RAW-Elkenbracht-Huizing ch.6 p.3]
 
-- κᵣ: mean-reversion speed for interest rates [LLM]
-- θᵣ: long-run mean rate level [LLM]
-- σᵣ: interest rate volatility [LLM]
-- The Vasicek process allows negative rates, which is relevant for EUR environments. [LLM]
+## Risk Appetite Parameter φ and the Replicating Portfolio
 
-### Factor 2: Credit Spread — Mean-Reverting Process
+The bank defines its risk appetite by limiting the probability of deposit balance D(t) falling below the invested hedge amount A(t): [RAW-Elkenbracht-Huizing ch.6 p.2]
 
-> **dc(t) = κ_c(θ_c − c(t)) dt + σ_c dW_c(t)** [LLM]
+> P[D(t) < A(t)] ≤ φ
 
-- The credit spread represents the bank's funding cost above risk-free; it affects the net margin earned on deposit funding. [LLM]
-- Mean-reversion reflects the empirical tendency of credit spreads to normalize after stress. [LLM]
+The factor **φ** represents the bank's risk aversion with respect to liquidity shortfalls. Key calibration guidance: [RAW-Elkenbracht-Huizing ch.6 p.2]
 
-### Factor 3: Deposit Volume — Lognormal Process
+- Confidence levels between φ = 0.01 and φ = 0.1 appear in line with **conservative risk appetite**.
+- φ = 0.5 implies an **unchanged balance development**, resulting in a **perpetual replicating portfolio**.
 
-> **dD(t) = μ_D D(t) dt + σ_D D(t) dW_D(t)** [LLM]
+The replicating portfolio A(t) is constructed with a "horizontal" view of tranches that can be rolled over continuously — converting the vertical profile of maturing balances into fixed tranches per maturity bucket. The rollover frequency can be annual, semi-annual, quarterly, or monthly. [RAW-Elkenbracht-Huizing ch.6 p.2]
 
-- D(t) is the total deposit volume; lognormal ensures non-negativity. [LLM]
-- μ_D reflects trend growth; σ_D captures volume volatility driven by rate sensitivity and depositor behavior. [LLM]
-- Volume is negatively correlated with interest rates in rate-sensitive segments (higher rates → outflows to alternatives). [LLM]
+When client rate elasticity with respect to market rate changes is above zero, the notional amount of the replicating portfolio must be adjusted (away from 100% notional hedge). [RAW-Elkenbracht-Huizing ch.6 p.2]
 
-## Correlation Structure — Cholesky Decomposition
+## Margin Compression Risk and Hedge Ratio Adjustment
 
-The three Brownian motions (Wᵣ, W_c, W_D) are correlated through a 3×3 correlation matrix Σ: [LLM]
+**Margin compression risk** = the risk that the net interest margin is reduced due to a floor in client rates while the hedge rate drops with market rate levels. [RAW-Elkenbracht-Huizing ch.6 p.1]
 
-> **Σ = [[1, ρ_{rc}, ρ_{rD}], [ρ_{rc}, 1, ρ_{cD}], [ρ_{rD}, ρ_{cD}, 1]]** [LLM]
+The approach allows the ALM manager to **adjust hedge ratios in an environment of high interest rates** — not just when rates are low and the net interest margin is directly threatened. This is the key insight: raising hedge ratios ahead of reaching the floor, rather than reacting when already there. [RAW-Elkenbracht-Huizing ch.6 p.1]
 
-Cholesky decomposition of Σ gives lower triangular matrix L such that LL^T = Σ. [LLM] Correlated Brownian increments are generated as: [LLM]
+## Application to Decay Models
 
-> **dW = L × dZ**, where dZ are independent standard normal increments. [LLM]
-
-Typical sign conventions: [LLM]
-- ρ_{rD} < 0: higher rates → lower volume (rate-sensitive outflow). [LLM]
-- ρ_{rc} > 0: higher rates often coincide with wider credit spreads in stress. [LLM]
-- ρ_{cD} < 0: wider credit spreads (bank stress) → deposit outflows. [LLM]
-
-## Risk Appetite Confidence Level φ and the Replicating Portfolio
-
-The model generates a Monte Carlo distribution of future deposit volumes and funding costs. [LLM] The risk appetite parameter φ (e.g., φ = 0.1%, representing the worst 1-in-1000 outcome) defines the **φ-quantile line** of deposit volume: [LLM]
-
-- At each future time point, the φ-percentile of simulated deposit volumes gives a conservative lower bound on stable funding. [LLM]
-- The **replicating portfolio** is the fixed-income portfolio (mix of 1Y, 2Y, …, nY bonds) whose maturity profile matches the expected duration of the φ-line. [LLM]
-- Only the volume at or below the φ-line is invested in the replicating portfolio; the residual "volatile" volume is kept at overnight rates. [LLM]
-
-The confidence level φ is a board-approved risk appetite parameter: lower φ → longer replicating portfolio maturity → higher NII in normal rates → higher EVE risk in rate up shocks. [LLM]
-
-## Margin Compression Risk
-
-Margin compression occurs when market rates fall toward the client rate floor (typically 0% for retail deposits): [LLM]
-
-- If market rates = 2% and client rates = 1%, the deposit margin = 100bp. [LLM]
-- If market rates fall to 0.5%, client rates cannot go below 0%, so the bank earns only 50bp margin. [LLM]
-- Below zero market rates, the bank may be unable to pass negative rates to retail depositors, resulting in a negative net carry on the deposit portfolio. [LLM]
-
-**Risk management implication:** [LLM]
-
-- As rates approach zero, the PV01 of the deposit position increases nonlinearly because the floor option becomes increasingly in-the-money. [LLM]
-- Static hedge ratios (set at higher rate levels) will underhedge the rate risk near the floor. [LLM]
-- **Hedge ratios must be raised before rates reach the floor**, anticipating the nonlinear increase in duration. [LLM]
-- Monte Carlo simulation with floor optionality is required to quantify this convexity risk; closed-form gap analysis will underestimate it. [LLM]
-
-## Relation to the Replicating Portfolio
-
-The stochastic model outputs feed into the replicating portfolio construction (the topic of a separate existing wiki node). [LLM] The three-factor model provides the probabilistic distribution of deposit duration at each confidence level; the replicating portfolio implements the interest-rate hedge implied by that distribution. [LLM]
-
----
-*Source: Chapter 6 of Elkenbracht-Huizing, "The Handbook of ALM in Banking" (2nd ed., Risk Books 2017). All body sentences tagged [LLM] are synthesized from source material. Confidence: 1.*
+The chapter also illustrates applications to decay models, linking the stochastic volume modelling to the decay approach of Chapter 5 (Soulellis). The stochastic approach captures the uncertainty in future deposit volumes that the deterministic decay model takes as given. [RAW-Elkenbracht-Huizing ch.6 p.1]
