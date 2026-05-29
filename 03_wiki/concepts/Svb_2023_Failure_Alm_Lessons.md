@@ -20,13 +20,15 @@ tags:
 - HTM-portfolio
 - concentration-risk
 - governance-failure
-confidence: 1
+confidence: 3
 stability: stable
-thesis: 'The SVB failure in March 2023 exemplifies how unhedged duration mismatch
-  in a held-to-maturity bond portfolio, combined with a concentrated correlated depositor
-  base and governance failures (vacant CRO, model manipulation), can convert a mark-to-model
-  paper loss into a catastrophic liquidity run: a $15.2bn realized loss triggered
-  a 60% deposit outflow in 48 hours, rendering the bank insolvent. [LLM]
+thesis: '"Silicon Valley Bank failed because of a textbook case of mismanagement
+  by the bank. Its senior leadership failed to manage basic interest rate and liquidity
+  risk. Its board of directors failed to oversee senior leadership and hold them
+  accountable. And Federal Reserve supervisors failed to take forceful enough action."
+  (Michael S. Barr, Vice Chair for Supervision, Federal Reserve). Hidden USD 15.2bn
+  unrealized loss in USD 95bn HTM portfolio; duration gap ~3 years; >88% uninsured
+  concentrated depositor base; 8 months without a CRO.
 
   '
 source_refs:
@@ -52,66 +54,45 @@ date_created: '2026-05-28'
 date_updated: '2026-05-28'
 ---
 
-## Thesis
+## Background
 
-The SVB failure in March 2023 exemplifies how unhedged duration mismatch in a held-to-maturity bond portfolio, combined with a concentrated correlated depositor base and governance failures, can convert a mark-to-model paper loss into a catastrophic liquidity run. [LLM]
+SVB was founded in 1983 in Santa Clara, California, focused on clients in innovation, entrepreneurship, and technology industries. By 2022, SVB's assets exceeded USD 200bn (16th largest US bank). SVB experienced a rapid influx of deposits from venture capital and technology clients during a period of exceptionally low interest rates; these deposits were largely invested in securities with longer maturities. [RAW-Tata ch.4 §4.1]
 
-## Portfolio Composition and Duration Mismatch
+**March 8, 2023:** SVB reported losses of USD 1.8bn on sale of USD 21bn fixed income securities. Customers attempted to withdraw USD 142bn in deposits. **March 10, 2023:** SVB collapsed and was seized by its regulator. **March 17, 2023:** SVBFG filed Chapter 11. [RAW-Tata ch.4]
 
-By end-2022, SVB held a $95 billion bond portfolio in its AFS and HTM books with an average duration of approximately 6.25 years. [LLM] Key structural features: [LLM]
+## Early Warning Signs
 
-- **HTM classification**: Most bonds were reclassified to HTM to avoid marking unrealized losses through OCI, hiding the economic deterioration from regulatory capital ratios. [LLM]
-- **Unrealized loss**: The hidden mark-to-market loss on the HTM portfolio reached $15.2 billion by end-2022 — larger than SVB's entire equity base. [LLM]
-- **Duration gap**: With a 6.25-year asset duration against much shorter liability duration (NMDs with behavioral maturity < 1 year for concentrated tech deposits), the duration gap was approximately 3 years. [LLM]
-- **Rate sensitivity**: A 200bp rate shock implied roughly a $12.5 billion EVE loss — consistent with the realized loss when bonds were sold to fund outflows. [LLM]
+1. **Vacant CRO:** CRO Laura Izurieta resigned April 29, 2022. SVB had no CRO for eight months until Kim Olson assumed the role December 27, 2022. [RAW-Tata ch.4 §4.2]
 
-## Hedging Failure
+2. **Minimal hedging:** Only USD 15.3bn (~12.3%) of the USD 124bn bond portfolio was hedged with pay-fixed/receive-floating interest rate swaps at end-2021.
 
-SVB's hedging program was systematically dismantled: [LLM]
+3. **Hedge unwind:** ~USD 11bn of the USD 15.3bn swap positions were unwound in H1 2022 — not because the portfolio was shrinking, but "to juice its P&L in the short term." By end-2022, only USD 0.5bn in hedges remained (0.4% of portfolio).
 
-- By end-2022, only approximately **0.4% of the bond portfolio was hedged** with interest rate swaps. [LLM]
-- During 2022, SVB unwound approximately **$11 billion in interest rate swaps** — a decision motivated by the desire to "juice P&L" by avoiding the negative carry of the hedge at prevailing rate levels. [LLM]
-- The unwinding was approved despite the rising-rate environment and the growing duration mismatch. [LLM]
+4. **Uninsured deposit concentration:** At end-2021, uninsured deposits were USD 166bn — more than **88% of total non-maturity deposits** and an 87% increase from USD 88.6bn a year earlier. Non-FDIC-insured deposits (above USD 250k per depositor) are subject to rapid withdrawal at any sign of counterparty credit risk. [RAW-Tata ch.4 §4.2]
 
-This represents a textbook violation of the principle that hedging programs should be maintained through rate cycles, not dismantled when hedges become costly. [LLM]
+## Balance Sheet Analysis (ALM Lens)
 
-## Depositor Base — Concentrated and Correlated
+**GAAP vs. economic reality:** SVB's year-end 2022 balance sheet showed equity of ~USD 12bn (5.7% of total assets of USD 212bn). Hidden within the HTM book: **USD 15.2bn unrealized GAAP loss** — implying a 2.7% rate increase caused this, and a **duration of 6.25 years on the USD 95bn HTM book**. Without GAAP accounting, the bank's equity would have been completely wiped out by EoY 2022. The AFS book contributed an additional ~USD 1.7bn loss. [RAW-Tata ch.4 §4.3.1]
 
-SVB's liability structure was uniquely fragile: [LLM]
+**NII perspective:** SVB appeared healthy from NII: USD 4.5bn for 2022; average interest income 2.73%; average interest expense 0.57%; NIM 2.15%. [RAW-Tata ch.4 §4.3.2]
 
-- **>88% of deposits were uninsured** (above FDIC $250k limit), primarily from venture capital firms and technology startups. [LLM]
-- **Depositor correlation**: The VC/tech sector is informationally dense and interconnected; news of stress propagated instantly via Twitter and group chats, enabling a simultaneous coordinated run. [LLM]
-- **Standard NMD modeling failure**: Conventional NMD behavioral models assume depositor behavior is driven by rate differentials and individual economics. SVB's depositor base violated this: outflows were driven by institutional fear and herding, not rate sensitivity. [LLM]
-- The bank modeled deposits as having a longer behavioral maturity than was warranted for a concentrated, informationally connected institutional depositor base. [LLM]
+**Duration gap:** ~45% of deposits were from tech startups and VCs who temporarily "park" money — implying short behavioral duration. The **duration gap was ~3 years**. A 3-year duration gap × USD 209bn × 2% ≈ USD 12.5bn loss — more than 100% of equity under a 200bp Basel shock. To avoid being an "outlier bank" under the EVE supervisory outlier test, the duration of deposits would have to be greater than **3.7 years** — "a highly unreasonable assumption." [RAW-Tata ch.4 §4.3.3]
 
-## Governance Failures
+**Q1 2023:** Investors attempted to withdraw USD 42bn in a single day.
 
-Three compounding governance failures enabled the crisis: [LLM]
+## Behavioral Model Failure
 
-1. **Vacant CRO**: The Chief Risk Officer position was vacant for approximately 8 months during the critical 2022 period when the rate shock was materializing and hedges were being unwound. [LLM]
-2. **Model manipulation**: SVB extended the modeled duration of its deposit base without adequate empirical support, reducing the apparent interest rate risk in internal models and EVE reporting. [LLM]
-3. **Lack of board challenge**: The risk committee failed to escalate the growing duration mismatch or question the hedge unwind decisions. [LLM]
+SVB's depositor base was concentrated in technology startups whose deposit behavior is driven by two correlated interest-rate-sensitive factors:
+1. The general level of interest rates affects how much investors allocate to PE/VC funds (low rates → "chase yield" → more VC activity → more deposits at SVB).
+2. The level of interest rates affects VC funds' ability to invest in start-ups (higher rates → fewer deals → withdrawal of parked capital from SVB).
 
-## ALM Lessons
+These two factors don't even have the same causal relationship, making modeling complex. SVB "made model changes that reduced the level of risk depicted by the model (…) management changed assumptions rather than the balance sheet to alter reported risks. In April 2022, [SVB] made a poorly supported change in assumption to increase the duration of its deposits based on a deposit study conducted by a consultant." The assumptions were unsubstantiated given rapid deposit growth, lack of historical data, rapid rate increases, and the uniqueness of SVB's client base. [RAW-Tata ch.4 §4.3.4, citing Barr 2023]
 
-Five structural lessons for bank ALM practice: [LLM]
+## Lessons Learned
 
-| Lesson | Implication |
-|--------|-------------|
-| **HTM does not eliminate risk** | Reclassification to HTM hides OCI losses but cannot prevent cash losses when bonds must be sold to fund outflows |
-| **Hedging must be maintained through rate cycles** | Unwinding hedges to improve short-term P&L transfers risk to future periods |
-| **NMD modeling must reflect depositor composition** | Concentrated institutional depositors require shorter behavioral maturity assumptions than retail base |
-| **Depositor correlation is catastrophic** | An informationally connected depositor base can organize a run in hours — standard LCR models assume uncorrelated outflows |
-| **Governance failures amplify technical failures** | Vacant CRO and model manipulation removed the final defense layers that might have caught the duration mismatch |
+Per Michael S. Barr (Fed Vice Chair for Supervision): "Silicon Valley Bank failed because of a textbook case of mismanagement by the bank." Key lessons: [RAW-Tata ch.4 §4.4]
 
-[LLM]
-
-## Regulatory Response
-
-The SVB failure prompted supervisory attention to: [LLM]
-- Mandatory EVE SOT reporting for mid-sized banks (previously exempt in the US). [LLM]
-- Scrutiny of HTM portfolio size relative to capital. [LLM]
-- Enhanced NMD behavioral modeling requirements for concentrated depositor bases. [LLM]
-
----
-*Source: Chapter 4, SVB Case Study, Tata (ed.), "Bank ALM" (2025). All body sentences tagged [LLM] are synthesized from source material. Confidence: 1.*
+- Accounting (HTM classification) can conceal unrealized losses — making **prudent ALM even more important**.
+- Proper governance is imperative — flying blind for 8 months without a CRO "did not reflect well on SVB's board and management; in this case, supervisors failed to catch the lack of governance."
+- Heavy concentration in SVB's customer base (mostly VC-backed tech companies) "should have received more supervisory attention" — modeling assumptions for highly correlated NMDs from a small group of similar depositors "should have been questioned and challenged."
+- Despite claims to the contrary, "large (and unhedged) maturity mismatches on banks' balance sheets pose a great potential danger."

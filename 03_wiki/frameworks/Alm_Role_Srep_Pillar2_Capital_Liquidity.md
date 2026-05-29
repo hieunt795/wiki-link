@@ -22,15 +22,14 @@ tags:
 - TSCR
 - ICAAP
 - ILAAP
-confidence: 1
+confidence: 3
 stability: stable
-thesis: 'The Supervisory Review and Evaluation Process (SREP) evaluates banks across
-  four areas (business model, governance, capital risks, liquidity risks) and imposes
-  a Pillar 2 Requirement (P2R) as an individual add-on above Pillar 1; together they
-  form the TSCR = P1 + P2R, which must be met at all times including stress; Pillar
-  2 Guidance (P2G) is then added based on stress test results as a soft buffer above
-  OCR; ALM''s primary SREP exposure is IRRBB (capital), ILAAP (liquidity), and funding
-  plan credibility. [LLM]
+thesis: 'SREP is a mechanism in Pillar II of Basel III to ensure banks have sufficient
+  capital for all associated risks; it evaluates banks across four areas (business
+  model, governance, risks to capital, risks to liquidity) and imposes a Pillar 2
+  Requirement (P2R) as an individual capital add-on. ALM participates in all four
+  areas, with primary responsibility for IRRBB (risks to capital), ILAAP (risks to
+  liquidity), and funding/capital planning (business model analysis).
 
   '
 source_refs:
@@ -59,88 +58,50 @@ date_created: '2026-05-28'
 date_updated: '2026-05-28'
 ---
 
-## Thesis
+## SREP Overview
 
-The Supervisory Review and Evaluation Process (SREP) evaluates banks across four areas — business model, governance, risks to capital, and risks to liquidity — and imposes a Pillar 2 Requirement (P2R) as an individual add-on above Pillar 1. [LLM] Together they form the **Total SREP Capital Requirement** (TSCR = Pillar 1 + P2R), which must be met at all times including stress. [LLM] Pillar 2 Guidance (P2G) is then added based on stress test results as a soft buffer above the Overall Capital Requirement (OCR); ALM's primary SREP exposure is IRRBB (capital), ILAAP (liquidity), and funding plan credibility. [LLM]
+SREP is a mechanism in Pillar II of Basel III to ensure banks have sufficient capital to support all associated risks. SREP is an **ongoing supervisory process** bringing together findings from all supervisory activities into a comprehensive supervisory overview. Each supervised bank receives a score and individual capital requirement add-on (the **Pillar 2 Requirement, P2R**). [RAW-Bardaeva ch.13 p.1]
 
-## Capital Requirements Stack
+The score is based on four areas of assessment (but does not follow any particular mathematical dependency): [RAW-Bardaeva ch.13 p.1]
 
-```
-OCR = TSCR + Combined Buffer Requirements (CCB 2.5% + CCyB + SyRB/G-SII/O-SII)
-TSCR = Pillar 1 (CET1 4.5%, T1 6%, Total Capital 8%) + P2R (individual add-on)
-P2G = soft buffer above OCR, set from stress test results
-```
+- **A. Business model analysis** — can the business model ensure sustainable growth, even in market downturns?
+- **B. Internal governance and institution-wide controls** — are management processes transparent, decision-making independent and based on sufficient risk information?
+- **C. Risks to capital** — is capital steering in line with regulatory requirements; is risk quantity sufficiently covered by own funds currently and on the planning horizon?
+- **D. Risks to liquidity and funding** — is liquidity steering in line with regulatory requirements; are sources of funding stable and sustainable?
 
-[LLM]
+As a result of SREP, other than P2R, quantitative and qualitative capital, liquidity and other measures can be imposed on the bank. **ALM participates in representing each of the four areas**, to a larger or smaller extent, and is impacted by the results of the assessment. [RAW-Bardaeva ch.13 p.1]
 
-- **P2R**: Individual quantitative requirement; must be held at all times. [LLM] Per CRD V, P2R must be covered at minimum 56.25% by CET1 and at minimum 75% by T1. [LLM]
-- **P2G**: Not a hard requirement; breach triggers notification to regulator and submission of capital recovery plan, but does not trigger immediate resolution. [LLM]
-- **OCR**: Minimum requirement under going-concern conditions; combined buffers (CCB, CCyB, SyRB) can be temporarily drawn upon in stress per supervisory relief. [LLM]
+## SREP Proportionality: Four Categories
 
-## Four SREP Assessment Areas and ALM's Role
+Based on the principle of proportionality, all financial institutions are categorized in four distinct categories according to their systemic importance (size, structure, internal organization, scope of business, nature and complexity of activities, level of systemic risk): [RAW-Bardaeva ch.13 Box 13.1]
 
-### A. Business Model Analysis
+- **Category 1:** GSIIs and O-SIIs + other systemically important institutions determined by competent authorities
+- **Category 2:** Non-systemically important specialized institutions with significant market shares in their lines of business or payment systems/financial exchanges
+- **Category 3:** Specialized institutions with less significant market shares
+- **Category 4:** All other small non-complex domestic institutions
 
-ALM contributes to: [LLM]
-- Capital and funding planning (defining amounts, tenors, and rates of raised funds). [LLM]
-- Maturity transformation steering (hedging IRR or changing balance sheet structure). [LLM]
-- Pricing models and CoC calculations (input to strategic RoE). [LLM]
-- Recovery and resolution plan inputs (a prerequisite for credible forward-looking strategy). [LLM]
+Depending on category, the depth, intensity, and frequency of assessments vary. [RAW-Bardaeva ch.13 Box 13.1]
 
-### B. Internal Governance and Controls
+## Monitoring Frequency
 
-ALM contributes to: [LLM]
-- Organizational independence from conflict of interest (see operating model framework). [LLM]
-- Implementing regulatory requirements into the ICAAP/ILAAP/RAS framework through subsequent policies. [LLM]
-- Management board awareness of liquidity, capital, and regulatory development. [LLM]
+Under the continuity principle, supervisory authorities: [RAW-Bardaeva ch.13 Box 13.1]
 
-The SREP governance score is typically the weakest area for all banks — no bank achieves the top score of "1" in this category. [LLM]
+- Monitor key indicators on a **quarterly basis**
+- Produce a documented summary of the overall SREP assessment **at least annually**
+- Update all individual SREP elements at least annually
+- Inform the institution of the outcome at least annually (P2R statement, liquidity statement, other supervisory measures)
 
-### C. Risks to Capital
+## ALM Role in Each SREP Area
 
-ALM's direct mandate: [LLM]
-- **IRRBB** is exclusively in ALM responsibility — proper policies and models must prove sustainability. [LLM]
-- Credit, market, and operational risks are outside ALM scope (dependent on overall strategy and risk model). [LLM]
-- ICAAP calculations for IRRBB feed into the P2R determination process. [LLM]
+**A. Business model analysis:** ALM is responsible for: [RAW-Bardaeva ch.13 p.2]
+- Capital and funding planning (amounts, tenors, rates of raised funds)
+- Maturity transformation steering (hedging IRR or changing balance sheet structure)
+- Determination of pricing models, targeting client pricing
+- Defining Cost of Capital (CoC) and contributing to strategic RoE proposals (CAPM models or peer-group comparisons)
+- Inputs to recovery and resolution plans — "analysis of the current business model, forward-looking strategy, and financial plans are not possible without consideration of funding and capital plans, as well as recovery and resolution plans"
 
-### D. Risks to Liquidity and Funding
+**B. Governance:** ALM contributes by implementing regulatory requirements into the steering framework, reflecting in group policies, managing regulatory dialogue, and maintaining management board awareness of liquidity/capital/regulatory developments. Governance topics are considered **most important** in the SREP process. Evidence suggests no bank in the world achieves the best available score ('1' of 4) for this SREP part. [RAW-Bardaeva ch.13 p.2]
 
-ALM's direct mandate: [LLM]
-- Liquidity buffer management and counterbalancing capacity. [LLM]
-- Structural maturity mismatch and funding plan stability. [LLM]
-- Liquidity contingency plans and stress testing. [LLM]
-- ILAAP documentation provided by Risk controlling function (ALM provides inputs). [LLM]
+**C. Risks to capital:** IRRBB is in ALM's direct responsibility — "proper policies and models should prove sustainability of the bank." Credit, market, and operational risk are not within ALM's primary scope. [RAW-Bardaeva ch.13 p.2]
 
-## P2R Determination Process (Box 13.2)
-
-Three steps under the ECB Single Supervisory Mechanism (SSM): [LLM]
-
-1. **Risk-by-risk quantification**: Start from bank's ICAAP calculations. For most banks, supervisors substitute their own benchmarks because ICAAP calculations are not found sufficiently reliable on criteria of granularity, credibility, understandability, and comparability. [LLM]
-
-2. **Reconciliation with CRD buffers**: Ensure the same risk is not double-counted in P2R and in macro-prudential buffers. [LLM]
-
-3. **TSCR ratio calculation**: [LLM]
-   > TSCR ratio = 8% × (total SREP capital requirement × 12.5) / total risk exposure amount
-
-## SREP Proportionality Categories
-
-Institutions are categorized by systemic importance (size, structure, scope, complexity, systemic risk): [LLM]
-
-| Category | Description | Supervisory intensity |
-|----------|-------------|----------------------|
-| 1 | G-SIIs and O-SIIs + other systemically important | Full SREP, high frequency |
-| 2 | Non-systemically important specialized with significant market shares | Moderate-high |
-| 3 | Specialized with less significant market shares | Moderate |
-| 4 | Small non-complex domestic institutions | Standard; only Pillar 1 in practice |
-
-[LLM]
-
-## Implications for ALM Practice
-
-- SREP results cannot be predicted in advance (benchmarks are not disclosed), so budget/forecast should include **conservative P2R assumptions**. [LLM]
-- IRRBB models must be documented, auditable, and defensible to regulators — SREP inspectors will challenge both the methodology and the inputs. [LLM]
-- ILAAP stress testing must demonstrate stable and sustainable funding sources over the planning horizon. [LLM]
-- ALM must maintain management awareness: the board must demonstrate understanding of IRRBB and ILAAP topics to receive favorable governance scores. [LLM]
-
----
-*Source: Chapter 13 of Bardaeva (ed.), "Bank Asset Liability Management Best Practice" (De Gruyter, 2021). All body sentences tagged [LLM] are synthesized from source material. Confidence: 1.*
+**D. Risks to liquidity and funding:** ALM's mandate includes liquidity buffer management, liquidity stress testing, structural maturity mismatch management, and ILAAP-related inputs. [RAW-Bardaeva ch.13 p.2]
