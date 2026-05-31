@@ -42,6 +42,10 @@ related:
   relation: tightening_tradeoff
 date_created: 2026-05-24
 date_updated: 2026-05-24
+steps:
+- 'Step 1 (trigger): Volcker-style disinflation works through a costly slack channel'
+- 'Step 2 (outcome): tighter policy raises unemployment and reduces output to break inflation persistence, with the sacrifice ratio measuring the output loss per unit of disinflation'
+
 ---
 
 ## Slack Channel

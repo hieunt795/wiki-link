@@ -32,6 +32,10 @@ parent_node: null
 related: []
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: ultra-low policy rates compressed public fixed-income yields, forcing allocators to accept illiquidity for yield (search-for-yield channel); and'
+- 'Step 2: Basel III raised the shadow price of bank balance sheet for leveraged/sub-investment-grade lending, making private credit economically competitive — BIS analysis shows convergence of BDCs and banks weighted average cost of capital as the structural enabler of scale. [LLM]'
+
 ---
 
 [LLM] Auto-generated stub from Deep Dive_ Private Credit.md. Review and expand.

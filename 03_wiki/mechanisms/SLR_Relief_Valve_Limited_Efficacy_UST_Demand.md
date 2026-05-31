@@ -40,6 +40,10 @@ related:
   relation: related_mechanism
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: A partial SLR (Supplementary Leverage Ratio) reduction is a "faulty relief valve" for UST market liquidity because most large banks are bound by risk-based capital requirements, not SLR'
+- 'Step 2: so freeing SLR headroom does not incentivize additional UST purchases when banks fund those purchases with reserves (also 0% RWA), and only the most leverage-constrained banks see any benefit'
+
 ---
 
 ## Why SLR Reduction ≠ UST Demand Boost

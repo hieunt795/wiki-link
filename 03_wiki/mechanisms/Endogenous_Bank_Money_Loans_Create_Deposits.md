@@ -48,6 +48,12 @@ related:
   relation: companion
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: Banks create money endogenously by making loans: when a creditworthy borrower receives a loan, the bank simultaneously creates a new asset (the loan IOU) and a new liability (a deposit) ex nihilo — no prior deposit or reserve is needed'
+- 'Step 2: The central bank then provides whatever reserves are required for interbank settlement at the target policy rate'
+- 'Step 3: The money supply is therefore demand-driven (endogenous), not supply-constrained by the monetary base as the neoclassical money multiplier implies'
+- 'Step 4: The CB sets the price of money (short-term interest rate), not its quantity'
+
 ---
 
 ## The Neoclassical Money Multiplier — What Banks Do NOT Do

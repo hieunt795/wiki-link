@@ -42,6 +42,10 @@ related:
   relation: systemic_feedback_channel
 date_created: '2026-05-23'
 date_updated: '2026-05-24'
+steps:
+- 'Step 1: Payment-in-Kind (PIK), which allows borrowers to defer cash interest by accruing more principal — keeping defaults optically low while leverage rises; and'
+- 'Step 2: subscription facilities (secured against unfunded LP commitments) and NAV lending (borrowing against fund portfolio value) — both instruments create a structure where a "hold-to-maturity, illiquid loan book" is paired with financing whose availability is contingent on lender confidence and collateral valuation. [LLM]'
+
 ---
 
 ## Scope Boundary

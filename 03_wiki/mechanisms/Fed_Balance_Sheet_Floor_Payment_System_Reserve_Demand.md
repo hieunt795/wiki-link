@@ -48,6 +48,10 @@ related:
   relation: related_concept
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: The U.S. payment system (Fedwire ~$7.3T/day) creates a structural floor on the size of the Fed''s balance sheet: large banks (GSIBs) are unwilling to use Fed liquidity facilities (daylight overdrafts, Discount Window, Standing Repo) due to regulatory stigma and post-GFC liquidity regulation self-sufficiency requirements, so they pre-load opening reserve balances instead'
+- 'Step 2: when QT reduces reserves below this floor, banks throttle outgoing payments, creating a self-fulfilling liquidity crunch with repo rates spiking far above IORB — as on September 17, 2019, when SOFR spiked 315bps above IORB'
+
 ---
 
 ## Why the Fed's Balance Sheet Cannot Shrink Freely

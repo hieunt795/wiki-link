@@ -43,6 +43,11 @@ related:
   relation: shared_tag:japan
 date_created: '2026-05-22'
 date_updated: '2026-05-22'
+steps:
+- 'Step 1: Modern financial repression operates through reserve creation and yield curve control rather than explicit capital controls: by maintaining bank reserves at below-market rates, the sovereign captures an implicit spread'
+- 'Step 2: estimated at 197bps in Japan, equivalent to nearly 2% of GDP per year'
+- 'Step 3: as a tax on deposit holders, channelling private savings into public sector funding without formal restrictions'
+
 ---
 
 

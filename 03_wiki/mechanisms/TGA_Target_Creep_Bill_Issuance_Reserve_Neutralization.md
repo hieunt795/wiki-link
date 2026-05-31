@@ -39,6 +39,10 @@ related:
   relation: related_mechanism
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: As Treasury shifts debt issuance toward shorter-maturity bills, the frequency of maturities and redemptions rises, requiring a larger cash buffer in the TGA'
+- 'Step 2: structurally pushing Treasury to ratchet up its TGA target (e.g. $850B → $900B+), which permanently neutralizes additional reserves in the government''s account and must be offset by Fed RMOs'
+
 ---
 
 ## Mechanism

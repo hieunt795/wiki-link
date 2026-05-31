@@ -35,6 +35,10 @@ related:
   relation: analytics_for
 date_created: 2026-05-20
 date_updated: 2026-05-20
+steps:
+- 'Step 1 (trigger): Transmission from short-term policy rates to medium- and long-term yields is non-linear and subject to structural frictions, including asymmetric effe'
+- 'Step 2 (propagation): causal chain produces outcome described in body'
+
 ---
 
 ## Overview

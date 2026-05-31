@@ -42,6 +42,12 @@ related:
   relation: borrower_credit_masking_channel
 date_created: '2026-05-23'
 date_updated: '2026-05-24'
+steps:
+- 'Step 1: leverage providers face correlated drawdowns on revolving credit lines'
+- 'Step 2: LPs face capital calls and commitment strain'
+- 'Step 3: NAV loans and subscription facilities become harder to roll or more expensive'
+- 'Step 4: confidence in valuations weakens as secondary clearing prices and public proxy prices (BDC NAV discounts) diverge from reported marks — making "liquidity event" and "valuation event" synonymous in a market not built for continuous clearing. [LLM]'
+
 ---
 
 ## Scope Boundary

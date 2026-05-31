@@ -34,6 +34,10 @@ parent_node: null
 related: []
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: borrowing banks can shop among banks with excess reserves, preventing rates from rising far above the remuneration rate; and'
+- 'Step 2: banks with excess reserves will never lend below the remuneration rate — together creating a natural floor with three advantages: reliable rate control, balance sheet size as a separable policy instrument, and expanded supply of safe liquid assets. [LLM]'
+
 ---
 
 [LLM] Auto-generated stub from ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md. Review and expand.

@@ -34,6 +34,10 @@ parent_node: null
 related: []
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: BoJ QE systematically extracted duration from the private sector by swapping long-duration JGBs for near-zero-duration reserves, leaving Japanese households holding predominantly bank deposits (near-zero duration) while the government held long-duration assets'
+- 'Step 2: when interest rates fell, equity-holding government and wealthy households captured the capital gains, while deposit-holding middle-class households received nothing — creating a structural wealth transfer from households to the consolidated public sector and from young/unsophisticated to old/wealthy. [LLM]'
+
 ---
 
 [LLM] Auto-generated stub from What about Japan_ (Part II).md. Review and expand.

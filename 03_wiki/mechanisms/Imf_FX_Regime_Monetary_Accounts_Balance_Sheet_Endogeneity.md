@@ -76,6 +76,12 @@ related:
   relation: theoretical_root
 date_created: '2026-05-26'
 date_updated: '2026-05-26'
+steps:
+- 'Step 1: Under a fixed exchange rate regime, the central bank''s monetary accounts identity (RM = NFA + NCG + Cb + OIN) loses its normal causality: NFA becomes endogenous — determined by BOP flows and the intervention obligation — and money supply adjusts to clear the exchange market rather than serving as a policy instrument'
+- 'Step 2: This is the IMF Chapter 5 formulation of the same constraint captured in the impossible trinity: fixing the exchange rate surrenders monetary control'
+- 'Step 3: Sterilization can delay but not sustain monetary independence because of two limits — the depth of the securities market and the fiscal cost of the interest differential'
+- 'Step 4: The three real-world responses to capital inflows (partial intervention, partial sterilization, some monetary expansion) describe the middle ground between the pure fixed and pure float extremes'
+
 ---
 
 ## The Core IMF Formulation: Balance Sheet Causality Reversal

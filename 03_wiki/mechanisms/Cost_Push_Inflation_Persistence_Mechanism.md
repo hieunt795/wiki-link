@@ -39,6 +39,10 @@ related:
   relation: expectation_anchor
 date_created: 2026-05-24
 date_updated: 2026-05-24
+steps:
+- 'Step 1 (trigger): Cost-push inflation becomes persistent when a relative-price shock, wage shock, or productivity-cost mismatch is accommodated by monetary policy or em'
+- 'Step 2 (propagation): causal chain produces outcome described in body'
+
 ---
 
 ## Mechanism

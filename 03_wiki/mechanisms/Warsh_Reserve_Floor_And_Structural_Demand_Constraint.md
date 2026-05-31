@@ -49,6 +49,10 @@ related:
   relation: implementation_constraint
 date_created: 2026-05-24
 date_updated: 2026-05-24
+steps:
+- 'Step 1: Warsh''s balance-sheet shrinking program runs into a reserve-floor constraint: the Fed cannot reduce reserves below the system''s structural demand without causing money-market dislocations'
+- 'Step 2: This makes the question not whether the balance sheet can be smaller, but how far it can shrink before SOFR and related rates lose their stable floor'
+
 ---
 
 ## Core Mechanism

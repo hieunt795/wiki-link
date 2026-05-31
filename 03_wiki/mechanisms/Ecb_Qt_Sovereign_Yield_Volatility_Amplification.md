@@ -31,6 +31,10 @@ parent_node: null
 related: []
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: The ECB quantitative tightening cycle has structurally increased realized volatility of European sovereign yields by removing the most price-insensitive buyer from the market'
+- 'Step 2: events like the March 2025 single-day 30bp Bund move (largest since 1990) demonstrate that without the ECB backstop, idiosyncratic fiscal news can trigger dislocations that would previously have been absorbed by central bank intervention. [LLM]'
+
 ---
 
 [LLM] Auto-generated stub from Who Buys When the ECB Doesn't_.md. Review and expand.

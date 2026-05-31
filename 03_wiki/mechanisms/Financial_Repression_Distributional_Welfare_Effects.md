@@ -43,6 +43,10 @@ related:
   relation: shared_tag:duration
 date_created: '2026-05-22'
 date_updated: '2026-05-22'
+steps:
+- 'Step 1 (trigger): Financial repression via QE and low-rate policy generates systematically regressive distributional effects'
+- 'Step 2 (outcome): deposit-heavy non-participants (67% of Japanese households, skewed toward young and low-income) bear welfare losses of 6-9% of wealth per 100bps rate decline because their asset duration cannot match'
+
 ---
 
 

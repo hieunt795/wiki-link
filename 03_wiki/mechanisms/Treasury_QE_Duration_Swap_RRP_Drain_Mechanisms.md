@@ -42,6 +42,10 @@ related:
   relation: context
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: duration-reducing swap (buy long-dated bonds, re-issue short-dated), which removes duration risk from private hands and stimulates risk assets if announced explicitly; and'
+- 'Step 2: RRP-drain QE (MMF withdraws from RRP to buy new Treasury bills which fund the buyback), which involuntarily boosts net liquidity without Fed balance sheet expansion'
+
 ---
 
 ## Type 1 — Duration-Reducing Buyback (Deliberate Stimulus)

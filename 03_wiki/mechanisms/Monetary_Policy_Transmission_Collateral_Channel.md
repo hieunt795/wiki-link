@@ -57,6 +57,10 @@ related:
   relation: shared_tag:collateral
 date_created: 2026-05-20
 date_updated: 2026-05-20
+steps:
+- 'Step 1: Repo rates — which reflect collateral availability and quality — guide the policy rate more directly than unsecured interbank rates'
+- 'Step 2: QE, by removing high-quality collateral from circulation and replacing it with reserves, suppresses collateral velocity and may impair monetary transmission: large CB footprint in collateral markets weakens the market signals that normally guide policy'
+
 ---
 
 

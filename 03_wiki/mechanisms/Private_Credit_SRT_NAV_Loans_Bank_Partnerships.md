@@ -69,6 +69,11 @@ related:
   relation: shared_tag:private-credit
 date_created: 2026-05-20
 date_updated: 2026-05-24
+steps:
+- 'Step 1: SRT — transferring first-loss credit risk from the balance sheet to PC fund investors for regulatory capital relief'
+- 'Step 2: originate-to-distribute — converting from spread income to fee income while retaining origination relationships'
+- 'Step 3: providing leverage to PC funds via subscription lines and NAV loans. These mechanisms do not eliminate bank credit exposure — they reconfigure it from direct lending to indirect exposure to PC fund leverage. The systemic implication is correlated drawdown risk: in stress, PC funds simultaneously tap bank credit lines, creating a network liquidity event invisible to standard bank stress tests'
+
 ---
 
 

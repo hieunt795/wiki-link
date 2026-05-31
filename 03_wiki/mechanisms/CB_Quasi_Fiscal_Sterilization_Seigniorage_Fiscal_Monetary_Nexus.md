@@ -79,6 +79,12 @@ related:
   relation: policy_response_framework
 date_created: '2026-05-24'
 date_updated: '2026-05-24'
+steps:
+- 'Step 1: the normal seigniorage channel transfers CB profits to government as nontax revenue when CB issues non-interest-bearing liabilities and earns on backing assets'
+- 'Step 2: sterilization of inflows inverts this channel — CB earns low-yield FX assets while paying high-yield domestic assets, converting seigniorage transfers into calls on the government budget'
+- 'Step 3: NCG expansion to accommodate fiscal deficits looks neutral in the monetary survey but functions as de facto deficit monetization, masking fiscal imbalances until NFA depletion forces adjustment'
+- 'Step 4: fiscal dominance — where government pressure prevents policy correction — is the endpoint of sustained NCG accommodation combined with FX target defense. The IMF GFS framework classifies CB sterilization losses, subsidized lending, and FX guarantees as quasi-fiscal operations that must be added to the conventional fiscal deficit to measure the true policy stance'
+
 ---
 
 ## The Fundamental Channel Architecture

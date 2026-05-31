@@ -39,6 +39,10 @@ related:
   relation: quantitative_buffer_link
 date_created: '2026-05-23'
 date_updated: '2026-05-24'
+steps:
+- 'Step 1: Reducing the level and volatility of the Treasury General Account (TGA) is identified as the most accessible path to shrinking the Fed balance sheet without increasing rate volatility — because TGA moves drive opposite moves in reserves, so lower TGA volatility reduces the required ample reserves buffer'
+- 'Step 2: proposals include moving Treasury cash management to private money markets or capping TGA balances, with side benefits of reducing the Fed''s footprint in money markets. [LLM]'
+
 ---
 
 ## Scope Boundary

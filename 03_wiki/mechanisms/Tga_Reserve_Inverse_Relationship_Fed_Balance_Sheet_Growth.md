@@ -36,6 +36,10 @@ related:
   relation: volatility_extension
 date_created: '2026-05-23'
 date_updated: '2026-05-24'
+steps:
+- 'Step 1: Every Treasury transaction with the private sector mechanically produces dTGA = -dReserves (a zero-sum liability swap on the Fed balance sheet)'
+- 'Step 2: however, when TGA changes are large and persistent, the Fed must expand assets to maintain ample reserves — so over time dTGA = dAssets, and both an increase in the LEVEL and VOLATILITY of the TGA directly force a larger Fed balance sheet. [LLM]'
+
 ---
 
 ## Scope Boundary

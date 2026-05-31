@@ -33,6 +33,10 @@ parent_node: null
 related: []
 date_created: '2026-05-27'
 date_updated: '2026-05-27'
+steps:
+- 'Step 1: [LLM] In system-wide liquidity stress, liquidity drains from weaker institutions toward stronger ones'
+- 'Step 2: individual banks'' management reactions — asset sales, credit line drawdowns, funding substitution — alter both the bank''s own survival and the shock''s propagation to other institutions. Second-round effects require assumptions about management responses, contagion channels (interbank markets, common exposures), and bank-NBFI linkages that current models inadequately capture. Post-2023 banking turmoil (SVB, Credit Suisse) has reinforced the need to model technology-driven deposit velocity and NBFI interaction'
+
 ---
 
 [LLM] Auto-generated stub from insights59.md. Review and expand.

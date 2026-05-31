@@ -54,6 +54,11 @@ related:
   relation: seigniorage_depends_on_multiplier_stability
 date_created: '2026-05-25'
 date_updated: '2026-05-25'
+steps:
+- 'Step 1: The money multiplier links reserve money (monetary base) to broad money (M2) through the behavioral choices of three agents: the monetary authority (reserve requirements), commercial banks (excess reserve ratio), and the public (currency and time deposit ratios)'
+- 'Step 2: The simple multiplier mm=(1+c)/(c+r) extends to a full decomposition across deposit types and reserve categories: mm=(1+c+b)/ (c+rd+rt·b+re·(1+b))'
+- 'Step 3: Rising c (currency flight) or re (precautionary excess reserves) compresses the multiplier, as do financial innovation (shifts deposits to non-bank instruments) and currency substitution (FX deposits exit the multiplier chain)'
+
 ---
 
 ## Conceptual Foundation

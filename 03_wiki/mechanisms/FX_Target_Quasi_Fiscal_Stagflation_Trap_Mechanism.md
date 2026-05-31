@@ -77,6 +77,12 @@ related:
   relation: crisis_vector_context
 date_created: '2026-05-25'
 date_updated: '2026-05-25'
+steps:
+- 'Step 1: Stagflation under an FX rate target is regime-structural, not shock-driven: the FX commitment simultaneously generates persistent inflation (by disabling the exchange rate as a cost-push shock absorber and enabling monetary accommodation) and suppresses growth (via quasi-fiscal drain on fiscal space, crowding out of private credit, and elevated domestic interest rates from sterilization)'
+- 'Step 2: The trap is self-reinforcing: sterilization costs accumulate as quasi-fiscal losses, eroding seigniorage transfers to government, which must either cut spending (deepening stagnation) or accommodate via NCG expansion (deepening inflation)'
+- 'Step 3: Fear of floating locks both channels shut simultaneously'
+- 'Step 4: Policy cannot solve inflation and stagnation with the same instrument when that instrument is neutered by the FX commitment'
+
 ---
 
 ## What Makes This Stagflation Regime-Structural

@@ -64,6 +64,10 @@ related:
   relation: macro_outcome
 date_created: '2026-05-25'
 date_updated: '2026-05-25'
+steps:
+- 'Step 1: Every FX intervention and sterilization operation propagates simultaneously across five balance sheets — CB, DMBs, Government, Private sector, and External — linked by three accounting identities (RM = NFA + NCG + Cb + OINm'
+- 'Step 2: (Sp−Ip) + (Sg−Ig) = CAB). The critical diagnostic insight is that M2 and RM remain stable in appearance throughout the buildup phases (sterilization cancels the FX effect), while the actual stress accumulates in the structure of M2: NFA/M2 falling, NCG/M2 rising, CPS/M2 falling. Dual deterioration — NFA↓ + NCG↑ simultaneously in the same period — is the leading signal of a regime under maximum stress, visible from the CB balance sheet before it manifests as crisis'
+
 ---
 
 ## Accounting Identities — Three Must Hold Simultaneously

@@ -48,6 +48,11 @@ related:
   relation: component_of
 date_created: '2026-05-28'
 date_updated: '2026-05-28'
+steps:
+- 'Step 1: the change in NII from repricing of floating positions and the rollover of maturing fixed positions (measured by Δ NII)'
+- 'Step 2: the change in economic value of all outstanding fixed-rate positions (measured by Δ EVE); and'
+- 'Step 3: the change in value of embedded automatic options (zero floors, prepayment options, caps) captured in the option add-on (KAO) — and the relative magnitude of these channels depends critically on the duration gap and behavioral assumptions embedded in the balance sheet'
+
 ---
 
 ## The Two P&L Components: Locked-In vs. At-Risk

@@ -35,6 +35,10 @@ related:
   relation: related_mechanism
 date_created: '2026-05-24'
 date_updated: '2026-05-24'
+steps:
+- 'Step 1: The ''scissors effect'' occurs when a central bank simultaneously withdraws from the sovereign bond market through quantitative tightening (QT) while government issuance (net borrowing) is rising'
+- 'Step 2: This creates a dual pressure on the market, as the residual buyer must absorb both the new issuance and the maturing bonds being rolled off the central bank''s balance sheet'
+
 ---
 
 ## Mechanism of the Scissors Effect

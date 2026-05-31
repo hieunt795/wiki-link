@@ -36,6 +36,10 @@ parent_node: null
 related: []
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: Japan''s consolidated public sector (government + BoJ + public pension + GPIF) operates as a leveraged sovereign wealth fund: it borrows short at near-zero rates (JGBs 107% GDP + BoJ reserves 91% GDP = 275% GDP liabilities) and invests long in risky assets (domestic equities + unhedged foreign securities = 95% GDP), earning excess returns of ~6% GDP annually above funding costs'
+- 'Step 2: a structure that creates massive interest rate and FX risk at the consolidated balance sheet level. [LLM]'
+
 ---
 
 [LLM] Auto-generated stub from What about Japan_ (Part I).md. Review and expand.

@@ -40,6 +40,10 @@ related:
   relation: shared_tag:duration
 date_created: '2026-05-22'
 date_updated: '2026-05-22'
+steps:
+- 'Step 1: At the ''effective maturity'' horizon (≈ 2× duration target), cumulative accrual gains and cumulative price effects exactly offset each other regardless of yield direction, creating a convergence to initial yield'
+- 'Step 2: and trapping the investor in the yield environment at portfolio inception'
+
 ---
 
 

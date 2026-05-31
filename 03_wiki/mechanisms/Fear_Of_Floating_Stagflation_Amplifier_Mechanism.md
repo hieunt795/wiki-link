@@ -62,6 +62,10 @@ related:
   relation: component_of
 date_created: '2026-05-25'
 date_updated: '2026-05-25'
+steps:
+- 'Step 1: Fear of floating — the authorities'' inability to allow exchange rate depreciation because unhedged FX exposures in banking and nonbank sectors would trigger mass insolvencies — converts a standard BOP adjustment problem into a stagflation trap. The CB is locked: cannot depreciate (banking collapse), cannot raise rates freely (growth collapses), cannot cut rates (reserves bleed). Inflation persists because the FX channel is disabled as a shock absorber'
+- 'Step 2: growth stagnates because monetary and fiscal space is consumed by peg defense. The mechanism is self-reinforcing: the longer the peg is defended, the larger the unhedged FX exposure buildup, and the higher the eventual cost of adjustment'
+
 ---
 
 ## The Lock-In Mechanism: From Peg Defense to Stagflation

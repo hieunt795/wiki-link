@@ -41,6 +41,11 @@ related:
   relation: fiscal_consequence_of_qe_losses
 date_created: '2026-05-23'
 date_updated: '2026-05-24'
+steps:
+- 'Step 1: Fed QE programs perform a ''maturity swap'' on the consolidated public sector balance sheet (Fed + Treasury)'
+- 'Step 2: By purchasing long-term fixed-rate Treasuries and issuing floating-rate reserves (IORB), the Fed effectively converts the sovereign''s interest rate hedge into a floating-rate mortgage'
+- 'Step 3: This creates a ''Giant Carry Trade'' for the public sector, which generates profits when rates are low but causes massive fiscal losses—and a cessation of Fed remittances to the Treasury—when interest rates rise'
+
 ---
 
 ## The Fed-Treasury Maturity Swap

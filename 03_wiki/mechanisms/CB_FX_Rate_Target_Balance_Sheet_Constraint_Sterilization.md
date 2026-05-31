@@ -70,6 +70,10 @@ related:
   relation: theoretical_root
 date_created: '2026-05-24'
 date_updated: '2026-05-24'
+steps:
+- 'Step 1: reserve depletion when defending against depreciation, and'
+- 'Step 2: quasi-fiscal carrying costs when sterilizing appreciation-driven inflows. Sustained sterilization against a persistent shock is unsustainable and, if delayed, results in a larger eventual adjustment'
+
 ---
 
 ## The Root Constraint: NFA Becomes Endogenous

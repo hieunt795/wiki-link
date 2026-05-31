@@ -66,6 +66,11 @@ related:
   relation: shared_tag:reserves
 date_created: 2026-05-20
 date_updated: 2026-05-20
+steps:
+- 'Step 1: The minimum level of reserve balances ("reserve floor") that the Fed must supply is driven primarily by the demand of the payment system, not by monetary policy alone. RTGS (real-time gross settlement) requires banks to pre-fund large opening-of-day reserve balances'
+- 'Step 2: post-GFC liquidity regulations stigmatize intraday overdrafts'
+- 'Step 3: and IORB remuneration removes incentives to lend excess reserves. These three structural changes raised the minimum from ~$10B pre-GFC to ~$3T, creating a ratchet effect. When reserves fall below the ample floor, payment delays beget repo rate spikes (September 2019 being the canonical example). Policy options to lower the floor include liquidity savings mechanisms (LSMs), tiered IORB, revised LCR/daylight overdraft rules, and TOMOs'
+
 ---
 
 

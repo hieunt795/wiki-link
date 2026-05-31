@@ -43,6 +43,10 @@ related:
   relation: shared_tag:fed
 date_created: '2026-05-22'
 date_updated: '2026-05-22'
+steps:
+- 'Step 1: The Federal Funds rate (EFFR) is maintained near the IORB floor primarily through FHLB arbitrage: FHLBs, ineligible for IORB, lend reserves to banks at EFFR (slightly below IORB), which deposit at the Fed for a spread'
+- 'Step 2: this creates a soft floor on EFFR and means SOFR rising above IORB is the key leading indicator that reserve scarcity is transitioning from ample to binding'
+
 ---
 
 

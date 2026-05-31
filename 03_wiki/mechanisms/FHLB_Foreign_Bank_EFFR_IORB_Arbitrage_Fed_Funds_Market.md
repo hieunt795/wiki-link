@@ -41,6 +41,10 @@ related:
   relation: context
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: The U.S. Fed Funds market is now sustained almost entirely by a single arbitrage trade — Federal Home Loan Banks (FHLBs), which cannot earn IORB on reserves, lend reserves to foreign bank branches at EFFR'
+- 'Step 2: those foreign banks (exempt from U.S. regulatory costs) deposit the reserves at the Fed and earn the IORB-EFFR spread (~5-10bps), representing the last meaningful unsecured interbank lending activity in the post-Basel III system'
+
 ---
 
 ## Mechanism

@@ -41,6 +41,11 @@ related:
   relation: consequence_of_duration_extraction
 date_created: '2026-05-22'
 date_updated: '2026-05-24'
+steps:
+- 'Step 1: Quantitative easing (QE) functions as a structural duration-for-liquidity swap'
+- 'Step 2: By purchasing long-duration government bonds and issuing near-zero-duration bank reserves, central banks systematically extract interest rate risk from the private sector'
+- 'Step 3: This forces private investors into a ''portfolio rebalancing'' process—seeking higher-yielding, longer-duration risky assets to replace the duration lost to the central bank, thereby easing financial conditions across the broader economy'
+
 ---
 
 ## The Duration-for-Liquidity Swap

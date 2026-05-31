@@ -41,6 +41,10 @@ related:
   relation: related_mechanism
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: TQT (Tighter Quantitative Tightening) — when the U.S. Treasury shifts issuance from short-term bills toward longer-duration coupon bonds (notes and bonds) — is more effective at tightening financial conditions than standard QT, because duration risk forces investors to reassess risk tolerance and sell riskier assets to offset the new duration exposure'
+- 'Step 2: the Treasury (not the Fed) controls this dimension of financial tightening'
+
 ---
 
 ## Why the Treasury Controls QT's Tightening Power

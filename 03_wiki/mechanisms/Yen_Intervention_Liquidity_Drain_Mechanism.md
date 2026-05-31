@@ -49,6 +49,10 @@ related:
   relation: shared_tag:japan
 date_created: 2026-05-20
 date_updated: 2026-05-20
+steps:
+- 'Step 1: Yen intervention by the Ministry of Finance (MoF) acts as a global liquidity drain'
+- 'Step 2: by selling US Treasuries to buy Yen, Japan effectively reduces the supply of global dollar collateral while increasing selling pressure on US rates'
+
 ---
 
 

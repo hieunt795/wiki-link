@@ -41,6 +41,11 @@ related:
   relation: context
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: T-bill supply and Fed ON RRP balances are substitutes for MMF cash: high T-bill issuance routes MMF funds out of the RRP into bills (draining RRP, boosting reserves), while T-bill supply contractions'
+- 'Step 2: particularly during debt ceiling episodes'
+- 'Step 3: drive MMF cash back into the RRP, inflating it and preventing reserve growth even as the TGA is drawn down'
+
 ---
 
 ## Core Substitution Mechanism

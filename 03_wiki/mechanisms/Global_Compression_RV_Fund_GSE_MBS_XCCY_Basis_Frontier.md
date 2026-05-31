@@ -47,6 +47,11 @@ related:
   relation: context
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: Three forces extend the Fed''s RMO requirement beyond initial estimates'
+- 'Step 2: Big Six banks front-running rate cuts by swapping reserves for USTs (structural reserve drain), GSE mandated MBS purchases (~$200B) funded via agency debt creating upward overnight rate pressure, and RV fund basis trade persistence driving structural repo demand'
+- 'Step 3: with XCCY basis emerging as the next battleground when onshore USD funding normalizes'
+
 ---
 
 ## Three Forces Extending RMO Need

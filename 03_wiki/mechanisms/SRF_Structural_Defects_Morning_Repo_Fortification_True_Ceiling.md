@@ -45,6 +45,10 @@ related:
   relation: precursor
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: The SRF''s advertised ceiling rate (SRFR) understates the true effective ceiling because dealers need ~25bps over SRFR to cover SRF balance sheet costs (can''t net trades), haircuts on collateral, and negative carry risk'
+- 'Step 2: defects partially addressed by "morning Fed repos" (December 2024) that let dealers borrow at dawn rather than waiting until 1:15pm, but stigma persists structurally and cannot be eliminated by price or timing fixes alone'
+
 ---
 
 ## SRF Structural Defects

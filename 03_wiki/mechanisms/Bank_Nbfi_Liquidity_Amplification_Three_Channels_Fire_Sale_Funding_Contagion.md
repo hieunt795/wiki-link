@@ -36,6 +36,11 @@ parent_node: null
 related: []
 date_created: '2026-05-27'
 date_updated: '2026-05-27'
+steps:
+- 'Step 1: Asset liquidation — NBFI fire sales (triggered by redemption shocks or margin calls) depress prices of assets also held by banks, impairing bank collateral values'
+- 'Step 2: Funding withdrawal — NBFIs withdraw repo, FX swap, and money market funding from banks'
+- 'Step 3: Contagion — depositor/investor runs triggered by perceived bank-NBFI similarity. March 2020 (dash-for-cash), 2022 UK LDI pension crisis, and 2023 SVB/Credit Suisse stress all involved at least two of these three channels. Authorities have begun designing exploratory bank-NBFI stress tests (BoE, MAS) to map these linkages'
+
 ---
 
 [LLM] Auto-generated stub from insights59.md. Review and expand.

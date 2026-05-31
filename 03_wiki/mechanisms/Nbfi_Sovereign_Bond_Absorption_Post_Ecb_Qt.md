@@ -31,6 +31,10 @@ parent_node: null
 related: []
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1 (trigger): As the ECB systematically withdraws under quantitative tightening, non-bank financial intermediaries (investment funds, insurance companies, pension funds) have absorbed the majority of European sovereign bond supply, but these buyers are structurally less stable than the central bank'
+- 'Step 2 (outcome): they are leverage-sensitive, redemption-prone, and pro-cyclical, making periodic dislocation events structurally more likely. [LLM]'
+
 ---
 
 [LLM] Auto-generated stub from Who Buys When the ECB Doesn't_.md. Review and expand.

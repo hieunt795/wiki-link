@@ -52,6 +52,10 @@ related:
   relation: theoretical_root
 date_created: '2026-05-25'
 date_updated: '2026-05-25'
+steps:
+- 'Step 1: Under open capital accounts with an FX target, the effectiveness of CB sterilization is constrained by two competing forces measured as coefficients: the offset coefficient (how much of CB tightening is neutralized by induced capital inflows) and the sterilization coefficient (how much of FX intervention liquidity is reabsorbed)'
+- 'Step 2: When the offset coefficient exceeds the sterilization coefficient, the CB''s net control over money supply is negative — tightening attracts more inflows than can be sterilized, undermining monetary autonomy'
+
 ---
 
 ## Two Coefficients That Define CB Effectiveness

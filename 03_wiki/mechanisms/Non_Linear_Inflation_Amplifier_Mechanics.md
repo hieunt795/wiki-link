@@ -36,6 +36,10 @@ related:
   relation: constraint_on
 date_created: 2026-05-22
 date_updated: 2026-05-22
+steps:
+- 'Step 1 (trigger): Inflation propagation in response to supply shocks occurs through two distinct amplifiers'
+- 'Step 2 (outcome): the structural amplifier (automatic input-output cascades through production networks) and the behavioral amplifier (changes in wage- and price-setting behavior driven by expectations). [LLM]'
+
 ---
 
 ## The Structural Amplifier (Production Network Channel)

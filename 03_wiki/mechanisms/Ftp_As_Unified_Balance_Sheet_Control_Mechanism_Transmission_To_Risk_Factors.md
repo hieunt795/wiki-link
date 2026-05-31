@@ -49,6 +49,10 @@ related:
   relation: alm_integration
 date_created: '2026-05-26'
 date_updated: '2026-05-26'
+steps:
+- 'Step 1: [LLM] FTP functions as a unified control mechanism: ALM adjusts the FTP curve by tenor to create behavioral incentives for business units — raising Liquidity Spread on short tenors when LCR is below target causes Liability Centers to push short-term deposit gathering (improving HQLA) and Asset Centers to reduce short-tenor lending'
+- 'Step 2: raising Liquidity Spread on long tenors when NSFR is deficient incentivizes stable long-term funding. The FTP mechanism automatically separates pricing risk (stays with business unit as fixed margin) from structural risk (transferred to ALM), creating clear risk ownership across the bank'
+
 ---
 
 [LLM] Auto-generated stub from ftp_transmission_analysis.md.md. Review and expand.

@@ -44,6 +44,10 @@ related:
   relation: operational_context
 date_created: 2026-05-24
 date_updated: 2026-05-24
+steps:
+- 'Step 1: The Treasury General Account affects Fed rate control not only through its level but through its volatility'
+- 'Step 2: When Treasury cash balances swing sharply, the Fed must carry a larger reserve buffer to prevent sudden reserve scarcity or excess from pushing overnight rates out of its desired operating range'
+
 ---
 
 ## Scope Boundary

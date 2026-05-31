@@ -35,6 +35,10 @@ parent_node: null
 related: []
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: China''s interest rate transmission chain flows from PBC OMO operations → 7-day interbank repo rate (DR007, the short-term benchmark) → MLF rate (medium-term policy rate) → Loan Prime Rate (LPR, quoted as a spread to the MLF) → retail lending rates'
+- 'Step 2: money market conditions and short-end government yields respond to PBC liquidity operations, while medium- and long-term yields are primarily driven by macroeconomic expectations. [LLM]'
+
 ---
 
 [LLM] Auto-generated stub from China's Monetary Policy Framework and Financial Market Transmission _ Bulletin.md. Review and expand.

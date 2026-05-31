@@ -51,6 +51,11 @@ related:
   relation: accounting_drainage_mechanism
 date_created: '2026-05-23'
 date_updated: '2026-05-24'
+steps:
+- 'Step 1: QE is a ''coiled spring'' for collateral markets: by absorbing high-quality collateral (HQC) onto central bank balance sheets, it suppresses collateral velocity and financial lubrication'
+- 'Step 2: This ''siloing'' effect creates collateral scarcity, driving repo rates down (often below the CB''s floor)'
+- 'Step 3: The subsequent withdrawal (QT) or ''Not-QE'' interventions (like RMOs or BTFP) must manage the dual tension of releasing collateral back to the market while maintaining rate control, a process that can trigger a ''Scissors Effect'' where rising supply meets falling CB support'
+
 ---
 
 ## Scope Boundary

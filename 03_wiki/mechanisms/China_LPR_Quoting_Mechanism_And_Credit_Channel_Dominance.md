@@ -40,6 +40,10 @@ related:
   relation: context
 date_created: '2026-05-23'
 date_updated: '2026-05-23'
+steps:
+- 'Step 1: The LPR is formed monthly by 20 quoting banks submitting spreads over the OMO (primarily MLF) rate to the National Interbank Funding Center, with the arithmetic mean after excluding outliers published for 1Y and 5Y+ maturities'
+- 'Step 2: China''s monetary transmission is primarily driven by the credit channel (affecting credit availability) rather than the interest rate channel, and cross-market transmission between the money market (DR007), credit market (LPR), and bond market (Treasury yield) is structurally blocked'
+
 ---
 
 ## LPR Quoting Mechanism
