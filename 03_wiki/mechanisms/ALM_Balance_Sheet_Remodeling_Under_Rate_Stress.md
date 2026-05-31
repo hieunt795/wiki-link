@@ -34,7 +34,7 @@ thesis: '[LLM] When interest rates move, the banking book P&L is affected throug
 
   '
 source_refs:
-- path: 02_sources/books/alm/A - Asset liability optimization.md
+- path: 02_sources/books/alm/ALM - Asset liability optimization.md
   pages: Introduction (margin locked-in, margin at risk), Ch 1 (negative rates), Ch
     2 (NII, EVE, ICAAP)
   weight: primary

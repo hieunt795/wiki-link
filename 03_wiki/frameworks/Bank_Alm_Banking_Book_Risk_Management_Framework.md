@@ -31,7 +31,7 @@ thesis: '[LLM] Asset-Liability Management (ALM) in commercial banks centrally ma
   customer margin, while the ALM desk absorbs all repricing, maturity transformation,
   and behavioral option risk.'
 source_refs:
-- path: 02_sources/books/alm/A - Asset liability optimization.md
+- path: 02_sources/books/alm/ALM - Asset liability optimization.md
   pages: ''
   weight: primary
 parent_node: null

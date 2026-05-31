@@ -23,7 +23,7 @@ thesis: '[LLM] Effective stress testing must be embedded in the institution''s g
   Principles 1–3 establish that senior management is responsible for stress test design,
   the programme covers all material risks, and results feed into business decisions.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/bcbs155.md
+- path: 02_sources/regulator/bcbs/bcbs155 - Principles for sound stress testing practices and supervision.md
   pages: ''
   weight: primary
 parent_node: null

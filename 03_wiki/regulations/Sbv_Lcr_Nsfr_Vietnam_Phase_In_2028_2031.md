@@ -39,7 +39,7 @@ source_refs:
   pages: Điều 14 (application), Điều 17 (LCR formula and schedule), Điều 15 (liquidity
     risk mgmt)
   weight: primary
-- path: 02_sources/regulator/bcbs/bcbs238.md
+- path: 02_sources/regulator/bcbs/bcbs238 - Basel III The Liquidity Coverage Ratio and liquidity risk monitoring tools.md
   pages: ''
   weight: supporting
 parent_node: '[[Sbv_Draft_2026_Prudential_Safety_Ratios_Banks]]'

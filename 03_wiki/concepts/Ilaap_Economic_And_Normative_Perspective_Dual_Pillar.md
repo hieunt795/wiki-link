@@ -26,7 +26,7 @@ thesis: '[LLM] The ECB ILAAP Guide''s Principle 3 defines two complementary pers
   going forward. Both perspectives must inform each other and be consistent, with
   the economic perspective anchoring the normative one.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/ssm.ilaap_guide_201811.en.md
+- path: 02_sources/regulator/bcbs/ECB Guide to the internal liquidity adequacy assessment process (ILAAP).md
   pages: ''
   weight: primary
 parent_node: null

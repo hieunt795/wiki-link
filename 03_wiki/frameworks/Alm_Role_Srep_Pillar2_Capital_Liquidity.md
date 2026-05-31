@@ -33,8 +33,7 @@ thesis: 'SREP is a mechanism in Pillar II of Basel III to ensure banks have suff
 
   '
 source_refs:
-- path: 02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday,
-    Today and Tomorrow-De Gruyter (2021).md
+- path: 02_sources/books/alm/ALM - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md
   pages: 'Chapter 13: ALM Role in SREP; Box 12.1; Box 13.2'
 parent_node: null
 related:

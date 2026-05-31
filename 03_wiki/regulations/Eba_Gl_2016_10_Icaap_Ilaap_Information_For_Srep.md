@@ -31,8 +31,7 @@ thesis: '[LLM] EBA Guidelines GL/2016/10 (Nov 2016, apply from Jan 2017) specify
   and quality assurance. The guidelines do not prescribe specific ICAAP/ILAAP formats
   but standardise supervisory information requirements.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/Final report on Guidelines on ICAAP ILAAP
-    (EBA-GL-2016-10).md
+- path: 02_sources/regulator/bcbs/Final report on Guidelines on ICAAP ILAAP (EBA-GL-2016-10).md
   pages: ''
   weight: primary
 parent_node: null

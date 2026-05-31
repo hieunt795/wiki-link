@@ -36,7 +36,7 @@ thesis: '[LLM] ALM balance sheet optimization is a formal process that defines t
 
   '
 source_refs:
-- path: 02_sources/books/alm/A - Asset liability optimization.md
+- path: 02_sources/books/alm/ALM - Asset liability optimization.md
   pages: Introduction, Ch 1, Ch 4
   weight: primary
 parent_node: '[[ALM_Banking_Book_Risk_Management]]'

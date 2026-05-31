@@ -32,7 +32,7 @@ thesis: '[LLM] The two IRRBB measurement perspectives — the earnings perspecti
 
   '
 source_refs:
-- path: 02_sources/books/alm/A - Asset liability optimization.md
+- path: 02_sources/books/alm/ALM - Asset liability optimization.md
   pages: Ch 1 (Overview of Financial Risks), Ch 2 (Maturity Gap Analysis, EVE section)
   weight: primary
 parent_node: '[[ALM_Balance_Sheet_Optimization_Framework]]'

@@ -27,7 +27,7 @@ thesis: '[LLM] The LCR is designed to be usable in stress — banks are expected
   overall risk profile, magnitude and duration of breach. Supervisory response is
   graduated — the standard is not a hard floor that triggers automatic penalties.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/bcbs238.md
+- path: 02_sources/regulator/bcbs/bcbs238 - Basel III The Liquidity Coverage Ratio and liquidity risk monitoring tools.md
   pages: ''
   weight: primary
 parent_node: null

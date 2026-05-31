@@ -28,7 +28,7 @@ thesis: '[LLM] The Liquidity Adequacy Statement (LAS) is the formal, board-appro
   Without a substantive LAS, the ILAAP is a compliance document, not a governance
   tool.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/ssm.ilaap_guide_201811.en.md
+- path: 02_sources/regulator/bcbs/ECB Guide to the internal liquidity adequacy assessment process (ILAAP).md
   pages: ''
   weight: primary
 parent_node: null

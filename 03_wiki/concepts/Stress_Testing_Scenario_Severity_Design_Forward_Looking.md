@@ -27,7 +27,7 @@ thesis: '[LLM] Effective stress scenarios must balance severity (severe enough t
   extreme scenarios as implausible, producing a systematic bias toward insufficient
   severity.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/bcbs155.md
+- path: 02_sources/regulator/bcbs/bcbs155 - Principles for sound stress testing practices and supervision.md
   pages: ''
   weight: primary
 parent_node: null

@@ -48,11 +48,11 @@ source_refs:
   pages: 'lines 11799–11981 (Ch.20: ILAAP definition, stress testing process, ILAAP
     drafting, L-SREP, Individual Liquidity Guidance, ILAAP ToC)'
   weight: primary
-- path: 02_sources/regulator/bcbs/bcbs144.md
+- path: 02_sources/regulator/bcbs/bcbs144 - Principles for Sound Liquidity Risk Management and Supervision.md
   pages: 'para 94–127 (Principles 10–12: stress testing, CFP, HQLA cushion — conceptual
     foundation for ILAAP)'
   weight: supporting
-- path: 02_sources/regulator/bcbs/ssm.ilaap_guide_201811.en.md
+- path: 02_sources/regulator/bcbs/ECB Guide to the internal liquidity adequacy assessment process (ILAAP).md
   pages: full document — 7 ILAAP principles, dual economic/normative perspective,
     SSM expectations
   weight: primary

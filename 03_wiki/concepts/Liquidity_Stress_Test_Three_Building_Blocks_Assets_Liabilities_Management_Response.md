@@ -29,7 +29,7 @@ thesis: '[LLM] A bank liquidity stress test comprises three building blocks: (1)
   management responses across the banking system are the hardest to model and remain
   largely qualitative.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/insights59.md
+- path: 02_sources/regulator/bcbs/insights59.md
   pages: ''
   weight: primary
 parent_node: null

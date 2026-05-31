@@ -27,7 +27,7 @@ thesis: '[LLM] FSI Insights No. 59 (Oct 2024) identifies three approaches superv
   — most complex, typically one-off. The third approach remains largely qualitative
   due to data limitations on interbank and bank-NBFI exposures.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/insights59.md
+- path: 02_sources/regulator/bcbs/insights59.md
   pages: ''
   weight: primary
 parent_node: null

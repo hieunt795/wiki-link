@@ -44,7 +44,7 @@ thesis: 'BCBS 2008 (bcbs144) establishes 17 binding principles for liquidity ris
 
   '
 source_refs:
-- path: 02_sources/regulator/bcbs/bcbs144.md
+- path: 02_sources/regulator/bcbs/bcbs144 - Principles for Sound Liquidity Risk Management and Supervision.md
   pages: para 1–9 (introduction, scope), para 7 (17-principle list), para 10 (P2 risk
     tolerance), para 11–18 (P3 governance), para 19–21 (P4 internal pricing), para
     22–57 (P5 measurement), para 58–64 (P6 cross-entity), para 65–76 (P7 funding diversification),

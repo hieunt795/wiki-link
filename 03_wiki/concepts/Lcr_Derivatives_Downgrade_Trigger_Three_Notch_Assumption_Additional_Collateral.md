@@ -28,7 +28,7 @@ thesis: '[LLM] LCR (bcbs238) derivatives outflows include: (1) 100% of net deriv
   derivatives. The 3-notch downgrade assumption is a key driver of HQLA buffer sizing
   for derivative-active banks.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/bcbs238.md
+- path: 02_sources/regulator/bcbs/bcbs238 - Basel III The Liquidity Coverage Ratio and liquidity risk monitoring tools.md
   pages: ''
   weight: primary
 parent_node: null

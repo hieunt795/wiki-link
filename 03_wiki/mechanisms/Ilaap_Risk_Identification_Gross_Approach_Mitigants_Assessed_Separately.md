@@ -26,7 +26,7 @@ thesis: '[LLM] ECB ILAAP Principle 4 mandates a two-step risk identification pro
   market crises, collateral haircuts that increase when needed most). Risk cannot
   be excluded because it is difficult to quantify — conservative estimates are required.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/ssm.ilaap_guide_201811.en.md
+- path: 02_sources/regulator/bcbs/ECB Guide to the internal liquidity adequacy assessment process (ILAAP).md
   pages: ''
   weight: primary
 parent_node: null

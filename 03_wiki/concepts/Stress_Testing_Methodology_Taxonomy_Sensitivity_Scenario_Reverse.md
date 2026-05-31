@@ -29,7 +29,7 @@ thesis: '[LLM] Stress testing methods form a spectrum: (1) Sensitivity tests —
   what inputs would produce it. BCBS bcbs155 P3 requires banks to use a range of techniques
   — no single method is sufficient alone. The three types are complementary, not substitutes.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/bcbs155.md
+- path: 02_sources/regulator/bcbs/bcbs155 - Principles for sound stress testing practices and supervision.md
   pages: ''
   weight: primary
 parent_node: null

@@ -26,7 +26,7 @@ thesis: '[LLM] Beyond the LCR ratio, bcbs238 Part 2 defines five supervisory mon
   monitoring indicators (CDS spreads, equity prices, rollover rates). These tools
   provide early warning signals beyond what LCR alone captures.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/bcbs238.md
+- path: 02_sources/regulator/bcbs/bcbs238 - Basel III The Liquidity Coverage Ratio and liquidity risk monitoring tools.md
   pages: ''
   weight: primary
 parent_node: null

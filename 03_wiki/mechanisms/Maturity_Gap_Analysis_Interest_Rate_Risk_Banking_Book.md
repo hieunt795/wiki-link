@@ -31,7 +31,7 @@ thesis: '[LLM] Maturity gap analysis measures IRRBB by bucketing rate-sensitive 
   rate shift, while the NII (Net Interest Income) perspective measures earnings impact
   over a 12-month horizon — Basel IRRBB standards (d368/BCBS) require both.'
 source_refs:
-- path: 02_sources/books/alm/A - Asset liability optimization.md
+- path: 02_sources/books/alm/ALM - Asset liability optimization.md
   pages: ''
   weight: primary
 parent_node: '[[Bank_Alm_Banking_Book_Risk_Management_Framework]]'

@@ -33,7 +33,7 @@ thesis: '[LLM] Structural liquidity management governs the medium-to-long term b
 
   '
 source_refs:
-- path: 02_sources/books/alm/A - Asset liability optimization.md
+- path: 02_sources/books/alm/ALM - Asset liability optimization.md
   pages: Ch 1 (Basel III LCR/NSFR overview), Ch 2 (Medium Long-Term Liquidity, Structural
     Liquidity Management)
   weight: primary

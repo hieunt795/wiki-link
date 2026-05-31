@@ -36,7 +36,7 @@ thesis: 'BCBS Principle 4 (2008) requires banks to incorporate liquidity costs, 
 
   '
 source_refs:
-- path: 02_sources/regulator/bcbs/bcbs144.md
+- path: 02_sources/regulator/bcbs/bcbs144 - Principles for Sound Liquidity Risk Management and Supervision.md
   pages: 'para 19–21 (Principle 4 full text: attribution, transparency, product approval),
     para 3 (pre-2008 failure: incentives misaligned with risk tolerance)'
   weight: primary

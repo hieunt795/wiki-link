@@ -36,7 +36,7 @@ thesis: 'BCBS Principle 11 (2008) requires a formal Contingency Funding Plan (CF
 
   '
 source_refs:
-- path: 02_sources/regulator/bcbs/bcbs144.md
+- path: 02_sources/regulator/bcbs/bcbs144 - Principles for Sound Liquidity Risk Management and Supervision.md
   pages: 'para 110–122 (Principle 11 full: design, roles, communication, testing),
     para 110 (CFP definition), para 111 (content requirements), para 113 (scenario
     range), para 114–115 (roles, escalation), para 116 (communication plan), para

@@ -33,7 +33,7 @@ thesis: '[LLM] The ECB ILAAP Guide (Nov 2018) formalises 7 supervisory principle
   adequacy in adverse conditions. The ECB assesses ILAAPs against these 7 principles
   within SREP.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/ssm.ilaap_guide_201811.en.md
+- path: 02_sources/regulator/bcbs/ECB Guide to the internal liquidity adequacy assessment process (ILAAP).md
   pages: ''
   weight: primary
 parent_node: null

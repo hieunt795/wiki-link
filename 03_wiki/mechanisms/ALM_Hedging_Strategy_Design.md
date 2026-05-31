@@ -32,7 +32,7 @@ thesis: '[LLM] ALM macro hedging selects and sizes derivative instruments (predo
 
   '
 source_refs:
-- path: 02_sources/books/alm/A - Asset liability optimization.md
+- path: 02_sources/books/alm/ALM - Asset liability optimization.md
   pages: Ch 1 (ALM Role, FTP), Ch 2 (Maturity Gap, Repricing Gap, EVE, PV01)
   weight: primary
 parent_node: '[[ALM_Balance_Sheet_Optimization_Framework]]'

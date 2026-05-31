@@ -29,7 +29,7 @@ thesis: '[LLM] Banks and NBFIs interact in liquidity stress through three amplif
   Authorities have begun designing exploratory bank-NBFI stress tests (BoE, MAS) to
   map these linkages.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/insights59.md
+- path: 02_sources/regulator/bcbs/insights59.md
   pages: ''
   weight: primary
 parent_node: null

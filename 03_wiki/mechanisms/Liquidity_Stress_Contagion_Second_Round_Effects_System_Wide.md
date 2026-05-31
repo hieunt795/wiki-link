@@ -26,7 +26,7 @@ thesis: '[LLM] In system-wide liquidity stress, liquidity drains from weaker ins
   turmoil (SVB, Credit Suisse) has reinforced the need to model technology-driven
   deposit velocity and NBFI interaction.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/insights59.md
+- path: 02_sources/regulator/bcbs/insights59.md
   pages: ''
   weight: primary
 parent_node: null

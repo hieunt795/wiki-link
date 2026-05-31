@@ -30,7 +30,7 @@ thesis: '[LLM] Basel III''s LCR (bcbs238, Jan 2013) requires banks to maintain a
   2019. The standard defines HQLA in two levels and prescribes standardised outflow
   rates by counterparty/product type.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/bcbs238.md
+- path: 02_sources/regulator/bcbs/bcbs238 - Basel III The Liquidity Coverage Ratio and liquidity risk monitoring tools.md
   pages: ''
   weight: primary
 parent_node: null

@@ -26,8 +26,7 @@ thesis: '[LLM] Reverse stress testing (RST) inverts the stress test logic: inste
   risks and hidden vulnerabilities in business model assumptions that forward-looking
   scenario analysis may miss.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/Guidelines on institutions stress testing
-    (EBA-GL-2018-04).md
+- path: 02_sources/regulator/bcbs/Guidelines on institutions stress testing (EBA-GL-2018-04).md
   pages: ''
   weight: primary
 parent_node: null

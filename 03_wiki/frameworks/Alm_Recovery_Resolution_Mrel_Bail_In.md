@@ -33,8 +33,7 @@ thesis: 'Local regulatory (resolution) authorities decide on resolution strategy
 
   '
 source_refs:
-- path: 02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday,
-    Today and Tomorrow-De Gruyter (2021).md
+- path: 02_sources/books/alm/ALM - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md
   pages: 'Box 14.1: Recovery and Resolution Planning; Chapter 15: ALM Role in Crisis'
 parent_node: null
 related:

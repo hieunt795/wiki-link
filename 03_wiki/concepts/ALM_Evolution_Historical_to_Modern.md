@@ -34,8 +34,7 @@ thesis: 'ALM has evolved through six distinct conceptual eras from the 1950s
 
   '
 source_refs:
-- path: 02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday,
-    Today and Tomorrow-De Gruyter (2021).md
+- path: 02_sources/books/alm/ALM - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md
   pages: Part 1 (Ch1–6), Ch7 (ALM historical concepts overview)
   weight: primary
 parent_node: null

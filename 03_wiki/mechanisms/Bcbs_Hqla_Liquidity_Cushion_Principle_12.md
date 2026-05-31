@@ -36,7 +36,7 @@ thesis: 'BCBS Principle 12 (2008) requires banks to maintain a cushion of unencu
 
   '
 source_refs:
-- path: 02_sources/regulator/bcbs/bcbs144.md
+- path: 02_sources/regulator/bcbs/bcbs144 - Principles for Sound Liquidity Risk Management and Supervision.md
   pages: 'para 123–127 (Principle 12 full text), para 8 (P1: cushion in fundamental
     principle), para 94–95 (P10: stress test → cushion sizing link), para 52 (P5:
     cushion in limit framework)'

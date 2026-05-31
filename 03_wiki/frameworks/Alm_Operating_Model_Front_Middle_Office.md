@@ -33,8 +33,7 @@ thesis: 'Banks organize ALM/Treasury in two contrasted operating models — fron
 
   '
 source_refs:
-- path: 02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday,
-    Today and Tomorrow-De Gruyter (2021).md
+- path: 02_sources/books/alm/ALM - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md
   pages: 'Chapters 10–11: ALM Operating Model; ALM Inside a Risk Management Triangle'
 parent_node: null
 related:

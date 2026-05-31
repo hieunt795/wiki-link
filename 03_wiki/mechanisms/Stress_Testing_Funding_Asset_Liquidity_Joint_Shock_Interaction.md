@@ -26,7 +26,7 @@ thesis: '[LLM] BCBS bcbs155 P10 requires banks to model simultaneous pressures i
   collateral values and deteriorating funding access are mutually reinforcing. Ignoring
   the interaction produces systematic underestimation of liquidity risk.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/bcbs155.md
+- path: 02_sources/regulator/bcbs/bcbs155 - Principles for sound stress testing practices and supervision.md
   pages: ''
   weight: primary
 parent_node: null

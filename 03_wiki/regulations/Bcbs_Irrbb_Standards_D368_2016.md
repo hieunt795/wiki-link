@@ -41,7 +41,7 @@ thesis: 'BCBS d368 (April 2016) establishes the current IRRBB regulatory framewo
 
   '
 source_refs:
-- path: 02_sources/regulator/bcbs/d368.md
+- path: 02_sources/regulator/bcbs/d368 - Standards Interest rate risk in the banking book.md
   pages: 'para 1–7 (executive summary), para 8–10 (IRRBB definition, CSRBB), para
     11 (EVE vs NII), para 12–32 (P1 identification, P2 governance), para 33–43 (P4
     EVE/NII measurement, shock scenarios), para 44–51 (P5 behavioural assumptions),

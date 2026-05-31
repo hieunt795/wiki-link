@@ -26,7 +26,7 @@ thesis: '[LLM] BCBS bcbs155 P20 recommends supervisors run sector-wide common-sc
   Banks with robust internal ST programmes should be able to run common supervisory
   scenarios with minimal effort (P20 compliance is a floor, not a ceiling).'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/bcbs155.md
+- path: 02_sources/regulator/bcbs/bcbs155 - Principles for sound stress testing practices and supervision.md
   pages: ''
   weight: primary
 parent_node: null

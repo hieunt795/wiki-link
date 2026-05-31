@@ -36,7 +36,7 @@ thesis: 'BCBS Principle 8 (2008) requires active intraday liquidity management a
 
   '
 source_refs:
-- path: 02_sources/regulator/bcbs/bcbs144.md
+- path: 02_sources/regulator/bcbs/bcbs144 - Principles for Sound Liquidity Risk Management and Supervision.md
   pages: 'para 77–87 (Principle 8 full: systemic rationale, objectives, six operational
     elements), para 77 (systemic contagion risk), para 78 (objectives), para 79 (challenges),
     para 80–85 (six elements), para 86–87 (scope, correspondents)'

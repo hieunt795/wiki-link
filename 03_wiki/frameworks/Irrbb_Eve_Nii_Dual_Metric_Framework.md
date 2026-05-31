@@ -27,7 +27,7 @@ source_refs:
 - path: 02_sources/books/elkenbracht_huizing_alm/Elkenbracht_Huizing_Handbook_ALM.md
   pages: Chapter 3-4
   weight: primary
-- path: 02_sources/regulator/bcbs/d368.md
+- path: 02_sources/regulator/bcbs/d368 - Standards Interest rate risk in the banking book.md
   pages: 'para 8–11 (IRRBB definition + EVE/NII intro), para 33–34 (EVE vs NII complementarity),
     para 69–70 (P8 disclosure: ΔEVE and ΔNII under 6 scenarios), para 88–89 (P12 outlier
     test: 15% Tier 1), Table B (six prescribed scenarios: parallel up/down, steepener,

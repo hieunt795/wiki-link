@@ -29,7 +29,7 @@ thesis: '[LLM] The normative perspective in the ILAAP is a multi-year forward-lo
   plan to remain viable and return to compliance, with the LCR path monitored and
   linked to the risk appetite statement, LCP, and recovery plan.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/ssm.ilaap_guide_201811.en.md
+- path: 02_sources/regulator/bcbs/ECB Guide to the internal liquidity adequacy assessment process (ILAAP).md
   pages: ''
   weight: primary
 parent_node: null

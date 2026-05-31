@@ -317,3 +317,9 @@ Chronological record of all ingest, update, promotion, and audit operations.
 - **2026-05-27**: INGEST: Created mechanism node `Liquidity Stress Three Scenario Types Idiosyncratic Market Wide Combined Eba` from Guidelines on institutions stress testing (EBA-GL-2018-04).md
 - **2026-05-27**: INGEST: Created concept node `Stress Testing Management Actions Before After Presentation Conservative Rules` from Guidelines on institutions stress testing (EBA-GL-2018-04).md
 - **2026-05-27**: INGEST: Created mechanism node `Reverse Stress Testing Near Default Scenario Recovery Planning Application` from Guidelines on institutions stress testing (EBA-GL-2018-04).md
+- **2026-05-30**: INGEST: Created indicator node `ZZ Probe Metric` from bcbs238.md
+- **2026-05-30**: INGEST: Created indicator node `ZZ Probe Two` from bcbs238.md
+- **2026-05-30**: INGEST: Created concept node `Asset-Liability Management (ALM)` from (The Moorad Choudhry Global Banking Series) Polina Bardaeva - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md
+- **2026-05-30**: INGEST: Created concept node `Interest Rate Risk in the Banking Book (IRRBB)` from (The Moorad Choudhry Global Banking Series) Polina Bardaeva - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md
+- **2026-05-30**: INGEST: Created indicator node `Net Interest Income (NII)` from (The Moorad Choudhry Global Banking Series) Polina Bardaeva - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md
+- **2026-05-30**: INGEST: Created entity node `Asset-Liability Committee (ALCO)` from (The Moorad Choudhry Global Banking Series) Polina Bardaeva - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md

@@ -33,7 +33,7 @@ thesis: '[LLM] Behavioralization is the ALM process of converting contractual ca
   These probabilities transform the contractual term structure into a behavioral term
   structure used for gap analysis and FTP curve application.'
 source_refs:
-- path: 02_sources/books/alm/A - Asset liability optimization.md
+- path: 02_sources/books/alm/ALM - Asset liability optimization.md
   pages: ''
   weight: primary
 parent_node: null

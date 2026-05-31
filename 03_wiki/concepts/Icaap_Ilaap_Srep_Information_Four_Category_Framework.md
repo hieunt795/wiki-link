@@ -28,8 +28,7 @@ thesis: '[LLM] EBA GL/2016/10 organises ICAAP/ILAAP supervisory information into
   audit reports. All four categories submitted at reference dates proportionate to
   SREP category.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/Final report on Guidelines on ICAAP ILAAP
-    (EBA-GL-2016-10).md
+- path: 02_sources/regulator/bcbs/Final report on Guidelines on ICAAP ILAAP (EBA-GL-2016-10).md
   pages: ''
   weight: primary
 parent_node: null

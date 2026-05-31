@@ -38,7 +38,7 @@ thesis: 'BCBS d368 standardised framework (Section IV) requires banks to separat
 
   '
 source_refs:
-- path: 02_sources/regulator/bcbs/d368.md
+- path: 02_sources/regulator/bcbs/d368 - Standards Interest rate risk in the banking book.md
   pages: 'para 44–46 (P5: NMD behavioural assumptions), para 109–115 (standardised
     framework NMD treatment: categories, separation, slotting), Table 2 (NMD core
     caps and average maturity limits), para 112 (10-year observation, stable/non-stable/core

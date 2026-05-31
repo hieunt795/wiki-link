@@ -27,7 +27,7 @@ thesis: '[LLM] BCBS bcbs155 (May 2009) articulates 21 principles governing sound
   assessment principles. The document was a direct response to pre-crisis stress testing
   failures and is foundational to all subsequent EBA and ECB stress testing guidelines.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/bcbs155.md
+- path: 02_sources/regulator/bcbs/bcbs155 - Principles for sound stress testing practices and supervision.md
   pages: ''
   weight: primary
 parent_node: null

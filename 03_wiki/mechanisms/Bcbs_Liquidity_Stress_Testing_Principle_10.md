@@ -36,7 +36,7 @@ thesis: 'BCBS Principle 10 (2008) requires regular stress testing across four sc
 
   '
 source_refs:
-- path: 02_sources/regulator/bcbs/bcbs144.md
+- path: 02_sources/regulator/bcbs/bcbs144 - Principles for Sound Liquidity Risk Management and Supervision.md
   pages: 'para 94–109 (Principle 10 full: process, scenarios, assumptions, utilisation),
     para 99 (scenario types), para 103 (assumption list), para 108–109 (utilisation:
     management actions, CFP link)'

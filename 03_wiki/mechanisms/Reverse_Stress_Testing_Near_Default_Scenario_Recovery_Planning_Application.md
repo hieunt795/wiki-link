@@ -26,8 +26,7 @@ thesis: '[LLM] EBA GL/2018/04 Sections 4.6.5 and 4.7 extend RST to recovery plan
   increases if business model or risk profile changes materially. RST results must
   be reported to management body and feed into risk appetite review.'
 source_refs:
-- path: 07_scripts/02_sources/regulator/bcbs/Guidelines on institutions stress testing
-    (EBA-GL-2018-04).md
+- path: 02_sources/regulator/bcbs/Guidelines on institutions stress testing (EBA-GL-2018-04).md
   pages: ''
   weight: primary
 parent_node: null
