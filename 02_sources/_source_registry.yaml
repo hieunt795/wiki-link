@@ -2,7 +2,7 @@ meta:
   total_sources: 85
   total_ingested: 63
   coverage_pct: 74.1
-  last_updated: '2026-05-27'
+  last_updated: '2026-05-30'
 sources:
   02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md:
     status: partial
@@ -872,11 +872,13 @@ sources:
       tools (January 2013). Defines LCR = HQLA / net cash outflows ≥ 100% over 30-day
       stress horizon. Defines Level 1/2A/2B HQLA classification, standardised outflow
       rates, and 5 supervisory monitoring tools.'
-    ingest_date: '2026-05-27'
+    ingest_date: '2026-05-30'
     wiki_nodes:
     - 03_wiki/regulations/Basel_Iii_Lcr_Liquidity_Coverage_Ratio_Standard_2013.md
     - 03_wiki/concepts/Hqla_Classification_Level1_Level2a_Level2b.md
     - 03_wiki/concepts/Lcr_Monitoring_Tools_Maturity_Mismatch_Funding_Concentration.md
+    - 03_wiki/indicators/Zz_Probe_Metric.md
+    - 03_wiki/indicators/Zz_Probe_Two.md
     notes: '2026-05-27: Created 3 wiki nodes: 1 regulation (LCR standard) + 2 concepts
       (HQLA classification, monitoring tools).'
   02_sources/regulator/bcbs/insights59.md:

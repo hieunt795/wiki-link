@@ -157,13 +157,15 @@ def ingest_source(
     print(f"[ingest][deep] {len(batches)} batches total, {len(completed)} already done.")
     print(f"[ingest][deep] Source: {source_key}\n")
 
-    # Load node schema once
-    node_types_text = ""
-    schema_file = SCHEMA_ROOT / "node_types.md"
-    if schema_file.exists():
-        node_types_text = schema_file.read_text(encoding="utf-8")[:2000]
+    # Full type-selection cheatsheet (replaces old truncated node_types.md slice)
+    node_types_text = _node_type_cheatsheet()
 
     domain_vocab = _get_domain_vocab(domain)
+
+    # Ensure atomic root-term nodes exist for terms present in this source (real source_ref)
+    if not dry_run:
+        seed_atomic_nodes(domain, path)
+
     batches_run = 0
 
     for batch_idx, batch in enumerate(batches):
@@ -228,6 +230,43 @@ def ingest_source(
 
 # ── Prompt builders ───────────────────────────────────────────────────────────
 
+# Compact decision cheatsheet for all 10 node types. Replaces the old truncated
+# node_types.md slices ([:800]/[:1000]/[:3000]) that only exposed concept+mechanism
+# to the extractor — the root cause of the mechanism/concept type skew.
+_TYPE_CHEATSHEET = """Choose the SINGLE best type for each node. Decision rules (check in order):
+
+- entity      → a named actor/thing: institution, central bank, committee (e.g. ALCO),
+                person, market, or financial instrument. Ask "is this a WHO/WHAT-thing?"
+- indicator   → a measurable metric with units/frequency (e.g. NII, EVE, SOFR, LCR ratio,
+                CPI). Ask "can you put a number and a data source on it?"
+- regulation  → a binding rule from an official body (BCBS/SBV/Fed/ECB/FSB/...).
+                Source usually under 02_sources/regulator/.
+- policy      → a specific dated policy action/regime by an authority (e.g. Fed QE1-3,
+                BOJ YCC 2016-2024), with a period.
+- framework   → an analytical model/structure used FOR analysis (has components, maybe
+                equations) — e.g. IRRBB EVE/NII dual-metric framework, Flow of Funds.
+- mechanism   → a CAUSAL process / transmission channel / operational procedure that
+                unfolds in steps (A→B→C). Only pick this if there are real steps.
+- synthesis   → integrates ≥2 existing nodes into something more than their sum.
+- contradiction → documents two conflicting sourced claims on one topic.
+- relationship  → a single named directional edge between two nodes (rare as a file).
+- concept     → the DEFAULT atomic idea/term that is none of the above (e.g. ALM, IRRBB
+                as a risk type, NMD, OAS, duration). Ask "is this a thing the wiki should
+                be able to point at as "what X is"?"
+
+IMPORTANT:
+- Do NOT default everything to "mechanism". A static idea is a `concept`, not a mechanism.
+- A measurable quantity is an `indicator`, not a concept.
+- An organisation/committee/instrument is an `entity`.
+- Create an ATOMIC node for any core domain term that deserves its own definition, even if
+  the chunk only mentions it in passing (so other nodes can link to it)."""
+
+
+def _node_type_cheatsheet() -> str:
+    """Full type-selection guidance for the extractor (no truncation)."""
+    return _TYPE_CHEATSHEET
+
+
 def _build_extraction_prompt_batch(
     path: Path,
     fm: dict,
@@ -257,10 +296,10 @@ def _build_extraction_prompt_batch(
 Domain: {domain} | Section: {heading_ctx}
 Source path: {_repo_relative_path(path)}
 
-NODE TYPES:
-{node_types_text[:800]}
+NODE TYPE SELECTION:
+{node_types_text}
 
-DOMAIN VOCABULARY:
+DOMAIN VOCABULARY (each core term below deserves its own atomic node — create it if missing):
 {domain_vocab}
 
 CONTENT (batch {batch_num}/{total_batches}):
@@ -271,9 +310,12 @@ ALREADY IN WIKI (do NOT duplicate these):
 
 TASK — extract 1-4 NEW distinct wiki nodes from this batch content.
 Rules:
-- Only create nodes for structural/mechanistic knowledge in this batch's text
+- Create nodes for durable, reusable knowledge in this batch's text (concepts, entities,
+  indicators, mechanisms, frameworks — pick the right type per the cheatsheet above)
+- Also create an ATOMIC node for any core domain term used here that lacks its own node
 - Skip if the content is introductory, bibliographic, or already covered above
 - Each node: type + title + 1-3 sentence thesis (a claim, not a summary)
+- Put acronyms AND full names in aliases (e.g. "IRRBB", "Interest Rate Risk in the Banking Book")
 - Include Vietnamese aliases where relevant
 - confidence: 1 (auto-generated stub)
 - Mark synthesised sentences with [LLM]
@@ -289,10 +331,7 @@ After creating nodes for this batch, mark it complete:
 
 def _build_extraction_prompt(path: Path, body: str, fm: dict, domain: str, chunks) -> str:
     """Original single-pass prompt (non-deep mode)."""
-    node_types_text = ""
-    schema_file = SCHEMA_ROOT / "node_types.md"
-    if schema_file.exists():
-        node_types_text = schema_file.read_text(encoding="utf-8")[:3000]
+    node_types_text = _node_type_cheatsheet()
 
     domain_vocab = _get_domain_vocab(domain)
 
@@ -302,10 +341,10 @@ SOURCE FILE: {path}
 DOMAIN: {domain}
 TITLE FROM FRONTMATTER: {fm.get('title', path.stem)}
 
-NODE TYPES AVAILABLE:
-{node_types_text[:1000]}
+NODE TYPE SELECTION:
+{node_types_text}
 
-DOMAIN VOCABULARY TO SEED EXTRACTION:
+DOMAIN VOCABULARY (each core term deserves its own atomic node — create it if missing):
 {domain_vocab}
 
 SOURCE CONTENT (first 3000 chars):
@@ -313,11 +352,17 @@ SOURCE CONTENT (first 3000 chars):
 
 TASK:
 Extract 3-8 distinct wiki nodes from this source. For each node:
-1. Determine the type: concept | mechanism | entity | relationship | policy | framework | indicator
+1. Determine the type using the cheatsheet above (concept | mechanism | entity |
+   relationship | policy | framework | indicator | regulation | synthesis | contradiction).
+   Do NOT default to "mechanism"; a static idea is a concept, a metric is an indicator,
+   an organisation/committee/instrument is an entity.
 2. Write a 1-3 sentence thesis (the core claim, not a description of the document)
-3. List aliases including Vietnamese equivalents where relevant
+3. List aliases — include BOTH the acronym and the full name, plus Vietnamese equivalents
 4. Set confidence: 1 (you are generating this, source not fully verified)
 5. Tag with domain-relevant tags
+
+Also: create an ATOMIC node for any core domain term used in the source that lacks its own
+node, so other nodes can link to it (e.g. ALM, IRRBB, NII, EVE, NMD, ALCO, OAS, FTP).
 
 For each node, call: create_wiki_node(node_type, title, thesis, source_path, domain, aliases, tags)
 
@@ -326,7 +371,7 @@ RULES:
 - Mark any synthesized sentence with [LLM]
 - thesis must be a claim, not "this document discusses..."
 - Every node must have at least one alias
-- Focus on structural/mechanistic knowledge, not time-sensitive facts
+- Focus on durable structural knowledge, not time-sensitive facts
 """
 
 
@@ -344,11 +389,16 @@ def create_wiki_node(
     confidence: int = 1,
     pages: str = "",
     parent_node: str | None = None,
+    related: list | None = None,
+    extra_fields: dict | None = None,
 ) -> Path:
     """Write a single wiki node file with proper frontmatter.
 
     Called by the agent after LLM extraction.
     confidence starts at 1 (stub) — agent raises after verification.
+
+    extra_fields: type-specific frontmatter (e.g. entity_type/jurisdiction for entity,
+    steps for mechanism, indicator_type/frequency for indicator). Merged into frontmatter.
     """
     node_dir = NODE_DIRS.get(node_type, WIKI_ROOT / "concepts")
     node_dir.mkdir(parents=True, exist_ok=True)
@@ -379,10 +429,12 @@ def create_wiki_node(
             {"path": _repo_relative_path(source_path), "pages": pages or "", "weight": "primary"}
         ],
         "parent_node": parent_node,
-        "related":    [],
+        "related":    related or [],
         "date_created": TODAY,
         "date_updated": TODAY,
     }
+    if extra_fields:
+        fm_data.update(extra_fields)
 
     fm_str = yaml.dump(fm_data, allow_unicode=True, default_flow_style=False, sort_keys=False)
     body_text = body if body else f"[LLM] Auto-generated stub from {Path(source_path).name}. Review and expand.\n"
@@ -410,6 +462,135 @@ def _get_domain_vocab(domain: str) -> str:
         "macro_outlook": "GDP, CPI, output gap, current account, capital flows, FX reserves, business cycle, fiscal stance",
     }
     return vocab.get(domain, "")
+
+
+# ── Atomic root-term registry ─────────────────────────────────────────────────
+# Core domain terms that MUST each have their own atomic node so other nodes can link
+# to them (the missing-hub problem). Each spec: type + canonical title + aliases
+# (acronym + full + Vietnamese) + tags + optional type-specific extra_fields.
+# seed_atomic_nodes() creates one only if (a) no node already covers the term AND
+# (b) the term actually appears in the source being ingested (so source_ref is real).
+
+ATOMIC_TERMS: dict[str, dict[str, dict]] = {
+    "alm": {
+        "ALM": dict(type="concept", title="Asset-Liability Management (ALM)",
+                    aliases=["ALM", "Asset Liability Management", "Asset-Liability Management",
+                             "quản lý tài sản nợ", "quản lý tài sản - nợ"],
+                    tags=["alm", "balance-sheet"]),
+        "IRRBB": dict(type="concept", title="Interest Rate Risk in the Banking Book (IRRBB)",
+                      aliases=["IRRBB", "Interest Rate Risk in the Banking Book",
+                               "rủi ro lãi suất trên sổ ngân hàng"],
+                      tags=["irrbb", "alm", "interest-rate-risk"]),
+        "NII": dict(type="indicator", title="Net Interest Income (NII)",
+                    aliases=["NII", "Net Interest Income", "thu nhập lãi thuần"],
+                    tags=["nii", "alm", "earnings"],
+                    extra_fields=dict(indicator_type="financial", frequency="quarterly",
+                                      data_source="bank financial statements")),
+        "EVE": dict(type="indicator", title="Economic Value of Equity (EVE)",
+                    aliases=["EVE", "Economic Value of Equity", "giá trị kinh tế của vốn chủ sở hữu"],
+                    tags=["eve", "alm", "irrbb"],
+                    extra_fields=dict(indicator_type="financial", frequency="quarterly",
+                                      data_source="ALM model output")),
+        "NMD": dict(type="concept", title="Non-Maturity Deposit (NMD)",
+                    aliases=["NMD", "Non-Maturity Deposit", "NMDs", "tiền gửi không kỳ hạn"],
+                    tags=["nmd", "alm", "deposit", "behavioral-model"]),
+        "ALCO": dict(type="entity", title="Asset-Liability Committee (ALCO)",
+                     aliases=["ALCO", "Asset Liability Committee", "ủy ban quản lý tài sản nợ"],
+                     tags=["alco", "governance", "alm"],
+                     extra_fields=dict(entity_type="institution", jurisdiction="global")),
+        "FTP": dict(type="concept", title="Funds Transfer Pricing (FTP)",
+                    aliases=["FTP", "Funds Transfer Pricing", "định giá điều chuyển vốn nội bộ"],
+                    tags=["ftp", "alm", "pricing"]),
+        "OAS": dict(type="indicator", title="Option-Adjusted Spread (OAS)",
+                    aliases=["OAS", "Option-Adjusted Spread", "chênh lệch điều chỉnh quyền chọn"],
+                    tags=["oas", "fixed-income", "spread"],
+                    extra_fields=dict(indicator_type="market", frequency="daily",
+                                      data_source="market pricing")),
+    },
+    "basel_risk": {
+        "LCR": dict(type="indicator", title="Liquidity Coverage Ratio (LCR)",
+                    aliases=["LCR", "Liquidity Coverage Ratio", "tỷ lệ đảm bảo thanh khoản"],
+                    tags=["lcr", "basel", "liquidity"],
+                    extra_fields=dict(indicator_type="financial_stability", frequency="monthly",
+                                      data_source="regulatory reporting")),
+        "NSFR": dict(type="indicator", title="Net Stable Funding Ratio (NSFR)",
+                     aliases=["NSFR", "Net Stable Funding Ratio", "tỷ lệ nguồn vốn ổn định ròng"],
+                     tags=["nsfr", "basel", "liquidity"],
+                     extra_fields=dict(indicator_type="financial_stability", frequency="quarterly",
+                                       data_source="regulatory reporting")),
+    },
+}
+
+
+def _existing_node_keys() -> set[str]:
+    """Lowercased set of all titles, aliases and file stems currently in the wiki."""
+    keys: set[str] = set()
+    for node_dir in NODE_DIRS.values():
+        if not node_dir.exists():
+            continue
+        for f in node_dir.glob("*.md"):
+            keys.add(f.stem.lower())
+            try:
+                fm, _ = _split_frontmatter(f.read_text(encoding="utf-8", errors="ignore"))
+            except Exception:
+                continue
+            if not fm:
+                continue
+            if fm.get("title"):
+                keys.add(str(fm["title"]).lower())
+            for a in (fm.get("aliases") or []):
+                keys.add(str(a).lower())
+    return keys
+
+
+def seed_atomic_nodes(domain: str, source_path: str | Path, dry_run: bool = False) -> list[str]:
+    """Ensure atomic root-term nodes exist for terms that appear in this source.
+
+    Creates a node only when the term has no existing coverage (title/alias/stem) AND
+    the term (acronym or full name) literally appears in the source text — guaranteeing
+    a real source_ref. Returns list of created (or would-create, if dry_run) titles.
+    """
+    registry = ATOMIC_TERMS.get(domain, {})
+    if not registry:
+        return []
+    path = Path(source_path)
+    try:
+        text = path.read_text(encoding="utf-8", errors="ignore")
+    except Exception:
+        return []
+    text_low = text.lower()
+    existing = _existing_node_keys()
+    created: list[str] = []
+
+    for term, spec in registry.items():
+        spec_aliases = [str(a) for a in spec.get("aliases", [])]
+        # already covered?
+        if any(a.lower() in existing for a in spec_aliases) or spec["title"].lower() in existing:
+            continue
+        # does the term actually appear in this source? (acronym as word, or full name)
+        acronym_hit = re.search(rf"\b{re.escape(term)}\b", text) is not None
+        name_hit = any(a.lower() in text_low for a in spec_aliases if len(a) > 4)
+        if not (acronym_hit or name_hit):
+            continue
+        created.append(spec["title"])
+        if dry_run:
+            continue
+        create_wiki_node(
+            node_type=spec["type"],
+            title=spec["title"],
+            thesis=f"[LLM] Atomic root node for {term} — auto-seeded so other nodes can link "
+                   f"to it. Definition pending review/expansion from {path.name}.",
+            source_path=str(path),
+            domain=domain,
+            aliases=spec_aliases,
+            tags=spec.get("tags", []),
+            confidence=1,
+            extra_fields=spec.get("extra_fields"),
+        )
+    if created:
+        verb = "Would seed" if dry_run else "Seeded"
+        print(f"[ingest][atomic] {verb} {len(created)} root node(s): {', '.join(created)}")
+    return created
 
 
 def _guess_domain(path: Path, fm: dict) -> str:

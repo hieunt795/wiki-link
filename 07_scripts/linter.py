@@ -26,6 +26,7 @@ from pathlib import Path
 from chunker import _split_frontmatter
 
 WIKI_ROOT = Path(__file__).parent.parent / "03_wiki"
+ROOT = Path(__file__).parent.parent
 TODAY = date.today()
 
 REQUIRED_FIELDS = ["node_id", "type", "title", "thesis", "confidence", "source_refs"]
@@ -120,6 +121,35 @@ def run_lint(fix: bool = False) -> list[dict]:
             sev = "warning" if (conf == 1 or conf == "1") else "blocking"
             issues.append(_issue(rel, node_id, "empty_source_refs", sev,
                                  "source_refs is empty — every node needs at least one source."))
+
+        # source_ref paths must point to a real file in 02_sources/ (Rule #2 enforcement)
+        if isinstance(source_refs, list):
+            for ref in source_refs:
+                if not isinstance(ref, dict):
+                    continue
+                ref_path = ref.get("path", "")
+                if not ref_path:
+                    continue
+                if not (ROOT / ref_path).exists():
+                    sev = "warning" if (conf == 1 or conf == "1") else "blocking"
+                    issues.append(_issue(rel, node_id, "broken_source_ref", sev,
+                                         f"source_ref path does not exist: {ref_path}"))
+
+        # Type-specific required fields (warning — surfaces misclassification & stubs)
+        if node_type == "mechanism":
+            steps = fm.get("steps")
+            if not steps:
+                issues.append(_issue(rel, node_id, "mechanism_missing_steps", "warning",
+                                     "mechanism node has no steps[] — verify it is truly a "
+                                     "causal process, not a concept/indicator misclassified."))
+        if node_type == "entity":
+            if not fm.get("entity_type"):
+                issues.append(_issue(rel, node_id, "entity_missing_entity_type", "warning",
+                                     "entity node missing entity_type (institution/person/...)."))
+        if node_type == "indicator":
+            if not fm.get("indicator_type"):
+                issues.append(_issue(rel, node_id, "indicator_missing_type", "warning",
+                                     "indicator node missing indicator_type."))
 
         # Stale check
         date_updated = fm.get("date_updated", "")

@@ -64,7 +64,7 @@ def run_link_audit(fix: bool = False) -> dict:
     if broken_links:
         print("\nBroken links:")
         for b in broken_links[:20]:
-            print(f"  {b['source']} → [[{b['raw_link']}]]  ({b['file']})")
+            print(f"  {b['source']} -> [[{b['raw_link']}]]  ({b['file']})")
         if len(broken_links) > 20:
             print(f"  ... and {len(broken_links) - 20} more")
 

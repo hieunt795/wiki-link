@@ -1,0 +1,60 @@
+# Broken Wikilink Report
+
+Generated: 2026-05-30 | Total broken: 152 | Unique missing targets: 50
+
+> Missing [[wikilinks]] = nodes not yet created (atomic-term backfill) OR naming mismatches.
+> Re-run: PYTHONUTF8=1 python 07_scripts/librarian.py link  | Do NOT use link --fix (Rule #2).
+
+| #refs | Missing target | Referenced by |
+|------|----------------|---------------|
+| 16 | `Standing Repo Facility SRF Fed Backstop` | CB_Three_Techniques_Short_Rate_Control_Floor_Corridor_Allotment.md, Fed_Balance_Sheet_Floor_Payment_System_Reserve_Demand.md, Fed_Reserve_Demand_Reduction_Four_Policy_Tools.md, Interest_Rate_Swaps_OIS_Fixed_Floating.md, +4 more |
+| 8 | `ILAAP_Supervisory_Liquidity_Framework` | ALM_Enterprise_Risk_Management_Framework.md, ALM_Low_Negative_Interest_Rate_Environment.md, Alm_Role_Srep_Pillar2_Capital_Liquidity.md, IRRBB_Standardised_Versus_Internal_Model_Approach.md |
+| 6 | `FTP_Methodology` | ALM_Balance_Sheet_Optimization_Framework.md, ALM_Hedging_Strategy_Design.md, ALM_Structural_Liquidity_Gap.md |
+| 6 | `NMD` | NMD_Decay_Model_Volume_Segmentation.md, NMD_Stochastic_Three_Factor_Model.md, Svb_2023_Failure_Alm_Lessons.md |
+| 6 | `Bcbs_Irrbb_Standards_2016` | ALM_Enterprise_Risk_Management_Framework.md, Alm_Role_Srep_Pillar2_Capital_Liquidity.md, IRRBB_Standardised_Versus_Internal_Model_Approach.md |
+| 4 | `Hedge_Accounting_IFRS9_ALM` | Credit_Spread_Risk_Banking_Book_CSRBB.md, Interest_Rate_Basis_Risk_Measurement_ALM.md |
+| 4 | `OAS` | Credit_Spread_Risk_Banking_Book_CSRBB.md, Mortgage_Prepayment_Risk_ALM_Management.md |
+| 4 | `Hyperinflation_Dynamics_Cagan_Real_Money_Collapse` | Currency_Substitution_Dollarization_Monetary_Control.md, Transition_Economy_Monetary_Special_Issues.md |
+| 4 | `Reserve Floor Payment System Demand` | Endogenous_Bank_Money_Loans_Create_Deposits.md, Warsh_Balance_Sheet_Stimulus_Swap_Vs_Structural_Demand_Neutrality.md |
+| 4 | `ALM_Banking_Book_Risk_Management` | ALM_Balance_Sheet_Optimization_Framework.md |
+| 4 | `EVE` | ALM_Low_Negative_Interest_Rate_Environment.md, IRRBB_Standardised_Versus_Internal_Model_Approach.md |
+| 4 | `Basel_III` | Alm_Recovery_Resolution_Mrel_Bail_In.md, Alm_Role_Srep_Pillar2_Capital_Liquidity.md |
+| 4 | `CB Reserve Requirements Taxonomy Surplus Shortage Liquidity Framework` | CB_Three_Techniques_Short_Rate_Control_Floor_Corridor_Allotment.md, EM_Central_Bank_Policy_Mix_FIT_Framework.md |
+| 4 | `SLR Relief Valve Limited Efficacy UST Demand` | Sovereign_Debt_Intervention_Escalation_Ladder.md |
+| 4 | `Sbv_Tt83_2025_Risk_Governance_Icaap_Appetite` | Sbv_Tt83_2025_Internal_Control_Three_Lines_Defense.md |
+| 2 | `ALM_Operating_Model` | ALM_Evolution_Historical_to_Modern.md |
+| 2 | `ALM_Role_SREP_Pillar2` | ALM_Evolution_Historical_to_Modern.md |
+| 2 | `IFRS9` | Credit_Spread_Risk_Banking_Book_CSRBB.md |
+| 2 | `LGD` | Credit_Spread_Risk_Banking_Book_CSRBB.md |
+| 2 | `IRRBB_EVE_NII_Dual_Metric` | Income_Gap_vs_Economic_Value_Gap.md |
+| 2 | `CB Quasi-Fiscal Mechanism — Sterilization Costs, Seigniorage, and the Fiscal-Monetary
+    Nexus` | Ma_Balance_Sheet_Oin_Other_Items_Net_Absorber_Mechanics.md |
+| 2 | `ERM` | ALM_Enterprise_Risk_Management_Framework.md |
+| 2 | `CET1` | ALM_Enterprise_Risk_Management_Framework.md |
+| 2 | `RWA` | ALM_Enterprise_Risk_Management_Framework.md |
+| 2 | `Pbc Dual Track Monetary Policy Framework` | EM_Central_Bank_Policy_Mix_FIT_Framework.md |
+| 2 | `Imf Tax Revenue Analysis Elasticity Buoyancy Effort Tanzi` | Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability.md |
+| 2 | `CB Quasi Fiscal Sterilization Seigniorage Fiscal Monetary Nexus` | Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability.md |
+| 2 | `Fiscal_Dominance_Monetary_Policy_Constraint` | Imf_Public_Expenditure_Analysis_Taxonomy_And_Policy_Issues.md |
+| 2 | `Imf_Inflation_Tax_Seigniorage_Revenue` | Imf_Public_Expenditure_Analysis_Taxonomy_And_Policy_Issues.md |
+| 2 | `Pillar2` | IRRBB_Standardised_Versus_Internal_Model_Approach.md |
+| 2 | `SOT` | IRRBB_Standardised_Versus_Internal_Model_Approach.md |
+| 2 | `JGB_Yield_Spillover_Transmission` | Japan_Sovereign_Carry_Trade_Framework.md |
+| 2 | `PBC Medium Term Lending Facility Rate Transmission` | China_LPR_MLF_Decoupling_2024_Reform_Rationale.md |
+| 2 | `QE Collateral Velocity Monetary Policy Transmission` | Collateral_Velocity_Reuse_Rate_Financial_Plumbing.md |
+| 2 | `CB Three Techniques Short Rate Control Floor Corridor Allotment` | Endogenous_Bank_Money_Loans_Create_Deposits.md |
+| 2 | `TGA Target Creep Bill Issuance Reserve Neutralization` | Global_Compression_RV_Fund_GSE_MBS_XCCY_Basis_Frontier.md |
+| 2 | `Imf_Monetary_Survey_Money_Stock_Definitions` | Imf_Money_Multiplier_Ratio_Decomposition_Three_Agent.md |
+| 2 | `EURIBOR` | Interest_Rate_Basis_Risk_Measurement_ALM.md |
+| 2 | `PV01` | Interest_Rate_Basis_Risk_Measurement_ALM.md |
+| 2 | `MBS` | Mortgage_Prepayment_Risk_ALM_Management.md |
+| 2 | `CPR` | Mortgage_Prepayment_Risk_ALM_Management.md |
+| 2 | `MSR` | Mortgage_Prepayment_Risk_ALM_Management.md |
+| 2 | `Vasicek` | NMD_Stochastic_Three_Factor_Model.md |
+| 2 | `Cholesky` | NMD_Stochastic_Three_Factor_Model.md |
+| 2 | `SRF Structural Defects Morning Repo Fortification True Ceiling` | Repo_Market_Clearing_Segments_FICC_Triparty_GCF_DVP_NCCBR.md |
+| 2 | `Swap Spreads Balance Sheet Plumbing Frictions` | SLR_Relief_Valve_Limited_Efficacy_UST_Demand.md |
+| 2 | `Discount Window Stigma Self Reinforcing Equilibrium` | SRF_Structural_Defects_Morning_Repo_Fortification_True_Ceiling.md |
+| 2 | `Treasury QE Duration Swap RRP Drain Mechanisms` | TQT_Tighter_Quantitative_Tightening_Coupon_Issuance_Duration_Channel.md |
+| 2 | `Treasury Tbill Supply RRP Drain MMF Cash Routing` | Treasury_QE_Duration_Swap_RRP_Drain_Mechanisms.md |
+| 2 | `Basel_Iv_Output_Floor_72pct_2028` | Sbv_Tt14_2025_Irb_Governance_Risk_Parameters.md |
