@@ -35,7 +35,7 @@ thesis: '[LLM] Under the SBV''s 2026 draft prudential circular, Vietnamese banks
 
   '
 source_refs:
-- path: 02_sources/regulator/sbv/10_DTTT_thay_the_Thong_tu_22_260421_37a8.md
+- path: 02_sources/regulator/sbv/SBV_DUTHAO - TT22_2019.md
   pages: Điều 14 (application), Điều 17 (LCR formula and schedule), Điều 15 (liquidity
     risk mgmt)
   weight: primary

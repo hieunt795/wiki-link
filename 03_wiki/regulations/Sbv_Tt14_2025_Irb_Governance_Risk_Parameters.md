@@ -36,7 +36,7 @@ thesis: '[LLM] TT14/2025/TT-NHNN (issued 30 June 2025) governs capital adequacy 
 
   '
 source_refs:
-- path: 02_sources/regulator/sbv/TT14_2.md
+- path: 02_sources/regulator/sbv/SBV - TT14_2025.md
   pages: Điều 66 (governance), Điều 67 (use test), Điều 68 (risk parameter estimation)
   weight: primary
 parent_node: null

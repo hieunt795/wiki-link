@@ -1,6 +1,6 @@
 ---
 node_id: basel_driven_credit_migration_to_private_markets_001
-type: mechanism
+type: concept
 title: Basel Driven Credit Migration To Private Markets
 aliases:
 - Credit Migration Private Markets

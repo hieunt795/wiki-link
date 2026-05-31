@@ -21,7 +21,7 @@ thesis: '[LLM] The PPL PTS variant of BC030306 defines governance parameters for
   deviation from historical average, and stress scenario requirements for drawdown
   rate assumptions.'
 source_refs:
-- path: 02_sources/regulator/other/BC030306_OD_PPL_pts_FINAL (1).md
+- path: 02_sources/regulator/other/BC030306_OD_PPL_pts_FINAL.md
   pages: ''
   weight: primary
 parent_node: '[[Overdraft_Behavioral_Model_Utilization_Rate_And_Drawdown_Alm_Cashflow]]'

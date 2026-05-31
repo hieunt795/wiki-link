@@ -37,7 +37,7 @@ thesis: '[LLM] TT83/2025/TT-NHNN (issued 31 December 2025) mandates a three-line
 
   '
 source_refs:
-- path: 02_sources/regulator/sbv/TT83.md
+- path: 02_sources/regulator/sbv/SBV - TT83_2025.md
   pages: Điều 3 (definitions), Điều 4 (ICS requirements and 3-lines), Điều 6 (org
     structure), Điều 5 (policies)
   weight: primary

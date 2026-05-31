@@ -1,6 +1,7 @@
 ---
 node_id: lclor_qt_calibration_001
 type: indicator
+indicator_type: threshold
 title: LCLoR Lowest Comfortable Level of Reserves and QT Calibration
 aliases:
 - LCLoR

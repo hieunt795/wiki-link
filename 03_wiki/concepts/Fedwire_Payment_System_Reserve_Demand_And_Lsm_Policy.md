@@ -1,6 +1,6 @@
 ---
 node_id: fedwire_payment_system_reserve_demand_and_lsm_policy_001
-type: mechanism
+type: concept
 title: Fedwire Payment System Reserve Demand And LSM Policy
 aliases:
 - Fedwire RTGS Reserve Demand

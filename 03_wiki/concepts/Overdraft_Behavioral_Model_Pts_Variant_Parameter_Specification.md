@@ -20,7 +20,7 @@ thesis: '[LLM] The PTS variant of the ABBank overdraft behavioral model (BC03030
   provides detailed statistical methodology for estimating overdraft utilization rates
   by segment, including model calibration procedures and confidence interval requirements.'
 source_refs:
-- path: 02_sources/regulator/other/BC030306_OD_HDSD_pts_FINAL (1).md
+- path: 02_sources/regulator/other/BC030306_OD_HDSD_pts_FINAL.md
   pages: ''
   weight: primary
 parent_node: '[[Overdraft_Behavioral_Model_Utilization_Rate_And_Drawdown_Alm_Cashflow]]'

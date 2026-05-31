@@ -36,7 +36,7 @@ thesis: '[LLM] The SBV''s 2026 draft circular (replacing TT22/2019/TT-NHNN) intr
 
   '
 source_refs:
-- path: 02_sources/regulator/sbv/10_DTTT_thay_the_Thong_tu_22_260421_37a8.md
+- path: 02_sources/regulator/sbv/SBV_DUTHAO - TT22_2019.md
   pages: Điều 1 (scope), Điều 8 (leverage), Điều 13 (LDR), Điều 14-17 (LCR/NSFR)
   weight: primary
 parent_node: '[[Sbv_Lcr_Nsfr_Vietnam_Phase_In_2028_2031]]'

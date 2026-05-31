@@ -1,6 +1,6 @@
 ---
 node_id: us_shadow_banking_post_gfc_market_based_finance_structure_001
-type: mechanism
+type: concept
 title: US Shadow Banking Post-GFC Market Based Finance Structure
 aliases:
 - Shadow Banking Post-GFC

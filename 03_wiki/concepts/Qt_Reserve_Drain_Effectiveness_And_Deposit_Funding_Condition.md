@@ -1,6 +1,6 @@
 ---
 node_id: qt_reserve_drain_effectiveness_and_deposit_funding_condition_001
-type: mechanism
+type: concept
 title: QT Reserve Drain Effectiveness And Deposit Funding Condition
 aliases:
 - QT Transmission Conditions

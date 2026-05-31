@@ -32,7 +32,7 @@ thesis: '[LLM] Non-maturity deposits (savings, current accounts) and revolving f
   function. Basel IRRBB supervisory expectations (BCBS d368) require banks to document
   and justify behavioral assumptions and update them when conditions change materially.'
 source_refs:
-- path: 02_sources/regulator/other/BC030306_OD_PPL_arm_FINAL (1).md
+- path: 02_sources/regulator/other/BC030306_OD_PPL_arm_FINAL.md
   pages: ''
   weight: primary
 parent_node: '[[Bank_Alm_Banking_Book_Risk_Management_Framework]]'

@@ -1,6 +1,6 @@
 ---
 node_id: eurodollar_system_mechanics_and_post_reform_decline_001
-type: mechanism
+type: concept
 title: Eurodollar System Mechanics And Post-Reform Decline
 aliases:
 - Eurodollar Market

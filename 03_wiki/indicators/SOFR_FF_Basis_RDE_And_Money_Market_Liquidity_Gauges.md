@@ -1,6 +1,7 @@
 ---
 node_id: sofr_ff_basis_rde_liquidity_gauges_001
 type: indicator
+indicator_type: spread
 title: SOFR-FF Basis RDE and Money Market Liquidity Gauges
 aliases:
 - SOFR-FF basis

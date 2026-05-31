@@ -27,8 +27,7 @@ thesis: 'In a floor system, the overnight interbank rate converges to the centra
   three advantages: reliable rate control, balance sheet size as a separable policy
   instrument, and expanded supply of safe liquid assets. [LLM]'
 source_refs:
-- path: "02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS â\x80\x93 A\
-    \ PRIMER.md"
+- path: 02_sources/Clipping/ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md
   pages: ''
   weight: primary
 parent_node: null
@@ -37,5 +36,5 @@ date_created: '2026-05-23'
 date_updated: '2026-05-23'
 ---
 
-[LLM] Auto-generated stub from ECB AND FED POLICY OPERATIONAL FRAMEWORKS â A PRIMER.md. Review and expand.
+[LLM] Auto-generated stub from ECB AND FED POLICY OPERATIONAL FRAMEWORKS – A PRIMER.md. Review and expand.
 

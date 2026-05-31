@@ -30,8 +30,7 @@ thesis: '[LLM] Structural liquidity management in ALM distinguishes between shor
   risk. Basel III LCR and NSFR create binding quantitative constraints that ALM must
   embed into FTP curve construction and balance sheet limits.'
 source_refs:
-- path: 02_sources/books/alm/A - Bank Asset Liability Management Best Practice_ Yesterday,
-    Today and Tomorrow-De Gruyter (2021).md
+- path: 02_sources/books/alm/ALM - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md
   pages: ''
   weight: primary
 parent_node: '[[Bank_Alm_Banking_Book_Risk_Management_Framework]]'

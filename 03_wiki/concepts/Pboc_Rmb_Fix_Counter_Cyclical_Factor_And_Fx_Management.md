@@ -1,6 +1,6 @@
 ---
 node_id: pboc_rmb_fix_counter_cyclical_factor_and_fx_management_001
-type: mechanism
+type: concept
 title: PBOC RMB Fix Counter Cyclical Factor And FX Management
 aliases:
 - CNY Daily Fix Mechanism

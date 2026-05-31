@@ -29,7 +29,7 @@ thesis: '[LLM] The policy/procedure/limit (PPL) framework for term deposit behav
   rates). PwC ABBank framework (BC030304) sets these constraints to ensure behavioral
   models remain conservative and auditable under Basel IRRBB supervisory review.'
 source_refs:
-- path: 02_sources/regulator/other/BC030304_Term_Deposit_PPL_arm_FINAL (1).md
+- path: 02_sources/regulator/other/BC030304_Term_Deposit_PPL_arm_FINAL.md
   pages: ''
   weight: primary
 parent_node: null

@@ -20,7 +20,7 @@ thesis: '[LLM] The PPL PTS (Policy Procedure Limit — parameter/technical speci
   variant of BC030304 defines the governance parameters for ABBank term deposit behavioral
   modeling with precise quantitative limits and statistical thresholds for model acceptance.'
 source_refs:
-- path: 02_sources/regulator/other/BC030304_Term_Deposit_PPL_pts_FINAL (1).md
+- path: 02_sources/regulator/other/BC030304_Term_Deposit_PPL_pts_FINAL.md
   pages: ''
   weight: primary
 parent_node: '[[Term_Deposit_Behavioral_Model_Renewal_Probability_And_Early_Withdrawal_Alm]]'

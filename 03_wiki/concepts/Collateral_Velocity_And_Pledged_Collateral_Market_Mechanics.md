@@ -1,6 +1,6 @@
 ---
 node_id: collateral_velocity_and_pledged_collateral_market_mechanics_001
-type: mechanism
+type: concept
 title: Collateral Velocity And Pledged Collateral Market Mechanics
 aliases:
 - Collateral Velocity

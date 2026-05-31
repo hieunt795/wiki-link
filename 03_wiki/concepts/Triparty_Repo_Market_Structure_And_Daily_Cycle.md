@@ -1,6 +1,6 @@
 ---
 node_id: triparty_repo_market_structure_and_daily_cycle_001
-type: mechanism
+type: concept
 title: Triparty Repo Market Structure And Daily Cycle
 aliases:
 - Triparty Repo
