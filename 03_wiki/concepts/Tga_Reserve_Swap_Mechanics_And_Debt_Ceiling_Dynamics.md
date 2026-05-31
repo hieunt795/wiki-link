@@ -32,9 +32,6 @@ source_refs:
 - path: 02_sources/Clipping/Napkin Math for an Ample Reserves Buffer.md
   pages: Full document
   weight: supporting
-- path: 02_sources/Clipping/Debt Ceiling Extraordinary Measures Treasury.md
-  pages: Full document
-  weight: supporting
 parent_node: null
 related:
 - node: '[[Treasury General Account TGA Reserve Swap]]'
