@@ -1,0 +1,120 @@
+template_id: node_contradiction_v1
+name: Contradiction Node Template
+version: 1
+type: contradiction
+description: >
+  Documents two sourced, conflicting claims on the same topic. Ensures that
+  genuine disagreements between sources are not silently resolved by agent preference.
+
+# ── FRONTMATTER ───────────────────────────────────────────────────────────────
+
+frontmatter:
+  required:
+    node_id:      "contra_topic_counter_001  (e.g. contra_qe_money_multiplier_001)"
+    type:         "contradiction"
+    title:        "Contra_{Topic}_{Counter}  (e.g. Contra_QE_Money_Multiplier_001)"
+    aliases:      ["Short description of the dispute"]
+    domain:
+      primary:    "The domain of the disputed topic"
+    tags:         "max 10, lowercase, hyphenated"
+    confidence:   "Min of the two source confidence levels"
+    source_refs:  "Refs from BOTH claim_a and claim_b"
+
+    claim_a:
+      statement:  "Precise, falsifiable claim from source A"
+      sources:
+        format:   "- path: 02_sources/...\n  weight: primary"
+      confidence: "Confidence of source A (1-5)"
+      stance:     "Short label for this position (e.g. 'money-multiplier view', 'endogenous money view')"
+
+    claim_b:
+      statement:  "Precise, falsifiable claim from source B — must genuinely contradict claim_a"
+      sources:
+        format:   "- path: 02_sources/...\n  weight: primary"
+      confidence: "Confidence of source B (1-5)"
+      stance:     "Short label for this position"
+
+    resolution_status:
+      options:    "open | context_dependent | resolved"
+      definitions:
+        open:               "Genuine unresolved disagreement — prefer neither claim"
+        context_dependent:  "Both claims correct but in different conditions — state the conditions"
+        resolved:           "Later evidence or consensus settles the dispute — cite the resolution"
+    resolution_note:  "If context_dependent: state the conditions. If resolved: state how."
+    analyst_note:     "What should an analyst do when this contradiction bears on their work?"
+    affects_nodes:
+      rule:       "List all wiki nodes whose thesis is affected by this contradiction"
+      format:     |
+        affects_nodes:
+          - "[[Node_Title_A]]"
+          - "[[Node_Title_B]]"
+
+  note_no_thesis: >
+    Contradiction nodes do NOT have a thesis field.
+    The claim_a / claim_b structure replaces thesis.
+
+# ── BODY FORMAT ───────────────────────────────────────────────────────────────
+
+body:
+  sections:
+    - id: overview
+      heading: "## Overview of the Dispute"
+      required: true
+      instruction: >
+        2-3 paragraphs. What is the core disagreement?
+        Why does it matter for analysis — what conclusions change depending on which side is correct?
+
+    - id: claim_a_detail
+      heading: "## Claim A: {stance label}"
+      required: true
+      instruction: >
+        Expand on claim_a. What is the full argument?
+        What evidence does source A cite? What assumptions does it make?
+        Quote the most relevant passage.
+
+    - id: claim_b_detail
+      heading: "## Claim B: {stance label}"
+      required: true
+      instruction: >
+        Expand on claim_b. Same structure as Claim A.
+        Be fair to both sides — this is not a verdict.
+
+    - id: analysis
+      heading: "## Analysis"
+      required: true
+      instruction: >
+        How should a careful analyst interpret this disagreement?
+        - Is it a true logical contradiction, or a difference in scope/conditions?
+        - Is there a third source that adjudicates?
+        - What would it take to resolve this (data, experiment, further source)?
+        Mark all inference [LLM].
+
+    - id: resolution_path
+      heading: "## Resolution Path"
+      required: true
+      instruction: >
+        If open: what sources would close this? (Be specific: 'BIS QR 2024Q1 data on X')
+        If context_dependent: state exactly when Claim A applies vs Claim B.
+        If resolved: cite the resolution source and explain how it settles the dispute.
+
+# ── LIFECYCLE ─────────────────────────────────────────────────────────────────
+
+lifecycle:
+  open: >
+    Agent has identified the contradiction. Neither claim is preferred.
+    Both affect_nodes carry the contradiction in their contradicts: field.
+  context_dependent: >
+    Agent has identified the conditions that determine which claim applies.
+    Update resolution_note and analyst_note. Do not close until conditions are documented.
+  resolved: >
+    A higher-confidence source settles the dispute.
+    Update resolution_note with citation. Update affects_nodes to remove the blocking flag.
+    Consider raising confidence on the winning claim's source node.
+
+# ── QUALITY BAR ───────────────────────────────────────────────────────────────
+
+quality:
+  both_claims_must: "Be sourced — no unsourced claims in a contradiction node"
+  claims_must: "Genuinely contradict each other — not just emphasise different aspects"
+  affects_nodes_must: "Be populated — a contradiction with no affected nodes has no purpose"
+  anti_pattern: "Creating a contradiction node for a difference in emphasis rather than a logical conflict"

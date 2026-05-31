@@ -1,0 +1,105 @@
+template_id: node_regulation_v1
+name: Regulation Node Template
+version: 1
+type: regulation
+description: >
+  A binding regulatory requirement, standard, or rule issued by an official regulatory
+  or supervisory body. Distinct from policy (CB decisions) and framework (analytical models).
+  Regulations are legally or institutionally binding on specific entities.
+
+# ── FRONTMATTER ───────────────────────────────────────────────────────────────
+
+frontmatter:
+  required:
+    node_id:      "lowercase_slug_001"
+    type:         "regulation"
+    title:        "{Issuing_Body}_{Short_Description}"
+    title_examples:
+      - "Basel_III_Capital_Adequacy_Cet1_Tier1_Total"
+      - "Bcbs_Irrbb_Standards_2016"
+      - "Sbv_Circular_22_2019_Credit_Concentration_Limit"
+    aliases:      ["Document ID", "Short name", "Vietnamese equivalent"]
+    domain:
+      primary:    "monetary_policy | fiscal_policy | alm | basel_risk | financial_markets | macro_outlook"
+    tags:         "max 10, lowercase, hyphenated (e.g. basel, capital, liquidity, srep)"
+    confidence:   "4+ if sourced from the official document; 3 if from secondary description"
+    thesis:       "1-2 sentences: what requirement does this regulation impose and on whom?"
+    source_refs:  "MUST reference the regulatory document in 02_sources/regulator/"
+    issuing_body:
+      options:    "BCBS | SBV | Fed | ECB | FSB | IOSCO | EBA | MAS | BOJ | BIS | other"
+    jurisdiction: "global | US | EU | VN | JP | SG | UK | ..."
+    regulation_type:
+      options:    "capital | liquidity | leverage | conduct | reporting | macroprudential | fx_policy | payment_system | resolution | other"
+    document_id:  "Official name or number, e.g. 'BCBS d424', 'Circular 22/2023/TT-NHNN'"
+    effective_date: "YYYY-MM-DD (first phase if phased)"
+    current_status:
+      options:    "proposed | consultative | final | phased_in | superseded"
+    binding_on:   "banks | g-sibs | broker_dealers | all_financial_entities | central_banks | ..."
+    key_requirements:
+      rule:       "List the core obligations. Be specific — quote the requirement, do not paraphrase loosely."
+      format:     |
+        key_requirements:
+          - "Requirement 1: [specific obligation with threshold/metric if applicable]"
+          - "Requirement 2: [specific obligation]"
+
+  optional:
+    phase_in_schedule: "Describe the timeline if phased: 'Phase 1 (2025): X; Phase 2 (2028): Y'"
+    parent_node:       "Parent standard (e.g. BCBS IRRBB → parent: Basel III)"
+    related:           "Related nodes"
+
+# ── BODY FORMAT ───────────────────────────────────────────────────────────────
+
+body:
+  sections:
+    - id: overview
+      heading: "## Overview"
+      required: true
+      instruction: >
+        2-3 paragraphs. What problem does this regulation address?
+        What preceded it (the gap or failure that prompted it)?
+        Who is subject to it and since when?
+
+    - id: key_requirements
+      heading: "## Key Requirements"
+      required: true
+      instruction: >
+        Describe each requirement from key_requirements[] in detail.
+        For each: (a) what exactly is required, (b) how it is calculated or measured,
+        (c) what counts as compliance.
+        For ratios/thresholds: include the formula and the minimum/maximum.
+      critical_rule: "Quote the regulatory text or document — do not paraphrase loosely"
+
+    - id: phase_in
+      heading: "## Phase-in Schedule"
+      required: false
+      condition: "Only if the regulation has a phased implementation"
+      instruction: "Timeline with specific dates and thresholds for each phase."
+
+    - id: interaction
+      heading: "## Interaction with Other Rules"
+      required: false
+      instruction: >
+        How does this regulation interact with related standards?
+        Does it override, complement, or create tension with other requirements?
+
+    - id: evidence
+      heading: "## Evidence and Sources"
+      required: true
+      instruction: >
+        Primary: the official document from 02_sources/regulator/.
+        Supporting: BIS QR, FSB reports, or implementation guidance.
+      format: "[RAW-BOOK p.X] | [RAW-CLIP Title] | document_id"
+      note: "For regulations, the document IS the source — cite section and paragraph numbers"
+
+    - id: related
+      heading: "## Related Concepts"
+      required: false
+      instruction: "Which frameworks implement this regulation? Which indicators measure compliance?"
+
+# ── QUALITY BAR ───────────────────────────────────────────────────────────────
+
+quality:
+  source_must: "Reference the actual regulatory document in 02_sources/regulator/ — not a textbook summary"
+  key_requirements_must: "Be specific enough to answer 'are we compliant?' — not vague summaries"
+  document_id_must: "Be the official name/number from the issuing body"
+  anti_pattern: "Writing a regulation node without having the source document in 02_sources/regulator/"

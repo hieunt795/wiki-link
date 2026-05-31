@@ -1,0 +1,111 @@
+template_id: node_entity_v2
+name: Entity Node Template
+version: 2
+type: entity
+
+# ── BƯỚC 1: XÁC ĐỊNH ─────────────────────────────────────────────────────────
+
+identify:
+  core_test:     "Đây có phải là một thực thể có TÊN RIÊNG và ĐÓNG VAI TRÒ trong hệ thống không?"
+  signal_words:  ["established in", "headquartered in", "mandated to", "regulated by", "issuing body", "thành lập", "trụ sở"]
+
+  entity_types:
+    central_bank:
+      signals:   "Source nói đây là ngân hàng trung ương với mandate ổn định giá/hệ thống tài chính"
+      examples:  "Fed, ECB, BOJ, SBV, PBoC, BOE, MAS, RBA, BOK"
+      how_to_identify: "Tìm trong source: 'central bank', 'monetary authority', 'ngân hàng trung ương'"
+
+    regulatory_body:
+      signals:   "Source nói đây là cơ quan ban hành tiêu chuẩn hoặc giám sát"
+      examples:  "BCBS, FSB, EBA, IOSCO, APRA, BaFin"
+      how_to_identify: "Tìm: 'sets standards', 'issues guidance', 'supervises', 'ban hành'"
+      note:      "BCBS/FSB/EBA → regulatory_body, không phải institution"
+
+    institution:
+      signals:   "Tổ chức quốc tế hoặc hiệp hội không có mandate giám sát trực tiếp"
+      examples:  "IMF, BIS, World Bank, ISDA, SIFMA, FHLB"
+      how_to_identify: "Tìm: 'multilateral', 'international organization', 'association', 'hiệp hội'"
+
+    committee:
+      signals:   "Là một body ra quyết định, không phải tổ chức độc lập"
+      examples:  "FOMC, ECB Governing Council, ALCO, Basel Committee"
+      how_to_identify: "Tìm: 'committee', 'council', 'board of', 'họp định kỳ', 'quyết định'"
+      note:      "ALCO là entity (committee), không phải concept"
+
+    instrument:
+      signals:   "Là công cụ tài chính được phát hành và giao dịch trên thị trường"
+      examples:  "JGB, UST, T-bill, OIS, SOFR (rate index), MBS, CDS"
+      how_to_identify: "Tìm: 'issued by', 'trades at', 'denominated in', 'matures on', 'phát hành'"
+
+    market:
+      signals:   "Là một thị trường hoặc segment thị trường có tên riêng"
+      examples:  "Fed Funds market, repo market, Eurodollar market, FX spot market"
+      how_to_identify: "Tìm: 'market for', 'trading of', 'participants include', 'thị trường'"
+
+# ── BƯỚC 2: ĐIỀN FRONTMATTER ─────────────────────────────────────────────────
+
+frontmatter:
+  title:
+    rule:    "Tên chính thức đầy đủ (VIẾT TẮT)"
+    how:     "Tìm trong source tên chính thức. Không rút ngắn tuỳ tiện."
+    example: "Basel Committee on Banking Supervision (BCBS)"
+
+  entity_type:
+    how:     "Dùng bảng entity_types ở trên. Xác định từ mô tả của source."
+    must_not_be_blank: true
+
+  jurisdiction:
+    how: >
+      Tìm trong source: entity này hoạt động ở đâu? Ai là đối tượng của nó?
+      'global' nếu entity có thành viên/tác động toàn cầu (BCBS, FSB, IMF, BIS, ISDA).
+      Country code nếu entity của một quốc gia (Fed → US, SBV → VN, ECB → EU).
+
+  mandate:
+    how: >
+      Tìm trong source câu mô tả chính thức mục đích của entity.
+      Ưu tiên trích nguyên văn từ charter/treaty nếu source nêu.
+      Đánh dấu [LLM] nếu paraphrase.
+
+# ── BƯỚC 3: VIẾT BODY ────────────────────────────────────────────────────────
+
+body:
+  section_overview:
+    heading:     "## Overview"
+    instruction: "Entity này là gì, thành lập khi nào (nếu source nêu), và tại sao?"
+    source_cue:  "Tìm phần source giới thiệu entity. Thường ở đầu chương hoặc đầu section."
+
+  section_role_and_mandate:
+    heading:     "## Role and Mandate"
+    instruction: >
+      Mandate chính thức là gì? Tìm trong source:
+      - Ngôn ngữ mandate (quote nếu có)
+      - Ai entity này report lên hoặc serve?
+      - Ai entity này regulate hoặc supervise?
+    for_instrument: >
+      Thay "Role and Mandate" bằng "Structure and Function":
+      - Instrument được phát hành như thế nào?
+      - Ai phát hành, kỳ hạn, lãi suất xác định ra sao?
+      - Nó phục vụ chức năng gì trong thị trường?
+    for_committee: >
+      - Committee họp bao lâu một lần? Ra quyết định gì?
+      - Ai là thành viên? Ai chủ trì?
+      - Quyết định ràng buộc hay chỉ advisory?
+
+  section_key_activities:
+    heading:     "## Key Activities"
+    instruction: >
+      Các hoạt động chính của entity theo source.
+      Không liệt kê chung chung — tìm activities cụ thể source đề cập.
+    source_cue:  "Tìm trong source các động từ hành động: 'conducts', 'publishes', 'sets', 'supervises', 'issues'"
+
+  section_evidence:
+    heading:     "## Evidence and Sources"
+    instruction: "Cite nguồn định nghĩa entity và mandate của nó."
+    format:      "[RAW-BOOK p.X] | [RAW-CLIP Title]"
+
+# ── QUALITY BAR ───────────────────────────────────────────────────────────────
+
+quality:
+  entity_type_must:  "Không để trống — phải xác định từ source"
+  jurisdiction_must: "Không để trống — 'global' là acceptable nếu entity toàn cầu"
+  anti_pattern:      "Tạo concept node cho tên tổ chức (BCBS, FSB, IMF, SBV, ALCO)"

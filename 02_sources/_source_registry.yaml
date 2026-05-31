@@ -2,7 +2,7 @@ meta:
   total_sources: 85
   total_ingested: 63
   coverage_pct: 74.1
-  last_updated: '2026-05-30'
+  last_updated: '2026-05-31'
 sources:
   02_sources/books/bindseil_monetary_policy/Bindseil_Monetary_Policy_Operations.md:
     status: partial
@@ -686,7 +686,7 @@ sources:
     description: 'IMF textbook: macroeconomic accounting (SNA, GFS, BoPM, monetary
       survey) using Poland transition economy as case study'
     domain: monetary_policy
-    ingest_date: '2026-05-22'
+    ingest_date: '2026-05-31'
     priority: high
     status: partial
     wiki_nodes:
@@ -700,6 +700,13 @@ sources:
     - 03_wiki/mechanisms/Cost_Push_Inflation_Persistence_Mechanism.md
     - 03_wiki/frameworks/Stagflation_Policy_Response_Tradeoff_Framework.md
     - 03_wiki/frameworks/US_1970s_Stagflation_And_Policy_Regime_Shift.md
+    - 03_wiki/concepts/Income_Absorption_Identity.md
+    - 03_wiki/concepts/Saving_Investment_Identity_And_External_Balance.md
+    - 03_wiki/frameworks/Imf_Gfs_Transaction_Classification_Framework.md
+    - 03_wiki/concepts/Gfs_Revenue_Vs_Receipt_Distinction.md
+    - 03_wiki/concepts/Seigniorage_And_Inflation_Tax.md
+    - 03_wiki/concepts/Fiscal_Expenditure_Arrears.md
+    - 03_wiki/frameworks/External_Debt_Sustainability_And_Reserve_Adequacy_Framework.md
     notes: '2026-05-22: Created 4 wiki nodes covering all core chapters: SNA (Ch2),
       GFS fiscal (Ch3), monetary survey Ch5, flow of funds Ch6. Confidence:4 (single
       primary IMF textbook). BoP chapter (Ch4) covered by GFS/FoF nodes. Balance of

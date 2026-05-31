@@ -15,31 +15,38 @@ required fields, and promotion criteria. The type is declared in frontmatter: `t
 **Example:** Quantitative Easing, Yield Curve Control, Reserve Requirements
 
 ### `mechanism`
-**Purpose:** A causal process, transmission channel, or operational procedure.
+**Purpose:** A causal process, transmission channel, or operational procedure that unfolds in sequential steps.
 **Subdirectory:** `03_wiki/mechanisms/`
 **Required fields:** all concept fields + `steps[]`
+
+`steps[]` is **mandatory** — it must list the causal chain. If you cannot write at least two concrete steps (A happens → B follows because of condition C), use `concept` instead.
+
 **Extra fields:**
 ```yaml
 steps:
-  - "Step 1: ..."
-  - "Step 2: ..."
+  - "Step 1: [what happens and why]"
+  - "Step 2: [what follows and under what condition]"
 transmission_lags: immediate | short | medium | long
 empirical_evidence: strong | mixed | weak | contested
 ```
-**Example:** Interest Rate Transmission Channel, QE Portfolio Balance Effect, Repo Settlement Flow
+**Example:** Interest Rate Transmission Channel, QE Portfolio Balance Effect, Repo Settlement Flow, Bank-NBFI Leverage Loop
+
+**Anti-pattern:** Using "mechanism" for anything with "mechanics" or "transmission" in the title. The word is not a signal — the existence of a real causal chain is. A description of how repo works without a step-by-step operational chain → `concept`.
 
 ### `entity`
-**Purpose:** Institution, central bank, person, regulatory body, market instrument.
+**Purpose:** Any named actor or thing: central bank, institution, regulatory body, committee, person, market, or financial instrument.
 **Subdirectory:** `03_wiki/entities/`
 **Required fields:** all concept fields + `entity_type`, `jurisdiction`
 **Extra fields:**
 ```yaml
-entity_type: institution | central_bank | person | instrument | market
-jurisdiction: US | EU | JP | VN | global | ...
+entity_type: institution | central_bank | regulatory_body | committee | person | instrument | market
+jurisdiction: US | EU | JP | VN | SG | UK | global | ...
 established: YYYY
 mandate: "..."
 ```
-**Example:** Federal Reserve, BOJ, BIS, JGB (instrument), SOFR (rate)
+**Example:** Federal Reserve, ECB, BOJ, SBV, PBoC, BIS, IMF, FSB, BCBS, MAS, BOE, ISDA, ALCO, JGB (instrument), SOFR (rate)
+
+**Anti-pattern:** A named regulatory body (BCBS, FSB, IMF, SBV) described as a concept because it "sounds like a concept". Any named organisation → `entity`.
 
 ### `relationship`
 **Purpose:** Named, directional relationship between two wiki nodes.
@@ -85,32 +92,45 @@ synthesis_method: comparative | integrative | reconciliation | extension
 **Example:** Fiscal-Monetary Interaction under QE, Basel + Shadow Banking Interaction
 
 ### `policy`
-**Purpose:** A specific policy action, regime, or institutional decision with a defined period.
+**Purpose:** A specific dated policy action, regime, or institutional decision tied to a named authority and a defined period. Covers both CB operational frameworks anchored to a year and historical policy regime shifts.
 **Subdirectory:** `03_wiki/policies/`
 **Required fields:** all concept fields + `jurisdiction`, `period`, `policy_type`
 **Extra fields:**
 ```yaml
 jurisdiction: US | EU | JP | VN | global
-period: "2008-2014"
+period: "2008-2014"          # Required — even "2024-present" or "1970s" counts
 policy_type: conventional_monetary | unconventional_monetary | fiscal | regulatory | macroprudential
 instruments: [list]
 outcome: "..."
 ```
-**Example:** Fed QE1-QE3, BOJ YCC Policy 2016-2024, Basel III Implementation
+**Example:** Fed QE1-QE3 (2008-2014), BOJ YCC 2016-2024, Volcker Shock 1979-1982, ECB New Operational Framework 2024, US 1970s Stagflation Policy Regime, ECB PEPP 2020-2022
+
+**Signal:** If the node title contains a year, decade, or reform label tied to a named authority → use `policy` before considering `framework`.
+
+**Anti-pattern:** Calling a dated CB operational framework a `framework` because it sounds structural. ECB's 2024 range-floor decision is a `policy` (it has a year, a named authority, and an effective date). A `framework` has no specific date — it's a timeless analytical tool.
 
 ### `framework`
-**Purpose:** Analytical framework, model, or conceptual structure used for analysis.
+**Purpose:** A reusable analytical model or tool with enumerable named components and a defined application domain. Timeless — not tied to a specific year or authority decision.
 **Subdirectory:** `03_wiki/frameworks/`
 **Required fields:** all concept fields + `components[]`, `application_domain`
+
+`components[]` is **mandatory** — it must list the actual named parts of the framework. A node without enumerable components is a `concept`, not a framework.
+
 **Extra fields:**
 ```yaml
 components:
-  - "Component 1"
-  - "Component 2"
-application_domain: monetary_policy | fiscal_policy | financial_stability | ...
+  - "Component name 1"     # Named sub-parts, dimensions, or metrics the framework uses
+  - "Component name 2"
+application_domain: monetary_policy | fiscal_policy | alm | financial_stability | ...
 key_equations: []        # Optional: LaTeX or plain text formulas
 ```
-**Example:** IS-LM Model, Flow of Funds Framework, Basel Capital Framework, T-Account Analysis
+**Example:** IS-LM Model (components: IS curve, LM curve), IRRBB EVE/NII Dual-Metric (components: EVE metric, NII metric, shock scenarios), IMF Flow of Funds 4-Sector (components: households, firms, government, rest-of-world), Basel Capital Stack (components: CET1, Tier 1, Total Capital, buffers)
+
+**Anti-patterns — these are NOT frameworks:**
+- A description of how something works without enumerable components → `concept` or `mechanism`
+- A dated CB operational decision with a year (ECB 2024 framework, Volcker 1979) → `policy`
+- A taxonomy or classification scheme without analytical application → `concept`
+- A historical regime or event tied to a decade → `policy`
 
 ### `indicator`
 **Purpose:** Economic or financial indicator used in analysis and monitoring.
@@ -146,6 +166,51 @@ key_requirements:
 phase_in_schedule: "Optional: describe phase-in timeline if applicable"
 ```
 **Example:** Basel III Capital Requirements, SBV Circular 22 on Credit Limits, Fed Regulation W (affiliate transactions), BCBS IRRBB Standards, Basel IV Output Floor
+
+---
+
+## Decision Tree — Borderline Cases
+
+```
+Is it a NAMED actor / organisation / instrument?
+  YES → entity  (Fed, ECB, BCBS, SBV, ALCO, JGB, SOFR, IMF, FSB, MAS, ISDA...)
+  NO  ↓
+
+Does it have a MEASUREMENT UNIT + FREQUENCY + DATA SOURCE?
+  YES → indicator  (NII in $, LCR in %, EVE in $, SOFR in bps/daily)
+  NO  ↓
+
+Is it a BINDING RULE from an official regulatory body with a document ID?
+  YES → regulation  (BCBS d424, SBV Circular 22, ECB SREP P2R...)
+  NO  ↓
+
+Is it tied to a NAMED AUTHORITY + SPECIFIC YEAR/PERIOD (even "2024-present")?
+  YES → policy  (Fed QE1-3, BOJ YCC 2016-2024, ECB New Framework 2024,
+                 Volcker Shock 1979-1982, US 1970s Stagflation Regime...)
+  NO  ↓
+
+Can you LIST NAMED COMPONENTS in a YAML array AND name an application domain?
+  YES → framework  (IS-LM: [IS curve, LM curve], IRRBB: [EVE, NII, scenarios]...)
+  NO  ↓
+
+Can you write STEP 1 / STEP 2 / STEP 3 as a real causal chain?
+  YES → mechanism  (rate cut → bank cost down → loan spread down → credit up...)
+  NO  ↓
+
+→ concept  (default for everything else)
+```
+
+**Common misclassifications to avoid:**
+
+| What you see | Wrong type | Correct type |
+|---|---|---|
+| "ECB New Operational Framework 2024" | framework | policy — has year + named CB |
+| "Volcker Fed Reaction Function Break" | framework | policy — 1979 regime shift |
+| "US 1970s Stagflation Policy Regime" | framework | policy — decade + regime |
+| "BCBS, FSB, IMF" described as concept | concept | entity — named regulatory body |
+| "NII sensitivity" with no unit/frequency | concept | indicator — if units given |
+| "LCR cashflow mechanics" | mechanism | concept — no step-chain, just description |
+| "CB reserve taxonomy" | framework | concept — taxonomy ≠ analytical framework |
 
 ---
 

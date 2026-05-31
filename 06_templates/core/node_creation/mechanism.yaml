@@ -1,0 +1,107 @@
+template_id: node_mechanism_v3
+name: Mechanism Node Template
+version: 3
+type: mechanism
+
+# ── BƯỚC 1: XÁC ĐỊNH ─────────────────────────────────────────────────────────
+
+identify:
+  core_test: >
+    Tôi có thể viết "Step 1: [chủ thể] làm [X] → [kết quả] vì [lý do] khi [điều kiện]"
+    cho ít nhất 2 bước không?
+    Nếu có → mechanism. Nếu không → concept.
+
+  signal_words_in_source:
+    - '"leads to" / "triggers" / "causes" / "results in" / "when X happens Y follows"'
+    - '"channel" / "transmission" / "loop" / "spiral" / "cascade" / "contagion"'
+    - '"step 1...step 2" / "first...then...finally"'
+    - '"dẫn đến" / "kéo theo" / "kênh truyền dẫn" / "vòng xoáy"'
+
+  vs_concept: >
+    Concept: source mô tả X là gì (static description).
+    Mechanism: source mô tả X xảy ra như thế nào theo trình tự.
+    Test: nếu có thể tóm tắt bằng "A → B → C" với conditions → mechanism.
+
+  false_positives:
+    - "'Mechanics' trong title không có nghĩa là mechanism (e.g. 'LCR cashflow mechanics' → concept/indicator)"
+    - "'Transmission' trong title không đủ — phải có step-chain thực sự"
+    - "Mô tả cách repo hoạt động ở mức cao → concept; mô tả cụ thể luồng tiền/collateral theo bước → mechanism"
+
+# ── BƯỚC 2: ĐIỀN FRONTMATTER ─────────────────────────────────────────────────
+
+frontmatter:
+  steps:
+    rule:    "BẮTBUỘC. Ít nhất 2 steps. Mỗi step có: chủ thể + hành động + kết quả + điều kiện."
+    how: >
+      Đọc source đoạn mô tả process/mechanism.
+      Chia thành các bước tuần tự. Với mỗi bước, xác định:
+        - Ai là chủ thể đang hành động?
+        - Họ làm gì?
+        - Kết quả là gì?
+        - Điều kiện nào cần để bước này xảy ra?
+        - Điều gì có thể làm gián đoạn chain tại đây?
+    format: |
+      steps:
+        - "Step 1: [Chủ thể] [hành động] → [kết quả] vì [lý do]. Điều kiện: [condition]."
+        - "Step 2: [Chủ thể tiếp theo] phản ứng bằng [X] → [kết quả] khi [condition]."
+        - "Step N: [Kết quả cuối] với độ trễ [timeframe nếu source nêu]."
+    anti_pattern: "Steps quá chung như 'Policy tightens → inflation falls' — không có cơ chế"
+    good_pattern: "Step 1: CB raises IORB → bank overnight funding cost rises immediately (same day). Step 2: Banks widen loan spreads over 1-2 quarters as funding cost is passed through — faster for floating-rate loans repricing at next reset date, slower for fixed-rate (only at origination of new loans)."
+
+  transmission_lags:
+    how: "Tìm trong source: source đề cập độ trễ của từng bước không?"
+    options: "immediate | short (weeks) | medium (quarters) | long (years)"
+
+  empirical_evidence:
+    how: "Source có trích dẫn research về hiệu quả thực tế của mechanism này không?"
+    options: "strong | mixed | weak | contested"
+
+# ── BƯỚC 3: VIẾT BODY ────────────────────────────────────────────────────────
+
+body:
+  section_overview:
+    heading:     "## Overview"
+    instruction: "Mechanism này làm gì và trong bối cảnh nào? Chủ thể và trigger là gì?"
+    source_cue:  "Tìm phần source giới thiệu quy trình hoặc channel này."
+
+  section_causal_chain:
+    heading:     "## Causal Chain"
+    instruction: >
+      Kể lại từng step từ steps[] dưới dạng prose — không chỉ lặp lại YAML.
+      Với mỗi step:
+        1. Chủ thể làm gì và tại sao
+        2. Cơ chế kết nối step này với step tiếp theo
+        3. Điều kiện cần để chain tiếp tục
+        4. Điều gì có thể làm đứt chain tại đây
+    critical_rule: "Không bao giờ viết 'A dẫn đến B'. Viết 'A dẫn đến B khi [condition], với độ trễ [lag], bị hạn chế bởi [friction].'"
+    how: >
+      Đọc source đoạn mô tả từng bước. Tìm:
+      - Từ khoá chỉ điều kiện: "when", "if", "provided that", "assuming", "nếu", "khi"
+      - Từ khoá chỉ friction: "but", "however", "unless", "except when", "trừ khi"
+      - Từ khoá chỉ độ trễ: "immediately", "with a lag of", "over", "gradually"
+
+  section_conditions:
+    heading:     "## Điều Kiện và Giới Hạn"
+    instruction: >
+      Tìm trong source: mechanism này KHÔNG hoạt động khi nào?
+      - Điều kiện tiên quyết phải có (preconditions)
+      - Điều kiện làm yếu/tắt mechanism
+      - Episodes thực tế mechanism đã fail
+    source_cue:  "Tìm: 'does not work when', 'breaks down if', 'limited by', 'attenuated by', 'failure of'"
+
+  section_evidence:
+    heading:     "## Evidence and Sources"
+    instruction: >
+      Phân biệt 3 loại evidence:
+      - Theoretical: model nào derive ra mechanism này?
+      - Empirical: studies nào đo effect size? (trích con số nếu source nêu)
+      - Historical: episodes nào là example?
+    format:      "[RAW-BOOK p.X] | [RAW-CLIP Title]"
+
+# ── QUALITY BAR ───────────────────────────────────────────────────────────────
+
+quality:
+  minimum_steps:   "2 steps, mỗi step có condition"
+  no_unconditional: "Không có câu nhân quả không điều kiện"
+  chain_must_break: "Phải nêu ít nhất 1 điều kiện có thể làm đứt chain"
+  anti_pattern:    "Dùng mechanism cho description không có step-chain → sửa thành concept"

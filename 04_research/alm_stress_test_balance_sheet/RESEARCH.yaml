@@ -1,0 +1,208 @@
+# RESEARCH.yaml — ALM Liquidity Stress Test: Balance Sheet Methodology
+
+# ── SESSION IDENTITY ──────────────────────────────────────────────────────────
+topic_slug: alm_stress_test_balance_sheet
+title: "Liquidity Stress Test on Full Balance Sheet — Framework & Methodology"
+created: 2026-05-29
+last_updated: 2026-05-29
+status: active
+owner: user
+
+# ── TEMPLATE SELECTION ────────────────────────────────────────────────────────
+domain_template: 06_templates/domains/basel_risk/capital_adequacy_analysis.yaml
+style_template: null
+analysis_mode: T_MODE_DEEP
+
+# ── RESEARCH QUESTIONS ────────────────────────────────────────────────────────
+primary_question: >
+  Làm thế nào để thiết kế và thực hiện một bài Liquidity Stress Test (LST)
+  toàn diện trên balance sheet ngân hàng — bao gồm asset side (haircuts),
+  liability side (outflow rates), và management response — theo best practice
+  quốc tế (BCBS, EBA, FSI)?
+
+sub_questions:
+  - "Q1 — Balance sheet foundation: Cách xây dựng static balance sheet projection làm nền cho stress test là gì? Tại sao static (không rollover, không new business)?"
+  - "Q2 — Scenario design: Ba loại scenario (idiosyncratic / market-wide / combined) được calibrate như thế nào? Severity được xác định theo nguyên tắc gì?"
+  - "Q3 — Asset haircuts: HQLA haircut schedule (Level 1/2A/2B) và non-HQLA treatment dưới stress được quy định và áp dụng như thế nào?"
+  - "Q4 — Liability outflows: Outflow rates theo counterparty type (retail stable/unstable, corporate, FI, wholesale) và contingent commitments được model ra sao?"
+  - "Q5 — Management response (counterbalancing capacity): Các công cụ có sẵn (CB repo, asset sale, collateral posting) được quantify như thế nào? No-double-counting rule áp dụng thế nào?"
+  - "Q6 — Output metrics: Survival horizon và Net Cumulative Cash Flow được tính và interpret như thế nào? Liên hệ với LCR/NSFR?"
+  - "Q7 — Depositor behaviour assumptions: Behavioural assumptions cho NMD và retail deposits dưới stress được calibrate từ dữ liệu gì? Sensitivity analysis?"
+  - "Q8 — Integration với ICAAP/ILAAP: LST kết nối với capital stress test (solvency-liquidity nexus) như thế nào trong báo cáo tổng hợp?"
+
+# ── COVERAGE PROBE RESULTS ────────────────────────────────────────────────────
+# NOTE: Dense index = 0 docs locally (sync runs on Colab). Probe done via Grep on wiki.
+coverage_probe:
+  last_run: 2026-05-29
+  queries:
+    - query: "Q1 — static balance sheet projection stress test"
+      state: INGESTED
+      wiki_nodes:
+        - "[[Liquidity_Stress_Test_Static_Balance_Sheet_Assumption_Shock_Isolation]]"  # conf=1
+        - "[[Integrated_Stress_Testing_Capital_Liquidity_Link]]"                        # conf=1
+      action: search_pipeline(wiki_only=True) — verify nodes, raise conf to 3
+
+    - query: "Q2 — idiosyncratic market-wide combined scenario EBA calibration"
+      state: INGESTED
+      wiki_nodes:
+        - "[[Liquidity_Stress_Three_Scenario_Types_Idiosyncratic_Market_Wide_Combined_Eba]]"  # conf=1
+        - "[[Bcbs_Liquidity_Stress_Testing_Principle_10]]"                                     # conf=?
+        - "[[Ilaap_Internal_Liquidity_Adequacy_Assessment_Framework]]"                         # conf=?
+      action: verify EBA GL/2018/04 source passage; calibration severity methodology needs expansion
+
+    - query: "Q3 — HQLA haircut Level 1 2A 2B stress"
+      state: INGESTED
+      wiki_nodes:
+        - "[[Hqla_Classification_Level1_Level2a_Level2b]]"              # conf=1
+        - "[[Basel_Iii_Lcr_Hqla_Cashflow_Mechanics]]"                   # conf=3 ✓ verified
+        - "[[Basel_Iii_Lcr_Liquidity_Coverage_Ratio_Standard_2013]]"    # conf=1
+        - "[[Bcbs_Hqla_Liquidity_Cushion_Principle_12]]"                # conf=?
+      action: conf=3 node is anchor; raise Hqla_Classification to 3 by reading Basel III standard
+
+    - query: "Q4 — outflow rates retail corporate wholesale contingent"
+      state: INGESTED
+      wiki_nodes:
+        - "[[Lcr_Retail_Deposit_Run_Off_Rates_Stable_Less_Stable_Categories]]"     # conf=1
+        - "[[Lcr_Wholesale_Unsecured_Funding_Run_Off_By_Counterparty_Type]]"       # conf=1
+        - "[[Lcr_Secured_Funding_Run_Off_By_Collateral_Quality_Asset_Level]]"      # conf=1
+        - "[[Liquidity_Stress_Test_Three_Building_Blocks_Assets_Liabilities_Management_Response]]"  # conf=1
+      action: 3 LCR outflow nodes all conf=1 — priority verify batch; these are the core of Q4
+
+    - query: "Q5 — counterbalancing capacity management actions no-double-counting"
+      state: INGESTED
+      wiki_nodes:
+        - "[[Ilaap_Recovery_Plan_Management_Actions_No_Double_Counting]]"                      # conf=1
+        - "[[Stress_Testing_Management_Actions_Before_After_Presentation_Conservative_Rules]]" # conf=1
+        - "[[Bcbs_Liquidity_Contingency_Funding_Plan_Principle_11]]"                           # conf=?
+      action: verify ILAAP source for no-double-counting rule; quantification methodology is thin
+
+    - query: "Q6 — survival horizon net cumulative cash flow NCCF output metric"
+      state: PENDING
+      wiki_nodes:
+        - "[[Liquidity_Stress_Test_Three_Building_Blocks_Assets_Liabilities_Management_Response]]"  # mentions survival horizon (stub)
+        - "[[Funding_Gap_Profile_And_Behavioural_Maturity_Calendar]]"                               # conf=1
+        - "[[Reverse_Stress_Testing_Alm_Framework]]"                                                # conf=1
+      action: >
+        No dedicated NCCF node exists. Need to create finding: how survival horizon
+        is calculated (lowest cumulative NCF day), link to LCR 30-day window.
+        Source: EBA GL/2018/04 Section 4.7 + BCBS Principles 2008.
+
+    - query: "Q7 — NMD depositor behaviour stress calibration sensitivity"
+      state: PENDING
+      wiki_nodes:
+        - "[[NMD_Decay_Model_Volume_Segmentation]]"            # conf=3 — IRRBB-focused
+        - "[[NMD_Stochastic_Three_Factor_Model]]"              # conf=?  — IRRBB-focused
+        - "[[Behavioralization_Non_Maturity_Deposit_Alm_Prepayment_Early_Withdrawal_Modeling]]"  # conf=1
+        - "[[Liquidity_Stress_Test_Depositor_Behaviour_Assumptions_Key_Driver]]"  # conf=3 ✓ updated 2026-05-29
+      action: >
+        Partially resolved: Depositor behaviour node raised to conf=3 (insights59 §13/33/64/71).
+        Finding created: findings/nmd_stress_outflow_calibration.md (conf=3).
+        TRUE_GAP remaining: specific regulator multiplier tables (ECB/SSM 2019 LST methodology,
+        APRA guidance) not in corpus. Suggest acquiring BCBS d555 (2023 banking turmoil) +
+        ECB LST 2019 methodology publication.
+
+    - query: "Q8 — ICAAP ILAAP solvency liquidity integration"
+      state: INGESTED
+      wiki_nodes:
+        - "[[Stress_Testing_Solvency_Liquidity_Interaction_Icaap_Ilaap_Integration]]"  # conf=1
+        - "[[Integrated_Stress_Testing_Capital_Liquidity_Link]]"                         # conf=1
+        - "[[Eba_Gl_2016_10_Icaap_Ilaap_Information_For_Srep]]"                         # conf=?
+        - "[[Icaap_Ilaap_Srep_Information_Four_Category_Framework]]"                    # conf=?
+      action: verify EBA GL 2016/10 source; document the feedback loop mechanism clearly
+
+# ── SOURCE INVENTORY ──────────────────────────────────────────────────────────
+sources_used:
+  wiki:
+    - "[[Liquidity_Stress_Test_Three_Building_Blocks_Assets_Liabilities_Management_Response]]"
+    - "[[Liquidity_Stress_Three_Scenario_Types_Idiosyncratic_Market_Wide_Combined_Eba]]"
+    - "[[Liquidity_Stress_Test_Static_Balance_Sheet_Assumption_Shock_Isolation]]"
+    - "[[Liquidity_Stress_Test_Depositor_Behaviour_Assumptions_Key_Driver]]"
+    - "[[Liquidity_Stress_Test_Three_Supervisory_Approaches_Fsi_59]]"
+    - "[[Integrated_Stress_Testing_Capital_Liquidity_Link]]"
+    - "[[Ilaap_Adverse_Scenario_Calibration_Vulnerability_Based_P7]]"
+    - "[[Ilaap_Recovery_Plan_Management_Actions_No_Double_Counting]]"
+    - "[[Bcbs_Liquidity_Stress_Testing_Principle_10]]"
+    - "[[Bcbs_Hqla_Liquidity_Cushion_Principle_12]]"
+    - "[[Funding_Gap_Profile_And_Behavioural_Maturity_Calendar]]"
+  raw:
+    - "02_sources/regulator/bcbs/insights59.md"
+    - "02_sources/regulator/bcbs/Guidelines on institutions stress testing (EBA-GL-2018-04).md"
+  fresh_data: []
+
+# ── FINDINGS REGISTRY ─────────────────────────────────────────────────────────
+findings:
+  - file: "findings/nccf_survival_horizon.md"
+    status: promoted
+    promoted_to: "03_wiki/mechanisms/Liquidity_Stress_Test_Nccf_Survival_Horizon_Output_Metrics.md"
+    confidence: 3
+    review_needed: false
+    covers: "Q6 — NCCF methodology + survival horizon definition (EBA GL §155, §159-162)"
+  - file: "findings/nmd_stress_outflow_calibration.md"
+    status: draft
+    promoted_to: null
+    confidence: 3
+    review_needed: false
+    covers: "Q7 — NMD behavioral model → stress outflow rate calibration bridge; 3 approaches + post-2023 adjustments"
+
+# ── GAP LOG ───────────────────────────────────────────────────────────────────
+gaps:
+  - query: "Specific regulator-published stress run-off rate tables and multipliers"
+    type: TRUE_GAP
+    logged: 2026-05-29
+    action_required: fetch_source
+    source_candidates:
+      - "BCBS d555: Report on the 2023 banking turmoil (October 2023) — check if already in corpus"
+      - "ECB Banking Supervision: Liquidity stress test 2019 methodology and results"
+      - "EBA ILAAP peer review reports — quantitative benchmarks for EU bank run-off rates"
+    status: open
+
+# ── CONTRADICTIONS DETECTED ───────────────────────────────────────────────────
+contradictions: []
+
+# ── PROMOTION CHECKLIST ───────────────────────────────────────────────────────
+promotion_candidates:
+  - finding: "findings/nccf_survival_horizon.md"
+    ready: true
+    target_type: mechanism
+    target_slug: Liquidity_Stress_Test_Nccf_Survival_Horizon_Output_Metrics
+    blocking_issues: []
+
+# ── NODES VERIFIED THIS SESSION ───────────────────────────────────────────────
+# All raised conf 1→3 on 2026-05-29 (except Bcbs_Liquidity_Stress_Testing_Principle_10 already conf=4):
+#
+# Q1:
+#   - 03_wiki/concepts/Liquidity_Stress_Test_Static_Balance_Sheet_Assumption_Shock_Isolation.md
+#     Source: insights59 §35 + Table 2; EBA GL §188
+#
+# Q2:
+#   - 03_wiki/mechanisms/Liquidity_Stress_Three_Scenario_Types_Idiosyncratic_Market_Wide_Combined_Eba.md
+#     Source: EBA GL/2018/04 §154-159; bcbs238 §19
+#   - 03_wiki/mechanisms/Bcbs_Liquidity_Stress_Testing_Principle_10.md  (already conf=4, no change)
+#
+# Q3 (HQLA):
+#   - 03_wiki/concepts/Hqla_Classification_Level1_Level2a_Level2b.md
+#     Source: bcbs238 §46-54; corrected: RMBS is L2B (25%) not L2A; L2B is supervisor-discretionary
+#
+# Q4 (outflow rates):
+#   - 03_wiki/concepts/Lcr_Retail_Deposit_Run_Off_Rates_Stable_Less_Stable_Categories.md  (bcbs238 §73-84, §89)
+#   - 03_wiki/concepts/Lcr_Wholesale_Unsecured_Funding_Run_Off_By_Counterparty_Type.md    (bcbs238 §87-104)
+#   - 03_wiki/concepts/Lcr_Secured_Funding_Run_Off_By_Collateral_Quality_Asset_Level.md   (bcbs238 §112-115)
+#     Corrected: 25% counterparty bucket = domestic sovereign/PSE(RW≤20%)/MDB only (not generic "central bank")
+#
+# Q5 (management actions):
+#   - 03_wiki/concepts/Stress_Testing_Management_Actions_Before_After_Presentation_Conservative_Rules.md
+#     Source: EBA GL §194-199; clarified: EBA GL does not say "double-counting" explicitly
+#   - 03_wiki/mechanisms/Ilaap_Recovery_Plan_Management_Actions_No_Double_Counting.md
+#     Source: SSM ILAAP Guide Principle 2 Example 2.2 §183-189; confirmed "double-counting" word used explicitly
+#
+# Q6 (NCCF/Survival Horizon):
+#   - CREATED: 03_wiki/mechanisms/Liquidity_Stress_Test_Nccf_Survival_Horizon_Output_Metrics.md  conf=3
+#     Source: EBA GL §155, §159-162; bcbs238 §19
+#   - PROMOTED from: findings/nccf_survival_horizon.md
+#
+# Q8 (ICAAP/ILAAP):
+#   - 03_wiki/mechanisms/Stress_Testing_Solvency_Liquidity_Interaction_Icaap_Ilaap_Integration.md
+#     Source: EBA GL §187-193, §163, §267(e-f); SSM ILAAP Guide Example 7.1
+
+# ── AUDIT LOG REFERENCE ───────────────────────────────────────────────────────
+audit_log: "04_research/alm_stress_test_balance_sheet/audit_log.json"

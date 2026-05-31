@@ -28,13 +28,14 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
 
 from chunker import chunk_markdown, _split_frontmatter
 
-ROOT          = Path(__file__).parent.parent
-WIKI_ROOT     = ROOT / "03_wiki"
-SCHEMA_ROOT   = ROOT / "01_schema"
-REGISTRY_PATH = ROOT / "02_sources" / "_source_registry.yaml"
-LOG_PATH      = WIKI_ROOT / "log.md"
-INDEX_PATH    = WIKI_ROOT / "index.md"
-PROGRESS_PATH = ROOT / ".cache" / "ingest_progress.json"
+ROOT              = Path(__file__).parent.parent
+WIKI_ROOT         = ROOT / "03_wiki"
+SCHEMA_ROOT       = ROOT / "01_schema"
+NODE_TEMPLATE_DIR = ROOT / "06_templates" / "core" / "node_creation"
+REGISTRY_PATH     = ROOT / "02_sources" / "_source_registry.yaml"
+LOG_PATH          = WIKI_ROOT / "log.md"
+INDEX_PATH        = WIKI_ROOT / "index.md"
+PROGRESS_PATH     = ROOT / ".cache" / "ingest_progress.json"
 
 # Chunks per extraction batch in deep mode
 BATCH_SIZE = 3
@@ -235,36 +236,80 @@ def ingest_source(
 # to the extractor — the root cause of the mechanism/concept type skew.
 _TYPE_CHEATSHEET = """Choose the SINGLE best type for each node. Decision rules (check in order):
 
-- entity      → a named actor/thing: institution, central bank, committee (e.g. ALCO),
-                person, market, or financial instrument. Ask "is this a WHO/WHAT-thing?"
-- indicator   → a measurable metric with units/frequency (e.g. NII, EVE, SOFR, LCR ratio,
-                CPI). Ask "can you put a number and a data source on it?"
-- regulation  → a binding rule from an official body (BCBS/SBV/Fed/ECB/FSB/...).
-                Source usually under 02_sources/regulator/.
-- policy      → a specific dated policy action/regime by an authority (e.g. Fed QE1-3,
-                BOJ YCC 2016-2024), with a period.
-- framework   → an analytical model/structure used FOR analysis (has components, maybe
-                equations) — e.g. IRRBB EVE/NII dual-metric framework, Flow of Funds.
-- mechanism   → a CAUSAL process / transmission channel / operational procedure that
-                unfolds in steps (A→B→C). Only pick this if there are real steps.
-- synthesis   → integrates ≥2 existing nodes into something more than their sum.
-- contradiction → documents two conflicting sourced claims on one topic.
-- relationship  → a single named directional edge between two nodes (rare as a file).
-- concept     → the DEFAULT atomic idea/term that is none of the above (e.g. ALM, IRRBB
-                as a risk type, NMD, OAS, duration). Ask "is this a thing the wiki should
-                be able to point at as "what X is"?"
+1. entity      → a NAMED actor or thing: central bank, institution, regulatory body,
+                committee, person, market, or financial instrument.
+                Includes: Fed, ECB, BOJ, SBV, PBoC, BIS, IMF, FSB, BCBS, MAS, BOE,
+                ALCO, ISDA, SIFMA, JGB, SOFR, T-bill.
+                Ask: "Is this a specific named WHO or WHAT-thing?"
 
-IMPORTANT:
-- Do NOT default everything to "mechanism". A static idea is a `concept`, not a mechanism.
-- A measurable quantity is an `indicator`, not a concept.
-- An organisation/committee/instrument is an `entity`.
+2. indicator   → a MEASURABLE quantity with units + frequency + data source.
+                Must answer: what is the unit? how often is it measured? where does data come from?
+                Examples: NII ($), EVE ($), LCR (%), SOFR (bps/daily/NY Fed), CPI (%/monthly).
+                A named metric without a clear unit/frequency stays as `concept`.
+
+3. regulation  → a BINDING rule issued by an official regulatory/supervisory body.
+                Signs: document number (Circular 22, BCBS d424), effective_date, binding_on field.
+                Source usually under 02_sources/regulator/. NOT for CB operational decisions.
+
+4. policy      → a SPECIFIC DATED decision or regime by an authority, with a defined period.
+                Must have: named authority + start year (and often end year).
+                Examples: Fed QE1-QE3 (2008-2014), BOJ YCC (2016-2024), Volcker shock (1979-1982),
+                ECB PEPP (2020-2022), US_1970s_Stagflation_Policy_Regime, ECB_2024_Operational_Framework.
+                If the node title contains a year or decade → ask yourself "is this a policy?" first.
+
+5. framework   → a REUSABLE ANALYTICAL MODEL or tool with ENUMERABLE NAMED COMPONENTS.
+                Must have: (a) named components that can be listed as a YAML array, AND
+                (b) an application_domain (what analysis task does it enable?).
+                Examples: IS-LM (components: IS curve, LM curve), IRRBB EVE/NII dual-metric
+                (components: EVE metric, NII metric, shock scenarios), Flow of Funds (4-sector).
+                NOT a framework: a description of how something works (→ concept or mechanism),
+                a policy regime with a year, or a taxonomy without analytical components.
+
+6. mechanism   → a CAUSAL PROCESS that unfolds in SEQUENTIAL STEPS (A→B→C).
+                Must have real steps that could be listed as step 1, step 2, step 3.
+                The word "mechanics" or "transmission" in a title does NOT make it a mechanism
+                — only pick this if there is a genuine causal chain with conditions.
+
+7. synthesis   → integrates ≥2 existing wiki nodes into a claim larger than their sum.
+8. contradiction → documents two conflicting sourced claims on one topic.
+9. relationship  → a single named directional edge between two nodes (rare as a standalone file).
+
+10. concept    → DEFAULT. Any atomic idea/term that is none of the above.
+                Use when: a topic is important but doesn't have enumerable components (→ not framework),
+                no causal steps (→ not mechanism), no measurement unit (→ not indicator),
+                no specific date/period (→ not policy), not a named actor (→ not entity).
+                Examples: ALM, IRRBB (risk type), NMD, OAS, duration, collateral velocity,
+                reserve requirements, corridor system, financial repression.
+
+CLASSIFICATION GUARDS — check these before writing the type:
+- "framework" without listing actual components → demote to `concept`
+- "mechanism" without being able to write step 1 / step 2 → demote to `concept`
+- Node title contains a year or decade + named authority → consider `policy` before `framework`
+- Named body (BCBS, SBV, IMF, ALCO, ISDA…) → `entity`, not concept
+- Measurable ratio/metric → `indicator`, not concept
 - Create an ATOMIC node for any core domain term that deserves its own definition, even if
   the chunk only mentions it in passing (so other nodes can link to it)."""
 
 
+def _load_node_template(type_name: str) -> str:
+    """Load the node creation template for a given type from 06_templates/core/node_creation/."""
+    path = NODE_TEMPLATE_DIR / f"{type_name}.yaml"
+    if path.exists():
+        return path.read_text(encoding="utf-8")
+    return ""
+
+
+def _load_classify_template() -> str:
+    """Load the classification decision tree from 06_templates/core/node_creation/classify.yaml."""
+    path = NODE_TEMPLATE_DIR / "classify.yaml"
+    if path.exists():
+        return path.read_text(encoding="utf-8")
+    return _TYPE_CHEATSHEET  # fallback to inline if file missing
+
+
 def _node_type_cheatsheet() -> str:
-    """Full type-selection guidance for the extractor (no truncation)."""
-    return _TYPE_CHEATSHEET
+    """Return classification guidance — prefers classify.yaml template, falls back to inline."""
+    return _load_classify_template()
 
 
 def _build_extraction_prompt_batch(
@@ -309,20 +354,56 @@ ALREADY IN WIKI (do NOT duplicate these):
 {dedup_hint}
 
 TASK — extract 1-4 NEW distinct wiki nodes from this batch content.
-Rules:
-- Create nodes for durable, reusable knowledge in this batch's text (concepts, entities,
-  indicators, mechanisms, frameworks — pick the right type per the cheatsheet above)
-- Also create an ATOMIC node for any core domain term used here that lacks its own node
-- Skip if the content is introductory, bibliographic, or already covered above
-- Each node: type + title + 1-3 sentence thesis (a claim, not a summary)
-- Put acronyms AND full names in aliases (e.g. "IRRBB", "Interest Rate Risk in the Banking Book")
-- Include Vietnamese aliases where relevant
-- confidence: 1 (auto-generated stub)
-- Mark synthesised sentences with [LLM]
-- Source ref pages: batch {batch_num} (chars ~{batch[0].position}-{batch[-1].position + len(batch[-1].text)})
 
-For each node, call:
-  create_wiki_node(node_type, title, thesis, source_path="{_repo_relative_path(path)}", domain="{domain}", aliases=[...], tags=[...])
+FRONTMATTER rules:
+- Pick the right type per the cheatsheet above
+- thesis: 1-3 sentence core CLAIM (not "this document discusses...")
+- aliases: both acronym AND full name, plus Vietnamese equivalents
+- confidence: 1 (auto-generated stub)
+- Source ref pages: batch {batch_num} (chars ~{batch[0].position}-{batch[-1].position + len(batch[-1].text)})
+- Skip introductory, bibliographic, or already-covered content
+
+BODY — write a FULL structured body for each node (not a stub):
+
+Use this format, selecting sections appropriate to the node type:
+
+  ## Overview
+  [2-4 paragraphs expanding the thesis. Use **bold** for key terms on first use.
+   Mark every synthesised sentence [LLM]. Write in present tense.]
+
+  ## [Type-specific section — choose ONE that fits:]
+  - concept/framework → ## How It Works
+    [Explain the structure, components, or causal logic. For frameworks: describe
+     each component in 1-2 sentences. Use "A → B because [reason]" for causal claims.]
+  - mechanism         → ## Causal Chain
+    [Narrate each step: "Step N: X happens → Y follows when [condition]."]
+  - policy            → ## Context and Instruments
+    [Historical background, named instruments used, key decisions/dates.]
+  - entity            → ## Role and Mandate
+    [What this entity does, its formal mandate, who it reports to.]
+  - indicator         → ## Interpretation
+    [What the number means, direction of reading, normal ranges if known.]
+  - regulation        → ## Key Requirements
+    [What is required, of whom, phase-in timeline if applicable.]
+
+  ## Evidence and Sources
+  [Cite specific passages. Format: [RAW-BOOK p.X], [RAW-CLIP Title], [LLM-E estimate].
+   Distinguish primary from supporting sources.]
+
+  ## Related Concepts
+  [1-2 connecting sentences linking to related nodes with [[wikilink]] syntax.]
+
+SOURCE LABELS for body text:
+  [RAW-BOOK p.X]    direct page reference in the raw source
+  [RAW-CLIP Title]  from a Clipping in 02_sources/
+  [LLM]             LLM-synthesised sentence — mark ALL synthesis
+  [LLM-E ~range]    LLM-estimated range, not verified
+
+For each node call:
+  create_wiki_node(node_type, title, thesis,
+                   source_path="{_repo_relative_path(path)}", domain="{domain}",
+                   aliases=[...], tags=[...],
+                   body="## Overview\\n\\n[full body here]\\n\\n## ...")
 
 After creating nodes for this batch, mark it complete:
   _mark_batch_done("{_repo_relative_path(path)}", {batch_num - 1})
@@ -352,25 +433,47 @@ SOURCE CONTENT (first 3000 chars):
 
 TASK:
 Extract 3-8 distinct wiki nodes from this source. For each node:
-1. Determine the type using the cheatsheet above (concept | mechanism | entity |
-   relationship | policy | framework | indicator | regulation | synthesis | contradiction).
-   Do NOT default to "mechanism"; a static idea is a concept, a metric is an indicator,
-   an organisation/committee/instrument is an entity.
-2. Write a 1-3 sentence thesis (the core claim, not a description of the document)
-3. List aliases — include BOTH the acronym and the full name, plus Vietnamese equivalents
-4. Set confidence: 1 (you are generating this, source not fully verified)
-5. Tag with domain-relevant tags
 
-Also: create an ATOMIC node for any core domain term used in the source that lacks its own
-node, so other nodes can link to it (e.g. ALM, IRRBB, NII, EVE, NMD, ALCO, OAS, FTP).
+FRONTMATTER:
+1. Type — use the cheatsheet (concept | mechanism | entity | policy | framework |
+   indicator | regulation | synthesis | contradiction | relationship).
+   Do NOT default to "mechanism" or "framework" — check the decision rules.
+2. thesis — 1-3 sentence core CLAIM (not "this document discusses...")
+3. aliases — BOTH acronym and full name, plus Vietnamese equivalents
+4. confidence: 1 (auto-generated, source not fully verified)
+5. tags — domain-relevant lowercase hyphenated tags
 
-For each node, call: create_wiki_node(node_type, title, thesis, source_path, domain, aliases, tags)
+Also: create an ATOMIC node for any core domain term used in the source that lacks
+its own node (ALM, IRRBB, NII, EVE, NMD, ALCO, OAS, FTP...).
+
+BODY — write a FULL structured body for each node:
+
+  ## Overview
+  [2-4 paragraphs expanding the thesis. Bold key terms. Mark [LLM] on synthesis.]
+
+  ## [Type-specific section:]
+  - concept/framework → ## How It Works (structure, components, logic)
+  - mechanism         → ## Causal Chain (step-by-step: "Step N: X → Y when [cond]")
+  - policy            → ## Context and Instruments (background, instruments, key dates)
+  - entity            → ## Role and Mandate (what it does, formal mandate)
+  - indicator         → ## Interpretation (what the number means, direction, ranges)
+  - regulation        → ## Key Requirements (what is required, of whom, phase-in)
+
+  ## Evidence and Sources
+  [[RAW-BOOK p.X] or [RAW-CLIP Title] — cite specific passages, not just the file name.]
+
+  ## Related Concepts
+  [1-2 sentences linking to related nodes with [[wikilink]] syntax.]
+
+SOURCE LABELS: [RAW-BOOK p.X] | [RAW-CLIP Title] | [LLM] for all synthesis | [LLM-E ~range]
+
+For each node, call:
+  create_wiki_node(node_type, title, thesis, source_path, domain, aliases, tags,
+                   body="## Overview\\n\\n[full body here]\\n\\n## ...")
 
 RULES:
 - Do NOT set confidence > 1 on auto-generated nodes
-- Mark any synthesized sentence with [LLM]
-- thesis must be a claim, not "this document discusses..."
-- Every node must have at least one alias
+- Mark EVERY synthesised sentence with [LLM]
 - Focus on durable structural knowledge, not time-sensitive facts
 """
 

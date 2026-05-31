@@ -323,3 +323,10 @@ Chronological record of all ingest, update, promotion, and audit operations.
 - **2026-05-30**: INGEST: Created concept node `Interest Rate Risk in the Banking Book (IRRBB)` from (The Moorad Choudhry Global Banking Series) Polina Bardaeva - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md
 - **2026-05-30**: INGEST: Created indicator node `Net Interest Income (NII)` from (The Moorad Choudhry Global Banking Series) Polina Bardaeva - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md
 - **2026-05-30**: INGEST: Created entity node `Asset-Liability Committee (ALCO)` from (The Moorad Choudhry Global Banking Series) Polina Bardaeva - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md
+- **2026-05-31**: INGEST: Created concept node `Income-Absorption Identity` from Macroeconomic Accounting and Analysis IMF.md
+- **2026-05-31**: INGEST: Created concept node `Saving-Investment Identity and External Balance` from Macroeconomic Accounting and Analysis IMF.md
+- **2026-05-31**: INGEST: Created framework node `IMF GFS Transaction Classification Framework` from Macroeconomic Accounting and Analysis IMF.md
+- **2026-05-31**: INGEST: Created concept node `GFS Revenue vs Receipt Distinction` from Macroeconomic Accounting and Analysis IMF.md
+- **2026-05-31**: INGEST: Created concept node `Seigniorage and Inflation Tax` from Macroeconomic Accounting and Analysis IMF.md
+- **2026-05-31**: INGEST: Created concept node `Fiscal Expenditure Arrears` from Macroeconomic Accounting and Analysis IMF.md
+- **2026-05-31**: INGEST: Created framework node `External Debt Sustainability and Reserve Adequacy Framework` from Macroeconomic Accounting and Analysis IMF.md

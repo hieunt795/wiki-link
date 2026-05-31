@@ -1,0 +1,127 @@
+template_id: node_classify_v1
+name: Node Type Classification
+version: 1
+description: >
+  Step 1 of node creation. Determine the correct type before writing anything.
+  Work through the decision tree in order — stop at the first match.
+
+# ── DECISION TREE (check in order, stop at first YES) ─────────────────────────
+
+decision_tree:
+
+  - step: 1
+    type: entity
+    question: "Is this a NAMED actor, organisation, or instrument?"
+    signals:
+      - "Has a proper name that stays stable (Fed, BCBS, ALCO, JGB, SOFR)"
+      - "Plays a role in the system — it DOES things or IS USED for things"
+    entity_type_mapping:
+      central_bank:    "Fed, ECB, BOJ, SBV, PBoC, BOE, MAS, RBA..."
+      regulatory_body: "BCBS, FSB, IOSCO, EBA, APRA, SEC..."
+      institution:     "IMF, BIS, World Bank, ISDA, SIFMA, FHLB..."
+      committee:       "ALCO, FOMC, Governing Council..."
+      instrument:      "JGB, UST, T-bill, MBS, CDS, IRS, OIS..."
+      market:          "Fed Funds market, repo market, Eurodollar market..."
+      person:          "Named individuals (Volcker, Draghi) — rare; prefer policy node for their decisions"
+
+  - step: 2
+    type: indicator
+    question: "Is this a MEASURABLE QUANTITY with unit + frequency + data source?"
+    signals:
+      - "You can answer: what unit? how often? where is the data?"
+      - "Examples: NII in $bn quarterly from bank P&L; LCR in % monthly from regulatory reporting"
+    anti_signal: "A named concept that has no regular published data series → concept instead"
+
+  - step: 3
+    type: regulation
+    question: "Is this a BINDING RULE issued by an official regulatory body?"
+    signals:
+      - "Has a document number or official title (BCBS d424, Circular 22/2023/TT-NHNN)"
+      - "Has an effective_date and a binding_on scope"
+      - "Source file is under 02_sources/regulator/"
+    anti_signal: "CB operational decisions that are not legally binding on banks → policy instead"
+
+  - step: 4
+    type: policy
+    question: "Is this tied to a NAMED AUTHORITY + SPECIFIC YEAR or PERIOD?"
+    signals:
+      - "Title contains a year, decade, or reform label: 'ECB 2024 framework', '1970s stagflation', 'Volcker shock'"
+      - "Can fill in: period (2016-2024), jurisdiction (JP), policy_type"
+      - "Named institution made a decision that changed the regime"
+    anti_signal: "Timeless analytical tool with no specific date → framework instead"
+
+  - step: 5
+    type: framework
+    question: "Is this a REUSABLE ANALYTICAL MODEL with ENUMERABLE NAMED COMPONENTS?"
+    must_satisfy_both:
+      - "Can list named components in a YAML array (e.g. [EVE metric, NII metric, shock scenarios])"
+      - "Has a defined application_domain — what analytical task does it enable?"
+    signals:
+      - "Textbooks or official documents treat it as 'the X framework' with labelled parts"
+      - "Analysts apply it repeatedly across different contexts"
+    anti_signals:
+      - "Has no enumerable components → concept instead"
+      - "Has a year in the title → policy instead"
+      - "Describes how something works without giving a reusable structure → concept or mechanism"
+
+  - step: 6
+    type: mechanism
+    question: "Is this a CAUSAL PROCESS that unfolds in SEQUENTIAL STEPS?"
+    must_satisfy:
+      - "You can write Step 1 / Step 2 / Step 3 as a real causal chain"
+      - "Each step has a condition: 'X happens → Y follows when [condition]'"
+    anti_signals:
+      - "'Mechanics' or 'transmission' in the title is not sufficient — the chain must exist"
+      - "If you cannot write at least 2 concrete steps → concept instead"
+
+  - step: 7
+    type: synthesis
+    question: "Does this INTEGRATE ≥2 EXISTING WIKI NODES into a larger claim?"
+    signals:
+      - "The insight does not exist in either source node alone"
+      - "You can name the nodes it synthesizes in synthesizes[]"
+
+  - step: 8
+    type: contradiction
+    question: "Do TWO SOURCES make CONFLICTING CLAIMS on the same topic?"
+    signals:
+      - "Source A says X; Source B says not-X (or significantly different magnitude)"
+      - "You can fill claim_a and claim_b with specific sourced statements"
+
+  - step: 9
+    type: relationship
+    question: "Is this a SINGLE NAMED DIRECTIONAL EDGE between two existing nodes?"
+    note: "Rare as a standalone file. Usually captured in related[] field instead."
+
+  - step: 10
+    type: concept
+    question: "DEFAULT — none of the above applies"
+    use_when:
+      - "Important durable idea that needs a definition"
+      - "No enumerable components (not framework)"
+      - "No causal steps (not mechanism)"
+      - "No unit/frequency (not indicator)"
+      - "No specific year/authority (not policy)"
+      - "Not a named actor (not entity)"
+
+# ── CLASSIFICATION GUARDS (run after tree, before writing) ────────────────────
+
+guards:
+  - "framework chosen but cannot list components[] → demote to concept"
+  - "mechanism chosen but cannot write step 1 / step 2 → demote to concept"
+  - "year in title + named authority → verify policy before framework"
+  - "named organisation (BCBS, FSB, IMF, SBV, PBoC, MAS, BOE, ISDA, ALCO) → entity, not concept"
+  - "measurable ratio/metric → indicator, not concept"
+
+# ── ATOMIC NODE RULE ──────────────────────────────────────────────────────────
+
+atomic_node_rule: >
+  If a core domain term appears in the source but has no node of its own,
+  create a minimal concept node for it (confidence: 1, [LLM] stub) so other
+  nodes can link to it. Do this EVEN IF the chunk only mentions it in passing.
+  Core terms by domain:
+    alm:          ALM, IRRBB, NII, EVE, NMD, ALCO, FTP, OAS, LCR, NSFR
+    monetary:     QE, QT, NIRP, YCC, forward guidance, transmission mechanism
+    basel_risk:   CET1, RWA, G-SIB, TLAC, LCR, NSFR, IRB, SA
+    markets:      duration, DV01, repo, SOFR, OIS, FX basis, collateral
+    fiscal:       TGA, primary deficit, debt sustainability, fiscal multiplier

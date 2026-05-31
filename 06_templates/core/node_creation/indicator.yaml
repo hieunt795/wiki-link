@@ -1,0 +1,139 @@
+template_id: node_indicator_v3
+name: Indicator Node Template
+version: 3
+type: indicator
+
+# ── BƯỚC 1: XÁC ĐỊNH ─────────────────────────────────────────────────────────
+# Đọc chunk source. Đặt 4 câu hỏi này. Nếu CẢ 4 có thể trả lời cụ thể → indicator.
+# Nếu bất kỳ câu nào trả lời là "không rõ" hoặc "tuỳ" → dùng concept thay.
+
+identify:
+  question_1_formula:
+    ask:       "Source có nêu công thức tính X không?"
+    look_for:  ["= ", "divided by", "calculated as", "defined as", "formula", "ratio of", "numerator", "denominator"]
+    yes:       "Trích nguyên công thức → ghi vào field key_equations và section Formula"
+    no:        "Không phải indicator → dùng concept"
+
+  question_2_unit:
+    ask:       "X được đo bằng đơn vị gì?"
+    look_for:  ["%", "bps", "$", "days", "ratio", "times", "per unit", "index"]
+    yes:       "Ghi đơn vị vào thesis và body Formula"
+    no:        "Không phải indicator → dùng concept"
+
+  question_3_frequency:
+    ask:       "Source có đề cập tần suất đo/công bố X không?"
+    look_for:  ["daily", "monthly", "quarterly", "annual", "real-time", "each reporting period", "hàng tháng", "hàng quý"]
+    yes:       "Ghi vào field frequency"
+    borderline: "Nếu source không nêu nhưng rõ ràng từ context (e.g. regulatory ratio → quarterly) → ghi và đánh dấu [LLM]"
+
+  question_4_data_source:
+    ask:       "Ai công bố hoặc ai tính X?"
+    look_for:  ["published by", "reported to", "from", "central bank data", "regulatory reporting", "bank P&L", "market data"]
+    yes:       "Ghi cụ thể: tên tổ chức + tên báo cáo/database nếu source nêu"
+    vague:     "Không được ghi 'market data' hay 'public data' — nếu source không nêu cụ thể, ghi [citation needed]"
+
+  false_positives:
+    - "Tên nghe có vẻ như metric nhưng không có công thức → concept (e.g. 'funding stress', 'balance sheet risk')"
+    - "Metric được đề cập nhưng không có số đo cụ thể trong source → ghi [citation needed] vào formula"
+    - "Khái niệm định lượng nhưng không có series dữ liệu thực tế → concept"
+
+# ── BƯỚC 2: ĐIỀN FRONTMATTER ─────────────────────────────────────────────────
+
+frontmatter:
+  node_id:
+    rule:    "lowercase_slug_001"
+    example: "liquidity_coverage_ratio_001"
+
+  title:
+    rule:    "Tên đầy đủ (VIẾT TẮT)"
+    how:     "Tìm trong source: tên chính thức và viết tắt. Ghi cả hai."
+    example: "Liquidity Coverage Ratio (LCR)"
+
+  aliases:
+    rule:    "Viết tắt + tên đầy đủ + tên tiếng Việt"
+    how:     "Viết tắt: tìm trong source. Tên Việt: dịch trực tiếp, không bịa."
+    example: ["LCR", "Liquidity Coverage Ratio", "tỷ lệ đảm bảo thanh khoản"]
+
+  thesis:
+    rule:    "1-2 câu: X đo cái gì và nó signal cái gì"
+    how:     "Tìm trong source câu định nghĩa X. Chuyển sang dạng claim, không copy nguyên."
+    bad:     "'LCR là một chỉ số thanh khoản' — quá chung"
+    good:    "'LCR đo khả năng ngân hàng chịu đựng dòng tiền ra ròng trong 30 ngày stress bằng HQLA, yêu cầu tối thiểu 100%.'"
+
+  confidence:
+    "4": "Công thức từ văn bản quy định chính thức (BCBS, SBV, Fed)"
+    "3": "Công thức từ giáo trình hoặc IMF/BIS working paper"
+    "2": "Công thức được LLM suy ra từ mô tả trong source (không explicit)"
+    "1": "Auto-generated stub"
+
+  indicator_type:
+    options:  "monetary | fiscal | market | real | financial_stability | sensitivity | ratio | threshold"
+    how:      "Đọc source: nó đo cái gì về hệ thống tài chính/kinh tế?"
+    mapping:
+      financial_stability: "LCR, NSFR, CET1, leverage ratio — các tỷ lệ giám sát an toàn"
+      sensitivity:         "DV01, ΔEVE, ΔNII, duration — đo độ nhạy với thay đổi giá/lãi suất"
+      market:              "SOFR, OIS, CIP deviation, term premium — giá thị trường"
+      monetary:            "Money supply, reserve money, multiplier — aggregate tiền tệ"
+      real:                "GDP, CPI, output gap — chỉ số kinh tế thực"
+      ratio:               "Debt/GDP, current account/GDP — tỷ lệ vĩ mô"
+
+  frequency:
+    how:     "Tìm trong source hoặc suy từ context. Ghi [LLM] nếu suy."
+    options: "real-time | daily | weekly | monthly | quarterly | annual"
+
+  data_source:
+    how:     "Tìm trong source: ai thu thập/công bố data này?"
+    must_be_specific: true
+    bad:     "'market data', 'public sources'"
+    good:    "'NY Fed (published 8am ET)', 'regulatory reporting to supervisor', 'bank quarterly P&L'"
+
+# ── BƯỚC 3: VIẾT BODY ────────────────────────────────────────────────────────
+
+body:
+  sections:
+    overview:
+      heading:     "## Overview"
+      instruction: "X đo cái gì? Ai cần nó và để làm gì? Bối cảnh ra đời (nếu source nêu)."
+      source_cue:  "Tìm phần mở đầu định nghĩa X trong source. Paraphrase, không copy."
+
+    formula_and_measurement:
+      heading:     "## Formula and Measurement"
+      instruction: >
+        Viết công thức như trong source. Định nghĩa từng biến.
+        Nếu source viết bằng lời: chuyển thành ký hiệu và đánh dấu [LLM].
+        Nếu source không có công thức: ghi [citation needed].
+      must_include:
+        - "Công thức (ký hiệu hoặc plain text)"
+        - "Định nghĩa tử số và mẫu số (nếu là tỷ lệ)"
+        - "Đơn vị đo"
+        - "Ngưỡng tối thiểu/tối đa nếu source nêu (e.g. ≥ 100%)"
+
+    interpretation:
+      heading:     "## Interpretation"
+      instruction: >
+        Tìm trong source: source nói gì về cách đọc con số này?
+        - Chiều nào tốt hơn? Tại sao (về mặt cơ chế, không chỉ convention)?
+        - Source có nêu ngưỡng cảnh báo không?
+        - Source có nêu cách số này thay đổi theo điều kiện không?
+        Nếu source không nêu → đánh dấu [LLM] mọi suy luận.
+      source_cue:  "Tìm: 'a higher X indicates', 'below X% triggers', 'when X rises, Y falls'"
+
+    limitations:
+      heading:     "## Limitations"
+      instruction: >
+        Source có đề cập hạn chế của X không?
+        Nếu không → [LLM] nhận xét ngắn về điểm yếu cấu trúc nếu rõ ràng.
+      source_cue:  "Tìm: 'does not capture', 'limitation', 'caveat', 'may not reflect'"
+
+    evidence:
+      heading:     "## Evidence and Sources"
+      instruction: "Trích đoạn cụ thể: trang, chương, hoặc đoạn văn từ source định nghĩa X."
+      format:      "[RAW-BOOK p.X] | [RAW-CLIP Title] | [WEB-YYYY-MM-DD]"
+
+# ── QUALITY BAR ───────────────────────────────────────────────────────────────
+
+quality:
+  formula_required:    "Bắt buộc — nếu không tìm thấy trong source, ghi [citation needed], không bỏ trống"
+  data_source_must:    "Cụ thể — tên tổ chức + tên báo cáo, không được mơ hồ"
+  no_invention:        "Không tự bịa công thức. Nếu source không rõ → concept thay vì indicator"
+  interpretation_llm:  "Mọi suy luận về ý nghĩa không có trong source → đánh dấu [LLM]"

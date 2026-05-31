@@ -1,0 +1,94 @@
+template_id: node_synthesis_v1
+name: Synthesis Node Template
+version: 1
+type: synthesis
+description: >
+  Cross-domain or cross-source integration that produces an insight larger than
+  the sum of its parts. Only create when combining ≥2 existing nodes reveals
+  something that neither node says on its own.
+
+# ── FRONTMATTER ───────────────────────────────────────────────────────────────
+
+frontmatter:
+  required:
+    node_id:      "lowercase_slug_001"
+    type:         "synthesis"
+    title:        "Descriptive title of the combined insight"
+    aliases:      ["Short name", "Vietnamese equivalent"]
+    domain:
+      primary:    "The dominant domain of the synthesis"
+    tags:         "max 10, lowercase, hyphenated"
+    confidence:   "Max 3 on creation (synthesis is always partially [LLM])"
+    thesis:       "1-3 sentences: what does combining X and Y reveal that neither says alone?"
+    source_refs:  "Refs from BOTH source nodes — synthesis must be grounded in sources"
+    synthesizes:
+      rule:       "MANDATORY. List the nodes being combined using [[wikilink]] syntax."
+      format:     |
+        synthesizes:
+          - "[[Node_A_Title]]"
+          - "[[Node_B_Title]]"
+      minimum: 2
+    synthesis_method:
+      options:    "comparative | integrative | reconciliation | extension"
+      definitions:
+        comparative:    "Placing two nodes side by side to reveal structural similarities or differences"
+        integrative:    "Combining two nodes to produce a unified explanation of a larger system"
+        reconciliation: "Resolving apparent contradiction between two nodes with a third lens"
+        extension:      "Taking a concept from one node and applying it to the domain of another"
+
+  optional:
+    parent_node:  "Parent synthesis or framework"
+    related:      "Other nodes that connect to this synthesis"
+
+# ── BODY FORMAT ───────────────────────────────────────────────────────────────
+
+body:
+  sections:
+    - id: overview
+      heading: "## Overview"
+      required: true
+      instruction: >
+        2-3 paragraphs. State the combined insight upfront.
+        What do these nodes have to do with each other?
+        Why does their combination matter for analysis?
+
+    - id: the_synthesis
+      heading: "## The Synthesis"
+      required: true
+      instruction: >
+        The main content: what the combination reveals.
+        Structure around the synthesis_method:
+        - comparative: table or parallel description of how A and B differ/agree
+        - integrative: how A and B together explain X better than either alone
+        - reconciliation: what reconciles the apparent contradiction
+        - extension: what A reveals when applied to B's domain
+        Mark all synthesis sentences [LLM] — this is the highest-[LLM]-density node type.
+
+    - id: implications
+      heading: "## Analytical Implications"
+      required: true
+      instruction: >
+        What does this synthesis change for analysis or practice?
+        Who should care about this combined view?
+        What questions does it answer that the individual nodes cannot?
+
+    - id: evidence
+      heading: "## Evidence and Sources"
+      required: true
+      instruction: >
+        Cite sources for BOTH constituent nodes.
+        Note where the synthesis itself is validated vs where it is [LLM] inference.
+
+    - id: related
+      heading: "## Related Concepts"
+      required: false
+      instruction: "Prose connecting to other synthesis nodes or higher-level frameworks."
+
+# ── QUALITY BAR ───────────────────────────────────────────────────────────────
+
+quality:
+  thesis_must: "State a non-obvious insight — not just 'X and Y are related'"
+  synthesizes_must: "Reference at least 2 specific existing wiki nodes by [[wikilink]]"
+  llm_discipline: "Mark every inference [LLM] — synthesis nodes have the highest synthesis ratio"
+  confidence_cap: "Never set above 3 on creation; raise only if source explicitly makes the combined claim"
+  anti_pattern: "Creating a synthesis node when the insight is already in one of the constituent nodes"

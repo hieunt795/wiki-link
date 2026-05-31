@@ -1,0 +1,136 @@
+template_id: node_policy_v2
+name: Policy Node Template
+version: 2
+type: policy
+
+# ── BƯỚC 1: XÁC ĐỊNH ─────────────────────────────────────────────────────────
+
+identify:
+  core_test: "Có tên cơ quan ra quyết định + năm/giai đoạn cụ thể không?"
+
+  signal_words_in_source:
+    - '"adopted in [year]" / "announced in [year]" / "introduced" / "launched"'
+    - '"regime" / "program" / "decision" / "shift" / "break"'
+    - '"2008-2014" / "since [year]" / "during the [decade]s"'
+    - '"Fed/ECB/BOJ/SBV decided to" / "Governor X announced"'
+
+  vs_framework: >
+    Framework: timeless analytical tool, không gắn với năm hoặc quyết định cụ thể.
+    Policy: quyết định cụ thể của cơ quan có thẩm quyền vào một thời điểm.
+    Test: "ECB New Operational Framework 2024" → policy (2024 + ECB quyết định).
+          "Corridor vs Floor System" → framework (timeless, không gắn với CB cụ thể).
+
+  policy_subtypes:
+    monetary_regime:
+      signals:   "CB chuyển đổi cơ chế điều hành: từ corridor sang floor, từ M-targeting sang IT"
+      examples:  "Fed Floor System (post-2008), ECB Full Allotment (2008-present)"
+      period:    "Năm chuyển đổi đến nay, hoặc năm kết thúc nếu đã bãi bỏ"
+
+    asset_purchase_program:
+      signals:   "CB mua tài sản quy mô lớn có tên chính thức (QE1/QE2/QE3, APP, PEPP, QQE)"
+      examples:  "Fed QE1 (2008-2010), ECB PEPP (2020-2022), BOJ QQE (2013-2021)"
+      period:    "Ngày bắt đầu đến ngày kết thúc hoặc present"
+
+    rate_hike_cycle:
+      signals:   "CB tăng/hạ lãi suất trong giai đoạn xác định với mục tiêu rõ ràng"
+      examples:  "Fed Rate Hike Cycle 2022-2023, Volcker Shock 1979-1982"
+      period:    "Ngày tăng lãi suất đầu tiên đến pivot hoặc end"
+
+    regime_shift:
+      signals:   "Thay đổi cơ bản trong cách CB/chính phủ vận hành (không chỉ là một quyết định)"
+      examples:  "Volcker Break 1979, US 1970s Stagflation Policy, Plaza Accord"
+      period:    "Giai đoạn của regime, kể cả nếu là decade ('1970s')"
+
+    regulatory_implementation:
+      signals:   "Triển khai một quy định mới theo lịch trình cụ thể"
+      examples:  "Basel III Implementation 2013-2019, Basel IV phased-in 2025-2028"
+      note:      "Phân biệt với regulation node: policy là quyết định triển khai, regulation là nội dung quy định"
+
+# ── BƯỚC 2: ĐIỀN FRONTMATTER ─────────────────────────────────────────────────
+
+frontmatter:
+  period:
+    rule:    "BẮTBUỘC. Phải xác định dù chỉ gần đúng."
+    how: >
+      Tìm trong source: khi nào policy bắt đầu? Khi nào kết thúc?
+      Chấp nhận: "2022-present", "1970s", "1979-1987", "post-GFC"
+      Không chấp nhận: bỏ trống hoặc "ongoing"
+
+  jurisdiction:
+    how:     "Cơ quan nào của quốc gia nào ban hành? → country code (US, EU, JP, VN)"
+    example: "Fed QE → US; ECB APP → EU; BOJ YCC → JP; SBV Circular → VN"
+
+  policy_type:
+    options: "conventional_monetary | unconventional_monetary | fiscal | regulatory | macroprudential"
+    how: >
+      conventional_monetary: điều chỉnh lãi suất chính sách bình thường
+      unconventional_monetary: QE, YCC, NIRP, forward guidance, swap lines
+      fiscal: chi tiêu chính phủ, thuế, deficit
+      regulatory: thay đổi quy định prudential
+      macroprudential: LTV limits, CCyB activation, stress test requirements
+
+  instruments:
+    how: >
+      Tìm trong source: policy này dùng những công cụ cụ thể nào?
+      Ghi cụ thể: không phải "asset purchases" mà là "JGB purchases at fixed 10-year yield of ~0%"
+      Nếu nhiều phases → liệt kê theo phase
+
+  outcome:
+    how: >
+      Tìm trong source: kết quả đo được của policy này là gì?
+      Ưu tiên số liệu cụ thể có trong source.
+      Nếu source không nêu outcome → đánh dấu [LLM].
+
+# ── BƯỚC 3: VIẾT BODY ────────────────────────────────────────────────────────
+
+body:
+  section_overview:
+    heading:     "## Overview"
+    instruction: "Policy này ra đời trong hoàn cảnh nào? Mục tiêu gì?"
+    source_cue:  "Tìm phần source nêu lý do tại sao policy được áp dụng."
+
+  section_context:
+    heading:     "## Context and Trigger"
+    instruction: >
+      Trước policy này là gì? Vấn đề gì chưa được giải quyết?
+      Tìm trong source:
+      - Dữ liệu kinh tế/tài chính tại thời điểm policy được áp dụng (nếu source nêu)
+      - Sự kiện trigger: meeting nào, vote nào, announcement nào?
+      - Break so với policy trước: cụ thể thay đổi gì?
+
+  section_instruments:
+    heading:     "## Instruments and Implementation"
+    instruction: >
+      Mỗi instrument một đoạn. Với mỗi instrument, tìm trong source:
+      - Tên chính xác của instrument
+      - Cơ chế hoạt động (ngắn gọn)
+      - Quy mô/target nếu source nêu (với label [RAW-BOOK] hay [LLM-E])
+      - Timeline: khi nào activate, khi nào adjust, khi nào exit
+
+  section_outcomes:
+    heading:     "## Outcomes and Effects"
+    instruction: >
+      Tìm trong source: source đánh giá kết quả của policy như thế nào?
+      Phân biệt:
+      - Intended effects (mục tiêu ban đầu)
+      - Achieved effects (kết quả thực tế có số liệu)
+      - Side effects (tác dụng phụ source đề cập)
+      Đánh dấu [LLM] nếu đánh giá từ bản thân agent, không từ source.
+
+  section_legacy:
+    heading:     "## Legacy and Precedent"
+    instruction: >
+      Source có nêu legacy hoặc precedent của policy này không?
+      Ví dụ: "Volcker break → mẫu phản ứng lãi suất thực dương khi có lạm phát"
+      Nếu source không nêu → [LLM] hoặc bỏ section này.
+
+  section_evidence:
+    heading:     "## Evidence and Sources"
+    format:      "[RAW-BOOK p.X] | [RAW-CLIP Title] | [WEB-YYYY-MM-DD]"
+
+# ── QUALITY BAR ───────────────────────────────────────────────────────────────
+
+quality:
+  period_must:       "Không bỏ trống. 'YYYY-present' hoặc decade là chấp nhận được."
+  instruments_must:  "Cụ thể — không dừng ở tên chung như 'asset purchases'"
+  no_framework:      "Đừng gọi dated CB decision là framework chỉ vì nghe có vẻ structural"

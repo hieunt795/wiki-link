@@ -1,0 +1,137 @@
+topic_slug: imf_macro_accounting_ch2_ch6
+title: "IMF Macroeconomic Accounting and Analysis — Ch.2–6 Full Coverage"
+primary_question: >
+  What is the complete macroeconomic accounting framework as defined in the IMF
+  Macroeconomic Accounting and Analysis textbook (Ch.2–6), covering the Real Sector,
+  Fiscal Sector, Balance of Payments, Monetary Accounts, and Flow of Funds — and how
+  do the five sectoral accounts interlink into a consistent whole?
+
+sub_questions:
+  - id: Q1
+    chapter: "Ch.2"
+    question: >
+      How does the IMF SNA real sector framework measure GDP (three approaches),
+      what are the key aggregates (GDP, GNI, GNDI, NNP), and what are the
+      basic accounting relationships (income-absorption identity, S-I identity)?
+    status: VERIFIED
+    wiki_nodes:
+      - Imf_Sna_Real_Sector_Accounting_Gdp_Identities_And_Sectoral_Accounts
+      - Income_Absorption_Identity
+      - Saving_Investment_Identity_And_External_Balance
+
+  - id: Q2
+    chapter: "Ch.2"
+    question: >
+      How does the IMF framework analyze inflation — what are the four inflation
+      types, the CPI vs GDP deflator distinction, and the role of incomes policy
+      and wage-price dynamics?
+    status: VERIFIED
+    wiki_nodes:
+      - Imf_Inflation_Analysis_Cpi_Gdp_Deflator_Four_Types_Core
+      - Cost_Push_Inflation_Persistence_Mechanism
+      - Incomes_Policy_Wage_Controls_In_Stabilization_Programs
+      - Labor_Market_Unemployment_Taxonomy_And_Nairu
+
+  - id: Q3
+    chapter: "Ch.3"
+    question: >
+      How does the GFS framework define and measure the fiscal sector — what is
+      the government sector boundary, how is the fiscal deficit measured (conventional
+      vs operational vs primary), and what are the sustainability indicators?
+    status: VERIFIED
+    wiki_nodes:
+      - Imf_Gfs_Fiscal_Accounting_Framework_Deficit_Measurement_And_Sustainability
+      - Imf_Gfs_Transaction_Classification_Framework
+      - Gfs_Revenue_Vs_Receipt_Distinction
+
+  - id: Q4
+    chapter: "Ch.3"
+    question: >
+      How does the IMF framework analyze fiscal revenues and expenditures —
+      tax elasticity/buoyancy, the Tanzi effect, expenditure arrears,
+      quasi-fiscal operations, and seigniorage/inflation tax?
+    status: VERIFIED
+    wiki_nodes:
+      - Imf_Tax_Revenue_Analysis_Elasticity_Buoyancy_Tax_Effort_And_Tanzi_Diagnostic
+      - Imf_Public_Expenditure_Analysis_Taxonomy_And_Policy_Issues
+      - Cb_Quasi_Fiscal_Mechanism_Sterilization_Costs_Seigniorage_And_The_Fiscal_Monetary_Nexus
+      - Seigniorage_And_Inflation_Tax
+      - Fiscal_Expenditure_Arrears
+
+  - id: Q5
+    chapter: "Ch.4"
+    question: >
+      What is the IMF BOP accounting framework — what are the standard accounts
+      (CA, KA, FA), recording conventions (double-entry, residency), and how
+      does the framework analyze external debt sustainability and reserve adequacy?
+    status: VERIFIED
+    wiki_nodes:
+      - Imf_Balance_Of_Payments_Framework_And_External_Account_Analysis
+      - Imf_Exchange_Rate_Assessment_And_Crawling_Peg_Design
+      - External_Debt_Sustainability_And_Reserve_Adequacy_Framework
+
+  - id: Q6
+    chapter: "Ch.5"
+    question: >
+      How does the IMF monetary accounts framework work — what is the monetary
+      survey identity (NFA + NDA = Reserve Money), how are the monetary authorities
+      and deposit money banks consolidated, and what drives the money multiplier?
+    status: VERIFIED
+    wiki_nodes:
+      - Imf_Monetary_Survey_And_Reserve_Money_Identity_Framework
+      - Money_Multiplier_Ratio_Decomposition_And_Three_Agent_Determination
+      - Imf_Five_Monetary_Policy_Instruments_For_Reserve_Money_Control
+      - Imf_Monetary_Survey_Valuation_Adjustment_And_Transaction_Flow_Decomposition
+
+  - id: Q7
+    chapter: "Ch.5"
+    question: >
+      What are the analytical tools for monetary analysis — money market
+      equilibrium, money demand determinants, monetary programming (NDA ceiling),
+      and special issues in transition economies (dollarization, capital inflows)?
+    status: VERIFIED
+    wiki_nodes:
+      - Imf_Monetary_Analysis_Quantity_Theory_Velocity_And_Exchange_Rate_Regimes
+      - Imf_Financial_Programming_Nda_Ceiling_And_Monetary_Approach_To_Bop
+      - Imf_Money_Demand_Real_Vs_Nominal_Balances_Income_Elasticity_And_Opportunity_Cost
+      - Currency_Substitution_And_Dollarization_Monetary_Control_Implications
+
+  - id: Q8
+    chapter: "Ch.6"
+    question: >
+      How does the IMF Flow of Funds framework integrate all five sectoral accounts
+      into a consistent whole — what are the sign conventions, how do sectoral
+      S-I balances relate to the current account, and how is the framework
+      used for macroeconomic analysis?
+    status: VERIFIED
+    wiki_nodes:
+      - Imf_Flow_Of_Funds_4_Sector_Consistency_Framework
+      - Imf_Macro_Crisis_Vector_Framework_Fiscal_External_And_Banking_Transmission
+
+source:
+  primary: "02_sources/books/imf_macro_accounting/Macroeconomic Accounting and Analysis IMF.md"
+  authors: "Ouanes and Thakur (IMF, 1997)"
+  chapters_in_scope: "Ch.2 (Real Sector), Ch.3 (Fiscal), Ch.4 (BOP), Ch.5 (Monetary), Ch.6 (Flow of Funds)"
+  chapters_out_of_scope: "Ch.1 (Poland case study overview — descriptive only)"
+
+coverage_probe:
+  run_date: "2026-05-31"
+  state: INGESTED
+  notes: >
+    40 wiki nodes sourced from this book exist pre-session. All 8 Q's have
+    primary coverage. Q4 and Q5 were PARTIAL — upgraded to VERIFIED by creating
+    5 new nodes this session. Semantic search returning no results due to index
+    not synced locally (expected — sync on Colab).
+
+gaps: []
+
+wiki_nodes_created:
+  - Income_Absorption_Identity
+  - Saving_Investment_Identity_And_External_Balance
+  - Imf_Gfs_Transaction_Classification_Framework
+  - Gfs_Revenue_Vs_Receipt_Distinction
+  - Seigniorage_And_Inflation_Tax
+  - Fiscal_Expenditure_Arrears
+  - External_Debt_Sustainability_And_Reserve_Adequacy_Framework
+
+analysis_mode: standard

@@ -1,0 +1,89 @@
+template_id: node_creation_index_v1
+name: Node Creation — Template Index
+version: 1
+description: >
+  Two-step process for creating any wiki node.
+  Step 1: Run classify.yaml to determine the type.
+  Step 2: Use the matching type template to write the node.
+
+# ── WORKFLOW ──────────────────────────────────────────────────────────────────
+
+workflow:
+  step_1:
+    file: classify.yaml
+    action: >
+      Work through the decision tree in order (entity → indicator → regulation →
+      policy → framework → mechanism → synthesis → contradiction → concept).
+      Stop at the first match. Run all CLASSIFICATION GUARDS before proceeding.
+
+  step_2:
+    action: "Open the template for the determined type and follow it completely"
+    templates:
+      concept:       concept.yaml
+      mechanism:     mechanism.yaml
+      framework:     framework.yaml
+      entity:        entity.yaml
+      indicator:     indicator.yaml
+      policy:        policy.yaml
+      regulation:    regulation.yaml
+      synthesis:     synthesis.yaml
+      contradiction: contradiction.yaml
+
+# ── TYPE SUMMARY ──────────────────────────────────────────────────────────────
+
+type_summary:
+  concept:
+    question:    "Is this a durable atomic idea with no other type fitting?"
+    key_fields:  "thesis, source_refs"
+    body_anchor: "## How It Works"
+
+  mechanism:
+    question:    "Can I write Step 1 / Step 2 / Step 3 as a real causal chain?"
+    key_fields:  "steps[] (mandatory), transmission_lags, empirical_evidence"
+    body_anchor: "## Causal Chain"
+
+  framework:
+    question:    "Can I list NAMED components[] and an application_domain?"
+    key_fields:  "components[] (mandatory), application_domain (mandatory)"
+    body_anchor: "## Components"
+
+  entity:
+    question:    "Is this a named actor, body, or instrument?"
+    key_fields:  "entity_type (mandatory), jurisdiction (mandatory)"
+    body_anchor: "## Role and Mandate"
+
+  indicator:
+    question:    "Can I state: unit + frequency + data source?"
+    key_fields:  "indicator_type, frequency, data_source (all mandatory)"
+    body_anchor: "## Formula and Measurement"
+
+  policy:
+    question:    "Is there a named authority + specific year/period?"
+    key_fields:  "period (mandatory), jurisdiction (mandatory), policy_type"
+    body_anchor: "## Context and Trigger"
+
+  regulation:
+    question:    "Is this a binding rule with an official document ID?"
+    key_fields:  "issuing_body, document_id, effective_date, binding_on, key_requirements[]"
+    body_anchor: "## Key Requirements"
+
+  synthesis:
+    question:    "Does combining ≥2 existing nodes reveal a non-obvious insight?"
+    key_fields:  "synthesizes[] (mandatory), synthesis_method"
+    body_anchor: "## The Synthesis"
+
+  contradiction:
+    question:    "Do two sourced claims genuinely conflict?"
+    key_fields:  "claim_a, claim_b, resolution_status, affects_nodes[]"
+    body_anchor: "## Analysis"
+
+# ── SHARED RULES (apply to all types) ────────────────────────────────────────
+
+shared_rules:
+  confidence:    "Always start at 1. Raise only after reading the specific source passage."
+  llm_marking:   "Mark EVERY synthesised sentence [LLM]. Not just the first. Not just synthesis nodes."
+  source_refs:   "Must point to a real file in 02_sources/. Verify path exists before writing."
+  thesis:        "A CLAIM in present tense. Not 'This document discusses...' or a summary."
+  aliases:       "Always include: acronym + full name + Vietnamese equivalent where relevant."
+  body:          "Minimum: Overview (2-4 paragraphs) + type-specific section + Evidence. No stubs."
+  atomic_nodes:  "Create a minimal concept node for any core term used but not yet in wiki."

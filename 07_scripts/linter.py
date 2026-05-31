@@ -142,14 +142,34 @@ def run_lint(fix: bool = False) -> list[dict]:
                 issues.append(_issue(rel, node_id, "mechanism_missing_steps", "warning",
                                      "mechanism node has no steps[] — verify it is truly a "
                                      "causal process, not a concept/indicator misclassified."))
+        if node_type == "framework":
+            if not fm.get("components"):
+                issues.append(_issue(rel, node_id, "framework_missing_components", "warning",
+                                     "framework node has no components[] — verify it is truly a "
+                                     "reusable analytical model. If no enumerable components exist, "
+                                     "reclassify as concept (or policy if it has a year/period)."))
+            if not fm.get("application_domain"):
+                issues.append(_issue(rel, node_id, "framework_missing_application_domain", "warning",
+                                     "framework node missing application_domain field."))
         if node_type == "entity":
             if not fm.get("entity_type"):
                 issues.append(_issue(rel, node_id, "entity_missing_entity_type", "warning",
                                      "entity node missing entity_type (institution/person/...)."))
+            if not fm.get("jurisdiction"):
+                issues.append(_issue(rel, node_id, "entity_missing_jurisdiction", "warning",
+                                     "entity node missing jurisdiction field."))
         if node_type == "indicator":
             if not fm.get("indicator_type"):
                 issues.append(_issue(rel, node_id, "indicator_missing_type", "warning",
                                      "indicator node missing indicator_type."))
+        if node_type == "policy":
+            if not fm.get("period"):
+                issues.append(_issue(rel, node_id, "policy_missing_period", "warning",
+                                     "policy node missing period — policies must have a defined "
+                                     "time range (e.g. '2016-2024' or '2024-present')."))
+            if not fm.get("jurisdiction"):
+                issues.append(_issue(rel, node_id, "policy_missing_jurisdiction", "warning",
+                                     "policy node missing jurisdiction field."))
 
         # Stale check
         date_updated = fm.get("date_updated", "")

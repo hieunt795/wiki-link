@@ -166,32 +166,78 @@ phase_in_schedule: "Optional"
 
 ## Body Format (after frontmatter)
 
+All nodes share the same opening and closing sections. The middle section varies by type.
+
+### Shared sections (all types)
+
 ```markdown
 ## Overview
 
-[1-3 paragraphs. Expand on the thesis. Use **bold** for key terms on first introduction.
- Use [LLM] to mark any sentence that is synthesized without a specific source citation.]
+[2-4 paragraphs. Expand on the thesis. Use **bold** for key terms on first introduction.
+ Write in present tense. Mark every synthesised sentence with [LLM].]
+```
 
-## Mechanism / How It Works
+### Type-specific middle section
 
-[For concept and mechanism nodes: explain the causal chain.
- Format: "A → B because [reason]. B → C when [condition]."
- Every causal claim must have a condition attached.]
+```markdown
+## How It Works          ← concept, framework
+[Explain the structure, components, or logic. For frameworks: describe each component
+ in 1-2 sentences. Use "A → B because [reason]. B → C when [condition]" for causal claims.]
 
+## Causal Chain          ← mechanism
+[Narrate each step from the steps[] list:
+ "Step 1: X happens because [reason]."
+ "Step 2: Y follows when [condition]. If [exception], the chain breaks at this point."
+ Every causal claim must state the condition under which it holds.]
+
+## Context and Instruments   ← policy
+[Historical background: what problem this policy addressed, what preceded it.
+ Instruments used: bullet list of specific tools with dates if applicable.
+ Key decisions or turning points with dates.]
+
+## Role and Mandate      ← entity
+[What this entity does and why it exists. Formal mandate if applicable.
+ Who it reports to, who it regulates. Governance structure if relevant.]
+
+## Interpretation        ← indicator
+[What the number means: which direction is "good", what normal ranges look like.
+ How to read movements: "a rise in X signals Y because [reason]."
+ Common misreadings to avoid.]
+
+## Key Requirements      ← regulation
+[What exactly is required, expressed as clear rules.
+ Who it is binding on. Phase-in schedule if applicable.
+ Consequences of non-compliance if stated in source.]
+```
+
+### Shared closing sections (all types)
+
+```markdown
 ## Evidence and Sources
 
-[Cite specific passages. Format: [Bindseil 2014, p.112] or [WEB-2026-05-20].
- Distinguish primary from supporting sources.]
+[Cite specific passages. Format: [RAW-BOOK p.X] or [RAW-CLIP Title] or [WEB-YYYY-MM-DD].
+ Distinguish primary from supporting: "The primary treatment is [RAW-...]. [RAW-...] provides
+ additional context but treats X differently."]
 
 ## Contradictions and Debates
 
-[If contradicts: field is populated, explain the debate here.
+[Only if contradicts: field is populated. Explain the debate.
  Reference the contradiction node: see [[Contra_Topic_001]].]
 
 ## Related Concepts
 
-[Brief prose linking to related nodes. Not a bullet list — write connecting sentences.]
+[1-2 sentences per related node, written as prose, not bullet list. Explain HOW they relate:
+ "[[QE]] produces the portfolio balance effect described in [[Portfolio_Balance_Effect]]
+  — this node explains the mechanism; that node explains the magnitude and conditions."]
 ```
+
+### Quality bar for body content
+
+- **Minimum**: 3 substantive paragraphs in Overview + one type-specific section + Evidence
+- **No stubs**: A body that says "Review and expand" or just echoes the thesis is not acceptable
+- **Cite specifically**: "[RAW-BOOK Ch.4]" is weak; "[RAW-BOOK p.112, Table 4.3]" is correct
+- **[LLM] scope**: Mark the entire sentence, not just a phrase — if you synthesised it, mark it
+- **Causal conditions**: Never write "A causes B" — write "A causes B when [condition]"
 
 ---
 

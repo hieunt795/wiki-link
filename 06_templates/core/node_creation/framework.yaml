@@ -1,0 +1,201 @@
+template_id: node_framework_v3
+name: Framework Node Template
+version: 3
+type: framework
+
+# ── BƯỚC 1: XÁC ĐỊNH ─────────────────────────────────────────────────────────
+# Đọc chunk source. Framework = mô hình phân tích có các bộ phận được đặt tên
+# và có thể liệt kê thành YAML array. Phân biệt với các type khác:
+
+identify:
+  vs_concept:
+    signal:    "Concept mô tả X là GÌ. Framework chỉ ra X được DÙNG ĐỂ phân tích cái gì, với bộ phận nào."
+    test:      "Tôi có thể liệt kê ≥2 bộ phận có tên không? Nếu không → concept."
+
+  vs_policy:
+    signal:    "Framework không gắn với năm cụ thể hoặc quyết định của một cơ quan cụ thể."
+    test:      "Title có chứa năm (2024, 2016) hoặc tên CB (ECB, Fed)? Và nó là một quyết định? → policy."
+
+  vs_mechanism:
+    signal:    "Framework không có steps tuần tự A→B→C. Nó là công cụ phân tích, không phải quy trình nhân quả."
+    test:      "Nếu có thể viết Step 1/Step 2 → mechanism. Nếu có components nhưng không có chain → framework."
+
+  signal_words_in_source:
+    accounting: ["sector", "account", "identity", "must balance", "balances to", "consistency", "sum to zero", "cân đối"]
+    analytical:  ["framework", "dual metric", "two-pillar", "approach", "components", "model", "method", "phương pháp"]
+    structural:  ["consists of", "comprises", "has three elements", "four components", "bao gồm", "cấu thành"]
+
+  framework_subtypes:
+    accounting_framework:
+      description: "Hệ thống tài khoản có identity kế toán (luôn đúng về định nghĩa)"
+      signals:     "Source nêu các tài khoản/sector phải cân bằng với nhau; có identity Σ=0"
+      components_are: "Các sector hoặc tài khoản trong hệ thống (HH, Corp, Gov, RoW)"
+      identity_is: "Phương trình kế toán không thể sai (e.g. Σ NL/NB = 0)"
+
+    dual_metric_framework:
+      description: "Hai chỉ số đo cùng một rủi ro từ góc độ khác nhau"
+      signals:     "Source đề cập 'dual metric', 'complementary measures', 'two perspectives'"
+      components_are: "Hai chỉ số chính + các scenario/shock scenarios"
+      identity_is: "Không nhất thiết có identity; có tradeoff giữa hai metric"
+
+    classification_framework:
+      description: "Hệ thống phân loại có tiêu chí và danh mục"
+      signals:     "Source liệt kê các loại/tier/bucket; có tiêu chí để xếp vào từng loại"
+      components_are: "Các tier, bucket, hoặc loại trong hệ thống"
+      identity_is: "Tiêu chí phân loại (e.g. G-SIB bucket methodology)"
+
+    policy_tool_framework:
+      description: "Tập hợp các công cụ chính sách với điều kiện sử dụng từng công cụ"
+      signals:     "Source liệt kê các kỹ thuật/instruments có thể thay thế nhau"
+      components_are: "Các kỹ thuật hoặc công cụ (e.g. corridor, floor, full allotment)"
+      identity_is: "Quan hệ giữa các kỹ thuật (tradeoff, điều kiện áp dụng từng cái)"
+
+# ── BƯỚC 2: ĐIỀN FRONTMATTER ─────────────────────────────────────────────────
+
+frontmatter:
+  components:
+    rule:    "BẮTBUỘC. Lấy từ source — không tự đặt tên."
+    how: >
+      Đọc source: source liệt kê các bộ phận của framework này là gì?
+      Có thể là:
+      - Tên các sector (household, government, rest of world)
+      - Tên các metric (EVE, NII, shock scenarios)
+      - Tên các kỹ thuật (corridor system, floor system, full allotment)
+      - Tên các tier (CET1, AT1, Tier 2, buffers)
+      Ghi đúng tên như trong source. Thêm mô tả ngắn 1 câu.
+    format: |
+      components:
+        - "Tên component 1: [mô tả 1 câu từ source]"
+        - "Tên component 2: [mô tả 1 câu từ source]"
+    anti_pattern: "Không viết 'Component A', 'Part 1', 'Step 1' — phải có tên thật"
+
+  application_domain:
+    rule:    "BẮTBUỘC. Phải đủ cụ thể để phân biệt với concept."
+    how: >
+      Tìm trong source: framework này được dùng để làm gì?
+      Phải trả lời: "Dùng để [phân tích/đo/thiết kế] [cái gì cụ thể]."
+    bad:  "monetary_policy"
+    good: "Đo lường rủi ro lãi suất banking book và xác định ngưỡng giám sát"
+
+  thesis:
+    rule:    "Framework này giải quyết bài toán phân tích nào?"
+    how: >
+      Tìm trong source câu nói về mục đích của framework.
+      Chuyển thành claim: "Framework X cho phép [ai] [làm gì] bằng cách [cơ chế nào]."
+
+# ── BƯỚC 3: VIẾT BODY — THEO SUBTYPE ────────────────────────────────────────
+
+body:
+  section_overview:
+    heading:     "## Overview"
+    instruction: "Bài toán phân tích mà framework này giải. Ai dùng, khi nào, output là gì."
+    source_cue:  "Tìm phần mở đầu hoặc abstract của chapter giới thiệu framework."
+
+  section_core_structure:
+    heading:     "## Cấu trúc và Cân đối"
+    instruction: >
+      Viết rõ quan hệ giữa các components.
+      Cần phân biệt rõ:
+      - IDENTITY: luôn đúng về mặt định nghĩa/kế toán (không thể sai)
+      - BEHAVIOURAL: quan hệ thực nghiệm (có thể sai trong điều kiện nhất định)
+    for_accounting_framework: >
+      Tìm trong source: phương trình nào source nói là "identity" hoặc "always holds"?
+      Trích nguyên phương trình. Định nghĩa từng biến đúng như source dùng.
+      Nếu source viết bằng lời → chuyển thành ký hiệu và đánh dấu [LLM].
+      Ví dụ source nói gì: "the sectoral net lending/borrowing positions sum to zero",
+      "assets equal liabilities plus net worth", "NFA + NDA = Reserve Money"
+    for_analytical_framework: >
+      Tìm trong source: các component tương tác với nhau như thế nào?
+      Có tradeoff giữa chúng không? Source mô tả tension nào?
+      Ví dụ: EVE và NII thường di chuyển ngược chiều khi lãi suất thay đổi.
+
+  section_components:
+    heading:     "## Components"
+    instruction: >
+      Một đoạn cho mỗi component từ components[].
+      Với mỗi component, tìm trong source:
+      (a) Nó đo/đại diện cho cái gì?
+      (b) Nó được tính như thế nào (nếu source nêu)?
+      (c) Nó tương tác với các component khác như thế nào?
+    source_cue:  "Tìm section trong source dành riêng cho từng component (thường có heading riêng)."
+
+  section_how_to_apply:
+    heading:     "## Cách Áp Dụng"
+    instruction: >
+      Quy trình phân tích: source có mô tả cách dùng framework này không?
+      Nếu có → trích và paraphrase theo dạng numbered steps.
+      Nếu không → viết [LLM] và suy từ logic của framework.
+      Cần nêu: input cần gì, assumption chính, output trông như thế nào.
+
+  section_limitations:
+    heading:     "## Giới hạn và Điều kiện"
+    instruction: >
+      Tìm trong source: framework không capture được cái gì?
+      Assumption nào có thể bị vi phạm?
+      Source có nêu case nào framework cho kết quả sai lệch không?
+    source_cue:  "Tìm: 'does not account for', 'assumes', 'limitation', 'caveat', 'may not hold when'"
+
+  section_evidence:
+    heading:     "## Evidence and Sources"
+    instruction: "Trích đoạn cụ thể từ source định nghĩa hoặc giới thiệu framework."
+    format:      "[RAW-BOOK p.X] | [RAW-CLIP Title]"
+
+# ── HƯỚNG DẪN THEO LOẠI FRAMEWORK ────────────────────────────────────────────
+
+subtype_guidance:
+
+  accounting_framework:
+    example_signals_in_source:
+      - "Source dùng từ 'sector', 'account', 'identity'"
+      - "Source nói một cái 'balances to' hoặc 'must equal' cái khác"
+      - "Source có bảng T-account hoặc balance sheet cho nhiều chủ thể"
+    what_to_extract:
+      components:  "Các sector hoặc tài khoản được đặt tên trong source"
+      identity:    "Phương trình source gọi là identity hoặc balance condition"
+      application: "Source dùng framework này để kiểm tra gì? (e.g. consistency, sustainability)"
+    common_in_domains: ["macro_outlook", "fiscal_policy", "monetary_policy"]
+
+  dual_metric_framework:
+    example_signals_in_source:
+      - "Source đề cập hai chỉ số 'complementary' hoặc 'dual'"
+      - "Source nói hai metric đo 'same risk from different angles'"
+      - "Source có bảng so sánh hai metric dưới các scenario"
+    what_to_extract:
+      components:  "Tên hai (hoặc nhiều) metric chính + scenario set nếu có"
+      tension:     "Source có nêu tradeoff giữa các metric không? Trích đoạn đó."
+      limits:      "Ngưỡng hoặc limit áp dụng cho từng metric (nếu source nêu)"
+    common_in_domains: ["alm", "basel_risk"]
+
+  classification_framework:
+    example_signals_in_source:
+      - "Source liệt kê 'tiers', 'buckets', 'categories', 'tranches'"
+      - "Source có tiêu chí để xếp một thực thể vào từng loại"
+      - "Source có bảng phân loại với ngưỡng cụ thể"
+    what_to_extract:
+      components:  "Tên các tier/bucket/category trong source"
+      criteria:    "Tiêu chí xếp loại (threshold, score, characteristic)"
+      consequence: "Mỗi tier có yêu cầu/quyền gì khác nhau?"
+    common_in_domains: ["basel_risk", "monetary_policy"]
+
+  policy_tool_framework:
+    example_signals_in_source:
+      - "Source mô tả 'X techniques', 'Y approaches', 'Z instruments'"
+      - "Source so sánh điều kiện sử dụng từng kỹ thuật"
+      - "Source có bảng hoặc matrix so sánh các tool"
+    what_to_extract:
+      components:  "Tên từng technique/instrument/approach"
+      conditions:  "Điều kiện để chọn technique này thay vì technique kia"
+      tradeoffs:   "Tradeoff giữa các technique (balance sheet size, rate control, flexibility)"
+    common_in_domains: ["monetary_policy", "alm"]
+
+# ── QUALITY BAR ───────────────────────────────────────────────────────────────
+
+quality:
+  components_from_source:  "Tên phải từ source — không tự đặt"
+  identity_explicit:       "Nếu có accounting identity, phải viết phương trình, không chỉ mô tả bằng lời"
+  identity_vs_behavioural: "Phải phân biệt rõ: identity (luôn đúng) vs behavioural (có thể sai)"
+  application_specific:    "application_domain phải nêu rõ bài toán phân tích, không chỉ nêu domain"
+  anti_patterns:
+    - "components[] để trống hoặc dùng tên generic → sửa thành concept"
+    - "Có năm trong title và là quyết định CB → sửa thành policy"
+    - "Chỉ mô tả, không có analytical procedure → sửa thành concept"

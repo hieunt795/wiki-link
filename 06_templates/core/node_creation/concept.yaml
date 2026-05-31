@@ -1,0 +1,98 @@
+template_id: node_concept_v3
+name: Concept Node Template
+version: 3
+type: concept
+
+# ── BƯỚC 1: XÁC ĐỊNH ─────────────────────────────────────────────────────────
+# Concept là type mặc định — dùng khi không type nào khác phù hợp.
+# Trước khi kết luận là concept, loại trừ lần lượt:
+
+identify:
+  elimination_checklist:
+    - "Không phải entity (không có tên riêng cố định như tổ chức/công cụ)"
+    - "Không phải indicator (không có công thức + đơn vị + tần suất)"
+    - "Không phải regulation (không có document ID từ cơ quan quản lý)"
+    - "Không phải policy (không gắn với năm + tên cơ quan ra quyết định)"
+    - "Không phải framework (không thể liệt kê components[] có tên thật)"
+    - "Không phải mechanism (không có chain nhân quả Step 1 → Step 2)"
+
+  positive_signals:
+    - "Source định nghĩa X là gì — đây là định nghĩa nên tồn tại trong wiki"
+    - "Nhiều node khác sẽ cần link đến X để giải thích ngữ cảnh"
+    - "X là ý tưởng bền vững, không gắn với thời gian cụ thể"
+
+  hard_to_identify:
+    concept_vs_mechanism: >
+      Concept mô tả X là GÌ. Mechanism mô tả X HOẠT ĐỘNG NHƯ THẾ NÀO theo steps.
+      Test: 'Interest Rate Corridor' → concept (là cấu trúc).
+            'Discount Window Stigma' → mechanism (có bước tự củng cố).
+      Nếu source mô tả X bằng một đoạn văn không có steps → concept.
+
+    concept_vs_indicator: >
+      Nếu source nêu công thức cụ thể và data source → indicator.
+      Nếu source chỉ đề cập khái niệm đo lường nhưng không có formula rõ → concept.
+      Test: 'Duration Gap' với công thức → indicator.
+            'Duration Gap' chỉ được nhắc đến trong 1 câu → concept (atomic node).
+
+# ── BƯỚC 2: ĐIỀN FRONTMATTER ─────────────────────────────────────────────────
+
+frontmatter:
+  thesis:
+    rule:    "Claim về X là gì hoặc X hoạt động như thế nào. Present tense."
+    how: >
+      Tìm trong source: câu định nghĩa X hoặc câu mô tả vai trò của X.
+      Chuyển thành claim dạng khẳng định, không copy nguyên.
+      Không bắt đầu bằng "This document..." hoặc "X là một khái niệm..."
+    bad:  "'Financial repression là một khái niệm quan trọng trong kinh tế vĩ mô.'"
+    good: "'Financial repression describes a policy environment where governments hold
+           interest rates artificially below inflation to reduce debt service costs,
+           transferring real wealth from savers to the sovereign.'"
+
+  aliases:
+    how: >
+      Tìm trong source: source dùng từ viết tắt hay tên khác cho X không?
+      Thêm tiếng Việt: dịch tên đầy đủ, không bịa thuật ngữ không tồn tại.
+
+# ── BƯỚC 3: VIẾT BODY ────────────────────────────────────────────────────────
+
+body:
+  section_overview:
+    heading:     "## Overview"
+    instruction: "X là gì? Tại sao nó quan trọng trong domain này?"
+    source_cue:  "Tìm phần source giới thiệu hoặc định nghĩa X."
+    how: >
+      Đọc source đoạn đề cập X. Paraphrase 2-4 câu mở đầu.
+      Bold tên X và các term liên quan lần đầu xuất hiện.
+      Đánh dấu [LLM] mọi câu không có câu tương ứng trong source.
+
+  section_how_it_works:
+    heading:     "## How It Works"
+    instruction: "Cơ chế hoặc cấu trúc bên trong của X."
+    source_cue:  "Tìm trong source đoạn giải thích hoạt động hoặc cấu trúc của X."
+    how: >
+      Nếu source mô tả cơ chế → viết dạng "A → B vì [lý do] khi [điều kiện]".
+      Nếu source mô tả cấu trúc → mô tả từng phần.
+      Mọi causal claim phải có điều kiện: "khi [condition]", không bao giờ viết "X causes Y" không điều kiện.
+
+  section_evidence:
+    heading:     "## Evidence and Sources"
+    instruction: "Trích đoạn cụ thể từ source. Không chỉ liệt kê tên file."
+    format:      "[RAW-BOOK p.X] | [RAW-CLIP Title] | [WEB-YYYY-MM-DD]"
+    how: >
+      Tìm trong source đoạn quan trọng nhất giải thích X.
+      Ghi: tác giả, trang, câu trích hoặc paraphrase đoạn đó.
+
+  section_related:
+    heading:     "## Related Concepts"
+    instruction: "1-2 câu prose kết nối X với các node liên quan. Không dùng bullet list."
+    how: >
+      Nghĩ: node nào khác trong wiki sẽ link đến X? X link đến node nào?
+      Viết câu giải thích quan hệ: "[[Y]] provides the mechanism through which X operates..."
+
+# ── QUALITY BAR ───────────────────────────────────────────────────────────────
+
+quality:
+  no_stubs:       "Body không được chứa 'Review and expand' hoặc chỉ echo lại thesis"
+  llm_discipline: "Mọi câu không có trong source → đánh dấu [LLM]"
+  causal_claims:  "Không viết 'A causes B'. Viết 'A causes B when [condition]'"
+  minimum:        "Ít nhất: Overview (2 đoạn) + How It Works (1 đoạn) + Evidence"
